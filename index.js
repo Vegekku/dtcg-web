@@ -7,51 +7,59 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return cardUrl;
     };
 
-    const tableSt1 = document.getElementById('st1');
-    // st1.cards.forEach((element, index) => {
-    //     var row = tableSt1.insertRow(index + 1);
-    //     var cell1 = row.insertCell(0);
-    //     var cell2 = row.insertCell(1);
-    //     var cell3 = row.insertCell(2);
+    const getImageUrlFromBandai = (url, setID, cardID) => {
+        var cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
+        cardUrl = cardUrl.replaceAll('setID',setID);
+        cardUrl = cardUrl.replace('cardID',cardID);
 
-    //     cell1.innerHTML = element.id;
-    //     cell2.innerHTML = '0';
-
-    //     var st1Cards = cards.filter( card => card.card_id == element.id );
-
-    //     st1Cards.forEach(card => {
-    //         cell3.innerHTML += `<img class="card" src="${getImageUrl(card.image)}" title="${card.set}">`;
-    //     });
-    // });
+        return cardUrl;
+    };
 
     sets.forEach(setElement => {
-        var tableSet = document.createElement('table');
-        tableSet.id = setElement.id;
+        if ( setElement.id !== null ) {
+            const tableSet = document.createElement('table');
+            tableSet.id = setElement.id;
 
-        // Header
-        var header = tableSet.createTHead();
-        var row = header.insertRow(0);
-        var headerTexts = [setElement.id, "Amount", "Cards"];
-        headerTexts.forEach(headerText => {
-            var headerCell = document.createElement('th');
-            headerCell.innerHTML = headerText;
-            row.appendChild(headerCell);
-        })
+            // Header
+            const header = tableSet.createTHead();
+            const headerTexts = [setElement.id, "Amount", "Cards"];
+            var row = header.insertRow(0);
+            headerTexts.forEach(headerText => {
+                const headerCell = document.createElement('th');
+                headerCell.innerHTML = headerText;
+                row.appendChild(headerCell);
+            })
 
-        // Body
-        var body = tableSet.createTBody();
-        for (let index = 1; index < setElement.total; index++) {
-            var row = body.insertRow(index - 1);
-            row.insertCell(0).innerHTML = index;
-            row.insertCell(1).innerHTML = 0;
+            // Body
+            const body = tableSet.createTBody();
+            for (let index = 1; index <= setElement.total; index++) {
+                var cardNumber = String(index).padStart(2,'0');
+                var row = body.insertRow(index - 1);
+                row.id = `${setElement.id}-${cardNumber}`;
+                row.insertCell(0).innerHTML = cardNumber;
+                row.insertCell(1).innerHTML = 0;
 
-            var cardUrl = getImageUrl(setElement.url);
-            cardUrl = cardUrl.replaceAll('setID',setElement.id);
-            cardUrl = cardUrl.replace('cardID',String(index).padStart(2,'0'));
-            row.insertCell(2).innerHTML = `<img class="card" src="${cardUrl}" title="${setElement.name}">`;
+                var cardUrl = getImageUrlFromBandai(setElement.url, setElement.id, cardNumber);
+                row.insertCell(2).innerHTML = `<img class="card" src="${cardUrl}" title="${setElement.name}">`;
+                row.cells[2].className = 'card_list';
+            }
+            row = body.insertRow(0);
+
+            document.body.appendChild(tableSet);
+        } else {
+            Object.entries(setElement.cards).forEach(card => {
+                const [cardNumber, parallel] = card;
+                const [setId,cardId] = cardNumber.split('-');
+
+                var cardUrl = getImageUrlFromBandai(setElement.url, setId,cardId);
+                cardUrl = cardUrl.replace('parallel',parallel);
+
+                const cardRow = document.getElementById(cardNumber);
+                if (cardRow !== null){
+                    cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setElement.name}">`;
+                }
+            });
         }
-        row = body.insertRow(0);
-
-        document.body.appendChild(tableSet);
+        
     });
 });
