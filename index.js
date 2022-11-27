@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     const bandaitcgplusURL = 'https://s3.amazonaws.com/prod.bandaitcgplus.files.api/card_image/DG-EN';
+    const setButtons = document.getElementById('setButtons');
 
     const getImageUrl = cardImage => {
         var cardUrl = cardImage.replace('bandaitcgplusURL', bandaitcgplusURL);
@@ -9,14 +10,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     const getImageUrlFromBandai = (url, setID, cardID) => {
         var cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
-        cardUrl = cardUrl.replaceAll('setID',setID);
-        cardUrl = cardUrl.replace('cardID',cardID);
+        cardUrl = cardUrl.replaceAll('setID', setID);
+        cardUrl = cardUrl.replace('cardID', cardID);
 
         return cardUrl;
     };
 
     sets.forEach(setElement => {
-        if ( setElement.id !== null ) {
+        if (setElement.id !== null) {
             const tableSet = document.createElement('table');
             tableSet.id = setElement.id;
 
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             // Body
             const body = tableSet.createTBody();
             for (let index = 1; index <= setElement.total; index++) {
-                var cardNumber = String(index).padStart(2,'0');
+                var cardNumber = String(index).padStart(2, '0');
                 var row = body.insertRow(index - 1);
                 row.id = `${setElement.id}-${cardNumber}`;
                 row.insertCell(0).innerHTML = cardNumber;
@@ -44,22 +45,37 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 row.cells[2].className = 'card_list';
             }
             row = body.insertRow(0);
+            tableSet.style.display = "none";
 
             document.body.appendChild(tableSet);
+
+            const setButton = document.createElement('button');
+            setButton.value = setElement.id;
+            setButton.innerText = setElement.id;
+            setButton.addEventListener('click', (element, event) => {
+                const tableSet = document.getElementById(element.target.value);
+                document.querySelectorAll('table').forEach( table => table.style.display = 'none' );
+                if (tableSet.style.display === "none") {
+                    tableSet.style.display = "block";
+                } else {
+                    tableSet.style.display = "none";
+                }
+            });
+            setButtons.appendChild(setButton);
         } else {
             Object.entries(setElement.cards).forEach(card => {
                 const [cardNumber, parallel] = card;
-                const [setId,cardId] = cardNumber.split('-');
+                const [setId, cardId] = cardNumber.split('-');
 
-                var cardUrl = getImageUrlFromBandai(setElement.url, setId,cardId);
-                cardUrl = cardUrl.replace('parallel',parallel);
+                var cardUrl = getImageUrlFromBandai(setElement.url, setId, cardId);
+                cardUrl = cardUrl.replace('parallel', parallel);
 
                 const cardRow = document.getElementById(cardNumber);
-                if (cardRow !== null){
+                if (cardRow !== null) {
                     cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setElement.name}">`;
                 }
             });
         }
-        
+
     });
 });
