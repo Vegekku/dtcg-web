@@ -5,6 +5,7 @@ const sets = [
         "release": null,
         "total": 16,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 2,
         "alt_cards": {
             "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
             2: [
@@ -20,7 +21,16 @@ const sets = [
         "name": "Starter Deck COCYTUS BLUE[ST-2]",
         "release": null,
         "total": 16,
-        "url": "bandaitcgplusURL/setID/setID-cardID.png"
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 2,
+    },
+    {
+        "id": "BT1",
+        "name": "[BT1]",
+        "release": null,
+        "total": 115,
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 3,
     },
     {
         "id": null,
