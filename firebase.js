@@ -2,26 +2,110 @@ const sets = [
     {
         "id": "ST1",
         "name": "Starter Deck GAIA RED [ST-1]",
-        "release": null,
+        "release": "January 29th,2021",
         "total": 16,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-1.php"
     },
     {
         "id": "ST2",
         "name": "Starter Deck COCYTUS BLUE [ST-2]",
-        "release": null,
+        "release": "January 29th,2021",
         "total": 16,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-2.php"
     },
     {
         "id": "ST3",
         "name": "Starter Deck HEAVEN'S YELLOW [ST-3]",
-        "release": null,
+        "release": "January 29th,2021",
         "total": 16,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-3.php"
+    },
+    {
+        "id": "ST4",
+        "name": "Starter Deck GIGA GREEN [ST-4]",
+        "release": "June 11, 2021",
+        "total": 16,
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-4.php"
+    },
+    {
+        "id": "ST5",
+        "name": "Starter Deck MACHINE BLACK [ST-5]",
+        "release": "June 11, 2021",
+        "total": 16,
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-5.php"
+    },
+    {
+        "id": "ST6",
+        "name": "Starter Deck VENOMOUS VIOLET [ST-6]",
+        "release": "June 11, 2021",
+        "total": 16,
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-6.php"
+    },
+    {
+        "id": "ST7",
+        "name": "Starter Deck GALLANTMON [ST-7]",
+        "release": "October 15, 2021",
+        "total": 12,
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-7.php"
+    },
+    {
+        "id": "ST8",
+        "name": "Starter Deck ULFORCEVEEDRAMON [ST-8]",
+        "release": "October 15, 2021",
+        "total": 12,
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-8.php"
+    },
+    {
+        "id": "ST9",
+        "name": "Starter Deck ULTIMATE ANCIENT DRAGON [ST-9]",
+        "release": "May 13, 2022",
+        "total": 16,
+        "url": "bandaitcgplusURL/setID/e_ST09_cardID_D.jpg",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-9.php"
+    },
+    {
+        "id": "ST10",
+        "name": "Starter Deck PARALLEL WORLD TACTICIAN [ST-10]",
+        "release": "May 13, 2022",
+        "total": 16,
+        "url": "bandaitcgplusURL/setID/e_setID_cardID_D.jpg",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-10.php"
+    },
+    {
+        "id": "ST12",
+        "name": "Starter Deck JESMON [ST-12]",
+        "release": "October 14, 2022",
+        "total": 16,
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-12.php"
+    },
+    {
+        "id": "ST13",
+        "name": "Starter Deck RagnaLoardmon [ST-13]",
+        "release": "October 14, 2022",
+        "total": 16,
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-13.php"
     },
     {
         "id": "BT1",
@@ -38,6 +122,11 @@ const sets = [
                 "BT1-060": "P1",
                 "BT1-082": "P1",
                 "BT1-084": "P1",
+                "BT1-085": "P1",
+                "BT1-086": "P1",
+                "BT1-087": "P1",
+                "BT1-088": "P1",
+                "BT1-089": "P1",
                 "BT1-110": "P1",
                 "BT1-114": "P1",
                 "BT1-115": "P1",
