@@ -1,17 +1,15 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-    const bandaitcgplusURL = 'https://s3.amazonaws.com/prod.bandaitcgplus.files.api/card_image/DG-EN';
     const setButtons = document.getElementById('setButtons');
-
-    const getImageUrl = cardImage => {
-        var cardUrl = cardImage.replace('bandaitcgplusURL', bandaitcgplusURL);
-
-        return cardUrl;
-    };
-
-    const getImageUrlFromBandai = (url, setID, cardID) => {
+    
+    const getImageUrlFromBandai = (url, setID, cardID, parallel = null) => {
+        const bandaitcgplusURL = 'https://s3.amazonaws.com/prod.bandaitcgplus.files.api/card_image/DG-EN';
         var cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
         cardUrl = cardUrl.replaceAll('setID', setID);
         cardUrl = cardUrl.replace('cardID', cardID);
+
+        if (null !== parallel){
+            cardUrl = cardUrl.replace('parallel', parallel);
+        }
 
         return cardUrl;
     };
@@ -34,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             // Body
             const body = tableSet.createTBody();
             for (let index = 1; index <= setElement.total; index++) {
-                var cardNumber = String(index).padStart(2, '0');
+                var cardNumber = String(index).padStart(setElement.add_zero, '0');
                 var row = body.insertRow(index - 1);
                 row.id = `${setElement.id}-${cardNumber}`;
                 row.insertCell(0).innerHTML = cardNumber;
@@ -65,13 +63,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
         } else {
             Object.entries(setElement.cards).forEach(card => {
                 const [cardNumber, parallel] = card;
-                const [setId, cardId] = cardNumber.split('-');
-
-                var cardUrl = getImageUrlFromBandai(setElement.url, setId, cardId);
-                cardUrl = cardUrl.replace('parallel', parallel);
-
                 const cardRow = document.getElementById(cardNumber);
+
                 if (cardRow !== null) {
+                    const [setId, cardId] = cardNumber.split('-');
+                    var cardUrl = getImageUrlFromBandai(setElement.url, setId, cardId, parallel);
                     cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setElement.name}">`;
                 }
             });
