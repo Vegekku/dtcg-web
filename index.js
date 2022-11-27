@@ -18,22 +18,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if (setElement.id !== null) {
             const tableSet = document.createElement('table');
             tableSet.id = setElement.id;
+            tableSet.style.display = "none";
 
             // Header
-            const header = tableSet.createTHead();
-            const headerTexts = [setElement.id, "Amount", "Cards"];
-            var row = header.insertRow(0);
-            headerTexts.forEach(headerText => {
-                const headerCell = document.createElement('th');
-                headerCell.innerHTML = headerText;
-                row.appendChild(headerCell);
+            const tHead = tableSet.createTHead();
+            const tHeadTexts = [setElement.id, "Amount", "Cards"];
+            var row = tHead.insertRow(0);
+            tHeadTexts.forEach(tHeadText => {
+                const tHeadCell = document.createElement('th');
+                tHeadCell.innerHTML = tHeadText;
+                row.appendChild(tHeadCell);
             })
 
             // Body
-            const body = tableSet.createTBody();
+            const tBody = tableSet.createTBody();
             for (let index = 1; index <= setElement.total; index++) {
                 var cardNumber = String(index).padStart(setElement.add_zero, '0');
-                var row = body.insertRow(index - 1);
+                var row = tBody.insertRow(index - 1);
                 row.id = `${setElement.id}-${cardNumber}`;
                 row.insertCell(0).innerHTML = cardNumber;
                 row.insertCell(1).innerHTML = 0;
@@ -42,11 +43,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 row.insertCell(2).innerHTML = `<img class="card" src="${cardUrl}" title="${setElement.name}">`;
                 row.cells[2].className = 'card_list';
             }
-            row = body.insertRow(0);
-            tableSet.style.display = "none";
-
+            
+            // Draw table set
             document.body.appendChild(tableSet);
 
+            // Draw set alternatives
+            if (setElement.alternatives) {
+                Object.entries(setElement.alternatives.cards).forEach(card => {
+                    const [cardNumber, parallel] = card;
+                    const cardRow = document.getElementById(cardNumber);
+    
+                    if (cardRow !== null) {
+                        const [setId, cardId] = cardNumber.split('-');
+                        var cardUrl = getImageUrlFromBandai(setElement.alternatives.url, setId, cardId, parallel);
+                        cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setElement.name}">`;
+                    }
+                });
+            }
+
+            // Add button
             const setButton = document.createElement('button');
             setButton.value = setElement.id;
             setButton.innerText = setElement.id;
