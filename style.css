@@ -1,3 +1,7 @@
+#setLists {
+    height: 100vh;
+    overflow: scroll;
+}
 .card {
     max-width: 100px;
 }
