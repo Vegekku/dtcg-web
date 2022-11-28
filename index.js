@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     const setButtons = document.getElementById('setButtons');
+    const setLists = document.getElementById('setLists');
 
     const getImageUrlFromBandai = (url, setID, cardID, parallel = null) => {
         const bandaitcgplusURL = 'https://s3.amazonaws.com/prod.bandaitcgplus.files.api/card_image/DG-EN';
@@ -62,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
 
             // Draw table set
-            document.body.appendChild(tableSet);
+            setLists.appendChild(tableSet);
 
             // Draw set alternatives
             if (setElement.alternatives) {
