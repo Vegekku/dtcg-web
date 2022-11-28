@@ -52,8 +52,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 row.insertCell(0).innerHTML = cardNumber;
                 row.insertCell(1).innerHTML = 0;
 
-                var cardUrl = getImageUrlFromBandai(setElement.url, setElement.id, cardNumber);
-                row.insertCell(2).innerHTML = `<img class="card" src="${cardUrl}" title="${setElement.name}">`;
+                if (setElement.url) {
+                    var cardUrl = getImageUrlFromBandai(setElement.url, setElement.id, cardNumber);
+                    row.insertCell(2).innerHTML = `<img class="card" src="${cardUrl}" title="${setElement.name}">`;
+                } else {
+                    row.insertCell(2).innerHTML = "";
+                }
                 row.cells[2].className = 'card_list';
             }
 
