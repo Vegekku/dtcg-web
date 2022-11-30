@@ -250,6 +250,33 @@ const sets = [
             }
         }
     },
+    // Booster Great Legend [BT5]
+    {
+        "id": "BT5",
+        "name": "Booster Union Impact [BT5]",
+        "release": "August 6, 2021",
+        "total": 112,
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 3,
+        "alternatives": {
+            "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+            "cards": {
+                "BT5-019": "P1",
+                "BT5-081": ["P1", "P2"],
+                "BT5-085": "P1",
+                "BT5-086": ["P1","P2","P3","P4"],
+                "BT5-087": ["P1","P2"],
+                "BT5-088": "P1",
+                "BT5-089": "P1",
+                "BT5-090": "P1",
+                "BT5-091": "P1",
+                "BT5-092": "P1",
+                "BT5-093": "P1",
+                "BT5-111": "P1",
+                "BT5-112": "P1",
+            }
+        }
+    },
     // Promotion Pack Ver.0.0
     {
         "id": null,
