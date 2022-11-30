@@ -22,8 +22,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
             if (cardRow !== null) {
                 const [setId, cardId] = cardNumber.split('-');
-                const cardUrl = getImageUrlFromBandai(url, setId, cardId, parallel);
-                cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setName}">`;
+                if ( Array.isArray( parallel )) {
+                    parallel.forEach(parallelElement => {
+                        const cardUrl = getImageUrlFromBandai(url, setId, cardId, parallelElement);
+                    cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setName}">`;
+                    });
+                } else {
+                    const cardUrl = getImageUrlFromBandai(url, setId, cardId, parallel);
+                    cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setName}">`;
+                }
             }
         });
     };
