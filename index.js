@@ -4,7 +4,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     const getImageUrlFromBandai = (url, setID, cardID, parallel = null) => {
         const bandaitcgplusURL = 'https://s3.amazonaws.com/prod.bandaitcgplus.files.api/card_image/DG-EN';
-        var cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
+        const digimoncardURL = 'https://world.digimoncard.com/images/cardlist/card';
+        
+        if ( url.includes('bandaitcgplusURL')) {
+            var cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
+        } else {
+            var cardUrl = url.replace('digimoncardURL', digimoncardURL);
+        }
         cardUrl = cardUrl.replaceAll('setID', setID);
         cardUrl = cardUrl.replace('cardID', cardID);
 
@@ -62,6 +68,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
                 if (setElement.url) {
                     var cardUrl = getImageUrlFromBandai(setElement.url, setElement.id, cardNumber);
+                    if ( 'specific' in setElement && `${setElement.id}-${cardNumber}` in setElement.specific.cards ) {
+                        cardUrl = getImageUrlFromBandai(setElement.specific.url, setElement.id, cardNumber);
+                    }
                     row.insertCell(2).innerHTML = `<img class="card" src="${cardUrl}" title="${setElement.name}">`;
                 } else {
                     row.insertCell(2).innerHTML = "";

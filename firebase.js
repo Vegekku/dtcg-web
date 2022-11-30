@@ -218,7 +218,7 @@ const sets = [
     // Booster Great Legend [BT4]
     {
         "id": "BT4",
-        "name": "Booster Union Impact [BT4]",
+        "name": "Booster Great Legend [BT4]",
         "release": "June 11, 2021",
         "total": 115,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
@@ -250,10 +250,10 @@ const sets = [
             }
         }
     },
-    // Booster Great Legend [BT5]
+    // Booster Battle of Omni [BT5]
     {
         "id": "BT5",
-        "name": "Booster Union Impact [BT5]",
+        "name": "Booster Battle of Omni [BT5]",
         "release": "August 6, 2021",
         "total": 112,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
@@ -274,6 +274,134 @@ const sets = [
                 "BT5-093": "P1",
                 "BT5-111": "P1",
                 "BT5-112": "P1",
+            }
+        }
+    },
+    // Booster Double Diamond [BT6]
+    {
+        "id": "BT6",
+        "name": "Booster Double Diamond [BT6]",
+        "release": "October 15, 2021",
+        "total": 112,
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 3,
+        "alternatives": {
+            "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+            "cards": {
+                "BT6-001": "P1",
+                "BT6-002": "P1",
+                "BT6-003": "P1",
+                "BT6-004": "P1",
+                "BT6-005": "P1",
+                "BT6-006": "P1",
+                "BT6-007": "P1",
+                "BT6-016": "P1",
+                "BT6-018": "P1",
+                "BT6-019": "P1",
+                "BT6-030": "P1",
+                "BT6-033": "P1",
+                "BT6-044": "P1",
+                "BT6-047": "P1",
+                "BT6-064": "P1",
+                "BT6-067": "P1",
+                "BT6-068": "P1",
+                "BT6-078": "P1",
+                "BT6-081": "P1",
+                "BT6-082": "P1",
+                "BT6-084": "P1",
+                "BT6-086": "P1",
+                "BT6-111": "P1",
+                "BT6-112": "P1",
+                "BT1-084": "P3",
+            }
+        }
+    },
+    // Booster Classic Collection [EX1]
+    {
+        "id": "EX1",
+        "name": "Booster Classic Collection [EX1]",
+        "release": "December 10, 2021",
+        "total": 73,
+        "url": "bandaitcgplusURL/setID/EX-cardID.png",
+        "add_zero": 3,
+        "alternatives": {
+            "url": "bandaitcgplusURL/setID/EX-cardIDp.png",
+            "cards": {
+                "EX1-001": "",
+                "EX1-002": "",
+                "EX1-004": "",
+                "EX1-005": "",
+                "EX1-006": "",
+                "EX1-008": "",
+                "EX1-009": "",
+                "EX1-011": "",
+                "EX1-012": "",
+                "EX1-015": "",
+                "EX1-017": "",
+                "EX1-018": "",
+                "EX1-019": "",
+                "EX1-021": "",
+                "EX1-022": "",
+                "EX1-024": "",
+                "EX1-026": "",
+                "EX1-029": "",
+                "EX1-030": "",
+                "EX1-033": "",
+                "EX1-034": "",
+                "EX1-037": "",
+                "EX1-039": "",
+                "EX1-040": "",
+                "EX1-043": "",
+                "EX1-059": "",
+                "EX1-063": "",
+                "EX1-065": "",
+                "EX1-066": "",
+                "EX1-073": "",
+                "BT2-065": "P2",
+            }
+        }
+    },
+    // Booster Next Adventure [BT7]
+    {
+        "id": "BT7",
+        "name": "Booster Next Adventure [BT7]",
+        "release": "March 4, 2022",
+        "total": 112,
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 3,
+        "specific": {
+            "url": "bandaitcgplusURL/setID/setID-cardIDp.png",
+            "cards": {
+                "BT7-017": "",
+            }
+        },
+        "alternatives": {
+            "url": "bandaitcgplusURL/setID/setID-cardIDp.png",
+            "cards": {
+                "BT7-008": "",
+                "BT7-013": "",
+                "BT7-016": "",
+                "BT7-018": "",
+                "BT7-019": "",
+                "BT7-026": "",
+                "BT7-029": "",
+                "BT7-031": "",
+                "BT7-040": "",
+                "BT7-041": "",
+                "BT7-044": "",
+                "BT7-056": "",
+                "BT7-063": "",
+                "BT7-065": "",
+                "BT7-068": "",
+                "BT7-079": "",
+                "BT7-085": "",
+                "BT7-086": "",
+                "BT7-087": "",
+                "BT7-088": "",
+                "BT7-089": "",
+                "BT7-091": "",
+                "BT7-111": "",
+                "BT7-112": "",
             }
         }
     },
@@ -373,6 +501,55 @@ const sets = [
             "P-032": "",
             "P-033": "",
             "P-034": "",
+        },
+    },
+    // 1-Year Anniversary Promo Pack
+    {
+        "id": null,
+        "name": "1-Year Anniversary Promo Pack",
+        "release": "October 15, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "ST1-10": "P1",
+            "BT1-003": "P1",
+            "BT2-074": "P1",
+            "BT2-083": "P1",
+            "BT3-021": "P1",
+            "BT3-039": "P1",
+            "BT3-046": "P1",
+            "BT3-057": "P1",
+            "BT4-016": "P1",
+            "BT4-091": "P1",
+        },
+    },
+    // Double Diamond Dash Pack
+    {
+        "id": null,
+        "name": "Double Diamond Dash Pack",
+        "release": "October 15, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "cards": {
+            "P-041": "",
+            "P-042": "",
+            "P-043": "",
+            "P-044": "",
+            "P-045": "",
+            "P-046": "",
+        },
+    },
+    // Box Promotion Pack Next Adventure
+    {
+        "id": null,
+        "name": "Box Promotion Pack Next Adventure",
+        "release": "March 4, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "P-035": "P1",
+            "P-036": "P1",
+            "P-037": "P1",
+            "P-038": "P1",
+            "P-039": "P1",
+            "P-040": "P1",
         },
     },
     // Official Tournament Pack Vol.1
