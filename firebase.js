@@ -215,6 +215,41 @@ const sets = [
             }
         }
     },
+    // Booster Great Legend [BT4]
+    {
+        "id": "BT4",
+        "name": "Booster Union Impact [BT4]",
+        "release": "June 11, 2021",
+        "total": 115,
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 3,
+        "alternatives": {
+            "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+            "cards": {
+                "BT4-011": "P1",
+                "BT4-017": "P1",
+                "BT4-019": "P1",
+                "BT4-025": "P1",
+                "BT4-033": "P1",
+                "BT4-035": "P1",
+                "BT4-048": "P1",
+                "BT4-059": "P1",
+                "BT4-062": "P1",
+                "BT4-075": "P1",
+                "BT4-088": "P1",
+                "BT4-090": "P1",
+                "BT4-092": "P1",
+                "BT4-093": "P1",
+                "BT4-094": "P1",
+                "BT4-095": "P1",
+                "BT4-096": "P1",
+                "BT4-097": "P1",
+                "BT4-113": "P1",
+                "BT4-114": "P1",
+                "BT4-115": "P1",
+            }
+        }
+    },
     // Promotion Pack Ver.0.0
     {
         "id": null,
@@ -286,6 +321,50 @@ const sets = [
             "P-024": "",
         },
     },
+    // Great Dash Pack
+    {
+        "id": null,
+        "name": "Great Dash Pack",
+        "release": "June 11, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "cards": {
+            "P-025": "",
+            "P-026": "",
+            "P-027": "",
+        },
+    },
+    // Great Legend Power Up Pack
+    {
+        "id": null,
+        "name": "Great Legend Power Up Pack",
+        "release": "June 11, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "cards": {
+            "P-029": "",
+            "P-030": "",
+            "P-031": "",
+            "P-032": "",
+            "P-033": "",
+            "P-034": "",
+        },
+    },
+    // Official Tournament Pack Vol.1
+    {
+        "id": null,
+        "name": "Official Tournament Pack Vol.1",
+        "release": "October, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "cards": {
+            "P-013": "",
+            "P-014": "",
+            "P-015": "",
+            "P-016": "",
+            "P-017": "",
+            "P-018": "",
+            "P-019": "",
+            "P-020": "",
+        },
+    },
     // Event Pack 1
     {
         "id": null,
@@ -309,7 +388,7 @@ const sets = [
             "BT3-076": "P1",
             "BT4-005": "P1",
             "BT4-067": "P1",
-            "BT4-088": "P1",
+            "BT4-088": "P2",
             "BT5-045": "P1",
         }
     }
