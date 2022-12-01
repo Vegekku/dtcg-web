@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
         cardUrl = cardUrl.replaceAll('setID', setID);
         cardUrl = cardUrl.replace('cardID', cardID);
+        cardUrl = cardUrl.replace('cardNumber', cardID);
 
         if (null !== parallel) {
             cardUrl = cardUrl.replace('parallel', parallel);
@@ -83,7 +84,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
             // Draw set alternatives
             if (setElement.alternatives) {
-                drawAlternatives(setElement.name, setElement.alternatives.url, setElement.alternatives.cards);
+                if ( Array.isArray(setElement.alternatives) ){
+                    setElement.alternatives.forEach(alternative => {
+                        drawAlternatives(setElement.name, alternative.url, alternative.cards);
+                    });
+                } else {
+                    drawAlternatives(setElement.name, setElement.alternatives.url, setElement.alternatives.cards);
+                }
             }
 
             // Add button

@@ -324,42 +324,49 @@ const sets = [
         "total": 73,
         "url": "bandaitcgplusURL/setID/EX-cardID.png",
         "add_zero": 3,
-        "alternatives": {
-            "url": "bandaitcgplusURL/setID/EX-cardIDp.png",
-            "cards": {
-                "EX1-001": "",
-                "EX1-002": "",
-                "EX1-004": "",
-                "EX1-005": "",
-                "EX1-006": "",
-                "EX1-008": "",
-                "EX1-009": "",
-                "EX1-011": "",
-                "EX1-012": "",
-                "EX1-015": "",
-                "EX1-017": "",
-                "EX1-018": "",
-                "EX1-019": "",
-                "EX1-021": "",
-                "EX1-022": "",
-                "EX1-024": "",
-                "EX1-026": "",
-                "EX1-029": "",
-                "EX1-030": "",
-                "EX1-033": "",
-                "EX1-034": "",
-                "EX1-037": "",
-                "EX1-039": "",
-                "EX1-040": "",
-                "EX1-043": "",
-                "EX1-059": "",
-                "EX1-063": "",
-                "EX1-065": "",
-                "EX1-066": "",
-                "EX1-073": "",
-                "BT2-065": "P2",
+        "alternatives": [
+            {
+                "url": "bandaitcgplusURL/setID/EX-cardIDp.png",
+                "cards": {
+                    "EX1-001": "",
+                    "EX1-002": "",
+                    "EX1-004": "",
+                    "EX1-005": "",
+                    "EX1-006": "",
+                    "EX1-008": "",
+                    "EX1-009": "",
+                    "EX1-011": "",
+                    "EX1-012": "",
+                    "EX1-015": "",
+                    "EX1-017": "",
+                    "EX1-018": "",
+                    "EX1-019": "",
+                    "EX1-021": "",
+                    "EX1-022": "",
+                    "EX1-024": "",
+                    "EX1-026": "",
+                    "EX1-029": "",
+                    "EX1-030": "",
+                    "EX1-033": "",
+                    "EX1-034": "",
+                    "EX1-037": "",
+                    "EX1-039": "",
+                    "EX1-040": "",
+                    "EX1-043": "",
+                    "EX1-059": "",
+                    "EX1-063": "",
+                    "EX1-065": "",
+                    "EX1-066": "",
+                    "EX1-073": "",
+                }
+            },
+            {
+                "url": "digimoncardURL/setID-cardID_parallel.png",
+                "cards": {
+                    "BT2-065": "P2",
+                }
             }
-        }
+        ],
     },
     // Booster Next Adventure [BT7]
     {
@@ -404,6 +411,84 @@ const sets = [
                 "BT7-112": "",
             }
         }
+    },
+    // Booster New Awakening [BT8]
+    {
+        "id": "BT8",
+        "name": "Booster New Awakening [BT8]",
+        "release": "May 13, 2022",
+        "total": 112,
+        "url": "bandaitcgplusURL/setID/e_setID_cardID.png",
+        "add_zero": 3,
+        "alternatives": [
+            {
+                "url": "bandaitcgplusURL/setID/e_setID_cardIDp.png",
+                "cards": {
+                    "BT8-008": "",
+                    "BT8-009": "",
+                    "BT8-012": "",
+                    "BT8-026": "",
+                    "BT8-032": "",
+                    "BT8-033": "",
+                    "BT8-038": "",
+                    "BT8-039": "",
+                    "BT8-051": "",
+                    "BT8-057": "",
+                    "BT8-060": "",
+                    "BT8-069": "",
+                    "BT8-070": "",
+                    "BT8-082": "",
+                    "BT8-083": "",
+                    "BT8-084": "",
+                    "BT8-085": "",
+                    "BT8-087": "",
+                    "BT8-088": "",
+                    "BT8-089": "",
+                    "BT8-090": "",
+                    "BT8-091": "",
+                    "BT8-111": "",
+                    "BT8-112": "",
+                }
+            },
+            {
+                "url": "bandaitcgplusURL/P/e_P-cardID_d.png",
+                "cards": {
+                    "P-047": "",
+                    "P-048": "",
+                }
+            }
+        ]
+    },
+    // Booster Digital Hazard [EX2]
+    {
+        "id": "EX2",
+        "name": "Booster Digital Hazard [EX2]",
+        "release": "June 24, 2022",
+        "total": 74,
+        "url": "bandaitcgplusURL/setID/setID-cardID_dummy.jpg",
+        "add_zero": 3,
+        "specific": {
+            "url": "bandaitcgplusURL/setID/setID-cardIDP_dummy.png",
+            "cards": {
+                "EX2-002": "",
+            }
+        },
+        "alternatives": [
+            {
+                "url": "bandaitcgplusURL/setID/setID-cardIDP_dummy.png",
+                "cards": {
+                    // "EX1-001": "",
+                }
+            },
+            {
+                "url": "digimoncardURL/setID/e_cardNumberP_D.png",
+                // "https://s3.amazonaws.com/prod.bandaitcgplus.files.api/card_image/DG-EN/EX2/e_ST10-06P_D.png"
+                "cards": {
+                    "ST9-06": "",
+                    "ST10-06": "",
+                }
+            }
+        ],
     },
     // Promotion Pack Ver.0.0
     {
@@ -501,6 +586,21 @@ const sets = [
             "P-032": "",
             "P-033": "",
             "P-034": "",
+        },
+    },
+    // First Anniversary Promo Pack
+    {
+        "id": null,
+        "name": "First Anniversary Promo Pack",
+        "release": "October 15, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "cards": {
+            "P-035": "",
+            "P-036": "",
+            "P-037": "",
+            "P-038": "",
+            "P-039": "",
+            "P-040": "",
         },
     },
     // 1-Year Anniversary Promo Pack
