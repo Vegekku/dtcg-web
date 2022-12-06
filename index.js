@@ -2,18 +2,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const setButtons = document.getElementById('setButtons');
     const setLists = document.getElementById('setLists');
 
-    const getImageUrlFromBandai = (url, setID, cardID, parallel = null) => {
+    const getImageUrl = (url, setID, cardID, parallel = null) => {
         const bandaitcgplusURL = 'https://s3.amazonaws.com/prod.bandaitcgplus.files.api/card_image/DG-EN';
         const digimoncardURL = 'https://world.digimoncard.com/images/cardlist/card';
+        const digimonCardDev = 'https://assets.cardlist.dev/images/communitycards';
         
         if ( url.includes('bandaitcgplusURL')) {
             var cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
-        } else {
+        } else if (url.includes('digimoncardURL')) {
             var cardUrl = url.replace('digimoncardURL', digimoncardURL);
+        } else {
+            var cardUrl = url.replace('digimonCardDev', digimonCardDev);
         }
         cardUrl = cardUrl.replaceAll('setID', setID);
         cardUrl = cardUrl.replace('cardID', cardID);
-        cardUrl = cardUrl.replace('cardNumber', cardID);
 
         if (null !== parallel) {
             cardUrl = cardUrl.replace('parallel', parallel);
@@ -23,23 +25,34 @@ document.addEventListener("DOMContentLoaded", function (event) {
     };
 
     const drawAlternatives = (setName, url, cards) => {
-        Object.entries(cards).forEach(card => {
-            const [cardNumber, parallel] = card;
-            const cardRow = document.getElementById(cardNumber);
-
-            if (cardRow !== null) {
-                const [setId, cardId] = cardNumber.split('-');
-                if ( Array.isArray( parallel )) {
-                    parallel.forEach(parallelElement => {
-                        const cardUrl = getImageUrlFromBandai(url, setId, cardId, parallelElement);
-                    cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setName}">`;
-                    });
-                } else {
-                    const cardUrl = getImageUrlFromBandai(url, setId, cardId, parallel);
+        if ( url === null ) {
+            Object.entries(cards).forEach(card => {
+                const [cardNumber, cardUrl] = card;
+                const cardRow = document.getElementById(cardNumber);
+    
+                if (cardRow !== null) {
                     cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setName}">`;
                 }
-            }
-        });
+            });
+        } else {
+            Object.entries(cards).forEach(card => {
+                const [cardNumber, parallel] = card;
+                const cardRow = document.getElementById(cardNumber);
+    
+                if (cardRow !== null) {
+                    const [setId, cardId] = cardNumber.split('-');
+                    if ( Array.isArray( parallel )) {
+                        parallel.forEach(parallelElement => {
+                            const cardUrl = getImageUrl(url, setId, cardId, parallelElement);
+                        cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setName}">`;
+                        });
+                    } else {
+                        const cardUrl = getImageUrl(url, setId, cardId, parallel);
+                        cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setName}">`;
+                    }
+                }
+            });
+        }
     };
 
     sets.forEach(setElement => {
@@ -68,10 +81,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 row.insertCell(1).innerHTML = 0;
 
                 if (setElement.url) {
-                    var cardUrl = getImageUrlFromBandai(setElement.url, setElement.id, cardNumber);
-                    if ( 'specific' in setElement && `${setElement.id}-${cardNumber}` in setElement.specific.cards ) {
-                        cardUrl = getImageUrlFromBandai(setElement.specific.url, setElement.id, cardNumber);
+                    var cardUrl = getImageUrl(setElement.url, setElement.id, cardNumber);
+                    if ( 'override' in setElement && `${setElement.id}-${cardNumber}` in setElement.override.cards ) {
+                        cardUrl = getImageUrl(setElement.override.url, setElement.id, cardNumber);
                     }
+
                     row.insertCell(2).innerHTML = `<img class="card" src="${cardUrl}" title="${setElement.name}">`;
                 } else {
                     row.insertCell(2).innerHTML = "";
@@ -81,17 +95,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
             // Draw table set
             setLists.appendChild(tableSet);
-
-            // Draw set alternatives
-            if (setElement.alternatives) {
-                if ( Array.isArray(setElement.alternatives) ){
-                    setElement.alternatives.forEach(alternative => {
-                        drawAlternatives(setElement.name, alternative.url, alternative.cards);
-                    });
-                } else {
-                    drawAlternatives(setElement.name, setElement.alternatives.url, setElement.alternatives.cards);
-                }
-            }
 
             // Add button
             const setButton = document.createElement('button');
