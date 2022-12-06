@@ -25,6 +25,7 @@ const sets = [
         },
     },
 
+    // January 29th,2021
     // Starter Deck GAIA RED [ST-1]
     {
         "id": "ST1",
@@ -55,6 +56,11 @@ const sets = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-3.php"
     },
+
+    // February 12, 2021
+    // 
+
+    // June 11, 2021
     // Starter Deck GIGA GREEN [ST-4]
     {
         "id": "ST4",
@@ -85,6 +91,8 @@ const sets = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-6.php"
     },
+
+    // October 15, 2021
     // Starter Deck GALLANTMON [ST-7]
     {
         "id": "ST7",
@@ -120,6 +128,8 @@ const sets = [
             "P-040": "",
         },
     },
+
+    // May 13, 2022
     // Starter Deck ULTIMATE ANCIENT DRAGON [ST-9]
     {
         "id": "ST9",
@@ -140,6 +150,8 @@ const sets = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-10.php"
     },
+
+    // October 14, 2022
     // Starter Deck JESMON [ST-12]
     {
         "id": "ST12",
@@ -319,6 +331,24 @@ const sets = [
         },
     },
 
+    // Official Tournament Pack Vol.1
+    {
+        "id": null,
+        "name": "Official Tournament Pack Vol.1",
+        "release": "October, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "cards": {
+            "P-013": "",
+            "P-014": "",
+            "P-015": "",
+            "P-016": "",
+            "P-017": "",
+            "P-018": "",
+            "P-019": "",
+            "P-020": "",
+        },
+    },
+
     // Booster Great Legend [BT4]
     {
         "id": "BT4",
@@ -414,8 +444,8 @@ const sets = [
             "BT5-019": "P1",
             "BT5-081": ["P1", "P2"],
             "BT5-085": "P1",
-            "BT5-086": ["P1","P2","P3","P4"],
-            "BT5-087": ["P1","P2"],
+            "BT5-086": ["P1", "P2", "P3", "P4"],
+            "BT5-087": ["P1", "P2"],
             "BT5-111": "P1",
             "BT5-112": "P1",
         },
@@ -842,12 +872,12 @@ const sets = [
         "release": "July 29, 2022",
         "url": "bandaitcgplusURL/setID/e_setID-cardID_Dparallel.png",
         "cards": {
-            "P-072": ["","_horo"],
-            "P-073": ["","_horo"],
-            "P-074": ["","_horo"],
-            "P-075": ["","_horo"],
-            "P-076": ["","_horo"],
-            "P-077": ["","_horo"],
+            "P-072": ["", "_horo"],
+            "P-073": ["", "_horo"],
+            "P-074": ["", "_horo"],
+            "P-075": ["", "_horo"],
+            "P-076": ["", "_horo"],
+            "P-077": ["", "_horo"],
         },
     },
 
@@ -953,23 +983,65 @@ const sets = [
         },
     },
 
-    // Official Tournament Pack Vol.1
+    // Booster Draconic Roar [EX3]
     {
-        "id": null,
-        "name": "Official Tournament Pack Vol.1",
-        "release": "October, 2021",
-        "url": "bandaitcgplusURL/setID/setID-cardID.png",
-        "cards": {
-            "P-013": "",
-            "P-014": "",
-            "P-015": "",
-            "P-016": "",
-            "P-017": "",
-            "P-018": "",
-            "P-019": "",
-            "P-020": "",
+        "id": "EX3",
+        "name": "Booster Draconic Roar [EX3]",
+        "release": "November 11, 2022",
+        "total": 74,
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
+        "add_zero": 3,
+        "override": {
+            "url": "bandaitcgplusURL/setID/setID-cardID_D.png",
+            "cards": {
+                "EX3-013": ""
+            }
         },
     },
+    // Booster Draconic Roar [EX3] - Alternatives
+    {
+        "id": null,
+        "name": "Booster Draconic Roar [EX3] - Alternatives",
+        "release": "November 11, 2022",
+        "url": "bandaitcgplusURL/setID/e_setID-cardIDp_D.png",
+        "cards": {
+            "EX3-012": "",
+            "EX3-013": "",
+            "EX3-014": "",
+            "EX3-024": "",
+            "EX3-025": "",
+            "EX3-026": "",
+            "EX3-035": "",
+            "EX3-036": "",
+            "EX3-037": "",
+            "EX3-044": "",
+            "EX3-045": "",
+            "EX3-053": "",
+            "EX3-054": "",
+            "EX3-063": "",
+            "EX3-064": "",
+            "EX3-065": "",
+            "EX3-073": "",
+            "EX3-074": "",
+        },
+    },
+    // Booster Draconic Roar [EX3] - Box Topper
+    {
+        "id": null,
+        "name": "Booster Draconic Roar [EX3] - Box Topper",
+        "release": "November 11, 2022",
+        "url": null,
+        "cards": {
+            "BT3-111": "https://assets.cardlist.dev/images/communitycards/BT3-111_b69739en-US.jpg",
+            // "EX3-10": "",
+            // "EX3-20": "",
+            // "EX3-31": "",
+            // "EX3-41": "",
+            // "EX3-49": "",
+            // "EX3-61": "",
+        },
+    },
+
     // Event Pack 1
     {
         "id": null,
