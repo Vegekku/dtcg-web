@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
             // Add button
             const setButton = document.createElement('button');
+            setButton.title = setElement.name;
             setButton.value = setElement.id;
             setButton.innerText = setElement.id;
             setButton.addEventListener('click', (element, event) => {
