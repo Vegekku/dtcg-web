@@ -25,7 +25,7 @@ const sets = [
         },
     },
 
-    // January 29th,2021
+// January 29th,2021
     // Starter Deck GAIA RED [ST-1]
     {
         "id": "ST1",
@@ -55,122 +55,6 @@ const sets = [
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-3.php"
-    },
-
-    // February 12, 2021
-    // 
-
-    // June 11, 2021
-    // Starter Deck GIGA GREEN [ST-4]
-    {
-        "id": "ST4",
-        "name": "Starter Deck GIGA GREEN [ST-4]",
-        "release": "June 11, 2021",
-        "total": 16,
-        "url": "bandaitcgplusURL/setID/setID-cardID.png",
-        "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-4.php"
-    },
-    // Starter Deck MACHINE BLACK [ST-5]
-    {
-        "id": "ST5",
-        "name": "Starter Deck MACHINE BLACK [ST-5]",
-        "release": "June 11, 2021",
-        "total": 16,
-        "url": "bandaitcgplusURL/setID/setID-cardID.png",
-        "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-5.php"
-    },
-    // Starter Deck VENOMOUS VIOLET [ST-6]
-    {
-        "id": "ST6",
-        "name": "Starter Deck VENOMOUS VIOLET [ST-6]",
-        "release": "June 11, 2021",
-        "total": 16,
-        "url": "bandaitcgplusURL/setID/setID-cardID.png",
-        "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-6.php"
-    },
-
-    // October 15, 2021
-    // Starter Deck GALLANTMON [ST-7]
-    {
-        "id": "ST7",
-        "name": "Starter Deck GALLANTMON [ST-7]",
-        "release": "October 15, 2021",
-        "total": 12,
-        "url": "bandaitcgplusURL/setID/setID-cardID.png",
-        "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-7.php"
-    },
-    // Starter Deck ULFORCEVEEDRAMON [ST-8]
-    {
-        "id": "ST8",
-        "name": "Starter Deck ULFORCEVEEDRAMON [ST-8]",
-        "release": "October 15, 2021",
-        "total": 12,
-        "url": "bandaitcgplusURL/setID/setID-cardID.png",
-        "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-8.php"
-    },
-    // First Anniversary Promo Pack
-    {
-        "id": null,
-        "name": "First Anniversary Promo Pack",
-        "release": "October 15, 2021",
-        "url": "bandaitcgplusURL/setID/setID-cardID.png",
-        "cards": {
-            "P-035": "",
-            "P-036": "",
-            "P-037": "",
-            "P-038": "",
-            "P-039": "",
-            "P-040": "",
-        },
-    },
-
-    // May 13, 2022
-    // Starter Deck ULTIMATE ANCIENT DRAGON [ST-9]
-    {
-        "id": "ST9",
-        "name": "Starter Deck ULTIMATE ANCIENT DRAGON [ST-9]",
-        "release": "May 13, 2022",
-        "total": 16,
-        "url": "bandaitcgplusURL/setID/e_ST09_cardID_D.jpg",
-        "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-9.php"
-    },
-    // Starter Deck PARALLEL WORLD TACTICIAN [ST-10]
-    {
-        "id": "ST10",
-        "name": "Starter Deck PARALLEL WORLD TACTICIAN [ST-10]",
-        "release": "May 13, 2022",
-        "total": 16,
-        "url": "bandaitcgplusURL/setID/e_setID_cardID_D.jpg",
-        "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-10.php"
-    },
-
-    // October 14, 2022
-    // Starter Deck JESMON [ST-12]
-    {
-        "id": "ST12",
-        "name": "Starter Deck JESMON [ST-12]",
-        "release": "October 14, 2022",
-        "total": 16,
-        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
-        "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-12.php"
-    },
-    // Starter Deck RagnaLoardmon [ST-13]
-    {
-        "id": "ST13",
-        "name": "Starter Deck RagnaLoardmon [ST-13]",
-        "release": "October 14, 2022",
-        "total": 16,
-        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
-        "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-13.php"
     },
 
     // Booster New Evolution [BT1]
@@ -274,6 +158,8 @@ const sets = [
         },
     },
 
+// February 12, 2021
+    // RELEASE SPECIAL BOOSTER Ver.1.0 [BT01-03]
     // Special Box Promotion Pack
     {
         "id": null,
@@ -303,6 +189,9 @@ const sets = [
             "BT2-066": "P1"
         },
     },
+
+// March 12, 2021
+    // RELEASE SPECIAL BOOSTER Ver.1.5 [BT01-03]
     // Dash Pack Ver. 1.5
     {
         "id": null,
@@ -331,22 +220,36 @@ const sets = [
         },
     },
 
-    // Official Tournament Pack Vol.1
+// June 11, 2021
+    // Starter Deck GIGA GREEN [ST-4]
     {
-        "id": null,
-        "name": "Official Tournament Pack Vol.1",
-        "release": "October, 2021",
+        "id": "ST4",
+        "name": "Starter Deck GIGA GREEN [ST-4]",
+        "release": "June 11, 2021",
+        "total": 16,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
-        "cards": {
-            "P-013": "",
-            "P-014": "",
-            "P-015": "",
-            "P-016": "",
-            "P-017": "",
-            "P-018": "",
-            "P-019": "",
-            "P-020": "",
-        },
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-4.php"
+    },
+    // Starter Deck MACHINE BLACK [ST-5]
+    {
+        "id": "ST5",
+        "name": "Starter Deck MACHINE BLACK [ST-5]",
+        "release": "June 11, 2021",
+        "total": 16,
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-5.php"
+    },
+    // Starter Deck VENOMOUS VIOLET [ST-6]
+    {
+        "id": "ST6",
+        "name": "Starter Deck VENOMOUS VIOLET [ST-6]",
+        "release": "June 11, 2021",
+        "total": 16,
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-6.php"
     },
 
     // Booster Great Legend [BT4]
@@ -425,6 +328,7 @@ const sets = [
         },
     },
 
+// August 6, 2021
     // Booster Battle of Omni [BT5]
     {
         "id": "BT5",
@@ -463,6 +367,62 @@ const sets = [
             "BT5-091": "P1",
             "BT5-092": "P1",
             "BT5-093": "P1",
+        },
+    },
+
+// October, 2021
+    // Official Tournament Pack Vol.1
+    {
+        "id": null,
+        "name": "Official Tournament Pack Vol.1",
+        "release": "October, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "cards": {
+            "P-013": "",
+            "P-014": "",
+            "P-015": "",
+            "P-016": "",
+            "P-017": "",
+            "P-018": "",
+            "P-019": "",
+            "P-020": "",
+        },
+    },
+
+// October 15, 2021
+    // Starter Deck GALLANTMON [ST-7]
+    {
+        "id": "ST7",
+        "name": "Starter Deck GALLANTMON [ST-7]",
+        "release": "October 15, 2021",
+        "total": 12,
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-7.php"
+    },
+    // Starter Deck ULFORCEVEEDRAMON [ST-8]
+    {
+        "id": "ST8",
+        "name": "Starter Deck ULFORCEVEEDRAMON [ST-8]",
+        "release": "October 15, 2021",
+        "total": 12,
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-8.php"
+    },
+    // First Anniversary Promo Pack
+    {
+        "id": null,
+        "name": "First Anniversary Promo Pack",
+        "release": "October 15, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "cards": {
+            "P-035": "",
+            "P-036": "",
+            "P-037": "",
+            "P-038": "",
+            "P-039": "",
+            "P-040": "",
         },
     },
 
@@ -553,6 +513,7 @@ const sets = [
         },
     },
 
+// December 10, 2021
     // Booster Classic Collection [EX1]
     {
         "id": "EX1",
@@ -612,6 +573,7 @@ const sets = [
         },
     },
 
+// March 4, 2022
     // Booster Next Adventure [BT7]
     {
         "id": "BT7",
@@ -685,6 +647,28 @@ const sets = [
         },
     },
 
+// May 13, 2022
+    // Starter Deck ULTIMATE ANCIENT DRAGON [ST-9]
+    {
+        "id": "ST9",
+        "name": "Starter Deck ULTIMATE ANCIENT DRAGON [ST-9]",
+        "release": "May 13, 2022",
+        "total": 16,
+        "url": "bandaitcgplusURL/setID/e_ST09_cardID_D.jpg",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-9.php"
+    },
+    // Starter Deck PARALLEL WORLD TACTICIAN [ST-10]
+    {
+        "id": "ST10",
+        "name": "Starter Deck PARALLEL WORLD TACTICIAN [ST-10]",
+        "release": "May 13, 2022",
+        "total": 16,
+        "url": "bandaitcgplusURL/setID/e_setID_cardID_D.jpg",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-10.php"
+    },
+
     // Booster New Awakening [BT8]
     {
         "id": "BT8",
@@ -748,6 +732,7 @@ const sets = [
         },
     },
 
+// June 24, 2022
     // Booster Digital Hazard [EX2]
     {
         "id": "EX2",
@@ -814,6 +799,7 @@ const sets = [
         },
     },
 
+// July 29, 2022
     // Booster X Record [BT9]
     {
         "id": "BT9",
@@ -879,6 +865,28 @@ const sets = [
             "P-076": ["", "_horo"],
             "P-077": ["", "_horo"],
         },
+    },
+
+// October 14, 2022
+    // Starter Deck JESMON [ST-12]
+    {
+        "id": "ST12",
+        "name": "Starter Deck JESMON [ST-12]",
+        "release": "October 14, 2022",
+        "total": 16,
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-12.php"
+    },
+    // Starter Deck RagnaLoardmon [ST-13]
+    {
+        "id": "ST13",
+        "name": "Starter Deck RagnaLoardmon [ST-13]",
+        "release": "October 14, 2022",
+        "total": 16,
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-13.php"
     },
 
     // Booster Xros Encounter [BT10]
@@ -982,7 +990,8 @@ const sets = [
             "BT8-067": "3c9d1a",
         },
     },
-
+    
+// November 11, 2022
     // Booster Draconic Roar [EX3]
     {
         "id": "EX3",
