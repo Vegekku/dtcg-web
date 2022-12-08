@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-    const setButtons = document.getElementById('setButtons');
+    const boosterButtons = document.getElementById('boosterButtons');
+    const starterButtons = document.getElementById('starterButtons');
+    const otherButtons = document.getElementById('otherButtons');
     const setLists = document.getElementById('setLists');
 
     const getImageUrl = (url, setID, cardID, parallel = null) => {
@@ -110,7 +112,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     tableSet.style.display = "none";
                 }
             });
-            setButtons.appendChild(setButton);
+
+            if ( setElement.id.startsWith('BT') ) {
+                boosterButtons.appendChild(setButton);
+            } else if ( setElement.id.startsWith('ST') ) {
+                starterButtons.appendChild(setButton);
+            } else {
+                otherButtons.appendChild(setButton);
+            }
         } else {
             drawAlternatives(setElement.name, setElement.url, setElement.cards);
         }
