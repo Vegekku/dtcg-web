@@ -362,6 +362,27 @@ const sets = [
         },
     },
 
+// February, 2021
+    // Tamer's Evolution Box [PB-01]
+    {
+        "id": null,
+        "name": "Tamer's Evolution Box [PB-01]",
+        "release": "February, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "ST1-13": "P1",
+            "ST1-16": "P1",
+            "ST2-13": "P1",
+            "ST2-16": "P1",
+            "ST3-13": "P1",
+            "ST3-14": "P1",
+            "BT1-108": "P1",
+            "BT1-110": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/evolution-box.php"
+
+    },
+
 // March 12, 2021
     // Release Special Booster Ver.1.5 [BT01-03]
     {
@@ -585,6 +606,19 @@ const sets = [
             "P-023": "",
             "P-024": "",
         },
+    },
+
+// May 28th, 2021
+    // Premium Pack Set 01
+    {
+        "id": null,
+        "name": "Premium Pack Set 01",
+        "release": "May 28th, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "BT2-038": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/premium_pack.php"
     },
 
 // June 11, 2021
@@ -1014,6 +1048,27 @@ const sets = [
         },
     },
 
+// May, 2022
+    // Tamer's Evolution Box2 [PB-06]
+    {
+        "id": null,
+        "name": "Tamer's Evolution Box2 [PB-06]",
+        "release": "February, 2021",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "BT2-033": "8f5499",
+            "BT3-047": "a4198b",
+            "BT4-011": "daf5da",
+            "BT5-009": "1de00b",
+            "EX1-013": "30d056",
+            "EX1-071": "39f0e0",
+            "P-001": "6e2082",
+            "ST7-03": "d7cf43",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/evolution-box2.php"
+
+    },
+
 // May 13, 2022
     // Starter Deck ULTIMATE ANCIENT DRAGON [ST-9]
     {
@@ -1166,6 +1221,27 @@ const sets = [
         },
     },
 
+// June, 2022
+    // Playmat and Card Set 1 -Digimon Tamers [PB-08]
+    {
+        "id": null,
+        "name": "Playmat and Card Set 1 -Digimon Tamers [PB-08]",
+        "release": "June, 2021",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "BT1-035": "913866",
+            "BT2-009": "66dcd2",
+            "BT2-068": "5e6f62",
+            "BT3-046": "d9ac05",
+            "BT3-057": "16e33c",
+            "BT5-036": "fc6be2",
+            "BT5-044": "25fe61",
+            "ST7-09": "cd9977",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/playmat_digimon-tamers.php"
+
+    },
+
 // July 29, 2022
     // Booster X Record [BT9]
     {
@@ -1254,6 +1330,21 @@ const sets = [
         "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-13.php"
+    },
+    // Bonus Tamer Cards Pack
+    {
+        "id": null,
+        "name": "Bonus Tamer Cards Pack",
+        "release": "October 14, 2022",
+        "url": "bandaitcgplusURL/ST12/e_setID-cardIDparallel.png",
+        "cards": {
+            "ST1-12": "P_D",
+            "ST3-12": "P_D",
+            "ST6-14": "P_D",
+            "BT3-093": "P_D",
+            "BT3-094": "P_D",
+            "BT4-096": "P2_D",
+        },
     },
 
     // Booster Xros Encounter [BT10]
