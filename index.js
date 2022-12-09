@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const setLists = document.getElementById('setLists');
 
     const getImageUrl = (url, setID, cardID, parallel = null) => {
+        const noCardURL = 'https://assets.cardlist.dev/other/2020_card_backstage_design.jpg';
+
+        if ( url === 'noCardURL' ) {
+            return noCardURL;
+        }
+
         const bandaitcgplusURL = 'https://s3.amazonaws.com/prod.bandaitcgplus.files.api/card_image/DG-EN';
         const digimoncardURL = 'https://world.digimoncard.com/images/cardlist/card';
         const digimonCardDev = 'https://assets.cardlist.dev/images/communitycards';
