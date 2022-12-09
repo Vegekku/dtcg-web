@@ -1222,10 +1222,10 @@ const sets = [
     },
 
 // June, 2022
-    // Playmat and Card Set 1 -Digimon Tamers [PB-08]
+    // Playmat and Card Set 1 Digimon Tamers [PB-08]
     {
         "id": null,
-        "name": "Playmat and Card Set 1 -Digimon Tamers [PB-08]",
+        "name": "Playmat and Card Set 1 Digimon Tamers [PB-08]",
         "release": "June, 2021",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
         "cards": {
@@ -1308,6 +1308,55 @@ const sets = [
             "P-076": ["", "_horo"],
             "P-077": ["", "_horo"],
         },
+    },
+
+// September, 2022
+    // Playmat and Card Set 2 Floral Fun [PB-09]
+    {
+        "id": null,
+        "name": "Playmat and Card Set 2 Floral Fun [PB-09]",
+        "release": "September, 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "BT1-010": "1f9279",
+            "BT1-029": "0dd598",
+            "BT2-036": "d6b39b",
+            "P-004": "76864f",
+            "ST1-02": "72175e",
+            "ST3-04": "29a21c",
+            "ST4-03": "1558cc",
+            "ST4-04": "c9fe76",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/playmat_floral-fun.php"
+    },
+
+// September 30, 2022
+    // Premium Deck Set [PD-01]
+    {
+        "id": null,
+        "name": "Premium Deck Set [PD-01]",
+        "release": "September 30, 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "BT6-093": "3711d4",
+            "BT6-109": "8e292a",
+            "BT7-106": "04c63d",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/premium-deck-set.php"
+    },
+    // Premium Deck Set Lucky Pack [PD-01]
+    {
+        "id": null,
+        "name": "Premium Deck Set Lucky Pack [PD-01]",
+        "release": "September 30, 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "BT6-021": "b6de74",
+            "EX1-008": "ecf97b",
+            "EX1-049": "2a4cd0",
+            "P-020": "1ce0e2",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/premium-deck-set.php"
     },
 
 // October 14, 2022
@@ -1448,6 +1497,22 @@ const sets = [
             "BT8-067": "3c9d1a",
         },
     },
+
+// November 4, 2022
+    // Gift Box 2022
+    {
+        "id": null,
+        "name": "Gift Box 2022",
+        "release": "November 4, 2022",
+        "url": "https://product-images.tcgplayer.com/fit-in/874x874/parallel.jpg",
+        "cards": {
+            "P-008": "451111",
+            "P-009": "451112",
+            "P-016": "451113",
+            "P-033": "451114",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/gift_box_2022.php"
+    },
     
 // November 11, 2022
     // Booster Draconic Roar [EX3]
@@ -1500,12 +1565,12 @@ const sets = [
         "url": null,
         "cards": {
             "BT3-111": "https://assets.cardlist.dev/images/communitycards/BT3-111_b69739en-US.jpg",
-            // "EX3-10": "",
-            // "EX3-20": "",
-            // "EX3-31": "",
-            // "EX3-41": "",
-            // "EX3-49": "",
-            // "EX3-61": "",
+            "EX3-010": "https://product-images.tcgplayer.com/fit-in/874x874/452976.jpg",
+            "EX3-020": "https://product-images.tcgplayer.com/fit-in/874x874/452980.jpg",
+            "EX3-031": "https://product-images.tcgplayer.com/fit-in/874x874/452984.jpg",
+            "EX3-041": "https://product-images.tcgplayer.com/fit-in/874x874/452988.jpg",
+            "EX3-049": "https://product-images.tcgplayer.com/fit-in/874x874/452991.jpg",
+            "EX3-061": "https://product-images.tcgplayer.com/fit-in/874x874/452994.jpg",
         },
     },
 
@@ -1535,5 +1600,89 @@ const sets = [
             "BT4-088": "P2",
             "BT5-045": "P1",
         }
-    }
+    },
+
+// March, 2023
+    // 2nd Anniversary Set [PB-12E]
+    {
+        "id": null,
+        "name": "2nd Anniversary Set [PB-12E]",
+        "release": "March, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT1-025": "",
+            "BT1-060": "",
+            "BT1-084": "",
+            "BT1-107": "",
+            "BT3-031": "",
+            "BT3-075": "",
+            "BT3-091": "",
+            "BT3-105": "",
+            "P-001": "",
+            "P-002": "",
+            "P-003": "",
+            "P-004": "",
+            "P-005": "",
+            "P-006": "",
+            "P-029": "",
+            "P-030": "",
+            "BT7-021": "",
+            "BT7-035": "",
+            "BT7-046": "",
+            "BT7-071": "",
+            "BT7-080": "",
+            "BT7-081": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/2nd-anniversary-set.php"
+    },
+
+// June, 2023
+    // Royal Knights Binder Set [PB13]
+    {
+        "id": null,
+        "name": "Royal Knights Binder Set [PB13]",
+        "release": "March, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT5-007": "",
+            "BT5-020": "",
+            "ST9-02": "",
+            "P-041": "",
+            "P-043": "",
+            "BT9-068": "",
+            "ST8-03": "",
+            "BT6-009": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/royal_knights_binderset.php"
+    },
+
+    // Deck Box Set / Beelzemon
+    {
+        "id": null,
+        "name": "Deck Box Set / Beelzemon",
+        "release": "June, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT3-057": "",
+            "BT5-044": "",
+            "BT5-083": "",
+            "BT6-017": "",
+            "BT6-065": "",
+            "EX2-045": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/deck-box-set_beelzemon.php"
+    },
+
+    // Tamer Goods Set Angewomon & LadyDevimon [PB14]
+    {
+        "id": null,
+        "name": "Tamer Goods Set Angewomon & LadyDevimon [PB14]",
+        "release": "June, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "ST10-05": "",
+            "ST10-12": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/tamer-goods-set_PB14.php"
+    },
 ];
