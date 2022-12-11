@@ -66,11 +66,40 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     };
 
+    const addButton = (set) => {
+        const setButton = document.createElement('button');
+        setButton.title = set.name;
+        setButton.value = set.id;
+        setButton.innerText = set.id;
+        setButton.addEventListener('click', (element, event) => {
+            const tableSet = document.getElementById(element.target.value);
+            document.querySelectorAll('table').forEach(table => table.style.display = 'none');
+            if (tableSet.style.display === "none") {
+                tableSet.style.display = "block";
+            } else {
+                tableSet.style.display = "none";
+            }
+
+            // add set id to URL
+            window.location.hash = set.id;
+        });
+
+        if ( set.id.startsWith('BT') ) {
+            boosterButtons.appendChild(setButton);
+        } else if ( set.id.startsWith('ST') ) {
+            starterButtons.appendChild(setButton);
+        } else {
+            otherButtons.appendChild(setButton);
+        }
+    }
+
     sets.forEach(setElement => {
         if (setElement.id !== null) {
             const tableSet = document.createElement('table');
             tableSet.id = setElement.id;
-            tableSet.style.display = "none";
+            if (window.location.hash !== `#${setElement.id}`) {
+                tableSet.style.display = "none";
+            }
 
             // Header
             const tHead = tableSet.createTHead();
@@ -107,28 +136,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             // Draw table set
             setLists.appendChild(tableSet);
 
-            // Add button
-            const setButton = document.createElement('button');
-            setButton.title = setElement.name;
-            setButton.value = setElement.id;
-            setButton.innerText = setElement.id;
-            setButton.addEventListener('click', (element, event) => {
-                const tableSet = document.getElementById(element.target.value);
-                document.querySelectorAll('table').forEach(table => table.style.display = 'none');
-                if (tableSet.style.display === "none") {
-                    tableSet.style.display = "block";
-                } else {
-                    tableSet.style.display = "none";
-                }
-            });
-
-            if ( setElement.id.startsWith('BT') ) {
-                boosterButtons.appendChild(setButton);
-            } else if ( setElement.id.startsWith('ST') ) {
-                starterButtons.appendChild(setButton);
-            } else {
-                otherButtons.appendChild(setButton);
-            }
+            addButton(setElement);
         } else {
             drawAlternatives(setElement.name, setElement.url, setElement.cards);
         }
