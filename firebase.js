@@ -41,28 +41,12 @@ const sets = [
         "info_url": null
     },
 
-    // Promotion Pack Ver.0.0
-    {
-        "id": null,
-        "name": "Promotion Pack Ver.0.0",
-        "release": null,
-        "url": "bandaitcgplusURL/setID/setID-cardID.png",
-        "cards": {
-            "P-001": "",
-            "P-002": "",
-            "P-003": "",
-            "P-004": "",
-            "P-005": "",
-            "P-006": ""
-        },
-    },
-
-// January 29th,2021
+// January 29th, 2021
     // Starter Deck GAIA RED [ST-1]
     {
         "id": "ST1",
         "name": "Starter Deck GAIA RED [ST-1]",
-        "release": "January 29th,2021",
+        "release": "January 29th, 2021",
         "total": 16,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
@@ -72,7 +56,7 @@ const sets = [
     {
         "id": "ST2",
         "name": "Starter Deck COCYTUS BLUE [ST-2]",
-        "release": "January 29th,2021",
+        "release": "January 29th, 2021",
         "total": 16,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
@@ -82,11 +66,24 @@ const sets = [
     {
         "id": "ST3",
         "name": "Starter Deck HEAVEN'S YELLOW [ST-3]",
-        "release": "January 29th,2021",
+        "release": "January 29th, 2021",
         "total": 16,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-3.php"
+    },
+    // Tamer Party Vol.1
+    {
+        "id": null,
+        "name": "Tamer Party Vol.1",
+        "release": "January 29th, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "ST1-07": "P1",
+            "ST2-06": "P1",
+            "ST3-05": "P1",
+        },
+        "info_url": "https://digimoncardgame.fandom.com/wiki/Tamer_Party"
     },
 
 // February 12, 2021
@@ -383,6 +380,24 @@ const sets = [
 
     },
 
+// March 2021    
+    // Promotion Pack Ver.0.0
+    {
+        "id": null,
+        "name": "Promotion Pack Ver.0.0",
+        "release": "March 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "cards": {
+            "P-001": "",
+            "P-002": "",
+            "P-003": "",
+            "P-004": "",
+            "P-005": "",
+            "P-006": ""
+        },
+        "info_url": "https://world.digimoncard.com/event/online_event_mar2021/"
+    },
+
 // March 12, 2021
     // Release Special Booster Ver.1.5 [BT01-03]
     {
@@ -621,6 +636,20 @@ const sets = [
         "info_url": "https://world.digimoncard.com/products/goods/premium_pack.php"
     },
 
+// June 4-10, 2021
+    // Great Legend (BT-04) Pre-Release Tournaments
+    {
+        "id": null,
+        "name": "Great Legend (BT-04) Pre-Release Tournaments",
+        "release": "June 4-10, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardIDparallel.png",
+        "cards": {
+            "P-028": "",
+            "ST3-08": "_P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-04/"
+    },
+
 // June 11, 2021
     // Starter Deck GIGA GREEN [ST-4]
     {
@@ -729,6 +758,49 @@ const sets = [
         },
     },
 
+// June 2021
+    // Tamer Party Vol.2
+    {
+        "id": null,
+        "name": "Tamer Party Vol.2",
+        "release": "June 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "ST1-08": "P1",
+            "ST2-08": "P2",
+            "BT1-079": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/tamer_party/"
+    },
+
+// July 30-August 5, 2021
+    // Battle of Omni (BT-05) Pre-Release Tournaments
+    {
+        "id": null,
+        "name": "Battle of Omni (BT-05) Pre-Release Tournaments",
+        "release": "July 30-August 5, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "BT2-077": "P1",
+            "BT2-028": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-05/"
+    },
+
+// July 2021
+    // July Evolution Cup
+    {
+        "id": null,
+        "name": "July Evolution Cup",
+        "release": "July 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "ST1-03": "P1",
+            "BT1-084": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/evolution_cup_july2021/"
+    },
+
 // August 6, 2021
     // Booster Battle of Omni [BT5]
     {
@@ -770,8 +842,100 @@ const sets = [
             "BT5-093": "P1",
         },
     },
+    // June Premier TO events
+    {
+        "id": null,
+        "name": "June Premier TO events",
+        "release": "June 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "BT5-001": "P1",
+            "BT5-010": "P1",
+            "ST1-11": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/online_event_june2021/"
+    },
+    // Event Pack 1
+    {
+        "id": null,
+        "name": "Event Pack 1",
+        "release": "July 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "ST1-02": "P1",
+            "ST1-06": "P1",
+            "ST1-11": "P2",
+            "ST2-02": "P1",
+            "ST2-07": "P1",
+            "ST2-11": "P1",
+            "ST3-02": "P1",
+            "ST3-07": "P1",
+            "BT1-064": "P1",
+            "BT1-072": "P1",
+            "BT1-077": "P1",
+            "BT2-072": "P1",
+            "BT3-059": "P1",
+            "BT3-076": "P1",
+            "BT4-005": "P1",
+            "BT4-067": "P1",
+            "BT4-088": "P2",
+            "BT5-045": "P1",
+        }
+    },
 
-// October, 2021
+// August 2021
+    // 2021 Online Regionals Set
+    {
+        "id": null,
+        "name": "2021 Online Regionals Set",
+        "release": "August 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "ST1-03": ["P2", "P3", "P4"],
+            "ST4-08": ["P1", "P2", "P3"],
+            "ST6-08": ["P1", "P2", "P3"],
+            "BT2-066": ["P2", "P3", "P4"],
+            "BT4-090": ["P2", "P3", "P4"],
+            "BT5-042": ["P1", "P2", "P3"],
+        },
+        "info_url": "https://world.digimoncard.com/event/online_regionals/"
+    },
+
+// September 13 – October 17
+    // Store Champion Card Set
+    {
+        "id": null,
+        "name": "Store Champion Card Set",
+        "release": "September 13 – October 17",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "ST3-04": ["P1", "P2"],
+            "BT1-029": ["P2", "P3"],
+            "BT1-066": ["P1", "P2"],
+            "BT2-020": ["P2", "P3"],
+            "BT2-052": ["P1", "P2"],
+            "BT2-067": ["P1", "P2"],
+            "BT5-084": ["P1", "P2"],
+        },
+        "info_url": "https://world.digimoncard.com/event/store_championship/"
+    },
+
+// September 2021
+    // Tamer Party Vol.3
+    {
+        "id": null,
+        "name": "Tamer Party Vol.3",
+        "release": "September 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "BT1-015": "P1",
+            "BT1-045": "P1",
+            "BT2-053": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/tamer_party_03/"
+    },
+
+// October 2021
     // Official Tournament Pack Vol.1
     {
         "id": null,
@@ -788,6 +952,20 @@ const sets = [
             "P-019": "",
             "P-020": "",
         },
+    },
+
+// October 8, 2021
+    // Double Diamond (BT-06) Pre-Release Tournaments
+    {
+        "id": null,
+        "name": "Double Diamond (BT-06) Pre-Release Tournaments",
+        "release": "October 8, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "P-028": "P1",
+            "BT2-061": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-06/"
     },
 
 // October 15, 2021
@@ -972,6 +1150,104 @@ const sets = [
         "cards": {
             "BT2-065": "P2",
         },
+    },
+
+// January 2022
+    // 2021 Championship Finals Tamer‘s Evolution Pack
+    {
+        "id": null,
+        "name": "2021 Championship Finals Tamer‘s Evolution Pack",
+        "release": "January 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "ST1-13": "P2",
+            "ST1-16": "P3",
+            "ST2-13": "P3",
+            "ST2-16": "P2",
+            "ST3-13": "P2",
+            "ST3-14": "P2",
+            "BT1-108": "P2",
+            "BT1-110": "P3",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+    },
+    // Event Pack 2
+    {
+        "id": null,
+        "name": "Event Pack 2",
+        "release": "January 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "ST4-13": "P1",
+            "BT2-004": "P1",
+            "BT2-055": "P1",
+            "BT2-068": "P1",
+            "BT3-003": "P1",
+            "BT3-004": "P1",
+            "BT4-030": "P1",
+            "BT4-038": "P1",
+            "BT4-072": "P1",
+            "BT4-078": "P1",
+            "BT4-087": "P1",
+            "BT5-007": "P1",
+            "BT5-010": "P2",
+            "BT5-020": "P1",
+            "BT5-024": "P1",
+            "BT5-035": "P1",
+            "BT5-062": "P1",
+            "BT6-016": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+    },
+    // Event Pack Alt-Art Gold Stamp Set
+    {
+        "id": null,
+        "name": "Event Pack Alt-Art Gold Stamp Set",
+        "release": "January 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "ST1-11": "P3",
+            "ST2-11": "P2",
+            "BT1-077": "P2",
+            "BT4-005": "P2",
+            "BT4-088": "P3",
+            "BT5-045": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+    },
+    // Judge Pack
+    {
+        "id": null,
+        "name": "Judge Pack",
+        "release": "January 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "P-016": "P1",
+            "ST1-07": "P2",
+            "ST4-08": "P2",
+            "ST5-08": "P1",
+            "ST6-08": "P4",
+            "BT4-042": "P1",
+            "BT4-048": "P2",
+            "BT5-012": "P1",
+            "BT5-026": "P1",
+            "BT5-109": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+    },
+    // 2021 Final Championships - Framed Trophy Cards
+    {
+        "id": null,
+        "name": "2021 Final Championships - Framed Trophy Cards",
+        "release": "January 2022",
+        "url": "tcgPlayerURL/parallel.jpg",
+        "cards": {
+            "ST1-07": "263702",
+            "ST1-09": "263720",
+            "ST1-11": "263721",
+            "BT6-018": "263722",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
 
 // March 4, 2022
@@ -1504,7 +1780,7 @@ const sets = [
         "id": null,
         "name": "Gift Box 2022",
         "release": "November 4, 2022",
-        "url": "https://product-images.tcgplayer.com/fit-in/874x874/parallel.jpg",
+        "url": "tcgPlayerURL/parallel.jpg",
         "cards": {
             "P-008": "451111",
             "P-009": "451112",
@@ -1572,34 +1848,6 @@ const sets = [
             "EX3-049": "https://product-images.tcgplayer.com/fit-in/874x874/452991.jpg",
             "EX3-061": "https://product-images.tcgplayer.com/fit-in/874x874/452994.jpg",
         },
-    },
-
-    // Event Pack 1
-    {
-        "id": null,
-        "name": "Event Pack 1",
-        "release": null,
-        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
-        "cards": {
-            "ST1-02": "P1",
-            "ST1-06": "P1",
-            "ST1-11": "P2",
-            "ST2-02": "P1",
-            "ST2-07": "P1",
-            "ST2-11": "P1",
-            "ST3-02": "P1",
-            "ST3-07": "P1",
-            "BT1-064": "P1",
-            "BT1-072": "P1",
-            "BT1-077": "P1",
-            "BT2-072": "P1",
-            "BT3-059": "P1",
-            "BT3-076": "P1",
-            "BT4-005": "P1",
-            "BT4-067": "P1",
-            "BT4-088": "P2",
-            "BT5-045": "P1",
-        }
     },
 
 // March, 2023
