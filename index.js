@@ -14,11 +14,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
         const bandaitcgplusURL = 'https://s3.amazonaws.com/prod.bandaitcgplus.files.api/card_image/DG-EN';
         const digimoncardURL = 'https://world.digimoncard.com/images/cardlist/card';
         const digimonCardDev = 'https://assets.cardlist.dev/images/communitycards';
+        const tcgPlayerURL = 'https://product-images.tcgplayer.com/fit-in/874x874';
         
         if ( url.includes('bandaitcgplusURL')) {
             var cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
         } else if (url.includes('digimoncardURL')) {
             var cardUrl = url.replace('digimoncardURL', digimoncardURL);
+        } else if (url.includes('tcgPlayerURL')) {
+            var cardUrl = url.replace('tcgPlayerURL', tcgPlayerURL);
         } else {
             var cardUrl = url.replace('digimonCardDev', digimonCardDev);
         }
