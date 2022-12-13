@@ -1250,6 +1250,35 @@ const sets = [
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
 
+// February 2022
+    // Tamer Party Vol.4
+    {
+        "id": null,
+        "name": "Tamer Party Vol.4",
+        "release": "February 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT5-007": "P2",
+            "BT2-072": "P2",
+            "BT3-067": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/tamer_party_04/"
+    },
+
+// February 25, 2022
+    // Next Adventure (BT7) Pre-Release Tournaments
+    {
+        "id": null,
+        "name": "Next Adventure (BT7) Pre-Release Tournaments",
+        "release": "February 25, 2022",
+        "url": "bandaitcgplusURL/P/e_P-cardID_d.png",
+        "cards": {
+            "P-047": "",
+            "P-048": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-07/"
+    },
+
 // March 4, 2022
     // Booster Next Adventure [BT7]
     {
@@ -1322,6 +1351,70 @@ const sets = [
             "P-039": "P1",
             "P-040": "P1",
         },
+    },
+
+// March, 2022
+    // 2021 Vault Set
+    {
+        "id": null,
+        "name": "2021 Vault Set",
+        "release": "March, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "P-004": "P1",
+            "P-009": "P1",
+            "P-016": "P2",
+            "P-028": "P2",
+            "P-032": "P1",
+            "P-046": "P1",
+            "BT2-055": "P2",
+            "BT6-056": "P1",
+            "ST7-06": "P1",
+            "ST8-06": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/fest_2022/"
+    },
+    // Digi-Egg Set
+    {
+        "id": null,
+        "name": "Digi-Egg Set",
+        "release": "March, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT2-004": "P2",
+            "BT3-002": "P1",
+            "BT3-003": "P2",
+            "BT3-006": "P1",
+            "BT4-005": "P3",
+            "BT4-006": "P1",
+            "BT5-003": "P1",
+            "BT6-001": "P2",
+            "BT6-005": "P2",
+            "BT7-004": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/fest_2022/"
+    },
+    // Fest Stamp SR
+    {
+        "id": null,
+        "name": "Fest Stamp SR",
+        "release": "March, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT3-091": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/fest_2022/"
+    },
+    // Fest WINNER Stamp SR
+    {
+        "id": null,
+        "name": "Fest WINNER Stamp SR",
+        "release": "March, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT3-091": "P3",
+        },
+        "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
 
 // May, 2022
@@ -1428,6 +1521,26 @@ const sets = [
             "P-047": "",
             "P-048": "",
         },
+    },
+
+    // Fest Set
+    {
+        "id": null,
+        "name": "Fest Set",
+        "release": "March, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT1-062": "P1",
+            "BT2-051": "P1",
+            "BT4-074": "P1",
+            "BT5-032": "P1",
+            "BT6-009": "P1",
+            "BT6-077": "P1",
+            "BT7-110": "P1",
+            "BT8-008": "P1",
+            "BT8-086": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
 
 // June 24, 2022
