@@ -1235,17 +1235,47 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
-    // 2021 Final Championships - Framed Trophy Cards
+    // 2021 Final Championships Framed Trophy Cards - Top 16
     {
         "id": null,
-        "name": "2021 Final Championships - Framed Trophy Cards",
+        "name": "2021 Final Championships Framed Trophy Cards - Top 16",
         "release": "January 2022",
-        "url": "tcgPlayerURL/parallel.jpg",
+        "url": null,
         "cards": {
-            "ST1-07": "263702",
-            "ST1-09": "263720",
-            "ST1-11": "263721",
-            "BT6-018": "263722",
+            "ST1-07": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e2/ST1-07_P3.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+    },
+    // 2021 Final Championships Framed Trophy Cards - 3rd Place
+    {
+        "id": null,
+        "name": "2021 Final Championships Framed Trophy Cards - 3rd Place",
+        "release": "January 2022",
+        "url": null,
+        "cards": {
+            "ST1-09": "https://static.wikia.nocookie.net/digimoncardgame/images/f/f1/ST1-09_P3.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+    },
+    // 2021 Final Championships Framed Trophy Cards - 2nd Place
+    {
+        "id": null,
+        "name": "2021 Final Championships Framed Trophy Cards - 2nd Place",
+        "release": "January 2022",
+        "url": null,
+        "cards": {
+            "ST1-11": "https://static.wikia.nocookie.net/digimoncardgame/images/2/28/ST1-11_P4.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+    },
+    // 2021 Final Championships Framed Trophy Cards - 1st Place Champion
+    {
+        "id": null,
+        "name": "2021 Final Championships Framed Trophy Cards - 1st Place Champion",
+        "release": "January 2022",
+        "url": null,
+        "cards": {
+            "BT6-018": "https://static.wikia.nocookie.net/digimoncardgame/images/7/7c/BT6-018_P2.png",
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },

@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     if ( Array.isArray( parallel )) {
                         parallel.forEach(parallelElement => {
                             const cardUrl = getImageUrl(url, setId, cardId, parallelElement);
-                        cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setName}">`;
+                            cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setName}">`;
                         });
                     } else {
                         const cardUrl = getImageUrl(url, setId, cardId, parallel);
