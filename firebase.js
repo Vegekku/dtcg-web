@@ -1447,6 +1447,51 @@ const sets = [
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
 
+    // 2021 World Championship
+    {
+        "id": null,
+        "name": "2021 World Championship Participation",
+        "release": "March, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT3-112": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/world_championships2021/"
+    },
+    // 2021 World Championship 3rd Place
+    {
+        "id": null,
+        "name": "2021 World Championship Framed Trophy Cards - 3rd Place",
+        "release": "March, 2022",
+        "url": null,
+        "cards": {
+            "ST1-09": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c7/ST1-09_P4.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/world_championships2021/"
+    },
+    // 2021 World Championship 2nd Place
+    {
+        "id": null,
+        "name": "2021 World Championship Framed Trophy Cards - 2nd Place",
+        "release": "March, 2022",
+        "url": null,
+        "cards": {
+            "ST1-11": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fc/ST1-11_P5.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/world_championships2021/"
+    },
+    // 2021 World Championship 1st Place
+    {
+        "id": null,
+        "name": "2021 World Championship Framed Trophy Cards - 1st Place",
+        "release": "March, 2022",
+        "url": null,
+        "cards": {
+            "BT5-086": "https://static.wikia.nocookie.net/digimoncardgame/images/3/38/BT5-086_P5.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/world_championships2021/"
+    },
+
 // May, 2022
     // Tamer's Evolution Box2 [PB-06]
     {
@@ -1466,6 +1511,20 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/products/goods/evolution-box2.php"
 
+    },
+
+// May 6, 2022
+    // New Awakening (BT8) Pre-Release Tournaments
+    {
+        "id": null,
+        "name": "New Awakening (BT8) Pre-Release Tournaments",
+        "release": "May 6, 2022",
+        "url": "digimoncardURL/setID-cardIDparallel.png",
+        "cards": {
+            "P-058": "",
+            "BT5-007": "_P3",
+        },
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-08/"
     },
 
 // May 13, 2022
@@ -1573,6 +1632,24 @@ const sets = [
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
 
+    // Ultimate Cup
+    {
+        "id": null,
+        "name": "Ultimate Cup",
+        "release": "April, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT1-084": "P4",
+            "BT3-002": "P2",
+            "BT3-021": "P2",
+            "BT8-032": "P1",
+            "BT8-112": "P1",
+            "EX1-014": "P1",
+            "ST9-05": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/ultimate_cup/"
+    },
+
 // June 24, 2022
     // Booster Digital Hazard [EX2]
     {
@@ -1661,6 +1738,20 @@ const sets = [
 
     },
 
+    // Tamer Party Vol.5
+    {
+        "id": null,
+        "name": "Tamer Party Vol.5",
+        "release": "June 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT3-054": "P1",
+            "BT5-034": "P1",
+            "BT6-083": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/tamer_party_05/"
+    },
+
 // July 29, 2022
     // Booster X Record [BT9]
     {
@@ -1727,6 +1818,61 @@ const sets = [
             "P-076": ["", "_horo"],
             "P-077": ["", "_horo"],
         },
+    },
+
+// July, 2022
+    // 2022 Regionals Set
+    {
+        "id": null,
+        "name": "2022 Regionals Set",
+        "release": "July, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "ST8-04": ["P1", "P2", "P3"],
+            "BT4-084": ["P1", "P2", "P3"],
+            "BT6-038": ["P1", "P2", "P3"],
+            "BT6-048": ["P1", "P2", "P3"],
+            "BT7-081": ["P1", "P2", "P3"],
+            "EX1-007": ["P1", "P2", "P3"],
+            "EX1-048": ["P1", "P2", "P3"],
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals2022_220422/"
+    },
+
+// August, 2022
+    // Store Champion Card Set
+    {
+        "id": null,
+        "name": "Store Champion Card Set",
+        "release": "August, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "ST7-03": ["P2", "P3"],
+            "ST8-06": ["P1", "P2"],
+            "BT6-034": ["P1", "P2"],
+            "BT7-045": ["P1", "P2"],
+            "BT7-069": ["P1", "P2"],
+            "BT7-080": ["P1", "P2"],
+            "EX1-050": ["P1", "P2"],
+        },
+        "info_url": "https://world.digimoncard.com/event/store_championship_august/"
+    },
+    // 2022 Regionals Set 2
+    {
+        "id": null,
+        "name": "2022 Regionals Set 2",
+        "release": "July, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "ST7-06": ["P1", "P2", "P3"],
+            "ST9-05": ["P1", "P2", "P3"],
+            "BT5-071": ["P1", "P2", "P3"],
+            "BT7-062": ["P1", "P2", "P3"],
+            "BT7-110": ["P1", "P2", "P3"],
+            "BT8-042": ["P1", "P2", "P3"],
+            "BT8-053": ["P1", "P2", "P3"],
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
     },
 
 // September, 2022
