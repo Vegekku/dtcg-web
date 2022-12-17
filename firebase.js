@@ -379,6 +379,37 @@ const sets = [
         "info_url": "https://world.digimoncard.com/products/goods/evolution-box.php"
 
     },
+    // Official Tournament Pack Vol.1
+    {
+        "id": null,
+        "name": "Official Tournament Pack Vol.1",
+        "release": "February, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "cards": {
+            "P-013": "",
+            "P-014": "",
+            "P-015": "",
+            "P-016": "",
+            "P-017": "",
+            "P-018": "",
+            "P-019": "",
+            "P-020": "",
+        },
+    },
+    // Tamer Battle Pack 1
+    {
+        "id": null,
+        "name": "Tamer Battle Pack 1",
+        "release": "February, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "ST1-09": "P1",
+            "ST2-09": "P1",
+            "ST3-09": "P1",
+            "BT1-076": "P1",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/5e/Tamer_Battle_Pack_1_EN.png/"
+    },
 
 // March 2021    
     // Promotion Pack Ver.0.0
@@ -772,6 +803,22 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/tamer_party/"
     },
+    // Official Tournament Pack Vol.2
+    {
+        "id": null,
+        "name": "Official Tournament Pack Vol.2",
+        "release": "June, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "BT1-038": "P1",
+            "BT2-017": "P1",
+            "BT2-038": "P2",
+            "BT2-047": "P1",
+            "ST2-08": "P1",
+            "ST1-09": "P2",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/8a/Official_Tournament_Pack_Vol.2.png"
+    },
 
 // July 30-August 5, 2021
     // Battle of Omni (BT-05) Pre-Release Tournaments
@@ -935,22 +982,19 @@ const sets = [
         "info_url": "https://world.digimoncard.com/event/tamer_party_03/"
     },
 
-// October 2021
-    // Official Tournament Pack Vol.1
+// September-October 2021
+    // DC-1 Grand Prix
     {
         "id": null,
-        "name": "Official Tournament Pack Vol.1",
-        "release": "October, 2021",
-        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "name": "DC-1 Grand Prix",
+        "release": "September-October 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
         "cards": {
-            "P-013": "",
-            "P-014": "",
-            "P-015": "",
-            "P-016": "",
-            "P-017": "",
-            "P-018": "",
-            "P-019": "",
-            "P-020": "",
+            "BT2-021": "P1",
+            "BT2-026": "P1",
+            "BT2-028": "P2",
+            "BT2-032": "P2",
+            "BT2-096": "P1",
         },
     },
 
@@ -1090,6 +1134,64 @@ const sets = [
             "P-045": "",
             "P-046": "",
         },
+    },
+
+// October 2021
+    // Official Tournament Pack Vol.3
+    {
+        "id": null,
+        "name": "Official Tournament Pack Vol.3",
+        "release": "October, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "ST1-02": "P2",
+            "BT2-012": "P1",
+            "BT2-015": "P1",
+            "BT2-084": "P2",
+            "ST2-02": "P2",
+            "BT2-025": "P1",
+            "BT2-027": "P1",
+            "BT2-085": "P2",
+            "BT1-048": "P1",
+            "ST3-05": "P2",
+            "ST3-08": "P2",
+            "BT1-087": "P2",
+            "BT2-034": "P1",
+            "BT3-035": "P1",
+            "BT2-037": "P1",
+            "BT2-087": "P2",
+            "BT1-067": "P1",
+            "BT1-074": "P1",
+            "ST4-10": "P1",
+            "BT1-089": "P2",
+            "ST4-03": "P1",
+            "BT1-073": "P1",
+            "BT1-076": "P2",
+            "BT1-088": "P2",
+            "ST5-03": "P1",
+            "BT2-057": "P1",
+            "BT2-063": "P1",
+            "BT2-089": "P2",
+            "BT2-069": "P1",
+            "BT2-073": "P1",
+            "BT2-078": "P1",
+            "BT2-090": "P2",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/dd/Official_Tournament_Pack_Vol.3.png/"
+    },
+    // Winner Pack Double Diamond
+    {
+        "id": null,
+        "name": "Winner Pack Double Diamond",
+        "release": "October, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "BT1-057": "P1",
+            "BT2-058": "P1",
+            "BT3-025": "P1",
+            "BT3-050": "P1",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/55/WinnerPackDoubleDiamond.png/"
     },
 
 // December 10, 2021
@@ -1293,6 +1395,36 @@ const sets = [
             "BT3-067": "P1",
         },
         "info_url": "https://world.digimoncard.com/event/tamer_party_04/"
+    },
+    // Official Tournament Pack Vol.4
+    {
+        "id": null,
+        "name": "Official Tournament Pack Vol.4",
+        "release": "February, 2021",
+        "url": "digimoncardURL/setID-cardIDparallel.png",
+        "cards": {
+            "BT2-077": "_P2",
+            "BT3-050": "_P2",
+            "BT3-088": "_P1",
+            "P-057": "",
+            "ST2-07": "_P2",
+            "ST3-07": "_P2",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/Official_Tournament_Pack_Vol.4.png/"
+    },
+    // Winner Pack Next Adventure
+    {
+        "id": null,
+        "name": "Winner Pack Next Adventure",
+        "release": "February, 2021",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT2-013": "P1",
+            "BT2-053": "P2",
+            "BT3-048": "P1",
+            "BT5-038": "P1",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a9/WinnerPackNextAdventure.png/"
     },
 
 // February 25, 2022
@@ -1751,6 +1883,64 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/tamer_party_05/"
     },
+    // Official Tournament Pack Vol.5
+    {
+        "id": null,
+        "name": "Official Tournament Pack Vol.5",
+        "release": "June, 2021",
+        "url": "bandaitcgplusURL/setID/e_setID-cardIDparallel_D.png",
+        "cards": {
+            "P-059": "",
+            "P-060": "_errata",
+            "P-061": "",
+            "P-062": "",
+            "P-063": "_errata",
+            "P-064": "",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fd/Official_Tournament_Pack_Vol.5.png/"
+    },
+    // Winner Pack New Awakening
+    {
+        "id": null,
+        "name": "Winner Pack New Awakening",
+        "release": "February, 2021",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT1-064": "P2",
+            "BT3-006": "P2",
+            "BT3-038": "P1",
+            "BT5-020": "P2",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/29/WinnerPackNewAwakening.png/"
+    },
+
+// July 1, 2022
+    // Summer 2022 Dash Pack
+    {
+        "id": null,
+        "name": "Summer 2022 Dash Pack",
+        "release": "July 1, 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "BT5-097": "d1c0de",
+            "BT7-100": "f59f46",
+            "BT8-102": "483604",
+        },
+    },
+
+// July 22, 2022
+    // X Record (BT9) Pre-Release Tournaments
+    {
+        "id": null,
+        "name": "X Record (BT9) Pre-Release Tournaments",
+        "release": "July 22, 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "EX1-027": "67d05d",
+            "BT5-020": "64499e",
+        },
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-09/"
+    },
 
 // July 29, 2022
     // Booster X Record [BT9]
@@ -1838,6 +2028,32 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/regionals2022_220422/"
     },
+    // Official Tournament Pack Vol.6
+    {
+        "id": null,
+        "name": "Official Tournament Pack Vol.6",
+        "release": "July, 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "BT1-072": "36c029",
+            "BT7-064": "8ccc94",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/23/Official_Tournament_Pack_Vol.6.png/"
+    },
+    // Winner Pack X Record
+    {
+        "id": null,
+        "name": "Winner Pack X Record",
+        "release": "July, 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "BT3-004": "eefb00",
+            "BT4-042": "6e38e3",
+            "EX1-061": "398820",
+            "ST5-08": "acc3ae",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a9/WinnerPackXRecord.png/"
+    },
 
 // August, 2022
     // Store Champion Card Set
@@ -1857,20 +2073,29 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/store_championship_august/"
     },
-    // 2022 Regionals Set 2
+    // 2022 Regionals Card Set 2
     {
         "id": null,
-        "name": "2022 Regionals Set 2",
+        "name": "2022 Regionals Card Set 2",
         "release": "July, 2022",
-        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
         "cards": {
-            "ST7-06": ["P1", "P2", "P3"],
-            "ST9-05": ["P1", "P2", "P3"],
-            "BT5-071": ["P1", "P2", "P3"],
-            "BT7-062": ["P1", "P2", "P3"],
-            "BT7-110": ["P1", "P2", "P3"],
-            "BT8-042": ["P1", "P2", "P3"],
-            "BT8-053": ["P1", "P2", "P3"],
+            "BT5-071": ["0f3180", "0a73a6", "773865"],
+            "BT7-062": ["4b9e3a", "a09973", "bd655d"],
+            "BT7-110": ["10dd65", "c64969", "3de331"],
+            "BT8-042": ["9f9eb6", "80a451", "a8eb83"],
+            "BT8-053": ["3910a4", "f36014", "e6f0c0"],
+            "ST7-06": ["49b70a", "5c4fd2", "c557c6"],
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
+    },
+    {
+        "id": null,
+        "name": "2022 Regionals Card Set 2",
+        "release": "July, 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.png",
+        "cards": {
+            "ST9-05": ["b5ffb6", "4af515", "5dc671"],
         },
         "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
     },
@@ -1922,6 +2147,110 @@ const sets = [
             "P-020": "1ce0e2",
         },
         "info_url": "https://world.digimoncard.com/products/goods/premium-deck-set.php"
+    },
+
+// October 2022
+    // Tamer Party Vol.6
+    {
+        "id": null,
+        "name": "Tamer Party Vol.6",
+        "release": "October 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.png",
+        "cards": {
+            "EX2-010": "f67571",
+            "EX2-023": "9388a6",
+            "EX2-027": "20dbda",
+        },
+        "info_url": "https://world.digimoncard.com/event/tamer_party_06/"
+    },
+    // Event Pack 3
+    {
+        "id": null,
+        "name": "Event Pack 3",
+        "release": "October 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "BT6-009": "46de7b",
+            "BT6-011": "3ffd40",
+            "BT6-015": "38c259",
+            "BT7-021": "742f32",
+            "BT7-023": "603c76",
+            "BT7-030": "166218",
+            "BT7-035": "741904",
+            "BT7-036": "6e3bbc",
+            "BT7-042": "ee5077",
+            "BT7-046": "42d557",
+            "BT7-047": "a5e52f",
+            "BT7-054": "098af6",
+            "BT7-071": "7f98a8",
+            "BT7-073": "997a5a",
+            "BT7-078": "c7e84d",
+            "P-013": "9ad85b",
+            "P-014": "fb1b18",
+            "P-016": "307b81",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals2022_september/"
+    },
+    // 2022 DC-1 Tournament
+    {
+        "id": null,
+        "name": "2022 DC-1 Tournament",
+        "release": "October 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "EX2-011": "549f9e",
+            "P-041": "af1382",
+            "ST7-05": "24c7d0",
+            "ST7-08": "e107fa",
+            "ST7-11": "2588cf",
+        },
+        "info_url": "https://world.digimoncard.com/event/dc-1_2022/"
+    },
+
+// October 2022–February 2023
+    // Official Tournament Pack Vol.7
+    {
+        "id": null,
+        "name": "Official Tournament Pack Vol.7",
+        "release": "October 2022–February 2023",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "BT1-078": "4e41d1",
+            "BT3-061": "1d7982",
+            "BT5-026": "6a8adf",
+            "BT5-066": "7ea2ab",
+            "EX1-025": "a5c4bd",
+            "ST6-08": "8e8779",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e9/Official_Tournament_Pack_Vol.7.png/"
+    },
+    // Winner Pack Xros Encounter
+    {
+        "id": null,
+        "name": "Winner Pack -Xros Encounter-",
+        "release": "October 2022–February 2023",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "BT1-062": "525d9d",
+            "BT3-004": "c10bc9",
+            "BT7-064": "d54912",
+            "ST4-08": "820823",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/51/WinnerPackXroxEncounter.png/"
+    },
+
+// October 7, 2022
+    // Xros Encounter (BT10) Pre-Release Tournaments
+    {
+        "id": null,
+        "name": "Xros Encounter (BT10) Pre-Release Tournaments",
+        "release": "October 7, 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "BT8-058": "8337fa",
+            "EX2-010": "b33e43",
+        },
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-10/"
     },
 
 // October 14, 2022
