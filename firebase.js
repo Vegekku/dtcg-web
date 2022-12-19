@@ -282,6 +282,13 @@ const sets = [
             "BT3-107": "",
             "BT3-109": "",
         },
+        "pack": [
+            "https://static.wikia.nocookie.net/digimoncardgame/images/0/00/Special_Release_Booster_Pack_1.0-EN.png/",
+            "https://static.wikia.nocookie.net/digimoncardgame/images/4/4e/Special_Release_Booster_Pack_1.0-EN.01.png/",
+            "https://static.wikia.nocookie.net/digimoncardgame/images/7/7f/Special_Release_Booster_Pack_1.0-EN.02.png/",
+            "https://static.wikia.nocookie.net/digimoncardgame/images/a/aa/Special_Release_Booster_Pack_1.0-EN.03.png/",
+        ],
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e0/Playsheet-BT-1.0.jpg/",
         "info_url": null
     },
     // Release Special Booster Ver.1.0 [BT01-03] - Alternatives
@@ -343,6 +350,7 @@ const sets = [
             "P-011": "",
             "P-012": ""
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/80/Special_Box_Promotion_Pack.png",
     },
     // Dash Pack Ver. 1.0
     {
@@ -357,6 +365,7 @@ const sets = [
             "BT2-049": "P1",
             "BT2-066": "P1"
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/28/Dash_Pack_Ver_1.0-EN.png/",
     },
 
 // February, 2021
@@ -395,6 +404,7 @@ const sets = [
             "P-019": "",
             "P-020": "",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/Official_Tournament_Pack_Vol.1.png/",
     },
     // Tamer Battle Pack 1
     {
@@ -426,6 +436,7 @@ const sets = [
             "P-005": "",
             "P-006": ""
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/7/73/Promotion_Pack_Ver_0.0-EN.png/",
         "info_url": "https://world.digimoncard.com/event/online_event_mar2021/"
     },
 
@@ -590,6 +601,13 @@ const sets = [
             "BT3-111": "",
             "BT3-112": "",
         },
+        "pack": [
+            "https://static.wikia.nocookie.net/digimoncardgame/images/c/c4/Special_Release_Booster_Pack_1.5-EN.png/",
+            "https://static.wikia.nocookie.net/digimoncardgame/images/0/08/Special_Release_Booster_Pack_1.5-EN.01.png/",
+            "https://static.wikia.nocookie.net/digimoncardgame/images/3/34/Special_Release_Booster_Pack_1.5-EN.02.png/",
+            "https://static.wikia.nocookie.net/digimoncardgame/images/b/b9/Special_Release_Booster_Pack_1.5-EN.03.png/",
+        ],
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/6/64/Playsheet-BT-1.5.jpg/",
         "info_url": null
     },
     // Release Special Booster Ver.1.5 [BT01-03] - Alternatives
@@ -639,6 +657,7 @@ const sets = [
             "BT1-107": "P1",
             "BT3-019": "P1"
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/56/Dash_Pack_Ver._1.5.png/"
     },
     // Special Release Memorial Pack!
     {
@@ -652,6 +671,7 @@ const sets = [
             "P-023": "",
             "P-024": "",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c7/Special_Release_Memorial_Pack.png/"
     },
 
 // May 28th, 2021
@@ -664,6 +684,7 @@ const sets = [
         "cards": {
             "BT2-038": "P1",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/ee/PP01.png/",
         "info_url": "https://world.digimoncard.com/products/goods/premium_pack.php"
     },
 
@@ -678,6 +699,7 @@ const sets = [
             "P-028": "",
             "ST3-08": "_P1",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/7/74/Great_Legend_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-04/"
     },
 
@@ -720,7 +742,9 @@ const sets = [
         "release": "June 11, 2021",
         "total": 115,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
-        "add_zero": 3
+        "add_zero": 3,
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/57/BT-4-EN.png/",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a4/Playsheet-BT-4-EN.jpg/",
     },
     // Booster Great Legend [BT4] - Alternatives
     {
@@ -772,6 +796,7 @@ const sets = [
             "P-026": "",
             "P-027": "",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/59/Great_Dash_Pack.png/"
     },
     // Great Legend Power Up Pack
     {
@@ -787,6 +812,7 @@ const sets = [
             "P-033": "",
             "P-034": "",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fc/Great_Legend_Power_Up_Pack.png"
     },
 
 // June 2021
@@ -831,6 +857,7 @@ const sets = [
             "BT2-077": "P1",
             "BT2-028": "P1",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a5/Battle_of_Omni_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-05/"
     },
 
@@ -856,7 +883,9 @@ const sets = [
         "release": "August 6, 2021",
         "total": 112,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
-        "add_zero": 3
+        "add_zero": 3,
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/bd/BT-5-EN.png/",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/7/7d/Playsheet-BT-5-EN.jpg/",
     },
     // Booster Battle of Omni [BT5] - Alternatives
     {
@@ -927,7 +956,8 @@ const sets = [
             "BT4-067": "P1",
             "BT4-088": "P2",
             "BT5-045": "P1",
-        }
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/be/Evolution_Cup_Event_Pack.png/",
     },
 
 // August 2021
@@ -945,7 +975,7 @@ const sets = [
             "BT4-090": ["P2", "P3", "P4"],
             "BT5-042": ["P1", "P2", "P3"],
         },
-        "info_url": "https://world.digimoncard.com/event/online_regionals/"
+        "info_url": "https://world.digimoncard.com/event/online_regionals/",
     },
 
 // September 13 – October 17
@@ -1009,7 +1039,8 @@ const sets = [
             "P-028": "P1",
             "BT2-061": "P1",
         },
-        "info_url": "https://world.digimoncard.com/event/pre-release_BT-06/"
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/18/Double_Diamond_Pre-Release_Promotion_Pack.png",
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-06/",
     },
 
 // October 15, 2021
@@ -1057,6 +1088,8 @@ const sets = [
         "total": 112,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 3,
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/aa/BT-6-EN.png/",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d2/Playsheet-BT-6-EN.jpg/"
     },
     // Booster Double Diamond [BT6] - Alternatives
     {
@@ -1119,6 +1152,7 @@ const sets = [
             "BT4-016": "P1",
             "BT4-091": "P1",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/7/7c/1-Year_Anniversary_Promo_Pack-EN.png/",
     },
     // Double Diamond Dash Pack
     {
@@ -1134,6 +1168,7 @@ const sets = [
             "P-045": "",
             "P-046": "",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/0/09/Double_Diamond_Dash_Pack.png/"
     },
 
 // October 2021
@@ -1202,7 +1237,9 @@ const sets = [
         "release": "December 10, 2021",
         "total": 73,
         "url": "bandaitcgplusURL/setID/EX-cardID.png",
-        "add_zero": 3
+        "add_zero": 3,
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/ea/EX-1-EN.png/",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6d/Playsheet-EX-1-EN.jpg/",
     },
     // Booster Classic Collection [EX1] - Alternatives
     {
@@ -1299,6 +1336,7 @@ const sets = [
             "BT5-062": "P1",
             "BT6-016": "P2",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/53/Event_Pack_2.png/",
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
     // Event Pack Alt-Art Gold Stamp Set
@@ -1438,6 +1476,7 @@ const sets = [
             "P-047": "",
             "P-048": "",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a2/Next_Adventure_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-07/"
     },
 
@@ -1455,6 +1494,24 @@ const sets = [
             "cards": {
                 "BT7-017": ""
             }
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/53/BT-7-EN.png/",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a1/Playsheet-BT-7-EN.jpg/",
+    },
+    {
+        "id": null,
+        "name": "Booster Next Adventure [BT7]",
+        "release": "March 4, 2022",
+        "url": "bandaitcgplusURL/BT7/setID-cardID.png",
+        "cards": {
+            "P-049": "",
+            "P-050": "",
+            "P-051": "",
+            "P-052": "",
+            "P-053": "",
+            "P-054": "",
+            "P-055": "",
+            "P-056": "",
         },
     },
     // Booster Next Adventure [BT7] - Alternatives
@@ -1513,6 +1570,7 @@ const sets = [
             "P-039": "P1",
             "P-040": "P1",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/5c/Box_Promotion_Pack_-Next_Adventure-.png/",
     },
 
 // March, 2022
@@ -1656,6 +1714,7 @@ const sets = [
             "P-058": "",
             "BT5-007": "_P3",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a5/New_Awakening_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-08/"
     },
 
@@ -1689,6 +1748,8 @@ const sets = [
         "total": 112,
         "url": "bandaitcgplusURL/setID/e_setID_cardID.png",
         "add_zero": 3,
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2d/BT-8-EN.png/",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e9/Playsheet-BT-8-EN.jpg/",
     },
     // Booster New Awakening [BT8] - Alternatives
     {
@@ -1797,6 +1858,8 @@ const sets = [
                 "EX2-002": ""
             }
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/20/EX-2-EN.png/",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/0/02/Playsheet-EX-2-EN.jpg/",
     },
     // Booster Digital Hazard [EX2] - Alternatives
     {
@@ -1939,6 +2002,7 @@ const sets = [
             "EX1-027": "67d05d",
             "BT5-020": "64499e",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d7/X_Record_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-09/"
     },
 
@@ -1950,7 +2014,9 @@ const sets = [
         "release": "July 29, 2022",
         "total": 112,
         "url": "bandaitcgplusURL/setID/e_setID-cardID_dummy.jpg",
-        "add_zero": 3
+        "add_zero": 3,
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c7/BT-9-EN.png/",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/8/86/Playsheet-BT-9-EN.jpg/",
     },
     // Booster X Record [BT9] - Alternatives
     {
@@ -2008,6 +2074,7 @@ const sets = [
             "P-076": ["", "_horo"],
             "P-077": ["", "_horo"],
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/3/30/Update_Pack.png/",
     },
 
 // July, 2022
@@ -2146,6 +2213,7 @@ const sets = [
             "EX1-049": "2a4cd0",
             "P-020": "1ce0e2",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d5/PD-01-Lucky-Pack.png/",
         "info_url": "https://world.digimoncard.com/products/goods/premium-deck-set.php"
     },
 
@@ -2250,6 +2318,7 @@ const sets = [
             "BT8-058": "8337fa",
             "EX2-010": "b33e43",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2a/Xros_Encounter_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-10/"
     },
 
@@ -2297,7 +2366,9 @@ const sets = [
         "release": "October 14, 2022",
         "total": 112,
         "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
-        "add_zero": 3
+        "add_zero": 3,
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/24/BT-10-EN.png/",
+        "playmat": "",
     },
     // Booster Xros Encounter [BT10] - Alternatives
     {
@@ -2369,6 +2440,7 @@ const sets = [
             "BT4-099": "51fe95",
             "BT5-012": "bc0a8b",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/0/01/ST-11-EN.png/",
     },
     // 25th Special Memorial Pack
     {
@@ -2390,6 +2462,7 @@ const sets = [
             "BT7-044": "91c358",
             "BT8-067": "3c9d1a",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a5/25th_Memorial_Pack.png/",
     },
 
 // November 4, 2022
@@ -2423,6 +2496,8 @@ const sets = [
                 "EX3-013": ""
             }
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/3/33/EX-3-EN.png/",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6d/Playsheet-EX-3-EN.jpg/"
     },
     // Booster Draconic Roar [EX3] - Alternatives
     {
