@@ -1990,6 +1990,18 @@ const sets = [
             "BT8-102": "483604",
         },
     },
+    // Digimon Survive Promo Pack
+    {
+        "id": null,
+        "name": "Digimon Survive Promo Pack",
+        "release": "July 1, 2022",
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_D_RGB_transp.png",
+        "cards": {
+            "P-079": "",
+            "P-080": "",
+            "P-081": "",
+        },
+    },
 
 // July 22, 2022
     // X Record (BT9) Pre-Release Tournaments
