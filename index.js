@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const starterButtons = document.getElementById('starterButtons');
     const otherButtons = document.getElementById('otherButtons');
     const setLists = document.getElementById('setLists');
+    // 1. crear objeto coleccion si no existe. Si existe, obtener de storage.
 
     const getImageUrl = (url, setID, cardID, parallel = null) => {
         const noCardURL = 'https://assets.cardlist.dev/other/2020_card_backstage_design.jpg';
@@ -101,6 +102,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 tableSet.style.display = "none";
             }
 
+            // 2. si no existe el set, añadirlo a la coleccion.
+
             // Header
             const tHead = tableSet.createTHead();
             const tHeadTexts = [setElement.id, "Amount", "Cards"];
@@ -118,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 var row = tBody.insertRow(index - 1);
                 row.id = `${setElement.id}-${cardNumber}`;
                 row.insertCell(0).innerHTML = cardNumber;
+                // 3. obtener cantidad de cartas de este id
                 row.insertCell(1).innerHTML = 0;
 
                 if (setElement.url) {
@@ -127,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     }
 
                     row.insertCell(2).innerHTML = `<img class="card" src="${cardUrl}" title="${setElement.name}">`;
+                    // 4. si no existe la carta, la añadimos al set
                 } else {
                     row.insertCell(2).innerHTML = "";
                 }
@@ -139,6 +144,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
             addButton(setElement);
         } else {
             drawAlternatives(setElement.name, setElement.url, setElement.cards);
+            // 5. si no existe la carta, la añadimos al set
         }
     });
+
+    // 6. guardar coleccion en localstorage
 });
