@@ -2555,6 +2555,52 @@ const sets = [
         },
     },
 
+// February 2023
+    // 2022 Final Championships Framed Trophy Cards - Top 16
+    {
+        "id": null,
+        "name": "2022 Final Championships Framed Trophy Cards - Top 16",
+        "release": "January 2022",
+        "url": "noCardURL",
+        "cards": {
+            "BT7-056": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+    },
+    // 2022 Final Championships Framed Trophy Cards - 3rd Place
+    {
+        "id": null,
+        "name": "2022 Final Championships Framed Trophy Cards - 3rd Place",
+        "release": "January 2022",
+        "url": "noCardURL",
+        "cards": {
+            "BT7-062": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+    },
+    // 2022 Final Championships Framed Trophy Cards - 2nd Place
+    {
+        "id": null,
+        "name": "2022 Final Championships Framed Trophy Cards - 2nd Place",
+        "release": "January 2022",
+        "url": "noCardURL",
+        "cards": {
+            "BT7-064": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+    },
+    // 2022 Final Championships Framed Trophy Cards - 1st Place Champion
+    {
+        "id": null,
+        "name": "2022 Final Championships Framed Trophy Cards - 1st Place Champion",
+        "release": "January 2022",
+        "url": "noCardURL",
+        "cards": {
+            "BT7-065": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+    },
+
 // March, 2023
     // 2nd Anniversary Set [PB-12E]
     {
