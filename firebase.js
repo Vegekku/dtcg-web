@@ -42,9 +42,10 @@ const sets = [
     },
 
 // January 29th, 2021
-    // Starter Deck GAIA RED [ST-1]
+    // Starter Deck GAIA RED [ST-1] --- st1
     {
         "id": "ST1",
+        "slug": "st1", 
         "name": "Starter Deck GAIA RED [ST-1]",
         "release": "January 29th, 2021",
         "total": 16,
@@ -52,7 +53,7 @@ const sets = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-1.php"
     },
-    // Starter Deck COCYTUS BLUE [ST-2]
+    // Starter Deck COCYTUS BLUE [ST-2] --- st2
     {
         "id": "ST2",
         "name": "Starter Deck COCYTUS BLUE [ST-2]",
@@ -62,7 +63,7 @@ const sets = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-2.php"
     },
-    // Starter Deck HEAVEN'S YELLOW [ST-3]
+    // Starter Deck HEAVEN'S YELLOW [ST-3] --- st3
     {
         "id": "ST3",
         "name": "Starter Deck HEAVEN'S YELLOW [ST-3]",
@@ -72,7 +73,7 @@ const sets = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-3.php"
     },
-    // Tamer Party Vol.1
+    // Tamer Party Vol.1 --- tp1
     {
         "id": null,
         "name": "Tamer Party Vol.1",
@@ -87,7 +88,7 @@ const sets = [
     },
 
 // February 12, 2021
-    // Release Special Booster Ver.1.0 [BT01-03]
+    // Release Special Booster Ver.1.0 [BT01-03] --- sbt10
     {
         "id": null,
         "name": "Release Special Booster Ver.1.0 [BT01-03]",
@@ -291,7 +292,7 @@ const sets = [
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e0/Playsheet-BT-1.0.jpg/",
         "info_url": null
     },
-    // Release Special Booster Ver.1.0 [BT01-03] - Alternatives
+    // Release Special Booster Ver.1.0 [BT01-03] - Alternatives --- sbt10_alts
     {
         "id": null,
         "name": "Release Special Booster Ver.1.0 [BT01-03] - Alternatives",
@@ -317,7 +318,7 @@ const sets = [
             "BT3-091": "P1",
         },
     },
-    // Release Special Booster Ver.1.0 [BT01-03] - Box Topper
+    // Release Special Booster Ver.1.0 [BT01-03] - Box Topper --- sbt10_boxtopper
     {
         "id": null,
         "name": "Release Special Booster Ver.1.0 [BT01-03] - Box Topper",
@@ -336,7 +337,7 @@ const sets = [
             "BT2-090": "P1",
         },
     },
-    // Special Box Promotion Pack
+    // Special Box Promotion Pack --- sbp
     {
         "id": null,
         "name": "Special Box Promotion Pack",
@@ -352,7 +353,7 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/80/Special_Box_Promotion_Pack.png",
     },
-    // Dash Pack Ver. 1.0
+    // Dash Pack Ver. 1.0 --- dp10
     {
         "id": null,
         "name": "Dash Pack Ver. 1.0",
@@ -369,7 +370,7 @@ const sets = [
     },
 
 // February, 2021
-    // Tamer's Evolution Box [PB-01]
+    // Tamer's Evolution Box [PB-01] --- pb01
     {
         "id": null,
         "name": "Tamer's Evolution Box [PB-01]",
@@ -388,7 +389,7 @@ const sets = [
         "info_url": "https://world.digimoncard.com/products/goods/evolution-box.php"
 
     },
-    // Official Tournament Pack Vol.1
+    // Official Tournament Pack Vol.1 --- otp1
     {
         "id": null,
         "name": "Official Tournament Pack Vol.1",
@@ -406,7 +407,7 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/Official_Tournament_Pack_Vol.1.png/",
     },
-    // Tamer Battle Pack 1
+    // Tamer Battle Pack 1 --- tbp1
     {
         "id": null,
         "name": "Tamer Battle Pack 1",
@@ -422,7 +423,7 @@ const sets = [
     },
 
 // March 2021    
-    // Promotion Pack Ver.0.0
+    // Promotion Pack Ver.0.0 --- pp0
     {
         "id": null,
         "name": "Promotion Pack Ver.0.0",
@@ -441,7 +442,7 @@ const sets = [
     },
 
 // March 12, 2021
-    // Release Special Booster Ver.1.5 [BT01-03]
+    // Release Special Booster Ver.1.5 [BT01-03] --- sbt15
     {
         "id": null,
         "name": "Release Special Booster Ver.1.5 [BT01-03]",
@@ -610,7 +611,7 @@ const sets = [
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/6/64/Playsheet-BT-1.5.jpg/",
         "info_url": null
     },
-    // Release Special Booster Ver.1.5 [BT01-03] - Alternatives
+    // Release Special Booster Ver.1.5 [BT01-03] - Alternatives --- sbt15_alts
     {
         "id": null,
         "name": "Release Special Booster Ver.1.5 [BT01-03] - Alternatives",
@@ -629,7 +630,7 @@ const sets = [
             "BT3-112": "P1",
         },
     },
-    // Release Special Booster Ver.1.5 [BT01-03] - Box Topper
+    // Release Special Booster Ver.1.5 [BT01-03] - Box Topper --- sbt15_boxtopper
     {
         "id": null,
         "name": "Release Special Booster Ver.1.5 [BT01-03] - Box Topper",
@@ -644,7 +645,7 @@ const sets = [
             "BT3-082": "P1",
         },
     },
-    // Dash Pack Ver. 1.5
+    // Dash Pack Ver. 1.5 --- dp15
     {
         "id": null,
         "name": "Dash Pack Ver. 1.5",
@@ -659,7 +660,7 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/56/Dash_Pack_Ver._1.5.png/"
     },
-    // Special Release Memorial Pack!
+    // Special Release Memorial Pack! --- srmp
     {
         "id": null,
         "name": "Special Release Memorial Pack!",
@@ -675,10 +676,10 @@ const sets = [
     },
 
 // May 28th, 2021
-    // Premium Pack Set 01
+    // Premium Pack Set 01 [PP01] --- pp01
     {
         "id": null,
-        "name": "Premium Pack Set 01",
+        "name": "Premium Pack Set 01 [PP01]",
         "release": "May 28th, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
         "cards": {
@@ -689,7 +690,7 @@ const sets = [
     },
 
 // June 4-10, 2021
-    // Great Legend (BT-04) Pre-Release Tournaments
+    // Great Legend (BT-04) Pre-Release Tournaments --- bt4_prerelease
     {
         "id": null,
         "name": "Great Legend (BT-04) Pre-Release Tournaments",
@@ -704,7 +705,7 @@ const sets = [
     },
 
 // June 11, 2021
-    // Starter Deck GIGA GREEN [ST-4]
+    // Starter Deck GIGA GREEN [ST-4] --- st4
     {
         "id": "ST4",
         "name": "Starter Deck GIGA GREEN [ST-4]",
@@ -714,7 +715,7 @@ const sets = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-4.php"
     },
-    // Starter Deck MACHINE BLACK [ST-5]
+    // Starter Deck MACHINE BLACK [ST-5] --- st5
     {
         "id": "ST5",
         "name": "Starter Deck MACHINE BLACK [ST-5]",
@@ -724,7 +725,7 @@ const sets = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-5.php"
     },
-    // Starter Deck VENOMOUS VIOLET [ST-6]
+    // Starter Deck VENOMOUS VIOLET [ST-6] --- st6
     {
         "id": "ST6",
         "name": "Starter Deck VENOMOUS VIOLET [ST-6]",
@@ -735,7 +736,7 @@ const sets = [
         "info_url": "https://world.digimoncard.com/products/deck/st-6.php"
     },
 
-    // Booster Great Legend [BT4]
+    // Booster Great Legend [BT4] --- bt4
     {
         "id": "BT4",
         "name": "Booster Great Legend [BT4]",
@@ -746,7 +747,7 @@ const sets = [
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/57/BT-4-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a4/Playsheet-BT-4-EN.jpg/",
     },
-    // Booster Great Legend [BT4] - Alternatives
+    // Booster Great Legend [BT4] - Alternatives --- bt4_alts
     {
         "id": null,
         "name": "Booster Great Legend [BT4] - Alternatives",
@@ -770,7 +771,7 @@ const sets = [
             "BT4-115": "P1",
         },
     },
-    // Booster Great Legend [BT4] - Box Topper
+    // Booster Great Legend [BT4] - Box Topper --- bt4_boxtopper
     {
         "id": null,
         "name": "Booster Great Legend [BT4] - Box Topper",
@@ -785,7 +786,7 @@ const sets = [
             "BT4-097": "P1"
         },
     },
-    // Great Dash Pack
+    // Great Dash Pack --- bt4_dash
     {
         "id": null,
         "name": "Great Dash Pack",
@@ -798,7 +799,7 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/59/Great_Dash_Pack.png/"
     },
-    // Great Legend Power Up Pack
+    // Great Legend Power Up Pack --- bt4_powerup
     {
         "id": null,
         "name": "Great Legend Power Up Pack",
@@ -816,7 +817,7 @@ const sets = [
     },
 
 // June 2021
-    // Tamer Party Vol.2
+    // Tamer Party Vol.2 --- tp2
     {
         "id": null,
         "name": "Tamer Party Vol.2",
@@ -829,7 +830,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/tamer_party/"
     },
-    // Official Tournament Pack Vol.2
+    // Official Tournament Pack Vol.2 --- otp2
     {
         "id": null,
         "name": "Official Tournament Pack Vol.2",
@@ -847,7 +848,7 @@ const sets = [
     },
 
 // July 30-August 5, 2021
-    // Battle of Omni (BT-05) Pre-Release Tournaments
+    // Battle of Omni (BT-05) Pre-Release Tournaments --- bt5_prerelease
     {
         "id": null,
         "name": "Battle of Omni (BT-05) Pre-Release Tournaments",
@@ -862,7 +863,7 @@ const sets = [
     },
 
 // July 2021
-    // July Evolution Cup
+    // July Evolution Cup --- evocup
     {
         "id": null,
         "name": "July Evolution Cup",
@@ -876,7 +877,7 @@ const sets = [
     },
 
 // August 6, 2021
-    // Booster Battle of Omni [BT5]
+    // Booster Battle of Omni [BT5] --- bt5
     {
         "id": "BT5",
         "name": "Booster Battle of Omni [BT5]",
@@ -887,7 +888,7 @@ const sets = [
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/bd/BT-5-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/7/7d/Playsheet-BT-5-EN.jpg/",
     },
-    // Booster Battle of Omni [BT5] - Alternatives
+    // Booster Battle of Omni [BT5] - Alternatives --- bt5_alts
     {
         "id": null,
         "name": "Booster Battle of Omni [BT5] - Alternatives",
@@ -903,7 +904,7 @@ const sets = [
             "BT5-112": "P1",
         },
     },
-    // Booster Battle of Omni [BT5] - Box Topper
+    // Booster Battle of Omni [BT5] - Box Topper --- bt4_boxtopper
     {
         "id": null,
         "name": "Booster Battle of Omni [BT5] - Box Topper",
@@ -918,7 +919,7 @@ const sets = [
             "BT5-093": "P1",
         },
     },
-    // June Premier TO events
+    // June Premier TO events --- premierto
     {
         "id": null,
         "name": "June Premier TO events",
@@ -931,7 +932,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/online_event_june2021/"
     },
-    // Event Pack 1
+    // Event Pack 1 --- eventpack1
     {
         "id": null,
         "name": "Event Pack 1",
@@ -961,7 +962,7 @@ const sets = [
     },
 
 // August 2021
-    // 2021 Online Regionals Set
+    // 2021 Online Regionals Set --- regional2021
     {
         "id": null,
         "name": "2021 Online Regionals Set",
@@ -978,12 +979,12 @@ const sets = [
         "info_url": "https://world.digimoncard.com/event/online_regionals/",
     },
 
-// September 13 – October 17
-    // Store Champion Card Set
+// September 13 – October 17, 2021
+    // Store Champion Card Set --- storechampion
     {
         "id": null,
         "name": "Store Champion Card Set",
-        "release": "September 13 – October 17",
+        "release": "September 13 – October 17, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
         "cards": {
             "ST3-04": ["P1", "P2"],
@@ -998,7 +999,7 @@ const sets = [
     },
 
 // September 2021
-    // Tamer Party Vol.3
+    // Tamer Party Vol.3 --- tp3
     {
         "id": null,
         "name": "Tamer Party Vol.3",
@@ -1013,7 +1014,7 @@ const sets = [
     },
 
 // September-October 2021
-    // DC-1 Grand Prix
+    // DC-1 Grand Prix --- dc1
     {
         "id": null,
         "name": "DC-1 Grand Prix",
@@ -1029,7 +1030,7 @@ const sets = [
     },
 
 // October 8, 2021
-    // Double Diamond (BT-06) Pre-Release Tournaments
+    // Double Diamond (BT-06) Pre-Release Tournaments --- bt6_prerelease
     {
         "id": null,
         "name": "Double Diamond (BT-06) Pre-Release Tournaments",
@@ -1044,7 +1045,7 @@ const sets = [
     },
 
 // October 15, 2021
-    // Starter Deck GALLANTMON [ST-7]
+    // Starter Deck GALLANTMON [ST-7] --- st7
     {
         "id": "ST7",
         "name": "Starter Deck GALLANTMON [ST-7]",
@@ -1054,7 +1055,7 @@ const sets = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-7.php"
     },
-    // Starter Deck ULFORCEVEEDRAMON [ST-8]
+    // Starter Deck ULFORCEVEEDRAMON [ST-8] --- st8
     {
         "id": "ST8",
         "name": "Starter Deck ULFORCEVEEDRAMON [ST-8]",
@@ -1064,7 +1065,7 @@ const sets = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-8.php"
     },
-    // First Anniversary Promo Pack
+    // First Anniversary Promo Pack --- first_anniversary
     {
         "id": null,
         "name": "First Anniversary Promo Pack",
@@ -1080,7 +1081,7 @@ const sets = [
         },
     },
 
-    // Booster Double Diamond [BT6]
+    // Booster Double Diamond [BT6] --- bt6
     {
         "id": "BT6",
         "name": "Booster Double Diamond [BT6]",
@@ -1091,7 +1092,7 @@ const sets = [
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/aa/BT-6-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d2/Playsheet-BT-6-EN.jpg/"
     },
-    // Booster Double Diamond [BT6] - Alternatives
+    // Booster Double Diamond [BT6] - Alternatives --- bt6_alts
     {
         "id": null,
         "name": "Booster Double Diamond [BT6] - Alternatives",
@@ -1119,7 +1120,7 @@ const sets = [
             "BT1-084": "P3",
         },
     },
-    // Booster Double Diamond [BT6] - Box Topper
+    // Booster Double Diamond [BT6] - Box Topper --- bt6_boxtopper
     {
         "id": null,
         "name": "Booster Double Diamond [BT6] - Box Topper",
@@ -1134,7 +1135,7 @@ const sets = [
             "BT6-006": "P1",
         },
     },
-    // 1-Year Anniversary Promo Pack
+    // 1-Year Anniversary Promo Pack --- 1year_anniversary
     {
         "id": null,
         "name": "1-Year Anniversary Promo Pack",
@@ -1154,7 +1155,7 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/7/7c/1-Year_Anniversary_Promo_Pack-EN.png/",
     },
-    // Double Diamond Dash Pack
+    // Double Diamond Dash Pack --- bt6_dash
     {
         "id": null,
         "name": "Double Diamond Dash Pack",
@@ -1172,7 +1173,7 @@ const sets = [
     },
 
 // October 2021
-    // Official Tournament Pack Vol.3
+    // Official Tournament Pack Vol.3 --- otp3
     {
         "id": null,
         "name": "Official Tournament Pack Vol.3",
@@ -1214,7 +1215,7 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/dd/Official_Tournament_Pack_Vol.3.png/"
     },
-    // Winner Pack Double Diamond
+    // Winner Pack Double Diamond --- wp3
     {
         "id": null,
         "name": "Winner Pack Double Diamond",
@@ -1230,7 +1231,7 @@ const sets = [
     },
 
 // December 10, 2021
-    // Booster Classic Collection [EX1]
+    // Booster Classic Collection [EX1] --- ex1
     {
         "id": "EX1",
         "name": "Booster Classic Collection [EX1]",
@@ -1241,7 +1242,7 @@ const sets = [
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/ea/EX-1-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6d/Playsheet-EX-1-EN.jpg/",
     },
-    // Booster Classic Collection [EX1] - Alternatives
+    // Booster Classic Collection [EX1] - Alternatives --- ex1_alts
     {
         "id": null,
         "name": "Booster Classic Collection [EX1] - Alternatives",
@@ -1280,7 +1281,7 @@ const sets = [
             "EX1-073": "",
         },
     },
-    // Booster Classic Collection [EX1] - Box Topper
+    // Booster Classic Collection [EX1] - Box Topper --- ex1_boxtopper
     {
         "id": null,
         "name": "Booster Classic Collection [EX1] - Box Topper",
@@ -1292,7 +1293,7 @@ const sets = [
     },
 
 // January 2022
-    // 2021 Championship Finals Tamer‘s Evolution Pack
+    // 2021 Championship Finals Tamer‘s Evolution Pack --- cf_tamerevolution
     {
         "id": null,
         "name": "2021 Championship Finals Tamer‘s Evolution Pack",
@@ -1310,7 +1311,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
-    // Event Pack 2
+    // Event Pack 2 --- eventpack2
     {
         "id": null,
         "name": "Event Pack 2",
@@ -1339,7 +1340,7 @@ const sets = [
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/53/Event_Pack_2.png/",
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
-    // Event Pack Alt-Art Gold Stamp Set
+    // Event Pack Alt-Art Gold Stamp Set --- eventpack_goldstamp
     {
         "id": null,
         "name": "Event Pack Alt-Art Gold Stamp Set",
@@ -1355,7 +1356,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
-    // Judge Pack
+    // Judge Pack --- judgepack
     {
         "id": null,
         "name": "Judge Pack",
@@ -1375,7 +1376,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
-    // 2021 Final Championships Framed Trophy Cards - Top 16
+    // 2021 Final Championships Framed Trophy Cards - Top 16 --- fcftc_2021_top16
     {
         "id": null,
         "name": "2021 Final Championships Framed Trophy Cards - Top 16",
@@ -1386,7 +1387,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
-    // 2021 Final Championships Framed Trophy Cards - 3rd Place
+    // 2021 Final Championships Framed Trophy Cards - 3rd Place --- fcftc_2021_3rd
     {
         "id": null,
         "name": "2021 Final Championships Framed Trophy Cards - 3rd Place",
@@ -1397,7 +1398,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
-    // 2021 Final Championships Framed Trophy Cards - 2nd Place
+    // 2021 Final Championships Framed Trophy Cards - 2nd Place --- fcftc_2021_2nd
     {
         "id": null,
         "name": "2021 Final Championships Framed Trophy Cards - 2nd Place",
@@ -1408,7 +1409,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
-    // 2021 Final Championships Framed Trophy Cards - 1st Place Champion
+    // 2021 Final Championships Framed Trophy Cards - 1st Place Champion --- fcftc_2021_1st
     {
         "id": null,
         "name": "2021 Final Championships Framed Trophy Cards - 1st Place Champion",
@@ -1421,7 +1422,7 @@ const sets = [
     },
 
 // February 2022
-    // Tamer Party Vol.4
+    // Tamer Party Vol.4 --- tp4
     {
         "id": null,
         "name": "Tamer Party Vol.4",
@@ -1434,7 +1435,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/tamer_party_04/"
     },
-    // Official Tournament Pack Vol.4
+    // Official Tournament Pack Vol.4 --- otp4
     {
         "id": null,
         "name": "Official Tournament Pack Vol.4",
@@ -1450,7 +1451,7 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/Official_Tournament_Pack_Vol.4.png/"
     },
-    // Winner Pack Next Adventure
+    // Winner Pack Next Adventure --- wp4
     {
         "id": null,
         "name": "Winner Pack Next Adventure",
@@ -1466,7 +1467,7 @@ const sets = [
     },
 
 // February 25, 2022
-    // Next Adventure (BT7) Pre-Release Tournaments
+    // Next Adventure (BT7) Pre-Release Tournaments --- bt7_prerelease
     {
         "id": null,
         "name": "Next Adventure (BT7) Pre-Release Tournaments",
@@ -1481,7 +1482,7 @@ const sets = [
     },
 
 // March 4, 2022
-    // Booster Next Adventure [BT7]
+    // Booster Next Adventure [BT7] --- bt7
     {
         "id": "BT7",
         "name": "Booster Next Adventure [BT7]",
@@ -1514,7 +1515,7 @@ const sets = [
             "P-056": "",
         },
     },
-    // Booster Next Adventure [BT7] - Alternatives
+    // Booster Next Adventure [BT7] - Alternatives --- bt7_alts
     {
         "id": null,
         "name": "Booster Next Adventure [BT7] - Alternatives",
@@ -1541,7 +1542,7 @@ const sets = [
             "BT7-112": "",
         },
     },
-    // Booster Next Adventure [BT7] - Box Topper
+    // Booster Next Adventure [BT7] - Box Topper --- bt7_boxtopper
     {
         "id": null,
         "name": "Booster Next Adventure [BT7] - Box Topper",
@@ -1556,7 +1557,7 @@ const sets = [
             "BT7-091": "",
         },
     },
-    // Box Promotion Pack Next Adventure
+    // Box Promotion Pack Next Adventure --- bt7_promotion
     {
         "id": null,
         "name": "Box Promotion Pack Next Adventure",
@@ -1574,7 +1575,7 @@ const sets = [
     },
 
 // March, 2022
-    // 2021 Vault Set
+    // 2021 Vault Set --- 2021fest_vault
     {
         "id": null,
         "name": "2021 Vault Set",
@@ -1594,7 +1595,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
-    // Digi-Egg Set
+    // Digi-Egg Set --- 2021fest_digiegg
     {
         "id": null,
         "name": "Digi-Egg Set",
@@ -1614,7 +1615,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
-    // Fest Stamp SR
+    // Fest Stamp SR --- 2021fest_stamp
     {
         "id": null,
         "name": "Fest Stamp SR",
@@ -1625,7 +1626,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
-    // Fest WINNER Stamp SR
+    // Fest WINNER Stamp SR --- 2021fest_winner
     {
         "id": null,
         "name": "Fest WINNER Stamp SR",
@@ -1637,7 +1638,7 @@ const sets = [
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
 
-    // 2021 World Championship
+    // 2021 World Championship --- wc2021
     {
         "id": null,
         "name": "2021 World Championship Participation",
@@ -1648,7 +1649,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/world_championships2021/"
     },
-    // 2021 World Championship 3rd Place
+    // 2021 World Championship 3rd Place --- wc2021_3rd
     {
         "id": null,
         "name": "2021 World Championship Framed Trophy Cards - 3rd Place",
@@ -1659,7 +1660,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/world_championships2021/"
     },
-    // 2021 World Championship 2nd Place
+    // 2021 World Championship 2nd Place --- wc2021_2nd
     {
         "id": null,
         "name": "2021 World Championship Framed Trophy Cards - 2nd Place",
@@ -1670,7 +1671,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/world_championships2021/"
     },
-    // 2021 World Championship 1st Place
+    // 2021 World Championship 1st Place --- wc2021_1st
     {
         "id": null,
         "name": "2021 World Championship Framed Trophy Cards - 1st Place",
@@ -1683,7 +1684,7 @@ const sets = [
     },
 
 // May, 2022
-    // Tamer's Evolution Box2 [PB-06]
+    // Tamer's Evolution Box2 [PB-06] --- pb6
     {
         "id": null,
         "name": "Tamer's Evolution Box2 [PB-06]",
@@ -1704,7 +1705,7 @@ const sets = [
     },
 
 // May 6, 2022
-    // New Awakening (BT8) Pre-Release Tournaments
+    // New Awakening (BT8) Pre-Release Tournaments --- bt8_prerelease
     {
         "id": null,
         "name": "New Awakening (BT8) Pre-Release Tournaments",
@@ -1719,7 +1720,7 @@ const sets = [
     },
 
 // May 13, 2022
-    // Starter Deck ULTIMATE ANCIENT DRAGON [ST-9]
+    // Starter Deck ULTIMATE ANCIENT DRAGON [ST-9] --- st9
     {
         "id": "ST9",
         "name": "Starter Deck ULTIMATE ANCIENT DRAGON [ST-9]",
@@ -1729,7 +1730,7 @@ const sets = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-9.php"
     },
-    // Starter Deck PARALLEL WORLD TACTICIAN [ST-10]
+    // Starter Deck PARALLEL WORLD TACTICIAN [ST-10] --- st10
     {
         "id": "ST10",
         "name": "Starter Deck PARALLEL WORLD TACTICIAN [ST-10]",
@@ -1740,7 +1741,7 @@ const sets = [
         "info_url": "https://world.digimoncard.com/products/deck/st-10.php"
     },
 
-    // Booster New Awakening [BT8]
+    // Booster New Awakening [BT8] --- bt8
     {
         "id": "BT8",
         "name": "Booster New Awakening [BT8]",
@@ -1751,7 +1752,7 @@ const sets = [
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2d/BT-8-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e9/Playsheet-BT-8-EN.jpg/",
     },
-    // Booster New Awakening [BT8] - Alternatives
+    // Booster New Awakening [BT8] - Alternatives --- bt8_alts
     {
         "id": null,
         "name": "Booster New Awakening [BT8] - Alternatives",
@@ -1778,7 +1779,7 @@ const sets = [
             "BT8-112": "",
         },
     },
-    // Booster New Awakening [BT8] - Box Topper
+    // Booster New Awakening [BT8] - Box Topper --- bt8_boxtopper
     {
         "id": null,
         "name": "Booster New Awakening [BT8] - Box Topper",
@@ -1793,7 +1794,7 @@ const sets = [
             "BT8-091": "",
         },
     },
-    // Booster New Awakening [BT8] - Promo Box Topper
+    // Booster New Awakening [BT8] - Promo Box Topper --- bt8_promoboxtopper
     {
         "id": null,
         "name": "Booster New Awakening [BT8] - Promo Box Topper",
@@ -1805,7 +1806,7 @@ const sets = [
         },
     },
 
-    // Fest Set
+    // Fest Set --- 2021fest
     {
         "id": null,
         "name": "Fest Set",
@@ -1825,7 +1826,7 @@ const sets = [
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
 
-    // Ultimate Cup
+    // Ultimate Cup --- ultimatecup
     {
         "id": null,
         "name": "Ultimate Cup",
@@ -1844,7 +1845,7 @@ const sets = [
     },
 
 // June 24, 2022
-    // Booster Digital Hazard [EX2]
+    // Booster Digital Hazard [EX2] --- ex2
     {
         "id": "EX2",
         "name": "Booster Digital Hazard [EX2]",
@@ -1861,7 +1862,7 @@ const sets = [
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/20/EX-2-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/0/02/Playsheet-EX-2-EN.jpg/",
     },
-    // Booster Digital Hazard [EX2] - Alternatives
+    // Booster Digital Hazard [EX2] - Alternatives --- ex2_alts
     {
         "id": null,
         "name": "Booster Digital Hazard [EX2] - Alternatives",
@@ -1900,7 +1901,7 @@ const sets = [
             "EX2-074": "",
         },
     },
-    // Booster Digital Hazard [EX2] - Box Topper
+    // Booster Digital Hazard [EX2] - Box Topper --- ex2_boxtopper
     {
         "id": null,
         "name": "Booster Digital Hazard [EX2] - Box Topper",
@@ -1913,7 +1914,7 @@ const sets = [
     },
 
 // June, 2022
-    // Playmat and Card Set 1 Digimon Tamers [PB-08]
+    // Playmat and Card Set 1 Digimon Tamers [PB-08] --- pb8
     {
         "id": null,
         "name": "Playmat and Card Set 1 Digimon Tamers [PB-08]",
@@ -1933,7 +1934,7 @@ const sets = [
 
     },
 
-    // Tamer Party Vol.5
+    // Tamer Party Vol.5 --- tp5
     {
         "id": null,
         "name": "Tamer Party Vol.5",
@@ -1946,7 +1947,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/tamer_party_05/"
     },
-    // Official Tournament Pack Vol.5
+    // Official Tournament Pack Vol.5 --- otp5
     {
         "id": null,
         "name": "Official Tournament Pack Vol.5",
@@ -1962,7 +1963,7 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fd/Official_Tournament_Pack_Vol.5.png/"
     },
-    // Winner Pack New Awakening
+    // Winner Pack New Awakening --- wp5
     {
         "id": null,
         "name": "Winner Pack New Awakening",
@@ -1978,7 +1979,7 @@ const sets = [
     },
 
 // July 1, 2022
-    // Summer 2022 Dash Pack
+    // Summer 2022 Dash Pack --- 2022summer_dashpack
     {
         "id": null,
         "name": "Summer 2022 Dash Pack",
@@ -1990,7 +1991,7 @@ const sets = [
             "BT8-102": "483604",
         },
     },
-    // Digimon Survive Promo Pack
+    // Digimon Survive Promo Pack --- digimon_survive
     {
         "id": null,
         "name": "Digimon Survive Promo Pack",
@@ -2004,7 +2005,7 @@ const sets = [
     },
 
 // July 22, 2022
-    // X Record (BT9) Pre-Release Tournaments
+    // X Record (BT9) Pre-Release Tournaments --- bt9_prerelease
     {
         "id": null,
         "name": "X Record (BT9) Pre-Release Tournaments",
@@ -2019,7 +2020,7 @@ const sets = [
     },
 
 // July 29, 2022
-    // Booster X Record [BT9]
+    // Booster X Record [BT9] --- bt9
     {
         "id": "BT9",
         "name": "Booster X Record [BT9]",
@@ -2030,7 +2031,7 @@ const sets = [
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c7/BT-9-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/8/86/Playsheet-BT-9-EN.jpg/",
     },
-    // Booster X Record [BT9] - Alternatives
+    // Booster X Record [BT9] - Alternatives --- bt9_alts
     {
         "id": null,
         "name": "Booster X Record [BT9] - Alternatives",
@@ -2057,7 +2058,7 @@ const sets = [
             "BT9-112": "",
         },
     },
-    // Booster X Record [BT9] - Box Topper
+    // Booster X Record [BT9] - Box Topper --- bt9_boxtopper
     {
         "id": null,
         "name": "Booster X Record [BT9] - Box Topper",
@@ -2072,7 +2073,7 @@ const sets = [
             "BT9-006": "",
         },
     },
-    // Box Promotion Pack Update Pack
+    // Box Promotion Pack Update Pack --- bt9_promotion
     {
         "id": null,
         "name": "Box Promotion Pack Update Pack",
@@ -2090,7 +2091,7 @@ const sets = [
     },
 
 // July, 2022
-    // 2022 Regionals Set
+    // 2022 Regionals Set --- regional2022
     {
         "id": null,
         "name": "2022 Regionals Set",
@@ -2107,7 +2108,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/regionals2022_220422/"
     },
-    // Official Tournament Pack Vol.6
+    // Official Tournament Pack Vol.6 --- otp6
     {
         "id": null,
         "name": "Official Tournament Pack Vol.6",
@@ -2119,7 +2120,7 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/23/Official_Tournament_Pack_Vol.6.png/"
     },
-    // Winner Pack X Record
+    // Winner Pack X Record --- wp6
     {
         "id": null,
         "name": "Winner Pack X Record",
@@ -2135,10 +2136,10 @@ const sets = [
     },
 
 // August, 2022
-    // Store Champion Card Set
+    // Store Champion Card Set 2022 --- storechampion_2022
     {
         "id": null,
-        "name": "Store Champion Card Set",
+        "name": "Store Champion Card Set 2022",
         "release": "August, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
@@ -2152,7 +2153,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/store_championship_august/"
     },
-    // 2022 Regionals Card Set 2
+    // 2022 Regionals Card Set 2 --- regional2022_2
     {
         "id": null,
         "name": "2022 Regionals Card Set 2",
@@ -2180,7 +2181,7 @@ const sets = [
     },
 
 // September, 2022
-    // Playmat and Card Set 2 Floral Fun [PB-09]
+    // Playmat and Card Set 2 Floral Fun [PB-09] --- pb9
     {
         "id": null,
         "name": "Playmat and Card Set 2 Floral Fun [PB-09]",
@@ -2200,7 +2201,7 @@ const sets = [
     },
 
 // September 30, 2022
-    // Premium Deck Set [PD-01]
+    // Premium Deck Set [PD-01] --- pd1
     {
         "id": null,
         "name": "Premium Deck Set [PD-01]",
@@ -2213,7 +2214,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/products/goods/premium-deck-set.php"
     },
-    // Premium Deck Set Lucky Pack [PD-01]
+    // Premium Deck Set Lucky Pack [PD-01] --- pd1_lucky
     {
         "id": null,
         "name": "Premium Deck Set Lucky Pack [PD-01]",
@@ -2230,7 +2231,7 @@ const sets = [
     },
 
 // October 2022
-    // Tamer Party Vol.6
+    // Tamer Party Vol.6 --- tp6
     {
         "id": null,
         "name": "Tamer Party Vol.6",
@@ -2243,7 +2244,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/tamer_party_06/"
     },
-    // Event Pack 3
+    // Event Pack 3 --- eventpack3
     {
         "id": null,
         "name": "Event Pack 3",
@@ -2271,7 +2272,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/regionals2022_september/"
     },
-    // 2022 DC-1 Tournament
+    // 2022 DC-1 Tournament --- dc1_2022
     {
         "id": null,
         "name": "2022 DC-1 Tournament",
@@ -2288,7 +2289,7 @@ const sets = [
     },
 
 // October 2022–February 2023
-    // Official Tournament Pack Vol.7
+    // Official Tournament Pack Vol.7 --- otp7
     {
         "id": null,
         "name": "Official Tournament Pack Vol.7",
@@ -2304,7 +2305,7 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e9/Official_Tournament_Pack_Vol.7.png/"
     },
-    // Winner Pack Xros Encounter
+    // Winner Pack Xros Encounter --- wp7
     {
         "id": null,
         "name": "Winner Pack -Xros Encounter-",
@@ -2320,7 +2321,7 @@ const sets = [
     },
 
 // October 7, 2022
-    // Xros Encounter (BT10) Pre-Release Tournaments
+    // Xros Encounter (BT10) Pre-Release Tournaments --- bt10_prerelease
     {
         "id": null,
         "name": "Xros Encounter (BT10) Pre-Release Tournaments",
@@ -2335,7 +2336,7 @@ const sets = [
     },
 
 // October 14, 2022
-    // Starter Deck JESMON [ST-12]
+    // Starter Deck JESMON [ST-12] --- st12
     {
         "id": "ST12",
         "name": "Starter Deck JESMON [ST-12]",
@@ -2345,7 +2346,7 @@ const sets = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-12.php"
     },
-    // Starter Deck RagnaLoardmon [ST-13]
+    // Starter Deck RagnaLoardmon [ST-13] --- st13
     {
         "id": "ST13",
         "name": "Starter Deck RagnaLoardmon [ST-13]",
@@ -2355,7 +2356,7 @@ const sets = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-13.php"
     },
-    // Bonus Tamer Cards Pack
+    // Bonus Tamer Cards Pack --- bonus_tamer_cards
     {
         "id": null,
         "name": "Bonus Tamer Cards Pack",
@@ -2371,7 +2372,7 @@ const sets = [
         },
     },
 
-    // Booster Xros Encounter [BT10]
+    // Booster Xros Encounter [BT10] --- bt10
     {
         "id": "BT10",
         "name": "Booster Xros Encounter [BT10]",
@@ -2382,7 +2383,7 @@ const sets = [
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/24/BT-10-EN.png/",
         "playmat": "",
     },
-    // Booster Xros Encounter [BT10] - Alternatives
+    // Booster Xros Encounter [BT10] - Alternatives --- bt10_alts
     {
         "id": null,
         "name": "Booster Xros Encounter [BT10] - Alternatives",
@@ -2412,7 +2413,7 @@ const sets = [
             "BT6-111": "",
         },
     },
-    // Booster Xros Encounter [BT10] - Box Topper
+    // Booster Xros Encounter [BT10] - Box Topper --- bt10_boxtopper
     {
         "id": null,
         "name": "Booster Xros Encounter [BT10] - Box Topper",
@@ -2427,7 +2428,7 @@ const sets = [
             "BT10-093": "",
         },
     },
-    // Box Promotion Pack ST-11 Special Entry pack
+    // Box Promotion Pack ST-11 Special Entry pack --- st11
     {
         "id": null,
         "name": "Box Promotion Pack ST-11 Special Entry pack",
@@ -2454,7 +2455,7 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/0/01/ST-11-EN.png/",
     },
-    // 25th Special Memorial Pack
+    // 25th Special Memorial Pack --- 25specialmemorial
     {
         "id": null,
         "name": "25th Special Memorial Pack",
@@ -2478,10 +2479,10 @@ const sets = [
     },
 
 // November 4, 2022
-    // Gift Box 2022
+    // Gift Box 2022 [GB-02] --- gb2
     {
         "id": null,
-        "name": "Gift Box 2022",
+        "name": "Gift Box 2022 [GB-02]",
         "release": "November 4, 2022",
         "url": "tcgPlayerURL/parallel.jpg",
         "cards": {
@@ -2494,7 +2495,7 @@ const sets = [
     },
     
 // November 11, 2022
-    // Booster Draconic Roar [EX3]
+    // Booster Draconic Roar [EX3] --- ex3
     {
         "id": "EX3",
         "name": "Booster Draconic Roar [EX3]",
@@ -2511,7 +2512,7 @@ const sets = [
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/3/33/EX-3-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6d/Playsheet-EX-3-EN.jpg/"
     },
-    // Booster Draconic Roar [EX3] - Alternatives
+    // Booster Draconic Roar [EX3] - Alternatives --- ex3_alts
     {
         "id": null,
         "name": "Booster Draconic Roar [EX3] - Alternatives",
@@ -2538,7 +2539,7 @@ const sets = [
             "EX3-074": "",
         },
     },
-    // Booster Draconic Roar [EX3] - Box Topper
+    // Booster Draconic Roar [EX3] - Box Topper --- ex3_boxtopper
     {
         "id": null,
         "name": "Booster Draconic Roar [EX3] - Box Topper",
@@ -2556,7 +2557,7 @@ const sets = [
     },
 
 // February 2023
-    // 2022 Final Championships Framed Trophy Cards - Top 16
+    // 2022 Final Championships Framed Trophy Cards - Top 16 --- fcftc_2022_top16
     {
         "id": null,
         "name": "2022 Final Championships Framed Trophy Cards - Top 16",
@@ -2567,7 +2568,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
-    // 2022 Final Championships Framed Trophy Cards - 3rd Place
+    // 2022 Final Championships Framed Trophy Cards - 3rd Place --- fcftc_2022_3rd
     {
         "id": null,
         "name": "2022 Final Championships Framed Trophy Cards - 3rd Place",
@@ -2578,7 +2579,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
-    // 2022 Final Championships Framed Trophy Cards - 2nd Place
+    // 2022 Final Championships Framed Trophy Cards - 2nd Place --- fcftc_2022_2nd
     {
         "id": null,
         "name": "2022 Final Championships Framed Trophy Cards - 2nd Place",
@@ -2589,7 +2590,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
-    // 2022 Final Championships Framed Trophy Cards - 1st Place Champion
+    // 2022 Final Championships Framed Trophy Cards - 1st Place Champion --- fcftc_2022_1st
     {
         "id": null,
         "name": "2022 Final Championships Framed Trophy Cards - 1st Place Champion",
@@ -2602,7 +2603,7 @@ const sets = [
     },
 
 // March, 2023
-    // 2nd Anniversary Set [PB-12E]
+    // 2nd Anniversary Set [PB-12E] --- pb12e
     {
         "id": null,
         "name": "2nd Anniversary Set [PB-12E]",
@@ -2636,7 +2637,7 @@ const sets = [
     },
 
 // June, 2023
-    // Royal Knights Binder Set [PB13]
+    // Royal Knights Binder Set [PB13] --- pb13
     {
         "id": null,
         "name": "Royal Knights Binder Set [PB13]",
@@ -2655,7 +2656,7 @@ const sets = [
         "info_url": "https://world.digimoncard.com/products/goods/royal_knights_binderset.php"
     },
 
-    // Deck Box Set / Beelzemon
+    // Deck Box Set / Beelzemon --- deckbox
     {
         "id": null,
         "name": "Deck Box Set / Beelzemon",
@@ -2672,7 +2673,7 @@ const sets = [
         "info_url": "https://world.digimoncard.com/products/goods/deck-box-set_beelzemon.php"
     },
 
-    // Tamer Goods Set Angewomon & LadyDevimon [PB14]
+    // Tamer Goods Set Angewomon & LadyDevimon [PB14] --- pb14
     {
         "id": null,
         "name": "Tamer Goods Set Angewomon & LadyDevimon [PB14]",
