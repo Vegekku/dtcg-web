@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const otherButtons = document.getElementById('otherButtons');
     const setLists = document.getElementById('setLists');
     // 1. crear objeto coleccion si no existe. Si existe, obtener de storage.
+    let collection = JSON.parse( window.localStorage.getItem("collection") || '{}' );
 
     const getImageUrl = (url, setID, cardID, parallel = null) => {
         const noCardURL = 'https://assets.cardlist.dev/other/2020_card_backstage_design.jpg';
@@ -103,6 +104,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
 
             // 2. si no existe el set, añadirlo a la coleccion.
+            if (collection[setElement.id] === undefined) {
+                collection[setElement.id] = {};
+            }
+            window.localStorage.setItem("collection", JSON.stringify(collection));
 
             // Header
             const tHead = tableSet.createTHead();
@@ -122,7 +127,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 row.id = `${setElement.id}-${cardNumber}`;
                 row.insertCell(0).innerHTML = cardNumber;
                 // 3. obtener cantidad de cartas de este id
-                row.insertCell(1).innerHTML = 0;
+                if (collection[setElement.id][cardNumber] === undefined) {
+                    collection[setElement.id][cardNumber] = {amount: 0, cards: {}};
+                }
+                row.insertCell(1).innerHTML = collection[setElement.id][cardNumber].amount;
 
                 if (setElement.url) {
                     var cardUrl = getImageUrl(setElement.url, setElement.id, cardNumber);
@@ -132,6 +140,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
                     row.insertCell(2).innerHTML = `<img class="card" src="${cardUrl}" title="${setElement.name}">`;
                     // 4. si no existe la carta, la añadimos al set
+                    if (setElement.slug && collection[setElement.id][cardNumber].cards[setElement.slug] === undefined) {
+                        collection[setElement.id][cardNumber].cards[setElement.slug] = {status: 0, bought: 0};
+                    }
                 } else {
                     row.insertCell(2).innerHTML = "";
                 }
@@ -145,8 +156,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         } else {
             drawAlternatives(setElement.name, setElement.url, setElement.cards);
             // 5. si no existe la carta, la añadimos al set
+            if (setElement.slug && collection[setElement.id][cardNumber].cards[setElement.slug] === undefined) {
+                collection[setElement.id][cardNumber].cards[setElement.slug] = {status: 0, bought: 0};
+            }
         }
     });
 
     // 6. guardar coleccion en localstorage
+    window.localStorage.setItem("collection", JSON.stringify(collection));
 });
