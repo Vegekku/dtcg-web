@@ -56,6 +56,7 @@ const sets = [
     // Starter Deck COCYTUS BLUE [ST-2] --- st2
     {
         "id": "ST2",
+        "slug": "st2", 
         "name": "Starter Deck COCYTUS BLUE [ST-2]",
         "release": "January 29th, 2021",
         "total": 16,
@@ -66,6 +67,7 @@ const sets = [
     // Starter Deck HEAVEN'S YELLOW [ST-3] --- st3
     {
         "id": "ST3",
+        "slug": "st3", 
         "name": "Starter Deck HEAVEN'S YELLOW [ST-3]",
         "release": "January 29th, 2021",
         "total": 16,
@@ -76,6 +78,7 @@ const sets = [
     // Tamer Party Vol.1 --- tp1
     {
         "id": null,
+        "slug": "tp1", 
         "name": "Tamer Party Vol.1",
         "release": "January 29th, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -91,6 +94,7 @@ const sets = [
     // Release Special Booster Ver.1.0 [BT01-03] --- sbt10
     {
         "id": null,
+        "slug": "sbt10",
         "name": "Release Special Booster Ver.1.0 [BT01-03]",
         "release": "February 12, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
@@ -295,6 +299,7 @@ const sets = [
     // Release Special Booster Ver.1.0 [BT01-03] - Alternatives --- sbt10_alts
     {
         "id": null,
+        "slug": "sbt10_alts",
         "name": "Release Special Booster Ver.1.0 [BT01-03] - Alternatives",
         "release": "February 12, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -321,6 +326,7 @@ const sets = [
     // Release Special Booster Ver.1.0 [BT01-03] - Box Topper --- sbt10_boxtopper
     {
         "id": null,
+        "slug": "sbt10_boxtopper",
         "name": "Release Special Booster Ver.1.0 [BT01-03] - Box Topper",
         "release": "February 12, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -340,6 +346,7 @@ const sets = [
     // Special Box Promotion Pack --- sbp
     {
         "id": null,
+        "slug": "sbp",
         "name": "Special Box Promotion Pack",
         "release": "February 12, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
@@ -356,6 +363,7 @@ const sets = [
     // Dash Pack Ver. 1.0 --- dp10
     {
         "id": null,
+        "slug": "dp10",
         "name": "Dash Pack Ver. 1.0",
         "release": "February 12, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -373,6 +381,7 @@ const sets = [
     // Tamer's Evolution Box [PB-01] --- pb01
     {
         "id": null,
+        "slug": "pb01",
         "name": "Tamer's Evolution Box [PB-01]",
         "release": "February, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -392,6 +401,7 @@ const sets = [
     // Official Tournament Pack Vol.1 --- otp1
     {
         "id": null,
+        "slug": "otp1",
         "name": "Official Tournament Pack Vol.1",
         "release": "February, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
@@ -410,6 +420,7 @@ const sets = [
     // Tamer Battle Pack 1 --- tbp1
     {
         "id": null,
+        "slug": "tbp1",
         "name": "Tamer Battle Pack 1",
         "release": "February, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -426,6 +437,7 @@ const sets = [
     // Promotion Pack Ver.0.0 --- pp0
     {
         "id": null,
+        "slug": "pp0",
         "name": "Promotion Pack Ver.0.0",
         "release": "March 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
@@ -445,6 +457,7 @@ const sets = [
     // Release Special Booster Ver.1.5 [BT01-03] --- sbt15
     {
         "id": null,
+        "slug": "sbt15",
         "name": "Release Special Booster Ver.1.5 [BT01-03]",
         "release": "March 12, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
@@ -614,6 +627,7 @@ const sets = [
     // Release Special Booster Ver.1.5 [BT01-03] - Alternatives --- sbt15_alts
     {
         "id": null,
+        "slug": "sbt15_alts",
         "name": "Release Special Booster Ver.1.5 [BT01-03] - Alternatives",
         "release": "March 12, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -633,6 +647,7 @@ const sets = [
     // Release Special Booster Ver.1.5 [BT01-03] - Box Topper --- sbt15_boxtopper
     {
         "id": null,
+        "slug": "sbt15_boxtopper",
         "name": "Release Special Booster Ver.1.5 [BT01-03] - Box Topper",
         "release": "March 12, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -648,6 +663,7 @@ const sets = [
     // Dash Pack Ver. 1.5 --- dp15
     {
         "id": null,
+        "slug": "dp15",
         "name": "Dash Pack Ver. 1.5",
         "release": "March 12, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -663,6 +679,7 @@ const sets = [
     // Special Release Memorial Pack! --- srmp
     {
         "id": null,
+        "slug": "srmp",
         "name": "Special Release Memorial Pack!",
         "release": "March 12, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
@@ -679,6 +696,7 @@ const sets = [
     // Premium Pack Set 01 [PP01] --- pp01
     {
         "id": null,
+        "slug": "pp01",
         "name": "Premium Pack Set 01 [PP01]",
         "release": "May 28th, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -693,6 +711,7 @@ const sets = [
     // Great Legend (BT-04) Pre-Release Tournaments --- bt4_prerelease
     {
         "id": null,
+        "slug": "bt4_prerelease",
         "name": "Great Legend (BT-04) Pre-Release Tournaments",
         "release": "June 4-10, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardIDparallel.png",
@@ -708,6 +727,7 @@ const sets = [
     // Starter Deck GIGA GREEN [ST-4] --- st4
     {
         "id": "ST4",
+        "slug": "st4",
         "name": "Starter Deck GIGA GREEN [ST-4]",
         "release": "June 11, 2021",
         "total": 16,
@@ -718,6 +738,7 @@ const sets = [
     // Starter Deck MACHINE BLACK [ST-5] --- st5
     {
         "id": "ST5",
+        "slug": "st5",
         "name": "Starter Deck MACHINE BLACK [ST-5]",
         "release": "June 11, 2021",
         "total": 16,
@@ -728,6 +749,7 @@ const sets = [
     // Starter Deck VENOMOUS VIOLET [ST-6] --- st6
     {
         "id": "ST6",
+        "slug": "st6",
         "name": "Starter Deck VENOMOUS VIOLET [ST-6]",
         "release": "June 11, 2021",
         "total": 16,
@@ -739,6 +761,7 @@ const sets = [
     // Booster Great Legend [BT4] --- bt4
     {
         "id": "BT4",
+        "slug": "bt4",
         "name": "Booster Great Legend [BT4]",
         "release": "June 11, 2021",
         "total": 115,
@@ -750,6 +773,7 @@ const sets = [
     // Booster Great Legend [BT4] - Alternatives --- bt4_alts
     {
         "id": null,
+        "slug": "bt4_alts",
         "name": "Booster Great Legend [BT4] - Alternatives",
         "release": "June 11, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -774,6 +798,7 @@ const sets = [
     // Booster Great Legend [BT4] - Box Topper --- bt4_boxtopper
     {
         "id": null,
+        "slug": "bt4_boxtopper",
         "name": "Booster Great Legend [BT4] - Box Topper",
         "release": "June 11, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -789,6 +814,7 @@ const sets = [
     // Great Dash Pack --- bt4_dash
     {
         "id": null,
+        "slug": "bt4_dash",
         "name": "Great Dash Pack",
         "release": "June 11, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
@@ -802,6 +828,7 @@ const sets = [
     // Great Legend Power Up Pack --- bt4_powerup
     {
         "id": null,
+        "slug": "bt4_powerup",
         "name": "Great Legend Power Up Pack",
         "release": "June 11, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
@@ -820,6 +847,7 @@ const sets = [
     // Tamer Party Vol.2 --- tp2
     {
         "id": null,
+        "slug": "tp2",
         "name": "Tamer Party Vol.2",
         "release": "June 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -833,6 +861,7 @@ const sets = [
     // Official Tournament Pack Vol.2 --- otp2
     {
         "id": null,
+        "slug": "otp2",
         "name": "Official Tournament Pack Vol.2",
         "release": "June, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -851,6 +880,7 @@ const sets = [
     // Battle of Omni (BT-05) Pre-Release Tournaments --- bt5_prerelease
     {
         "id": null,
+        "slug": "bt5_prerelease",
         "name": "Battle of Omni (BT-05) Pre-Release Tournaments",
         "release": "July 30-August 5, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -866,6 +896,7 @@ const sets = [
     // July Evolution Cup --- evocup
     {
         "id": null,
+        "slug": "evocup",
         "name": "July Evolution Cup",
         "release": "July 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -880,6 +911,7 @@ const sets = [
     // Booster Battle of Omni [BT5] --- bt5
     {
         "id": "BT5",
+        "slug": "bt5",
         "name": "Booster Battle of Omni [BT5]",
         "release": "August 6, 2021",
         "total": 112,
@@ -891,6 +923,7 @@ const sets = [
     // Booster Battle of Omni [BT5] - Alternatives --- bt5_alts
     {
         "id": null,
+        "slug": "bt5_alts",
         "name": "Booster Battle of Omni [BT5] - Alternatives",
         "release": "August 6, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -904,9 +937,10 @@ const sets = [
             "BT5-112": "P1",
         },
     },
-    // Booster Battle of Omni [BT5] - Box Topper --- bt4_boxtopper
+    // Booster Battle of Omni [BT5] - Box Topper --- bt5_boxtopper
     {
         "id": null,
+        "slug": "bt5_boxtopper",
         "name": "Booster Battle of Omni [BT5] - Box Topper",
         "release": "August 6, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -922,6 +956,7 @@ const sets = [
     // June Premier TO events --- premierto
     {
         "id": null,
+        "slug": "premierto",
         "name": "June Premier TO events",
         "release": "June 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -935,6 +970,7 @@ const sets = [
     // Event Pack 1 --- eventpack1
     {
         "id": null,
+        "slug": "eventpack1",
         "name": "Event Pack 1",
         "release": "July 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -965,6 +1001,7 @@ const sets = [
     // 2021 Online Regionals Set --- regional2021
     {
         "id": null,
+        "slug": "regional2021",
         "name": "2021 Online Regionals Set",
         "release": "August 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -983,6 +1020,7 @@ const sets = [
     // Store Champion Card Set --- storechampion
     {
         "id": null,
+        "slug": "storechampion",
         "name": "Store Champion Card Set",
         "release": "September 13 – October 17, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -1002,6 +1040,7 @@ const sets = [
     // Tamer Party Vol.3 --- tp3
     {
         "id": null,
+        "slug": "tp3",
         "name": "Tamer Party Vol.3",
         "release": "September 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -1017,6 +1056,7 @@ const sets = [
     // DC-1 Grand Prix --- dc1
     {
         "id": null,
+        "slug": "dc1",
         "name": "DC-1 Grand Prix",
         "release": "September-October 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -1033,6 +1073,7 @@ const sets = [
     // Double Diamond (BT-06) Pre-Release Tournaments --- bt6_prerelease
     {
         "id": null,
+        "slug": "bt6_prerelease",
         "name": "Double Diamond (BT-06) Pre-Release Tournaments",
         "release": "October 8, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -1048,6 +1089,7 @@ const sets = [
     // Starter Deck GALLANTMON [ST-7] --- st7
     {
         "id": "ST7",
+        "slug": "st7",
         "name": "Starter Deck GALLANTMON [ST-7]",
         "release": "October 15, 2021",
         "total": 12,
@@ -1058,6 +1100,7 @@ const sets = [
     // Starter Deck ULFORCEVEEDRAMON [ST-8] --- st8
     {
         "id": "ST8",
+        "slug": "st8",
         "name": "Starter Deck ULFORCEVEEDRAMON [ST-8]",
         "release": "October 15, 2021",
         "total": 12,
@@ -1068,6 +1111,7 @@ const sets = [
     // First Anniversary Promo Pack --- first_anniversary
     {
         "id": null,
+        "slug": "first_anniversary",
         "name": "First Anniversary Promo Pack",
         "release": "October 15, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
@@ -1084,6 +1128,7 @@ const sets = [
     // Booster Double Diamond [BT6] --- bt6
     {
         "id": "BT6",
+        "slug": "bt6",
         "name": "Booster Double Diamond [BT6]",
         "release": "October 15, 2021",
         "total": 112,
@@ -1095,6 +1140,7 @@ const sets = [
     // Booster Double Diamond [BT6] - Alternatives --- bt6_alts
     {
         "id": null,
+        "slug": "bt6_alts",
         "name": "Booster Double Diamond [BT6] - Alternatives",
         "release": "October 15, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -1123,6 +1169,7 @@ const sets = [
     // Booster Double Diamond [BT6] - Box Topper --- bt6_boxtopper
     {
         "id": null,
+        "slug": "bt6_boxtopper",
         "name": "Booster Double Diamond [BT6] - Box Topper",
         "release": "October 15, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -1138,6 +1185,7 @@ const sets = [
     // 1-Year Anniversary Promo Pack --- 1year_anniversary
     {
         "id": null,
+        "slug": "1year_anniversary",
         "name": "1-Year Anniversary Promo Pack",
         "release": "October 15, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -1158,6 +1206,7 @@ const sets = [
     // Double Diamond Dash Pack --- bt6_dash
     {
         "id": null,
+        "slug": "bt6_dash",
         "name": "Double Diamond Dash Pack",
         "release": "October 15, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
@@ -1176,6 +1225,7 @@ const sets = [
     // Official Tournament Pack Vol.3 --- otp3
     {
         "id": null,
+        "slug": "otp3",
         "name": "Official Tournament Pack Vol.3",
         "release": "October, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -1218,6 +1268,7 @@ const sets = [
     // Winner Pack Double Diamond --- wp3
     {
         "id": null,
+        "slug": "wp3",
         "name": "Winner Pack Double Diamond",
         "release": "October, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
@@ -1234,6 +1285,7 @@ const sets = [
     // Booster Classic Collection [EX1] --- ex1
     {
         "id": "EX1",
+        "slug": "ex1",
         "name": "Booster Classic Collection [EX1]",
         "release": "December 10, 2021",
         "total": 73,
@@ -1245,6 +1297,7 @@ const sets = [
     // Booster Classic Collection [EX1] - Alternatives --- ex1_alts
     {
         "id": null,
+        "slug": "ex1_alts",
         "name": "Booster Classic Collection [EX1] - Alternatives",
         "release": "December 10, 2021",
         "url": "bandaitcgplusURL/setID/EX-cardIDp.png",
@@ -1284,6 +1337,7 @@ const sets = [
     // Booster Classic Collection [EX1] - Box Topper --- ex1_boxtopper
     {
         "id": null,
+        "slug": "ex1_boxtopper",
         "name": "Booster Classic Collection [EX1] - Box Topper",
         "release": "December 10, 2021",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1296,6 +1350,7 @@ const sets = [
     // 2021 Championship Finals Tamer‘s Evolution Pack --- cf_tamerevolution
     {
         "id": null,
+        "slug": "cf_tamerevolution",
         "name": "2021 Championship Finals Tamer‘s Evolution Pack",
         "release": "January 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1314,6 +1369,7 @@ const sets = [
     // Event Pack 2 --- eventpack2
     {
         "id": null,
+        "slug": "eventpack2",
         "name": "Event Pack 2",
         "release": "January 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1343,6 +1399,7 @@ const sets = [
     // Event Pack Alt-Art Gold Stamp Set --- eventpack_goldstamp
     {
         "id": null,
+        "slug": "eventpack_goldstamp",
         "name": "Event Pack Alt-Art Gold Stamp Set",
         "release": "January 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1359,6 +1416,7 @@ const sets = [
     // Judge Pack --- judgepack
     {
         "id": null,
+        "slug": "judgepack",
         "name": "Judge Pack",
         "release": "January 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1379,6 +1437,7 @@ const sets = [
     // 2021 Final Championships Framed Trophy Cards - Top 16 --- fcftc_2021_top16
     {
         "id": null,
+        "slug": "fcftc_2021_top16",
         "name": "2021 Final Championships Framed Trophy Cards - Top 16",
         "release": "January 2022",
         "url": null,
@@ -1390,6 +1449,7 @@ const sets = [
     // 2021 Final Championships Framed Trophy Cards - 3rd Place --- fcftc_2021_3rd
     {
         "id": null,
+        "slug": "fcftc_2021_3rd",
         "name": "2021 Final Championships Framed Trophy Cards - 3rd Place",
         "release": "January 2022",
         "url": null,
@@ -1401,6 +1461,7 @@ const sets = [
     // 2021 Final Championships Framed Trophy Cards - 2nd Place --- fcftc_2021_2nd
     {
         "id": null,
+        "slug": "fcftc_2021_2nd",
         "name": "2021 Final Championships Framed Trophy Cards - 2nd Place",
         "release": "January 2022",
         "url": null,
@@ -1412,6 +1473,7 @@ const sets = [
     // 2021 Final Championships Framed Trophy Cards - 1st Place Champion --- fcftc_2021_1st
     {
         "id": null,
+        "slug": "fcftc_2021_1st",
         "name": "2021 Final Championships Framed Trophy Cards - 1st Place Champion",
         "release": "January 2022",
         "url": null,
@@ -1425,6 +1487,7 @@ const sets = [
     // Tamer Party Vol.4 --- tp4
     {
         "id": null,
+        "slug": "tp4",
         "name": "Tamer Party Vol.4",
         "release": "February 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1438,6 +1501,7 @@ const sets = [
     // Official Tournament Pack Vol.4 --- otp4
     {
         "id": null,
+        "slug": "otp4",
         "name": "Official Tournament Pack Vol.4",
         "release": "February, 2021",
         "url": "digimoncardURL/setID-cardIDparallel.png",
@@ -1454,6 +1518,7 @@ const sets = [
     // Winner Pack Next Adventure --- wp4
     {
         "id": null,
+        "slug": "wp4",
         "name": "Winner Pack Next Adventure",
         "release": "February, 2021",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1470,6 +1535,7 @@ const sets = [
     // Next Adventure (BT7) Pre-Release Tournaments --- bt7_prerelease
     {
         "id": null,
+        "slug": "bt7_prerelease",
         "name": "Next Adventure (BT7) Pre-Release Tournaments",
         "release": "February 25, 2022",
         "url": "bandaitcgplusURL/P/e_P-cardID_d.png",
@@ -1485,6 +1551,7 @@ const sets = [
     // Booster Next Adventure [BT7] --- bt7
     {
         "id": "BT7",
+        "slug": "bt7",
         "name": "Booster Next Adventure [BT7]",
         "release": "March 4, 2022",
         "total": 112,
@@ -1501,6 +1568,7 @@ const sets = [
     },
     {
         "id": null,
+        "slug": "bt7",
         "name": "Booster Next Adventure [BT7]",
         "release": "March 4, 2022",
         "url": "bandaitcgplusURL/BT7/setID-cardID.png",
@@ -1518,6 +1586,7 @@ const sets = [
     // Booster Next Adventure [BT7] - Alternatives --- bt7_alts
     {
         "id": null,
+        "slug": "bt7_alts",
         "name": "Booster Next Adventure [BT7] - Alternatives",
         "release": "March 4, 2022",
         "url": "bandaitcgplusURL/setID/setID-cardIDp.png",
@@ -1545,6 +1614,7 @@ const sets = [
     // Booster Next Adventure [BT7] - Box Topper --- bt7_boxtopper
     {
         "id": null,
+        "slug": "bt7_boxtopper",
         "name": "Booster Next Adventure [BT7] - Box Topper",
         "release": "March 4, 2022",
         "url": "bandaitcgplusURL/setID/setID-cardIDp.png",
@@ -1560,6 +1630,7 @@ const sets = [
     // Box Promotion Pack Next Adventure --- bt7_promotion
     {
         "id": null,
+        "slug": "bt7_promotion",
         "name": "Box Promotion Pack Next Adventure",
         "release": "March 4, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1578,6 +1649,7 @@ const sets = [
     // 2021 Vault Set --- 2021fest_vault
     {
         "id": null,
+        "slug": "2021fest_vault",
         "name": "2021 Vault Set",
         "release": "March, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1598,6 +1670,7 @@ const sets = [
     // Digi-Egg Set --- 2021fest_digiegg
     {
         "id": null,
+        "slug": "2021fest_digiegg",
         "name": "Digi-Egg Set",
         "release": "March, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1618,6 +1691,7 @@ const sets = [
     // Fest Stamp SR --- 2021fest_stamp
     {
         "id": null,
+        "slug": "2021fest_stamp",
         "name": "Fest Stamp SR",
         "release": "March, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1629,6 +1703,7 @@ const sets = [
     // Fest WINNER Stamp SR --- 2021fest_winner
     {
         "id": null,
+        "slug": "2021fest_winner",
         "name": "Fest WINNER Stamp SR",
         "release": "March, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1641,6 +1716,7 @@ const sets = [
     // 2021 World Championship --- wc2021
     {
         "id": null,
+        "slug": "wc2021",
         "name": "2021 World Championship Participation",
         "release": "March, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1652,6 +1728,7 @@ const sets = [
     // 2021 World Championship 3rd Place --- wc2021_3rd
     {
         "id": null,
+        "slug": "wc2021_3rd",
         "name": "2021 World Championship Framed Trophy Cards - 3rd Place",
         "release": "March, 2022",
         "url": null,
@@ -1663,6 +1740,7 @@ const sets = [
     // 2021 World Championship 2nd Place --- wc2021_2nd
     {
         "id": null,
+        "slug": "wc2021_2nd",
         "name": "2021 World Championship Framed Trophy Cards - 2nd Place",
         "release": "March, 2022",
         "url": null,
@@ -1674,6 +1752,7 @@ const sets = [
     // 2021 World Championship 1st Place --- wc2021_1st
     {
         "id": null,
+        "slug": "wc2021_1st",
         "name": "2021 World Championship Framed Trophy Cards - 1st Place",
         "release": "March, 2022",
         "url": null,
@@ -1687,6 +1766,7 @@ const sets = [
     // Tamer's Evolution Box2 [PB-06] --- pb6
     {
         "id": null,
+        "slug": "pb6",
         "name": "Tamer's Evolution Box2 [PB-06]",
         "release": "February, 2021",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -1708,6 +1788,7 @@ const sets = [
     // New Awakening (BT8) Pre-Release Tournaments --- bt8_prerelease
     {
         "id": null,
+        "slug": "bt8_prerelease",
         "name": "New Awakening (BT8) Pre-Release Tournaments",
         "release": "May 6, 2022",
         "url": "digimoncardURL/setID-cardIDparallel.png",
@@ -1723,6 +1804,7 @@ const sets = [
     // Starter Deck ULTIMATE ANCIENT DRAGON [ST-9] --- st9
     {
         "id": "ST9",
+        "slug": "st9",
         "name": "Starter Deck ULTIMATE ANCIENT DRAGON [ST-9]",
         "release": "May 13, 2022",
         "total": 16,
@@ -1733,6 +1815,7 @@ const sets = [
     // Starter Deck PARALLEL WORLD TACTICIAN [ST-10] --- st10
     {
         "id": "ST10",
+        "slug": "st10",
         "name": "Starter Deck PARALLEL WORLD TACTICIAN [ST-10]",
         "release": "May 13, 2022",
         "total": 16,
@@ -1744,6 +1827,7 @@ const sets = [
     // Booster New Awakening [BT8] --- bt8
     {
         "id": "BT8",
+        "slug": "bt8",
         "name": "Booster New Awakening [BT8]",
         "release": "May 13, 2022",
         "total": 112,
@@ -1755,6 +1839,7 @@ const sets = [
     // Booster New Awakening [BT8] - Alternatives --- bt8_alts
     {
         "id": null,
+        "slug": "bt8_alts",
         "name": "Booster New Awakening [BT8] - Alternatives",
         "release": "May 13, 2022",
         "url": "bandaitcgplusURL/setID/e_setID_cardIDp.png",
@@ -1782,6 +1867,7 @@ const sets = [
     // Booster New Awakening [BT8] - Box Topper --- bt8_boxtopper
     {
         "id": null,
+        "slug": "bt8_boxtopper",
         "name": "Booster New Awakening [BT8] - Box Topper",
         "release": "May 13, 2022",
         "url": "bandaitcgplusURL/setID/e_setID_cardIDp.png",
@@ -1797,6 +1883,7 @@ const sets = [
     // Booster New Awakening [BT8] - Promo Box Topper --- bt8_promoboxtopper
     {
         "id": null,
+        "slug": "bt8_promoboxtopper",
         "name": "Booster New Awakening [BT8] - Promo Box Topper",
         "release": "May 13, 2022",
         "url": "bandaitcgplusURL/P/e_P-cardID_d.png",
@@ -1809,6 +1896,7 @@ const sets = [
     // Fest Set --- 2021fest
     {
         "id": null,
+        "slug": "2021fest",
         "name": "Fest Set",
         "release": "March, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1829,6 +1917,7 @@ const sets = [
     // Ultimate Cup --- ultimatecup
     {
         "id": null,
+        "slug": "ultimatecup",
         "name": "Ultimate Cup",
         "release": "April, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1848,6 +1937,7 @@ const sets = [
     // Booster Digital Hazard [EX2] --- ex2
     {
         "id": "EX2",
+        "slug": "ex2",
         "name": "Booster Digital Hazard [EX2]",
         "release": "June 24, 2022",
         "total": 74,
@@ -1865,6 +1955,7 @@ const sets = [
     // Booster Digital Hazard [EX2] - Alternatives --- ex2_alts
     {
         "id": null,
+        "slug": "ex2_alts",
         "name": "Booster Digital Hazard [EX2] - Alternatives",
         "release": "June 24, 2022",
         "url": "bandaitcgplusURL/setID/setID-cardIDP_dummy.png",
@@ -1904,6 +1995,7 @@ const sets = [
     // Booster Digital Hazard [EX2] - Box Topper --- ex2_boxtopper
     {
         "id": null,
+        "slug": "ex2_boxtopper",
         "name": "Booster Digital Hazard [EX2] - Box Topper",
         "release": "June 24, 2022",
         "url": null,
@@ -1917,6 +2009,7 @@ const sets = [
     // Playmat and Card Set 1 Digimon Tamers [PB-08] --- pb8
     {
         "id": null,
+        "slug": "pb8",
         "name": "Playmat and Card Set 1 Digimon Tamers [PB-08]",
         "release": "June, 2021",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -1937,6 +2030,7 @@ const sets = [
     // Tamer Party Vol.5 --- tp5
     {
         "id": null,
+        "slug": "tp5",
         "name": "Tamer Party Vol.5",
         "release": "June 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1950,6 +2044,7 @@ const sets = [
     // Official Tournament Pack Vol.5 --- otp5
     {
         "id": null,
+        "slug": "otp5",
         "name": "Official Tournament Pack Vol.5",
         "release": "June, 2021",
         "url": "bandaitcgplusURL/setID/e_setID-cardIDparallel_D.png",
@@ -1966,6 +2061,7 @@ const sets = [
     // Winner Pack New Awakening --- wp5
     {
         "id": null,
+        "slug": "wp5",
         "name": "Winner Pack New Awakening",
         "release": "February, 2021",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -1982,6 +2078,7 @@ const sets = [
     // Summer 2022 Dash Pack --- 2022summer_dashpack
     {
         "id": null,
+        "slug": "2022summer_dashpack",
         "name": "Summer 2022 Dash Pack",
         "release": "July 1, 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -1994,6 +2091,7 @@ const sets = [
     // Digimon Survive Promo Pack --- digimon_survive
     {
         "id": null,
+        "slug": "digimon_survive",
         "name": "Digimon Survive Promo Pack",
         "release": "July 1, 2022",
         "url": "bandaitcgplusURL/setID/e_setID-cardID_D_RGB_transp.png",
@@ -2008,6 +2106,7 @@ const sets = [
     // X Record (BT9) Pre-Release Tournaments --- bt9_prerelease
     {
         "id": null,
+        "slug": "bt9_prerelease",
         "name": "X Record (BT9) Pre-Release Tournaments",
         "release": "July 22, 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -2023,6 +2122,7 @@ const sets = [
     // Booster X Record [BT9] --- bt9
     {
         "id": "BT9",
+        "slug": "bt9",
         "name": "Booster X Record [BT9]",
         "release": "July 29, 2022",
         "total": 112,
@@ -2034,6 +2134,7 @@ const sets = [
     // Booster X Record [BT9] - Alternatives --- bt9_alts
     {
         "id": null,
+        "slug": "bt9_alts",
         "name": "Booster X Record [BT9] - Alternatives",
         "release": "July 29, 2022",
         "url": "bandaitcgplusURL/setID/e_setID-cardIDP_dummy.jpg",
@@ -2061,6 +2162,7 @@ const sets = [
     // Booster X Record [BT9] - Box Topper --- bt9_boxtopper
     {
         "id": null,
+        "slug": "bt9_boxtopper",
         "name": "Booster X Record [BT9] - Box Topper",
         "release": "July 29, 2022",
         "url": "bandaitcgplusURL/setID/e_setID-cardIDP_dummy.jpg",
@@ -2076,6 +2178,7 @@ const sets = [
     // Box Promotion Pack Update Pack --- bt9_promotion
     {
         "id": null,
+        "slug": "bt9_promotion",
         "name": "Box Promotion Pack Update Pack",
         "release": "July 29, 2022",
         "url": "bandaitcgplusURL/setID/e_setID-cardID_Dparallel.png",
@@ -2094,6 +2197,7 @@ const sets = [
     // 2022 Regionals Set --- regional2022
     {
         "id": null,
+        "slug": "regional2022",
         "name": "2022 Regionals Set",
         "release": "July, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -2111,6 +2215,7 @@ const sets = [
     // Official Tournament Pack Vol.6 --- otp6
     {
         "id": null,
+        "slug": "otp6",
         "name": "Official Tournament Pack Vol.6",
         "release": "July, 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -2123,6 +2228,7 @@ const sets = [
     // Winner Pack X Record --- wp6
     {
         "id": null,
+        "slug": "wp6",
         "name": "Winner Pack X Record",
         "release": "July, 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -2139,6 +2245,7 @@ const sets = [
     // Store Champion Card Set 2022 --- storechampion_2022
     {
         "id": null,
+        "slug": "storechampion_2022",
         "name": "Store Champion Card Set 2022",
         "release": "August, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -2156,6 +2263,7 @@ const sets = [
     // 2022 Regionals Card Set 2 --- regional2022_2
     {
         "id": null,
+        "slug": "regional2022_2",
         "name": "2022 Regionals Card Set 2",
         "release": "July, 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -2171,6 +2279,7 @@ const sets = [
     },
     {
         "id": null,
+        "slug": "regional2022_2",
         "name": "2022 Regionals Card Set 2",
         "release": "July, 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.png",
@@ -2184,6 +2293,7 @@ const sets = [
     // Playmat and Card Set 2 Floral Fun [PB-09] --- pb9
     {
         "id": null,
+        "slug": "pb9",
         "name": "Playmat and Card Set 2 Floral Fun [PB-09]",
         "release": "September, 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -2204,6 +2314,7 @@ const sets = [
     // Premium Deck Set [PD-01] --- pd1
     {
         "id": null,
+        "slug": "pd1",
         "name": "Premium Deck Set [PD-01]",
         "release": "September 30, 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -2217,6 +2328,7 @@ const sets = [
     // Premium Deck Set Lucky Pack [PD-01] --- pd1_lucky
     {
         "id": null,
+        "slug": "pd1_lucky",
         "name": "Premium Deck Set Lucky Pack [PD-01]",
         "release": "September 30, 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -2234,6 +2346,7 @@ const sets = [
     // Tamer Party Vol.6 --- tp6
     {
         "id": null,
+        "slug": "tp6",
         "name": "Tamer Party Vol.6",
         "release": "October 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.png",
@@ -2247,6 +2360,7 @@ const sets = [
     // Event Pack 3 --- eventpack3
     {
         "id": null,
+        "slug": "eventpack3",
         "name": "Event Pack 3",
         "release": "October 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -2275,6 +2389,7 @@ const sets = [
     // 2022 DC-1 Tournament --- dc1_2022
     {
         "id": null,
+        "slug": "dc1_2022",
         "name": "2022 DC-1 Tournament",
         "release": "October 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -2292,6 +2407,7 @@ const sets = [
     // Official Tournament Pack Vol.7 --- otp7
     {
         "id": null,
+        "slug": "otp7",
         "name": "Official Tournament Pack Vol.7",
         "release": "October 2022–February 2023",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -2308,6 +2424,7 @@ const sets = [
     // Winner Pack Xros Encounter --- wp7
     {
         "id": null,
+        "slug": "wp7",
         "name": "Winner Pack -Xros Encounter-",
         "release": "October 2022–February 2023",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -2324,6 +2441,7 @@ const sets = [
     // Xros Encounter (BT10) Pre-Release Tournaments --- bt10_prerelease
     {
         "id": null,
+        "slug": "bt10_prerelease",
         "name": "Xros Encounter (BT10) Pre-Release Tournaments",
         "release": "October 7, 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -2339,6 +2457,7 @@ const sets = [
     // Starter Deck JESMON [ST-12] --- st12
     {
         "id": "ST12",
+        "slug": "st12",
         "name": "Starter Deck JESMON [ST-12]",
         "release": "October 14, 2022",
         "total": 16,
@@ -2349,6 +2468,7 @@ const sets = [
     // Starter Deck RagnaLoardmon [ST-13] --- st13
     {
         "id": "ST13",
+        "slug": "st13",
         "name": "Starter Deck RagnaLoardmon [ST-13]",
         "release": "October 14, 2022",
         "total": 16,
@@ -2359,6 +2479,7 @@ const sets = [
     // Bonus Tamer Cards Pack --- bonus_tamer_cards
     {
         "id": null,
+        "slug": "bonus_tamer_cards",
         "name": "Bonus Tamer Cards Pack",
         "release": "October 14, 2022",
         "url": "bandaitcgplusURL/ST12/e_setID-cardIDparallel.png",
@@ -2375,6 +2496,7 @@ const sets = [
     // Booster Xros Encounter [BT10] --- bt10
     {
         "id": "BT10",
+        "slug": "bt10",
         "name": "Booster Xros Encounter [BT10]",
         "release": "October 14, 2022",
         "total": 112,
@@ -2386,6 +2508,7 @@ const sets = [
     // Booster Xros Encounter [BT10] - Alternatives --- bt10_alts
     {
         "id": null,
+        "slug": "bt10_alts",
         "name": "Booster Xros Encounter [BT10] - Alternatives",
         "release": "October 14, 2022",
         "url": "bandaitcgplusURL/BT10/e_setID-cardIDp_D.png",
@@ -2416,6 +2539,7 @@ const sets = [
     // Booster Xros Encounter [BT10] - Box Topper --- bt10_boxtopper
     {
         "id": null,
+        "slug": "bt10_boxtopper",
         "name": "Booster Xros Encounter [BT10] - Box Topper",
         "release": "October 14, 2022",
         "url": "bandaitcgplusURL/BT10/e_setID-cardIDp_D.png",
@@ -2431,6 +2555,7 @@ const sets = [
     // Box Promotion Pack ST-11 Special Entry pack --- st11
     {
         "id": null,
+        "slug": "st11",
         "name": "Box Promotion Pack ST-11 Special Entry pack",
         "release": "October 14, 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -2458,6 +2583,7 @@ const sets = [
     // 25th Special Memorial Pack --- 25specialmemorial
     {
         "id": null,
+        "slug": "25specialmemorial",
         "name": "25th Special Memorial Pack",
         "release": "October 14, 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
@@ -2482,6 +2608,7 @@ const sets = [
     // Gift Box 2022 [GB-02] --- gb2
     {
         "id": null,
+        "slug": "gb2",
         "name": "Gift Box 2022 [GB-02]",
         "release": "November 4, 2022",
         "url": "tcgPlayerURL/parallel.jpg",
@@ -2498,6 +2625,7 @@ const sets = [
     // Booster Draconic Roar [EX3] --- ex3
     {
         "id": "EX3",
+        "slug": "ex3",
         "name": "Booster Draconic Roar [EX3]",
         "release": "November 11, 2022",
         "total": 74,
@@ -2515,6 +2643,7 @@ const sets = [
     // Booster Draconic Roar [EX3] - Alternatives --- ex3_alts
     {
         "id": null,
+        "slug": "ex3_alts",
         "name": "Booster Draconic Roar [EX3] - Alternatives",
         "release": "November 11, 2022",
         "url": "bandaitcgplusURL/setID/e_setID-cardIDp_D.png",
@@ -2542,6 +2671,7 @@ const sets = [
     // Booster Draconic Roar [EX3] - Box Topper --- ex3_boxtopper
     {
         "id": null,
+        "slug": "ex3_boxtopper",
         "name": "Booster Draconic Roar [EX3] - Box Topper",
         "release": "November 11, 2022",
         "url": null,
@@ -2560,6 +2690,7 @@ const sets = [
     // 2022 Final Championships Framed Trophy Cards - Top 16 --- fcftc_2022_top16
     {
         "id": null,
+        "slug": "fcftc_2022_top16",
         "name": "2022 Final Championships Framed Trophy Cards - Top 16",
         "release": "January 2022",
         "url": "noCardURL",
@@ -2571,6 +2702,7 @@ const sets = [
     // 2022 Final Championships Framed Trophy Cards - 3rd Place --- fcftc_2022_3rd
     {
         "id": null,
+        "slug": "fcftc_2022_3rd",
         "name": "2022 Final Championships Framed Trophy Cards - 3rd Place",
         "release": "January 2022",
         "url": "noCardURL",
@@ -2582,6 +2714,7 @@ const sets = [
     // 2022 Final Championships Framed Trophy Cards - 2nd Place --- fcftc_2022_2nd
     {
         "id": null,
+        "slug": "fcftc_2022_2nd",
         "name": "2022 Final Championships Framed Trophy Cards - 2nd Place",
         "release": "January 2022",
         "url": "noCardURL",
@@ -2593,6 +2726,7 @@ const sets = [
     // 2022 Final Championships Framed Trophy Cards - 1st Place Champion --- fcftc_2022_1st
     {
         "id": null,
+        "slug": "fcftc_2022_1st",
         "name": "2022 Final Championships Framed Trophy Cards - 1st Place Champion",
         "release": "January 2022",
         "url": "noCardURL",
@@ -2606,6 +2740,7 @@ const sets = [
     // 2nd Anniversary Set [PB-12E] --- pb12e
     {
         "id": null,
+        "slug": "pb12e",
         "name": "2nd Anniversary Set [PB-12E]",
         "release": "March, 2023",
         "url": "noCardURL",
@@ -2640,6 +2775,7 @@ const sets = [
     // Royal Knights Binder Set [PB13] --- pb13
     {
         "id": null,
+        "slug": "pb13",
         "name": "Royal Knights Binder Set [PB13]",
         "release": "March, 2023",
         "url": "noCardURL",
@@ -2659,6 +2795,7 @@ const sets = [
     // Deck Box Set / Beelzemon --- deckbox
     {
         "id": null,
+        "slug": "deckbox",
         "name": "Deck Box Set / Beelzemon",
         "release": "June, 2023",
         "url": "noCardURL",
@@ -2676,6 +2813,7 @@ const sets = [
     // Tamer Goods Set Angewomon & LadyDevimon [PB14] --- pb14
     {
         "id": null,
+        "slug": "pb14",
         "name": "Tamer Goods Set Angewomon & LadyDevimon [PB14]",
         "release": "June, 2023",
         "url": "noCardURL",
