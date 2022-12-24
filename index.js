@@ -37,7 +37,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return cardUrl;
     };
 
-    // const drawAlternatives = (setName, url, cards) => {
+    const getImageTag = (url, title, id) => {
+        return `<img class="card" src="${url}" title="${title}" id="${id}" data-modal="modal-one" onclick="modalOpen()">`;
+    }
+
     const drawAlternatives = (setElement) => {
         const {name, url, cards, slug} = setElement;
         if ( url === null ) {
@@ -46,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 const cardRow = document.getElementById(cardNumber);
     
                 if (cardRow !== null) {
-                    cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${name}" id="${cardNumber}__${slug}">`;
+                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`);
 
                     // 5. si no existe la carta, la añadimos al set
                     const [setId, cardId] = cardNumber.split('-');
@@ -65,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     if ( Array.isArray( parallel )) {
                         parallel.forEach((parallelElement, index) => {
                             const cardUrl = getImageUrl(url, setId, cardId, parallelElement);
-                            cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${name}" id="${cardNumber}__${slug}_${index}">`;
+                            cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`);
 
                             // 5. si no existe la carta, la añadimos al set
                             const parallel_slug = `${slug}_${index}`;
@@ -75,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         });
                     } else {
                         const cardUrl = getImageUrl(url, setId, cardId, parallel);
-                        cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${name}" id="${cardNumber}__${slug}">`;
+                        cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`);
 
                         // 5. si no existe la carta, la añadimos al set
                         if (collection[setId][cardId].cards[slug] === undefined) {
@@ -159,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         cardUrl = getImageUrl(setElement.override.url, setElement.id, cardId);
                     }
 
-                    row.insertCell(2).innerHTML = `<img class="card" src="${cardUrl}" title="${setElement.name}" id="${cardNumber}__${setElement.slug}">`;
+                    row.insertCell(2).innerHTML = getImageTag(cardUrl, setElement.name, `${cardNumber}__${setElement.slug}`);
                     // 4. si no existe la carta, la añadimos al set
                     if (setElement.slug && collection[setElement.id][cardId].cards[setElement.slug] === undefined) {
                         collection[setElement.id][cardId].cards[setElement.slug] = {status: 0, bought: 0};
