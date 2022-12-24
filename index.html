@@ -21,14 +21,13 @@
     <div id="setLists"></div>
     <a href="https://www.paypal.com/donate/?hosted_button_id=49N3JWT3ZHY98">Ayuda a Ennis!</a>
     <a href="https://paypal.me/vegekku">Invítame a un café</a>
-    <button data-modal="modal-one">Open Modal</button>
     
     <div class="modal" id="modal-one">
-        <div class="modal-bg modal-exit"></div>
+        <div class="modal-bg modal-exit" onclick="modalClose()"></div>
         <div class="modal-container">
             <h1>Amazing Modal</h1>
             <h2>Pure Vanilla JavaScript</h2>
-            <button class="modal-close modal-exit">X</button>
+            <button class="modal-close modal-exit" onclick="modalClose()">X</button>
         </div>
     </div>
 
