@@ -37,14 +37,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return cardUrl;
     };
 
-    const drawAlternatives = (setName, url, cards) => {
+    // const drawAlternatives = (setName, url, cards) => {
+    const drawAlternatives = (setElement) => {
+        const {name, url, cards, slug} = setElement;
         if ( url === null ) {
             Object.entries(cards).forEach(card => {
                 const [cardNumber, cardUrl] = card;
                 const cardRow = document.getElementById(cardNumber);
     
                 if (cardRow !== null) {
-                    cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setName}">`;
+                    cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${name}" id="${cardNumber}__${slug}">`;
+
+                    // 5. si no existe la carta, la añadimos al set
+                    const [setId, cardId] = cardNumber.split('-');
+                    if (collection[setId][cardId].cards[slug] === undefined) {
+                        collection[setId][cardId].cards[slug] = {status: 0, bought: 0};
+                    }
                 }
             });
         } else {
@@ -55,14 +63,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 if (cardRow !== null) {
                     const [setId, cardId] = cardNumber.split('-');
                     if ( Array.isArray( parallel )) {
-                        parallel.forEach(parallelElement => {
+                        parallel.forEach((parallelElement, index) => {
                             const cardUrl = getImageUrl(url, setId, cardId, parallelElement);
-                            cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setName}">`;
+                            cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${name}" id="${cardNumber}__${slug}_${index}">`;
+
+                            // 5. si no existe la carta, la añadimos al set
+                            const parallel_slug = `${slug}_${index}`;
+                            if (collection[setId][cardId].cards[parallel_slug] === undefined) {
+                                collection[setId][cardId].cards[parallel_slug] = {status: 0, bought: 0};
+                            }
                         });
                     } else {
                         const cardUrl = getImageUrl(url, setId, cardId, parallel);
-                        cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${setName}">`;
+                        cardRow.getElementsByClassName('card_list')[0].innerHTML += `<img class="card" src="${cardUrl}" title="${name}" id="${cardNumber}__${slug}">`;
+
+                        // 5. si no existe la carta, la añadimos al set
+                        if (collection[setId][cardId].cards[slug] === undefined) {
+                            collection[setId][cardId].cards[slug] = {status: 0, bought: 0};
+                        }
                     }
+
                 }
             });
         }
@@ -122,26 +142,27 @@ document.addEventListener("DOMContentLoaded", function (event) {
             // Body
             const tBody = tableSet.createTBody();
             for (let index = 1; index <= setElement.total; index++) {
-                var cardNumber = String(index).padStart(setElement.add_zero, '0');
+                var cardId = String(index).padStart(setElement.add_zero, '0');
                 var row = tBody.insertRow(index - 1);
-                row.id = `${setElement.id}-${cardNumber}`;
-                row.insertCell(0).innerHTML = cardNumber;
+                var cardNumber = `${setElement.id}-${cardId}`;
+                row.id = cardNumber;
+                row.insertCell(0).innerHTML = cardId;
                 // 3. obtener cantidad de cartas de este id
-                if (collection[setElement.id][cardNumber] === undefined) {
-                    collection[setElement.id][cardNumber] = {amount: 0, cards: {}};
+                if (collection[setElement.id][cardId] === undefined) {
+                    collection[setElement.id][cardId] = {amount: 0, cards: {}};
                 }
-                row.insertCell(1).innerHTML = collection[setElement.id][cardNumber].amount;
+                row.insertCell(1).innerHTML = collection[setElement.id][cardId].amount;
 
                 if (setElement.url) {
-                    var cardUrl = getImageUrl(setElement.url, setElement.id, cardNumber);
-                    if ( 'override' in setElement && `${setElement.id}-${cardNumber}` in setElement.override.cards ) {
-                        cardUrl = getImageUrl(setElement.override.url, setElement.id, cardNumber);
+                    var cardUrl = getImageUrl(setElement.url, setElement.id, cardId);
+                    if ( 'override' in setElement && cardNumber in setElement.override.cards ) {
+                        cardUrl = getImageUrl(setElement.override.url, setElement.id, cardId);
                     }
 
-                    row.insertCell(2).innerHTML = `<img class="card" src="${cardUrl}" title="${setElement.name}">`;
+                    row.insertCell(2).innerHTML = `<img class="card" src="${cardUrl}" title="${setElement.name}" id="${cardNumber}__${setElement.slug}">`;
                     // 4. si no existe la carta, la añadimos al set
-                    if (setElement.slug && collection[setElement.id][cardNumber].cards[setElement.slug] === undefined) {
-                        collection[setElement.id][cardNumber].cards[setElement.slug] = {status: 0, bought: 0};
+                    if (setElement.slug && collection[setElement.id][cardId].cards[setElement.slug] === undefined) {
+                        collection[setElement.id][cardId].cards[setElement.slug] = {status: 0, bought: 0};
                     }
                 } else {
                     row.insertCell(2).innerHTML = "";
@@ -154,11 +175,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
             addButton(setElement);
         } else {
-            drawAlternatives(setElement.name, setElement.url, setElement.cards);
-            // 5. si no existe la carta, la añadimos al set
-            if (setElement.slug && collection[setElement.id][cardNumber].cards[setElement.slug] === undefined) {
-                collection[setElement.id][cardNumber].cards[setElement.slug] = {status: 0, bought: 0};
-            }
+            drawAlternatives(setElement);
         }
     });
 
