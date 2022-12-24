@@ -8,6 +8,7 @@
     <script src="firebase.js"></script>
     <script src="index.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
     <title>DTCG List</title>
 </head>
 
@@ -20,6 +21,18 @@
     <div id="setLists"></div>
     <a href="https://www.paypal.com/donate/?hosted_button_id=49N3JWT3ZHY98">Ayuda a Ennis!</a>
     <a href="https://paypal.me/vegekku">Invítame a un café</a>
+    <button data-modal="modal-one">Open Modal</button>
+    
+    <div class="modal" id="modal-one">
+        <div class="modal-bg modal-exit"></div>
+        <div class="modal-container">
+            <h1>Amazing Modal</h1>
+            <h2>Pure Vanilla JavaScript</h2>
+            <button class="modal-close modal-exit">X</button>
+        </div>
+    </div>
+
+    <script src="modal.js"></script>
 </body>
 
 </html>
