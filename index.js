@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     };
 
     const getImageTag = (url, title, id) => {
-        return `<img class="card" src="${url}" title="${title}" id="${id}" data-modal="modal-one" onclick="modalOpen()">`;
+        return `<img class="card" src="${url}" title="${title}" id="${id}" data-modal="modal-one" onclick="modalOpen(this)">`;
     }
 
     const drawAlternatives = (setElement) => {
