@@ -17,6 +17,11 @@
         <div id="boosterButtons"></div>
         <div id="starterButtons"></div>
         <div id="otherButtons"></div>
+        <div id="editionButtons">
+            <button id="editSet" onclick="editSet()">Editar</button>
+            <button id="saveSet" onclick="saveSet()" hidden>Guardar</button>
+            <button id="cancelEdit" onclick="cancelEdit()" hidden>Cancelar</button>
+        </div>
     </div>
     <div id="setLists"></div>
     <a href="https://www.paypal.com/donate/?hosted_button_id=49N3JWT3ZHY98">Ayuda a Ennis!</a>
@@ -25,8 +30,25 @@
     <div class="modal" id="modal-one">
         <div class="modal-bg modal-exit" onclick="modalClose()"></div>
         <div class="modal-container">
-            <h1 id="modal-title">Amazing Modal</h1>
-            <h2>Pure Vanilla JavaScript</h2>
+            <h1 id="modal-title"></h1>
+            <input type="hidden" name="cardId" id="cardId">
+            <div>
+                <input type="radio" id="no_have" name="status" value="0">
+                <label for="huey">No la tengo</label>
+            </div>
+            <div>
+                <input type="radio" id="got_it" name="status" value="1">
+                <label for="huey">Obtenida</label>
+            </div>
+            <div>
+                <input type="radio" id="bought_it" name="status" value="2">
+                <label for="huey">Comprada</label>
+            </div>
+            <div>
+                <input type="radio" id="proxy" name="status" value="3">
+                <label for="huey">Proxy</label>
+            </div>
+            <button class="" onclick="modalOk()">Ok</button>
             <button class="modal-close modal-exit" onclick="modalClose()">X</button>
         </div>
     </div>

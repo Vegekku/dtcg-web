@@ -1,10 +1,11 @@
+let collection = null;
 document.addEventListener("DOMContentLoaded", function (event) {
     const boosterButtons = document.getElementById('boosterButtons');
     const starterButtons = document.getElementById('starterButtons');
     const otherButtons = document.getElementById('otherButtons');
     const setLists = document.getElementById('setLists');
     // 1. crear objeto coleccion si no existe. Si existe, obtener de storage.
-    let collection = JSON.parse( window.localStorage.getItem("collection") || '{}' );
+    collection = JSON.parse( window.localStorage.getItem("collection") || '{}' );
 
     const getImageUrl = (url, setID, cardID, parallel = null) => {
         const noCardURL = 'https://assets.cardlist.dev/other/2020_card_backstage_design.jpg';
@@ -37,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return cardUrl;
     };
 
-    const getImageTag = (url, title, id) => {
-        return `<img loading="lazy" class="card" src="${url}" title="${title}" id="${id}" data-modal="modal-one" onclick="modalOpen(this)">`;
+    const getImageTag = (url, title, id, status = 0) => {
+        return `<img loading="lazy" class="card" src="${url}" title="${title}" id="${id}" data-status="${status}" data-modal="modal-one" onclick="modalOpen(this)">`;
     }
 
     const drawAlternatives = (setElement) => {
@@ -158,15 +159,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
                 if (setElement.url) {
                     var cardUrl = getImageUrl(setElement.url, setElement.id, cardId);
+
                     if ( 'override' in setElement && cardNumber in setElement.override.cards ) {
                         cardUrl = getImageUrl(setElement.override.url, setElement.id, cardId);
                     }
 
-                    row.insertCell(2).innerHTML = getImageTag(cardUrl, setElement.name, `${cardNumber}__${setElement.slug}`);
                     // 4. si no existe la carta, la añadimos al set
                     if (setElement.slug && collection[setElement.id][cardId].cards[setElement.slug] === undefined) {
                         collection[setElement.id][cardId].cards[setElement.slug] = {status: 0, bought: 0};
                     }
+
+                    row.insertCell(2).innerHTML = getImageTag(cardUrl, setElement.name, `${cardNumber}__${setElement.slug}`, collection[setElement.id][cardId].cards[setElement.slug].status);
                 } else {
                     row.insertCell(2).innerHTML = "";
                 }
