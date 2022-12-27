@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return cardUrl;
     };
 
-    const getImageTag = (url, title, id, status = 0) => {
-        return `<img loading="lazy" class="card" src="${url}" title="${title}" id="${id}" data-status="${status}" data-modal="modal-one" onclick="modalOpen(this)">`;
+    const getImageTag = (url, title, id, status = 0, bought = 0) => {
+        return `<img loading="lazy" class="card" src="${url}" title="${title}" id="${id}" data-status="${status}" data-bought="${bought}" data-modal="modal-one" onclick="modalOpen(this)">`;
     }
 
     const drawAlternatives = (setElement) => {
@@ -50,13 +50,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 const cardRow = document.getElementById(cardNumber);
     
                 if (cardRow !== null) {
-                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`);
-
                     // 5. si no existe la carta, la añadimos al set
                     const [setId, cardId] = cardNumber.split('-');
                     if (collection[setId][cardId].cards[slug] === undefined) {
                         collection[setId][cardId].cards[slug] = {status: 0, bought: 0};
                     }
+
+                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought);
                 }
             });
         } else {
@@ -68,23 +68,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     const [setId, cardId] = cardNumber.split('-');
                     if ( Array.isArray( parallel )) {
                         parallel.forEach((parallelElement, index) => {
-                            const cardUrl = getImageUrl(url, setId, cardId, parallelElement);
-                            cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`);
-
                             // 5. si no existe la carta, la añadimos al set
                             const parallel_slug = `${slug}_${index}`;
                             if (collection[setId][cardId].cards[parallel_slug] === undefined) {
                                 collection[setId][cardId].cards[parallel_slug] = {status: 0, bought: 0};
                             }
+                            
+                            const cardUrl = getImageUrl(url, setId, cardId, parallelElement);
+                            cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought);
                         });
                     } else {
-                        const cardUrl = getImageUrl(url, setId, cardId, parallel);
-                        cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`);
-
                         // 5. si no existe la carta, la añadimos al set
                         if (collection[setId][cardId].cards[slug] === undefined) {
                             collection[setId][cardId].cards[slug] = {status: 0, bought: 0};
                         }
+                        
+                        const cardUrl = getImageUrl(url, setId, cardId, parallel);
+                        cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought);
                     }
 
                 }
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             if (collection[setElement.id] === undefined) {
                 collection[setElement.id] = {};
             }
-            window.localStorage.setItem("collection", JSON.stringify(collection));
+            // window.localStorage.setItem("collection", JSON.stringify(collection));
 
             // Header
             const tHead = tableSet.createTHead();
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         collection[setElement.id][cardId].cards[setElement.slug] = {status: 0, bought: 0};
                     }
 
-                    row.insertCell(2).innerHTML = getImageTag(cardUrl, setElement.name, `${cardNumber}__${setElement.slug}`, collection[setElement.id][cardId].cards[setElement.slug].status);
+                    row.insertCell(2).innerHTML = getImageTag(cardUrl, setElement.name, `${cardNumber}__${setElement.slug}`, collection[setElement.id][cardId].cards[setElement.slug].status, collection[setElement.id][cardId].cards[setElement.slug].bought);
                 } else {
                     row.insertCell(2).innerHTML = "";
                 }

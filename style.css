@@ -1,8 +1,42 @@
+:root {
+    --correct-card: #57bb8a;
+    --revision-card: #ffd666;
+    --proxy-card: #3b96a3;
+    --red-card: #ea4335;
+    --blue-card: #4285f4;
+    --yellow-card: #fbbc04;
+    --green-card: #34a853;
+    --black-card: #000000;
+    --purple-card: #8e7cc3;
+    --white-card: #ffffff;
+    --zero-cards: #e67c73;
+    --one-cards: #f2a96d;
+    --two-cards: #ffd666;
+    --three-cards: #abc978;
+    --four-cards: #57bb8a;
+}
 #setLists {
     height: calc(100vh - 100px);
     overflow: scroll;
 }
+table {
+    border-collapse: collapse;
+    border: none;
+}
 .card {
-    max-width: 100px;
-    padding: 5px;
+    max-width: 80px;
+}
+.card[data-status="1"],
+.card[data-status="2"] {
+    padding-right: 7px;
+    background-color: var(--correct-card);
+}
+.card[data-status="3"] {
+    padding-right: 7px;
+    background-color: var(--proxy-card);
+}
+.card[data-status="2"][data-bought="0"],
+.card[data-status="3"][data-bought="0"] {
+    padding-right: 7px;
+    background-color: var(--revision-card);
 }
