@@ -3,7 +3,9 @@ let editingSet = false;
 const modalOpen = (element) => {
     const modal = editingSet ? document.getElementById('editModal') : document.getElementById('viewModal');
     const modalTitle = modal.querySelector('.modal-title');
-    modalTitle.innerHTML = element.title;
+    const [cardNumber, slug] = element.id.split('__');
+
+    modalTitle.innerHTML = `${cardNumber}: ${element.title}`;
     if ( editingSet ) {
         const status = ['no_have', 'got_it', 'bought_it', 'proxy'];
 

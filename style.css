@@ -18,8 +18,36 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 5px 8px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+button + button {
+    margin-right: 5px;
+}
+button:hover {
+    opacity: 0.9;
+}
+#editionButtons button {
+    width: 120px;
+}
+button#editSet {
+    background-color: var(--revision-card);
+}
+button#saveSet {
+    background-color: var(--correct-card);
+    color: white;
+}
+button#cancelEdit {
+    background-color: var(--red-card);
+    color: white;
+}
 #setLists {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 135px);
     overflow: scroll;
 }
 table {
@@ -53,6 +81,7 @@ table {
 }
 .card {
     max-width: 80px;
+    cursor: pointer;
 }
 .card[data-status="1"],
 .card[data-status="2"] {
