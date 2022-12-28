@@ -131,7 +131,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
             if (collection[setElement.id] === undefined) {
                 collection[setElement.id] = {};
             }
-            // window.localStorage.setItem("collection", JSON.stringify(collection));
 
             // Header
             const tHead = tableSet.createTHead();
@@ -155,7 +154,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 if (collection[setElement.id][cardId] === undefined) {
                     collection[setElement.id][cardId] = {amount: 0, cards: {}};
                 }
-                row.insertCell(1).innerHTML = collection[setElement.id][cardId].amount;
+                
+                row.insertCell(1).innerHTML = `<input class="amount-card" type="text" data-card-number="${cardNumber}" onblur="updateValue(this)" readonly value="${collection[setElement.id][cardId].amount}">`;
 
                 if (setElement.url) {
                     var cardUrl = getImageUrl(setElement.url, setElement.id, cardId);

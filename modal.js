@@ -61,19 +61,33 @@ const toggleEditionButtons = (hidden) => {
     document.getElementById('editSet').hidden = hidden;
 };
 
+const toggleAmountInputs = (readonly) => {
+    Array.from(document.getElementsByClassName('amount-card')).forEach( input => {
+        input.readOnly = readonly;
+    });
+}
+
 const editSet = () => {
     toggleSetButtons(true);
     toggleEditionButtons(true);
+    toggleAmountInputs(false);
     editingSet = true;
 };
 
 const cancelEdit = () => {
     toggleSetButtons(false);
     toggleEditionButtons(false);
+    toggleAmountInputs(true);
     editingSet = false;
 }
 
 const saveSet = () => {
     window.localStorage.setItem("collection", JSON.stringify(collection));
     cancelEdit();
+}
+
+const updateValue = (element) => {
+    element.setAttribute('value', element.value);
+    const [set, id] = element.dataset.cardNumber.split('-');
+    collection[set][id].amount = parseInt(element.value);
 }
