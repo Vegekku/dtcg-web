@@ -18,7 +18,7 @@
 }
 .modal-bg {
   position: absolute;
-  background: teal;
+  background: rgba(0,0,0,0.7);;
   width: 100%;
   height: 100%;
 }
@@ -27,23 +27,50 @@
   background: #fff;
   position: relative;
   padding: 30px;
+  max-width: 450px;
 }
 .modal-title {
-
+  margin-top: 0;
+  font-size: 1.2em;
+}
+.modal-ok {
+  width: 100%;
+  font-size: 2em;
+  margin-top: 10px;
+  background-color: var(--blue-card);
+  color: white;
+  border: none;
+  border-radius: 10px;
 }
 .modal-close {
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 8px;
+  top: 8px;
   outline: none;
   appearance: none;
-  color: red;
+  color: white;
   background: none;
   border: 0px;
   font-weight: bold;
   cursor: pointer;
+  font-size: 1.5em;
+  background-color: red;
+  border-radius: 50%;
+  padding: 1px 6px;
+}
+.modal input[type="radio"], .modal input[type="radio"] + label {
+  cursor: pointer;
 }
 #card-zoom {
-    width: 95%;
-    max-width: 480px;
+  width: 95%;
+  max-width: 480px;
+  display: block;
+  margin: 0 auto;
+}
+.card-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+#card-status, #card-price {
+  font-weight: 700;
 }
