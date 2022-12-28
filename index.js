@@ -150,6 +150,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 var cardNumber = `${setElement.id}-${cardId}`;
                 row.id = cardNumber;
                 row.insertCell(0).innerHTML = cardId;
+
                 // 3. obtener cantidad de cartas de este id
                 if (collection[setElement.id][cardId] === undefined) {
                     collection[setElement.id][cardId] = {amount: 0, cards: {}};
@@ -173,6 +174,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 } else {
                     row.insertCell(2).innerHTML = "";
                 }
+                row.cells[0].className = 'card_id';
                 row.cells[2].className = 'card_list';
             }
 
