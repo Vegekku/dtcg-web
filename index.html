@@ -27,10 +27,10 @@
     <a href="https://www.paypal.com/donate/?hosted_button_id=49N3JWT3ZHY98">Ayuda a Ennis!</a>
     <a href="https://paypal.me/vegekku">Invítame a un café</a>
     
-    <div class="modal" id="modal-one">
-        <div class="modal-bg modal-exit" onclick="modalClose()"></div>
+    <div class="modal" id="editModal">
+        <div class="modal-bg modal-exit" onclick="modalClose(this)"></div>
         <div class="modal-container">
-            <h1 id="modal-title"></h1>
+            <p class="modal-title"></p>
             <input type="hidden" name="cardId" id="cardId">
             <div>
                 <input type="radio" id="no_have" name="status" value="0">
@@ -53,7 +53,17 @@
                 <input type="number" name="price" id="price" step="0.01">
             </div>
             <button class="" onclick="modalOk()">Ok</button>
-            <button class="modal-close modal-exit" onclick="modalClose()">X</button>
+            <button class="modal-close modal-exit" onclick="modalClose(this)">X</button>
+        </div>
+    </div>
+
+    <div class="modal" id="viewModal">
+        <div class="modal-bg modal-exit" onclick="modalClose(this)"></div>
+        <div class="modal-container">
+            <p class="modal-title"></p>
+            <img src="#" alt="" id="card-zoom">
+            <span id="card-status"></span><span id="card-price"></span>
+            <button class="modal-close modal-exit" onclick="modalClose(this)">X</button>
         </div>
     </div>
 
