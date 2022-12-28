@@ -23,6 +23,21 @@ table {
     border-collapse: collapse;
     border: none;
 }
+.amount-card {
+    background-color: var(--four-cards);
+}
+.amount-card[value="0"] {
+    background-color: var(--zero-cards);
+}
+.amount-card[value="1"] {
+    background-color: var(--one-cards);
+}
+.amount-card[value="2"] {
+    background-color: var(--two-cards);
+}
+.amount-card[value="3"] {
+    background-color: var(--three-cards);
+}
 .card {
     max-width: 80px;
 }
