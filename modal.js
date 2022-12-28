@@ -1,33 +1,44 @@
 let editingSet = false;
 
 const modalOpen = (element) => {
-    if ( !editingSet ) {
-        return;
-    }
-    const modal = document.getElementById('modal-one');
-    const modalTitle = document.getElementById('modal-title');
-    const status = ['no_have', 'got_it', 'bought_it', 'proxy'];
-
+    const modal = editingSet ? document.getElementById('editModal') : document.getElementById('viewModal');
+    const modalTitle = modal.querySelector('.modal-title');
     modalTitle.innerHTML = element.title;
-    document.getElementById(status[element.dataset.status]).checked = true;
-    document.getElementById('cardId').value = element.id;
+    if ( editingSet ) {
+        const status = ['no_have', 'got_it', 'bought_it', 'proxy'];
 
-    if ( parseInt(element.dataset.status) > 1 ) {
-        document.getElementById('price').value = element.dataset.bought;
+        document.getElementById(status[element.dataset.status]).checked = true;
+        document.getElementById('cardId').value = element.id;
+
+        if ( parseInt(element.dataset.status) > 1 ) {
+            document.getElementById('price').value = element.dataset.bought;
+        } else {
+            document.getElementById('price').value = '';
+        }
     } else {
-        document.getElementById('price').value = '';
-    }
+        const cardZoom = document.getElementById('card-zoom');
+        const cardStatus = document.getElementById('card-status');
+        const cardPrice = document.getElementById('card-price');
+        const status = ['No la tengo', 'Obtenida', 'Comprada', 'Es proxy'];
 
+        cardZoom.src = element.src;
+        cardZoom.alt = element.alt;
+        cardStatus.innerHTML = status[element.dataset.status];
+        cardPrice.innerHTML = parseFloat(element.dataset.bought).toLocaleString('es-ES', {
+            style: 'currency', 
+            currency: 'EUR',
+        });
+    }
     modal.classList.add('open');
 };
 
-const modalClose = () => {
-    const modal = document.getElementById('modal-one');
+const modalClose = (element) => {
+    const modal = element.closest('.modal');
     modal.classList.remove('open');
 };
 
 const modalOk = () => {
-    const modal = document.getElementById('modal-one');
+    const modal = document.getElementById('editModal');
     const status = parseInt(document.querySelector('input[name="status"]:checked').value);
     const price = parseFloat(document.getElementById('price').value || 0);
     const cardId = document.getElementById('cardId').value;

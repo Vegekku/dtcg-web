@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     };
 
     const getImageTag = (url, title, id, status = 0, bought = 0) => {
-        return `<img loading="lazy" class="card" src="${url}" title="${title}" id="${id}" data-status="${status}" data-bought="${bought}" data-modal="modal-one" onclick="modalOpen(this)">`;
+        return `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-status="${status}" data-bought="${bought}" onclick="modalOpen(this)">`;
     }
 
     const drawAlternatives = (setElement) => {
