@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     collection[setElement.id][cardId] = {amount: 0, cards: {}};
                 }
                 
-                row.insertCell(1).innerHTML = `<input class="amount-card" type="text" data-card-number="${cardNumber}" onblur="updateValue(this)" readonly value="${collection[setElement.id][cardId].amount}">`;
+                row.insertCell(1).innerHTML = `<input class="amount-card" type="text" data-card-number="${cardNumber}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setElement.id][cardId].amount}">`;
 
                 if (setElement.url) {
                     var cardUrl = getImageUrl(setElement.url, setElement.id, cardId);

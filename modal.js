@@ -104,3 +104,17 @@ const updateValue = (element) => {
     const [set, id] = element.dataset.cardNumber.split('-');
     collection[set][id].amount = parseInt(element.value);
 }
+
+const selectValue = () => {
+    if ( editingSet ) {
+        this.event.target.select();
+    }
+}
+
+const autoCheckStatus = () => {
+    const status = parseInt(document.querySelector('input[name="status"]:checked').value);
+
+    if (this.event.target.value === '' && status === 0){
+        document.getElementById('bought_it').checked = true;
+    }
+}
