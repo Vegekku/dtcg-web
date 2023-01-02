@@ -998,40 +998,95 @@ const sets = [
     },
 
 // August 2021
-    // 2021 Online Regionals Set --- regional2021
+    // 2021 Online Regionals Participant Set --- regional2021_0
     {
         "id": null,
-        "slug": "regional2021",
-        "name": "2021 Online Regionals Set",
+        "slug": "regional2021_0",
+        "name": "2021 Online Regionals Participant Set",
         "release": "August 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
         "cards": {
-            "ST1-03": ["P2", "P3", "P4"],
-            "ST4-08": ["P1", "P2", "P3"],
-            "ST6-08": ["P1", "P2", "P3"],
-            "BT2-066": ["P2", "P3", "P4"],
-            "BT4-090": ["P2", "P3", "P4"],
-            "BT5-042": ["P1", "P2", "P3"],
+            "ST1-03": "P2",
+            "ST4-08": "P1",
+            "ST6-08": "P1",
+            "BT2-066": "P2",
+            "BT4-090": "P2",
+            "BT5-042": "P1",
+            "P-008": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/online_regionals/",
+    },
+    // 2021 Online Regionals Finalist Set --- regional2021_1
+    {
+        "id": null,
+        "slug": "regional2021_1",
+        "name": "2021 Online Regionals Finalist Set",
+        "release": "August 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "ST1-03": "P3",
+            "ST4-08": "P2",
+            "ST6-08": "P2",
+            "BT2-066": "P3",
+            "BT4-090": "P3",
+            "BT5-042": "P2",
+            "P-008": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/online_regionals/",
+    },
+    // 2021 Online Regionals Champion Set --- regional2021_2
+    {
+        "id": null,
+        "slug": "regional2021_2",
+        "name": "2021 Online Regionals Champion Set",
+        "release": "August 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "ST1-03": "P4",
+            "ST4-08": "P3",
+            "ST6-08": "P3",
+            "BT2-066": "P4",
+            "BT4-090": "P4",
+            "BT5-042": "P3",
+            "P-008": "P3",
         },
         "info_url": "https://world.digimoncard.com/event/online_regionals/",
     },
 
 // September 13 – October 17, 2021
-    // Store Champion Card Set --- storechampion
+    // Store Championship Participant Pack --- storechampion_0
     {
         "id": null,
-        "slug": "storechampion",
+        "slug": "storechampion_0",
+        "name": "Store Championship Participant Pack",
+        "release": "September 13 – October 17, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "ST3-04": "P1",
+            "BT1-029": "P2",
+            "BT1-066": "P1",
+            "BT2-020": "P2",
+            "BT2-052": "P1",
+            "BT2-067": "P1",
+            "BT5-084": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_championship/"
+    },
+    // Store Champion Card Set --- storechampion_1
+    {
+        "id": null,
+        "slug": "storechampion_1",
         "name": "Store Champion Card Set",
         "release": "September 13 – October 17, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
         "cards": {
-            "ST3-04": ["P1", "P2"],
-            "BT1-029": ["P2", "P3"],
-            "BT1-066": ["P1", "P2"],
-            "BT2-020": ["P2", "P3"],
-            "BT2-052": ["P1", "P2"],
-            "BT2-067": ["P1", "P2"],
-            "BT5-084": ["P1", "P2"],
+            "ST3-04": "P2",
+            "BT1-029": "P3",
+            "BT1-066": "P2",
+            "BT2-020": "P3",
+            "BT2-052": "P2",
+            "BT2-067": "P2",
+            "BT5-084": "P2",
         },
         "info_url": "https://world.digimoncard.com/event/store_championship/"
     },
@@ -2194,21 +2249,57 @@ const sets = [
     },
 
 // July, 2022
-    // 2022 Regionals Set --- regional2022
+    // 2022 Regionals Participation Set --- regional2022_0
     {
         "id": null,
-        "slug": "regional2022",
-        "name": "2022 Regionals Set",
+        "slug": "regional2022_0",
+        "name": "2022 Regionals Participation Set",
         "release": "July, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "ST8-04": ["P1", "P2", "P3"],
-            "BT4-084": ["P1", "P2", "P3"],
-            "BT6-038": ["P1", "P2", "P3"],
-            "BT6-048": ["P1", "P2", "P3"],
-            "BT7-081": ["P1", "P2", "P3"],
-            "EX1-007": ["P1", "P2", "P3"],
-            "EX1-048": ["P1", "P2", "P3"],
+            "ST8-04": "P1",
+            "BT4-084": "P1",
+            "BT6-038": "P1",
+            "BT6-048": "P1",
+            "BT7-081": "P1",
+            "EX1-007": "P1",
+            "EX1-048": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals2022_220422/"
+    },
+    // 2022 Regionals Finalist Set --- regional2022_1
+    {
+        "id": null,
+        "slug": "regional2022_1",
+        "name": "2022 Regionals Finalist Set",
+        "release": "July, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "ST8-04": "P2",
+            "BT4-084": "P2",
+            "BT6-038": "P2",
+            "BT6-048": "P2",
+            "BT7-081": "P2",
+            "EX1-007": "P2",
+            "EX1-048": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals2022_220422/"
+    },
+    // 2022 Regionals Champion Set --- regional2022_2
+    {
+        "id": null,
+        "slug": "regional2022_2",
+        "name": "2022 Regionals Champion Set",
+        "release": "July, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "ST8-04": "P3",
+            "BT4-084": "P3",
+            "BT6-038": "P3",
+            "BT6-048": "P3",
+            "BT7-081": "P3",
+            "EX1-007": "P3",
+            "EX1-048": "P3",
         },
         "info_url": "https://world.digimoncard.com/event/regionals2022_220422/"
     },
@@ -2242,49 +2333,123 @@ const sets = [
     },
 
 // August, 2022
-    // Store Champion Card Set 2022 --- storechampion_2022
+    // Store Championship 2022 Participant Pack --- storechampion_2022_0
     {
         "id": null,
-        "slug": "storechampion_2022",
-        "name": "Store Champion Card Set 2022",
+        "slug": "storechampion_2022_0",
+        "name": "Store Championship 2022 Participant Pack",
         "release": "August, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "ST7-03": ["P2", "P3"],
-            "ST8-06": ["P1", "P2"],
-            "BT6-034": ["P1", "P2"],
-            "BT7-045": ["P1", "P2"],
-            "BT7-069": ["P1", "P2"],
-            "BT7-080": ["P1", "P2"],
-            "EX1-050": ["P1", "P2"],
+            "ST7-03": "P2",
+            "ST8-06": "P1",
+            "BT6-034": "P1",
+            "BT7-045": "P1",
+            "BT7-069": "P1",
+            "BT7-080": "P1",
+            "EX1-050": "P1",
         },
         "info_url": "https://world.digimoncard.com/event/store_championship_august/"
     },
-    // 2022 Regionals Card Set 2 --- regional2022_2
+    // Store Championship 2022 Champion Card Set --- storechampion_2022_1
     {
         "id": null,
-        "slug": "regional2022_2",
-        "name": "2022 Regionals Card Set 2",
+        "slug": "storechampion_2022_1",
+        "name": "Store Championship 2022 Champion Card Set",
+        "release": "August, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "ST7-03": "P3",
+            "ST8-06": "P2",
+            "BT6-034": "P2",
+            "BT7-045": "P2",
+            "BT7-069": "P2",
+            "BT7-080": "P2",
+            "EX1-050": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_championship_august/"
+    },
+    // 2022 Regionals Participant Card Set 2 --- regional2022_2_0
+    {
+        "id": null,
+        "slug": "regional2022_2_0",
+        "name": "2022 Regionals Participant Card Set 2",
         "release": "July, 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
         "cards": {
-            "BT5-071": ["0f3180", "0a73a6", "773865"],
-            "BT7-062": ["4b9e3a", "a09973", "bd655d"],
-            "BT7-110": ["10dd65", "c64969", "3de331"],
-            "BT8-042": ["9f9eb6", "80a451", "a8eb83"],
-            "BT8-053": ["3910a4", "f36014", "e6f0c0"],
-            "ST7-06": ["49b70a", "5c4fd2", "c557c6"],
+            "BT5-071": "0f3180",
+            "BT7-062": "4b9e3a",
+            "BT7-110": "10dd65",
+            "BT8-042": "9f9eb6",
+            "BT8-053": "3910a4",
+            "ST7-06": "49b70a",
         },
         "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
     },
     {
         "id": null,
-        "slug": "regional2022_2",
-        "name": "2022 Regionals Card Set 2",
+        "slug": "regional2022_2_0",
+        "name": "2022 Regionals Participant Card Set 2",
         "release": "July, 2022",
         "url": "digimonCardDev/setID-cardID_parallelen-US.png",
         "cards": {
-            "ST9-05": ["b5ffb6", "4af515", "5dc671"],
+            "ST9-05": "b5ffb6",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
+    },
+    // 2022 Regionals Finalist Card Set 2 --- regional2022_2_1
+    {
+        "id": null,
+        "slug": "regional2022_2_1",
+        "name": "2022 Regionals Finalist Card Set 2",
+        "release": "July, 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "BT5-071": "0a73a6",
+            "BT7-062": "a09973",
+            "BT7-110": "c64969",
+            "BT8-042": "80a451",
+            "BT8-053": "f36014",
+            "ST7-06": "5c4fd2",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
+    },
+    {
+        "id": null,
+        "slug": "regional2022_2_1",
+        "name": "2022 Regionals Finalist Card Set 2",
+        "release": "July, 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.png",
+        "cards": {
+            "ST9-05": "4af515",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
+    },
+    // 2022 Regionals Champion Card Set 2 --- regional2022_2_2
+    {
+        "id": null,
+        "slug": "regional2022_2_2",
+        "name": "2022 Regionals Champion Card Set 2",
+        "release": "July, 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "cards": {
+            "BT5-071": "773865",
+            "BT7-062": "bd655d",
+            "BT7-110": "3de331",
+            "BT8-042": "a8eb83",
+            "BT8-053": "e6f0c0",
+            "ST7-06": "c557c6",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
+    },
+    {
+        "id": null,
+        "slug": "regional2022_2_2",
+        "name": "2022 Regionals Champion Card Set 2",
+        "release": "July, 2022",
+        "url": "digimonCardDev/setID-cardID_parallelen-US.png",
+        "cards": {
+            "ST9-05": "5dc671",
         },
         "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
     },
