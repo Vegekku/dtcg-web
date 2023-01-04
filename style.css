@@ -57,6 +57,30 @@ table {
 .card_id {
     font-size: 1.2em;
     font-weight: 700;
+    text-align: center;
+}
+.card_id--red {
+    background-color: var(--red-card);
+    color: white;
+}
+.card_id--blue {
+    background-color: var(--blue-card);
+    color: white;
+}
+.card_id--yellow {
+    background-color: var(--yellow-card);
+}
+.card_id--green {
+    background-color: var(--green-card);
+    color: white;
+}
+.card_id--black {
+    background-color: var(--black-card);
+    color: white;
+}
+.card_id--purple {
+    background-color: var(--purple-card);
+    color: white;
 }
 .amount-card {
     background-color: var(--four-cards);
