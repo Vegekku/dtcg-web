@@ -1152,6 +1152,20 @@ const sets = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-7.php"
     },
+    {
+        "id": null,
+        "slug": "st7",
+        "name": "Starter Deck GALLANTMON [ST-7]",
+        "release": "October 15, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "BT1-009": "P1",
+            "BT1-019": "P1",
+            "BT1-020": "P1",
+            "ST1-16": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-7.php"
+    },
     // Starter Deck ULFORCEVEEDRAMON [ST-8] --- st8
     {
         "id": "ST8",
@@ -1161,6 +1175,20 @@ const sets = [
         "total": 12,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-8.php"
+    },
+    {
+        "id": null,
+        "slug": "st8",
+        "name": "Starter Deck ULFORCEVEEDRAMON [ST-8]",
+        "release": "October 15, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "cards": {
+            "BT1-028": "P1",
+            "BT1-037": "P1",
+            "BT1-038": "P2",
+            "ST2-13": "P2",
+        },
         "info_url": "https://world.digimoncard.com/products/deck/st-8.php"
     },
     // First Anniversary Promo Pack --- first_anniversary
