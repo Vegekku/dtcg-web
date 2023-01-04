@@ -66,6 +66,9 @@
   max-width: 480px;
   display: block;
   margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 21px;
+  box-shadow: 5px 5px 8px 1px rgb(0 0 0 / 33%);
 }
 .card-info {
   display: flex;
