@@ -51,7 +51,8 @@ const sets = [
         "total": 16,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-1.php"
+        "info_url": "https://world.digimoncard.com/products/deck/st-1.php",
+        "color": "red",
     },
     // Starter Deck COCYTUS BLUE [ST-2] --- st2
     {
@@ -62,7 +63,8 @@ const sets = [
         "total": 16,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-2.php"
+        "info_url": "https://world.digimoncard.com/products/deck/st-2.php",
+        "color": "blue",
     },
     // Starter Deck HEAVEN'S YELLOW [ST-3] --- st3
     {
@@ -73,7 +75,8 @@ const sets = [
         "total": 16,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-3.php"
+        "info_url": "https://world.digimoncard.com/products/deck/st-3.php",
+        "color": "yellow",
     },
     // Tamer Party Vol.1 --- tp1
     {
@@ -733,7 +736,8 @@ const sets = [
         "total": 16,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-4.php"
+        "info_url": "https://world.digimoncard.com/products/deck/st-4.php",
+        "color": "green",
     },
     // Starter Deck MACHINE BLACK [ST-5] --- st5
     {
@@ -744,7 +748,8 @@ const sets = [
         "total": 16,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-5.php"
+        "info_url": "https://world.digimoncard.com/products/deck/st-5.php",
+        "color": "black",
     },
     // Starter Deck VENOMOUS VIOLET [ST-6] --- st6
     {
@@ -755,7 +760,8 @@ const sets = [
         "total": 16,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-6.php"
+        "info_url": "https://world.digimoncard.com/products/deck/st-6.php",
+        "color": "purple",
     },
 
     // Booster Great Legend [BT4] --- bt4
@@ -1150,7 +1156,8 @@ const sets = [
         "total": 12,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-7.php"
+        "info_url": "https://world.digimoncard.com/products/deck/st-7.php",
+        "color": "red",
     },
     {
         "id": null,
@@ -1175,7 +1182,8 @@ const sets = [
         "total": 12,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-8.php"
+        "info_url": "https://world.digimoncard.com/products/deck/st-8.php",
+        "color": "blue",
     },
     {
         "id": null,
@@ -1506,7 +1514,7 @@ const sets = [
         "cards": {
             "P-016": "P1",
             "ST1-07": "P2",
-            "ST4-08": "P2",
+            "ST4-08": "P4",
             "ST5-08": "P1",
             "ST6-08": "P4",
             "BT4-042": "P1",
@@ -2370,7 +2378,7 @@ const sets = [
         "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
             "ST7-03": "P2",
-            "ST8-06": "P1",
+            "ST8-06": "P2",
             "BT6-034": "P1",
             "BT7-045": "P1",
             "BT7-069": "P1",
@@ -2388,7 +2396,7 @@ const sets = [
         "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
             "ST7-03": "P3",
-            "ST8-06": "P2",
+            "ST8-06": "P3",
             "BT6-034": "P2",
             "BT7-045": "P2",
             "BT7-069": "P2",

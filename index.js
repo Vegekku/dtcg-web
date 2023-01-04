@@ -174,8 +174,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 } else {
                     row.insertCell(2).innerHTML = "";
                 }
+
                 row.cells[0].className = 'card_id';
                 row.cells[2].className = 'card_list';
+
+                if ( setElement.color ) {
+                    row.cells[0].className += ` card_id--${setElement.color}`;
+                }
             }
 
             // Draw table set
