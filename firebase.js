@@ -1901,7 +1901,13 @@ const sets = [
         "total": 16,
         "url": "bandaitcgplusURL/setID/e_ST09_cardID_D.jpg",
         "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-9.php"
+        "info_url": "https://world.digimoncard.com/products/deck/st-9.php",
+        "color": {
+            "green": [1,7,8,9,10,12,13,15,16],
+            "blue": [2,3,4],
+            "blue-green": [5,6,14],
+            "green-blue": [11]
+        },
     },
     // Starter Deck PARALLEL WORLD TACTICIAN [ST-10] --- st10
     {

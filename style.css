@@ -67,11 +67,19 @@ table {
     background-color: var(--blue-card);
     color: white;
 }
+.card_id--blue-green {
+    background: linear-gradient(90deg, var(--blue-card) 50%, var(--green-card) 50%);
+    color: white;
+}
 .card_id--yellow {
     background-color: var(--yellow-card);
 }
 .card_id--green {
     background-color: var(--green-card);
+    color: white;
+}
+.card_id--green-blue {
+    background: linear-gradient(90deg, var(--green-card) 50%, var(--blue-card) 50%);
     color: white;
 }
 .card_id--black {

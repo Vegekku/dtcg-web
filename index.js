@@ -144,6 +144,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
             // Body
             const tBody = tableSet.createTBody();
+            let colors = null;
+            if ( setElement.color ) {
+                if ( typeof setElement.color === 'string' ) {
+                    colors = setElement.color;
+                } else {
+                    colors = [];
+                    Object.entries(setElement.color).forEach( ([color, cardIds]) => {
+                        // console.log(color, cardIds);
+                        cardIds.forEach( id => {
+                            colors[id] = color;
+                        });
+                    });
+                    // console.log(colors);
+                }
+            }
             for (let index = 1; index <= setElement.total; index++) {
                 var cardId = String(index).padStart(setElement.add_zero, '0');
                 var row = tBody.insertRow(index - 1);
@@ -178,8 +193,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 row.cells[0].className = 'card_id';
                 row.cells[2].className = 'card_list';
 
-                if ( setElement.color ) {
-                    row.cells[0].className += ` card_id--${setElement.color}`;
+                if ( colors !== null ) {
+                    if ( typeof colors === 'string' ) {
+                        row.cells[0].className += ` card_id--${colors}`;
+                    } else  {
+                        row.cells[0].className += ` card_id--${colors[index]}`
+                    }
                 }
             }
 
