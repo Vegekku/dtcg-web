@@ -128,8 +128,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             Object.entries(setColor).forEach( ([color, cardIds]) => {
                 cardIds.forEach( id => {
                     if (typeof id === 'string') {
-                        let ids = id.split('-');
-                        for (let index = ids[0]; index <= ids[1]; index++) {
+                        let [start, end] = id.split('-');
+                        for (let index = parseInt(start); index <= parseInt(end); index++) {
                             cardsColor[index] = color;
                         }
                     } else {
