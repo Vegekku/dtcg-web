@@ -63,6 +63,10 @@ table {
     background-color: var(--red-card);
     color: white;
 }
+.card_id--red-black {
+    background: linear-gradient(90deg, var(--red-card) 50%, var(--black-card) 50%);
+    color: white;
+}
 .card_id--blue {
     background-color: var(--blue-card);
     color: white;
@@ -73,6 +77,10 @@ table {
 }
 .card_id--yellow {
     background-color: var(--yellow-card);
+}
+.card_id--yellow-purple {
+    background: linear-gradient(90deg, var(--yellow-card) 50%, var(--purple-card) 50%);
+    color: black;
 }
 .card_id--green {
     background-color: var(--green-card);
@@ -88,6 +96,10 @@ table {
 }
 .card_id--purple {
     background-color: var(--purple-card);
+    color: white;
+}
+.card_id--purple-yellow {
+    background: linear-gradient(90deg, var(--purple-card) 50%, var(--yellow-card) 50%);
     color: white;
 }
 .amount-card {

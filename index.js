@@ -119,6 +119,29 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     }
 
+    const getCardsColor = (setColor) => {
+        let cardsColor = null;
+        if ( typeof setColor === 'string' ) {
+            cardsColor = setColor;
+        } else {
+            cardsColor = [];
+            Object.entries(setColor).forEach( ([color, cardIds]) => {
+                cardIds.forEach( id => {
+                    if (typeof id === 'string') {
+                        let ids = id.split('-');
+                        for (let index = ids[0]; index <= ids[1]; index++) {
+                            cardsColor[index] = color;
+                        }
+                    } else {
+                        cardsColor[id] = color;
+                    }
+                });
+            });
+        }
+
+        return cardsColor;
+    }
+
     sets.forEach(setElement => {
         if (setElement.id !== null) {
             const tableSet = document.createElement('table');
@@ -144,21 +167,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
             // Body
             const tBody = tableSet.createTBody();
-            let colors = null;
-            if ( setElement.color ) {
-                if ( typeof setElement.color === 'string' ) {
-                    colors = setElement.color;
-                } else {
-                    colors = [];
-                    Object.entries(setElement.color).forEach( ([color, cardIds]) => {
-                        // console.log(color, cardIds);
-                        cardIds.forEach( id => {
-                            colors[id] = color;
-                        });
-                    });
-                    // console.log(colors);
-                }
-            }
+            const colors = setElement.color ? getCardsColor(setElement.color) : null;
+
             for (let index = 1; index <= setElement.total; index++) {
                 var cardId = String(index).padStart(setElement.add_zero, '0');
                 var row = tBody.insertRow(index - 1);

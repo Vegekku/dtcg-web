@@ -1918,7 +1918,13 @@ const sets = [
         "total": 16,
         "url": "bandaitcgplusURL/setID/e_setID_cardID_D.jpg",
         "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-10.php"
+        "info_url": "https://world.digimoncard.com/products/deck/st-10.php",
+        "color": {
+            "purple": [1,7,8,9,11,12,13,15,16],
+            "yellow": [2,3,5],
+            "yellow-purple": [4,6,14],
+            "purple-yellow": [10]
+        },
     },
 
     // Booster New Awakening [BT8] --- bt8
@@ -2670,7 +2676,13 @@ const sets = [
         "total": 16,
         "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
         "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-12.php"
+        "info_url": "https://world.digimoncard.com/products/deck/st-12.php",
+        "color": {
+            "red": ["1-8",10,14,15],
+            "red-black": [9],
+            "black": [11, 16],
+            "white": [12,13]
+        }
     },
     // Starter Deck RagnaLoardmon [ST-13] --- st13
     {
