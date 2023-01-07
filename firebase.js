@@ -2693,7 +2693,13 @@ const sets = [
         "total": 16,
         "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
         "add_zero": 2,
-        "info_url": "https://world.digimoncard.com/products/deck/st-13.php"
+        "info_url": "https://world.digimoncard.com/products/deck/st-13.php",
+        "color": {
+            "red": ["2-5", 15],
+            "red-black": [6],
+            "black": [1, "7-11", 13, 14],
+            "black-red": [12, 16],
+        }
     },
     // Bonus Tamer Cards Pack --- bonus_tamer_cards
     {
