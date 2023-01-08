@@ -959,6 +959,15 @@ const sets = [
         "add_zero": 3,
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/bd/BT-5-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/7/7d/Playsheet-BT-5-EN.jpg/",
+        "color": {
+            "red": [1,"7-19",94,95],
+            "blue": [2,"20-32",88,96,97],
+            "yellow": [3,"33-45",98,99],
+            "green": [4,"46-58",89,"100-102"],
+            "black": [5,"59-70",90,"103-105"],
+            "purple": [6,"71-83","106-108"],
+            "white": ["84-87","91-93","109-112"],
+        }
     },
     // Booster Battle of Omni [BT5] - Alternatives --- bt5_alts
     {
