@@ -54,29 +54,40 @@ table {
     border-collapse: collapse;
     border: none;
 }
+thead {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+tr {
+    vertical-align: top;
+    border: 1px solid black;
+}
+td {
+    padding: 0;
+}
 .card_id {
     font-size: 1.2em;
     font-weight: 700;
     text-align: center;
+    vertical-align: middle;
+    /* color: white; */
 }
 .card_id--red {
     background-color: var(--red-card);
-    color: white;
 }
 .card_id--red-black {
     background: linear-gradient(90deg, var(--red-card) 50%, var(--black-card) 50%);
-    color: white;
 }
 .card_id--blue {
     background-color: var(--blue-card);
-    color: white;
 }
 .card_id--blue-green {
     background: linear-gradient(90deg, var(--blue-card) 50%, var(--green-card) 50%);
-    color: white;
 }
 .card_id--yellow {
     background-color: var(--yellow-card);
+    color: black;
 }
 .card_id--yellow-purple {
     background: linear-gradient(90deg, var(--yellow-card) 50%, var(--purple-card) 50%);
@@ -84,36 +95,31 @@ table {
 }
 .card_id--green {
     background-color: var(--green-card);
-    color: white;
 }
 .card_id--green-blue {
     background: linear-gradient(90deg, var(--green-card) 50%, var(--blue-card) 50%);
-    color: white;
 }
 .card_id--black {
     background-color: var(--black-card);
-    color: white;
 }
 .card_id--black-red {
     background: linear-gradient(90deg, var(--black-card) 50%, var(--red-card) 50%);
-    color: white;
 }
 .card_id--purple {
     background-color: var(--purple-card);
-    color: white;
 }
 .card_id--purple-yellow {
     background: linear-gradient(90deg, var(--purple-card) 50%, var(--yellow-card) 50%);
-    color: white;
 }
 .amount-card {
     background-color: var(--four-cards);
     border: none;
-    height: 110px;
+    height: 111px;
     font-size: 4em;
     width: 100%;
     max-width: 70px;
     text-align: center;
+    padding: 0;
 }
 .amount-card[value="0"] {
     background-color: var(--zero-cards);
@@ -127,9 +133,13 @@ table {
 .amount-card[value="3"] {
     background-color: var(--three-cards);
 }
+.card_list {
+    display: flex;
+}
 .card {
-    max-width: 80px;
+    max-height: 111px;
     cursor: pointer;
+    display: block;
 }
 .card[data-status="1"],
 .card[data-status="2"] {
