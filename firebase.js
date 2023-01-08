@@ -18,7 +18,14 @@ const sets = [
         "total": 115,
         "url": null,
         "add_zero": 3,
-        "info_url": null
+        "info_url": null,
+        "color": {
+            "red": [1,2,"9-26",85,"90-95",114],
+            "blue": [3,4,"27-44",86,"96-101",115],
+            "yellow": [5,6,"45-63",87,"102-107"],
+            "green": [7,8,"64-83",88,89,"108-113"],
+            "white": [84]
+        }
     },
     // Booster Ultimate Power [BT2]
     {
@@ -28,7 +35,16 @@ const sets = [
         "total": 112,
         "url": null,
         "add_zero": 3,
-        "info_url": null
+        "info_url": null,
+        "color": {
+            "red": [1,"9-20",84,"91-93"],
+            "blue": [2,"21-32",85,86,"94-96"],
+            "yellow": [3,"33-41",87,"97-99"],
+            "green": [4,"42-51",88,"100-102"],
+            "black": [5,6,"52-66",89,"103-106",112],
+            "purple": [7,8,"67-81",90,"107-111"],
+            "white": [82,83]
+        }
     },
     // Booster Union Impact [BT3]
     {
@@ -38,7 +54,16 @@ const sets = [
         "total": 112,
         "url": null,
         "add_zero": 3,
-        "info_url": null
+        "info_url": null,
+        "color": {
+            "red": [1,"7-19",97,98],
+            "blue": [2,"20-31",93,99,100],
+            "yellow": [3,"32-43",101,102],
+            "green": [4,"44-58",94,103,104,111],
+            "black": [5,"59-75",95,"105-107"],
+            "purple": [6,"76-92",96,"108-110"],
+            "white": [112]
+        }
     },
 
 // January 29th, 2021
@@ -775,6 +800,15 @@ const sets = [
         "add_zero": 3,
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/57/BT-4-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a4/Playsheet-BT-4-EN.jpg/",
+        "color": {
+            "red": [1,"7-20",92,"98-100",113],
+            "blue": [2,"21-35",93,"101-103",114],
+            "yellow": [3,"36-49",94,"104-106",115],
+            "green": [4,"50-62",95,107,108],
+            "black": [5,"63-75",96,109,110],
+            "purple": [6,"76-89",97,111,112],
+            "white": [90,91],
+        }
     },
     // Booster Great Legend [BT4] - Alternatives --- bt4_alts
     {
