@@ -1269,7 +1269,16 @@ const sets = [
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 3,
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/aa/BT-6-EN.png/",
-        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d2/Playsheet-BT-6-EN.jpg/"
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d2/Playsheet-BT-6-EN.jpg/",
+        "color": {
+            "red": [1,"7-18",87,"93-95"],
+            "blue": [2,"19-30",88,"96-98"],
+            "yellow": [3,"31-44",89,"99-101"],
+            "green": [4,"45-54",102,103],
+            "black": [5,"55-67",90,"104-106",111],
+            "purple": [6,"68-81",91,"107-109",112],
+            "white": ["82-86",92,110],
+        }
     },
     // Booster Double Diamond [BT6] - Alternatives --- bt6_alts
     {
@@ -1427,6 +1436,15 @@ const sets = [
         "add_zero": 3,
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/ea/EX-1-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6d/Playsheet-EX-1-EN.jpg/",
+        "color": {
+            "red": ["1-10",67],
+            "blue": ["11-22",68],
+            "yellow": ["23-32"],
+            "green": ["33-43"],
+            "black": ["44-54",69,73],
+            "purple": ["55-64",70],
+            "white": [65,66,71,72],
+        }
     },
     // Booster Classic Collection [EX1] - Alternatives --- ex1_alts
     {
@@ -1699,6 +1717,15 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/53/BT-7-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a1/Playsheet-BT-7-EN.jpg/",
+        "color": {
+            "red": [1,"7-17",85,"92-94"],
+            "blue": [2,"18-30",86,87,"95-97"],
+            "yellow": [3,"31-42",88,"98-100"],
+            "green": [4,"43-55",89,"101-103"],
+            "black": [5,"56-66",90,"104-106"],
+            "purple": [6,"67-79",91,"107-109",111],
+            "white": ["80-84",110,112],
+        }
     },
     {
         "id": null,
