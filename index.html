@@ -33,27 +33,21 @@
         <div class="modal-container">
             <p class="modal-title"></p>
             <input type="hidden" name="cardId" id="cardId">
-            <div>
-                <input type="radio" id="no_have" name="status" value="0">
-                <label for="no_have">No la tengo</label>
-            </div>
-            <div>
-                <input type="radio" id="got_it" name="status" value="1">
+            <div class="radio-buttons">
+                <input type="radio" id="no_have" name="status" value="0" onclick="modalOk()">
+                <label for="no_have">Falta</label>
+                <input type="radio" id="got_it" name="status" value="1" onclick="modalOk()">
                 <label for="got_it">Obtenida</label>
-            </div>
-            <div>
-                <input type="radio" id="bought_it" name="status" value="2">
+                <input type="radio" id="bought_it" name="status" value="2" onclick="priceConfirm()">
                 <label for="bought_it">Comprada</label>
-            </div>
-            <div>
-                <input type="radio" id="proxy" name="status" value="3">
+                <input type="radio" id="proxy" name="status" value="3" onclick="priceConfirm()">
                 <label for="proxy">Proxy</label>
             </div>
-            <div>
+            <div class="price-confirm" hidden id="priceConfirm">
                 <label for="price">Precio</label>
-                <input type="number" name="price" id="price" step="0.01" onfocus="autoCheckStatus()">
+                <input type="number" name="price" id="price" step="0.01">
+                <button class="modal-ok" onclick="modalOk()">confirmar compra</button>
             </div>
-            <button class="modal-ok" onclick="modalOk()">Ok</button>
             <button class="modal-close modal-exit" onclick="modalClose(this)">X</button>
         </div>
     </div>

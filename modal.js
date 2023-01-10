@@ -14,8 +14,10 @@ const modalOpen = (element) => {
 
         if ( parseInt(element.dataset.status) > 1 ) {
             document.getElementById('price').value = element.dataset.bought;
+            document.getElementById('priceConfirm').hidden = false;
         } else {
             document.getElementById('price').value = '';
+            document.getElementById('priceConfirm').hidden = true;
         }
     } else {
         const cardZoom = document.getElementById('card-zoom');
@@ -111,10 +113,7 @@ const selectValue = () => {
     }
 }
 
-const autoCheckStatus = () => {
-    const status = parseInt(document.querySelector('input[name="status"]:checked').value);
-
-    if (this.event.target.value === '' && status === 0){
-        document.getElementById('bought_it').checked = true;
-    }
+const priceConfirm = () => {
+    document.getElementById('priceConfirm').hidden = false;
+    document.getElementById('price').select();
 }
