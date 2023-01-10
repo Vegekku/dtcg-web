@@ -663,6 +663,7 @@ const sets = [
             "BT2-032": "P1",
             "BT2-041": "P1",
             "BT2-112": "P1",
+            "BT3-019": "P1",
             "BT3-031": "P1",
             "BT3-056": "P1",
             "BT3-073": "P1",
@@ -700,7 +701,7 @@ const sets = [
             "BT1-095": "P1",
             "BT1-101": "P1",
             "BT1-107": "P1",
-            "BT3-019": "P1"
+            "BT3-018": "P1"
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/56/Dash_Pack_Ver._1.5.png/"
     },
@@ -2076,6 +2077,7 @@ const sets = [
         "cards": {
             "BT1-062": "P1",
             "BT2-051": "P1",
+            "BT2-082": "P2",
             "BT4-074": "P1",
             "BT5-032": "P1",
             "BT6-009": "P1",
