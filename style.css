@@ -1,6 +1,7 @@
 :root {
     --correct-card: #57bb8a;
     --revision-card: #ffd666;
+    --bought-card: #618cd4;
     --proxy-card: #3b96a3;
     --red-card: #ea4335;
     --blue-card: #4285f4;
@@ -71,7 +72,7 @@ td {
     font-weight: 700;
     text-align: center;
     vertical-align: middle;
-    /* color: white; */
+    color: white;
 }
 .card_id--red {
     background-color: var(--red-card);
@@ -111,6 +112,9 @@ td {
 .card_id--purple-yellow {
     background: linear-gradient(90deg, var(--purple-card) 50%, var(--yellow-card) 50%);
 }
+.card_id--white {
+    color: black;
+}
 .amount-card {
     background-color: var(--four-cards);
     border: none;
@@ -120,6 +124,9 @@ td {
     max-width: 70px;
     text-align: center;
     padding: 0;
+}
+.amount-card[value=""] {
+    background-color: transparent;
 }
 .amount-card[value="0"] {
     background-color: var(--zero-cards);
@@ -141,10 +148,13 @@ td {
     cursor: pointer;
     display: block;
 }
-.card[data-status="1"],
-.card[data-status="2"] {
+.card[data-status="1"] {
     padding-right: 7px;
     background-color: var(--correct-card);
+}
+.card[data-status="2"] {
+    padding-right: 7px;
+    background-color: var(--bought-card);
 }
 .card[data-status="3"] {
     padding-right: 7px;
