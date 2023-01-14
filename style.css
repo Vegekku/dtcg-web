@@ -77,17 +77,54 @@ td {
 .card_id--red {
     background-color: var(--red-card);
 }
+.card_id--red-blue {
+    background: linear-gradient(90deg, var(--red-card) 50%, var(--blue-card) 50%);
+}
+.card_id--red-yellow {
+    background: linear-gradient(90deg, var(--red-card) 50%, var(--yellow-card) 50%);
+}
+.card_id--red-green {
+    background: linear-gradient(90deg, var(--red-card) 50%, var(--green-card) 50%);
+}
 .card_id--red-black {
     background: linear-gradient(90deg, var(--red-card) 50%, var(--black-card) 50%);
+}
+.card_id--red-purple {
+    background: linear-gradient(90deg, var(--red-card) 50%, var(--purple-card) 50%);
 }
 .card_id--blue {
     background-color: var(--blue-card);
 }
+.card_id--blue-red {
+    background: linear-gradient(90deg, var(--blue-card) 50%, var(--red-card) 50%);
+}
+.card_id--blue-yellow {
+    background: linear-gradient(90deg, var(--blue-card) 50%, var(--yellow-card) 50%);
+}
 .card_id--blue-green {
     background: linear-gradient(90deg, var(--blue-card) 50%, var(--green-card) 50%);
 }
+.card_id--blue-black {
+    background: linear-gradient(90deg, var(--blue-card) 50%, var(--black-card) 50%);
+}
 .card_id--yellow {
     background-color: var(--yellow-card);
+    color: black;
+}
+.card_id--yellow-red {
+    background: linear-gradient(90deg, var(--yellow-card) 50%, var(--red-card) 50%);
+    color: black;
+}
+.card_id--yellow-blue {
+    background: linear-gradient(90deg, var(--yellow-card) 50%, var(--blue-card) 50%);
+    color: black;
+}
+.card_id--yellow-green {
+    background: linear-gradient(90deg, var(--yellow-card) 50%, var(--green-card) 50%);
+    color: black;
+}
+.card_id--yellow-black {
+    background: linear-gradient(90deg, var(--yellow-card) 50%, var(--black-card) 50%);
     color: black;
 }
 .card_id--yellow-purple {
@@ -97,8 +134,17 @@ td {
 .card_id--green {
     background-color: var(--green-card);
 }
+.card_id--green-red {
+    background: linear-gradient(90deg, var(--green-card) 50%, var(--red-card) 50%);
+}
 .card_id--green-blue {
     background: linear-gradient(90deg, var(--green-card) 50%, var(--blue-card) 50%);
+}
+.card_id--green-yellow {
+    background: linear-gradient(90deg, var(--green-card) 50%, var(--yellow-card) 50%);
+}
+.card_id--green-black {
+    background: linear-gradient(90deg, var(--green-card) 50%, var(--black-card) 50%);
 }
 .card_id--black {
     background-color: var(--black-card);
@@ -106,11 +152,23 @@ td {
 .card_id--black-red {
     background: linear-gradient(90deg, var(--black-card) 50%, var(--red-card) 50%);
 }
+.card_id--black-purple {
+    background: linear-gradient(90deg, var(--black-card) 50%, var(--purple-card) 50%);
+}
 .card_id--purple {
     background-color: var(--purple-card);
 }
+.card_id--purple-red {
+    background: linear-gradient(90deg, var(--purple-card) 50%, var(--red-card) 50%);
+}
 .card_id--purple-yellow {
     background: linear-gradient(90deg, var(--purple-card) 50%, var(--yellow-card) 50%);
+}
+.card_id--purple-green {
+    background: linear-gradient(90deg, var(--purple-card) 50%, var(--green-card) 50%);
+}
+.card_id--purple-black {
+    background: linear-gradient(90deg, var(--purple-card) 50%, var(--black-card) 50%);
 }
 .card_id--white {
     color: black;
