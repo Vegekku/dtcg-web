@@ -5,15 +5,15 @@ const sets = [
         "id": "P",
         "name": "Promos",
         "release": null,
-        "total": 88,
+        "total": 90,
         "url": null,
         "add_zero": 3,
         "info_url": null,
         "color": {
             "red": [1,2,9,10,24,29,35,41,49,50,58,59,62,65,66,72,79,88],
-            "blue": [3,4,7,8,11,12,22,30,36,42,47,48,51,52,61,64,67,73,86],
+            "blue": [3,4,7,8,11,12,22,30,36,42,47,48,51,52,61,64,67,73,86,89],
             "yellow": [5,6,23,28,31,37,43,53,54,68,74,81,84,87],
-            "green": [21,25,32,38,44,"55-57",60,63,69,75,82,83],
+            "green": [21,25,32,38,44,"55-57",60,63,69,75,82,83,90],
             "black": ["13-16",26,33,39,45,70,78],
             "black-red": [76],
             "purple": ["17-20",27,34,40,46,71,77,80,85],
@@ -2018,6 +2018,33 @@ const sets = [
         "add_zero": 3,
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2d/BT-8-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e9/Playsheet-BT-8-EN.jpg/",
+        "color": {
+            "red": [1,"7-10",13,14,18,19,85,86,"95-97"],
+            "red-blue": [12],
+            "red-yellow": [15],
+            "red-green": [16],
+            "red-black": [11,17],
+            "blue": [2,"20-22","27-29",31,87,98],
+            "blue-red": [26],
+            "blue-yellow": [23,24],
+            "blue-green": [32,88,99],
+            "blue-black": [25,30],
+            "yellow": [3,"33-36",40,43,89,90,100,101],
+            "yellow-red": [37],
+            "yellow-blue": [38,42,44],
+            "yellow-green": [39],
+            "yellow-purple": [41],
+            "green": [4,"45-47",49,50,52,54,55,57,91,102,103],
+            "green-red": [48,56],
+            "green-blue": [53],
+            "green-yellow": [51],
+            "black": [5,"58-66",68,69,92,104,106],
+            "black-red": [5,67,70,105],
+            "purple": [6,"71-74",76,"78-81",83,93,107,108,111],
+            "purple-yellow": [77,82,109],
+            "purple-green": [75],
+            "white": [84,94,110,112],
+        }
     },
     // Booster New Awakening [BT8] - Alternatives --- bt8_alts
     {
@@ -2135,6 +2162,17 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/20/EX-2-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/0/02/Playsheet-EX-2-EN.jpg/",
+        "color": {
+            "red": [1,"8-11",56,66,67,73],
+            "red-purple": [12],
+            "blue": [2,"13-17",57,58,68,69],
+            "blue-yellow": [18],
+            "yellow": [3,"19-24",59,60],
+            "green": [4,"25-29",61,70],
+            "black": [5,"30-38",62,63],
+            "purple": [6,"39-44",64,65,71,74],
+            "white": [7,"45-55",72]
+        }
     },
     // Booster Digital Hazard [EX2] - Alternatives --- ex2_alts
     {
@@ -2314,6 +2352,28 @@ const sets = [
         "add_zero": 3,
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c7/BT-9-EN.png/",
         "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/8/86/Playsheet-BT-9-EN.jpg/",
+        "color": {
+            "red": [1,"7-17","93-95"],
+            "red-yellow": [84],
+            "red-green": [18],
+            "blue": [2,"19-28",30,31,86,96,97],
+            "blue-red": [85],
+            "blue-black": [29],
+            "yellow": [3,"32-37",40,43,98],
+            "yellow-red": [41,99],
+            "yellow-blue": [38,44],
+            "yellow-green": [87],
+            "yellow-black": [39,42],
+            "green": [4,"45-49",52,53,55,56,100,101],
+            "green-blue": [50,51,88],
+            "green-black": [54],
+            "black": [5,"57-60","62-64",66,67,69,89,90,"102-105",111],
+            "black-red": [61,65,68],
+            "purple": [6,"70-73",77,79,91,106,108],
+            "purple-yellow": [74,76,80,82],
+            "purple-black": [75,78,81,107,112],
+            "white": [83,92,109,110],
+        }
     },
     // Booster X Record [BT9] - Alternatives --- bt9_alts
     {
@@ -2810,6 +2870,22 @@ const sets = [
         "add_zero": 3,
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/24/BT-10-EN.png/",
         "playmat": "",
+        "color": {
+            "red": [1,7,8,10,11,14,16,87,"94-96",111],
+            "red-yellow": [9],
+            "red-black": [13,112],
+            "red-purple": [12,15],
+            "blue": [2,"17-21","23-27",88,97,98],
+            "blue-black": [22,28],
+            "yellow": [3,"29-42",89,"99-101"],
+            "green": [4,"43-54",56,57,90,91,102,103],
+            "green-yellow": [55],
+            "black": [5,58,"60-68",92,105,106],
+            "black-red": [59],
+            "black-purple": [69,70,104],
+            "purple": [6,"71-84",93,107,108],
+            "white": [85,86,109,110],
+        }
     },
     // Booster Xros Encounter [BT10] - Alternatives --- bt10_alts
     {
@@ -2944,7 +3020,21 @@ const sets = [
             }
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/3/33/EX-3-EN.png/",
-        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6d/Playsheet-EX-3-EN.jpg/"
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6d/Playsheet-EX-3-EN.jpg/",
+        "color": {
+            "red": ["3-9",11,12,14],
+            "red-black": [13,66],
+            "red-purple": [10],
+            "blue": [1,"15-26",67],
+            "yellow": ["27-36",68,69],
+            "green": ["38-45"],
+            "green-blue": [37,70,74],
+            "black": [2,"46-54",71],
+            "purple": [55,58,64,72],
+            "purple-red": [56,57,"61-63",73],
+            "purple-green": [59,60],
+            "white": [65]
+        }
     },
     // Booster Draconic Roar [EX3] - Alternatives --- ex3_alts
     {
