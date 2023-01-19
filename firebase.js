@@ -2039,7 +2039,7 @@ const sets = [
             "green-blue": [53],
             "green-yellow": [51],
             "black": [5,"58-66",68,69,92,104,106],
-            "black-red": [5,67,70,105],
+            "black-red": [67,70,105],
             "purple": [6,"71-74",76,"78-81",83,93,107,108,111],
             "purple-yellow": [77,82,109],
             "purple-green": [75],
