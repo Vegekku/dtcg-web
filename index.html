@@ -22,6 +22,12 @@
             <button id="saveSet" onclick="saveSet()" hidden>Guardar</button>
             <button id="cancelEdit" onclick="cancelEdit()" hidden>Cancelar</button>
         </div>
+        <div id="filters">
+            <input type="checkbox" name="incomplete_pull" id="incomplete_pull" onclick="incompletePull(this.checked)">
+            <label for="incomplete_pull">Pull incompleto</label>
+            <input type="checkbox" name="no_collected" id="no_collected" onclick="noCollected(this.checked)">
+            <label for="no_collected">No coleccionado</label>
+        </div>
     </div>
     <div id="setLists"></div>
     <a href="https://www.paypal.com/donate/?hosted_button_id=49N3JWT3ZHY98">Ayuda a Ennis!</a>
@@ -65,6 +71,7 @@
     </div>
 
     <script src="modal.js"></script>
+    <script src="filters.js"></script>
 </body>
 
 </html>
