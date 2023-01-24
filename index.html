@@ -23,16 +23,17 @@
             <button id="cancelEdit" onclick="cancelEdit()" hidden>Cancelar</button>
         </div>
         <div id="filters">
-            <input type="checkbox" name="incomplete_pull" id="incomplete_pull" onclick="incompletePull(this.checked)">
+            Filtros: 
+            <input type="checkbox" name="incomplete_pull" id="incomplete_pull" onclick="filterCards()">
             <label for="incomplete_pull">Pull incompleto</label>
-            <input type="checkbox" name="no_collected" id="no_collected" onclick="noCollected(this.checked)">
+            <input type="checkbox" name="no_collected" id="no_collected" onclick="filterCards()">
             <label for="no_collected">No coleccionado</label>
         </div>
     </div>
     <div id="setLists"></div>
     <a href="https://www.paypal.com/donate/?hosted_button_id=49N3JWT3ZHY98">Ayuda a Ennis!</a>
     <a href="https://paypal.me/vegekku">Invítame a un café</a>
-    <p>bandai: 2044 results</p>
+    <span>bandai: 2044 results</span>
     
     <div class="modal" id="editModal">
         <div class="modal-bg modal-exit" onclick="modalClose(this)"></div>

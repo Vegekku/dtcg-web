@@ -48,7 +48,7 @@ button#cancelEdit {
     color: white;
 }
 #setLists {
-    height: calc(100vh - 135px);
+    height: calc(100vh - 155px);
     overflow: scroll;
 }
 input:disabled + label {
@@ -62,6 +62,7 @@ thead {
     position: sticky;
     top: 0;
     background-color: white;
+    z-index: 1;
 }
 tr {
     vertical-align: top;
