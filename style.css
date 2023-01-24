@@ -51,6 +51,9 @@ button#cancelEdit {
     height: calc(100vh - 135px);
     overflow: scroll;
 }
+input:disabled + label {
+    opacity: 0.5;
+}
 table {
     border-collapse: collapse;
     border: none;
@@ -205,6 +208,9 @@ td {
     max-height: 111px;
     cursor: pointer;
     display: block;
+}
+.card--gotit {
+    opacity: 0.5;
 }
 .card[data-status="1"] {
     padding-right: 7px;
