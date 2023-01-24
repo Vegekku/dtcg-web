@@ -1,33 +1,37 @@
-const incompletePull = (active) => {
-    const rows = document.querySelectorAll('tbody tr');
-    for (let row of rows) {
-        const amount = row.querySelector('.amount-card');
-        if (amount.value > 3){
-            row.style.display = active ? 'none' : 'table-row';
-        }
-    }
-    document.getElementById('no_collected').disabled = active;
-}
+const filterCards = () => {
+    const noCollected = document.getElementById('no_collected').checked;
+    const incompletePull = document.getElementById('incomplete_pull').checked;
 
-const noCollected = (active) => {
     const rows = document.querySelectorAll('tbody tr');
     for (let row of rows) {
+        let showRow = true;
+        if ( incompletePull ) {
+            const amount = row.querySelector('.amount-card');
+            if (amount.value > 3){
+                showRow = false;
+            }
+        }
+
         const cards = row.querySelectorAll('[data-status]');
         let noCardFind = false;
-
-        for (let card of cards) {
-            if (active) {     
+        if (noCollected) {
+            for (let card of cards) {     
                 if ( card.dataset.status === '0' ){
                     noCardFind = true;
                 } else {
                     card.classList.add('card--gotit');
                 }
-            } else {
+            }
+            // Si no incompletePull, showRow if noCardFind.
+            if( ! incompletePull){
+                showRow = noCardFind;
+            }
+        } else {
+            for (let card of cards) {
                 card.classList.remove('card--gotit');
             }
         }
-        
-        row.style.display = active && !noCardFind ? 'none' : 'table-row';
+
+        row.style.display = showRow || noCardFind ? 'table-row' : 'none';
     }
-    document.getElementById('incomplete_pull').disabled = active;
 }
