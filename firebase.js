@@ -3083,6 +3083,44 @@ const sets = [
     },
 
 // February 2023
+    // 2022 Championship Finals Event Pack Alt-Art Gold Stamp Set --- eventpack_goldstamp_2022
+    {
+        "id": null,
+        "slug": "eventpack_goldstamp_2022",
+        "name": "2022 Championship Finals Event Pack Alt-Art Gold Stamp Set",
+        "release": "February 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT6-015": "",
+            "BT7-030": "",
+            "BT7-042": "",
+            "BT7-054": "",
+            "BT7-078": "",
+            "P-016": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+    },
+
+    // 2022 Championship Finals Digimon Tamers Pack --- tamerpack_goldstamp
+    {
+        "id": null,
+        "slug": "tamerpack_goldstamp",
+        "name": "2022 Championship Finals Digimon Tamers Pack",
+        "release": "February 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT1-035": "",
+            "BT2-009": "",
+            "BT2-068": "",
+            "BT3-046": "",
+            "BT3-057": "",
+            "BT5-036": "",
+            "BT5-044": "",
+            "ST7-09": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+    },
+
     // 2022 Final Championships Framed Trophy Cards - Top 16 --- fcftc_2022_top16
     {
         "id": null,
@@ -3093,7 +3131,7 @@ const sets = [
         "cards": {
             "BT7-056": "",
         },
-        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+        "info_url": "https://world.digimoncard.com/event/final_championships2022/"
     },
     // 2022 Final Championships Framed Trophy Cards - 3rd Place --- fcftc_2022_3rd
     {
@@ -3105,7 +3143,7 @@ const sets = [
         "cards": {
             "BT7-062": "",
         },
-        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+        "info_url": "https://world.digimoncard.com/event/final_championships2022/"
     },
     // 2022 Final Championships Framed Trophy Cards - 2nd Place --- fcftc_2022_2nd
     {
@@ -3117,7 +3155,7 @@ const sets = [
         "cards": {
             "BT7-064": "",
         },
-        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+        "info_url": "https://world.digimoncard.com/event/final_championships2022/"
     },
     // 2022 Final Championships Framed Trophy Cards - 1st Place Champion --- fcftc_2022_1st
     {
@@ -3129,7 +3167,41 @@ const sets = [
         "cards": {
             "BT7-065": "",
         },
-        "info_url": "https://world.digimoncard.com/event/final_championships2021/"
+        "info_url": "https://world.digimoncard.com/event/final_championships2022/"
+    },
+
+// Mid January 2023 – April 2023
+    // Official Tournament Pack Vol.8 --- otp8
+    {
+        "id": null,
+        "slug": "ot87",
+        "name": "Official Tournament Pack Vol.8",
+        "release": "Mid January 2023–April 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT2-070": "",
+            "BT3-021": "",
+            "BT9-004": "",
+            "BT10-003": "",
+            "EX1-024": "",
+            "ST7-02": "",
+        },
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e9/Official_Tournament_Pack_Vol.7.png/"
+    },
+    // Winner Pack Dimensional Phase --- wp8
+    {
+        "id": null,
+        "slug": "wp8",
+        "name": "Winner Pack -Dimensional Phase-",
+        "release": "Mid January 2023–April 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT1-003": "",
+            "BT3-021": "",
+            "BT8-064": "",
+            "BT10-003": "",
+        },
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/51/WinnerPackXroxEncounter.png/"
     },
 
 // March, 2023
