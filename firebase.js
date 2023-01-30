@@ -3170,6 +3170,128 @@ const sets = [
         "info_url": "https://world.digimoncard.com/event/final_championships2022/"
     },
 
+// February 10 - February 16, 2023
+    // Dimensional Phase (BT11) Pre-Release Tournaments --- bt11_prerelease
+    {
+        "id": null,
+        "slug": "bt11_prerelease",
+        "name": "Dimensional Phase (BT11) Pre-Release Tournaments",
+        "release": "February 10 - February 16, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT8-021": "",
+            "ST1-07": "",
+        },
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2a/Xros_Encounter_Pre-Release_Promotion_Pack.png/",
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-11/"
+    },
+
+// February 17, 2023
+    // Booster Dimensional Phase [BT11] --- bt11
+    {
+        "id": "BT11",
+        "slug": "bt11",
+        "name": "Booster Dimensional Phase [BT11]",
+        "release": "February 17, 2023",
+        "total": 112,
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_D_sam.png",
+        "add_zero": 3,
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/24/BT-10-EN.png/",
+        "playmat": "",
+        "color": {
+            "red": [1,7,8,10,11,"13-17",89,96,97],
+            "red-blue": [18],
+            "red-yellow": [9,12],
+            "red-white": [19],
+            "blue": [2,"20-33",90,98,99,112],
+            "yellow": [3,"34-42",45,100,101],
+            "yellow-black": [43,44],
+            "green": [4,"46-51",53,54,56,58,91,"102-104"],
+            "green-red": [52],
+            "green-black": [55,59],
+            "green-purple": [57],
+            "black": [5,"60-63","65-68",70,72,73,92,93,105,106,108,111],
+            "black-red": [64,69,74,107],
+            "black-purple": [71],
+            "purple": [6,"75-81",83,84,"86-88",109,110],
+            "purple-blue": [85],
+            "purple-yellow": [94],
+            "purple-black": [82],
+            "white": [95],
+        }
+    },
+    // Booster Dimensional Phase [BT11] - Alternatives --- bt11_alts
+    {
+        "id": null,
+        "slug": "bt11_alts",
+        "name": "Booster Dimensional Phase [BT11] - Alternatives",
+        "release": "February 17, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT11-016": "",
+            "BT11-017": "",
+            "BT11-019": "",
+            "BT11-032": "",
+            "BT11-033": "",
+            "BT11-042": "",
+            "BT11-056": "",
+            "BT11-074": "",
+            "BT11-083": "",
+            "BT11-086": "",
+            "BT11-088": "",
+            "BT11-089": "",
+            "BT11-090": "",
+            "BT11-091": "",
+            "BT11-093": "",
+            "BT11-094": "",
+            "BT11-111": "",
+            "BT11-112": "",
+            "BT2-032": "",
+            "EX1-073": "",
+            "ST10-06": "",
+        },
+    },
+    // Digimon Illustration Competition Pack --- ilustration_pack
+    {
+        "id": null,
+        "slug": "ilustration_pack",
+        "name": "Digimon Illustration Competition Pack",
+        "release": "February 17, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT2-056": "",
+            "BT8-008": "",
+            "EX1-039": "",
+            "EX2-025": "",
+            "P-005": "",
+            "ST1-03": "",
+            "ST5-12": "",
+            "ST6-08": "",
+        },
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a5/25th_Memorial_Pack.png/",
+    },
+    // English Version 2nd Anniversary Alternate Art Poll - 2ndanniversary_artpoll
+    {
+        "id": null,
+        "slug": "2ndanniversary_artpoll",
+        "name": "English Version 2nd Anniversary Alternate Art Poll",
+        "release": "February 17, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT1-063": "",
+            "BT2-046": "",
+            "BT2-051": "",
+            "BT3-077": "",
+            "BT3-103": "",
+            "BT4-063": "",
+            "BT5-032": "",
+            "BT6-085": "",
+            "BT7-005": "",
+            "BT7-036": "",
+        },
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a5/25th_Memorial_Pack.png/",
+    },
+
 // Mid January 2023 – April 2023
     // Official Tournament Pack Vol.8 --- otp8
     {
@@ -3237,6 +3359,26 @@ const sets = [
             "BT7-081": "",
         },
         "info_url": "https://world.digimoncard.com/products/goods/2nd-anniversary-set.php"
+    },
+
+// March-April, 2023
+    // Ultimate Cup 2023 --- ultimatecup_2023
+    {
+        "id": null,
+        "slug": "ultimatecup_2023",
+        "name": "Ultimate Cup 2023",
+        "release": "March-April, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT12-001": "",
+            "BT12-007": "",
+            "BT12-010": "",
+            "BT12-016": "",
+            "BT12-018": "",
+            "BT8-112": "",
+            "EX2-073": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/ultimate_cup/"
     },
 
 // June, 2023
