@@ -86,6 +86,7 @@ td {
 }
 .card_id--red-yellow {
     background: linear-gradient(90deg, var(--red-card) 50%, var(--yellow-card) 50%);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .card_id--red-green {
     background: linear-gradient(90deg, var(--red-card) 50%, var(--green-card) 50%);
@@ -95,6 +96,10 @@ td {
 }
 .card_id--red-purple {
     background: linear-gradient(90deg, var(--red-card) 50%, var(--purple-card) 50%);
+}
+.card_id--red-white {
+    background: linear-gradient(90deg, var(--red-card) 50%, var(--white-card) 50%);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .card_id--blue {
     background-color: var(--blue-card);
@@ -130,6 +135,7 @@ td {
 .card_id--yellow-black {
     background: linear-gradient(90deg, var(--yellow-card) 50%, var(--black-card) 50%);
     color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 .card_id--yellow-purple {
     background: linear-gradient(90deg, var(--yellow-card) 50%, var(--purple-card) 50%);
@@ -150,6 +156,9 @@ td {
 .card_id--green-black {
     background: linear-gradient(90deg, var(--green-card) 50%, var(--black-card) 50%);
 }
+.card_id--green-purple {
+    background: linear-gradient(90deg, var(--green-card) 50%, var(--purple-card) 50%);
+}
 .card_id--black {
     background-color: var(--black-card);
 }
@@ -164,6 +173,9 @@ td {
 }
 .card_id--purple-red {
     background: linear-gradient(90deg, var(--purple-card) 50%, var(--red-card) 50%);
+}
+.card_id--purple-blue {
+    background: linear-gradient(90deg, var(--purple-card) 50%, var(--blue-card) 50%);
 }
 .card_id--purple-yellow {
     background: linear-gradient(90deg, var(--purple-card) 50%, var(--yellow-card) 50%);
