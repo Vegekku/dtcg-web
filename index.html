@@ -28,6 +28,17 @@
             <label for="incomplete_pull">Pull incompleto</label>
             <input type="checkbox" name="no_collected" id="no_collected" onclick="filterCards()">
             <label for="no_collected">No coleccionado</label>
+            <label for="color">Color primario</label>
+            <select name="color" id="color" onchange="filterCards()">
+                <option value="">Todos</option>
+                <option value="red">Rojo</option>
+                <option value="blue">Azul</option>
+                <option value="yellow">Amarillo</option>
+                <option value="green">Verde</option>
+                <option value="black">Negro</option>
+                <option value="purple">Morado</option>
+                <option value="white">Blanco</option>
+            </select>
         </div>
     </div>
     <div id="setLists"></div>
