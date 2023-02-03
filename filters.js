@@ -1,15 +1,18 @@
 const filterCards = () => {
     const noCollected = document.getElementById('no_collected').checked;
     const incompletePull = document.getElementById('incomplete_pull').checked;
+    const color = document.getElementById('color').value;
 
     const rows = document.querySelectorAll('tbody tr');
     for (let row of rows) {
-        let showRow = true;
+        let isIncompletedPull = false;
         if ( incompletePull ) {
             const amount = row.querySelector('.amount-card');
-            if (amount.value > 3){
-                showRow = false;
+            if (amount.value < 4){
+                isIncompletedPull = true;
             }
+        } else {
+            isIncompletedPull = true;
         }
 
         const cards = row.querySelectorAll('[data-status]');
@@ -22,9 +25,9 @@ const filterCards = () => {
                     card.classList.add('card--gotit');
                 }
             }
-            // Si no incompletePull, showRow if noCardFind.
+            // Si no incompletePull, isIncompletedPull mismo valor que noCardFind.
             if( ! incompletePull){
-                showRow = noCardFind;
+                isIncompletedPull = noCardFind;
             }
         } else {
             for (let card of cards) {
@@ -32,6 +35,16 @@ const filterCards = () => {
             }
         }
 
-        row.style.display = showRow || noCardFind ? 'table-row' : 'none';
+        let isColor = false;
+        if ( color !== '' ) {
+            const colorCard = row.querySelector('.card_id');
+            if ( colorCard.className.includes(`card_id--${color}`) ){
+                isColor = true;
+            }
+        } else {
+            isColor = true;
+        }
+
+        row.style.display = ( isIncompletedPull || noCardFind ) && isColor ? '' : 'none';
     }
 }
