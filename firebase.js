@@ -977,6 +977,10 @@ const sets = [
             "black": [5,"59-70",90,"103-105"],
             "purple": [6,"71-83","106-108"],
             "white": ["84-87","91-93","109-112"],
+        },
+        "cardmarket": {
+            "url": "https://www.cardmarket.com/es/Digimon/Products/Singles/Battle-Of-Omni/digimonName-cardNumber-rarity",
+            "api_set": "BT-05: Booster Battle Of Omni",
         }
     },
     // Booster Battle of Omni [BT5] - Alternatives --- bt5_alts
