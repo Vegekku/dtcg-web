@@ -1,9 +1,25 @@
 let editingSet = false;
+let cardAPI = null;
 
 const modalOpen = (element) => {
     const modal = editingSet ? document.getElementById('editModal') : document.getElementById('viewModal');
     const modalTitle = modal.querySelector('.modal-title');
     const [cardNumber, slug] = element.id.split('__');
+
+    const getCardmarketUrl = (url, cardNumber) => {
+        var cardUrl = url.replaceAll('cardNumber', cardNumber);
+
+        if ( cardAPI === null ) {
+            cardAPI = JSON.parse( window.localStorage.getItem("cardAPI") || '{}' );
+        }
+
+        // Buscar en objeto si existe el cardNumber
+        // Si exste, componer la url en función de esos datos
+        // Sino, pedir a la api
+        
+
+        return cardUrl;
+    }
 
     modalTitle.innerHTML = `${cardNumber}: ${element.title}`;
     if ( editingSet ) {
@@ -23,6 +39,7 @@ const modalOpen = (element) => {
         const cardZoom = document.getElementById('card-zoom');
         const cardStatus = document.getElementById('card-status');
         const cardPrice = document.getElementById('card-price');
+        const cardmarket = document.getElementById('cardmarket');
         const status = ['No la tengo', 'Obtenida', 'Comprada', 'Es proxy'];
 
         cardZoom.src = element.src;
@@ -32,6 +49,7 @@ const modalOpen = (element) => {
             style: 'currency', 
             currency: 'EUR',
         });
+        cardmarket.href = getCardmarketUrl(element.dataset.cardmarket, cardNumber);
     }
     modal.classList.add('open');
 };
