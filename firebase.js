@@ -892,6 +892,23 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fc/Great_Legend_Power_Up_Pack.png"
     },
+    // Great Legend Power Up Pack (Foil) --- bt4_powerup_foil
+    {
+        "id": null,
+        "slug": "bt4_powerup_foil",
+        "name": "Great Legend Power Up Pack (Foil)",
+        "release": "June 11, 2021",
+        "url": "bandaitcgplusURL/setID/setID-cardID.png",
+        "cards": {
+            "P-029": "",
+            "P-030": "",
+            "P-031": "",
+            "P-032": "",
+            "P-033": "",
+            "P-034": "",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fc/Great_Legend_Power_Up_Pack.png"
+    },
 
 // June 2021
     // Tamer Party Vol.2 --- tp2
@@ -3173,6 +3190,20 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2022/"
     },
+    // Tamer Party Vol.7 --- tp7
+    {
+        "id": null,
+        "slug": "tp6",
+        "name": "Tamer Party Vol.7",
+        "release": "February 2023",
+        "url": "noCardURL",
+        "cards": {
+            "P-079": "",
+            "P-080": "",
+            "P-081": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/tamer_party_06/"
+    },
 
 // February 10 - February 16, 2023
     // Dimensional Phase (BT11) Pre-Release Tournaments --- bt11_prerelease
@@ -3198,7 +3229,7 @@ const sets = [
         "name": "Booster Dimensional Phase [BT11]",
         "release": "February 17, 2023",
         "total": 112,
-        "url": "bandaitcgplusURL/setID/e_setID-cardID_D_sam.png",
+        "url": "digimoncardURL/setID-cardID.png",
         "add_zero": 3,
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/24/BT-10-EN.png/",
         "playmat": "",
@@ -3230,7 +3261,7 @@ const sets = [
         "slug": "bt11_alts",
         "name": "Booster Dimensional Phase [BT11] - Alternatives",
         "release": "February 17, 2023",
-        "url": "noCardURL",
+        "url": "digimoncardURL/setID-cardID_P1.png",
         "cards": {
             "BT11-016": "",
             "BT11-017": "",
@@ -3363,6 +3394,56 @@ const sets = [
             "BT7-081": "",
         },
         "info_url": "https://world.digimoncard.com/products/goods/2nd-anniversary-set.php"
+    },
+
+// March 11,12,18, 2023
+    // 2022 World Championship - Participation --- wc2022
+    {
+        "id": null,
+        "slug": "wc2022",
+        "name": "2022 World Championship - Participation",
+        "release": "March 11,12,18, 2023",
+        "url": null,
+        "cards": {
+            "BT7-056": "https://world.digimoncard.com/images/event/championship2022/world/popup/img_01.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/championship2022/world/"
+    },
+    // 2021 World Championship 3rd Place --- wc2022_3rd
+    {
+        "id": null,
+        "slug": "wc2022_3rd",
+        "name": "2022 World Championship - 3rd Place",
+        "release": "March 11,12,18, 2023",
+        "url": null,
+        "cards": {
+            "BT7-062": "https://world.digimoncard.com/images/event/championship2022/world/popup/img_02.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/championship2022/world/"
+    },
+    // 2021 World Championship 2nd Place --- wc2022_2nd
+    {
+        "id": null,
+        "slug": "wc2022_2nd",
+        "name": "2022 World Championship - 2nd Place",
+        "release": "March 11,12,18, 2023",
+        "url": null,
+        "cards": {
+            "BT7-064": "https://world.digimoncard.com/images/event/championship2022/world/popup/img_03.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/championship2022/world/"
+    },
+    // 2021 World Championship 1st Place --- wc2022_1st
+    {
+        "id": null,
+        "slug": "wc2022_1st",
+        "name": "2022 World Championship - 1st Place",
+        "release": "March 11,12,18, 2023",
+        "url": null,
+        "cards": {
+            "BT6-111": "https://world.digimoncard.com/images/event/championship2022/world/popup/img_04.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/championship2022/world/"
     },
 
 // March-April, 2023

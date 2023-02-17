@@ -63,7 +63,7 @@
             </div>
             <div class="price-confirm" hidden id="priceConfirm">
                 <label for="price">Precio</label>
-                <input type="number" name="price" id="price" step="0.01">
+                <input type="number" name="price" id="price" step="0.01" onfocus="selectValue()">
                 <button class="modal-ok" onclick="modalOk()">confirmar</button>
             </div>
             <button class="modal-close modal-exit" onclick="modalClose(this)">X</button>
