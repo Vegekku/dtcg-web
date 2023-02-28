@@ -226,6 +226,8 @@ td {
     max-height: 111px;
     cursor: pointer;
     display: block;
+    max-width: 79px;
+    object-fit: cover;
 }
 .card--gotit {
     opacity: 0.5;
