@@ -6,9 +6,7 @@ const modalOpen = (element) => {
     const modalTitle = modal.querySelector('.modal-title');
     const [cardNumber, slug] = element.id.split('__');
 
-    const getCardmarketUrl = (url, cardNumber) => {
-        var cardUrl = url.replaceAll('cardNumber', cardNumber);
-
+    const getCardmarketUrl = (url) => {
         if ( cardAPI === null ) {
             cardAPI = JSON.parse( window.localStorage.getItem("cardAPI") || '{}' );
         }
@@ -16,9 +14,12 @@ const modalOpen = (element) => {
         // Buscar en objeto si existe el cardNumber
         // Si exste, componer la url en función de esos datos
         // Sino, pedir a la api
-        
+        const response = fetch('https://digimoncard.io/api-public/search.php?card=' + cardNumber)
+            .then( response => response.json() )
+            .then( json => { return url.replaceAll('digimonName', json[0].name) } )
+            .catch(err => console.log('Solicitud fallida', err)); 
 
-        return cardUrl;
+        return response;
     }
 
     modalTitle.innerHTML = `${cardNumber}: ${element.title}`;
@@ -49,7 +50,15 @@ const modalOpen = (element) => {
             style: 'currency', 
             currency: 'EUR',
         });
-        cardmarket.href = getCardmarketUrl(element.dataset.cardmarket, cardNumber);
+    
+        cardmarket.href = element.dataset.cardmarket.replaceAll('cardNumber', cardNumber);
+        cardmarket.addEventListener( 'click', (event) => {
+            event.preventDefault();
+            const url = event.currentTarget.href;
+            if ( '' !== url ){
+                getCardmarketUrl(url).then( data => { console.log(data); window.open(data,'_blank'); });
+            }
+        })
     }
     modal.classList.add('open');
 };

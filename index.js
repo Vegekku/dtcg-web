@@ -56,7 +56,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         collection[setId][cardId].cards[slug] = {status: 0, bought: 0};
                     }
 
-                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardmarket);
+                    let cardmarketUrl = '';
+                    if ( 'undefined' !== typeof cardmarket ){
+                        cardmarketUrl = cardmarket.url;
+                    }
+
+                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardmarketUrl);
                 }
             });
         } else {
@@ -73,18 +78,28 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             if (collection[setId][cardId].cards[parallel_slug] === undefined) {
                                 collection[setId][cardId].cards[parallel_slug] = {status: 0, bought: 0};
                             }
+
+                            let cardmarketUrl = '';
+                            if ( 'undefined' !== typeof cardmarket ){
+                                cardmarketUrl = cardmarket.url;
+                            }
                             
                             const cardUrl = getImageUrl(url, setId, cardId, parallelElement);
-                            cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought, cardmarket);
+                            cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought, cardmarketUrl);
                         });
                     } else {
                         // 5. si no existe la carta, la añadimos al set
                         if (collection[setId][cardId].cards[slug] === undefined) {
                             collection[setId][cardId].cards[slug] = {status: 0, bought: 0};
                         }
+
+                        let cardmarketUrl = '';
+                        if ( 'undefined' !== typeof cardmarket ){
+                            cardmarketUrl = cardmarket.url;
+                        }
                         
                         const cardUrl = getImageUrl(url, setId, cardId, parallel);
-                        cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardmarket);
+                        cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardmarketUrl);
                     }
 
                 }
