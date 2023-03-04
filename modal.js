@@ -1,9 +1,26 @@
 let editingSet = false;
+let cardAPI = null;
 
 const modalOpen = (element) => {
     const modal = editingSet ? document.getElementById('editModal') : document.getElementById('viewModal');
     const modalTitle = modal.querySelector('.modal-title');
     const [cardNumber, slug] = element.id.split('__');
+
+    const getCardmarketUrl = (url) => {
+        if ( cardAPI === null ) {
+            cardAPI = JSON.parse( window.localStorage.getItem("cardAPI") || '{}' );
+        }
+
+        // Buscar en objeto si existe el cardNumber
+        // Si exste, componer la url en función de esos datos
+        // Sino, pedir a la api
+        const response = fetch('https://digimoncard.io/api-public/search.php?card=' + cardNumber)
+            .then( response => response.json() )
+            .then( json => { return url.replaceAll('digimonName', json[0].name) } )
+            .catch(err => console.log('Solicitud fallida', err)); 
+
+        return response;
+    }
 
     modalTitle.innerHTML = `${cardNumber}: ${element.title}`;
     if ( editingSet ) {
@@ -23,6 +40,7 @@ const modalOpen = (element) => {
         const cardZoom = document.getElementById('card-zoom');
         const cardStatus = document.getElementById('card-status');
         const cardPrice = document.getElementById('card-price');
+        const cardmarket = document.getElementById('cardmarket');
         const status = ['No la tengo', 'Obtenida', 'Comprada', 'Es proxy'];
 
         cardZoom.src = element.src;
@@ -32,6 +50,15 @@ const modalOpen = (element) => {
             style: 'currency', 
             currency: 'EUR',
         });
+    
+        cardmarket.href = element.dataset.cardmarket.replaceAll('cardNumber', cardNumber);
+        cardmarket.addEventListener( 'click', (event) => {
+            event.preventDefault();
+            const url = event.currentTarget.href;
+            if ( '' !== url ){
+                getCardmarketUrl(url).then( data => { console.log(data); window.open(data,'_blank'); });
+            }
+        })
     }
     modal.classList.add('open');
 };

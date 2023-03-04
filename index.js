@@ -38,12 +38,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return cardUrl;
     };
 
-    const getImageTag = (url, title, id, status = 0, bought = 0) => {
-        return `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-status="${status}" data-bought="${bought}" onclick="modalOpen(this)">`;
+    const getImageTag = (url, title, id, status = 0, bought = 0, cardmarket = "") => {
+        return `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-status="${status}" data-bought="${bought}" data-cardmarket="${cardmarket}" onclick="modalOpen(this)">`;
     }
 
     const drawAlternatives = (setElement) => {
-        const {name, url, cards, slug} = setElement;
+        const {name, url, cards, slug, cardmarket} = setElement;
         if ( url === null ) {
             Object.entries(cards).forEach(card => {
                 const [cardNumber, cardUrl] = card;
@@ -56,7 +56,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         collection[setId][cardId].cards[slug] = {status: 0, bought: 0};
                     }
 
-                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought);
+                    let cardmarketUrl = '';
+                    if ( 'undefined' !== typeof cardmarket ){
+                        cardmarketUrl = cardmarket.url;
+                    }
+
+                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardmarketUrl);
                 }
             });
         } else {
@@ -73,18 +78,28 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             if (collection[setId][cardId].cards[parallel_slug] === undefined) {
                                 collection[setId][cardId].cards[parallel_slug] = {status: 0, bought: 0};
                             }
+
+                            let cardmarketUrl = '';
+                            if ( 'undefined' !== typeof cardmarket ){
+                                cardmarketUrl = cardmarket.url;
+                            }
                             
                             const cardUrl = getImageUrl(url, setId, cardId, parallelElement);
-                            cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought);
+                            cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought, cardmarketUrl);
                         });
                     } else {
                         // 5. si no existe la carta, la añadimos al set
                         if (collection[setId][cardId].cards[slug] === undefined) {
                             collection[setId][cardId].cards[slug] = {status: 0, bought: 0};
                         }
+
+                        let cardmarketUrl = '';
+                        if ( 'undefined' !== typeof cardmarket ){
+                            cardmarketUrl = cardmarket.url;
+                        }
                         
                         const cardUrl = getImageUrl(url, setId, cardId, parallel);
-                        cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought);
+                        cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardmarketUrl);
                     }
 
                 }
@@ -195,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         collection[setElement.id][cardId].cards[setElement.slug] = {status: 0, bought: 0};
                     }
 
-                    row.insertCell(2).innerHTML = getImageTag(cardUrl, setElement.name, `${cardNumber}__${setElement.slug}`, collection[setElement.id][cardId].cards[setElement.slug].status, collection[setElement.id][cardId].cards[setElement.slug].bought);
+                    row.insertCell(2).innerHTML = getImageTag(cardUrl, setElement.name, `${cardNumber}__${setElement.slug}`, collection[setElement.id][cardId].cards[setElement.slug].status, collection[setElement.id][cardId].cards[setElement.slug].bought, setElement.cardmarket);
                 } else {
                     row.insertCell(2).innerHTML = "";
                 }

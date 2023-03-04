@@ -28,6 +28,17 @@
             <label for="incomplete_pull">Pull incompleto</label>
             <input type="checkbox" name="no_collected" id="no_collected" onclick="filterCards()">
             <label for="no_collected">No coleccionado</label>
+            <label for="color">Color primario</label>
+            <select name="color" id="color" onchange="filterCards()">
+                <option value="">Todos</option>
+                <option value="red">Rojo</option>
+                <option value="blue">Azul</option>
+                <option value="yellow">Amarillo</option>
+                <option value="green">Verde</option>
+                <option value="black">Negro</option>
+                <option value="purple">Morado</option>
+                <option value="white">Blanco</option>
+            </select>
         </div>
     </div>
     <div id="setLists"></div>
@@ -52,7 +63,7 @@
             </div>
             <div class="price-confirm" hidden id="priceConfirm">
                 <label for="price">Precio</label>
-                <input type="number" name="price" id="price" step="0.01">
+                <input type="number" name="price" id="price" step="0.01" onfocus="selectValue()">
                 <button class="modal-ok" onclick="modalOk()">confirmar</button>
             </div>
             <button class="modal-close modal-exit" onclick="modalClose(this)">X</button>
@@ -66,6 +77,7 @@
             <img src="#" alt="" id="card-zoom">
             <div class="card-info">
                 <span>Estado: <span id="card-status"></span></span><span>Precio: <span id="card-price"></span></span>
+                <a href="#" id="cardmarket" target="_blank"><img src="https://static.cardmarket.com/img/526dbb9ae52c5e62404fe903e9769807/static/misc/favicon-96x96.png" alt=""></a>
             </div>
             <button class="modal-close modal-exit" onclick="modalClose(this)">X</button>
         </div>
