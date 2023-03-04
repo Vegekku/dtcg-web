@@ -3489,7 +3489,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/championship2022/world/"
     },
-    // 2021 World Championship 3rd Place --- wc2022_3rd
+    // 2022 World Championship 3rd Place --- wc2022_3rd
     {
         "id": null,
         "slug": "wc2022_3rd",
@@ -3501,7 +3501,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/championship2022/world/"
     },
-    // 2021 World Championship 2nd Place --- wc2022_2nd
+    // 2022 World Championship 2nd Place --- wc2022_2nd
     {
         "id": null,
         "slug": "wc2022_2nd",
@@ -3513,7 +3513,7 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/championship2022/world/"
     },
-    // 2021 World Championship 1st Place --- wc2022_1st
+    // 2022 World Championship 1st Place --- wc2022_1st
     {
         "id": null,
         "slug": "wc2022_1st",
@@ -3525,6 +3525,49 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/championship2022/world/"
     },
+    // 2022 World Championship - Special Multi-Region Match --- wc2022_specialmatch
+    {
+        "id": null,
+        "slug": "wc2022_specialmatch",
+        "name": "2022 World Championship - Special Multi-Region Match",
+        "release": "March 19, 2023",
+        "url": null,
+        "cards": {
+            "BT7-056": "https://world.digimoncard.com/images/event/championship2022/world/popup/img_06.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/championship2022/world/"
+    },
+
+// March 17 – March 23, 2023
+    // Advanced Deck Set (ST14) Pre-Release BEELZEMON CUP --- st14_prerelease
+    {
+        "id": null,
+        "slug": "st14_prerelease",
+        "name": "Advanced Deck Set (ST14) Pre-Release BEELZEMON CUP",
+        "release": "March 17 – March 23, 2023",
+        "url": null,
+        "cards": {
+            "BT6-068": "https://world.digimoncard.com/images/event/pre-release_ST14/img_01.png",
+            "EX2-044": "https://world.digimoncard.com/images/event/pre-release_ST14/img_03.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/pre-release_ST14/"
+    },
+
+// March 24, 2023
+    // Advanced Deck BEELZEMON [ST-14] --- st14
+    // {
+    //     "id": "ST14",
+    //     "slug": "st14",
+    //     "name": "Advanced Deck BEELZEMON [ST-14]",
+    //     "release": "March 24, 2023",
+    //     "total": 12,
+    //     "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
+    //     "add_zero": 2,
+    //     "info_url": "https://world.digimoncard.com/products/deck/st-14.php",
+    //     "color": {
+    //         "purple": ["1-12"]
+    //     }
+    // },
 
 // March-April, 2023
     // Ultimate Cup 2023 --- ultimatecup_2023
