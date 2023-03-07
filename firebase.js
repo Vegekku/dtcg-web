@@ -3370,7 +3370,7 @@ const sets = [
         "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
             "BT2-056": "P2",
-            "BT8-008": "P1",
+            "BT8-008": "P3",
             "EX1-039": "P2",
             "EX2-025": "P2",
             "P-005": "P2",
