@@ -225,7 +225,7 @@ td {
 .card {
     max-height: 111px;
     cursor: pointer;
-    display: block;
+    /* display: block; */
     max-width: 79px;
     object-fit: cover;
 }

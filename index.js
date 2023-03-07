@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
             // Header
             const tHead = tableSet.createTHead();
-            const tHeadTexts = [setElement.id, "Amount", "Cards"];
+            const tHeadTexts = [setElement.id, "", "Cards"];
             var row = tHead.insertRow(0);
             tHeadTexts.forEach(tHeadText => {
                 const tHeadCell = document.createElement('th');
