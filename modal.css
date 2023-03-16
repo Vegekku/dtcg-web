@@ -85,11 +85,14 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 @media (min-width: 450px) {
   .radio-buttons {
-    width: 450px;
+    /* width: 450px; */
     flex-direction: row;
+    justify-content: center;
+    column-gap: 25px;
   }
 }
 .radio-buttons input[type="radio"] {
@@ -113,6 +116,11 @@
 .radio-buttons input[type="radio"][id="got_it"]:checked + label {
   background-color:#9fda86;
   border-color: #2fa82b;
+  color: #fff;
+}
+.radio-buttons input[type="radio"][id="reservation"]:checked + label {
+  background-color:#efde9b;
+  border-color: #c6a432;
   color: #fff;
 }
 .radio-buttons input[type="radio"][id="bought_it"]:checked + label {

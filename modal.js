@@ -23,7 +23,13 @@ const modalOpen = (element) => {
 
     modalTitle.innerHTML = `${cardNumber}: ${element.title}`;
     if ( editingSet ) {
-        const status = ['no_have', 'got_it', 'bought_it', 'proxy'];
+        const status = {
+            '-1': 'reservation',
+            '0': 'no_have',
+            '1': 'got_it',
+            '2': 'bought_it',
+            '3': 'proxy'
+        };
 
         document.getElementById(status[element.dataset.status]).checked = true;
         document.getElementById('cardId').value = element.id;
