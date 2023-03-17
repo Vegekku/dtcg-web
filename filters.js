@@ -1,25 +1,24 @@
 const filterCards = () => {
     const filters = {
-        "noCollected": document.getElementById('no_collected').checked,
-        "noPull": document.getElementById('incomplete_pull').checked,
+        "status": document.getElementById('status').value,
         "color": document.getElementById('color').value,
     }
 
-    const getNoCard = cards => {
-        const noCards = [];
+    const getFilterCardsByStatus = (cards, status = '0') => {
+        const filterCards = [];
         for (let card of cards) {     
-            if ( card.dataset.status === '0' ){
-                noCards.push(card.id);
+            if ( card.dataset.status === status ){
+                filterCards.push(card.id);
             }
         }
 
-        return noCards;
+        return filterCards;
     }
 
     const rows = document.querySelectorAll('tbody tr');
     for (let row of rows) {
         const cards = row.querySelectorAll('[data-status]');
-        const noCards = getNoCard( cards );
+        const noCards = getFilterCardsByStatus( cards );
 
         // 1. Show/hide rows
         
@@ -31,66 +30,78 @@ const filterCards = () => {
             }
         }
 
-        let isIncompletedPull = true;
-        if ( isColor && filters.noPull ) {
-            const amount = row.querySelector('.amount-card');
-            if (amount.value >= 4){
-                isIncompletedPull = false;
+        let isStatus = true;
+        if ( isColor && filters.status !== '' ) {
+            const status = {
+                'reservation': '-1',
+                'no_have': '0',
+                'got_it': '1',
+                'bought_it': '2',
+                'proxy': '3'
+            };
+
+            if ( 'no_pull_no_have' === filters.status ) {
+                const statusCardsInRow = getFilterCardsByStatus( cards );
+                const amount = row.querySelector('.amount-card');
+
+                if (amount.value >= 4 && statusCardsInRow.length === 0 ){
+                    isStatus = false;
+                }
+            } else if ( 'no_pull' === filters.status ) {
+                const amount = row.querySelector('.amount-card');
+                if (amount.value >= 4){
+                    isStatus = false;
+                }
+            } else {
+                const statusCardsInRow = getFilterCardsByStatus( cards, status[filters.status] );
+
+                if ( statusCardsInRow.length === 0 ) {
+                    isStatus = false;
+                }
             }
         }
 
-        let noCardFind = true;
-        if ( isColor && filters.noCollected ) {
-            if (noCards.length === 0 ) {
-                noCardFind = false;
-            }
-        }
-
-        /**
-         * noPull=true && noCollected=false -> isIncompletedPull
-         * noPull=false && noCollected=true -> noCardFind
-         * noPull=true && noCollected=true -> isIncompletedPull || noCardFind
-         */
-        let showRow = true;
-        if ( filters.noPull && ! filters.noCollected ) {
-            showRow = isIncompletedPull;
-        } else if ( ! filters.noPull && filters.noCollected ) {
-            showRow = noCardFind;
-        } else if ( filters.noPull && filters.noCollected ) {
-            showRow = isIncompletedPull || noCardFind;
-        }
-
-        row.style.display = isColor && showRow ? '' : 'none';
+        row.style.display = isColor && isStatus ? '' : 'none';
 
         // 2. Show/hide cards in the row
 
-        if ( isColor && showRow && filters.noCollected ) {
-            /**
-             * noPull=true && noCollected=false -> nothing
-             * noPull=false && noCollected=true -> hide status != 0
-             * noPull=true && noCollected=true -> opacity status != 0
-             */
-            if ( ! filters.noPull ) {
-                for (let card of cards) {
-                    if ( ! noCards.includes(card.id)){
-                        card.hidden = true;
-                    }
-                }
-                row.querySelector('.amount-card').hidden = true;
-            } else {
-                for (let card of cards) {
-                    if ( ! noCards.includes(card.id)){
-                        card.classList.add('card--gotit');
-                    }
-                }
-                row.querySelector('.amount-card').hidden = false;
-            }
-        } else {
+        if ( isColor && isStatus ) {
             for (let card of cards) {
                 card.classList.remove('card--gotit');
                 card.hidden = false;
             }
             row.querySelector('.amount-card').hidden = false;
+
+            if ( filters.status !== '' ) {
+                const status = {
+                    'reservation': '-1',
+                    'no_have': '0',
+                    'got_it': '1',
+                    'bought_it': '2',
+                    'proxy': '3'
+                };
+    
+                if ( 'no_pull_no_have' === filters.status ) {
+                    const statusCardsInRow = getFilterCardsByStatus( cards );
+
+                    for (let card of cards) {
+                        if ( ! statusCardsInRow.includes(card.id)){
+                            card.classList.add('card--gotit');
+                        }
+                    }
+                } else if ( 'no_pull' === filters.status ) {
+                    // Nothint for now.
+                } else {
+                    const statusCardsInRow = getFilterCardsByStatus( cards, status[filters.status] );
+
+                    for (let card of cards) {
+                        if ( ! statusCardsInRow.includes(card.id)){
+                            card.hidden = true;
+                        }
+                    }
+                    row.querySelector('.amount-card').hidden = true;
+                }
+            }
         }
     }
 }

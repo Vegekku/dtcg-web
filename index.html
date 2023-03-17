@@ -24,10 +24,18 @@
         </div>
         <div id="filters">
             Filtros: 
-            <input type="checkbox" name="incomplete_pull" id="incomplete_pull" onclick="filterCards()">
-            <label for="incomplete_pull">Pull incompleto</label>
-            <input type="checkbox" name="no_collected" id="no_collected" onclick="filterCards()">
-            <label for="no_collected">No la tengo</label>
+            <label for="status">Estado</label>
+            <select name="status" id="status" onchange="filterCards()">
+                <option value="">Cualquiera</option>
+                <option value="no_pull_no_have">Sin pull + faltas</option>
+                <option value="no_pull">Sin pull</option>
+                <option value="no_have">Falta</option>
+                <option value="got_it">Obtenida</option>
+                <option value="reservation">Reservada</option>
+                <option value="bought_it">Comprada</option>
+                <option value="proxy">Proxy</option>
+            </select>
+
             <label for="color">Color primario</label>
             <select name="color" id="color" onchange="filterCards()">
                 <option value="">Todos</option>
