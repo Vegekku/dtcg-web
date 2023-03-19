@@ -3103,12 +3103,12 @@ const sets = [
         "release": "February 2023",
         "url": null,
         "cards": {
-            "BT6-015": "https://static.cardmarket.com/img/4333476456848ba38e334b2cfcef2c6a/items/1611/CP22/693195.jpg",
-            "BT7-030": "https://static.cardmarket.com/img/dad40b6344ecf944b18fc78436bd01ab/items/1611/CP22/693196.jpg",
-            "BT7-042": "https://static.cardmarket.com/img/a5938772287a024330154d8f51a05a5d/items/1611/CP22/693197.jpg",
-            "BT7-054": "https://static.cardmarket.com/img/87a22823351ccadc41da4ed178fa0ee5/items/1611/CP22/693198.jpg",
-            "BT7-078": "https://static.cardmarket.com/img/4a0ff3cab1bb07e3dd611fbfcace1b68/items/1611/CP22/693199.jpg",
-            "P-016": "https://static.cardmarket.com/img/d6a143ccca28e944f7b3d44b5fe23030/items/1611/CP22/693200.jpg",
+            "BT6-015": "https://static.wikia.nocookie.net/digimoncardgame/images/f/ff/BT6-015_P2.png",
+            "BT7-030": "https://static.wikia.nocookie.net/digimoncardgame/images/6/69/BT7-030_P2.png",
+            "BT7-042": "https://static.wikia.nocookie.net/digimoncardgame/images/0/08/BT7-042_P2.png",
+            "BT7-054": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1d/BT7-054_P2.png",
+            "BT7-078": "https://static.wikia.nocookie.net/digimoncardgame/images/9/98/BT7-078_P2.png",
+            "P-016": "https://static.wikia.nocookie.net/digimoncardgame/images/6/67/P-016_P5.png",
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
@@ -3141,7 +3141,7 @@ const sets = [
         "release": "January 2022",
         "url": null,
         "cards": {
-            "BT7-056": "https://static.cardmarket.com/img/bbcfd1e6480815b4b45a52f1a5194842/items/1611/CP22/690044.jpg",
+            "BT7-056": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fc/BT7-056_P2.png",
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2022/"
     },
@@ -3153,7 +3153,7 @@ const sets = [
         "release": "January 2022",
         "url": null,
         "cards": {
-            "BT7-062": "https://static.cardmarket.com/img/9a9bfb529ee9869219892d58203f6982/items/1611/CP22/690045.jpg",
+            "BT7-062": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a1/BT7-062_P4.png",
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2022/"
     },
@@ -3165,7 +3165,7 @@ const sets = [
         "release": "January 2022",
         "url": null,
         "cards": {
-            "BT7-064": "https://static.cardmarket.com/img/bc3a653e81423dba45b5b734b3e13313/items/1611/CP22/690046.jpg",
+            "BT7-064": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e7/BT7-064_P3.png",
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2022/"
     },
@@ -3177,7 +3177,7 @@ const sets = [
         "release": "January 2022",
         "url": null,
         "cards": {
-            "BT7-065": "https://static.cardmarket.com/img/8fa67d8dec3e40a7749c7d6b3e53b092/items/1611/CP22/690047.jpg",
+            "BT7-065": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b7/BT7-065_P2.png",
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2022/"
     },
@@ -3189,9 +3189,9 @@ const sets = [
         "release": "February 2023",
         "url": null,
         "cards": {
-            "P-079": "https://static.cardmarket.com/img/9bc71e4776bc6cb5e558a26383c78b37/items/1611/P/699128.jpg",
-            "P-080": "https://static.cardmarket.com/img/13ab02620eadb4ad7d8765aca287d6dd/items/1611/P/699129.jpg",
-            "P-081": "https://static.cardmarket.com/img/a20c7bc792929d27d04b3a1a54be76aa/items/1611/P/699130.jpg",
+            "P-079": "https://static.wikia.nocookie.net/digimoncardgame/images/8/80/P-079_P1.png",
+            "P-080": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d1/P-080_P1.png",
+            "P-081": "https://static.wikia.nocookie.net/digimoncardgame/images/7/74/P-081_P1.png",
         },
         "info_url": "https://world.digimoncard.com/event/tamer_party_06/"
     },
@@ -3440,6 +3440,27 @@ const sets = [
         }
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/51/WinnerPackXroxEncounter.png/"
     },
+    // Judge Pack 2 --- judgepack2
+    {
+        "id": null,
+        "slug": "judgepack2",
+        "name": "Judge Pack 2",
+        "release": "Mid January 2023–April 2023",
+        // "url": "digimoncardURL/setID-cardID_parallel.png",
+        "url": "noCardURL",
+        "cards": {
+            "ST1-01": "P1",
+            "ST2-01": "P1",
+            "ST3-01": "P1",
+            "ST4-01": "P1",
+            "ST5-01": "P1",
+            "ST6-01": "P2",
+            "ST7-01": "P1",
+            "ST8-01": "P1",
+            "ST9-01": "P1",
+            "ST10-01": "P1",
+        }
+    },
 
 // March, 2023
     // 2nd Anniversary Set [PB-12E] --- pb12e
@@ -3555,19 +3576,53 @@ const sets = [
 
 // March 24, 2023
     // Advanced Deck BEELZEMON [ST-14] --- st14
-    // {
-    //     "id": "ST14",
-    //     "slug": "st14",
-    //     "name": "Advanced Deck BEELZEMON [ST-14]",
-    //     "release": "March 24, 2023",
-    //     "total": 12,
-    //     "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
-    //     "add_zero": 2,
-    //     "info_url": "https://world.digimoncard.com/products/deck/st-14.php",
-    //     "color": {
-    //         "purple": ["1-12"]
-    //     }
-    // },
+    {
+        "id": "ST14",
+        "slug": "st14",
+        "name": "Advanced Deck BEELZEMON [ST-14]",
+        "release": "March 24, 2023",
+        "total": 12,
+        "url": "digimoncardURL/setID-cardID.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-14.php",
+        "color": {
+            "purple": ["1-12"]
+        }
+    },
+    // Advanced Deck BEELZEMON [ST-14] - Alternatives --- st14_alts
+    {
+        "id": null,
+        "slug": "st14_alts",
+        "name": "Advanced Deck BEELZEMON [ST-14] - Alternatives",
+        "release": "March 24, 2023",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT2-068": "P2",
+            "BT8-079": "P1",
+            "EX2-071": "P1",
+            "P-077": "P1",
+            "ST14-08": "P1",
+        }
+    },
+    // Advanced Deck BEELZEMON [ST-14] - Special Reprints --- st14_spe_rep
+    {
+        "id": null,
+        "slug": "st14_spe_rep",
+        "name": "Advanced Deck BEELZEMON [ST-14] - Special Reprints",
+        "release": "March 24, 2023",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT2-004": "P3",
+            "BT2-111": "P2",
+            "BT4-105": "P1",
+            "BT9-109": "P1",
+            "EX2-039": "P2",
+            "P-033": "P2",
+            "ST6-01": "P1",
+            "ST7-03": "P4",
+            "ST8-04": "P4",
+        }
+    },
 
 // March-April, 2023
     // Ultimate Cup 2023 --- ultimatecup_2023
@@ -3578,13 +3633,13 @@ const sets = [
         "release": "March-April, 2023",
         "url": null,
         "cards": {
-            "BT12-001": "https://static.cardmarket.com/img/eb45a4b5213b5297659b787c4b88df02/items/1611/STP/694977.jpg",
-            "BT12-007": "https://static.cardmarket.com/img/8fd3fb2f589a22cd233615ea87f1741f/items/1611/STP/694978.jpg",
-            "BT12-010": "https://static.cardmarket.com/img/551a83ab7cfdc3bb86a112f063a02a35/items/1611/STP/694979.jpg",
-            "BT12-016": "https://static.cardmarket.com/img/22b057bbb36197d8f1399b0a51e8920b/items/1611/STP/694980.jpg",
-            "BT12-018": "https://static.cardmarket.com/img/9e16be7bc54d86aa994a5e90400e06ac/items/1611/STP/694981.jpg",
-            "BT8-112": "https://world.digimoncard.com/images/event/ultimate_cup_2023mar/popup/img_07.png",
-            "EX2-073": "https://static.cardmarket.com/img/ac726aa762eec4d7eb64a9a0d4b8ea91/items/1611/STP/694982.jpg",
+            "BT12-001": "https://static.wikia.nocookie.net/digimoncardgame/images/3/3e/BT12-001_P1.png",
+            "BT12-007": "https://static.wikia.nocookie.net/digimoncardgame/images/0/0f/BT12-007_P1.png",
+            "BT12-010": "https://static.wikia.nocookie.net/digimoncardgame/images/5/5c/BT12-010_P1.png",
+            "BT12-016": "https://static.wikia.nocookie.net/digimoncardgame/images/3/34/BT12-016_P1.png",
+            "BT12-018": "https://static.wikia.nocookie.net/digimoncardgame/images/c/ca/BT12-018_P2.png",
+            "BT8-112": "https://static.wikia.nocookie.net/digimoncardgame/images/0/0f/BT8-112_P3.png",
+            "EX2-073": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c2/EX2-073_P2.png",
         },
         "info_url": "https://world.digimoncard.com/event/ultimate_cup/"
     },
