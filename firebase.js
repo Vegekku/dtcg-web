@@ -3568,8 +3568,8 @@ const sets = [
         "release": "March 17 – March 23, 2023",
         "url": null,
         "cards": {
-            "BT6-068": "https://world.digimoncard.com/images/event/pre-release_ST14/img_01.png",
-            "EX2-044": "https://world.digimoncard.com/images/event/pre-release_ST14/img_03.png",
+            "BT6-068": "https://pbs.twimg.com/media/Fq0FE-8X0AI7J7b?format=jpg&name=medium",
+            "EX2-044": "https://pbs.twimg.com/media/Fq0FE_OXoAAOtq0?format=jpg&name=medium",
         },
         "info_url": "https://world.digimoncard.com/event/pre-release_ST14/"
     },
@@ -3643,6 +3643,89 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/ultimate_cup/"
     },
+    // Event Pack 4 --- eventpack4
+    {
+        "id": null,
+        "slug": "eventpack4",
+        "name": "Event Pack 4",
+        "release": "March-April, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT2-070": "P2",
+            "BT2-086": "P1",
+            "BT2-088": "P1",
+            "BT3-034": "P1",
+            "BT3-034": "P1",
+            "BT3-096": "P1",
+            "BT6-056": "P2",
+            "BT7-090": "P1",
+            "BT8-092": "P1",
+            "BT9-092": "P1",
+            "BT10-046": "P1",
+            "BT10-105": "P1",
+            "BT10-109": "P1",
+            "EX1-066": "P1",
+            "EX1-068": "P1",
+            "EX1-070": "P1",
+            "EX1-072": "P1",
+            "P-042": "P1",
+            "ST12-03": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals2022_september/"
+    },
+    // Judge Pack 3 --- judgepack3
+    {
+        "id": null,
+        "slug": "judgepack3",
+        "name": "Judge Pack 3",
+        "release": "March-April, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT6-097": "P1",
+            "BT6-100": "P1",
+            "BT6-107": "P1",
+            "BT7-092": "P1",
+            "BT7-102": "P1",
+            "BT7-105": "P1",
+            "BT8-108": "P1",
+            "BT10-100": "P1",
+            "ST12-15": "P1",
+            "ST13-16": "P1",
+        }
+    },
+    // 2023 Regionals Participant Set 1 --- regional2023_1_0
+    // {
+    //     "id": null,
+    //     "slug": "regional2023_1_0",
+    //     "name": "2023 Regionals Participant Set 1",
+    //     "release": "March-April, 2023",
+    //     "url": "noCardURL",
+    //     "cards": {
+    //     },
+    //     "info_url": "https://world.digimoncard.com/event/regionals-2023/"
+    // },
+    // 2023 Regionals Finalist Set 1 --- regional2023_1_1
+    // {
+    //     "id": null,
+    //     "slug": "regional2023_1_1",
+    //     "name": "2023 Regionals Finalist Set 1",
+    //     "release": "March-April, 2023",
+    //     "url": "noCardURL",
+    //     "cards": {
+    //     },
+    //     "info_url": "https://world.digimoncard.com/event/regionals-2023/"
+    // },
+    // 2023 Regionals Champion Set 1 --- regional2023_1_2
+    // {
+    //     "id": null,
+    //     "slug": "regional2023_1_2",
+    //     "name": "2023 Regionals Champion Set 1",
+    //     "release": "March-April, 2023",
+    //     "url": "noCardURL",
+    //     "cards": {
+    //     },
+    //     "info_url": "https://world.digimoncard.com/event/regionals-2023/"
+    // },
 
 // June, 2023
     // Royal Knights Binder Set [PB13] --- pb13
