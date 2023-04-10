@@ -62,11 +62,17 @@ thead {
     position: sticky;
     top: 0;
     background-color: white;
-    /* z-index: 1; */
+    z-index: 1;
+}
+thead tr {
+    width: 100%;
 }
 tr {
     vertical-align: top;
     border: 1px solid black;
+}
+.view--grid tr {
+    display: inline-block;
 }
 td {
     padding: 0;
@@ -77,6 +83,9 @@ td {
     text-align: center;
     vertical-align: middle;
     color: white;
+}
+.view--grid .card_id {
+    display: none;
 }
 .card_id--red {
     background-color: var(--red-card);
@@ -193,6 +202,15 @@ td {
 }
 .card_id--white {
     color: black;
+}
+.view--grid .card_amount {
+    display: none;
+}
+.set--hidden {
+    display: none;
+}
+.view--all .set--hidden {
+    display: block;
 }
 .amount-card {
     background-color: var(--four-cards);

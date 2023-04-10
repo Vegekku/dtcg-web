@@ -99,12 +99,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         setButton.innerText = set.id;
         setButton.addEventListener('click', (element, event) => {
             const tableSet = document.getElementById(element.target.value);
-            document.querySelectorAll('table').forEach(table => table.style.display = 'none');
-            if (tableSet.style.display === "none") {
-                tableSet.style.display = "block";
-            } else {
-                tableSet.style.display = "none";
-            }
+            const currentSet = window.location.hash.substring(1);
+
+            document.getElementById(element.target.value).classList.replace('set--hidden','set--visible');
+            document.getElementById(currentSet).classList.replace('set--visible','set--hidden');
 
             // add set id to URL
             window.location.hash = set.id;
@@ -147,7 +145,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
             const tableSet = document.createElement('table');
             tableSet.id = setElement.id;
             if (window.location.hash !== `#${setElement.id}`) {
-                tableSet.style.display = "none";
+                // tableSet.style.display = "none";
+                tableSet.classList.add('set--hidden');
+            } else {
+                tableSet.classList.add('set--visible')
             }
 
             // 2. si no existe el set, añadirlo a la coleccion.
@@ -201,6 +202,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 }
 
                 row.cells[0].className = 'card_id';
+                row.cells[1].className = 'card_amount';
                 row.cells[2].className = 'card_list';
 
                 if ( colors !== null ) {

@@ -48,6 +48,18 @@
                 <option value="white">Blanco</option>
             </select>
         </div>
+        <div class="views">
+            <label for="list">Listar como</label>
+            <select name="list" id="list" onchange="list()">
+                <option value="table">Tabla</option>
+                <option value="grid">Grid</option>
+            </select>
+            <label for="show">Mostrar</label>
+            <select name="show" id="show" onchange="show()">
+                <option value="set">set</option>
+                <option value="all">todo</option>
+            </select>
+        </div>
     </div>
     <div id="setLists"></div>
     <a href="https://www.paypal.com/donate/?hosted_button_id=49N3JWT3ZHY98">Ayuda a Ennis!</a>
@@ -95,6 +107,7 @@
 
     <script src="modal.js"></script>
     <script src="filters.js"></script>
+    <script src="views.js"></script>
 </body>
 
 </html>
