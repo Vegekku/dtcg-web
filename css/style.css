@@ -1,277 +1,514 @@
 :root {
-    --correct-card: #57bb8a;
-    --revision-card: #ffd666;
-    --bought-card: #618cd4;
-    --proxy-card: #3b96a3;
-    --red-card: #ea4335;
-    --blue-card: #4285f4;
-    --yellow-card: #fbbc04;
-    --green-card: #34a853;
-    --black-card: #000000;
-    --purple-card: #8e7cc3;
-    --white-card: #ffffff;
-    --zero-cards: #e67c73;
-    --one-cards: #f2a96d;
-    --two-cards: #ffd666;
-    --three-cards: #abc978;
-    --four-cards: #57bb8a;
+  --correct-card: #57bb8a;
+  --revision-card: #ffd666;
+  --bought-card: #618cd4;
+  --proxy-card: #3b96a3;
+  --red-card: #ea4335;
+  --blue-card: #4285f4;
+  --yellow-card: #fbbc04;
+  --green-card: #34a853;
+  --black-card: #000000;
+  --purple-card: #8e7cc3;
+  --white-card: #ffffff;
+  --zero-cards: #e67c73;
+  --one-cards: #f2a96d;
+  --two-cards: #ffd666;
+  --three-cards: #abc978;
+  --four-cards: #57bb8a;
 }
+
 html {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 button {
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
-    padding: 5px 8px;
-    font-weight: 700;
-    border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 5px 8px;
+  font-weight: 700;
+  border-radius: 5px;
 }
+
 button + button {
-    margin-right: 5px;
+  margin-right: 5px;
 }
+
 button:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
+
 #editionButtons button {
-    width: 120px;
+  width: 120px;
 }
+
 button#editSet {
-    background-color: var(--revision-card);
+  background-color: var(--revision-card);
 }
+
 button#saveSet {
-    background-color: var(--correct-card);
-    color: white;
+  background-color: var(--correct-card);
+  color: white;
 }
+
 button#cancelEdit {
-    background-color: var(--red-card);
-    color: white;
+  background-color: var(--red-card);
+  color: white;
 }
+
 #setLists {
-    height: calc(100vh - 155px);
-    overflow: scroll;
+  height: calc(100vh - 155px);
+  overflow: scroll;
 }
+
 input:disabled + label {
-    opacity: 0.5;
+  opacity: 0.5;
 }
+
 table {
-    border-collapse: collapse;
-    border: none;
+  border-collapse: collapse;
+  border: none;
 }
+
 thead {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
 }
+
 thead tr {
-    width: 100%;
+  width: 100%;
 }
+
 tr {
-    vertical-align: top;
-    border: 1px solid black;
+  vertical-align: top;
+  border: 1px solid black;
 }
+
 .view--grid tr {
-    display: inline-block;
+  display: inline-block;
 }
+
 td {
-    padding: 0;
+  padding: 0;
 }
+
 .card_id {
-    font-size: 1.2em;
-    font-weight: 700;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
 }
+
 .view--grid .card_id {
-    display: none;
+  display: none;
 }
+
 .card_id--red {
-    background-color: var(--red-card);
+  background-color: var(--red-card);
 }
+
 .card_id--red-blue {
-    background: linear-gradient(90deg, var(--red-card) 50%, var(--blue-card) 50%);
+  background: linear-gradient(90deg, var(--red-card) 50%, var(--blue-card) 50%);
 }
+
 .card_id--red-yellow {
-    background: linear-gradient(90deg, var(--red-card) 50%, var(--yellow-card) 50%);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background: linear-gradient(90deg, var(--red-card) 50%, var(--yellow-card) 50%);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 .card_id--red-green {
-    background: linear-gradient(90deg, var(--red-card) 50%, var(--green-card) 50%);
+  background: linear-gradient(90deg, var(--red-card) 50%, var(--green-card) 50%);
 }
+
 .card_id--red-black {
-    background: linear-gradient(90deg, var(--red-card) 50%, var(--black-card) 50%);
+  background: linear-gradient(90deg, var(--red-card) 50%, var(--black-card) 50%);
 }
+
 .card_id--red-purple {
-    background: linear-gradient(90deg, var(--red-card) 50%, var(--purple-card) 50%);
+  background: linear-gradient(90deg, var(--red-card) 50%, var(--purple-card) 50%);
 }
+
 .card_id--red-white {
-    background: linear-gradient(90deg, var(--red-card) 50%, var(--white-card) 50%);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background: linear-gradient(90deg, var(--red-card) 50%, var(--white-card) 50%);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 .card_id--blue {
-    background-color: var(--blue-card);
+  background-color: var(--blue-card);
 }
+
 .card_id--blue-red {
-    background: linear-gradient(90deg, var(--blue-card) 50%, var(--red-card) 50%);
+  background: linear-gradient(90deg, var(--blue-card) 50%, var(--red-card) 50%);
 }
+
 .card_id--blue-yellow {
-    background: linear-gradient(90deg, var(--blue-card) 50%, var(--yellow-card) 50%);
+  background: linear-gradient(90deg, var(--blue-card) 50%, var(--yellow-card) 50%);
 }
+
 .card_id--blue-green {
-    background: linear-gradient(90deg, var(--blue-card) 50%, var(--green-card) 50%);
+  background: linear-gradient(90deg, var(--blue-card) 50%, var(--green-card) 50%);
 }
+
 .card_id--blue-black {
-    background: linear-gradient(90deg, var(--blue-card) 50%, var(--black-card) 50%);
+  background: linear-gradient(90deg, var(--blue-card) 50%, var(--black-card) 50%);
 }
+
 .card_id--yellow {
-    background-color: var(--yellow-card);
-    color: black;
+  background-color: var(--yellow-card);
+  color: black;
 }
+
 .card_id--yellow-red {
-    background: linear-gradient(90deg, var(--yellow-card) 50%, var(--red-card) 50%);
-    color: black;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  background: linear-gradient(90deg, var(--yellow-card) 50%, var(--red-card) 50%);
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+
 .card_id--yellow-blue {
-    background: linear-gradient(90deg, var(--yellow-card) 50%, var(--blue-card) 50%);
-    color: black;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  background: linear-gradient(90deg, var(--yellow-card) 50%, var(--blue-card) 50%);
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+
 .card_id--yellow-green {
-    background: linear-gradient(90deg, var(--yellow-card) 50%, var(--green-card) 50%);
-    color: black;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  background: linear-gradient(90deg, var(--yellow-card) 50%, var(--green-card) 50%);
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+
 .card_id--yellow-black {
-    background: linear-gradient(90deg, var(--yellow-card) 50%, var(--black-card) 50%);
-    color: black;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  background: linear-gradient(90deg, var(--yellow-card) 50%, var(--black-card) 50%);
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+
 .card_id--yellow-purple {
-    background: linear-gradient(90deg, var(--yellow-card) 50%, var(--purple-card) 50%);
-    color: black;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  background: linear-gradient(90deg, var(--yellow-card) 50%, var(--purple-card) 50%);
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+
 .card_id--green {
-    background-color: var(--green-card);
+  background-color: var(--green-card);
 }
+
 .card_id--green-red {
-    background: linear-gradient(90deg, var(--green-card) 50%, var(--red-card) 50%);
+  background: linear-gradient(90deg, var(--green-card) 50%, var(--red-card) 50%);
 }
+
 .card_id--green-blue {
-    background: linear-gradient(90deg, var(--green-card) 50%, var(--blue-card) 50%);
+  background: linear-gradient(90deg, var(--green-card) 50%, var(--blue-card) 50%);
 }
+
 .card_id--green-yellow {
-    background: linear-gradient(90deg, var(--green-card) 50%, var(--yellow-card) 50%);
+  background: linear-gradient(90deg, var(--green-card) 50%, var(--yellow-card) 50%);
 }
+
 .card_id--green-black {
-    background: linear-gradient(90deg, var(--green-card) 50%, var(--black-card) 50%);
+  background: linear-gradient(90deg, var(--green-card) 50%, var(--black-card) 50%);
 }
+
 .card_id--green-purple {
-    background: linear-gradient(90deg, var(--green-card) 50%, var(--purple-card) 50%);
+  background: linear-gradient(90deg, var(--green-card) 50%, var(--purple-card) 50%);
 }
+
 .card_id--black {
-    background-color: var(--black-card);
+  background-color: var(--black-card);
 }
+
 .card_id--black-red {
-    background: linear-gradient(90deg, var(--black-card) 50%, var(--red-card) 50%);
+  background: linear-gradient(90deg, var(--black-card) 50%, var(--red-card) 50%);
 }
+
 .card_id--black-purple {
-    background: linear-gradient(90deg, var(--black-card) 50%, var(--purple-card) 50%);
+  background: linear-gradient(90deg, var(--black-card) 50%, var(--purple-card) 50%);
 }
+
 .card_id--purple {
-    background-color: var(--purple-card);
+  background-color: var(--purple-card);
 }
+
 .card_id--purple-red {
-    background: linear-gradient(90deg, var(--purple-card) 50%, var(--red-card) 50%);
+  background: linear-gradient(90deg, var(--purple-card) 50%, var(--red-card) 50%);
 }
+
 .card_id--purple-blue {
-    background: linear-gradient(90deg, var(--purple-card) 50%, var(--blue-card) 50%);
+  background: linear-gradient(90deg, var(--purple-card) 50%, var(--blue-card) 50%);
 }
+
 .card_id--purple-yellow {
-    background: linear-gradient(90deg, var(--purple-card) 50%, var(--yellow-card) 50%);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background: linear-gradient(90deg, var(--purple-card) 50%, var(--yellow-card) 50%);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 .card_id--purple-green {
-    background: linear-gradient(90deg, var(--purple-card) 50%, var(--green-card) 50%);
+  background: linear-gradient(90deg, var(--purple-card) 50%, var(--green-card) 50%);
 }
+
 .card_id--purple-black {
-    background: linear-gradient(90deg, var(--purple-card) 50%, var(--black-card) 50%);
+  background: linear-gradient(90deg, var(--purple-card) 50%, var(--black-card) 50%);
 }
+
 .card_id--white {
-    color: black;
+  color: black;
 }
+
 .view--grid .card_amount {
-    display: none;
+  display: none;
 }
+
 .set--hidden {
-    display: none;
+  display: none;
 }
+
 .view--all .set--hidden {
-    display: block;
+  display: block;
 }
+
 .amount-card {
-    background-color: var(--four-cards);
-    border: none;
-    height: 111px;
-    font-size: 4em;
-    width: 100%;
-    max-width: 70px;
-    min-width: 40px;
-    text-align: center;
-    padding: 0;
+  background-color: var(--four-cards);
+  border: none;
+  height: 111px;
+  font-size: 4em;
+  width: 100%;
+  max-width: 70px;
+  min-width: 40px;
+  text-align: center;
+  padding: 0;
 }
+
 .amount-card[value=""] {
-    background-color: transparent;
+  background-color: transparent;
 }
+
 .amount-card[value="0"] {
-    background-color: var(--zero-cards);
+  background-color: var(--zero-cards);
 }
+
 .amount-card[value="1"] {
-    background-color: var(--one-cards);
+  background-color: var(--one-cards);
 }
+
 .amount-card[value="2"] {
-    background-color: var(--two-cards);
+  background-color: var(--two-cards);
 }
+
 .amount-card[value="3"] {
-    background-color: var(--three-cards);
+  background-color: var(--three-cards);
 }
+
 .card_list {
-    display: flex;
+  display: flex;
 }
+
 .card {
-    max-height: 111px;
-    cursor: pointer;
-    /* display: block; */
-    max-width: 79px;
-    object-fit: cover;
+  max-height: 111px;
+  cursor: pointer;
+  /* display: block; */
+  max-width: 79px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .card--gotit {
-    opacity: 0.5;
+  opacity: 0.5;
 }
-.card.card--no-release {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+
+.card.card--no-release { /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
+
 .card[data-status="-1"] {
-    filter: blur(1px);
+  filter: blur(1px);
 }
+
 .card[data-status="1"] {
-    padding-right: 7px;
-    background-color: var(--correct-card);
+  padding-right: 7px;
+  background-color: var(--correct-card);
 }
+
 .card[data-status="2"] {
-    padding-right: 7px;
-    background-color: var(--bought-card);
+  padding-right: 7px;
+  background-color: var(--bought-card);
 }
+
 .card[data-status="3"] {
-    padding-right: 7px;
-    background-color: var(--proxy-card);
+  padding-right: 7px;
+  background-color: var(--proxy-card);
 }
+
 .card[data-status="2"][data-bought="0"],
 .card[data-status="3"][data-bought="0"] {
-    padding-right: 7px;
-    background-color: var(--revision-card);
+  padding-right: 7px;
+  background-color: var(--revision-card);
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+  z-index: 2;
+}
+
+.modal-bg {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.modal-container {
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+  padding: 30px;
+  max-width: 450px;
+}
+
+.modal-title {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.modal-ok {
+  width: 100%;
+  font-size: 2em;
+  margin-top: 10px;
+  background-color: var(--blue-card);
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: white;
+  background: none;
+  border: 0px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.5em;
+  background-color: red;
+  border-radius: 50%;
+  padding: 1px 6px;
+}
+
+.modal input[type=radio], .modal input[type=radio] + label {
+  cursor: pointer;
+}
+
+#card-zoom {
+  width: 95%;
+  max-width: 480px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 21px;
+  box-shadow: 5px 5px 8px 1px rgba(0, 0, 0, 0.33);
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#card-status, #card-price {
+  font-weight: 700;
+}
+
+#cardmarket img {
+  width: 25px;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 450px) {
+  .radio-buttons {
+    /* width: 450px; */
+    flex-direction: row;
+    justify-content: center;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+}
+.radio-buttons input[type=radio] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-buttons label {
+  display: inline-block;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border: 2px solid #afafaf;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.radio-buttons input[type=radio][id=no_have]:checked + label {
+  background-color: #ef9b9b;
+  border-color: #c63232;
+  color: #fff;
+}
+
+.radio-buttons input[type=radio][id=got_it]:checked + label {
+  background-color: #9fda86;
+  border-color: #2fa82b;
+  color: #fff;
+}
+
+.radio-buttons input[type=radio][id=reservation]:checked + label {
+  background-color: #efde9b;
+  border-color: #c6a432;
+  color: #fff;
+}
+
+.radio-buttons input[type=radio][id=bought_it]:checked + label {
+  background-color: #77b4ff;
+  border-color: #3676d6;
+  color: #fff;
+}
+
+.radio-buttons input[type=radio][id=proxy]:checked + label {
+  background-color: #a3a3a3;
+  border-color: #585858;
+}
+
+.price-confirm {
+  text-align: center;
+}
+
+.price-confirm label,
+.price-confirm input {
+  font-size: 20px;
 }
