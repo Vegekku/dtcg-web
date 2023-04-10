@@ -1,0 +1,24 @@
+:root {
+    --correct-card: #57bb8a;
+    --revision-card: #ffd666;
+    --bought-card: #618cd4;
+    --proxy-card: #3b96a3;
+    --red-card: #ea4335;
+    --blue-card: #4285f4;
+    --yellow-card: #fbbc04;
+    --green-card: #34a853;
+    --black-card: #000000;
+    --purple-card: #8e7cc3;
+    --white-card: #ffffff;
+    --zero-cards: #e67c73;
+    --one-cards: #f2a96d;
+    --two-cards: #ffd666;
+    --three-cards: #abc978;
+    --four-cards: #57bb8a;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+input:disabled + label {
+    opacity: 0.5;
+}

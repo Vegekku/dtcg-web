@@ -1,82 +1,3 @@
-:root {
-    --correct-card: #57bb8a;
-    --revision-card: #ffd666;
-    --bought-card: #618cd4;
-    --proxy-card: #3b96a3;
-    --red-card: #ea4335;
-    --blue-card: #4285f4;
-    --yellow-card: #fbbc04;
-    --green-card: #34a853;
-    --black-card: #000000;
-    --purple-card: #8e7cc3;
-    --white-card: #ffffff;
-    --zero-cards: #e67c73;
-    --one-cards: #f2a96d;
-    --two-cards: #ffd666;
-    --three-cards: #abc978;
-    --four-cards: #57bb8a;
-}
-html {
-    font-family: Arial, Helvetica, sans-serif;
-}
-button {
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
-    padding: 5px 8px;
-    font-weight: 700;
-    border-radius: 5px;
-}
-button + button {
-    margin-right: 5px;
-}
-button:hover {
-    opacity: 0.9;
-}
-#editionButtons button {
-    width: 120px;
-}
-button#editSet {
-    background-color: var(--revision-card);
-}
-button#saveSet {
-    background-color: var(--correct-card);
-    color: white;
-}
-button#cancelEdit {
-    background-color: var(--red-card);
-    color: white;
-}
-#setLists {
-    height: calc(100vh - 155px);
-    overflow: scroll;
-}
-input:disabled + label {
-    opacity: 0.5;
-}
-table {
-    border-collapse: collapse;
-    border: none;
-}
-thead {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1;
-}
-thead tr {
-    width: 100%;
-}
-tr {
-    vertical-align: top;
-    border: 1px solid black;
-}
-.view--grid tr {
-    display: inline-block;
-}
-td {
-    padding: 0;
-}
 .card_id {
     font-size: 1.2em;
     font-weight: 700;
@@ -84,9 +5,7 @@ td {
     vertical-align: middle;
     color: white;
 }
-.view--grid .card_id {
-    display: none;
-}
+
 .card_id--red {
     background-color: var(--red-card);
 }
@@ -203,41 +122,10 @@ td {
 .card_id--white {
     color: black;
 }
-.view--grid .card_amount {
-    display: none;
-}
-.set--hidden {
-    display: none;
-}
-.view--all .set--hidden {
-    display: block;
-}
-.amount-card {
-    background-color: var(--four-cards);
-    border: none;
-    height: 111px;
-    font-size: 4em;
-    width: 100%;
-    max-width: 70px;
-    min-width: 40px;
-    text-align: center;
-    padding: 0;
-}
-.amount-card[value=""] {
-    background-color: transparent;
-}
-.amount-card[value="0"] {
-    background-color: var(--zero-cards);
-}
-.amount-card[value="1"] {
-    background-color: var(--one-cards);
-}
-.amount-card[value="2"] {
-    background-color: var(--two-cards);
-}
-.amount-card[value="3"] {
-    background-color: var(--three-cards);
-}
+
+
+
+
 .card_list {
     display: flex;
 }
