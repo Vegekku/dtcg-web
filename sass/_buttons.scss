@@ -1,0 +1,34 @@
+button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 5px 8px;
+    font-weight: 700;
+    border-radius: 5px;
+
+    & + button {
+        margin-right: 5px;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    #editionButtons & {
+        width: 120px;
+    }
+
+    &#editSet {
+        background-color: var(--revision-card);
+    }
+
+    &#saveSet {
+        background-color: var(--correct-card);
+        color: white;
+    }
+
+    &#cancelEdit {
+        background-color: var(--red-card);
+        color: white;
+    }
+}
