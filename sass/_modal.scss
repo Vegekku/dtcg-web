@@ -1,40 +1,44 @@
 .modal {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .modal.open {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.open {
     visibility: visible;
     opacity: 1;
     transition-delay: 0s;
     z-index: 2;
   }
-  .modal-bg {
+
+  &-bg {
     position: absolute;
-    background: rgba(0,0,0,0.7);;
+    background: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
   }
-  .modal-container {
+
+  &-container {
     border-radius: 10px;
     background: #fff;
     position: relative;
     padding: 30px;
     max-width: 450px;
   }
-  .modal-title {
+
+  &-title {
     margin-top: 0;
     font-size: 1.2em;
   }
-  .modal-ok {
+
+  &-ok {
     width: 100%;
     font-size: 2em;
     margin-top: 10px;
@@ -43,7 +47,8 @@
     border: none;
     border-radius: 10px;
   }
-  .modal-close {
+
+  &-close {
     position: absolute;
     right: 8px;
     top: 8px;
@@ -59,49 +64,33 @@
     border-radius: 50%;
     padding: 1px 6px;
   }
-  .modal input[type="radio"], .modal input[type="radio"] + label {
+
+  input[type="radio"],
+  input[type="radio"] + label {
     cursor: pointer;
   }
-  #card-zoom {
-    width: 95%;
-    max-width: 480px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    border-radius: 21px;
-    box-shadow: 5px 5px 8px 1px rgb(0 0 0 / 33%);
-  }
-  .card-info {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  #card-status, #card-price {
-    font-weight: 700;
-  }
-  #cardmarket img {
-    width: 25px;
-  }
-  .radio-buttons {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+
   @media (min-width: 450px) {
-    .radio-buttons {
-      /* width: 450px; */
-      flex-direction: row;
-      justify-content: center;
-      column-gap: 25px;
-    }
+    /* width: 450px; */
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 25px;
   }
-  .radio-buttons input[type="radio"] {
+
+  input[type="radio"] {
     opacity: 0;
     position: fixed;
     width: 0;
   }
-  .radio-buttons label {
+
+  label {
     display: inline-block;
     background-color: #f2f2f2;
     padding: 10px 20px;
@@ -109,34 +98,63 @@
     border-radius: 4px;
     margin-bottom: 5px;
   }
-  .radio-buttons input[type="radio"][id="no_have"]:checked + label {
-    background-color:#ef9b9b;
+
+  input[type="radio"][id="no_have"]:checked + label {
+    background-color: #ef9b9b;
     border-color: #c63232;
     color: #fff;
   }
-  .radio-buttons input[type="radio"][id="got_it"]:checked + label {
-    background-color:#9fda86;
+
+  input[type="radio"][id="got_it"]:checked + label {
+    background-color: #9fda86;
     border-color: #2fa82b;
     color: #fff;
   }
-  .radio-buttons input[type="radio"][id="reservation"]:checked + label {
-    background-color:#efde9b;
+
+  input[type="radio"][id="reservation"]:checked + label {
+    background-color: #efde9b;
     border-color: #c6a432;
     color: #fff;
   }
-  .radio-buttons input[type="radio"][id="bought_it"]:checked + label {
-    background-color:#77b4ff;
+
+  input[type="radio"][id="bought_it"]:checked + label {
+    background-color: #77b4ff;
     border-color: #3676d6;
     color: #fff;
   }
-  .radio-buttons input[type="radio"][id="proxy"]:checked + label {
-    background-color:#a3a3a3;
+
+  input[type="radio"][id="proxy"]:checked + label {
+    background-color: #a3a3a3;
     border-color: #585858;
   }
-  .price-confirm {
-    text-align: center;
-  }
-  .price-confirm label,
-  .price-confirm input {
+}
+
+#card-zoom {
+  width: 95%;
+  max-width: 480px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 21px;
+  box-shadow: 5px 5px 8px 1px rgb(0 0 0 / 33%);
+}
+.card-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#card-status,
+#card-price {
+  font-weight: 700;
+}
+#cardmarket img {
+  width: 25px;
+}
+
+.price-confirm {
+  text-align: center;
+
+  label, input {
     font-size: 20px;
   }
+}
