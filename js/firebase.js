@@ -3205,10 +3205,10 @@ const sets = [
         "release": "February 10 - February 16, 2023",
         "url": null,
         "cards": {
-            "BT8-021": "https://static.cardmarket.com/img/2d504e78221c16c69590942b5ab16023/items/1611/BT-11P/694955.jpg",
-            "ST1-07": "https://static.cardmarket.com/img/21dd4bb4df43ba15a1cd90bf2ec0369e/items/1611/BT-11P/694960.jpg",
+            "BT8-021": "https://static.wikia.nocookie.net/digimoncardgame/images/5/5c/BT8-021_P1.png",
+            "ST1-07": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d0/ST1-07_P5.png",
         },
-        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2a/Xros_Encounter_Pre-Release_Promotion_Pack.png/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2a/Xros_Encounter_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-11/"
     },
 
@@ -3568,10 +3568,11 @@ const sets = [
         "release": "March 17 – March 23, 2023",
         "url": null,
         "cards": {
-            "BT6-068": "https://pbs.twimg.com/media/Fq0FE-8X0AI7J7b?format=jpg&name=medium",
-            "EX2-044": "https://pbs.twimg.com/media/Fq0FE_OXoAAOtq0?format=jpg&name=medium",
+            "BT6-068": "https://static.wikia.nocookie.net/digimoncardgame/images/f/f3/BT6-068_P2.png",
+            "EX2-044": "https://static.wikia.nocookie.net/digimoncardgame/images/1/10/EX2-044_P2.png",
         },
-        "info_url": "https://world.digimoncard.com/event/pre-release_ST14/"
+        "info_url": "https://world.digimoncard.com/event/pre-release_ST14/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/Beelzemon_Cup_Participation_Pack.png"
     },
 
 // March 24, 2023
@@ -3638,8 +3639,8 @@ const sets = [
             "BT12-010": "https://static.wikia.nocookie.net/digimoncardgame/images/5/5c/BT12-010_P1.png",
             "BT12-016": "https://static.wikia.nocookie.net/digimoncardgame/images/3/34/BT12-016_P1.png",
             "BT12-018": "https://static.wikia.nocookie.net/digimoncardgame/images/c/ca/BT12-018_P2.png",
-            "BT8-112": "https://static.wikia.nocookie.net/digimoncardgame/images/0/0f/BT8-112_P3.png",
-            "EX2-073": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c2/EX2-073_P2.png",
+            "BT8-112": "https://world.digimoncard.com/images/cardlist/card/BT8-112_P4.png",
+            "EX2-073": "https://world.digimoncard.com/images/cardlist/card/EX2-073_P2.png",
         },
         "info_url": "https://world.digimoncard.com/event/ultimate_cup/"
     },
@@ -3649,27 +3650,26 @@ const sets = [
         "slug": "eventpack4",
         "name": "Event Pack 4",
         "release": "March-April, 2023",
-        "url": "noCardURL",
+        "url": null,
         "cards": {
-            "BT2-070": "P2",
-            "BT2-086": "P1",
-            "BT2-088": "P1",
-            "BT3-034": "P1",
-            "BT3-034": "P1",
-            "BT3-096": "P1",
-            "BT6-056": "P2",
-            "BT7-090": "P1",
-            "BT8-092": "P1",
-            "BT9-092": "P1",
-            "BT10-046": "P1",
-            "BT10-105": "P1",
-            "BT10-109": "P1",
-            "EX1-066": "P1",
-            "EX1-068": "P1",
-            "EX1-070": "P1",
-            "EX1-072": "P1",
-            "P-042": "P1",
-            "ST12-03": "P1",
+            "BT2-070": "https://static.wikia.nocookie.net/digimoncardgame/images/f/ff/BT2-070_P2.png",
+            "BT2-086": "https://static.wikia.nocookie.net/digimoncardgame/images/7/73/BT2-086_P1.png",
+            "BT2-088": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fb/BT2-088_P1.png",
+            "BT3-034": "https://static.wikia.nocookie.net/digimoncardgame/images/0/0c/BT3-034_P1.png",
+            "BT3-096": "https://static.wikia.nocookie.net/digimoncardgame/images/6/65/BT3-096_P1.png",
+            "BT6-056": "https://static.wikia.nocookie.net/digimoncardgame/images/a/ad/BT6-056_P2.png",
+            "BT7-090": "https://static.wikia.nocookie.net/digimoncardgame/images/5/50/BT7-090_P1.png",
+            "BT8-092": "https://static.wikia.nocookie.net/digimoncardgame/images/7/73/BT8-092_P1.png",
+            "BT9-092": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c0/BT9-092_P1.png",
+            "BT10-046": "https://static.wikia.nocookie.net/digimoncardgame/images/f/f1/BT10-046_P1.png",
+            "BT10-105": "https://static.wikia.nocookie.net/digimoncardgame/images/1/19/BT10-105_P1.png",
+            "BT10-109": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e8/BT10-109_P1.png",
+            "EX2-066": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a5/EX2-066_P1.png",
+            "EX2-068": "https://static.wikia.nocookie.net/digimoncardgame/images/1/14/EX2-068_P1.png",
+            "EX2-070": "https://static.wikia.nocookie.net/digimoncardgame/images/8/8e/EX2-070_P1.png",
+            "EX2-072": "https://static.wikia.nocookie.net/digimoncardgame/images/6/69/EX2-072_P1.png",
+            "P-042": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a0/P-042_P1.png",
+            "ST12-03": "https://static.wikia.nocookie.net/digimoncardgame/images/4/41/ST12-03_P1.png",
         },
         "info_url": "https://world.digimoncard.com/event/regionals2022_september/"
     },
@@ -3679,53 +3679,88 @@ const sets = [
         "slug": "judgepack3",
         "name": "Judge Pack 3",
         "release": "March-April, 2023",
-        "url": "noCardURL",
+        "url": null,
         "cards": {
-            "BT6-097": "P1",
-            "BT6-100": "P1",
-            "BT6-107": "P1",
-            "BT7-092": "P1",
-            "BT7-102": "P1",
-            "BT7-105": "P1",
-            "BT8-108": "P1",
-            "BT10-100": "P1",
-            "ST12-15": "P1",
-            "ST13-16": "P1",
-        }
+            "BT6-097": "https://static.wikia.nocookie.net/digimoncardgame/images/4/4c/BT6-097_P1.png",
+            "BT6-100": "https://static.wikia.nocookie.net/digimoncardgame/images/1/11/BT6-100_P1.png",
+            "BT6-107": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a8/BT6-107_P1.png",
+            "BT7-092": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1c/BT7-092_P1.png",
+            "BT7-102": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/BT7-102_P1.png",
+            "BT7-105": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a9/BT7-105_P1.png",
+            "BT8-108": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b1/BT8-108_P1.png",
+            "BT10-100": "https://static.wikia.nocookie.net/digimoncardgame/images/4/43/BT10-100_P1.png",
+            "ST12-15": "https://static.wikia.nocookie.net/digimoncardgame/images/0/0b/ST12-15_P1.png",
+            "ST13-16": "https://static.wikia.nocookie.net/digimoncardgame/images/7/75/ST13-16_P1.png",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/89/Judge_Pack_3.png"
     },
     // 2023 Regionals Participant Set 1 --- regional2023_1_0
-    // {
-    //     "id": null,
-    //     "slug": "regional2023_1_0",
-    //     "name": "2023 Regionals Participant Set 1",
-    //     "release": "March-April, 2023",
-    //     "url": "noCardURL",
-    //     "cards": {
-    //     },
-    //     "info_url": "https://world.digimoncard.com/event/regionals-2023/"
-    // },
+    {
+        "id": null,
+        "slug": "regional2023_1_0",
+        "name": "2023 Regionals Participant Set 1",
+        "release": "March-April, 2023",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT2-035": "P1",
+            "BT4-011": "P3",
+            "BT8-013": "P1",
+            "EX2-009": "P1",
+            "P-010": "P1",
+            "ST9-04": "P1"
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals-2023/"
+    },
     // 2023 Regionals Finalist Set 1 --- regional2023_1_1
-    // {
-    //     "id": null,
-    //     "slug": "regional2023_1_1",
-    //     "name": "2023 Regionals Finalist Set 1",
-    //     "release": "March-April, 2023",
-    //     "url": "noCardURL",
-    //     "cards": {
-    //     },
-    //     "info_url": "https://world.digimoncard.com/event/regionals-2023/"
-    // },
+    {
+        "id": null,
+        "slug": "regional2023_1_1",
+        "name": "2023 Regionals Finalist Set 1",
+        "release": "March-April, 2023",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT2-035": "P2",
+            "BT4-011": "P4",
+            "BT8-013": "P2",
+            "EX2-009": "P2",
+            "P-010": "P2",
+            "ST9-04": "P2"
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals-2023/"
+    },
     // 2023 Regionals Champion Set 1 --- regional2023_1_2
-    // {
-    //     "id": null,
-    //     "slug": "regional2023_1_2",
-    //     "name": "2023 Regionals Champion Set 1",
-    //     "release": "March-April, 2023",
-    //     "url": "noCardURL",
-    //     "cards": {
-    //     },
-    //     "info_url": "https://world.digimoncard.com/event/regionals-2023/"
-    // },
+    {
+        "id": null,
+        "slug": "regional2023_1_2",
+        "name": "2023 Regionals Champion Set 1",
+        "release": "March-April, 2023",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT2-035": "P3",
+            "BT4-011": "P5",
+            "BT8-013": "P3",
+            "EX2-009": "P3",
+            "P-010": "P3",
+            "ST9-04": "P3"
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals-2023/"
+    },
+
+// April 21 - April 28, 2023
+    // Across Time (BT12) Pre-Release Tournaments --- bt12_prerelease
+    {
+        "id": null,
+        "slug": "bt12_prerelease",
+        "name": "Across Time (BT12) Pre-Release Tournaments",
+        "release": "April 21 - April 28, 2023",
+        "url": null,
+        "cards": {
+            "BT3-058": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT3-058_P1.png",
+            "BT2-039": "https://static.wikia.nocookie.net/digimoncardgame/images/9/99/BT2-039_P1.png",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/99/Across_Time_Pre-Release_Pack.png",
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-12/"
+    },
 
 // June, 2023
     // Royal Knights Binder Set [PB13] --- pb13
