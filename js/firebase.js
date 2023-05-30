@@ -3625,25 +3625,23 @@ const sets = [
         }
     },
 
-// March-April, 2023
-    // Ultimate Cup 2023 --- ultimatecup_2023
+// April, 2023
+    // Official Tournament April 2023 Beelzemon Special --- ot_beelzemon
     {
         "id": null,
-        "slug": "ultimatecup_2023",
-        "name": "Ultimate Cup 2023",
-        "release": "March-April, 2023",
+        "slug": "ot_beelzemon",
+        "name": "Official Tournament April 2023 Beelzemon Special",
+        "release": "April, 2023",
         "url": null,
         "cards": {
-            "BT12-001": "https://static.wikia.nocookie.net/digimoncardgame/images/3/3e/BT12-001_P1.png",
-            "BT12-007": "https://static.wikia.nocookie.net/digimoncardgame/images/0/0f/BT12-007_P1.png",
-            "BT12-010": "https://static.wikia.nocookie.net/digimoncardgame/images/5/5c/BT12-010_P1.png",
-            "BT12-016": "https://static.wikia.nocookie.net/digimoncardgame/images/3/34/BT12-016_P1.png",
-            "BT12-018": "https://static.wikia.nocookie.net/digimoncardgame/images/c/ca/BT12-018_P2.png",
-            "BT8-112": "https://world.digimoncard.com/images/cardlist/card/BT8-112_P4.png",
-            "EX2-073": "https://world.digimoncard.com/images/cardlist/card/EX2-073_P2.png",
-        },
-        "info_url": "https://world.digimoncard.com/event/ultimate_cup/"
+            "BT6-068": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fe/BT6-068_P3.png",
+            "EX2-044": "https://static.wikia.nocookie.net/digimoncardgame/images/0/06/EX2-044_P3.png",
+        }
+        // "info_url": "https://world.digimoncard.com/event/pre-release_ST14/",
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/Beelzemon_Cup_Participation_Pack.png"
     },
+
+// March-April, 2023
     // Event Pack 4 --- eventpack4
     {
         "id": null,
@@ -3694,6 +3692,131 @@ const sets = [
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/89/Judge_Pack_3.png"
     },
+
+// April 21 - April 28, 2023
+    // Across Time (BT12) Pre-Release Tournaments --- bt12_prerelease
+    {
+        "id": null,
+        "slug": "bt12_prerelease",
+        "name": "Across Time (BT12) Pre-Release Tournaments",
+        "release": "April 21 - April 28, 2023",
+        "url": null,
+        "cards": {
+            "BT3-058": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT3-058_P1.png",
+            "BT2-039": "https://static.wikia.nocookie.net/digimoncardgame/images/9/99/BT2-039_P1.png",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/99/Across_Time_Pre-Release_Pack.png",
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-12/"
+    },
+
+// April 28, 2023
+    // Booster Across Time [BT12] --- bt12
+    {
+        "id": "BT12",
+        "slug": "bt12",
+        "name": "Booster Across Time [BT12]",
+        "release": "April 28, 2023",
+        "total": 112,
+        "url": "digimoncardURL/setID-cardID.png",
+        "add_zero": 3,
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/24/BT-10-EN.png/",
+        "playmat": "",
+        "color": {
+            "red": [1,"7-18","87-89","99-100"],
+            "blue": [2,"19-27",29,32,90,101,102],
+            "blue-green": [28,30,31],
+            "yellow": [3,33,35,37,"39-41",44,91,103],
+            "yellow-red": [34,38,42,43,92,104],
+            "yellow-green": [36],
+            "green": [4,"45-54",56,57,93,105,106],
+            "green-blue": [55],
+            "black": [5,58,60,61,"63-67",69,71,94,95,107],
+            "black-red": [59,62,68,70,72,108],
+            "purple": [6,"73-79","81-83",85,96,97,109,110],
+            "purple-black": [80,84,111],
+            "white": [86,98],
+            "white-red": [112]
+        }
+    },
+    // Booster Across Time [BT12] - Alternatives --- bt12_alts
+    {
+        "id": null,
+        "slug": "bt12_alts",
+        "name": "Booster Across Time [BT12] - Alternatives",
+        "release": "April 28, 2023",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT12-017": "P1",
+            "BT12-018": "P1",
+            "BT12-029": "P1",
+            "BT12-031": "P1",
+            "BT12-043": "P1",
+            "BT12-057": "P1",
+            "BT12-070": "P1",
+            "BT12-083": "P1",
+            "BT12-085": "P1",
+            "BT12-087": "P1",
+            "BT12-088": "P1",
+            "BT12-089": "P1",
+            "BT12-090": "P1",
+            "BT12-092": "P1",
+            "BT12-095": "P1",
+            "BT12-096": "P1",
+            "BT12-111": ["P1", "P2"],
+            "BT12-112": ["P1", "P2"]
+        },
+    },
+    // Booster Across Time [BT12] - Box Promotion Pack --- bt12_boxpromopack
+    {
+        "id": null,
+        "slug": "bt12_boxpromopack",
+        "name": "Booster Across Time [BT12] - Box Promotion Pack",
+        "release": "April 28, 2023",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT5-086": "P5",
+            "BT12-014": "P1",
+            "BT12-041": "P1",
+            "BT12-051": "P1",
+            "BT12-064": "P1",
+            "BT12-077": "P1",
+            "BT12-081": "P1",
+        },
+    },
+    // Booster Across Time [BT12] - Limited Card Pack --- bt12_limitedcardpack
+    {
+        "id": null,
+        "slug": "bt12_limitedcardpack",
+        "name": "Booster Across Time [BT12] - Limited Card Pack",
+        "release": "April 28, 2023",
+        "url": "digimoncardURL/setID-cardID.png",
+        "cards": {
+            "P-066": "",
+            "P-067": "",
+            "P-068": "",
+            "P-069": "",
+            "P-070": "",
+            "P-071": ""
+        },
+    },
+    // Ultimate Cup 2023 --- ultimatecup_2023
+    {
+        "id": null,
+        "slug": "ultimatecup_2023",
+        "name": "Ultimate Cup 2023",
+        "release": "March-April, 2023",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT12-001": "P1",
+            "BT12-007": "P1",
+            "BT12-010": "P1",
+            "BT12-016": "P1",
+            "BT12-018": "P2",
+            "BT8-112": "P4",
+            "EX2-073": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/ultimate_cup/"
+    },
     // 2023 Regionals Participant Set 1 --- regional2023_1_0
     {
         "id": null,
@@ -3706,6 +3829,7 @@ const sets = [
             "BT4-011": "P3",
             "BT8-013": "P1",
             "EX2-009": "P1",
+            "BT12-011": "P1",
             "P-010": "P1",
             "ST9-04": "P1"
         },
@@ -3723,6 +3847,7 @@ const sets = [
             "BT4-011": "P4",
             "BT8-013": "P2",
             "EX2-009": "P2",
+            "BT12-011": "P2",
             "P-010": "P2",
             "ST9-04": "P2"
         },
@@ -3740,26 +3865,11 @@ const sets = [
             "BT4-011": "P5",
             "BT8-013": "P3",
             "EX2-009": "P3",
+            "BT12-011": "P3",
             "P-010": "P3",
             "ST9-04": "P3"
         },
         "info_url": "https://world.digimoncard.com/event/regionals-2023/"
-    },
-
-// April 21 - April 28, 2023
-    // Across Time (BT12) Pre-Release Tournaments --- bt12_prerelease
-    {
-        "id": null,
-        "slug": "bt12_prerelease",
-        "name": "Across Time (BT12) Pre-Release Tournaments",
-        "release": "April 21 - April 28, 2023",
-        "url": null,
-        "cards": {
-            "BT3-058": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT3-058_P1.png",
-            "BT2-039": "https://static.wikia.nocookie.net/digimoncardgame/images/9/99/BT2-039_P1.png",
-        },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/99/Across_Time_Pre-Release_Pack.png",
-        "info_url": "https://world.digimoncard.com/event/pre-release_BT-12/"
     },
 
 // June, 2023
