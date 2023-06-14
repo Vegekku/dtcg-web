@@ -3406,7 +3406,7 @@ const sets = [
     // Official Tournament Pack Vol.8 --- otp8
     {
         "id": null,
-        "slug": "ot87",
+        "slug": "ot8",
         "name": "Official Tournament Pack Vol.8",
         "release": "Mid January 2023–April 2023",
         "url": "digimoncardURL/setID-cardID_parallel.png",
@@ -3870,6 +3870,40 @@ const sets = [
             "ST9-04": "P3"
         },
         "info_url": "https://world.digimoncard.com/event/regionals-2023/"
+    },
+
+// Late April - July 2023
+    // Official Tournament Pack Vol.9 --- otp9
+    {
+        "id": null,
+        "slug": "ot9",
+        "name": "Official Tournament Pack Vol.9",
+        "release": "Late April - July 2023",
+        "url": null,
+        "cards": {
+            "BT1-029": "https://static.wikia.nocookie.net/digimoncardgame/images/0/03/BT1-029_P5.png",
+            "BT8-023": "https://static.wikia.nocookie.net/digimoncardgame/images/9/9f/BT8-023_P1.png",
+            "BT8-024": "https://static.wikia.nocookie.net/digimoncardgame/images/f/f0/BT8-024_P1.png",
+            "BT8-048": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fe/BT8-048_P1.png",
+            "ST3-04": "https://static.wikia.nocookie.net/digimoncardgame/images/9/95/ST3-04_P4.png",
+            "ST10-04": "https://static.wikia.nocookie.net/digimoncardgame/images/2/22/ST10-04_P1.png",
+
+        },
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/10/Official_Tournament_Pack_Vol.9.png"
+    },
+    // Winner Pack Across Time --- wp9
+    {
+        "id": null,
+        "slug": "wp9",
+        "name": "Winner Pack -Across Time-",
+        "release": "Late April - July 2023",
+        "url": null,
+        "cards": {
+            "BT7-017": "https://static.wikia.nocookie.net/digimoncardgame/images/8/8c/BT7-017_P1.png",
+            "P-025": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b8/P-025_P1.png",
+            "P-026": "https://static.wikia.nocookie.net/digimoncardgame/images/c/cf/P-026_P1.png",
+            "P-027": "https://static.wikia.nocookie.net/digimoncardgame/images/6/60/P-027_P1.png",
+        },
     },
 
 // June, 2023
