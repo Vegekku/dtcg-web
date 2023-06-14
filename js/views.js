@@ -10,6 +10,6 @@ const show = () => {
     const show = document.getElementById('show').value;
     const setLists = document.getElementById('setLists');
 
-    setLists.classList.remove('view--set','view--all');
+    setLists.classList.remove('view--collection','view--all');
     setLists.classList.add('view--'+show);
 }

@@ -296,6 +296,16 @@ button#cancelEdit {
   color: white;
 }
 
+.filter--set tr:not(.match_filter) {
+  display: none;
+}
+.filter--set .card.filtered--set {
+  display: block;
+}
+.filter--set .card:not(.filtered--set) {
+  display: none;
+}
+
 #setLists {
   height: calc(100vh - 155px);
   overflow: scroll;

@@ -2,7 +2,9 @@ const filterCards = () => {
     const filters = {
         "status": document.getElementById('status').value,
         "color": document.getElementById('color').value,
+        "set": document.getElementById('set').value
     }
+    const setLists = document.getElementById('setLists');
 
     const getFilterCardsByStatus = (cards, status = '0') => {
         const filterCards = [];
@@ -15,10 +17,20 @@ const filterCards = () => {
         return filterCards;
     }
 
+    const getFilterCardsBySet = (cards, set) => {
+        const filterCards = [];
+        for (let card of cards) {     
+            if ( card.id === set ){
+                filterCards.push(card.id);
+            }
+        }
+
+        return filterCards;
+    }
+
     const rows = document.querySelectorAll('tbody tr');
     for (let row of rows) {
         const cards = row.querySelectorAll('[data-status]');
-        const noCards = getFilterCardsByStatus( cards );
 
         // 1. Show/hide rows
         
@@ -103,5 +115,27 @@ const filterCards = () => {
                 }
             }
         }
+    }
+
+    // New logic
+    const cleanFilterSet = () => {
+        const filterCards = document.querySelectorAll('.filtered--set');
+        filterCards.forEach( card => {
+            card.classList.remove('filtered--set');
+            card.parentElement.parentElement.classList.remove('match_filter');
+        });
+    }
+
+    if ( filters.set !== '' ) {
+        setLists.classList.add('filter--set');
+        cleanFilterSet();
+        const filterCards = document.querySelectorAll(`[data-set="${filters.set}"]`);
+        filterCards.forEach( card => {
+            card.classList.add('filtered--set');
+            card.parentElement.parentElement.classList.add('match_filter');
+        });
+    } else {
+        setLists.classList.remove('filter--set');
+        cleanFilterSet();
     }
 }

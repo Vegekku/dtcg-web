@@ -46,6 +46,11 @@
                 <option value="purple">Morado</option>
                 <option value="white">Blanco</option>
             </select>
+
+            <label for="set">Set</label>
+            <select name="set" id="set" onchange="filterCards()">
+                <option value="">Todos</option>
+            </select>
         </div>
         <div class="views">
             <label for="list">Listar como</label>
@@ -55,8 +60,8 @@
             </select>
             <label for="show">Mostrar</label>
             <select name="show" id="show" onchange="show()">
-                <option value="set">set</option>
-                <option value="all">todo</option>
+                <option value="collection">colección individual</option>
+                <option value="all">todas las colecciones</option>
             </select>
         </div>
     </div>
