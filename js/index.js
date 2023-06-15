@@ -207,10 +207,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 row.cells[2].className = 'card_list';
 
                 if ( colors !== null ) {
+                    // TODO: Remove class card_id--<color>
                     if ( typeof colors === 'string' ) {
                         row.cells[0].className += ` card_id--${colors}`;
+                        row.dataset.color = colors;
                     } else  {
                         row.cells[0].className += ` card_id--${colors[index]}`
+                        row.dataset.color = colors[index];
                     }
                 }
             }

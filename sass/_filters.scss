@@ -1,3 +1,6 @@
+.filter--1{
+
+}
 .filter--set {
     tr:not(.match_filter) {
         display: none;
@@ -7,6 +10,12 @@
         display: block;
     }
     .card:not(.filtered--set) {
+        display: none;
+    }
+}
+
+.filter--color {
+    tr:not(.filtered--color) {
         display: none;
     }
 }
