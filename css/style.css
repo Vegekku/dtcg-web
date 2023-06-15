@@ -32,8 +32,7 @@ input:disabled + label {
   vertical-align: middle;
   color: white;
 }
-
-.card_id--red {
+[data-color=red] .card_id {
   background-color: var(--red-card);
 }
 
@@ -303,6 +302,10 @@ button#cancelEdit {
   display: block;
 }
 .filter--set .card:not(.filtered--set) {
+  display: none;
+}
+
+.filter--color tr:not(.filtered--color) {
   display: none;
 }
 

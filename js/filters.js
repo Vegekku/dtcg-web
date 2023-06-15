@@ -36,10 +36,10 @@ const filterCards = () => {
         
         let isColor = true;
         if ( filters.color !== '' ) {
-            const colorCard = row.querySelector('.card_id');
-            if ( ! colorCard.className.includes(`card_id--${filters.color}`) ){
-                isColor = false;
-            }
+            // const colorCard = row.querySelector('.card_id');
+            // if ( ! colorCard.className.includes(`card_id--${filters.color}`) ){
+            //     isColor = false;
+            // }
         }
 
         let isStatus = true;
@@ -118,6 +118,25 @@ const filterCards = () => {
     }
 
     // New logic
+    const cleanFilterColor = () => {
+        const filterRows = document.querySelectorAll('.filtered--color');
+        filterRows.forEach( row => {
+            row.classList.remove('filtered--color');
+        });
+    }
+
+    if ( filters.color !== '' ) {
+        setLists.classList.add('filter--color');
+        cleanFilterColor();
+        const filterColorRows = document.querySelectorAll(`[data-color^="${filters.color}"]`);
+        filterColorRows.forEach( row => {
+            row.classList.add('filtered--color');
+        });
+    } else {
+        setLists.classList.remove('filter--color');
+        cleanFilterColor();
+    }
+
     const cleanFilterSet = () => {
         const filterCards = document.querySelectorAll('.filtered--set');
         filterCards.forEach( card => {
@@ -129,8 +148,8 @@ const filterCards = () => {
     if ( filters.set !== '' ) {
         setLists.classList.add('filter--set');
         cleanFilterSet();
-        const filterCards = document.querySelectorAll(`[data-set="${filters.set}"]`);
-        filterCards.forEach( card => {
+        const filterSetCards = document.querySelectorAll(`[data-set="${filters.set}"]`);
+        filterSetCards.forEach( card => {
             card.classList.add('filtered--set');
             card.parentElement.parentElement.classList.add('match_filter');
         });
