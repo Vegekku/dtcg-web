@@ -73,11 +73,11 @@ const filterCards = () => {
             }
         }
 
-        row.style.display = isColor && isStatus ? '' : 'none';
+        // row.style.display = isColor && isStatus ? '' : 'none';
 
         // 2. Show/hide cards in the row
 
-        if ( isColor && isStatus ) {
+        if ( isColor && isStatus && false ) {
             for (let card of cards) {
                 card.classList.remove('card--gotit');
                 card.hidden = false;
@@ -118,6 +118,44 @@ const filterCards = () => {
     }
 
     // New logic
+    const cleanFilterStatus = (  ) => {
+        const filterCards = document.querySelectorAll('.filtered--status');
+        filterCards.forEach( card => {
+            card.classList.remove('filtered--status');
+        });
+
+        const filterRows = document.querySelectorAll('.match_filter');
+        filterRows.forEach( row => {
+            row.classList.remove('match_filter');
+        });
+
+        setLists.classList.remove('filter--status--no-pull');
+    }
+    if ( filters.status !== '' ) {
+        const status = {
+            'reservation': '-1',
+            'no_have': '0',
+            'got_it': '1',
+            'bought_it': '2',
+            'proxy': '3'
+        };
+        setLists.classList.add('filter--status');
+        cleanFilterStatus();
+        if ( 'no_pull_no_have' === filters.status ) {
+        } else if ( 'no_pull' === filters.status ) {
+            setLists.classList.add('filter--status--no-pull');
+        } else {
+            const filterStatusCards = document.querySelectorAll(`[data-status="${status[filters.status]}"]`);
+            filterStatusCards.forEach( card => {
+                card.classList.add('filtered--status');
+                card.parentElement.parentElement.classList.add('match_filter');
+            });
+        }
+    } else {
+        setLists.classList.remove('filter--status');
+        cleanFilterStatus();
+    }
+
     const cleanFilterColor = () => {
         const filterRows = document.querySelectorAll('.filtered--color');
         filterRows.forEach( row => {
