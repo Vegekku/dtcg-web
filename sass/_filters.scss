@@ -2,7 +2,7 @@
 
 }
 .filter--set {
-    tr:not(.match_filter) {
+    tbody tr:not(.match_filter) {
         display: none;
     }
 
@@ -15,7 +15,29 @@
 }
 
 .filter--color {
-    tr:not(.filtered--color) {
+    tbody tr:not(.filtered--color) {
         display: none;
     }
+}
+
+.filter--status {
+    &.filter--status--no-pull {
+        tbody tr[data-pull="true"] {
+            display: none;
+        }
+    }
+
+    &:not(.filter--status--no-pull) {
+        tbody tr:not(.match_filter) {
+            display: none;
+        }
+    
+        .card.filtered--status {
+            display: block;
+        }
+        .card:not(.filtered--status) {
+            display: none;
+        }
+    }
+
 }

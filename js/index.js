@@ -184,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 }
                 
                 row.insertCell(1).innerHTML = `<input class="amount-card" type="text" data-card-number="${cardNumber}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setElement.id][cardId].amount}">`;
+                row.dataset.pull = collection[setElement.id][cardId].amount >= 4;
 
                 if (setElement.url) {
                     var cardUrl = getImageUrl(setElement.url, setElement.id, cardId);

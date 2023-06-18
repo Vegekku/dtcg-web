@@ -127,6 +127,7 @@ const saveSet = () => {
 
 const updateValue = (element) => {
     element.setAttribute('value', element.value);
+    element.parentElement.parentElement.dataset.pull = element.value >= 4;
     const [set, id] = element.dataset.cardNumber.split('-');
     collection[set][id].amount = parseInt(element.value);
 }
