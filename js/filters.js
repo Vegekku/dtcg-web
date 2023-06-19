@@ -6,118 +6,7 @@ const filterCards = () => {
     }
     const setLists = document.getElementById('setLists');
 
-    const getFilterCardsByStatus = (cards, status = '0') => {
-        const filterCards = [];
-        for (let card of cards) {     
-            if ( card.dataset.status === status ){
-                filterCards.push(card.id);
-            }
-        }
-
-        return filterCards;
-    }
-
-    const getFilterCardsBySet = (cards, set) => {
-        const filterCards = [];
-        for (let card of cards) {     
-            if ( card.id === set ){
-                filterCards.push(card.id);
-            }
-        }
-
-        return filterCards;
-    }
-
-    const rows = document.querySelectorAll('tbody tr');
-    for (let row of rows) {
-        const cards = row.querySelectorAll('[data-status]');
-
-        // 1. Show/hide rows
-        
-        let isColor = true;
-        if ( filters.color !== '' ) {
-            // const colorCard = row.querySelector('.card_id');
-            // if ( ! colorCard.className.includes(`card_id--${filters.color}`) ){
-            //     isColor = false;
-            // }
-        }
-
-        let isStatus = true;
-        if ( isColor && filters.status !== '' ) {
-            const status = {
-                'reservation': '-1',
-                'no_have': '0',
-                'got_it': '1',
-                'bought_it': '2',
-                'proxy': '3'
-            };
-
-            if ( 'no_pull_no_have' === filters.status ) {
-                const statusCardsInRow = getFilterCardsByStatus( cards );
-                const amount = row.querySelector('.amount-card');
-
-                if (amount.value >= 4 && statusCardsInRow.length === 0 ){
-                    isStatus = false;
-                }
-            } else if ( 'no_pull' === filters.status ) {
-                const amount = row.querySelector('.amount-card');
-                if (amount.value >= 4){
-                    isStatus = false;
-                }
-            } else {
-                const statusCardsInRow = getFilterCardsByStatus( cards, status[filters.status] );
-
-                if ( statusCardsInRow.length === 0 ) {
-                    isStatus = false;
-                }
-            }
-        }
-
-        // row.style.display = isColor && isStatus ? '' : 'none';
-
-        // 2. Show/hide cards in the row
-
-        if ( isColor && isStatus && false ) {
-            for (let card of cards) {
-                card.classList.remove('card--gotit');
-                card.hidden = false;
-            }
-            row.querySelector('.amount-card').hidden = false;
-
-            if ( filters.status !== '' ) {
-                const status = {
-                    'reservation': '-1',
-                    'no_have': '0',
-                    'got_it': '1',
-                    'bought_it': '2',
-                    'proxy': '3'
-                };
-    
-                if ( 'no_pull_no_have' === filters.status ) {
-                    const statusCardsInRow = getFilterCardsByStatus( cards );
-
-                    for (let card of cards) {
-                        if ( ! statusCardsInRow.includes(card.id)){
-                            card.classList.add('card--gotit');
-                        }
-                    }
-                } else if ( 'no_pull' === filters.status ) {
-                    // Nothint for now.
-                } else {
-                    const statusCardsInRow = getFilterCardsByStatus( cards, status[filters.status] );
-
-                    for (let card of cards) {
-                        if ( ! statusCardsInRow.includes(card.id)){
-                            card.hidden = true;
-                        }
-                    }
-                    row.querySelector('.amount-card').hidden = true;
-                }
-            }
-        }
-    }
-
-    // New logic
+    // Status filter
     const cleanFilterStatus = (  ) => {
         const filterCards = document.querySelectorAll('.filtered--status');
         filterCards.forEach( card => {
@@ -129,7 +18,7 @@ const filterCards = () => {
             row.classList.remove('match_filter');
         });
 
-        setLists.classList.remove('filter--status--no-pull');
+        setLists.classList.remove('filter--status--no-pull','filter--status--no_pull_no_have');
     }
     if ( filters.status !== '' ) {
         const status = {
@@ -142,8 +31,14 @@ const filterCards = () => {
         setLists.classList.add('filter--status');
         cleanFilterStatus();
         if ( 'no_pull_no_have' === filters.status ) {
+            setLists.classList.add('filter--status--no_pull_no_have');
+            const filterStatusCards = document.querySelectorAll('[data-status="0"]');
+            filterStatusCards.forEach( card => {
+                card.classList.add('filtered--status');
+                card.parentElement.parentElement.classList.add('match_filter');
+            });
         } else if ( 'no_pull' === filters.status ) {
-            setLists.classList.add('filter--status--no-pull');
+            setLists.classList.add('filter--status--no_pull');
         } else {
             const filterStatusCards = document.querySelectorAll(`[data-status="${status[filters.status]}"]`);
             filterStatusCards.forEach( card => {
@@ -156,6 +51,7 @@ const filterCards = () => {
         cleanFilterStatus();
     }
 
+    // Color filter
     const cleanFilterColor = () => {
         const filterRows = document.querySelectorAll('.filtered--color');
         filterRows.forEach( row => {
@@ -175,6 +71,7 @@ const filterCards = () => {
         cleanFilterColor();
     }
 
+    // Set filter
     const cleanFilterSet = () => {
         const filterCards = document.querySelectorAll('.filtered--set');
         filterCards.forEach( card => {
@@ -182,7 +79,6 @@ const filterCards = () => {
             card.parentElement.parentElement.classList.remove('match_filter');
         });
     }
-
     if ( filters.set !== '' ) {
         setLists.classList.add('filter--set');
         cleanFilterSet();
