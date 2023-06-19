@@ -309,16 +309,25 @@ button#cancelEdit {
   display: none;
 }
 
-.filter--status.filter--status--no-pull tbody tr[data-pull=true] {
+.filter--status.filter--status--no_pull tbody tr[data-pull=true] {
   display: none;
 }
-.filter--status:not(.filter--status--no-pull) tbody tr:not(.match_filter) {
+.filter--status.filter--status--no_pull_no_have tbody tr[data-pull=true]:not(.match_filter) {
   display: none;
 }
-.filter--status:not(.filter--status--no-pull) .card.filtered--status {
+.filter--status.filter--status--no_pull_no_have .card.filtered--status {
   display: block;
 }
-.filter--status:not(.filter--status--no-pull) .card:not(.filtered--status) {
+.filter--status.filter--status--no_pull_no_have .card:not(.filtered--status) {
+  opacity: 0.5;
+}
+.filter--status:not(.filter--status--no_pull):not(.filter--status--no_pull_no_have) tbody tr:not(.match_filter) {
+  display: none;
+}
+.filter--status:not(.filter--status--no_pull):not(.filter--status--no_pull_no_have) .card.filtered--status {
+  display: block;
+}
+.filter--status:not(.filter--status--no_pull):not(.filter--status--no_pull_no_have) .card:not(.filtered--status) {
   display: none;
 }
 

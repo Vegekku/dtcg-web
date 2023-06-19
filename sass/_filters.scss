@@ -21,13 +21,24 @@
 }
 
 .filter--status {
-    &.filter--status--no-pull {
+    &.filter--status--no_pull {
         tbody tr[data-pull="true"] {
             display: none;
         }
     }
+    &.filter--status--no_pull_no_have {
+        tbody tr[data-pull="true"]:not(.match_filter) {
+            display: none;
+        }
+        .card.filtered--status {
+            display: block;
+        }
+        .card:not(.filtered--status) {
+            opacity: 0.5;
+        }
+    }
 
-    &:not(.filter--status--no-pull) {
+    &:not(.filter--status--no_pull):not(.filter--status--no_pull_no_have) {
         tbody tr:not(.match_filter) {
             display: none;
         }
