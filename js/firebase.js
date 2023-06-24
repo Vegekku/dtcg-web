@@ -994,10 +994,6 @@ const sets = [
             "black": [5,"59-70",90,"103-105"],
             "purple": [6,"71-83","106-108"],
             "white": ["84-87","91-93","109-112"],
-        },
-        "cardmarket": {
-            "url": "https://www.cardmarket.com/es/Digimon/Products/Singles/Battle-Of-Omni/digimonName-cardNumber-rarity",
-            "api_set": "BT-05: Booster Battle Of Omni",
         }
     },
     // Booster Battle of Omni [BT5] - Alternatives --- bt5_alts
@@ -3717,7 +3713,7 @@ const sets = [
         "name": "Booster Across Time [BT12]",
         "release": "April 28, 2023",
         "total": 112,
-        "url": "digimoncardURL/setID-cardID.png",
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
         "add_zero": 3,
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/24/BT-10-EN.png/",
         "playmat": "",
@@ -3736,7 +3732,13 @@ const sets = [
             "purple-black": [80,84,111],
             "white": [86,98],
             "white-red": [112]
-        }
+        },
+        "override": {
+            "url": "bandaitcgplusURL/setID/e_setID-cardID_D_D.png",
+            "cards": {
+                "BT12-036": ""
+            }
+        },
     },
     // Booster Across Time [BT12] - Alternatives --- bt12_alts
     {
@@ -3907,6 +3909,161 @@ const sets = [
     },
 
 // June, 2023
+    // Store Championship 2023 Participant Pack --- storechampion_2023_0
+    {
+        "id": null,
+        "slug": "storechampion_2023_0",
+        "name": "Store Championship 2023 Participant Pack",
+        "release": "June, 2023",
+        "url": null,
+        "cards": {
+            "BT6-082": "https://static.wikia.nocookie.net/digimoncardgame/images/f/f9/BT6-082_P2.png",
+            "BT6-084": "https://static.wikia.nocookie.net/digimoncardgame/images/9/95/BT6-084_P2.png",
+            "BT10-085": "https://static.wikia.nocookie.net/digimoncardgame/images/5/58/BT10-085_P2.png",
+            "BT11-107": "https://static.wikia.nocookie.net/digimoncardgame/images/3/33/BT11-107_P1.png",
+            "ST9-14": "https://static.wikia.nocookie.net/digimoncardgame/images/2/26/ST9-14_P1.png",
+            "ST10-14": "https://static.wikia.nocookie.net/digimoncardgame/images/5/56/ST10-14_P1.png",
+            "ST13-16": "https://static.wikia.nocookie.net/digimoncardgame/images/0/08/ST13-16_P2.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_championship_2023/"
+    },
+    // Store Championship 2023 Top 4 Pack --- storechampion_2023_1
+    {
+        "id": null,
+        "slug": "storechampion_2023_1",
+        "name": "Store Championship 2023 Top 4 Pack",
+        "release": "June, 2023",
+        "url": null,
+        "cards": {
+            "BT6-082": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d5/BT6-082_P3.png",
+            "BT6-084": "https://static.wikia.nocookie.net/digimoncardgame/images/0/08/BT6-084_P3.png",
+            "BT10-085": "https://static.wikia.nocookie.net/digimoncardgame/images/9/95/BT10-085_P3.png",
+            "BT11-107": "https://static.wikia.nocookie.net/digimoncardgame/images/c/ca/BT11-107_P2.png",
+            "ST9-14": "https://static.wikia.nocookie.net/digimoncardgame/images/9/95/ST9-14_P2.png",
+            "ST10-14": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c4/ST10-14_P2.png",
+            "ST13-16": "https://static.wikia.nocookie.net/digimoncardgame/images/2/22/ST13-16_P3.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_championship_2023/"
+    },
+    // Store Championship 2023 Champion Card --- storechampion_2023_2
+    {
+        "id": null,
+        "slug": "storechampion_2023_2",
+        "name": "Store Championship 2023 Champion Card",
+        "release": "June, 2023",
+        "url": null,
+        "cards": {
+            "BT6-084": "https://static.wikia.nocookie.net/digimoncardgame/images/f/f8/BT6-084_P4.png"
+        },
+        "info_url": "https://world.digimoncard.com/event/store_championship_2023/"
+    },
+    // Tamer Party -Special- --- tp_special
+    {
+        "id": null,
+        "slug": "tp_special",
+        "name": "Tamer Party -Special-",
+        "release": "June, 2023",
+        "url": null,
+        "cards": {
+            "BT8-038": "https://static.wikia.nocookie.net/digimoncardgame/images/8/80/BT8-038_P2.png",
+            "BT12-015": "https://static.wikia.nocookie.net/digimoncardgame/images/5/51/BT12-015_P1.png",
+            "BT12-016": "https://static.wikia.nocookie.net/digimoncardgame/images/f/ff/BT12-016_P2.png",
+            "BT12-042": "https://static.wikia.nocookie.net/digimoncardgame/images/9/9a/BT12-042_P1.png",
+            "BT12-068": "https://static.wikia.nocookie.net/digimoncardgame/images/2/29/BT12-068_P1.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/tamer_party_sp/",
+    },
+
+    // Booster Alternative Being [EX4] --- ex4
+    {
+        "id": "EX4",
+        "slug": "ex4",
+        "name": "Booster Alternative Being [EX4]",
+        "release": "June 23, 2023",
+        "total": 74,
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_d.png",
+        "add_zero": 3,
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/3/33/EX-3-EN.png/",
+        // "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6d/Playsheet-EX-3-EN.jpg/",
+        "color": {
+            "red": [12,65],
+            "red-yellow": [5,7,9],
+            "red-green": [13],
+            "red-purple": [6,8,10,11],
+            "blue": [1,"14-20",22,67],
+            "blue-red": [61,66],
+            "blue-black": [21,62],
+            "yellow": [23,68],
+            "yellow-blue": [24,"26-28",30],
+            "yellow-green": [25,29,31],
+            "green": [2,"32-34"],
+            "green-yellow": [63],
+            "green-black": ["35-37"],
+            "black": [3,"38-41","43-47",69,73],
+            "black-red": [48,51],
+            "black-blue": [42,49],
+            "black-yellow": [50],
+            "purple": [4,52,53,55,56,58,64,70,71],
+            "purple-yellow": [74],
+            "purple-green": [54,57,59],
+            "white": [60,72]
+        }
+    },
+    // Booster Alternative Being [EX4] - Alternatives --- ex4_alts
+    {
+        "id": null,
+        "slug": "ex4_alts",
+        "name": "Booster Alternative Being [EX4] - Alternatives",
+        "release": "June 23, 2023",
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_pparallel_d.png",
+        "cards": {
+            "EX4-011": "",
+            "EX4-012": "",
+            "EX4-013": "",
+            "EX4-021": "",
+            "EX4-022": "",
+            "EX4-027": "",
+            "EX4-030": "",
+            "EX4-033": "",
+            "EX4-037": "",
+            "EX4-048": "",
+            "EX4-049": "",
+            "EX4-050": "",
+            "EX4-051": "",
+            "EX4-053": "",
+            "EX4-058": "",
+            "EX4-060": ["", "2"],
+            "EX4-073": "",
+            "EX4-074": "",
+        },
+    },
+    {
+        "id": null,
+        "slug": "ex4_alts",
+        "name": "Booster Alternative Being [EX4] - Alternatives",
+        "release": "June 23, 2023",
+        "url": "bandaitcgplusURL/EX4/e_EX4_setID-cardID_d.png",
+        "cards": {
+            "BT5-112": ""
+        }
+    },
+    // Booster Alternative Being [EX4] - Box Topper --- ex4_boxtopper
+    {
+        "id": null,
+        "slug": "ex4_boxtopper",
+        "name": "Booster Alternative Being [EX4] - Box Topper",
+        "release": "June 23, 2023",
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_p_d.png",
+        "cards": {
+            "EX4-061": "",
+            "EX4-062": "",
+            "EX4-063": "",
+            "EX4-064": "",
+            "EX4-066": "",
+            "EX4-072": "",
+        },
+    },
+
     // Royal Knights Binder Set [PB13] --- pb13
     {
         "id": null,
@@ -3958,4 +4115,129 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/products/goods/tamer-goods-set_PB14.php"
     },
+
+// July 14 - July 20, 2023
+    // Versus Royal Knights (BT13) Pre-Release Tournaments --- bt13_prerelease
+    {
+        "id": null,
+        "slug": "bt13_prerelease",
+        "name": "Versus Royal Knights (BT13) Pre-Release Tournaments",
+        "release": "April 21 - April 28, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT8-071": "",
+            "P-078": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-13/"
+    },
+// July, 2023
+
+    // Booster Versus Royal Knights [BT13] --- bt13
+    // https://world.digimoncard.com/products/pack/ver13.php
+
+// Mid July - November 2023
+    // Official Tournament Pack Vol.10 --- otp10
+    {
+        "id": null,
+        "slug": "ot10",
+        "name": "Official Tournament Pack Vol.10",
+        "release": "Mid July - November 2023",
+        "url": "noCardURL",
+        "cards": {
+            "P-066": "",
+            "P-067": "",
+            "P-068": "",
+            "P-069": "",
+            "P-070": "",
+            "P-071": "",
+        },
+    },
+    // Winner Pack Royal Knights --- wp10
+    {
+        "id": null,
+        "slug": "wp9",
+        "name": "Winner Pack -Royal Knights-",
+        "release": "Mid July - November 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT8-071": "",
+            "P-059": "",
+            "P-060": "",
+            "P-061": "",
+        },
+    },
+
+// July-September, 2023
+    // 2023 Regionals Participant Set 2 --- regional2023_2_0
+    {
+        "id": null,
+        "slug": "regional2023_2_0",
+        "name": "2023 Regionals Participant Set 2",
+        "release": "July-September, 2023",
+        "url": null,
+        "cards": {
+            "BT1-021": "https://static.wikia.nocookie.net/digimoncardgame/images/0/07/BT1-021_P1.png",
+            "BT3-027": "https://static.wikia.nocookie.net/digimoncardgame/images/6/61/BT3-027_P1.png",
+            "BT4-017": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6b/BT4-017_P2.png",
+            "BT7-014": "https://static.wikia.nocookie.net/digimoncardgame/images/9/9d/BT7-014_P1.png",
+            "BT10-011": "https://static.wikia.nocookie.net/digimoncardgame/images/9/95/BT10-011_P2.png",
+            "BT11-015": "https://static.wikia.nocookie.net/digimoncardgame/images/7/7f/BT11-015_P1.png",
+            "EX3-062": "https://static.wikia.nocookie.net/digimoncardgame/images/0/07/EX3-062_P1.png"
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals-2023/"
+    },
+    // 2023 Regionals Finalist Set 2 --- regional2023_2_1
+    {
+        "id": null,
+        "slug": "regional2023_2_1",
+        "name": "2023 Regionals Finalist Set 2",
+        "release": "July-September, 2023",
+        "url": null,
+        "cards": {
+            "BT1-021": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a7/BT1-021_P2.png",
+            "BT3-027": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c5/BT3-027_P2.png",
+            "BT4-017": "https://static.wikia.nocookie.net/digimoncardgame/images/e/ea/BT4-017_P3.png",
+            "BT7-014": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d9/BT7-014_P2.png",
+            "BT10-011": "https://static.wikia.nocookie.net/digimoncardgame/images/9/99/BT10-011_P3.png",
+            "BT11-015": "https://static.wikia.nocookie.net/digimoncardgame/images/0/09/BT11-015_P2.png",
+            "EX3-062": "https://static.wikia.nocookie.net/digimoncardgame/images/e/ec/EX3-062_P2.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals-2023/"
+    },
+    // 2023 Regionals Champion Set 2 --- regional2023_2_2
+    {
+        "id": null,
+        "slug": "regional2023_2_2",
+        "name": "2023 Regionals Champion Set 2",
+        "release": "July-September, 2023",
+        "url": null,
+        "cards": {
+            "BT1-021": "https://static.wikia.nocookie.net/digimoncardgame/images/3/39/BT1-021_P3.png",
+            "BT3-027": "https://static.wikia.nocookie.net/digimoncardgame/images/8/8c/BT3-027_P3.png",
+            "BT4-017": "https://static.wikia.nocookie.net/digimoncardgame/images/4/46/BT4-017_P4.png",
+            "BT7-014": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6a/BT7-014_P3.png",
+            "BT10-011": "https://static.wikia.nocookie.net/digimoncardgame/images/f/f7/BT10-011_P4.png",
+            "BT11-015": "https://static.wikia.nocookie.net/digimoncardgame/images/d/de/BT11-015_P3.png",
+            "EX3-062": "https://static.wikia.nocookie.net/digimoncardgame/images/7/79/EX3-062_P3.png"
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals-2023/"
+    },
+
+// September, 2023
+    // Resurgence Booster [RB01] --- rb01
+    // https://world.digimoncard.com/products/pack/rb-01.php
+    // Adventure Box 2 [AB02] --- ab02
+
+// October, 2023
+    // Starter Deck Dragon of Courage [ST15] --- st15
+    // https://world.digimoncard.com/products/deck/st-15.php
+    // Starter Deck Wolf of Friendship [ST16] --- st16
+    // https://world.digimoncard.com/products/deck/st-16.php
+// November, 2023
+    // Double Pack Set [DP-01] --- dp01
+
+    // Gift Box 2023 [GB03] --- gb03
+
+    // Booster Blast Ace [BT14] --- bt14
+    // https://world.digimoncard.com/products/pack/ver14.php
 ];

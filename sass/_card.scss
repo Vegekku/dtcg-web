@@ -99,6 +99,12 @@
 .card_id--black-red {
     background: linear-gradient(90deg, var(--black-card) 50%, var(--red-card) 50%);
 }
+.card_id--black-blue {
+    background: linear-gradient(90deg, var(--black-card) 50%, var(--blue-card) 50%);
+}
+.card_id--black-yellow {
+    background: linear-gradient(90deg, var(--black-card) 50%, var(--yellow-card) 50%);
+}
 .card_id--black-purple {
     background: linear-gradient(90deg, var(--black-card) 50%, var(--purple-card) 50%);
 }

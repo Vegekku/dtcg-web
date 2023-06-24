@@ -149,6 +149,14 @@ input:disabled + label {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--red-card) 50%);
 }
 
+.card_id--black-blue {
+  background: linear-gradient(90deg, var(--black-card) 50%, var(--blue-card) 50%);
+}
+
+.card_id--black-yellow {
+  background: linear-gradient(90deg, var(--black-card) 50%, var(--yellow-card) 50%);
+}
+
 .card_id--black-purple {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--purple-card) 50%);
 }
@@ -295,7 +303,7 @@ button#cancelEdit {
   color: white;
 }
 
-.filter--set tbody tr:not(.match_filter) {
+.filter--set tbody tr:not(.match_filter--set) {
   display: none;
 }
 .filter--set .card.filtered--set {
@@ -309,25 +317,35 @@ button#cancelEdit {
   display: none;
 }
 
-.filter--status.filter--status--no_pull tbody tr[data-pull=true] {
+.filter--status tbody tr:not(.match_filter--status) {
   display: none;
 }
-.filter--status.filter--status--no_pull_no_have tbody tr[data-pull=true]:not(.match_filter) {
-  display: none;
-}
-.filter--status.filter--status--no_pull_no_have .card.filtered--status {
+.filter--status .card.filtered--status {
   display: block;
 }
-.filter--status.filter--status--no_pull_no_have .card:not(.filtered--status) {
+.filter--status .card:not(.filtered--status) {
+  display: none;
+}
+.filter--status--no_pull tbody tr[data-pull=true] {
+  display: none;
+}
+.filter--status--no_pull_no_have tbody tr[data-pull=true]:not(.match_filter) {
+  display: none;
+}
+.filter--status--no_pull_no_have .card.filtered--status {
+  display: block;
+}
+.filter--status--no_pull_no_have .card:not(.filtered--status) {
   opacity: 0.5;
 }
-.filter--status:not(.filter--status--no_pull):not(.filter--status--no_pull_no_have) tbody tr:not(.match_filter) {
+
+.filter--set.filter--status tbody tr:not(.match_filter--set.match_filter--status) {
   display: none;
 }
-.filter--status:not(.filter--status--no_pull):not(.filter--status--no_pull_no_have) .card.filtered--status {
+.filter--set.filter--status .card.filtered--set {
   display: block;
 }
-.filter--status:not(.filter--status--no_pull):not(.filter--status--no_pull_no_have) .card:not(.filtered--status) {
+.filter--set.filter--status .card:not(.filtered--set) {
   display: none;
 }
 

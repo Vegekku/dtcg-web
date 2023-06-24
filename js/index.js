@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             return noCardURL;
         }
 
-        const bandaitcgplusURL = 'https://s3.amazonaws.com/prod.bandaitcgplus.files.api/card_image/DG-EN';
+        const bandaitcgplusURL = 'https://files.bandai-tcg-plus.com/card_image/DG-EN';
         const digimoncardURL = 'https://world.digimoncard.com/images/cardlist/card';
         const digimonCardDev = 'https://assets.cardlist.dev/images/communitycards';
         const tcgPlayerURL = 'https://product-images.tcgplayer.com/fit-in/874x874';
