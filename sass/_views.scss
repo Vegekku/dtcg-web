@@ -23,18 +23,32 @@ td {
     padding: 0;
 }
 
-.view--grid tr {
-    display: inline-block;
-}
-.view--grid .card_id {
-    display: none;
-}
-.view--grid .card_amount {
-    display: none;
-}
-.view--all .set--hidden {
-    display: block;
-}
 .set--hidden {
     display: none;
+}
+
+.view--grid {
+    tr {
+        display: inline-block;
+    }
+    .card_id {
+        display: none;
+    }
+    .card_amount {
+        display: none;
+    }
+}
+
+.view--all {
+    .set--hidden {
+        display: block;
+    }
+    &.filter--set {
+        .set--filter-cards {
+            display: block;
+        }
+        > :not(.set--filter-cards) {
+            display: none;
+        }
+    }
 }
