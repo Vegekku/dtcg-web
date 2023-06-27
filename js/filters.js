@@ -90,9 +90,9 @@ const filterCards = () => {
 
    
     const test = () => {
-        const filteredSet = document.querySelectorAll('.set--filter-cards');
+        const filteredSet = document.querySelectorAll('.set--visible');
         filteredSet.forEach(row => {
-            row.classList.remove('set--filter-cards');
+            row.classList.replace('set--visible','set--hidden');
         });
     }
     test();
@@ -101,7 +101,8 @@ const filterCards = () => {
         filterCards.forEach( (card, index ) => {
             card.classList.add(...cardClasses);
             card.parentElement.parentElement.classList.add(...rowClasses);
-            card.parentElement.parentElement.parentElement.parentElement.classList.add('set--filter-cards');
+            const parentSet = card.parentElement.parentElement.parentElement.parentElement;
+            parentSet.classList.replace('set--hidden','set--visible');
         });
     }
 }

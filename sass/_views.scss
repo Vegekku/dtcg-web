@@ -40,15 +40,24 @@ td {
 }
 
 .view--all {
-    .set--hidden {
+    .set--hidden, .set--visible {
         display: block;
     }
     &.filter--set {
-        .set--filter-cards {
+        .set--visible {
             display: block;
         }
-        > :not(.set--filter-cards) {
+        .set--hidden {
             display: none;
         }
+    }
+}
+
+.view--collection {
+    .set--current {
+        display: block;
+    }
+    > :not(.set--current) {
+        display: none;
     }
 }

@@ -104,8 +104,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             const tableSet = document.getElementById(element.target.value);
             const currentSet = window.location.hash.substring(1);
 
-            document.getElementById(element.target.value).classList.replace('set--hidden','set--visible');
-            document.getElementById(currentSet).classList.replace('set--visible','set--hidden');
+            document.getElementById(element.target.value).classList.add('set--current');
+            document.getElementById(currentSet).classList.remove('set--current');
 
             // add set id to URL
             window.location.hash = set.id;
@@ -148,10 +148,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
             const tableSet = document.createElement('table');
             tableSet.id = setElement.id;
             if (window.location.hash !== `#${setElement.id}`) {
-                // tableSet.style.display = "none";
                 tableSet.classList.add('set--hidden');
             } else {
-                tableSet.classList.add('set--visible')
+                tableSet.classList.add('set--visible','set--current');
             }
 
             // 2. si no existe el set, añadirlo a la coleccion.
