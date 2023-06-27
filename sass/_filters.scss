@@ -1,8 +1,5 @@
-.filter--1{
-
-}
 .filter--set {
-    tbody tr:not(.match_filter) {
+    tbody tr:not(.match_filter--set) {
         display: none;
     }
 
@@ -21,12 +18,23 @@
 }
 
 .filter--status {
-    &.filter--status--no_pull {
+    tbody tr:not(.match_filter--status) {
+        display: none;
+    }
+
+    .card.filtered--status {
+        display: block;
+    }
+    .card:not(.filtered--status) {
+        display: none;
+    }
+
+    &--no_pull {
         tbody tr[data-pull="true"] {
             display: none;
         }
     }
-    &.filter--status--no_pull_no_have {
+    &--no_pull_no_have {
         tbody tr[data-pull="true"]:not(.match_filter) {
             display: none;
         }
@@ -37,18 +45,17 @@
             opacity: 0.5;
         }
     }
+}
 
-    &:not(.filter--status--no_pull):not(.filter--status--no_pull_no_have) {
-        tbody tr:not(.match_filter) {
-            display: none;
-        }
-    
-        .card.filtered--status {
-            display: block;
-        }
-        .card:not(.filtered--status) {
-            display: none;
-        }
+.filter--set.filter--status {
+    tbody tr:not(.match_filter--set.match_filter--status) {
+        display: none;
     }
 
+    .card.filtered--set {
+        display: block;
+    }
+    .card:not(.filtered--set) {
+        display: none;
+    }
 }

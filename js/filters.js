@@ -2,7 +2,7 @@ const filterCards = () => {
     const filters = {
         "status": document.getElementById('status').value,
         "color": document.getElementById('color').value,
-        "set": document.getElementById('set').value
+        "set": document.getElementById('setValue').value
     }
     const setLists = document.getElementById('setLists');
 
@@ -13,12 +13,12 @@ const filterCards = () => {
             card.classList.remove('filtered--status');
         });
 
-        const filterRows = document.querySelectorAll('.match_filter');
+        const filterRows = document.querySelectorAll('.match_filter--status');
         filterRows.forEach( row => {
-            row.classList.remove('match_filter');
+            row.classList.remove('match_filter','match_filter--status');
         });
 
-        setLists.classList.remove('filter--status--no-pull','filter--status--no_pull_no_have');
+        setLists.classList.remove('filter--status','filter--status--no_pull','filter--status--no_pull_no_have');
     }
     if ( filters.status !== '' ) {
         const status = {
@@ -28,7 +28,6 @@ const filterCards = () => {
             'bought_it': '2',
             'proxy': '3'
         };
-        setLists.classList.add('filter--status');
         cleanFilterStatus();
         if ( 'no_pull_no_have' === filters.status ) {
             setLists.classList.add('filter--status--no_pull_no_have');
@@ -40,14 +39,14 @@ const filterCards = () => {
         } else if ( 'no_pull' === filters.status ) {
             setLists.classList.add('filter--status--no_pull');
         } else {
+            setLists.classList.add('filter--status');
             const filterStatusCards = document.querySelectorAll(`[data-status="${status[filters.status]}"]`);
             filterStatusCards.forEach( card => {
                 card.classList.add('filtered--status');
-                card.parentElement.parentElement.classList.add('match_filter');
+                card.parentElement.parentElement.classList.add('match_filter--status');
             });
         }
     } else {
-        setLists.classList.remove('filter--status');
         cleanFilterStatus();
     }
 
@@ -76,7 +75,7 @@ const filterCards = () => {
         const filterCards = document.querySelectorAll('.filtered--set');
         filterCards.forEach( card => {
             card.classList.remove('filtered--set');
-            card.parentElement.parentElement.classList.remove('match_filter');
+            card.parentElement.parentElement.classList.remove('match_filter--set');
         });
     }
     if ( filters.set !== '' ) {
@@ -85,10 +84,26 @@ const filterCards = () => {
         const filterSetCards = document.querySelectorAll(`[data-set="${filters.set}"]`);
         filterSetCards.forEach( card => {
             card.classList.add('filtered--set');
-            card.parentElement.parentElement.classList.add('match_filter');
+            card.parentElement.parentElement.classList.add('match_filter--set');
         });
     } else {
         setLists.classList.remove('filter--set');
         cleanFilterSet();
     }
+}
+
+const searchSet = (element) => {
+    if (element.value !== '') {
+        const datalist = element.list;
+        const result = Object.entries(datalist.options).filter(([key, option]) => option.value === element.value).map(result => result[1].dataset.value )[0];
+        if ( result !== undefined ) {
+            document.getElementById('setValue').value = result;
+        } else {
+            element.value = '';
+            document.getElementById('setValue').value = '';
+        }
+    } else {
+        document.getElementById('setValue').value = '';
+    }
+    filterCards();
 }
