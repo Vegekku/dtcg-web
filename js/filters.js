@@ -88,11 +88,20 @@ const filterCards = () => {
         cleanFilterSet();
     }
 
+   
+    const test = () => {
+        const filteredSet = document.querySelectorAll('.set--filter-cards');
+        filteredSet.forEach(row => {
+            row.classList.remove('set--filter-cards');
+        });
+    }
+    test();
     if ('' !== queryCards) {
         const filterCards = document.querySelectorAll(queryCards);
-        filterCards.forEach(card => {
+        filterCards.forEach( (card, index ) => {
             card.classList.add(...cardClasses);
             card.parentElement.parentElement.classList.add(...rowClasses);
+            card.parentElement.parentElement.parentElement.parentElement.classList.add('set--filter-cards');
         });
     }
 }

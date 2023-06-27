@@ -379,14 +379,16 @@ td {
   padding: 0;
 }
 
-.view--grid tr {
-  display: inline-block;
-}
-
-.view--grid .card_id {
+.set--hidden {
   display: none;
 }
 
+.view--grid tr {
+  display: inline-block;
+}
+.view--grid .card_id {
+  display: none;
+}
 .view--grid .card_amount {
   display: none;
 }
@@ -394,8 +396,10 @@ td {
 .view--all .set--hidden {
   display: block;
 }
-
-.set--hidden {
+.view--all.filter--set .set--filter-cards {
+  display: block;
+}
+.view--all.filter--set > :not(.set--filter-cards) {
   display: none;
 }
 
