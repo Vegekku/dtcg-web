@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const starterButtons = document.getElementById('starterButtons');
     const otherButtons = document.getElementById('otherButtons');
     const setLists = document.getElementById('setLists');
-    const setFilter = document.getElementById('set');
+    const setOptions = {};
+    const setFilterOptions = document.getElementById('setOptions');
+
     // 1. crear objeto coleccion si no existe. Si existe, obtener de storage.
     collection = JSON.parse( window.localStorage.getItem("collection") || '{}' );
 
@@ -228,11 +230,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
 
         if (setElement.slug) {
-            const setOption = document.createElement('option');
-            setOption.value = setElement.slug;
-            setOption.innerHTML = setElement.name;
-            setFilter.appendChild(setOption);
+            setOptions[setElement.slug] = setElement.name;
         }
+    });
+
+    Object.entries(setOptions).forEach(([key,value]) => {
+        const setOption = document.createElement('option');
+        setOption.dataset.value = key;
+        setOption.innerHTML = value;
+        setFilterOptions.appendChild(setOption);
     });
 
     // 6. guardar coleccion en localstorage
