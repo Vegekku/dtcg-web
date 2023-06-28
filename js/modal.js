@@ -22,6 +22,13 @@ const modalOpen = (element) => {
     }
 
     modalTitle.innerHTML = `${cardNumber}: ${element.title}`;
+
+    const modalCards = document.querySelectorAll('.modal-card');
+    modalCards.forEach( modalCard => {
+        modalCard.src = element.src;
+        modalCard.alt = element.alt;
+    });
+
     if ( editingSet ) {
         const status = {
             '-1': 'reservation',
@@ -42,14 +49,11 @@ const modalOpen = (element) => {
             document.getElementById('priceConfirm').hidden = true;
         }
     } else {
-        const cardZoom = document.getElementById('card-zoom');
         const cardStatus = document.getElementById('card-status');
         const cardPrice = document.getElementById('card-price');
         const cardmarket = document.getElementById('cardmarket');
         const status = ['No la tengo', 'Obtenida', 'Comprada', 'Es proxy'];
 
-        cardZoom.src = element.src;
-        cardZoom.alt = element.alt;
         cardStatus.innerHTML = status[element.dataset.status];
         cardPrice.innerHTML = parseFloat(element.dataset.bought).toLocaleString('es-ES', {
             style: 'currency', 
