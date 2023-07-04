@@ -83,6 +83,18 @@
   input[type="radio"] + label {
     cursor: pointer;
   }
+
+  .price-confirm, .cardmarket {
+    text-align: center;
+  }
+
+  input[type="url"] {
+    width: 80%;
+  }
+
+  label, input {
+    font-size: 20px;
+  }
 }
 
 .radio-buttons {
@@ -154,12 +166,4 @@
 }
 #cardmarket img {
   width: 25px;
-}
-
-.price-confirm {
-  text-align: center;
-
-  label, input {
-    font-size: 20px;
-  }
 }

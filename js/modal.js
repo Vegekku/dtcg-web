@@ -1,6 +1,11 @@
 let editingSet = false;
 let cardAPI = null;
 
+const toggleEditionInputs = (inputs) => {
+    document.getElementById('priceConfirm').hidden = 'cardmarket' === inputs;
+    document.getElementById('cardmarket').hidden = 'cardmarket' !== inputs;
+};
+
 const modalOpen = (element) => {
     const modal = editingSet ? document.getElementById('editModal') : document.getElementById('viewModal');
     const modalTitle = modal.querySelector('.modal-title');
@@ -43,10 +48,10 @@ const modalOpen = (element) => {
 
         if ( parseInt(element.dataset.status) > 1 ) {
             document.getElementById('price').value = element.dataset.bought;
-            document.getElementById('priceConfirm').hidden = false;
+            toggleEditionInputs('priceConfirm');
         } else {
             document.getElementById('price').value = '';
-            document.getElementById('priceConfirm').hidden = true;
+            toggleEditionInputs('cardmarket');
         }
     } else {
         const cardStatus = document.getElementById('card-status');
@@ -143,6 +148,11 @@ const selectValue = () => {
 }
 
 const priceConfirm = () => {
-    document.getElementById('priceConfirm').hidden = false;
+    toggleEditionInputs('priceConfirm');
     document.getElementById('price').select();
+}
+
+const cardmarket = () => {
+    toggleEditionInputs('cardmarket');
+    document.getElementById('url').select();
 }

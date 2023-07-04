@@ -77,8 +77,8 @@
             <input type="hidden" name="cardId" id="cardId">
             <img src="#" alt="" class="modal-card">
             <div class="radio-buttons">
-                <input type="radio" id="no_have" name="status" value="0" onclick="modalOk()">
-                <label for="no_have">Falta</label>
+                <input type="radio" id="no_have" name="status" value="0" onclick="">
+                <label for="no_have" onclick="cardmarket()">Falta</label>
                 <input type="radio" id="got_it" name="status" value="1" onclick="modalOk()">
                 <label for="got_it">Obtenida</label>
                 <input type="radio" id="reservation" name="status" value="-1" onclick="modalOk()">
@@ -91,6 +91,14 @@
             <div class="price-confirm" hidden id="priceConfirm">
                 <label for="price">Precio</label>
                 <input type="number" name="price" id="price" step="0.01" onfocus="selectValue()">
+                <button class="modal-ok" onclick="modalOk()">confirmar</button>
+            </div>
+            <div class="cardmarket" id="cardmarket">
+                <label for="cardmarketUrl">URL</label>
+                <input type="url" name="cardmarketUrl" id="cardmarketUrl">
+                <br>
+                <label for="cardmarketPrice">Precio</label>
+                <input type="number" name="cardmarketPrice" id="cardmarketPrice" step="0.01">
                 <button class="modal-ok" onclick="modalOk()">confirmar</button>
             </div>
             <button class="modal-close modal-exit" onclick="modalClose(this)">X</button>
