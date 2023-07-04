@@ -489,6 +489,15 @@ td {
 .modal input[type=radio] + label {
   cursor: pointer;
 }
+.modal .price-confirm, .modal .cardmarket {
+  text-align: center;
+}
+.modal input[type=url] {
+  width: 80%;
+}
+.modal label, .modal input {
+  font-size: 20px;
+}
 
 .radio-buttons {
   display: flex;
@@ -556,11 +565,4 @@ td {
 
 #cardmarket img {
   width: 25px;
-}
-
-.price-confirm {
-  text-align: center;
-}
-.price-confirm label, .price-confirm input {
-  font-size: 20px;
 }
