@@ -77,8 +77,8 @@
             <input type="hidden" name="cardId" id="cardId">
             <img src="#" alt="" class="modal-card">
             <div class="radio-buttons">
-                <input type="radio" id="no_have" name="status" value="0" onclick="">
-                <label for="no_have" onclick="cardmarket()">Falta</label>
+                <input type="radio" id="no_have" name="status" value="0" onclick="priceCardmarket()">
+                <label for="no_have">Falta</label>
                 <input type="radio" id="got_it" name="status" value="1" onclick="modalOk()">
                 <label for="got_it">Obtenida</label>
                 <input type="radio" id="reservation" name="status" value="-1" onclick="modalOk()">
@@ -111,8 +111,12 @@
             <p class="modal-title"></p>
             <img src="#" alt="" class="modal-card">
             <div class="card-info">
-                <span>Estado: <span id="card-status"></span></span><span>Precio: <span id="card-price"></span></span>
-                <a href="#" id="cardmarket" target="_blank"><img src="https://static.cardmarket.com/img/526dbb9ae52c5e62404fe903e9769807/static/misc/favicon-96x96.png" alt=""></a>
+                <span>Estado: <span id="card-status"></span></span>
+                <span>Precio: <span id="card-price"></span></span>
+                <a id="cardmarketLink" target="_blank" title="Ir a cardmarket de esta carta">
+                    <img src="https://static.cardmarket.com/img/526dbb9ae52c5e62404fe903e9769807/static/misc/favicon-96x96.png" alt="">
+                    <span id="cardmarketMinimun"></span>
+                </a>
             </div>
             <button class="modal-close modal-exit" onclick="modalClose(this)">X</button>
         </div>

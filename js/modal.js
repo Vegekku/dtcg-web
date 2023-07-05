@@ -11,21 +11,6 @@ const modalOpen = (element) => {
     const modalTitle = modal.querySelector('.modal-title');
     const [cardNumber, slug] = element.id.split('__');
 
-    const getCardmarketUrl = (url, cardNumber) => {
-        var cardUrl = url.replaceAll('cardNumber', cardNumber);
-
-        if ( cardAPI === null ) {
-            cardAPI = JSON.parse( window.localStorage.getItem("cardAPI") || '{}' );
-        }
-
-        // Buscar en objeto si existe el cardNumber
-        // Si exste, componer la url en función de esos datos
-        // Sino, pedir a la api
-        
-
-        return cardUrl;
-    }
-
     modalTitle.innerHTML = `${cardNumber}: ${element.title}`;
 
     const modalCards = document.querySelectorAll('.modal-card');
@@ -51,20 +36,32 @@ const modalOpen = (element) => {
             toggleEditionInputs('priceConfirm');
         } else {
             document.getElementById('price').value = '';
+            document.getElementById('cardmarketUrl').value = element.dataset.cardmarketurl || '';
+            document.getElementById('cardmarketPrice').value = element.dataset.cardmarketprice || '';
             toggleEditionInputs('cardmarket');
         }
     } else {
         const cardStatus = document.getElementById('card-status');
         const cardPrice = document.getElementById('card-price');
-        const cardmarket = document.getElementById('cardmarket');
+        const cardmarketLink = document.getElementById('cardmarketLink');
+        const cardmarketMinimun = document.getElementById('cardmarketMinimun');
         const status = ['No la tengo', 'Obtenida', 'Comprada', 'Es proxy'];
+        let price = element.dataset.bought;
+
+        if (element.dataset.status === '0' && element.dataset.cardmarketurl !== '') {
+            cardmarketLink.href = element.dataset.cardmarketurl;
+            price = element.dataset.cardmarketprice;
+            cardmarketLink.hidden = false;
+        } else {
+            cardmarketLink.removeAttribute('href');
+            cardmarketLink.hidden = true;
+        }
 
         cardStatus.innerHTML = status[element.dataset.status];
-        cardPrice.innerHTML = parseFloat(element.dataset.bought).toLocaleString('es-ES', {
+        cardPrice.innerHTML = parseFloat(price).toLocaleString('es-ES', {
             style: 'currency', 
             currency: 'EUR',
         });
-        cardmarket.href = getCardmarketUrl(element.dataset.cardmarket, cardNumber);
     }
     modal.classList.add('open');
 };
@@ -92,6 +89,28 @@ const modalOk = () => {
     } else {
         collection[set][id].cards[slug].bought = 0;
         document.getElementById(cardId).setAttribute('data-bought', 0);
+    }
+
+    if ( status === 0 ) {
+        const cardmarketUrl = document.getElementById('cardmarketUrl').value || '';
+        const cardmarketPrice = parseFloat( document.getElementById('cardmarketPrice').value || 0 );
+
+        if ( cardmarketUrl !== '' && cardmarketPrice !== 0 ) {
+            (cardmarket[cardId] ??= {}).url = cardmarketUrl;
+
+            (cardmarket[cardId].price ??= []);
+            if (cardmarket[cardId].price.length > 0) {
+                const lastCardmarketPrice = cardmarket[cardId].price.slice(-1)[0];
+                if (lastCardmarketPrice !== cardmarketPrice) {
+                    cardmarket[cardId].price.push(cardmarketPrice);
+                }
+            } else {
+                cardmarket[cardId].price.push(cardmarketPrice);
+            }
+
+            document.getElementById(cardId).setAttribute('data-cardmarketUrl', cardmarketUrl);
+            document.getElementById(cardId).setAttribute('data-cardmarketPrice', cardmarketPrice);
+        }
     }
 
     modal.classList.remove('open');
@@ -131,6 +150,7 @@ const cancelEdit = () => {
 
 const saveSet = () => {
     window.localStorage.setItem("collection", JSON.stringify(collection));
+    window.localStorage.setItem("cardmarket", JSON.stringify(cardmarket));
     cancelEdit();
 }
 
@@ -152,7 +172,7 @@ const priceConfirm = () => {
     document.getElementById('price').select();
 }
 
-const cardmarket = () => {
+const priceCardmarket = () => {
     toggleEditionInputs('cardmarket');
-    document.getElementById('url').select();
+    document.getElementById('cardmarketUrl').select();
 }

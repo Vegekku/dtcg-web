@@ -88,6 +88,32 @@
     text-align: center;
   }
 
+  #cardmarketLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2px;
+
+    img {
+      width: 25px;
+    }
+
+    &[hidden] {
+      display: none;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:visited {
+      color: black;
+    }
+  }
+
   input[type="url"] {
     width: 80%;
   }
@@ -163,7 +189,4 @@
 #card-status,
 #card-price {
   font-weight: 700;
-}
-#cardmarket img {
-  width: 25px;
 }
