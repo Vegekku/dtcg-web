@@ -393,14 +393,8 @@ td {
   display: none;
 }
 
-.view--all .set--hidden, .view--all .set--visible {
+[class=view--all] .set--hidden {
   display: block;
-}
-.view--all.filter--set .set--visible {
-  display: block;
-}
-.view--all.filter--set .set--hidden {
-  display: none;
 }
 
 .view--collection .set--current {

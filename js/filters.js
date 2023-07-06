@@ -89,20 +89,23 @@ const filterCards = () => {
     }
 
    
-    const test = () => {
+    const hideAllSets = () => {
         const filteredSet = document.querySelectorAll('.set--visible');
         filteredSet.forEach(row => {
             row.classList.replace('set--visible','set--hidden');
         });
     }
-    test();
+    hideAllSets();
     if ('' !== queryCards) {
         const filterCards = document.querySelectorAll(queryCards);
         filterCards.forEach( (card, index ) => {
             card.classList.add(...cardClasses);
-            card.parentElement.parentElement.classList.add(...rowClasses);
-            const parentSet = card.parentElement.parentElement.parentElement.parentElement;
-            parentSet.classList.replace('set--hidden','set--visible');
+            const rowCard = card.parentElement.parentElement;
+            rowCard.classList.add(...rowClasses);
+            if (filters.color === '' || rowCard.dataset.color === filters.color) {
+                const parentSet = card.parentElement.parentElement.parentElement.parentElement;
+                parentSet.classList.replace('set--hidden','set--visible');
+            }
         });
     }
 }

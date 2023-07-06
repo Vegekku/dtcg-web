@@ -39,17 +39,9 @@ td {
     }
 }
 
-.view--all {
-    .set--hidden, .set--visible {
+[class="view--all"] {
+    .set--hidden {
         display: block;
-    }
-    &.filter--set {
-        .set--visible {
-            display: block;
-        }
-        .set--hidden {
-            display: none;
-        }
     }
 }
 
