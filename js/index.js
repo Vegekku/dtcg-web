@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         const digimoncardURL = 'https://world.digimoncard.com/images/cardlist/card';
         const digimonCardDev = 'https://assets.cardlist.dev/images/communitycards';
         const tcgPlayerURL = 'https://product-images.tcgplayer.com/fit-in/874x874';
+        const digimonFandom = 'https://static.wikia.nocookie.net/digimoncardgame/images';
         
         if ( url.includes('bandaitcgplusURL')) {
             var cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
@@ -30,8 +31,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
             var cardUrl = url.replace('digimoncardURL', digimoncardURL);
         } else if (url.includes('tcgPlayerURL')) {
             var cardUrl = url.replace('tcgPlayerURL', tcgPlayerURL);
-        } else {
+        } else if (url.includes('digimonCardDev')) {
             var cardUrl = url.replace('digimonCardDev', digimonCardDev);
+        } else {
+            var cardUrl = url.replace('digimonFandom', digimonFandom);
         }
         cardUrl = cardUrl.replaceAll('setID', setID);
         cardUrl = cardUrl.replace('cardID', cardID);

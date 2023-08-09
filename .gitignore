@@ -1,4 +1,5 @@
 .DS_Store
 data.json
+cardmarket.json
 manifest.json
 node_modules

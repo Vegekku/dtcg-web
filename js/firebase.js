@@ -5,7 +5,7 @@ const sets = [
         "id": "P",
         "name": "Promos",
         "release": null,
-        "total": 90,
+        "total": 114,
         "url": null,
         "add_zero": 3,
         "info_url": null,
@@ -3090,6 +3090,20 @@ const sets = [
         },
     },
 
+// January, 2023
+    // D-Scanner Ver.Ultimate Red/Blue --- dscanner
+    {
+        "id": null,
+        "slug": "dscanner",
+        "name": "D-Scanner Ver.Ultimate Red/Blue",
+        "release": "January, 2023",
+        "url": "digimonFandom/parallel",
+        "cards": {
+            "BT7-085": "9/95/BT7-085_P2.png",
+            "BT7-087": "7/7c/BT7-087_P2.png",
+        },
+    },
+
 // February 2023
     // 2022 Championship Finals Event Pack Alt-Art Gold Stamp Set --- eventpack_goldstamp_2022
     {
@@ -4123,17 +4137,140 @@ const sets = [
         "slug": "bt13_prerelease",
         "name": "Versus Royal Knights (BT13) Pre-Release Tournaments",
         "release": "April 21 - April 28, 2023",
-        "url": "noCardURL",
+        "url": "digimonFandom/parallel",
         "cards": {
-            "BT8-071": "",
-            "P-078": "",
+            "BT8-071": "4/4c/BT8-071_P2.png",
+            "P-078": "f/f1/P-078.png",
         },
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-13/"
     },
 // July, 2023
-
     // Booster Versus Royal Knights [BT13] --- bt13
-    // https://world.digimoncard.com/products/pack/ver13.php
+    {
+        "id": "BT13",
+        "slug": "bt13",
+        "name": "Versus Royal Knights [BT13]",
+        "release": "July 21, 2023",
+        "total": 112,
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
+        "add_zero": 3,
+        "playmat": "",
+        // "color": {
+        //     "red": [1,"7-18","87-89","99-100"],
+        //     "blue": [2,"19-27",29,32,90,101,102],
+        //     "blue-green": [28,30,31],
+        //     "yellow": [3,33,35,37,"39-41",44,91,103],
+        //     "yellow-red": [34,38,42,43,92,104],
+        //     "yellow-green": [36],
+        //     "green": [4,"45-54",56,57,93,105,106],
+        //     "green-blue": [55],
+        //     "black": [5,58,60,61,"63-67",69,71,94,95,107],
+        //     "black-red": [59,62,68,70,72,108],
+        //     "purple": [6,"73-79","81-83",85,96,97,109,110],
+        //     "purple-black": [80,84,111],
+        //     "white": [86,98],
+        //     "white-red": [112]
+        // },
+        // "override": {
+        //     "url": "bandaitcgplusURL/setID/e_setID-cardID_D_D.png",
+        //     "cards": {
+        //         "BT12-036": ""
+        //     }
+        // },
+    },
+    // Booster Versus Royal Knights [BT13] - Alternatives --- bt13_alts
+    {
+        "id": null,
+        "slug": "bt13_alts",
+        "name": "Versus Royal Knights [BT13] - Alternatives",
+        "release": "July 21, 2023",
+        "url": "bandaitcgplusURL/setID/e_setID-cardIDparallel_D.png",
+        "cards": {
+            "BT13-007": "P",
+            "BT13-017": "P",
+            "BT13-019": "P",
+            "BT13-020": ["P", "P2"],
+            "BT13-030": "P",
+            "BT13-033": ["P", "P2"],
+            "BT13-040": "P",
+            "BT13-046": "P",
+            "BT13-056": "P",
+            "BT13-058": "P",
+            "BT13-059": "P",
+            "BT13-060": ["P", "P2"],
+            "BT13-075": "P",
+            "BT13-077": "P",
+            "BT13-087": "P",
+            "BT13-090": "P",
+            "BT13-091": "P",
+            "BT13-092": ["P", "P2"],
+            "BT13-111": "P",
+            "BT13-112": "P",
+        },
+        "override": {
+            "url": "bandaitcgplusURL/setID/E_setID-cardIDparallel_D.png",
+            "cards": {
+                "BT13-033": ["P", "P2"]
+            }
+        },
+    },
+    // Booster Versus Royal Knights [BT13] - Box Topper --- bt13_boxtopper
+    {
+        "id": null,
+        "slug": "bt13_boxtopper",
+        "name": "Versus Royal Knights [BT13] - Box Topper",
+        "release": "July 21, 2023",
+        "url": "bandaitcgplusURL/setID/e_setID-cardIDparallel_D.png",
+        "cards": {
+            "BT13-095": "P",
+            "BT13-097": "P",
+            "BT13-098": "P",
+            "BT13-100": "P",
+            "BT13-101": "P",
+            "BT13-102": "P",
+        },
+    },
+    // Starter Deck Dragon of Courage [ST15] --- st15
+    {
+        "id": "ST15",
+        "slug": "st15",
+        "name": "Starter Deck Dragon of Courage [ST-15]",
+        "release": "October, 2023",
+        "total": 16,
+        "url": "noCardURL",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-15.php",
+        "color": {
+            "black": ["1-16"]
+        }
+    },
+    // Starter Deck Wolf of Friendship [ST16] --- st16
+    // https://world.digimoncard.com/products/deck/st-16.php
+    {
+        "id": "ST16",
+        "slug": "st16",
+        "name": "Starter Deck Wolf of Friendship [ST-16]",
+        "release": "October, 2023",
+        "total": 16,
+        "url": "noCardURL",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-16.php",
+        "color": {
+            "purple": ["1-16"]
+        }
+    },
+    // Booster Versus Royal Knights [BT13] - Ace Box Topper --- bt13_aceboxtopper
+    {
+        "id": null,
+        "slug": "bt13_aceboxtopper",
+        "name": "Versus Royal Knights [BT13] - Ace Box Topper",
+        "release": "July 21, 2023",
+        "url": "digimonFandom/parallel",
+        "cards": {
+            "ST15-12": "5/5d/ST15-12.png",
+            "ST16-12": "d/d9/ST16-12.png",
+        },
+    },
 
 // Mid July - November 2023
     // Official Tournament Pack Vol.10 --- otp10
@@ -4142,15 +4279,16 @@ const sets = [
         "slug": "ot10",
         "name": "Official Tournament Pack Vol.10",
         "release": "Mid July - November 2023",
-        "url": "noCardURL",
+        "url": "digimonFandom/parallel",
         "cards": {
-            "P-066": "",
-            "P-067": "",
-            "P-068": "",
-            "P-069": "",
-            "P-070": "",
-            "P-071": "",
+            "P-066": "e/e0/P-066_P1.png",
+            "P-067": "c/c9/P-067_P1.png",
+            "P-068": "9/9c/P-068_P1.png",
+            "P-069": "1/11/P-069_P1.png",
+            "P-070": "5/5e/P-070_P1.png",
+            "P-071": "c/c0/P-071_P1.png",
         },
+        "info_url": "https://world.digimoncard.com/event/store_tournament_10/"
     },
     // Winner Pack Royal Knights --- wp10
     {
@@ -4158,13 +4296,64 @@ const sets = [
         "slug": "wp9",
         "name": "Winner Pack -Royal Knights-",
         "release": "Mid July - November 2023",
-        "url": "noCardURL",
+        "url": "digimonFandom/parallel",
         "cards": {
-            "BT8-071": "",
-            "P-059": "",
-            "P-060": "",
-            "P-061": "",
+            "BT8-071": "8/8d/BT8-071_P1.png",
+            "P-059": "e/ef/P-059_P1.png",
+            "P-060": "e/ed/P-060_P1.png",
+            "P-061": "1/17/P-061_P1.png",
         },
+        "info_url": "https://world.digimoncard.com/event/store_tournament_10/"
+    },
+
+// August, 2023
+    // Store Championship 2023 Participant Pack Wave 2 --- storechampion_2023_wave2_0
+    {
+        "id": null,
+        "slug": "storechampion_2023_wave2_0",
+        "name": "Store Championship 2023 Participant Pack Wave 2",
+        "release": "June, 2023",
+        "url": "digimonFandom/parallel",
+        "cards": {
+            "BT7-103": "9/9d/BT7-103_P1.png",
+            "BT8-097": "0/05/BT8-097_P1.png",
+            "BT9-082": "3/33/BT9-082_P2.png",
+            "BT9-083": "3/36/BT9-083_P2.png",
+            "BT9-092": "1/11/BT9-092_P2.png",
+            "BT9-103": "b/bb/BT9-103_P1.png",
+            "EX3-067": "6/67/EX3-067_P1.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_championship_2023/august/"
+    },
+    // Store Championship 2023 Top 4 Pack --- storechampion_2023_wave2_1
+    {
+        "id": null,
+        "slug": "storechampion_2023_wave2_1",
+        "name": "Store Championship 2023 Top 4 Pack Wave 2",
+        "release": "June, 2023",
+        "url": "digimonFandom/parallel",
+        "cards": {
+            "BT7-103": "6/66/BT7-103_P2.png",
+            "BT8-097": "7/73/BT8-097_P2.png",
+            "BT9-082": "d/df/BT9-082_P3.png",
+            "BT9-083": "5/53/BT9-083_P3.png",
+            "BT9-092": "e/ec/BT9-092_P3.png",
+            "BT9-103": "d/d7/BT9-103_P2.png",
+            "EX3-067": "f/f4/EX3-067_P2.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_championship_2023/august/"
+    },
+    // Store Championship 2023 Champion Card --- storechampion_2023_wave2_2
+    {
+        "id": null,
+        "slug": "storechampion_2023_wave2_2",
+        "name": "Store Championship 2023 Champion Card Wave 2",
+        "release": "June, 2023",
+        "url": "digimonFandom/parallel",
+        "cards": {
+            "BT9-082": "0/07/BT9-082_P4.png"
+        },
+        "info_url": "https://world.digimoncard.com/event/store_championship_2023/august/"
     },
 
 // July-September, 2023
@@ -4222,17 +4411,64 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/regionals-2023/"
     },
+    // Event Pack 5 --- eventpack5
+    {
+        "id": null,
+        "slug": "eventpack5",
+        "name": "Event Pack 5",
+        "release": "July-September, 2023",
+        "url": "digimonFandom/parallel",
+        "cards": {
+            "BT1-090": "0/0e/BT1-090_P1.png",
+            "BT5-089": "0/0a/BT5-089_P2.png",
+            "BT6-087": "7/7e/BT6-087_P1.png",
+            "BT6-088": "5/5b/BT6-088_P1.png",
+            "BT6-089": "2/2d/BT6-089_P1.png",
+            "BT8-109": "7/7d/BT8-109_P1.png",
+            "BT9-041": "9/9c/BT9-041_P1.png",
+            "BT9-102": "a/ad/BT9-102_P1.png",
+            "BT10-008": "6/64/BT10-008_P1.png",
+            "BT10-048": "e/eb/BT10-048_P1.png",
+            "BT10-097": "0/0a/BT10-097_P1.png",
+            "BT10-101": "6/6f/BT10-101_P1.png",
+            "BT10-103": "3/3c/BT10-103_P1.png",
+            "BT11-022": "f/f2/BT11-022_P1.png",
+            "BT11-068": "d/dd/BT11-068_P1.png",
+            "BT11-076": "e/e0/BT11-076_P1.png",
+            "BT11-092": "3/3a/BT11-092_P1.png",
+            "EX2-064": "3/33/EX2-064_P1.png",
+        },
+        // https://digimoncardgame.fandom.com/wiki/Event_Pack_5
+    },
 
 // September, 2023
     // Resurgence Booster [RB01] --- rb01
     // https://world.digimoncard.com/products/pack/rb-01.php
+
     // Adventure Box 2 [AB02] --- ab02
+    {
+        "id": null,
+        "slug": "ab02",
+        "name": "Adventure Box 2 [AB02]",
+        "release": "September, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "P-035": "",
+            "P-036": "",
+            "P-037": "",
+            "P-038": "",
+            "P-039": "",
+            "P-040": "",
+        },
+        // "info_url": "https://world.digimoncard.com/event/regionals-2023/"
+    },
 
 // October, 2023
-    // Starter Deck Dragon of Courage [ST15] --- st15
-    // https://world.digimoncard.com/products/deck/st-15.php
-    // Starter Deck Wolf of Friendship [ST16] --- st16
-    // https://world.digimoncard.com/products/deck/st-16.php
+    // https://world.digimoncard.com/event/regionals-2023-oct/
+    // 2023 Regionals Participant Set 3 --- regional2023_3_0
+    // 2023 Regionals Finalist Set 3 --- regional2023_3_1
+    // 2023 Regionals Champion Set 3 --- regional2023_3_2
+
 // November, 2023
     // Double Pack Set [DP-01] --- dp01
 
@@ -4240,4 +4476,36 @@ const sets = [
 
     // Booster Blast Ace [BT14] --- bt14
     // https://world.digimoncard.com/products/pack/ver14.php
+
+// February, 2024
+    // Premium Binder Set
+    // {
+    //     "id": null,
+    //     // "slug": "",
+    //     "name": "Premium Binder Set",
+    //     "release": "February, 2024",
+    //     "url": "digimonFandom/parallel",
+    //     "cards": {
+    //         // "BT6-112": "4/4f/BT6-112_P2.png",
+    //         // "BT7-111": "1/16/BT7-111_P2.png",
+    //         // "BT12-085": "a/ab/BT12-085_P2.png",
+    //         // "EX2-044": "5/5d/EX2-044_P4.png",
+    //     },
+    //     // "info_url": "https://world.digimoncard.com/products/goods/premium_binderset.php"
+    // },
+
+    // Tamer Goods Set Diaboromon [PB16] --- pb16
+    // {
+    //     "id": null,
+    //     "slug": "pb16",
+    //     "name": "Tamer Goods Set Diaboromon [PB16]",
+    //     "release": "February, 2024",
+    //     "url": "digimonFandom/parallel",
+    //     "cards": {
+    //         // "BT2-082": "7/71/BT2-Diaboromon_Token_P2.png",
+    //         "BT5-085": "b/bf/BT5-085_P2.png",
+    //         "P-114": "0/02/P-114_P1.png",
+    //     },
+    //     "info_url": "https://world.digimoncard.com/products/goods/tamer-goods-set_PB16.php"
+    // },
 ];
