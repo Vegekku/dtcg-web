@@ -4155,28 +4155,28 @@ const sets = [
         "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
         "add_zero": 3,
         "playmat": "",
-        // "color": {
-        //     "red": [1,"7-18","87-89","99-100"],
-        //     "blue": [2,"19-27",29,32,90,101,102],
-        //     "blue-green": [28,30,31],
-        //     "yellow": [3,33,35,37,"39-41",44,91,103],
-        //     "yellow-red": [34,38,42,43,92,104],
-        //     "yellow-green": [36],
-        //     "green": [4,"45-54",56,57,93,105,106],
-        //     "green-blue": [55],
-        //     "black": [5,58,60,61,"63-67",69,71,94,95,107],
-        //     "black-red": [59,62,68,70,72,108],
-        //     "purple": [6,"73-79","81-83",85,96,97,109,110],
-        //     "purple-black": [80,84,111],
-        //     "white": [86,98],
-        //     "white-red": [112]
-        // },
-        // "override": {
-        //     "url": "bandaitcgplusURL/setID/e_setID-cardID_D_D.png",
-        //     "cards": {
-        //         "BT12-036": ""
-        //     }
-        // },
+        "color": {
+            "red": [1,"9-11",13,14,16,17,94,111],
+            "red-yellow": [8,12,15,18,20,95,104],
+            "red-black": [19],
+            "blue": [2,"21-31",33,96,97,105],
+            "blue-black": [32],
+            "yellow": [3,34,"36-38",41,43,44,46,98,99,106],
+            "yellow-blue": [40],
+            "yellow-black": [35,39,42,45],
+            "green": [4,"47-58",60,100,107],
+            "green-blue": [59],
+            "black": [5,"61-63","65-67",69,71,72,74,75,77,108],
+            "black-yellow": [64,"68-70",73,76,101],
+            "purple": [6,"78-92",102,103,109],
+            "white": [7,93,110,112],
+        },
+        "override": {
+            "url": "bandaitcgplusURL/setID/e_setID-cardID_D_D.png",
+            "cards": {
+                "BT12-036": ""
+            }
+        },
     },
     // Booster Versus Royal Knights [BT13] - Alternatives --- bt13_alts
     {
