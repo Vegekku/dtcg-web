@@ -486,14 +486,23 @@ td {
 .modal .price-confirm, .modal .cardmarket {
   text-align: center;
 }
+.modal .cardmarket {
+  display: flex;
+}
+.modal .cardmarket img {
+  width: 25px;
+}
+.modal .cardmarket #cardmarketUrl {
+  width: calc(100% - 75px);
+}
+.modal .cardmarket #cardmarketPrice {
+  width: 50px;
+}
 .modal #cardmarketLink {
   text-decoration: none;
   border: 1px solid;
   border-radius: 5px;
   padding: 2px;
-}
-.modal #cardmarketLink img {
-  width: 25px;
 }
 .modal #cardmarketLink[hidden] {
   display: none;
@@ -504,9 +513,6 @@ td {
 .modal #cardmarketLink:visited {
   color: black;
 }
-.modal input[type=url] {
-  width: 80%;
-}
 .modal label, .modal input {
   font-size: 20px;
 }
@@ -516,6 +522,9 @@ td {
   justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #afafaf;
+  margin-bottom: 10px;
 }
 @media (min-width: 450px) {
   .radio-buttons {
