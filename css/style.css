@@ -487,9 +487,6 @@ td {
   text-align: center;
 }
 .modal #cardmarketLink {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   text-decoration: none;
   border: 1px solid;
   border-radius: 5px;
@@ -574,6 +571,7 @@ td {
 }
 
 #card-status,
-#card-price {
+#card-price,
+#card-minimum {
   font-weight: 700;
 }

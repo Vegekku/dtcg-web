@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>DTCG List</title>
 </head>
-
+<!-- https://stackoverflow.com/questions/3665115/how-to-create-a-file-in-memory-for-user-to-download-but-not-through-server -->
 <body>
     <div>
         <div id="boosterButtons"></div>
@@ -68,7 +68,7 @@
     <div id="setLists" class="view--collection"></div>
     <a href="https://www.paypal.com/donate/?hosted_button_id=49N3JWT3ZHY98">Ayuda a Ennis!</a>
     <a href="https://paypal.me/vegekku">Invítame a un café</a>
-    <span>bandai: 2176 results</span>
+    <span>bandai: 2582 results</span>
     
     <div class="modal" id="editModal">
         <div class="modal-bg modal-exit" onclick="modalClose(this)"></div>
@@ -111,11 +111,9 @@
             <p class="modal-title"></p>
             <img src="#" alt="" class="modal-card">
             <div class="card-info">
-                <span>Estado: <span id="card-status"></span></span>
-                <span>Precio: <span id="card-price"></span></span>
-                <a id="cardmarketLink" target="_blank" title="Ir a cardmarket de esta carta">
-                    <img src="https://static.cardmarket.com/img/526dbb9ae52c5e62404fe903e9769807/static/misc/favicon-96x96.png" alt="">
-                    <span id="cardmarketMinimun"></span>
+                <span class="card-info__status">Estado: <span id="card-status"></span><span id="card-price"></span></span>
+                <a id="cardmarketLink" target="_blank" title="Ver en cardmarket">
+                    Mínimo: <span id="card-minimum"></span>
                 </a>
             </div>
             <button class="modal-close modal-exit" onclick="modalClose(this)">X</button>
