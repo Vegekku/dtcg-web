@@ -88,15 +88,24 @@
     text-align: center;
   }
 
+  .cardmarket {
+    display: flex;
+    img {
+      width: 25px;
+    }
+    #cardmarketUrl {
+      width: calc(100% - 75px);
+    }
+    #cardmarketPrice {
+      width: 50px;
+    }
+  }
+
   #cardmarketLink {
     text-decoration: none;
     border: 1px solid;
     border-radius: 5px;
     padding: 2px;
-
-    img {
-      width: 25px;
-    }
 
     &[hidden] {
       display: none;
@@ -111,10 +120,6 @@
     }
   }
 
-  input[type="url"] {
-    width: 80%;
-  }
-
   label, input {
     font-size: 20px;
   }
@@ -125,6 +130,9 @@
   justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #afafaf;
+  margin-bottom: 10px;
 
   @media (min-width: 450px) {
     /* width: 450px; */
