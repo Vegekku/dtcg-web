@@ -1,5 +1,4 @@
 let editingSet = false;
-let cardAPI = null;
 
 const toggleEditionInputs = (inputs) => {
     document.getElementById('priceConfirm').hidden = 'cardmarket' === inputs;
@@ -43,25 +42,38 @@ const modalOpen = (element) => {
     } else {
         const cardStatus = document.getElementById('card-status');
         const cardPrice = document.getElementById('card-price');
+        const cardMinimum = document.getElementById('card-minimum');
         const cardmarketLink = document.getElementById('cardmarketLink');
-        const cardmarketMinimun = document.getElementById('cardmarketMinimun');
         const status = ['No la tengo', 'Obtenida', 'Comprada', 'Es proxy'];
-        let price = element.dataset.bought;
 
-        if (element.dataset.status === '0' && element.dataset.cardmarketurl !== '') {
+        cardmarketLink.removeAttribute('href');
+        cardmarketLink.hidden = true;
+        cardMinimum.innerHTML = '';
+        if ( element.dataset.cardmarketurl !== '' ) {
             cardmarketLink.href = element.dataset.cardmarketurl;
-            price = element.dataset.cardmarketprice;
             cardmarketLink.hidden = false;
-        } else {
-            cardmarketLink.removeAttribute('href');
-            cardmarketLink.hidden = true;
+        }
+        if ( element.dataset.cardmarketprice !== '' ) {
+            cardmarketLink.hidden = false;
+            cardMinimum.innerHTML = parseFloat(element.dataset.cardmarketprice).toLocaleString('es-ES', {
+                style: 'currency', 
+                currency: 'EUR',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 2,
+            });
         }
 
         cardStatus.innerHTML = status[element.dataset.status];
-        cardPrice.innerHTML = parseFloat(price).toLocaleString('es-ES', {
-            style: 'currency', 
-            currency: 'EUR',
-        });
+        cardPrice.innerHTML = '';
+        if ( '2' === element.dataset.status || '3' === element.dataset.status ) {
+            const price = parseFloat(element.dataset.bought).toLocaleString('es-ES', {
+                style: 'currency', 
+                currency: 'EUR',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 2,
+            });
+            cardPrice.innerHTML = ` por ${price}`;
+        }
     }
     modal.classList.add('open');
 };
