@@ -85,7 +85,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
                                 collection[setId][cardId].cards[parallel_slug] = {status: 0, bought: 0};
                             }
                             
-                            const cardUrl = getImageUrl(url, setId, cardId, parallelElement);
+                            var cardUrl = getImageUrl(url, setId, cardId, parallelElement);
+                            // Override in array
+                            if ( 'override' in setElement && cardNumber in setElement.override.cards && setElement.override.cards[cardNumber][index] !== null ) {
+                                cardUrl = getImageUrl(setElement.override.url, setId, cardId, parallelElement);
+                            }
+
                             cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, slug, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought);
                         });
                     } else {
@@ -94,7 +99,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             collection[setId][cardId].cards[slug] = {status: 0, bought: 0};
                         }
                         
-                        const cardUrl = getImageUrl(url, setId, cardId, parallel);
+                        var cardUrl = getImageUrl(url, setId, cardId, parallel);
+                        // Override in card
+                        if ( 'override' in setElement && cardNumber in setElement.override.cards ) {
+                            cardUrl = getImageUrl(setElement.override.url, setId, cardId, parallel);
+                        }
+                        
                         cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought);
                     }
 
