@@ -4171,12 +4171,6 @@ const sets = [
             "purple": [6,"78-92",102,103,109],
             "white": [7,93,110,112],
         },
-        "override": {
-            "url": "bandaitcgplusURL/setID/e_setID-cardID_D_D.png",
-            "cards": {
-                "BT12-036": ""
-            }
-        },
     },
     // Booster Versus Royal Knights [BT13] - Alternatives --- bt13_alts
     {
@@ -4210,7 +4204,7 @@ const sets = [
         "override": {
             "url": "bandaitcgplusURL/setID/E_setID-cardIDparallel_D.png",
             "cards": {
-                "BT13-033": ["P", "P2"]
+                "BT13-033": [null, "P2"]
             }
         },
     },
