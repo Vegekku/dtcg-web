@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const setOptions = {};
     const setFilterOptions = document.getElementById('setOptions');
 
-    // 1. crear objeto coleccion si no existe. Si existe, obtener de storage.
+    // 1. crear objeto collection y cardmarket si no existe. Si existe, obtener de storage.
     collection = JSON.parse( window.localStorage.getItem("collection") || '{}' );
     cardmarket = JSON.parse( window.localStorage.getItem("cardmarket") || '{}' );
 
@@ -47,8 +47,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     };
 
     const getImageTag = (url, title, id, set, status = 0, bought = 0) => {
-        const cardmarketUrl = cardmarket[id]?.url || '';
-        const cardmarketPrice = cardmarket[id]?.price.slice(-1)[0] || '';
+        const [cardNumber, slug] = id.split('__');
+        const [setId, cardId] = cardNumber.split('-');
+        let cardmarketUrl = '';
+        let cardmarketPrice = '';
+
+        if ( setId in cardmarket && cardId in cardmarket[setId] && slug in cardmarket[setId][cardId] ) {
+            console.log(cardmarket[setId][cardId][slug]);
+            cardmarketUrl = cardmarket[setId][cardId][slug]?.url || '';
+            cardmarketPrice = cardmarket[setId][cardId][slug]?.price.slice(-1)[0] || '';
+        }
 
         return `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-set="${set}" data-status="${status}" data-bought="${bought}" data-cardmarketurl="${cardmarketUrl}" data-cardmarketprice="${cardmarketPrice}" onclick="modalOpen(this)">`;
     }
