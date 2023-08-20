@@ -44,11 +44,11 @@ const modalOpen = (element) => {
         const cardPrice = document.getElementById('card-price');
         const cardMinimum = document.getElementById('card-minimum');
         const cardmarketLink = document.getElementById('cardmarketLink');
-        const status = ['No la tengo', 'Obtenida', 'Comprada', 'Es proxy'];
+        const status = ['Falta', 'Obtenida', 'Comprada', 'Proxy'];
 
         cardmarketLink.removeAttribute('href');
         cardmarketLink.hidden = true;
-        cardMinimum.innerHTML = '';
+        cardMinimum.innerHTML = '?';
         if ( element.dataset.cardmarketurl !== '' ) {
             cardmarketLink.href = element.dataset.cardmarketurl;
             cardmarketLink.hidden = false;
@@ -63,7 +63,7 @@ const modalOpen = (element) => {
             });
         }
 
-        cardStatus.innerHTML = status[element.dataset.status];
+        cardStatus.innerHTML = status[element.dataset.status] || 'Reservada';
         cardPrice.innerHTML = '';
         if ( '2' === element.dataset.status || '3' === element.dataset.status ) {
             const price = parseFloat(element.dataset.bought).toLocaleString('es-ES', {

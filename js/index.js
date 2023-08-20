@@ -53,9 +53,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let cardmarketPrice = '';
 
         if ( setId in cardmarket && cardId in cardmarket[setId] && slug in cardmarket[setId][cardId] ) {
-            console.log(cardmarket[setId][cardId][slug]);
-            cardmarketUrl = cardmarket[setId][cardId][slug]?.url || '';
-            cardmarketPrice = cardmarket[setId][cardId][slug]?.price.slice(-1)[0] || '';
+            cardmarketUrl = cardmarket[setId][cardId][slug].url || '';
+            cardmarketPrice = cardmarket[setId][cardId][slug].price?.slice(-1)[0] || '';
         }
 
         return `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-set="${set}" data-status="${status}" data-bought="${bought}" data-cardmarketurl="${cardmarketUrl}" data-cardmarketprice="${cardmarketPrice}" onclick="modalOpen(this)">`;
