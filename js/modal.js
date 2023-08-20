@@ -32,13 +32,13 @@ const modalOpen = (element) => {
 
         if ( parseInt(element.dataset.status) > 1 ) {
             document.getElementById('price').value = element.dataset.bought;
-            toggleEditionInputs('priceConfirm');
+            document.getElementById('priceConfirm').hidden = false;
         } else {
             document.getElementById('price').value = '';
-            document.getElementById('cardmarketUrl').value = element.dataset.cardmarketurl || '';
-            document.getElementById('cardmarketPrice').value = element.dataset.cardmarketprice || '';
-            toggleEditionInputs('cardmarket');
+            document.getElementById('priceConfirm').hidden = true;
         }
+        document.getElementById('cardmarketUrl').value = element.dataset.cardmarketurl || '';
+        document.getElementById('cardmarketPrice').value = element.dataset.cardmarketprice || '';
     } else {
         const cardStatus = document.getElementById('card-status');
         const cardPrice = document.getElementById('card-price');
@@ -84,7 +84,7 @@ const modalClose = (element) => {
 };
 
 const modalOk = () => {
-    const modal = document.getElementById('editModal');
+    const editModal = document.getElementById('editModal');
     const status = parseInt(document.querySelector('input[name="status"]:checked').value);
     const price = parseFloat(document.getElementById('price').value || 0);
     const cardId = document.getElementById('cardId').value;
@@ -103,14 +103,16 @@ const modalOk = () => {
         document.getElementById(cardId).setAttribute('data-bought', 0);
     }
 
-    if ( status === 0 ) {
-        const cardmarketUrl = document.getElementById('cardmarketUrl').value || '';
-        const cardmarketPrice = parseFloat( document.getElementById('cardmarketPrice').value || 0 );
+    const cardmarketUrl = document.getElementById('cardmarketUrl').value || '';
+    const cardmarketPrice = parseFloat( document.getElementById('cardmarketPrice').value || 0 );
 
-        if ( cardmarketUrl !== '' && cardmarketPrice !== 0 ) {
+    if ( cardmarketUrl !== '' || cardmarketPrice !== 0 ) {
+        if ( cardmarketUrl !== '' ) {
             (cardmarket[cardId] ??= {}).url = cardmarketUrl;
-
-            (cardmarket[cardId].price ??= []);
+            document.getElementById(cardId).setAttribute('data-cardmarketUrl', cardmarketUrl);
+        }
+        if ( cardmarketPrice !== 0 ) {
+            (cardmarket[cardId] ??= {}).price ??= [];
             if (cardmarket[cardId].price.length > 0) {
                 const lastCardmarketPrice = cardmarket[cardId].price.slice(-1)[0];
                 if (lastCardmarketPrice !== cardmarketPrice) {
@@ -119,13 +121,11 @@ const modalOk = () => {
             } else {
                 cardmarket[cardId].price.push(cardmarketPrice);
             }
-
-            document.getElementById(cardId).setAttribute('data-cardmarketUrl', cardmarketUrl);
             document.getElementById(cardId).setAttribute('data-cardmarketPrice', cardmarketPrice);
         }
     }
 
-    modal.classList.remove('open');
+    editModal.classList.remove('open');
 };
 
 const toggleSetButtons = (disabled) => {
@@ -180,11 +180,6 @@ const selectValue = () => {
 }
 
 const priceConfirm = () => {
-    toggleEditionInputs('priceConfirm');
+    document.getElementById('priceConfirm').hidden = false;
     document.getElementById('price').select();
-}
-
-const priceCardmarket = () => {
-    toggleEditionInputs('cardmarket');
-    document.getElementById('cardmarketUrl').select();
 }
