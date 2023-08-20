@@ -108,19 +108,21 @@ const modalOk = () => {
 
     if ( cardmarketUrl !== '' || cardmarketPrice !== 0 ) {
         if ( cardmarketUrl !== '' ) {
-            (cardmarket[cardId] ??= {}).url = cardmarketUrl;
+            (((cardmarket[set] ??= {})[id] ??= {})[slug] ??= {}).url = cardmarketUrl;
+
             document.getElementById(cardId).setAttribute('data-cardmarketUrl', cardmarketUrl);
         }
         if ( cardmarketPrice !== 0 ) {
-            (cardmarket[cardId] ??= {}).price ??= [];
-            if (cardmarket[cardId].price.length > 0) {
-                const lastCardmarketPrice = cardmarket[cardId].price.slice(-1)[0];
+            (((cardmarket[set] ??= {})[id] ??= {})[slug] ??= {}).price ??= [];
+            if (cardmarket[set][id][slug].price.length > 0) {
+                const lastCardmarketPrice = cardmarket[set][id][slug].price.slice(-1)[0];
                 if (lastCardmarketPrice !== cardmarketPrice) {
-                    cardmarket[cardId].price.push(cardmarketPrice);
+                    cardmarket[set][id][slug].price.push(cardmarketPrice);
                 }
             } else {
-                cardmarket[cardId].price.push(cardmarketPrice);
+                cardmarket[set][id][slug].price.push(cardmarketPrice);
             }
+
             document.getElementById(cardId).setAttribute('data-cardmarketPrice', cardmarketPrice);
         }
     }
