@@ -3194,7 +3194,7 @@ const sets = [
     // Tamer Party Vol.7 --- tp7
     {
         "id": null,
-        "slug": "tp6",
+        "slug": "tp7",
         "name": "Tamer Party Vol.7",
         "release": "February 2023",
         "url": null,
