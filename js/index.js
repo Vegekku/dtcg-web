@@ -8,6 +8,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const setLists = document.getElementById('setLists');
     const setOptions = {};
     const setFilterOptions = document.getElementById('setOptions');
+    const accordion = document.getElementsByClassName('accordion');
+
+    for( let item of accordion) {
+        item.addEventListener( 'click', ( element ) => {
+            const _this = element.currentTarget;
+            const panel = document.getElementById( _this.dataset.buttons );
+
+            _this.classList.toggle('active');
+            panel.classList.toggle('show');
+        });
+    }
 
     // 1. crear objeto collection y cardmarket si no existe. Si existe, obtener de storage.
     collection = JSON.parse( window.localStorage.getItem("collection") || '{}' );
@@ -66,7 +77,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
             cardmarketPrice = cardmarket[setId][cardId][slug].price?.slice(-1)[0] || '';
         }
 
-        return `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-set="${set}" data-status="${status}" data-bought="${bought}" data-cardmarketurl="${cardmarketUrl}" data-cardmarketprice="${cardmarketPrice}" onclick="modalOpen(this)">`;
+        const imageCard = `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-set="${set}" data-status="${status}" data-bought="${bought}" data-cardmarketurl="${cardmarketUrl}" data-cardmarketprice="${cardmarketPrice}" onclick="modalOpen(this)">`;
+
+        return imageCard;
     }
 
     const drawAlternatives = (setElement) => {
