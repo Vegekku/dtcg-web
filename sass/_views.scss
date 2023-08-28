@@ -23,7 +23,7 @@ td {
     padding: 0;
 }
 
-.set--hidden {
+.set {
     display: none;
 }
 
@@ -39,8 +39,8 @@ td {
     }
 }
 
-[class="view--all"] {
-    .set--hidden {
+.view--all {
+    .set {
         display: block;
     }
 }

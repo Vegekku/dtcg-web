@@ -126,11 +126,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         setButton.value = set.id;
         setButton.innerText = set.id;
         setButton.addEventListener('click', (element, event) => {
-            const tableSet = document.getElementById(element.target.value);
             const currentSet = window.location.hash.substring(1);
 
-            document.getElementById(element.target.value).classList.add('set--current');
             document.getElementById(currentSet).classList.remove('set--current');
+            document.getElementById(element.target.value).classList.add('set--current');
 
             // add set id to URL
             window.location.hash = set.id;
@@ -172,10 +171,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if (setElement.id !== null) {
             const tableSet = document.createElement('table');
             tableSet.id = setElement.id;
-            if (window.location.hash !== `#${setElement.id}`) {
-                tableSet.classList.add('set--hidden');
-            } else {
-                tableSet.classList.add('set--visible','set--current');
+            tableSet.classList.add('set');
+            
+            if (window.location.hash === `#${setElement.id}`) {
+                tableSet.classList.add('set--current');
             }
 
             // 2. si no existe el set, añadirlo a la coleccion.

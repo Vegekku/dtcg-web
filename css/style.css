@@ -379,7 +379,7 @@ td {
   padding: 0;
 }
 
-.set--hidden {
+.set {
   display: none;
 }
 
@@ -393,7 +393,7 @@ td {
   display: none;
 }
 
-[class=view--all] .set--hidden {
+.view--all .set {
   display: block;
 }
 
