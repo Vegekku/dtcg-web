@@ -35,165 +35,130 @@ input:disabled + label {
 [data-color=red] .card_id {
   background-color: var(--red-card);
 }
-
-.card_id--red-blue {
+[data-color=red-blue] .card_id {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--blue-card) 50%);
 }
-
-.card_id--red-yellow {
+[data-color=red-yellow] .card_id {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--yellow-card) 50%);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
-.card_id--red-green {
+[data-color=red-green] .card_id {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--green-card) 50%);
 }
-
-.card_id--red-black {
+[data-color=red-black] .card_id {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--black-card) 50%);
 }
-
-.card_id--red-purple {
+[data-color=red-purple] .card_id {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--purple-card) 50%);
 }
-
-.card_id--red-white {
+[data-color=red-white] .card_id {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--white-card) 50%);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
-.card_id--blue {
+[data-color=blue] .card_id {
   background-color: var(--blue-card);
 }
-
-.card_id--blue-red {
+[data-color=blue-red] .card_id {
   background: linear-gradient(90deg, var(--blue-card) 50%, var(--red-card) 50%);
 }
-
-.card_id--blue-yellow {
+[data-color=blue-yellow] .card_id {
   background: linear-gradient(90deg, var(--blue-card) 50%, var(--yellow-card) 50%);
 }
-
-.card_id--blue-green {
+[data-color=blue-green] .card_id {
   background: linear-gradient(90deg, var(--blue-card) 50%, var(--green-card) 50%);
 }
-
-.card_id--blue-black {
+[data-color=blue-black] .card_id {
   background: linear-gradient(90deg, var(--blue-card) 50%, var(--black-card) 50%);
 }
-
-.card_id--yellow {
+[data-color=yellow] .card_id {
   background-color: var(--yellow-card);
   color: black;
 }
-
-.card_id--yellow-red {
+[data-color=yellow-red] .card_id {
   background: linear-gradient(90deg, var(--yellow-card) 50%, var(--red-card) 50%);
-  color: black;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: black;
 }
-
-.card_id--yellow-blue {
+[data-color=yellow-blue] .card_id {
   background: linear-gradient(90deg, var(--yellow-card) 50%, var(--blue-card) 50%);
-  color: black;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: black;
 }
-
-.card_id--yellow-green {
+[data-color=yellow-green] .card_id {
   background: linear-gradient(90deg, var(--yellow-card) 50%, var(--green-card) 50%);
-  color: black;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: black;
 }
-
-.card_id--yellow-black {
+[data-color=yellow-black] .card_id {
   background: linear-gradient(90deg, var(--yellow-card) 50%, var(--black-card) 50%);
-  color: black;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: black;
 }
-
-.card_id--yellow-purple {
+[data-color=yellow-purple] .card_id {
   background: linear-gradient(90deg, var(--yellow-card) 50%, var(--purple-card) 50%);
-  color: black;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: black;
 }
-
-.card_id--green {
+[data-color=green] .card_id {
   background-color: var(--green-card);
 }
-
-.card_id--green-red {
+[data-color=green-red] .card_id {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--red-card) 50%);
 }
-
-.card_id--green-blue {
+[data-color=green-blue] .card_id {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--blue-card) 50%);
 }
-
-.card_id--green-yellow {
+[data-color=green-yellow] .card_id {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--yellow-card) 50%);
 }
-
-.card_id--green-black {
+[data-color=green-black] .card_id {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--black-card) 50%);
 }
-
-.card_id--green-purple {
+[data-color=green-purple] .card_id {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--purple-card) 50%);
 }
-
-.card_id--black {
+[data-color=black] .card_id {
   background-color: var(--black-card);
 }
-
-.card_id--black-red {
+[data-color=black-red] .card_id {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--red-card) 50%);
 }
-
-.card_id--black-blue {
+[data-color=black-blue] .card_id {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--blue-card) 50%);
 }
-
-.card_id--black-yellow {
+[data-color=black-yellow] .card_id {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--yellow-card) 50%);
 }
-
-.card_id--black-purple {
+[data-color=black-purple] .card_id {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--purple-card) 50%);
 }
-
-.card_id--purple {
+[data-color=purple] .card_id {
   background-color: var(--purple-card);
 }
-
-.card_id--purple-red {
+[data-color=purple-red] .card_id {
   background: linear-gradient(90deg, var(--purple-card) 50%, var(--red-card) 50%);
 }
-
-.card_id--purple-blue {
+[data-color=purple-blue] .card_id {
   background: linear-gradient(90deg, var(--purple-card) 50%, var(--blue-card) 50%);
 }
-
-.card_id--purple-yellow {
+[data-color=purple-yellow] .card_id {
   background: linear-gradient(90deg, var(--purple-card) 50%, var(--yellow-card) 50%);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
-.card_id--purple-green {
+[data-color=purple-green] .card_id {
   background: linear-gradient(90deg, var(--purple-card) 50%, var(--green-card) 50%);
 }
-
-.card_id--purple-black {
+[data-color=purple-black] .card_id {
   background: linear-gradient(90deg, var(--purple-card) 50%, var(--black-card) 50%);
 }
-
-.card_id--white {
+[data-color=white] .card_id {
+  background-color: var(--white-card);
   color: black;
 }
-
-.card_id--white-red {
-  background: linear-gradient(90deg, var(--white-card) 50%, var(--red-card) 50%);
-  color: black;
+[data-color=black-red] .card_id {
+  background: linear-gradient(90deg, var(--black-card) 50%, var(--red-card) 50%);
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: black;
 }
 
 .card_list {
@@ -203,7 +168,6 @@ input:disabled + label {
 .card {
   max-height: 111px;
   cursor: pointer;
-  /* display: block; */
   max-width: 79px;
   -o-object-fit: cover;
      object-fit: cover;

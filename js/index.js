@@ -1,5 +1,6 @@
 let collection = null;
 let cardmarket = null;
+
 document.addEventListener("DOMContentLoaded", function (event) {
     const boosterButtons = document.getElementById('boosterButtons');
     const starterButtons = document.getElementById('starterButtons');
@@ -12,6 +13,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
     collection = JSON.parse( window.localStorage.getItem("collection") || '{}' );
     cardmarket = JSON.parse( window.localStorage.getItem("cardmarket") || '{}' );
 
+    /**
+     * Gets the full URL to image card source.
+     * @param {string} url The card url.
+     * @param {string} setID The set id.
+     * @param {string} cardID The card id.
+     * @param {string} parallel The parallel word for alternative cards mainly.
+     * @returns string
+     */
     const getImageUrl = (url, setID, cardID, parallel = null) => {
         const noCardURL = 'https://assets.cardlist.dev/other/2020_card_backstage_design.jpg';
 
@@ -197,9 +206,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
             const colors = setElement.color ? getCardsColor(setElement.color) : null;
 
             for (let index = 1; index <= setElement.total; index++) {
-                var cardId = String(index).padStart(setElement.add_zero, '0');
-                var row = tBody.insertRow(index - 1);
-                var cardNumber = `${setElement.id}-${cardId}`;
+                const cardId = String(index).padStart(setElement.add_zero, '0');
+                const row = tBody.insertRow(index - 1);
+                const cardNumber = `${setElement.id}-${cardId}`;
                 row.id = cardNumber;
                 row.insertCell(0).innerHTML = cardId;
 
@@ -233,14 +242,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 row.cells[2].className = 'card_list';
 
                 if ( colors !== null ) {
-                    // TODO: Remove class card_id--<color>
-                    if ( typeof colors === 'string' ) {
-                        row.cells[0].className += ` card_id--${colors}`;
-                        row.dataset.color = colors;
-                    } else  {
-                        row.cells[0].className += ` card_id--${colors[index]}`
-                        row.dataset.color = colors[index];
-                    }
+                    row.dataset.color = typeof colors === 'string' ? colors : colors[index];
                 }
             }
 
