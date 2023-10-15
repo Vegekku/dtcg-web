@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     const drawAlternatives = (setElement) => {
-        const {name, url, cards, slug} = setElement;
+        const {name, url, cards, slug, reprint} = setElement;
         if ( url === null ) {
             Object.entries(cards).forEach(card => {
                 const [cardNumber, cardUrl] = card;
@@ -137,6 +137,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought);
                     }
 
+                    if ( reprint ) {
+                        cardRow.cells[1].innerHTML += `<input class="amount-card amount-card--reprint" type="text" data-card-number="${cardNumber}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setId][cardId].reprint || 0}">`;
+                    }
                 }
             });
         }
