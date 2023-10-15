@@ -170,9 +170,17 @@ const saveSet = () => {
 
 const updateValue = (element) => {
     element.setAttribute('value', element.value);
-    element.parentElement.parentElement.dataset.pull = element.value >= 4;
     const [set, id] = element.dataset.cardNumber.split('-');
-    collection[set][id].amount = parseInt(element.value);
+    if ( element.classList.contains('amount-card--reprint') ) {
+        if ( element.value > 0 ) {
+            collection[set][id].reprint = parseInt(element.value);
+        } else {
+            delete collection[set][id].reprint;
+        }
+    } else {
+        element.parentElement.parentElement.dataset.pull = element.value >= 4;
+        collection[set][id].amount = parseInt(element.value);
+    }
 }
 
 const selectValue = () => {
