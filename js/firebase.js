@@ -5,18 +5,25 @@ const sets = [
         "id": "P",
         "name": "Promos",
         "release": null,
-        "total": 114,
+        "total": 130,
         "url": null,
         "add_zero": 3,
         "info_url": null,
         "color": {
-            "red": [1,2,9,10,24,29,35,41,49,50,58,59,62,65,66,72,79,88],
-            "blue": [3,4,7,8,11,12,22,30,36,42,47,48,51,52,61,64,67,73,86,89],
-            "yellow": [5,6,23,28,31,37,43,53,54,68,74,81,84,87],
-            "green": [21,25,32,38,44,"55-57",60,63,69,75,82,83,90],
-            "black": ["13-16",26,33,39,45,70,78],
+            "red": [1,2,9,10,24,29,35,41,49,50,58,59,62,65,66,72,79,88,97,103,119,126],
+            "red-purple": [91,110],
+            "blue": [3,4,7,8,11,12,22,30,36,42,47,48,51,52,61,64,67,73,86,89,98,104,117,124],
+            "blue-green": [92,109],
+            "yellow": [5,6,23,28,31,37,43,53,54,68,74,81,84,87,95,105,120,122,127,129],
+            "yellow-black": [99,111],
+            "green": [21,25,32,38,44,"55-57",60,63,69,75,82,83,90,93,100,106,112,113,118,125],
+            "black": ["13-16",26,33,39,45,70,78,94,107,114,121,128],
             "black-red": [76],
-            "purple": ["17-20",27,34,40,46,71,77,80,85],
+            "black-purple": [101],
+            "purple": ["17-20",27,34,40,46,71,77,80,85,96,108],
+            "purple-red": [102],
+            "purple-black": [115],
+            "white": [116,123,130],
         }
     },
     // Booster New Evolution [BT1]
@@ -4239,7 +4246,6 @@ const sets = [
         }
     },
     // Starter Deck Wolf of Friendship [ST16] --- st16
-    // https://world.digimoncard.com/products/deck/st-16.php
     {
         "id": "ST16",
         "slug": "st16",
@@ -4270,7 +4276,7 @@ const sets = [
     // Official Tournament Pack Vol.10 --- otp10
     {
         "id": null,
-        "slug": "ot10",
+        "slug": "otp10",
         "name": "Official Tournament Pack Vol.10",
         "release": "Mid July - November 2023",
         "url": "digimonFandom/parallel",
@@ -4578,6 +4584,7 @@ const sets = [
             "P-047": "P2",
             "P-048": "P2",
         },
+        "reprint": true,
     },
     // Resurgence Booster [RB01] - English Reprints --- rb1_en_reprints
     {
@@ -4597,6 +4604,7 @@ const sets = [
             "P-089": "",
             "P-090": "",
         },
+        "reprint": true,
     },
 
     // Adventure Box 2 [AB02] --- ab02
@@ -4618,6 +4626,41 @@ const sets = [
     },
 
 // October, 2023
+    // Starter Deck ST15 & ST16 Pre-Release Tournament --- st15st16_prerelease
+    {
+        "id": null,
+        "slug": "st15st16_prerelease",
+        "name": "Starter Deck ST15 & ST16 Pre-Release Tournament",
+        "release": "October 6 – 12, 2023",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "BT9-020": "4/4a/BT9-020_P2",
+            "BT5-087": "5/5d/BT5-087_P4",
+        },
+        "info_url": "https://world.digimoncard.com/event/pre-release_ST15-ST16/",
+    },
+    // Starter Deck Dragon of Courage [ST15] - Alternatives --- st15_alts
+    {
+        "id": null,
+        "slug": "st15_alts",
+        "name": "Starter Deck Dragon of Courage [ST15] - Alternatives",
+        "release": "October, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "ST15-12": "P2",
+        }
+    },
+    // Starter Deck Wolf of Friendship [ST16] - Alternatives --- st16_alts
+    {
+        "id": null,
+        "slug": "st16_alts",
+        "name": "Starter Deck Wolf of Friendship [ST16] - Alternatives",
+        "release": "October, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "ST16-12": "P2",
+        }
+    },
     // 2023 Regionals Participant Set 3 --- regional2023_3_0
     {
         "id": null,
@@ -4724,6 +4767,137 @@ const sets = [
 
     // Booster Blast Ace [BT14] --- bt14
     // https://world.digimoncard.com/products/pack/ver14.php
+
+    // Booster Blast Ace [BT14] --- bt14
+    {
+        "id": "BT14",
+        "slug": "bt14",
+        "name": "Booster Blast Ace [BT14]",
+        "release": "November 17, 2023",
+        "total": 102,
+        "url": "noCardURL",
+        "add_zero": 3,
+        "playmat": "",
+        // "color": {
+        //     "red": [1,"9-11",13,14,16,17,94,111],
+        //     "red-yellow": [8,12,15,18,20,95,104],
+        //     "red-black": [19],
+        //     "blue": [2,"21-31",33,96,97,105],
+        //     "blue-black": [32],
+        //     "yellow": [3,34,"36-38",41,43,44,46,98,99,106],
+        //     "yellow-blue": [40],
+        //     "yellow-black": [35,39,42,45],
+        //     "green": [4,"47-58",60,100,107],
+        //     "green-blue": [59],
+        //     "black": [5,"61-63","65-67",69,71,72,74,75,77,108],
+        //     "black-yellow": [64,"68-70",73,76,101],
+        //     "purple": [6,"78-92",102,103,109],
+        //     "white": [7,93,110,112],
+        // },
+    },
+    // Booster Blast Ace [BT14] - Alternatives --- bt14_alts
+    {
+        "id": null,
+        "slug": "bt14_alts",
+        "name": "Booster Blast Ace [BT14] - Alternatives",
+        "release": "November 17, 2023",
+        "url": "noCardURL",
+        "cards": {
+            // "BT13-007": "P",
+            // "BT13-017": "P",
+            // "BT13-019": "P",
+            // "BT13-020": ["P", "P2"],
+            // "BT13-030": "P",
+            // "BT13-033": ["P", "P2"],
+            // "BT13-040": "P",
+            // "BT13-046": "P",
+            // "BT13-056": "P",
+            // "BT13-058": "P",
+            // "BT13-059": "P",
+            // "BT13-060": ["P", "P2"],
+            // "BT13-075": "P",
+            // "BT13-077": "P",
+            // "BT13-087": "P",
+            // "BT13-090": "P",
+            // "BT13-091": "P",
+            // "BT13-092": ["P", "P2"],
+            // "BT13-111": "P",
+            // "BT13-112": "P",
+        },
+        // "override": {
+        //     "url": "bandaitcgplusURL/setID/E_setID-cardIDparallel_D.png",
+        //     "cards": {
+        //         "BT13-033": [null, "P2"]
+        //     }
+        // },
+    },
+    // Booster Blast Ace [BT14] - Box Topper --- bt14_boxtopper
+    {
+        "id": null,
+        "slug": "bt14_boxtopper",
+        "name": "Booster Blast Ace [BT14] - Box Topper",
+        "release": "November 17, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT14-001": "",
+            "BT14-002": "",
+            "BT14-003": "",
+            "BT14-004": "",
+            "BT14-005": "",
+            "BT14-006": "",
+        },
+    },
+    // Booster Blast Ace [BT14] - English Exclusive Box Topper --- bt14_en_boxtopper
+    {
+        "id": null,
+        "slug": "bt14_en_boxtopper",
+        "name": "Booster Blast Ace [BT14] - English Exclusive Box Topper",
+        "release": "November 17, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "P-103": "",
+            "P-104": "",
+            "P-105": "",
+            "P-106": "",
+            "P-107": "",
+            "P-108": "",
+        },
+    },
+
+// Mid November - February 2024
+    // Official Tournament Pack Vol.11 --- otp11
+    {
+        "id": null,
+        "slug": "otp11",
+        "name": "Official Tournament Pack Vol.11",
+        "release": "Mid November - February 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT7-032": "",
+            "BT7-033": "",
+            "BT8-013": "",
+            "BT12-059": "",
+            "BT12-062": "",
+            "P-065": "",
+            "P-116": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_tournament_11/"
+    },
+    // Winner Pack Blast Ace --- wp11
+    {
+        "id": null,
+        "slug": "wp11",
+        "name": "Winner Pack -Blast Ace-",
+        "release": "Mid November - February 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT5-061": "",
+            "BT11-043": "",
+            "P-042": "",
+            "P-075": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_tournament_11/"
+    },
 
 // February, 2024
     // Premium Binder Set
