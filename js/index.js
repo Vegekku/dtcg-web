@@ -15,8 +15,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
             const _this = element.currentTarget;
             const panel = document.getElementById( _this.dataset.buttons );
 
-            document.querySelector('.accordion.active')?.classList.remove('active');
-            document.querySelector('.panel.show')?.classList.remove('show');
+            if ( ! _this.classList.contains('active') ) {
+                document.querySelector('.accordion.active')?.classList.remove('active');
+                document.querySelector('.panel.show')?.classList.remove('show');
+            }
 
             _this.classList.toggle('active');
             panel.classList.toggle('show');
