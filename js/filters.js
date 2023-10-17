@@ -1,3 +1,13 @@
+var datalistNavigation = {
+    'prev': null,
+    'next': null,
+};
+
+const toggleSetNavigation = () => {
+    document.getElementById('previusSet').disabled = datalistNavigation.prev === null;
+    document.getElementById('nextSet').disabled = datalistNavigation.next === null;
+}
+
 const filterCards = () => {
     const filters = {
         "status": document.getElementById('status').value,
@@ -113,15 +123,36 @@ const filterCards = () => {
 const searchSet = (element) => {
     if (element.value !== '') {
         const datalist = element.list;
-        const result = Object.entries(datalist.options).filter(([key, option]) => option.value === element.value).map(result => result[1].dataset.value)[0];
-        if (result !== undefined) {
+        const resultData = Object.entries(datalist.options).filter(([key, option]) => option.value === element.value);
+
+        if ( resultData.length > 0 ) {
+            const datalistIndex = parseInt(resultData[0][0]);
+            const result = resultData.map(result => result[1].dataset.value)[0];
+
             document.getElementById('setValue').value = result;
+            datalistNavigation.prev = datalistIndex !== 0 ? datalistIndex - 1 : null;
+            datalistNavigation.next = datalistIndex + 1 !== datalist.options.length ? datalistIndex + 1 : null;
         } else {
             element.value = '';
             document.getElementById('setValue').value = '';
+            datalistNavigation.prev = null;
+            datalistNavigation.next = null;
         }
     } else {
         document.getElementById('setValue').value = '';
+        datalistNavigation.prev = null;
+        datalistNavigation.next = null;
     }
     filterCards();
+    toggleSetNavigation();
+}
+
+const previusSet = () => {
+    document.getElementById('set').value = document.getElementById('setOptions').options[datalistNavigation.prev].value;
+    document.getElementById('set').dispatchEvent(new Event("change"));
+}
+
+const nextSet = () => {
+    document.getElementById('set').value = document.getElementById('setOptions').options[datalistNavigation.next].value;
+    document.getElementById('set').dispatchEvent(new Event("change"));
 }

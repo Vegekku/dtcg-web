@@ -50,10 +50,11 @@
                 <option value="white">Blanco</option>
             </select>
 
-            <label for="set">Set</label>
+            <button id="previusSet" onclick="previusSet()" disabled title="Set anterior"><</button>
             <input type="hidden" name="setValue" id="setValue" value="">
-            <input list="setOptions" id="set" name="set" autocomplete="off" onchange="searchSet(this)">
+            <input list="setOptions" id="set" name="set" autocomplete="off" onchange="searchSet(this)" placeholder="Buscar set">
             <datalist id="setOptions"></datalist>
+            <button id="nextSet" onclick="nextSet()" disabled title="Set posterior">></button>
         </div>
         <div class="views">
             <label for="list">Listar como</label>
