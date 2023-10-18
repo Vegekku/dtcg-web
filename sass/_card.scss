@@ -61,7 +61,7 @@
     @include card-color('black');
     @include card-color('black', 'red');
     @include card-color('black', 'blue');
-    @include card-color('black', 'yellow');
+    @include card-color('black', 'yellow', 'black');
     @include card-color('black', 'purple');
 
     // Purple cards
