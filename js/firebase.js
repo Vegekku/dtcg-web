@@ -4736,6 +4736,20 @@ const sets = [
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/89/Judge_Pack_3.png"
     },
 
+// November 10 - 16, 2023
+    // Booster Blast Ace (BT14) Pre-Release Tournaments --- bt14_prerelease
+    {
+        "id": null,
+        "slug": "bt14_prerelease",
+        "name": "Booster Blast Ace (BT14) Pre-Release Tournaments",
+        "release": "November 10 - 16, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "P-031": "",
+            "BT9-012": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-14/"
+    },
 // November, 2023
     // Tamer Party -THE BEGINNING- ver.1.0 --- tp_beginning
     {
@@ -4762,8 +4776,38 @@ const sets = [
     },
 
     // Double Pack Set [DP-01] --- dp01
+    {
+        "id": null,
+        "slug": "dp01",
+        "name": "Double Pack Set [DP-01]",
+        "release": "November 17, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT1-060": "",
+            "BT8-079": "",
+            "BT8-110": "",
+            "EX1-004": "",
+            "EX1-052": "",
+            "EX1-072": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/double_pack-set.php"
+    },
 
     // Gift Box 2023 [GB03] --- gb03
+    {
+        "id": null,
+        "slug": "gb03",
+        "name": "Gift Box 2023 [GB03]",
+        "release": "November 17, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT3-039": "",
+            "BT3-088": "",
+            "ST15-11": "",
+            "ST16-11": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/gift_box_2023.php"
+    },
 
     // Booster Blast Ace [BT14] --- bt14
     // https://world.digimoncard.com/products/pack/ver14.php
@@ -4895,6 +4939,23 @@ const sets = [
             "P-075": "",
         },
         "info_url": "https://world.digimoncard.com/event/store_tournament_11/"
+    },
+
+// December 1, 2023 – January 31, 2024
+    // Winter Holiday Event --- whe
+    {
+        "id": null,
+        "slug": "whe",
+        "name": "Winter Holiday Event",
+        "release": "December 1, 2023 – January 31, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "ST3-04": "",
+            "EX1-033": "",
+            "ST16-03": "",
+            "ST15-02": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/winter_holiday_event/"
     },
 
 // February, 2024
