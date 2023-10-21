@@ -4843,35 +4843,43 @@ const sets = [
         "slug": "bt14_alts",
         "name": "Booster Blast Ace [BT14] - Alternatives",
         "release": "November 17, 2023",
-        "url": "noCardURL",
+        "url": "bandaitcgplusjpURL/setID/setID-cardIDparallel.png",
         "cards": {
-            // "BT13-007": "P",
-            // "BT13-017": "P",
-            // "BT13-019": "P",
-            // "BT13-020": ["P", "P2"],
-            // "BT13-030": "P",
-            // "BT13-033": ["P", "P2"],
-            // "BT13-040": "P",
-            // "BT13-046": "P",
-            // "BT13-056": "P",
-            // "BT13-058": "P",
-            // "BT13-059": "P",
-            // "BT13-060": ["P", "P2"],
-            // "BT13-075": "P",
-            // "BT13-077": "P",
-            // "BT13-087": "P",
-            // "BT13-090": "P",
-            // "BT13-091": "P",
-            // "BT13-092": ["P", "P2"],
-            // "BT13-111": "P",
-            // "BT13-112": "P",
+            "BT14-007": "P",
+            "BT14-014": "P",
+            "BT14-020": "P",
+            "BT14-026": "P",
+            "BT14-033": "P",
+            "BT14-037": "P",
+            "BT14-044": "P",
+            "BT14-049": "P",
+            "BT14-056": "P",
+            "BT14-068": "P",
+            "BT14-071": "P",
+            "BT14-081": "P",
+            "BT14-082": "P",
+            "BT14-083": "P",
+            "BT14-084": "P",
+            "BT14-085": "P",
+            "BT14-086": "P",
+            "BT14-087": "P",
+            "BT14-101": "P",
+            "BT14-102": "P",
         },
-        // "override": {
-        //     "url": "bandaitcgplusURL/setID/E_setID-cardIDparallel_D.png",
-        //     "cards": {
-        //         "BT13-033": [null, "P2"]
-        //     }
-        // },
+    },
+    // Booster Blast Ace [BT14] - English Alternatives --- bt14_en_alts
+    {
+        "id": null,
+        "slug": "bt14_en_alts",
+        "name": "Booster Blast Ace [BT14] - English Alternatives",
+        "release": "November 17, 2023",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "BT14-014": "4/4b/BT14-014_P2",
+            "BT14-026": "0/0f/BT14-026_P2",
+            "BT14-037": "c/ce/BT14-037_P2",
+            "BT14-049": "1/19/BT14-049_P2",
+        },
     },
     // Booster Blast Ace [BT14] - Box Topper --- bt14_boxtopper
     {
@@ -4957,6 +4965,21 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/winter_holiday_event/"
     },
+
+    // {
+    //     "id": null,
+    //     "slug": "test",
+    //     "name": "Test Event",
+    //     "release": "December 1, 2023 – January 31, 2024",
+    //     "url": "noCardURL",
+    //     "cards": {
+    //         "ST3-04": "",
+    //         "EX1-033": "",
+    //         "ST16-03": "",
+    //         "ST15-02": "",
+    //     },
+    //     "info_url": "https://world.digimoncard.com/event/winter_holiday_event/"
+    // },
 
 // February, 2024
     // Premium Binder Set
