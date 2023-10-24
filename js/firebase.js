@@ -4238,7 +4238,7 @@ const sets = [
         "name": "Starter Deck Dragon of Courage [ST-15]",
         "release": "October, 2023",
         "total": 16,
-        "url": "digimoncardURL/setID-cardID.png",
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-15.php",
         "color": {
@@ -4252,7 +4252,7 @@ const sets = [
         "name": "Starter Deck Wolf of Friendship [ST-16]",
         "release": "October, 2023",
         "total": 16,
-        "url": "digimoncardURL/setID-cardID.png",
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-16.php",
         "color": {
@@ -4357,6 +4357,18 @@ const sets = [
     },
 
 // July-September, 2023
+    // Bandai Card Games Official Guide --- bandai_cgo_guide
+    {
+        "id": null,
+        "slug": "bandai_cgo_guide",
+        "name": "Bandai Card Games Official Guide",
+        "release": "3 August, 2023",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "BT12-021": "c/c4/BT12-021_P1",
+        },
+    },
+
     // 2023 Regionals Participant Set 2 --- regional2023_2_0
     {
         "id": null,
