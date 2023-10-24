@@ -5,10 +5,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const boosterButtons = document.getElementById('boosterButtons');
     const starterButtons = document.getElementById('starterButtons');
     const otherButtons = document.getElementById('otherButtons');
+    // const productButtons = document.getElementById('productButtons');
     const setLists = document.getElementById('setLists');
     const setOptions = {};
     const setFilterOptions = document.getElementById('setOptions');
     const accordion = document.getElementsByClassName('accordion');
+
+    const packs = document.getElementById('packs');
 
     for( let item of accordion) {
         item.addEventListener( 'click', ( element ) => {
@@ -280,6 +283,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         if (setElement.slug) {
             setOptions[setElement.slug] = setElement.name;
+        }
+
+        if (setElement.pack) {
+            if ( Array.isArray( setElement.pack )) {
+                setElement.pack.forEach(pack => {
+                    const imagePack = document.createElement('img');
+                    imagePack.src = pack;
+                    imagePack.alt = setElement.name;
+                    imagePack.title = setElement.name;
+                    packs.appendChild(imagePack);
+                });
+            } else {
+                const imagePack = document.createElement('img');
+                imagePack.src = setElement.pack;
+                imagePack.alt = setElement.name;
+                imagePack.title = setElement.name;
+                packs.appendChild(imagePack);
+            }
         }
     });
 
