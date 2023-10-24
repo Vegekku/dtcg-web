@@ -584,3 +584,12 @@ td {
 #card-minimum {
   font-weight: 700;
 }
+
+#packs {
+  display: flex;
+  flex-wrap: wrap;
+}
+#packs img {
+  width: 180px;
+  height: auto;
+}
