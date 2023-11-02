@@ -4913,6 +4913,7 @@ const sets = [
             "BT14-026": "0/0f/BT14-026_P2",
             "BT14-037": "c/ce/BT14-037_P2",
             "BT14-049": "1/19/BT14-049_P2",
+            // "BT8-112": "",
         },
     },
     // Booster Blast Ace [BT14] - Box Topper --- bt14_boxtopper
@@ -4937,14 +4938,14 @@ const sets = [
         "slug": "bt14_en_boxtopper",
         "name": "Booster Blast Ace [BT14] - English Exclusive Box Topper",
         "release": "November 17, 2023",
-        "url": "noCardURL",
+        "url": "digimonFandom/parallel.png",
         "cards": {
-            "P-103": "",
-            "P-104": "",
-            "P-105": "",
-            "P-106": "",
-            "P-107": "",
-            "P-108": "",
+            "P-103": "0/0f/P-103",
+            "P-104": "e/eb/P-104",
+            "P-105": "9/9a/P-105",
+            "P-106": "d/d9/P-106",
+            "P-107": "0/0a/P-107",
+            "P-108": "5/51/P-108",
         },
     },
 
@@ -5002,6 +5003,43 @@ const sets = [
         "info_url": "https://world.digimoncard.com/event/winter_holiday_event/"
     },
 
+    // 2023 Championship Finals Tamers Pack --- tamerpack_2023
+    {
+        "id": null,
+        "slug": "whe",
+        "name": "2023 Championship Finals Tamers Pack",
+        "release": "December 2 - 3, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT10-048": "",
+            "BT11-012": "",
+            "BT11-027": "",
+            "BT12-012": "",
+            "BT12-038": "",
+            "BT13-110": "",
+            "BT14-060": "",
+            "BT14-074": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2023/"
+    },
+    // 2023 Championship Finals Gold Card Set --- goldcardset_2023
+    {
+        "id": null,
+        "slug": "whe",
+        "name": "2023 Championship Finals Gold Card Set",
+        "release": "December 2 - 3, 2023",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "P-066": "3/3e/P-066_P2",
+            "P-067": "5/55/P-067_P2",
+            "P-068": "a/a7/P-068_P2",
+            "P-069": "e/e4/P-069_P2",
+            "P-070": "4/48/P-070_P2",
+            "P-071": "3/3c/P-071_P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2023/"
+    },
+
     // {
     //     "id": null,
     //     "slug": "test",
@@ -5018,34 +5056,62 @@ const sets = [
     // },
 
 // February, 2024
-    // Premium Binder Set
-    // {
-    //     "id": null,
-    //     // "slug": "",
-    //     "name": "Premium Binder Set",
-    //     "release": "February, 2024",
-    //     "url": "digimonFandom/parallel",
-    //     "cards": {
-    //         // "BT6-112": "4/4f/BT6-112_P2.png",
-    //         // "BT7-111": "1/16/BT7-111_P2.png",
-    //         // "BT12-085": "a/ab/BT12-085_P2.png",
-    //         // "EX2-044": "5/5d/EX2-044_P4.png",
-    //     },
-    //     // "info_url": "https://world.digimoncard.com/products/goods/premium_binderset.php"
-    // },
+    // Premium Binder Set --- premium_binder_set
+    {
+        "id": null,
+        "slug": "premium_binder_set",
+        "name": "Premium Binder Set",
+        "release": "February, 2024",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "BT6-112": "4/4f/BT6-112_P2",
+            "BT7-111": "1/16/BT7-111_P2",
+            "BT12-085": "a/ab/BT12-085_P2",
+            "EX2-044": "5/5d/EX2-044_P4",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/premium_binderset.php"
+    },
 
     // Tamer Goods Set Diaboromon [PB16] --- pb16
-    // {
-    //     "id": null,
-    //     "slug": "pb16",
-    //     "name": "Tamer Goods Set Diaboromon [PB16]",
-    //     "release": "February, 2024",
-    //     "url": "digimonFandom/parallel",
-    //     "cards": {
-    //         // "BT2-082": "7/71/BT2-Diaboromon_Token_P2.png",
-    //         "BT5-085": "b/bf/BT5-085_P2.png",
-    //         "P-114": "0/02/P-114_P1.png",
-    //     },
-    //     "info_url": "https://world.digimoncard.com/products/goods/tamer-goods-set_PB16.php"
-    // },
+    {
+        "id": null,
+        "slug": "pb16",
+        "name": "Tamer Goods Set Diaboromon [PB16]",
+        "release": "February, 2024",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "BT2-082": "7/71/BT2-Diaboromon_Token_P2",
+            "BT5-085": "b/bf/BT5-085_P2",
+            "P-114": "0/02/P-114_P1",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/tamer-goods-set_PB16.php"
+    },
+
+// June, 2024
+    // "Digimon Adventure 02: The Beginning" Set [PB17] --- pb17
+    {
+        "id": null,
+        "slug": "pb17",
+        "name": "\"Digimon Adventure 02: The Beginning\" Set [PB17]",
+        "release": "June, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "P-109": "",
+            "P-117": "",
+            "P-118": "",
+            "P-119": "",
+            "P-120": "",
+            "P-121": "",
+            "P-122": "",
+            "P-123": "",
+            "P-124": "",
+            "P-125": "",
+            "P-126": "",
+            "P-127": "",
+            "P-128": "",
+            "P-129": "",
+            "P-130": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/the_beginning_set.php"
+    },
 ];
