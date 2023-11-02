@@ -3507,7 +3507,13 @@ const sets = [
             "BT7-080": "P3",
             "BT7-081": "P4",
         },
-        "info_url": "https://world.digimoncard.com/products/goods/2nd-anniversary-set.php"
+        "info_url": "https://world.digimoncard.com/products/goods/2nd-anniversary-set.php",
+        "override": {
+            "url": "digimonCardDev/setID-cardID_bbb89fen-US.jpg",
+            "cards": {
+                "BT3-105": "bbb89f"
+            }
+        },
     },
 
 // March 11,12,18, 2023
@@ -4494,7 +4500,7 @@ const sets = [
         "release": "September 29, 2023",
         "url": "bandaitcgplusURL/RB01/e_setID_cardIDparallel.png",
         "cards": {
-            "RB1-010": ["P", "P"],
+            "RB1-010": ["P", "P2"],
             "RB1-016": "P",
             "RB1-019": "P",
             "RB1-025": "P",
