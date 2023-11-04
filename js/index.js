@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // 1. crear objeto collection y cardmarket si no existe. Si existe, obtener de storage.
     collection = JSON.parse( window.localStorage.getItem("collection") || '{}' );
+    (collection.products ??= {}).packs ??= {};
     cardmarket = JSON.parse( window.localStorage.getItem("cardmarket") || '{}' );
 
     /**
@@ -306,10 +307,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if (setElement.pack) {
             if ( Array.isArray( setElement.pack )) {
                 setElement.pack.forEach( ( pack, index ) => {
-                    packs.appendChild( getImagePack( pack, setElement.name, `${setElement.slug}__pack_${index}` ) );
+                    collection.products.packs[`${setElement.slug}_${index}`] ??= {status: 0, bought: 0};
+                    packs.appendChild( getImagePack( pack, setElement.name, `${setElement.slug}_${index}__pack`, collection.products.packs[`${setElement.slug}_${index}`].status, collection.products.packs[`${setElement.slug}_${index}`].bought ) );
                 });
             } else {
-                packs.appendChild( getImagePack( setElement.pack, setElement.name, `${setElement.slug}__pack` ) );
+                collection.products.packs[setElement.slug] ??= {status: 0, bought: 0};
+                packs.appendChild( getImagePack( setElement.pack, setElement.name, `${setElement.slug}__pack`, collection.products.packs[setElement.slug].status, collection.products.packs[setElement.slug].bought ) );
             }
         }
     });
