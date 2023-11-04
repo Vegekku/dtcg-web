@@ -7,3 +7,12 @@
         height: auto;
     }
 }
+
+#products {
+    .active {
+        display: block;
+    }
+    > :not(.active) {
+        display: none;
+    }
+}
