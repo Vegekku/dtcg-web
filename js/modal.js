@@ -1,4 +1,5 @@
 let editingSet = false;
+let typeEdit = 'card';
 
 const toggleEditionInputs = (inputs) => {
     document.getElementById('priceConfirm').hidden = 'cardmarket' === inputs;
@@ -9,8 +10,9 @@ const modalOpen = (element) => {
     const modal = editingSet ? document.getElementById('editModal') : document.getElementById('viewModal');
     const modalTitle = modal.querySelector('.modal-title');
     const [cardNumber, slug] = element.id.split('__');
+    typeEdit = element.dataset.type;
 
-    modalTitle.innerHTML = `${cardNumber}: ${element.title}`;
+    modalTitle.innerHTML = 'card' === typeEdit ? `${cardNumber}: ${element.title}` : element.title;
 
     const modalCards = document.querySelectorAll('.modal-card');
     modalCards.forEach( modalCard => {
@@ -89,19 +91,21 @@ const modalOk = () => {
     const price = parseFloat(document.getElementById('price').value || 0);
     const cardId = document.getElementById('cardId').value;
 
-    const [cardNumber, slug] = cardId.split('__');
-    const [set, id] = cardNumber.split('-');
+    if ( 'card' === typeEdit ) {
+        const [cardNumber, slug] = cardId.split('__');
+        const [set, id] = cardNumber.split('-');
 
-    collection[set][id].cards[slug].status = status;
-    document.getElementById(cardId).setAttribute('data-status', status);
-
-    if ( status > 1 ) {
-        collection[set][id].cards[slug].bought = price;
-        document.getElementById(cardId).setAttribute('data-bought', price);
+        collection[set][id].cards[slug].status = status;
+        collection[set][id].cards[slug].bought = status > 1 ? price : 0;
     } else {
-        collection[set][id].cards[slug].bought = 0;
-        document.getElementById(cardId).setAttribute('data-bought', 0);
+        const [slug, pack] = cardId.split('__');
+
+        collection.products.packs[slug].status = status;
+        collection.products.packs[slug].bought = status > 1 ? price : 0;
     }
+
+    document.getElementById(cardId).setAttribute('data-status', status);
+    document.getElementById(cardId).setAttribute('data-bought', status > 1 ? price : 0);
 
     const cardmarketUrl = document.getElementById('cardmarketUrl').value || '';
     const cardmarketPrice = parseFloat( document.getElementById('cardmarketPrice').value || 0 );
