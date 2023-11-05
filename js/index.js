@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     collection = JSON.parse( window.localStorage.getItem("collection") || '{}' );
     (collection.products ??= {}).packs ??= {};
     cardmarket = JSON.parse( window.localStorage.getItem("cardmarket") || '{}' );
+    (cardmarket.products ??= {}).packs ??= {};
 
     /**
      * Gets the full URL to image card source.
@@ -96,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let cardmarketUrl = '';
         let cardmarketPrice = '';
 
+        // TODO Hacer lo mismo pero con collection
         if ( setId in cardmarket && cardId in cardmarket[setId] && slug in cardmarket[setId][cardId] ) {
             cardmarketUrl = cardmarket[setId][cardId][slug].url || '';
             cardmarketPrice = cardmarket[setId][cardId][slug].price?.slice(-1)[0] || '';
@@ -107,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     const getImagePack = ( src, name, id, status = 0, bought = 0 ) => {
+        const [slug, pack] = id.split('__');
         const imagePack = document.createElement('img');
         imagePack.src = src;
         imagePack.alt = name;
@@ -114,10 +117,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         imagePack.id = id;
         imagePack.loading = 'lazy';
         imagePack.dataset.type = 'pack';
-        imagePack.dataset.status = status;
-        imagePack.dataset.bought = bought;
-        imagePack.dataset.cardmarketurl = '';
-        imagePack.dataset.cardmarketprice = '';
+        imagePack.dataset.status = collection.products.packs[slug].status;
+        imagePack.dataset.bought = collection.products.packs[slug].bought;
+        imagePack.dataset.cardmarketurl = cardmarket.products.packs?.[slug]?.url || '';
+        imagePack.dataset.cardmarketprice = cardmarket.products.packs?.[slug]?.price?.slice(-1)[0] || '';
         imagePack.onclick = () => { modalOpen(imagePack) };
         
         return imagePack;

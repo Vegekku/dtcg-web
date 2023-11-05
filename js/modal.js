@@ -93,13 +93,13 @@ const modalOk = () => {
     const cardId = document.getElementById('cardId').value;
 
     if ( 'card' === typeEdit ) {
-        const [cardNumber, slug] = cardId.split('__');
-        const [set, id] = cardNumber.split('-');
+        var [cardNumber, slug] = cardId.split('__');
+        var [set, id] = cardNumber.split('-');
 
         collection[set][id].cards[slug].status = status;
         collection[set][id].cards[slug].bought = status > 1 ? price : 0;
     } else {
-        const [slug, pack] = cardId.split('__');
+        var [slug, pack] = cardId.split('__');
 
         collection.products.packs[slug].status = status;
         collection.products.packs[slug].bought = status > 1 ? price : 0;
@@ -113,19 +113,38 @@ const modalOk = () => {
 
     if ( cardmarketUrl !== '' || cardmarketPrice !== 0 ) {
         if ( cardmarketUrl !== '' ) {
-            (((cardmarket[set] ??= {})[id] ??= {})[slug] ??= {}).url = cardmarketUrl;
+            if ( 'card' === typeEdit ) {
+                (((cardmarket[set] ??= {})[id] ??= {})[slug] ??= {}).url = cardmarketUrl;
+            } else {
+                (cardmarket.products.packs[slug] ??= {}).url = cardmarketUrl;
+            }
 
             document.getElementById(cardId).setAttribute('data-cardmarketUrl', cardmarketUrl);
         }
         if ( cardmarketPrice !== 0 ) {
-            (((cardmarket[set] ??= {})[id] ??= {})[slug] ??= {}).price ??= [];
-            if (cardmarket[set][id][slug].price.length > 0) {
-                const lastCardmarketPrice = cardmarket[set][id][slug].price.slice(-1)[0];
-                if (lastCardmarketPrice !== cardmarketPrice) {
+            if ( 'card' === typeEdit ) {
+                (((cardmarket[set] ??= {})[id] ??= {})[slug] ??= {}).price ??= [];
+
+                if (cardmarket[set][id][slug].price.length > 0) {
+                    const lastCardmarketPrice = cardmarket[set][id][slug].price.slice(-1)[0];
+                    if (lastCardmarketPrice !== cardmarketPrice) {
+                        cardmarket[set][id][slug].price.push(cardmarketPrice);
+                    }
+                } else {
                     cardmarket[set][id][slug].price.push(cardmarketPrice);
                 }
+
             } else {
-                cardmarket[set][id][slug].price.push(cardmarketPrice);
+                (cardmarket.products.packs[slug] ??= {}).price ??= [];
+
+                if (cardmarket.products.packs[slug].price.length > 0) {
+                    const lastCardmarketPrice = cardmarket.products.packs[slug].price.slice(-1)[0];
+                    if (lastCardmarketPrice !== cardmarketPrice) {
+                        cardmarket.products.packs[slug].price.push(cardmarketPrice);
+                    }
+                } else {
+                    cardmarket.products.packs[slug].price.push(cardmarketPrice);
+                }
             }
 
             document.getElementById(cardId).setAttribute('data-cardmarketPrice', cardmarketPrice);
