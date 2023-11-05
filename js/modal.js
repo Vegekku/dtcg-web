@@ -18,6 +18,7 @@ const modalOpen = (element) => {
     modalCards.forEach( modalCard => {
         modalCard.src = element.src;
         modalCard.alt = element.alt;
+        modalCard.dataset.type = element.dataset.type;
     });
 
     if ( editingSet ) {

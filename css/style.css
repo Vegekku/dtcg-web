@@ -452,6 +452,12 @@ td {
 #editModal .modal-card {
   width: 50%;
 }
+.modal-card[data-type=pack] {
+  width: 350px;
+  border-radius: 0;
+  -webkit-mask: conic-gradient(from -45deg at bottom, rgba(0, 0, 0, 0), #000 1deg 89deg, rgba(0, 0, 0, 0) 90deg) bottom/8px 51% repeat-x, conic-gradient(from 135deg at top, rgba(0, 0, 0, 0), #000 1deg 89deg, rgba(0, 0, 0, 0) 90deg) top/8px 51% repeat-x;
+          mask: conic-gradient(from -45deg at bottom, rgba(0, 0, 0, 0), #000 1deg 89deg, rgba(0, 0, 0, 0) 90deg) bottom/8px 51% repeat-x, conic-gradient(from 135deg at top, rgba(0, 0, 0, 0), #000 1deg 89deg, rgba(0, 0, 0, 0) 90deg) top/8px 51% repeat-x;
+}
 .modal-ok {
   width: 100%;
   font-size: 2em;
