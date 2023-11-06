@@ -5,6 +5,27 @@
     img {
         width: 180px;
         height: auto;
+
+        &[data-status="-1"] {
+            filter: blur(1px);
+        }
+        &[data-status="1"] {
+            padding-right: 7px;
+            background-color: var(--correct-card);
+        }
+        &[data-status="2"] {
+            padding-right: 7px;
+            background-color: var(--bought-card);
+        }
+        &[data-status="3"] {
+            padding-right: 7px;
+            background-color: var(--proxy-card);
+        }
+        &[data-status="2"][data-bought="0"],
+        &[data-status="3"][data-bought="0"] {
+            padding-right: 7px;
+            background-color: var(--revision-card);
+        }
     }
 }
 

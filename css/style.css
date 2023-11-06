@@ -599,6 +599,25 @@ td {
   width: 180px;
   height: auto;
 }
+#packs img[data-status="-1"] {
+  filter: blur(1px);
+}
+#packs img[data-status="1"] {
+  padding-right: 7px;
+  background-color: var(--correct-card);
+}
+#packs img[data-status="2"] {
+  padding-right: 7px;
+  background-color: var(--bought-card);
+}
+#packs img[data-status="3"] {
+  padding-right: 7px;
+  background-color: var(--proxy-card);
+}
+#packs img[data-status="2"][data-bought="0"], #packs img[data-status="3"][data-bought="0"] {
+  padding-right: 7px;
+  background-color: var(--revision-card);
+}
 
 #products .active {
   display: block;
