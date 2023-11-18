@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         const bandaitcgplusjpURL = 'https://files.bandai-tcg-plus.com/card_image/DG-JA';
         const digimoncardURL = 'https://world.digimoncard.com/images/cardlist/card';
         const digimonCardDev = 'https://assets.cardlist.dev/images/communitycards';
-        const tcgPlayerURL = 'https://product-images.tcgplayer.com/fit-in/874x874';
         const digimonFandom = 'https://static.wikia.nocookie.net/digimoncardgame/images';
         
         if ( url.includes('bandaitcgplusURL')) {
@@ -74,8 +73,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
             var cardUrl = url.replace('bandaitcgplusjpURL', bandaitcgplusjpURL);
         } else if (url.includes('digimoncardURL')) {
             var cardUrl = url.replace('digimoncardURL', digimoncardURL);
-        } else if (url.includes('tcgPlayerURL')) {
-            var cardUrl = url.replace('tcgPlayerURL', tcgPlayerURL);
         } else if (url.includes('digimonCardDev')) {
             var cardUrl = url.replace('digimonCardDev', digimonCardDev);
         } else {
