@@ -1,4 +1,5 @@
 let editingSet = false;
+let typeEdit = 'card';
 
 const toggleEditionInputs = (inputs) => {
     document.getElementById('priceConfirm').hidden = 'cardmarket' === inputs;
@@ -9,13 +10,15 @@ const modalOpen = (element) => {
     const modal = editingSet ? document.getElementById('editModal') : document.getElementById('viewModal');
     const modalTitle = modal.querySelector('.modal-title');
     const [cardNumber, slug] = element.id.split('__');
+    typeEdit = element.dataset.type;
 
-    modalTitle.innerHTML = `${cardNumber}: ${element.title}`;
+    modalTitle.innerHTML = 'card' === typeEdit ? `${cardNumber}: ${element.title}` : element.title;
 
     const modalCards = document.querySelectorAll('.modal-card');
     modalCards.forEach( modalCard => {
         modalCard.src = element.src;
         modalCard.alt = element.alt;
+        modalCard.dataset.type = element.dataset.type;
     });
 
     if ( editingSet ) {
@@ -89,38 +92,59 @@ const modalOk = () => {
     const price = parseFloat(document.getElementById('price').value || 0);
     const cardId = document.getElementById('cardId').value;
 
-    const [cardNumber, slug] = cardId.split('__');
-    const [set, id] = cardNumber.split('-');
+    if ( 'card' === typeEdit ) {
+        var [cardNumber, slug] = cardId.split('__');
+        var [set, id] = cardNumber.split('-');
 
-    collection[set][id].cards[slug].status = status;
-    document.getElementById(cardId).setAttribute('data-status', status);
-
-    if ( status > 1 ) {
-        collection[set][id].cards[slug].bought = price;
-        document.getElementById(cardId).setAttribute('data-bought', price);
+        collection[set][id].cards[slug].status = status;
+        collection[set][id].cards[slug].bought = status > 1 ? price : 0;
     } else {
-        collection[set][id].cards[slug].bought = 0;
-        document.getElementById(cardId).setAttribute('data-bought', 0);
+        var [slug, pack] = cardId.split('__');
+
+        collection.products.packs[slug].status = status;
+        collection.products.packs[slug].bought = status > 1 ? price : 0;
     }
+
+    document.getElementById(cardId).setAttribute('data-status', status);
+    document.getElementById(cardId).setAttribute('data-bought', status > 1 ? price : 0);
 
     const cardmarketUrl = document.getElementById('cardmarketUrl').value || '';
     const cardmarketPrice = parseFloat( document.getElementById('cardmarketPrice').value || 0 );
 
     if ( cardmarketUrl !== '' || cardmarketPrice !== 0 ) {
         if ( cardmarketUrl !== '' ) {
-            (((cardmarket[set] ??= {})[id] ??= {})[slug] ??= {}).url = cardmarketUrl;
+            if ( 'card' === typeEdit ) {
+                (((cardmarket[set] ??= {})[id] ??= {})[slug] ??= {}).url = cardmarketUrl;
+            } else {
+                (cardmarket.products.packs[slug] ??= {}).url = cardmarketUrl;
+            }
 
             document.getElementById(cardId).setAttribute('data-cardmarketUrl', cardmarketUrl);
         }
         if ( cardmarketPrice !== 0 ) {
-            (((cardmarket[set] ??= {})[id] ??= {})[slug] ??= {}).price ??= [];
-            if (cardmarket[set][id][slug].price.length > 0) {
-                const lastCardmarketPrice = cardmarket[set][id][slug].price.slice(-1)[0];
-                if (lastCardmarketPrice !== cardmarketPrice) {
+            if ( 'card' === typeEdit ) {
+                (((cardmarket[set] ??= {})[id] ??= {})[slug] ??= {}).price ??= [];
+
+                if (cardmarket[set][id][slug].price.length > 0) {
+                    const lastCardmarketPrice = cardmarket[set][id][slug].price.slice(-1)[0];
+                    if (lastCardmarketPrice !== cardmarketPrice) {
+                        cardmarket[set][id][slug].price.push(cardmarketPrice);
+                    }
+                } else {
                     cardmarket[set][id][slug].price.push(cardmarketPrice);
                 }
+
             } else {
-                cardmarket[set][id][slug].price.push(cardmarketPrice);
+                (cardmarket.products.packs[slug] ??= {}).price ??= [];
+
+                if (cardmarket.products.packs[slug].price.length > 0) {
+                    const lastCardmarketPrice = cardmarket.products.packs[slug].price.slice(-1)[0];
+                    if (lastCardmarketPrice !== cardmarketPrice) {
+                        cardmarket.products.packs[slug].price.push(cardmarketPrice);
+                    }
+                } else {
+                    cardmarket.products.packs[slug].price.push(cardmarketPrice);
+                }
             }
 
             document.getElementById(cardId).setAttribute('data-cardmarketPrice', cardmarketPrice);

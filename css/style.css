@@ -349,7 +349,7 @@ button.accordion.active:after {
   display: none;
 }
 
-#setLists {
+.content {
   height: calc(100vh - 175px);
   overflow: scroll;
 }
@@ -397,10 +397,10 @@ td {
   display: block;
 }
 
-.view--collection .set--current {
+.view--collection .active {
   display: block;
 }
-.view--collection > :not(.set--current) {
+.view--collection > :not(.active) {
   display: none;
 }
 
@@ -451,6 +451,12 @@ td {
 }
 #editModal .modal-card {
   width: 50%;
+}
+.modal-card[data-type=pack] {
+  width: 350px;
+  border-radius: 0;
+  -webkit-mask: conic-gradient(from -45deg at bottom, rgba(0, 0, 0, 0), #000 1deg 89deg, rgba(0, 0, 0, 0) 90deg) bottom/8px 51% repeat-x, conic-gradient(from 135deg at top, rgba(0, 0, 0, 0), #000 1deg 89deg, rgba(0, 0, 0, 0) 90deg) top/8px 51% repeat-x;
+          mask: conic-gradient(from -45deg at bottom, rgba(0, 0, 0, 0), #000 1deg 89deg, rgba(0, 0, 0, 0) 90deg) bottom/8px 51% repeat-x, conic-gradient(from 135deg at top, rgba(0, 0, 0, 0), #000 1deg 89deg, rgba(0, 0, 0, 0) 90deg) top/8px 51% repeat-x;
 }
 .modal-ok {
   width: 100%;
@@ -583,4 +589,52 @@ td {
 #card-price,
 #card-minimum {
   font-weight: 700;
+}
+
+#packs {
+  display: flex;
+  flex-wrap: wrap;
+}
+#packs img {
+  width: 180px;
+  height: auto;
+}
+#packs img[data-status="-1"] {
+  filter: blur(1px);
+}
+#packs img[data-status="1"] {
+  padding-right: 7px;
+  background-color: var(--correct-card);
+}
+#packs img[data-status="2"] {
+  padding-right: 7px;
+  background-color: var(--bought-card);
+}
+#packs img[data-status="3"] {
+  padding-right: 7px;
+  background-color: var(--proxy-card);
+}
+#packs img[data-status="2"][data-bought="0"], #packs img[data-status="3"][data-bought="0"] {
+  padding-right: 7px;
+  background-color: var(--revision-card);
+}
+
+#products .active {
+  display: block;
+}
+#products > :not(.active) {
+  display: none;
+}
+
+#content.filter--status.status--no_have #packs img:not([data-status="0"]) {
+  display: none;
+}
+#content.filter--status.status--got_it #packs img:not([data-status="1"]) {
+  display: none;
+}
+#content.filter--status.status--bought_it #packs img:not([data-status="2"]) {
+  display: none;
+}
+#content.filter--status.status--reservation #packs img:not([data-status="-1"]) {
+  display: none;
 }
