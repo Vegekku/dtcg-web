@@ -1,4 +1,4 @@
-#setLists {
+.content {
     height: calc(100vh - 175px);
     overflow: scroll;
 }
@@ -46,10 +46,10 @@ td {
 }
 
 .view--collection {
-    .set--current {
+    .active {
         display: block;
     }
-    > :not(.set--current) {
+    > :not(.active) {
         display: none;
     }
 }

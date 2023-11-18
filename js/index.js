@@ -1,14 +1,29 @@
 let collection = null;
 let cardmarket = null;
 
+const toggleTables = ( element ) => {
+    const currentSet = window.location.hash.substring(1);
+
+    if ( '' !== currentSet ) {
+        document.getElementById(currentSet).classList.remove('active');
+    }
+    document.getElementById(element.target?.value || element.value).classList.add('active');
+
+    // add set id to URL
+    window.location.hash = element.target?.value || element.value;
+}
+
 document.addEventListener("DOMContentLoaded", function (event) {
     const boosterButtons = document.getElementById('boosterButtons');
     const starterButtons = document.getElementById('starterButtons');
     const otherButtons = document.getElementById('otherButtons');
+    // const productButtons = document.getElementById('productButtons');
     const setLists = document.getElementById('setLists');
     const setOptions = {};
     const setFilterOptions = document.getElementById('setOptions');
     const accordion = document.getElementsByClassName('accordion');
+
+    const packs = document.getElementById('packs');
 
     for( let item of accordion) {
         item.addEventListener( 'click', ( element ) => {
@@ -27,7 +42,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // 1. crear objeto collection y cardmarket si no existe. Si existe, obtener de storage.
     collection = JSON.parse( window.localStorage.getItem("collection") || '{}' );
+    (collection.products ??= {}).packs ??= {};
     cardmarket = JSON.parse( window.localStorage.getItem("cardmarket") || '{}' );
+    (cardmarket.products ??= {}).packs ??= {};
 
     /**
      * Gets the full URL to image card source.
@@ -48,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         const bandaitcgplusjpURL = 'https://files.bandai-tcg-plus.com/card_image/DG-JA';
         const digimoncardURL = 'https://world.digimoncard.com/images/cardlist/card';
         const digimonCardDev = 'https://assets.cardlist.dev/images/communitycards';
-        const tcgPlayerURL = 'https://product-images.tcgplayer.com/fit-in/874x874';
         const digimonFandom = 'https://static.wikia.nocookie.net/digimoncardgame/images';
         
         if ( url.includes('bandaitcgplusURL')) {
@@ -57,8 +73,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
             var cardUrl = url.replace('bandaitcgplusjpURL', bandaitcgplusjpURL);
         } else if (url.includes('digimoncardURL')) {
             var cardUrl = url.replace('digimoncardURL', digimoncardURL);
-        } else if (url.includes('tcgPlayerURL')) {
-            var cardUrl = url.replace('tcgPlayerURL', tcgPlayerURL);
         } else if (url.includes('digimonCardDev')) {
             var cardUrl = url.replace('digimonCardDev', digimonCardDev);
         } else {
@@ -80,14 +94,33 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let cardmarketUrl = '';
         let cardmarketPrice = '';
 
+        // TODO Hacer lo mismo pero con collection
         if ( setId in cardmarket && cardId in cardmarket[setId] && slug in cardmarket[setId][cardId] ) {
             cardmarketUrl = cardmarket[setId][cardId][slug].url || '';
             cardmarketPrice = cardmarket[setId][cardId][slug].price?.slice(-1)[0] || '';
         }
 
-        const imageCard = `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-set="${set}" data-status="${status}" data-bought="${bought}" data-cardmarketurl="${cardmarketUrl}" data-cardmarketprice="${cardmarketPrice}" onclick="modalOpen(this)">`;
+        const imageCard = `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-set="${set}" data-status="${status}" data-bought="${bought}" data-cardmarketurl="${cardmarketUrl}" data-cardmarketprice="${cardmarketPrice}" data-type="card" onclick="modalOpen(this)">`;
 
         return imageCard;
+    }
+
+    const getImagePack = ( src, name, id, status = 0, bought = 0 ) => {
+        const [slug, pack] = id.split('__');
+        const imagePack = document.createElement('img');
+        imagePack.src = src;
+        imagePack.alt = name;
+        imagePack.title = name;
+        imagePack.id = id;
+        imagePack.loading = 'lazy';
+        imagePack.dataset.type = 'pack';
+        imagePack.dataset.status = collection.products.packs[slug].status;
+        imagePack.dataset.bought = collection.products.packs[slug].bought;
+        imagePack.dataset.cardmarketurl = cardmarket.products.packs?.[slug]?.url || '';
+        imagePack.dataset.cardmarketprice = cardmarket.products.packs?.[slug]?.price?.slice(-1)[0] || '';
+        imagePack.onclick = () => { modalOpen(imagePack) };
+        
+        return imagePack;
     }
 
     const drawAlternatives = (setElement) => {
@@ -158,15 +191,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         setButton.title = set.name;
         setButton.value = set.id;
         setButton.innerText = set.id;
-        setButton.addEventListener('click', (element, event) => {
-            const currentSet = window.location.hash.substring(1);
 
-            document.getElementById(currentSet).classList.remove('set--current');
-            document.getElementById(element.target.value).classList.add('set--current');
-
-            // add set id to URL
-            window.location.hash = set.id;
-        });
+        setButton.addEventListener('click', element => toggleTables(element) );
 
         if ( set.id.startsWith('BT') ) {
             boosterButtons.appendChild(setButton);
@@ -205,10 +231,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
             const tableSet = document.createElement('table');
             tableSet.id = setElement.id;
             tableSet.classList.add('set');
-            
-            if (window.location.hash === `#${setElement.id}`) {
-                tableSet.classList.add('set--current');
-            }
 
             // 2. si no existe el set, añadirlo a la coleccion.
             if (collection[setElement.id] === undefined) {
@@ -281,6 +303,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if (setElement.slug) {
             setOptions[setElement.slug] = setElement.name;
         }
+
+        if (setElement.pack) {
+            if ( Array.isArray( setElement.pack )) {
+                setElement.pack.forEach( ( pack, index ) => {
+                    collection.products.packs[`${setElement.slug}_${index}`] ??= {status: 0, bought: 0};
+                    packs.appendChild( getImagePack( pack, setElement.name, `${setElement.slug}_${index}__pack`, collection.products.packs[`${setElement.slug}_${index}`].status, collection.products.packs[`${setElement.slug}_${index}`].bought ) );
+                });
+            } else {
+                collection.products.packs[setElement.slug] ??= {status: 0, bought: 0};
+                packs.appendChild( getImagePack( setElement.pack, setElement.name, `${setElement.slug}__pack`, collection.products.packs[setElement.slug].status, collection.products.packs[setElement.slug].bought ) );
+            }
+        }
     });
 
     Object.entries(setOptions).forEach(([key,value]) => {
@@ -292,4 +326,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // 6. guardar coleccion en localstorage
     window.localStorage.setItem("collection", JSON.stringify(collection));
+
+    if ( '' !== window.location.hash ) {
+        document.getElementById(window.location.hash.substring(1)).classList.add('active');
+    }
 });

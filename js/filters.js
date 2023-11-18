@@ -15,6 +15,7 @@ const filterCards = () => {
         "set": document.getElementById('setValue').value
     }
     const setLists = document.getElementById('setLists');
+    const content = document.getElementById('content');
 
     let queryCards = '';
     let cardClasses = [];
@@ -33,6 +34,7 @@ const filterCards = () => {
         });
 
         setLists.classList.remove('filter--status', 'filter--status--no_pull', 'filter--status--no_pull_no_have');
+        content.className = 'content';
     }
     if (filters.status !== '') {
         const status = {
@@ -45,13 +47,16 @@ const filterCards = () => {
         cleanFilterStatus();
         if ('no_pull_no_have' === filters.status) {
             setLists.classList.add('filter--status--no_pull_no_have');
+            content.classList.add('filter--status--no_pull_no_have');
             queryCards += '[data-status="0"]';
             cardClasses.push('filtered--status');
             rowClasses.push('match_filter');
         } else if ('no_pull' === filters.status) {
             setLists.classList.add('filter--status--no_pull');
+            content.classList.add('filter--status--no_pull');
         } else {
             setLists.classList.add('filter--status');
+            content.classList.add('filter--status', `status--${filters.status}`);
             queryCards += `[data-status="${status[filters.status]}"]`;
             cardClasses.push('filtered--status');
             rowClasses.push('match_filter--status');
@@ -106,6 +111,7 @@ const filterCards = () => {
         });
     }
     hideAllSets();
+
     if ('' !== queryCards) {
         const filterCards = document.querySelectorAll(queryCards);
         filterCards.forEach( (card, index ) => {

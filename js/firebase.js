@@ -665,7 +665,7 @@ const sets = [
             "https://static.wikia.nocookie.net/digimoncardgame/images/3/34/Special_Release_Booster_Pack_1.5-EN.02.png/",
             "https://static.wikia.nocookie.net/digimoncardgame/images/b/b9/Special_Release_Booster_Pack_1.5-EN.03.png/",
         ],
-        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/6/64/Playsheet-BT-1.5.jpg/",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/3/38/BT-1.5-Playsheet-EN.jpg",
         "info_url": null
     },
     // Release Special Booster Ver.1.5 [BT01-03] - Alternatives --- sbt15_alts
@@ -748,7 +748,6 @@ const sets = [
         "cards": {
             "BT2-038": "P1",
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/ee/PP01.png/",
         "info_url": "https://world.digimoncard.com/products/goods/premium_pack.php"
     },
 
@@ -815,8 +814,8 @@ const sets = [
         "total": 115,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 3,
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/57/BT-4-EN.png/",
-        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a4/Playsheet-BT-4-EN.jpg/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/56/BT-04-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/9/95/BT-04-Playsheet-EN.jpg",
         "color": {
             "red": [1,"7-20",92,"98-100",113],
             "blue": [2,"21-35",93,"101-103",114],
@@ -913,8 +912,7 @@ const sets = [
             "P-032": "",
             "P-033": "",
             "P-034": "",
-        },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fc/Great_Legend_Power_Up_Pack.png"
+        }
     },
 
 // June 2021
@@ -991,8 +989,8 @@ const sets = [
         "total": 112,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 3,
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/bd/BT-5-EN.png/",
-        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/7/7d/Playsheet-BT-5-EN.jpg/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d5/BT-05-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c4/BT-05-Playsheet-EN.jpg",
         "color": {
             "red": [1,"7-19",94,95],
             "blue": [2,"20-32",88,96,97],
@@ -1077,7 +1075,7 @@ const sets = [
             "BT4-088": "P2",
             "BT5-045": "P1",
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/be/Evolution_Cup_Event_Pack.png/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/56/Event_Pack_1.png",
     },
 
 // August 2021
@@ -1144,6 +1142,7 @@ const sets = [
         "name": "Store Championship Participant Pack",
         "release": "September 13 – October 17, 2021",
         "url": "bandaitcgplusURL/setID/setID-cardID_parallel.png",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e6/Store_Championship_Participant_Pack.png",
         "cards": {
             "ST3-04": "P1",
             "BT1-029": "P2",
@@ -1302,8 +1301,8 @@ const sets = [
         "total": 112,
         "url": "bandaitcgplusURL/setID/setID-cardID.png",
         "add_zero": 3,
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/aa/BT-6-EN.png/",
-        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d2/Playsheet-BT-6-EN.jpg/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/ac/BT-06-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/7/7d/BT-06-Playsheet-EN.jpg",
         "color": {
             "red": [1,"7-18",87,"93-95"],
             "blue": [2,"19-30",88,"96-98"],
@@ -1455,7 +1454,7 @@ const sets = [
             "BT3-025": "P1",
             "BT3-050": "P1",
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/55/WinnerPackDoubleDiamond.png/"
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a9/Winner_Pack_Double_Diamond.png"
     },
 
 // December 10, 2021
@@ -1468,8 +1467,8 @@ const sets = [
         "total": 73,
         "url": "bandaitcgplusURL/setID/EX-cardID.png",
         "add_zero": 3,
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/ea/EX-1-EN.png/",
-        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6d/Playsheet-EX-1-EN.jpg/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/9b/EX-01-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c0/EX-01-Playsheet-EN.jpg",
         "color": {
             "red": ["1-10",67],
             "blue": ["11-22",68],
@@ -1540,6 +1539,7 @@ const sets = [
         "name": "2021 Championship Finals Tamer‘s Evolution Pack",
         "release": "January 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/bf/Championship_2021_Finals_Tamer%27s_Evolution_Pack.png",
         "cards": {
             "ST1-13": "P2",
             "ST1-16": "P3",
@@ -1606,6 +1606,7 @@ const sets = [
         "name": "Judge Pack",
         "release": "January 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/11/Judge_Pack.png",
         "cards": {
             "P-016": "P1",
             "ST1-07": "P2",
@@ -1714,7 +1715,7 @@ const sets = [
             "BT3-048": "P1",
             "BT5-038": "P1",
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a9/WinnerPackNextAdventure.png/"
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/9f/Winner_Pack_Next_Adventure.png"
     },
 
 // February 25, 2022
@@ -1749,8 +1750,8 @@ const sets = [
                 "BT7-017": ""
             }
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/53/BT-7-EN.png/",
-        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a1/Playsheet-BT-7-EN.jpg/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c4/BT-07-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/0/04/BT-07-Playsheet-EN.jpg",
         "color": {
             "red": [1,"7-17",85,"92-94"],
             "blue": [2,"18-30",86,87,"95-97"],
@@ -2040,8 +2041,8 @@ const sets = [
         "total": 112,
         "url": "bandaitcgplusURL/setID/e_setID_cardID.png",
         "add_zero": 3,
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2d/BT-8-EN.png/",
-        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e9/Playsheet-BT-8-EN.jpg/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b6/BT-08-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/0/07/BT-08-Playsheet-EN.jpg",
         "color": {
             "red": [1,"7-10",13,14,18,19,85,86,"95-97"],
             "red-blue": [12],
@@ -2184,8 +2185,8 @@ const sets = [
                 "EX2-002": ""
             }
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/20/EX-2-EN.png/",
-        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/0/02/Playsheet-EX-2-EN.jpg/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/20/EX-02-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/9/95/EX-02-Playsheet-EN.jpg",
         "color": {
             "red": [1,"8-11",56,66,67,73],
             "red-purple": [12],
@@ -2317,7 +2318,7 @@ const sets = [
             "BT3-038": "P1",
             "BT5-020": "P2",
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/29/WinnerPackNewAwakening.png/"
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/96/Winner_Pack_New_Awakening.png"
     },
 
 // July 1, 2022
@@ -2374,8 +2375,8 @@ const sets = [
         "total": 112,
         "url": "bandaitcgplusURL/setID/e_setID-cardID_dummy.jpg",
         "add_zero": 3,
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c7/BT-9-EN.png/",
-        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/8/86/Playsheet-BT-9-EN.jpg/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/83/BT-09-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d1/BT-09-Playsheet-EN.jpg",
         "color": {
             "red": [1,"7-17","93-95"],
             "red-yellow": [84],
@@ -2458,7 +2459,7 @@ const sets = [
             "P-076": ["", "_horo"],
             "P-077": ["", "_horo"],
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/3/30/Update_Pack.png/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/96/Update_Pack-EN.png",
     },
 
 // July, 2022
@@ -2542,7 +2543,7 @@ const sets = [
             "EX1-061": "398820",
             "ST5-08": "acc3ae",
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a9/WinnerPackXRecord.png/"
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/53/Winner_Pack_X_Record.png"
     },
 
 // August, 2022
@@ -2553,6 +2554,7 @@ const sets = [
         "name": "Store Championship 2022 Participant Pack",
         "release": "August, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d0/Store_Championship_Participant_Pack_2022.png",
         "cards": {
             "ST7-03": "P2",
             "ST8-06": "P2",
@@ -2685,7 +2687,7 @@ const sets = [
             "EX1-008": "P2",
             "EX1-049": "P1",
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d5/PD-01-Lucky-Pack.png/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/f8/Premium_Deck_Set_Lucky_Pack.png",
         "info_url": "https://world.digimoncard.com/products/goods/premium-deck-set.php"
     },
     {
@@ -2697,7 +2699,6 @@ const sets = [
         "cards": {
             "P-020": "",
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d5/PD-01-Lucky-Pack.png/",
         "info_url": "https://world.digimoncard.com/products/goods/premium-deck-set.php"
     },
 
@@ -2793,7 +2794,7 @@ const sets = [
             "BT7-064": "P1",
             "ST4-08": "P5",
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/51/WinnerPackXroxEncounter.png/"
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/17/Winner_Pack_Xros_Encounter.png"
     },
 
 // October 7, 2022
@@ -2873,8 +2874,8 @@ const sets = [
         "total": 112,
         "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
         "add_zero": 3,
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/24/BT-10-EN.png/",
-        "playmat": "",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/7/7c/BT-10-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c7/BT-10-Playsheet-EN.jpg",
         "color": {
             "red": [1,7,8,10,11,14,16,87,"94-96",111],
             "red-yellow": [9],
@@ -2964,7 +2965,7 @@ const sets = [
             "BT4-099": "P1",
             "BT5-012": "P2",
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/0/01/ST-11-EN.png/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/97/ST-11_Special_Entry_Pack.png",
     },
     {
         "id": null,
@@ -2975,7 +2976,6 @@ const sets = [
         "cards": {
             "P-065": "c2a5dd",
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/0/01/ST-11-EN.png/",
     },
     // 25th Special Memorial Pack --- 25specialmemorial
     {
@@ -2998,7 +2998,7 @@ const sets = [
             "BT7-044": "P2",
             "BT8-067": "P1",
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a5/25th_Memorial_Pack.png/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/19/25th_Special_Memorial_Pack.png",
     },
 
 // November 4, 2022
@@ -3008,12 +3008,12 @@ const sets = [
         "slug": "gb2",
         "name": "Gift Box 2022 [GB-02]",
         "release": "November 4, 2022",
-        "url": "tcgPlayerURL/parallel.jpg",
+        "url": "digimonFandom/parallel.png",
         "cards": {
-            "P-008": "451111",
-            "P-009": "451112",
-            "P-016": "451113",
-            "P-033": "451114",
+            "P-008": "4/41/P-008_P4",
+            "P-009": "4/45/P-009_P2",
+            "P-016": "5/56/P-016_P4",
+            "P-033": "6/6b/P-033_P1",
         },
         "info_url": "https://world.digimoncard.com/products/goods/gift_box_2022.php"
     },
@@ -3034,8 +3034,8 @@ const sets = [
                 "EX3-013": ""
             }
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/3/33/EX-3-EN.png/",
-        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6d/Playsheet-EX-3-EN.jpg/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/de/EX-03-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/0/07/EX-03-Playsheet-EN.jpg",
         "color": {
             "red": ["3-9",11,12,14],
             "red-black": [13,66],
@@ -3085,15 +3085,16 @@ const sets = [
         "slug": "ex3_boxtopper",
         "name": "Booster Draconic Roar [EX3] - Box Topper",
         "release": "November 11, 2022",
-        "url": null,
+        "url": "digimonFandom/parallel.png",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/de/EX-03-Booster_Pack-EN.png",
         "cards": {
-            "BT3-111": "https://assets.cardlist.dev/images/communitycards/BT3-111_b69739en-US.jpg",
-            "EX3-010": "https://product-images.tcgplayer.com/fit-in/874x874/452976.jpg",
-            "EX3-020": "https://product-images.tcgplayer.com/fit-in/874x874/452980.jpg",
-            "EX3-031": "https://product-images.tcgplayer.com/fit-in/874x874/452984.jpg",
-            "EX3-041": "https://product-images.tcgplayer.com/fit-in/874x874/452988.jpg",
-            "EX3-049": "https://product-images.tcgplayer.com/fit-in/874x874/452991.jpg",
-            "EX3-061": "https://product-images.tcgplayer.com/fit-in/874x874/452994.jpg",
+            "BT3-111": "7/7f/BT3-111_P2-Errata",
+            "EX3-010": "2/2d/EX3-010_P1",
+            "EX3-020": "b/be/EX3-020_P1",
+            "EX3-031": "2/2d/EX3-031_P1",
+            "EX3-041": "8/8b/EX3-041_P1",
+            "EX3-049": "e/e8/EX3-049_P1",
+            "EX3-061": "9/9e/EX3-061_P1",
         },
     },
 
@@ -3137,6 +3138,7 @@ const sets = [
         "name": "2022 Championship Finals Digimon Tamers Pack",
         "release": "February 2023",
         "url": null,
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d5/2022_Championship_Finals_Digimon_Tamers_Pack.png",
         "cards": {
             "BT1-035": "https://static.cardmarket.com/img/047f60b0a4c4daa579cc82cfec104294/items/1611/CP22/693201.jpg",
             "BT2-009": "https://static.cardmarket.com/img/54b45fb3ddcd1e18fc083e29ca4c8603/items/1611/CP22/693204.jpg",
@@ -3225,7 +3227,7 @@ const sets = [
             "BT8-021": "https://static.wikia.nocookie.net/digimoncardgame/images/5/5c/BT8-021_P1.png",
             "ST1-07": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d0/ST1-07_P5.png",
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2a/Xros_Encounter_Pre-Release_Promotion_Pack.png/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/6/64/Dimensional_Phase_Pre-Release_Promotion_Pack.png",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-11/"
     },
 
@@ -3239,8 +3241,8 @@ const sets = [
         "total": 112,
         "url": "digimoncardURL/setID-cardID.png",
         "add_zero": 3,
-        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/24/BT-10-EN.png/",
-        "playmat": "",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e3/BT-11-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a6/BT-11-Playsheet-EN.jpg",
         "color": {
             "red": [1,7,8,10,11,"13-17",89,96,97],
             "red-blue": [18],
@@ -3395,7 +3397,7 @@ const sets = [
             "ST5-12": "P1",
             "ST6-08": "P6",
         },
-        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a5/25th_Memorial_Pack.png/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/4/4a/Digimon_Illustration_Competition_Promotion_Pack-EN.png",
     },
     // English Version 2nd Anniversary Alternate Art Poll - 2ndanniversary_artpoll
     {
@@ -3415,8 +3417,7 @@ const sets = [
             "BT6-085": "P1",
             "BT7-005": "P1",
             "BT7-036": "P2",
-        },
-        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a5/25th_Memorial_Pack.png/",
+        }
     },
 
 // Mid January 2023 – April 2023
@@ -3435,7 +3436,7 @@ const sets = [
             "EX1-024": "P2",
             "ST7-02": "P1",
         },
-        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e9/Official_Tournament_Pack_Vol.7.png/"
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/ed/Official_Tournament_Pack_Vol.8.png"
     },
     // Winner Pack Dimensional Phase --- wp8
     {
@@ -3450,12 +3451,7 @@ const sets = [
             "BT8-064": "P1",
             "BT10-003": "P2",
         },
-        // https://www.cardmarket.com/es/Digimon/Products/Singles/Official-Tournament-Pack-Events/Upamon-BT1-003
-        "cardmarket": {
-            "url": "https://www.cardmarket.com/es/Digimon/Products/Singles/Official-Tournament-Pack-Events/digimonName-cardNumber",
-            "api_set": "BT-05: Booster Battle Of Omni",
-        }
-        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/51/WinnerPackXroxEncounter.png/"
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/f1/Winner_Pack_Dimensional_Phase.png"
     },
     // Judge Pack 2 --- judgepack2
     {
@@ -3476,7 +3472,8 @@ const sets = [
             "ST8-01": "P1",
             "ST9-01": "P1",
             "ST10-01": "P1",
-        }
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/9f/Judge_Pack_2.png"
     },
 
 // March, 2023
@@ -3511,7 +3508,13 @@ const sets = [
             "BT7-080": "P3",
             "BT7-081": "P4",
         },
-        "info_url": "https://world.digimoncard.com/products/goods/2nd-anniversary-set.php"
+        "info_url": "https://world.digimoncard.com/products/goods/2nd-anniversary-set.php",
+        "override": {
+            "url": "digimonCardDev/setID-cardID_bbb89fen-US.jpg",
+            "cards": {
+                "BT3-105": "bbb89f"
+            }
+        },
     },
 
 // March 11,12,18, 2023
@@ -3736,8 +3739,8 @@ const sets = [
         "total": 112,
         "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
         "add_zero": 3,
-        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/24/BT-10-EN.png/",
-        "playmat": "",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/8c/BT-12-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/0/0e/BT-12-Playsheet-EN.jpg",
         "color": {
             "red": [1,"7-18","87-89","99-100"],
             "blue": [2,"19-27",29,32,90,101,102],
@@ -3805,6 +3808,7 @@ const sets = [
             "BT12-077": "P1",
             "BT12-081": "P1",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/6/64/Box_Promotion_Pack_Across_Time-EN.png"
     },
     // Booster Across Time [BT12] - Limited Card Pack --- bt12_limitedcardpack
     {
@@ -3821,6 +3825,7 @@ const sets = [
             "P-070": "",
             "P-071": ""
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/8d/Limited_Card_Pack.png"
     },
     // Ultimate Cup 2023 --- ultimatecup_2023
     {
@@ -3912,7 +3917,7 @@ const sets = [
             "ST10-04": "https://static.wikia.nocookie.net/digimoncardgame/images/2/22/ST10-04_P1.png",
 
         },
-        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/10/Official_Tournament_Pack_Vol.9.png"
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/10/Official_Tournament_Pack_Vol.9.png"
     },
     // Winner Pack Across Time --- wp9
     {
@@ -3927,6 +3932,7 @@ const sets = [
             "P-026": "https://static.wikia.nocookie.net/digimoncardgame/images/c/cf/P-026_P1.png",
             "P-027": "https://static.wikia.nocookie.net/digimoncardgame/images/6/60/P-027_P1.png",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/4/45/Winner_Pack_Across_Time.png"
     },
 
 // June, 2023
@@ -3946,7 +3952,8 @@ const sets = [
             "ST10-14": "https://static.wikia.nocookie.net/digimoncardgame/images/5/56/ST10-14_P1.png",
             "ST13-16": "https://static.wikia.nocookie.net/digimoncardgame/images/0/08/ST13-16_P2.png",
         },
-        "info_url": "https://world.digimoncard.com/event/store_championship_2023/"
+        "info_url": "https://world.digimoncard.com/event/store_championship_2023/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c7/Store_Championship_Participant_Pack_2023.png"
     },
     // Store Championship 2023 Top 4 Pack --- storechampion_2023_1
     {
@@ -3993,6 +4000,7 @@ const sets = [
             "BT12-068": "https://static.wikia.nocookie.net/digimoncardgame/images/2/29/BT12-068_P1.png",
         },
         "info_url": "https://world.digimoncard.com/event/tamer_party_sp/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e1/Tamer_Party_Pack_1.png"
     },
 
     // Booster Alternative Being [EX4] --- ex4
@@ -4004,8 +4012,8 @@ const sets = [
         "total": 74,
         "url": "bandaitcgplusURL/setID/e_setID-cardID_d.png",
         "add_zero": 3,
-        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/3/33/EX-3-EN.png/",
-        // "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6d/Playsheet-EX-3-EN.jpg/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/81/EX-04-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/1/12/EX-04-Playsheet-EN.jpg",
         "color": {
             "red": [12,65],
             "red-yellow": [5,7,9],
@@ -4083,6 +4091,7 @@ const sets = [
             "EX4-066": "",
             "EX4-072": "",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6c/Box_Promotion_Pack_Alternative_Being-EN.png"
     },
 
     // Royal Knights Binder Set [PB13] --- pb13
@@ -4149,7 +4158,8 @@ const sets = [
             "BT8-071": "4/4c/BT8-071_P2.png",
             "P-078": "f/f1/P-078.png",
         },
-        "info_url": "https://world.digimoncard.com/event/pre-release_BT-13/"
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-13/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/be/Royal_Knights_Pre-Release_Pack.png"
     },
 // July, 2023
     // Booster Versus Royal Knights [BT13] --- bt13
@@ -4161,7 +4171,8 @@ const sets = [
         "total": 112,
         "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
         "add_zero": 3,
-        "playmat": "",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d3/BT-13-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b5/BT-13-Playsheet-EN.jpg",
         "color": {
             "red": [1,"9-11",13,14,16,17,94,111],
             "red-yellow": [8,12,15,18,20,95,104],
@@ -4230,6 +4241,7 @@ const sets = [
             "BT13-101": "P",
             "BT13-102": "P",
         },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/97/Box_Promotion_Pack_Versus_Royal_Knights-EN.png"
     },
     // Starter Deck Dragon of Courage [ST15] --- st15
     {
@@ -4288,7 +4300,8 @@ const sets = [
             "P-070": "5/5e/P-070_P1.png",
             "P-071": "c/c0/P-071_P1.png",
         },
-        "info_url": "https://world.digimoncard.com/event/store_tournament_10/"
+        "info_url": "https://world.digimoncard.com/event/store_tournament_10/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fc/Official_Tournament_Pack_Vol.10.png"
     },
     // Winner Pack Royal Knights --- wp10
     {
@@ -4303,7 +4316,8 @@ const sets = [
             "P-060": "e/ed/P-060_P1.png",
             "P-061": "1/17/P-061_P1.png",
         },
-        "info_url": "https://world.digimoncard.com/event/store_tournament_10/"
+        "info_url": "https://world.digimoncard.com/event/store_tournament_10/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/5e/Winner_Pack_Royal_Knights.png"
     },
 
 // August, 2023
@@ -4323,7 +4337,8 @@ const sets = [
             "BT9-103": "b/bb/BT9-103_P1.png",
             "EX3-067": "6/67/EX3-067_P1.png",
         },
-        "info_url": "https://world.digimoncard.com/event/store_championship_2023/august/"
+        "info_url": "https://world.digimoncard.com/event/store_championship_2023/august/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/da/Store_Championship_Participant_Pack_2023_Wave_2.png"
     },
     // Store Championship 2023 Top 4 Pack --- storechampion_2023_wave2_1
     {
@@ -4464,6 +4479,8 @@ const sets = [
         "total": 36,
         "url": "bandaitcgplusURL/RB01/e_setID_cardID.png",
         "add_zero": 3,
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/8e/RB-01-Booster_Pack-EN.png",
+        "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d8/RB-01-Playsheet-EN.jpg",
         "color": {
             "red": [1,"4-10",32],
             "red-purple": [36],
@@ -4484,7 +4501,7 @@ const sets = [
         "release": "September 29, 2023",
         "url": "bandaitcgplusURL/RB01/e_setID_cardIDparallel.png",
         "cards": {
-            "RB1-010": ["P", "P"],
+            "RB1-010": ["P", "P2"],
             "RB1-016": "P",
             "RB1-019": "P",
             "RB1-025": "P",
@@ -4500,6 +4517,7 @@ const sets = [
         "name": "Resurgence Booster [RB01] - Box Topper",
         "release": "September 29, 2023",
         "url": "bandaitcgplusURL/RB01/e_setID_cardIDparallel.png",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/9b/Box_Promotion_Pack_Resurgence_Booster-EN.png",
         "cards": {
             "RB1-005": "P",
             "RB1-011": "P",
@@ -4645,6 +4663,10 @@ const sets = [
         "name": "Starter Deck ST15 & ST16 Pre-Release Tournament",
         "release": "October 6 – 12, 2023",
         "url": "digimonFandom/parallel.png",
+        "pack": [
+            "https://static.wikia.nocookie.net/digimoncardgame/images/4/4e/Pre-Release_Pack_Dragon_of_Courage-EN.png",
+            "https://static.wikia.nocookie.net/digimoncardgame/images/7/72/Pre-Release_Pack_Wolf_of_Friendship-EN.png"
+        ],
         "cards": {
             "BT9-020": "4/4a/BT9-020_P2",
             "BT5-087": "5/5d/BT5-087_P4",
@@ -4745,7 +4767,7 @@ const sets = [
             "P-077": "5/58/P-077_P3.png",
             "ST14-07": "c/c9/ST14-07_P1.png",
         },
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/89/Judge_Pack_3.png"
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2e/Judge_Pack_4.png"
     },
 
 // November 10 - 16, 2023
@@ -4756,6 +4778,7 @@ const sets = [
         "name": "Booster Blast Ace (BT14) Pre-Release Tournaments",
         "release": "November 10 - 16, 2023",
         "url": "noCardURL",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b6/Pre_Release_Pack-Blast_Ace.png",
         "cards": {
             "P-031": "",
             "BT9-012": "",
@@ -4785,6 +4808,7 @@ const sets = [
             "ST9-05": "",
         },
         "info_url": "https://world.digimoncard.com/event/tamer_party_sp/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e7/Tamer_Party_Pack_The_Beginning.png"
     },
 
     // Double Pack Set [DP-01] --- dp01
@@ -4822,32 +4846,31 @@ const sets = [
     },
 
     // Booster Blast Ace [BT14] --- bt14
-    // https://world.digimoncard.com/products/pack/ver14.php
-
-    // Booster Blast Ace [BT14] --- bt14
     {
         "id": "BT14",
         "slug": "bt14",
         "name": "Booster Blast Ace [BT14]",
         "release": "November 17, 2023",
         "total": 102,
-        "url": "bandaitcgplusjpURL/setID/setID-cardID.png",
+        "url": "digimoncardURL/setID-cardID.png",
         "add_zero": 3,
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d3/BT-14-Booster_Pack-EN.png",
         "playmat": "",
         "color": {
             "red": [1,"7-12","14-17",82,89,90,101],
             "red-yellow": [18],
             "red-green": [13],
             "blue": [2,"19-30",83,91,92],
-            "yellow": [3,"31-33","35-41",43,44,46,84,93,94],
+            "yellow": [3,"31-33","35-41",43,44,46,84,93,94,102],
             "yellow-black": [34],
             "green": [4,"42-54",85,95,96],
             "black": [5,55,56,58,"60-65",67,68,86,98],
             "black-yellow": [66,97],
             "black-purple": [57,59],
             "purple": [6,"69-81",87,99,100],
-            "white": [88,102],
+            "white": [88],
         },
+        "info_url": "https://world.digimoncard.com/products/pack/ver14.php"
     },
     // Booster Blast Ace [BT14] - Alternatives --- bt14_alts
     {
@@ -4855,28 +4878,28 @@ const sets = [
         "slug": "bt14_alts",
         "name": "Booster Blast Ace [BT14] - Alternatives",
         "release": "November 17, 2023",
-        "url": "bandaitcgplusjpURL/setID/setID-cardIDparallel.png",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "BT14-007": "P",
-            "BT14-014": "P",
-            "BT14-020": "P",
-            "BT14-026": "P",
-            "BT14-033": "P",
-            "BT14-037": "P",
-            "BT14-044": "P",
-            "BT14-049": "P",
-            "BT14-056": "P",
-            "BT14-068": "P",
-            "BT14-071": "P",
-            "BT14-081": "P",
-            "BT14-082": "P",
-            "BT14-083": "P",
-            "BT14-084": "P",
-            "BT14-085": "P",
-            "BT14-086": "P",
-            "BT14-087": "P",
-            "BT14-101": "P",
-            "BT14-102": "P",
+            "BT14-007": "P1",
+            "BT14-014": "P1",
+            "BT14-020": "P1",
+            "BT14-026": "P1",
+            "BT14-033": "P1",
+            "BT14-037": "P1",
+            "BT14-044": "P1",
+            "BT14-049": "P1",
+            "BT14-056": "P1",
+            "BT14-068": "P1",
+            "BT14-071": "P1",
+            "BT14-081": "P1",
+            "BT14-082": "P1",
+            "BT14-083": "P1",
+            "BT14-084": "P1",
+            "BT14-085": "P1",
+            "BT14-086": "P1",
+            "BT14-087": "P1",
+            "BT14-101": "P1",
+            "BT14-102": "P1",
         },
     },
     // Booster Blast Ace [BT14] - English Alternatives --- bt14_en_alts
@@ -4891,6 +4914,7 @@ const sets = [
             "BT14-026": "0/0f/BT14-026_P2",
             "BT14-037": "c/ce/BT14-037_P2",
             "BT14-049": "1/19/BT14-049_P2",
+            "BT8-112": "5/53/BT8-112_P4",
         },
     },
     // Booster Blast Ace [BT14] - Box Topper --- bt14_boxtopper
@@ -4899,30 +4923,85 @@ const sets = [
         "slug": "bt14_boxtopper",
         "name": "Booster Blast Ace [BT14] - Box Topper",
         "release": "November 17, 2023",
-        "url": "bandaitcgplusjpURL/setID/setID-cardIDparallel.png",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "BT14-001": "P",
-            "BT14-002": "P",
-            "BT14-003": "P",
-            "BT14-004": "P",
-            "BT14-005": "P",
-            "BT14-006": "P",
+            "BT14-001": "P1",
+            "BT14-002": "P1",
+            "BT14-003": "P1",
+            "BT14-004": "P1",
+            "BT14-005": "P1",
+            "BT14-006": "P1",
         },
     },
-    // Booster Blast Ace [BT14] - English Exclusive Box Topper --- bt14_en_boxtopper
+    // Booster Blast Ace [BT14] - Limited Card Set --- bt14_en_boxtopper
     {
         "id": null,
         "slug": "bt14_en_boxtopper",
-        "name": "Booster Blast Ace [BT14] - English Exclusive Box Topper",
+        "name": "Booster Blast Ace [BT14] - Limited Card Set",
+        "release": "November 17, 2023",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "P-103": "0/0f/P-103",
+            "P-104": "e/eb/P-104",
+            "P-105": "9/9a/P-105",
+            "P-106": "d/d9/P-106",
+            "P-107": "0/0a/P-107",
+            "P-108": "5/51/P-108",
+        },
+    },
+    // Booster Blast Ace [BT14] - Survey Pack --- bt14_survey_pack
+    {
+        "id": null,
+        "slug": "bt14_survey_pack",
+        "name": "Booster Blast Ace [BT14] - Survey Pack",
         "release": "November 17, 2023",
         "url": "noCardURL",
         "cards": {
-            "P-103": "",
-            "P-104": "",
-            "P-105": "",
-            "P-106": "",
-            "P-107": "",
-            "P-108": "",
+            "P-110": "",
+            "P-111": "",
+            "P-112": "",
+            "P-113": "",
+            "P-114": "",
+            "P-115": "",
+        },
+    },
+
+    // 3on3 Battle - Participation Prize --- 3on3_battle_participation
+    {
+        "id": null,
+        "slug": "3on3_battle_participation",
+        "name": "3on3 Battle - Participation Prize",
+        "release": "November",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "BT11-005": "2/2c/BT11-005_P1",
+            "ST14-01": "0/07/ST14-01_P1",
+            "EX2-071": "2/24/EX2-071_P2",
+        },
+    },
+    // 3on3 Battle - Top 4 --- 3on3_battle_top4
+    {
+        "id": null,
+        "slug": "3on3_battle_top4",
+        "name": "3on3 Battle - Top 4",
+        "release": "November",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "BT8-067": "e/e2/BT8-067_P2",
+            "ST14-02": "7/71/ST14-02_P1",
+            "ST14-08": "0/06/ST14-08_P2",
+        },
+    },
+    // 3on3 Battle - 1st Place --- 3on3_battle_1st
+    {
+        "id": null,
+        "slug": "3on3_battle_1st",
+        "name": "3on3 Battle - 1st Place",
+        "release": "November",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "BT8-070": "d/dc/BT8-070_P2",
+            "ST14-10": "a/ab/ST14-10_P1",
         },
     },
 
@@ -4943,7 +5022,8 @@ const sets = [
             "P-065": "",
             "P-116": "",
         },
-        "info_url": "https://world.digimoncard.com/event/store_tournament_11/"
+        "info_url": "https://world.digimoncard.com/event/store_tournament_11/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d5/Official_Tournament_Pack_Vol.11.png"
     },
     // Winner Pack Blast Ace --- wp11
     {
@@ -4958,7 +5038,8 @@ const sets = [
             "P-042": "",
             "P-075": "",
         },
-        "info_url": "https://world.digimoncard.com/event/store_tournament_11/"
+        "info_url": "https://world.digimoncard.com/event/store_tournament_11/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/0/01/Winner_Pack_Blast_Ace.png"
     },
 
 // December 1, 2023 – January 31, 2024
@@ -4978,6 +5059,43 @@ const sets = [
         "info_url": "https://world.digimoncard.com/event/winter_holiday_event/"
     },
 
+    // 2023 Championship Finals Tamers Pack --- tamerpack_2023
+    {
+        "id": null,
+        "slug": "whe",
+        "name": "2023 Championship Finals Tamers Pack",
+        "release": "December 2 - 3, 2023",
+        "url": "noCardURL",
+        "cards": {
+            "BT10-048": "",
+            "BT11-012": "",
+            "BT11-027": "",
+            "BT12-012": "",
+            "BT12-038": "",
+            "BT13-110": "",
+            "BT14-060": "",
+            "BT14-074": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2023/"
+    },
+    // 2023 Championship Finals Gold Card Set --- goldcardset_2023
+    {
+        "id": null,
+        "slug": "whe",
+        "name": "2023 Championship Finals Gold Card Set",
+        "release": "December 2 - 3, 2023",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "P-066": "3/3e/P-066_P2",
+            "P-067": "5/55/P-067_P2",
+            "P-068": "a/a7/P-068_P2",
+            "P-069": "e/e4/P-069_P2",
+            "P-070": "4/48/P-070_P2",
+            "P-071": "3/3c/P-071_P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2023/"
+    },
+
     // {
     //     "id": null,
     //     "slug": "test",
@@ -4994,34 +5112,62 @@ const sets = [
     // },
 
 // February, 2024
-    // Premium Binder Set
-    // {
-    //     "id": null,
-    //     // "slug": "",
-    //     "name": "Premium Binder Set",
-    //     "release": "February, 2024",
-    //     "url": "digimonFandom/parallel",
-    //     "cards": {
-    //         // "BT6-112": "4/4f/BT6-112_P2.png",
-    //         // "BT7-111": "1/16/BT7-111_P2.png",
-    //         // "BT12-085": "a/ab/BT12-085_P2.png",
-    //         // "EX2-044": "5/5d/EX2-044_P4.png",
-    //     },
-    //     // "info_url": "https://world.digimoncard.com/products/goods/premium_binderset.php"
-    // },
+    // Premium Binder Set --- premium_binder_set
+    {
+        "id": null,
+        "slug": "premium_binder_set",
+        "name": "Premium Binder Set",
+        "release": "February, 2024",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "BT6-112": "4/4f/BT6-112_P2",
+            "BT7-111": "1/16/BT7-111_P2",
+            "BT12-085": "a/ab/BT12-085_P2",
+            "EX2-044": "5/5d/EX2-044_P4",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/premium_binderset.php"
+    },
 
     // Tamer Goods Set Diaboromon [PB16] --- pb16
-    // {
-    //     "id": null,
-    //     "slug": "pb16",
-    //     "name": "Tamer Goods Set Diaboromon [PB16]",
-    //     "release": "February, 2024",
-    //     "url": "digimonFandom/parallel",
-    //     "cards": {
-    //         // "BT2-082": "7/71/BT2-Diaboromon_Token_P2.png",
-    //         "BT5-085": "b/bf/BT5-085_P2.png",
-    //         "P-114": "0/02/P-114_P1.png",
-    //     },
-    //     "info_url": "https://world.digimoncard.com/products/goods/tamer-goods-set_PB16.php"
-    // },
+    {
+        "id": null,
+        "slug": "pb16",
+        "name": "Tamer Goods Set Diaboromon [PB16]",
+        "release": "February, 2024",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "BT2-082": "7/71/BT2-Diaboromon_Token_P2",
+            "BT5-085": "b/bf/BT5-085_P2",
+            "P-114": "0/02/P-114_P1",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/tamer-goods-set_PB16.php"
+    },
+
+// June, 2024
+    // "Digimon Adventure 02: The Beginning" Set [PB17] --- pb17
+    {
+        "id": null,
+        "slug": "pb17",
+        "name": "\"Digimon Adventure 02: The Beginning\" Set [PB17]",
+        "release": "June, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "P-109": "",
+            "P-117": "",
+            "P-118": "",
+            "P-119": "",
+            "P-120": "",
+            "P-121": "",
+            "P-122": "",
+            "P-123": "",
+            "P-124": "",
+            "P-125": "",
+            "P-126": "",
+            "P-127": "",
+            "P-128": "",
+            "P-129": "",
+            "P-130": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/the_beginning_set.php"
+    },
 ];

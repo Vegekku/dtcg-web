@@ -1,0 +1,65 @@
+#packs {
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+        width: 180px;
+        height: auto;
+
+        &[data-status="-1"] {
+            filter: blur(1px);
+        }
+        &[data-status="1"] {
+            padding-right: 7px;
+            background-color: var(--correct-card);
+        }
+        &[data-status="2"] {
+            padding-right: 7px;
+            background-color: var(--bought-card);
+        }
+        &[data-status="3"] {
+            padding-right: 7px;
+            background-color: var(--proxy-card);
+        }
+        &[data-status="2"][data-bought="0"],
+        &[data-status="3"][data-bought="0"] {
+            padding-right: 7px;
+            background-color: var(--revision-card);
+        }
+    }
+}
+
+#products {
+    .active {
+        display: block;
+    }
+    > :not(.active) {
+        display: none;
+    }
+}
+
+// Move this to filters
+#content {
+    &.filter--status {
+        &.status--no_have {
+            #packs img:not([data-status="0"]) {
+                display: none;
+            }
+        }
+        &.status--got_it {
+            #packs img:not([data-status="1"]) {
+                display: none;
+            }
+        }
+        &.status--bought_it {
+            #packs img:not([data-status="2"]) {
+                display: none;
+            }
+        }
+        &.status--reservation {
+            #packs img:not([data-status="-1"]) {
+                display: none;
+            }
+        }
+    }
+}
