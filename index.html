@@ -16,9 +16,13 @@
         <button class="accordion" data-buttons="boosterButtons">Boosters</button>
         <button class="accordion" data-buttons="starterButtons">Starters</button>
         <button class="accordion" data-buttons="otherButtons">Others</button>
+        <button class="accordion" data-buttons="productButtons">Products</button>
         <div id="boosterButtons" class="panel"></div>
         <div id="starterButtons" class="panel"></div>
         <div id="otherButtons" class="panel"></div>
+        <div id="productButtons" class="panel">
+            <button title="Packs" value="packs" onclick="toggleTables(this)">Sobres</button>
+        </div>
         <div id="editionButtons">
             <button id="editSet" onclick="editSet()">Editar</button>
             <button id="saveSet" onclick="saveSet()" hidden>Guardar</button>
@@ -69,7 +73,13 @@
             </select>
         </div>
     </div>
-    <div id="setLists" class="view--collection"></div>
+    <div id="content" class="content">
+        <div id="setLists" class="view--collection"></div>
+        <div id="products">
+            <div id="packs">
+            </div>
+        </div>
+    </div>
     <a href="https://www.paypal.com/donate/?hosted_button_id=49N3JWT3ZHY98">Ayuda a Ennis!</a>
     <a href="https://paypal.me/vegekku">Invítame a un café</a>
     <span>bandai: 2582 results</span>
