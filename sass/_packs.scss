@@ -37,3 +37,29 @@
         display: none;
     }
 }
+
+// Move this to filters
+#content {
+    &.filter--status {
+        &.status--no_have {
+            #packs img:not([data-status="0"]) {
+                display: none;
+            }
+        }
+        &.status--got_it {
+            #packs img:not([data-status="1"]) {
+                display: none;
+            }
+        }
+        &.status--bought_it {
+            #packs img:not([data-status="2"]) {
+                display: none;
+            }
+        }
+        &.status--reservation {
+            #packs img:not([data-status="-1"]) {
+                display: none;
+            }
+        }
+    }
+}

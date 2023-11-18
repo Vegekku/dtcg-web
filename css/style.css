@@ -625,3 +625,16 @@ td {
 #products > :not(.active) {
   display: none;
 }
+
+#content.filter--status.status--no_have #packs img:not([data-status="0"]) {
+  display: none;
+}
+#content.filter--status.status--got_it #packs img:not([data-status="1"]) {
+  display: none;
+}
+#content.filter--status.status--bought_it #packs img:not([data-status="2"]) {
+  display: none;
+}
+#content.filter--status.status--reservation #packs img:not([data-status="-1"]) {
+  display: none;
+}
