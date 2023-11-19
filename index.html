@@ -8,11 +8,12 @@
     <script src="js/firebase.js"></script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="print" href="css/print.css">
     <title>DTCG List</title>
 </head>
 <!-- https://stackoverflow.com/questions/3665115/how-to-create-a-file-in-memory-for-user-to-download-but-not-through-server -->
 <body>
-    <div>
+    <div class="no-print">
         <button class="accordion" data-buttons="boosterButtons">Boosters</button>
         <button class="accordion" data-buttons="starterButtons">Starters</button>
         <button class="accordion" data-buttons="otherButtons">Others</button>
@@ -80,9 +81,9 @@
             </div>
         </div>
     </div>
-    <a href="https://www.paypal.com/donate/?hosted_button_id=49N3JWT3ZHY98">Ayuda a Ennis!</a>
-    <a href="https://paypal.me/vegekku">Invítame a un café</a>
-    <span>bandai: 2582 results</span>
+    <a href="https://www.paypal.com/donate/?hosted_button_id=49N3JWT3ZHY98" class="no-print">Ayuda a Ennis!</a>
+    <a href="https://paypal.me/vegekku" class="no-print">Invítame a un café</a>
+    <span class="no-print">bandai: 2582 results</span>
     
     <div class="modal" id="editModal">
         <div class="modal-bg modal-exit" onclick="modalClose(this)"></div>
