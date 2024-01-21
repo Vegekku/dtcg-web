@@ -62,15 +62,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
 
         const bandaitcgplusURL = 'https://files.bandai-tcg-plus.com/card_image/DG-EN';
-        const bandaitcgplusjpURL = 'https://files.bandai-tcg-plus.com/card_image/DG-JA';
         const digimoncardURL = 'https://world.digimoncard.com/images/cardlist/card';
+        const digimoncardjpURL = 'https://digimoncard.com/images/cardlist/card';
         const digimonCardDev = 'https://assets.cardlist.dev/images/communitycards';
         const digimonFandom = 'https://static.wikia.nocookie.net/digimoncardgame/images';
         
         if ( url.includes('bandaitcgplusURL')) {
             var cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
-        } else if (url.includes('bandaitcgplusjpURL')) {
-            var cardUrl = url.replace('bandaitcgplusjpURL', bandaitcgplusjpURL);
+        } else if (url.includes('digimoncardjpURL')) {
+            var cardUrl = url.replace('digimoncardjpURL', digimoncardjpURL);
         } else if (url.includes('digimoncardURL')) {
             var cardUrl = url.replace('digimoncardURL', digimoncardURL);
         } else if (url.includes('digimonCardDev')) {
