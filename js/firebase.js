@@ -2328,11 +2328,11 @@ const sets = [
         "slug": "2022summer_dashpack",
         "name": "Summer 2022 Dash Pack",
         "release": "July 1, 2022",
-        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel_D.png",
         "cards": {
-            "BT5-097": "d1c0de",
-            "BT7-100": "f59f46",
-            "BT8-102": "483604",
+            "BT5-097": "P",
+            "BT7-100": "P",
+            "BT8-102": "P",
         },
     },
     // Digimon Survive Promo Pack --- digimon_survive
@@ -4817,14 +4817,14 @@ const sets = [
         "slug": "dp01",
         "name": "Double Pack Set [DP-01]",
         "release": "November 17, 2023",
-        "url": "digimonFandom/parallel.png",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_DP01_D.png",
         "cards": {
-            "BT1-060": "d/d7/BT1-060_P4",
-            "BT8-079": "2/2a/BT8-079_P2",
-            "BT8-110": "b/ba/BT8-110_P1",
-            "EX1-004": "a/a7/EX1-004_P2",
-            "EX1-052": "9/9c/EX1-052_P1",
-            "EX1-072": "a/a9/EX1-072_P1",
+            "BT1-060": "",
+            "BT8-079": "",
+            "BT8-110": "",
+            "EX1-004": "",
+            "EX1-052": "",
+            "EX1-072": "",
         },
         "info_url": "https://world.digimoncard.com/products/goods/double_pack-set.php"
     },
@@ -4835,12 +4835,12 @@ const sets = [
         "slug": "gb03",
         "name": "Gift Box 2023 [GB03]",
         "release": "November 17, 2023",
-        "url": "digimonFandom/parallel.png",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_GB23_dummy.png",
         "cards": {
-            "BT3-039": "2/2c/BT3-039_P3",
-            "BT3-088": "e/ed/BT3-088_P3",
-            "ST15-11": "e/e0/ST15-11_P1",
-            "ST16-11": "2/2f/ST16-11_P1",
+            "BT3-039": "",
+            "BT3-088": "",
+            "ST15-11": "",
+            "ST16-11": "",
         },
         "info_url": "https://world.digimoncard.com/products/goods/gift_box_2023.php"
     },
@@ -5075,22 +5075,22 @@ const sets = [
         "slug": "tp_beginning_2",
         "name": "Tamer Party -THE BEGINNING- ver.2.0",
         "release": "December, 2023",
-        "url": "digimonFandom/parallel.png",
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
         "cards": {
-            "P-117": "e/e2/P-117",
-            "P-118": "c/cf/P-118",
-            "P-119": "7/70/P-119",
-            "P-120": "7/7a/P-120",
-            "P-121": "3/32/P-121",
-            "P-122": "5/58/P-122",
-            "P-123": "4/4d/P-123",
-            "P-124": "8/82/P-124",
-            "P-125": "a/ab/P-125",
-            "P-126": "6/65/P-126",
-            "P-127": "1/12/P-127",
-            "P-128": "0/09/P-128",
-            "P-129": "a/a2/P-129",
-            "P-130": "9/9b/P-130",
+            "P-117": "",
+            "P-118": "",
+            "P-119": "",
+            "P-120": "",
+            "P-121": "",
+            "P-122": "",
+            "P-123": "",
+            "P-124": "",
+            "P-125": "",
+            "P-126": "",
+            "P-127": "",
+            "P-128": "",
+            "P-129": "",
+            "P-130": "",
         },
         "info_url": "https://world.digimoncard.com/event/tamer_party_sp/",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e7/Tamer_Party_Pack_The_Beginning.png"
@@ -5103,12 +5103,12 @@ const sets = [
         "slug": "whe",
         "name": "Winter Holiday Event",
         "release": "December 1, 2023 – January 31, 2024",
-        "url": "noCardURL",
+        "url": "digimonFandom/parallel.png",
         "cards": {
-            "ST3-04": "",
-            "EX1-033": "",
-            "ST16-03": "",
-            "ST15-02": "",
+            "ST3-04": "2/2e/ST3-04_P6",
+            "EX1-033": "d/df/EX1-033_P2",
+            "ST16-03": "a/ad/ST16-03_P1",
+            "ST15-02": "f/fd/ST15-02_P1",
         },
         "info_url": "https://world.digimoncard.com/event/winter_holiday_event/"
     },
@@ -5150,6 +5150,54 @@ const sets = [
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2023/"
     },
+    // 2023 Championship Finals Trophy Cards - Top 16 --- cftc_2023_top16
+    {
+        "id": null,
+        "slug": "cftc_2023_top16",
+        "name": "2021 Championship Finals Framed Trophy Cards - Top 16",
+        "release": "December 2 - 3, 2023",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "BT13-019": "e/e2/BT13-019_P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2023/"
+    },
+    // 2023 Championship Finals Trophy Cards - 3rd & 4th Place --- cftc_2023_top3&4
+    {
+        "id": null,
+        "slug": "cftc_2023_top3&4",
+        "name": "2021 Championship Finals Framed Trophy Cards - 3rd & 4th Place",
+        "release": "December 2 - 3, 2023",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "BT13-017": "a/a8/BT13-017_P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2023/"
+    },
+    // 2023 Championship Finals Trophy Cards - 2nd Place --- cftc_2023_top2
+    {
+        "id": null,
+        "slug": "cftc_2023_top2",
+        "name": "2021 Championship Finals Framed Trophy Cards - 2nd Place",
+        "release": "December 2 - 3, 2023",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "BT10-068": "b/bc/BT10-068_P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2023/"
+    },
+    // 2023 Championship Finals Trophy Cards - 1st Place --- cftc_2023_top1
+    {
+        "id": null,
+        "slug": "cftc_2023_top1",
+        "name": "2021 Championship Finals Framed Trophy Cards - 1st Place",
+        "release": "December 2 - 3, 2023",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "BT10-016": "e/e8/BT10-016_P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2023/"
+    },
 
     // {
     //     "id": null,
@@ -5165,6 +5213,90 @@ const sets = [
     //     },
     //     "info_url": "https://world.digimoncard.com/event/winter_holiday_event/"
     // },
+
+// January 19, 2024
+    // Booster Animal Colusseum [EX5] --- ex5
+    {
+        "id": "EX5",
+        "slug": "ex5",
+        "name": "Booster Animal Colusseum [EX5]",
+        "release": "January 19, 2024",
+        "total": 74,
+        "url": "bandaitcgplusURL/setID/e_setID_cardID_d.png",
+        "add_zero": 3,
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/81/EX-04-Booster_Pack-EN.png",
+        // "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/1/12/EX-04-Playsheet-EN.jpg",
+        "color": {
+            "red": [1,"7-12",14,64,66],
+            "red-purple": [13],
+            "red-blue": [73],
+            "blue": [2,16,17,"19-22",25,65,67],
+            "blue-purple": [15,18,23,26],
+            "blue-yellow": [24],
+            "yellow": [28,29,31,33,74],
+            "yellow-green": [27,30,32,34,68],
+            "green": [3,4,"35-40",42,43],
+            "green-purple": [41],
+            "black": [5,"50-52"],
+            "black-green": [44,47,49,55],
+            "black-yellow": [45,46,48,53,54],
+            "purple": [6,"56-63",69],
+            "white": ["70-72"]
+        },
+        "override": {
+            "url": "bandaitcgplusURL/setID/e_Ex5_cardID_d.png",
+            "cards": {
+                "EX5-045": ""
+            }
+        },
+    },
+    // Booster Animal Colusseum [EX5] - Alternatives --- ex5_alts
+    {
+        "id": null,
+        "slug": "ex5_alts",
+        "name": "Booster Animal Colusseum [EX5] - Alternatives",
+        "release": "January 19, 2024",
+        "url": "bandaitcgplusURL/setID/e_setID_cardIDparallel_d.png",
+        "cards": {
+            "EX5-007": "p",
+            "EX5-013": "p",
+            "EX5-014": "p",
+            "EX5-016": "p",
+            "EX5-024": "p",
+            "EX5-025": "p",
+            "EX5-026": ["p","p2","p3"],
+            "EX5-033": "p",
+            "EX5-034": "p",
+            "EX5-041": "P",
+            "EX5-042": "p",
+            "EX5-043": "p",
+            "EX5-053": "p",
+            "EX5-054": "p",
+            "EX5-055": "p",
+            "EX5-062": "p",
+            "EX5-063": "p",
+            "EX5-070": "p",
+            "EX5-073": "p",
+            "EX5-074": "p",
+        },
+    },
+    // Booster Animal Colusseum [EX5] - Box Topper --- ex5_boxtopper
+    {
+        "id": null,
+        "slug": "ex5_boxtopper",
+        "name": "Booster Animal Colusseum [EX5] - Box Topper",
+        "release": "January 19, 2024",
+        "url": "bandaitcgplusURL/setID/e_setID_cardIDp_d.png",
+        "cards": {
+            "EX5-001": "P1",
+            "EX5-002": "P1",
+            "EX5-003": "P1",
+            "EX5-004": "P1",
+            "EX5-005": "P1",
+            "EX5-006": "P1",
+        },
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6c/Box_Promotion_Pack_Alternative_Being-EN.png"
+    },
 
 // February, 2024
     // Premium Binder Set --- premium_binder_set
