@@ -5068,7 +5068,7 @@ const sets = [
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/0/01/Winner_Pack_Blast_Ace.png"
     },
 
-// December 2024
+// December 2023
     // Tamer Party -THE BEGINNING- ver.2.0 --- tp_beginning_2
     {
         "id": null,
@@ -5093,7 +5093,7 @@ const sets = [
             "P-130": "",
         },
         "info_url": "https://world.digimoncard.com/event/tamer_party_sp/",
-        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e7/Tamer_Party_Pack_The_Beginning.png"
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b6/Tamer_Party_Pack_The_Beginning_Ver_2.png"
     },
 
 // December 1, 2023 – January 31, 2024
@@ -5224,7 +5224,7 @@ const sets = [
         "total": 74,
         "url": "bandaitcgplusURL/setID/e_setID_cardID_d.png",
         "add_zero": 3,
-        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/81/EX-04-Booster_Pack-EN.png",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/0/09/EX-05-Booster_Pack-EN.png",
         // "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/1/12/EX-04-Playsheet-EN.jpg",
         "color": {
             "red": [1,"7-12",14,64,66],
@@ -5295,7 +5295,41 @@ const sets = [
             "EX5-005": "P1",
             "EX5-006": "P1",
         },
-        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6c/Box_Promotion_Pack_Alternative_Being-EN.png"
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/25/Box_Promotion_Pack_Animal_Colosseum-EN.png"
+    },
+    // Booster Animal Colusseum [EX5] - Limited Card Set ver.2 --- ex5_limited_2
+    {
+        "id": null,
+        "slug": "ex5_limited_2",
+        "name": "Booster Animal Colusseum [EX5] - Limited Card Set ver.2",
+        "release": "January 19, 2024",
+        "url": "bandaitcgplusURL/EX5/e_EX5_setID-cardID_parallel.png",
+        "cards": {
+            "P-097": "d",
+            "P-098": "d",
+            "P-099": "d",
+            "P-100": "D",
+            "P-101": "d",
+            "P-102": "d",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/f8/Limited_Card_Set_Ver_2.png"
+    },
+    // Booster Animal Colusseum [EX5] - 3rd Anniversary Update Pack --- ex5_update_pack_3
+    {
+        "id": null,
+        "slug": "ex5_update_pack_3",
+        "name": "Booster Animal Colusseum [EX5] - 3rd Anniversary Update Pack",
+        "release": "January 19, 2024",
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_parallel.png",
+        "cards": {
+            "P-091": "D",
+            "P-092": "D",
+            "P-093": "D",
+            "P-094": "D",
+            "P-095": "d",
+            "P-096": "d",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c9/3rd_Anniversary_Update_Pack-EN.png"
     },
 
 // February, 2024
@@ -5328,6 +5362,215 @@ const sets = [
             "P-114": "0/02/P-114_P1",
         },
         "info_url": "https://world.digimoncard.com/products/goods/tamer-goods-set_PB16.php"
+    },
+
+    // Booster Exceed Apocalypse (BT15) Pre-Release Tournaments --- bt15_prerelease
+    {
+        "id": null,
+        "slug": "bt15_prerelease",
+        "name": "Booster Exceed Apocalypse (BT15) Pre-Release Tournaments",
+        "release": "February 9 - 15, 2024",
+        "url": "digimonFandom/parallel.png",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/91/Pre_Release_Pack_Exceed_Apocalypse-EN.png/",
+        "cards": {
+            "P-087": "0/07/P-087",
+            "BT10-008": "9/9b/BT10-008_P3",
+        },
+        "info_url": "https://world.digimoncard.com/event/pre-release_BT-15/"
+    },
+
+    // Booster Exceed Apocalypse [BT15] --- bt15
+    {
+        "id": "BT15",
+        "slug": "bt15",
+        "name": "Booster Exceed Apocalypse [BT15]",
+        "release": "February 16, 2024",
+        "total": 102,
+        "url": "digimoncardjpURL/setID-cardID.png",
+        "add_zero": 3,
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
+        "playmat": "",
+        "color": {
+            "red": [1,"7-10","13-15",17,82,88,89],
+            "red-blue": [16],
+            "red-green": [12],
+            "red-black": [18],
+            "red-purple": [11],
+            "blue": [2,"19-32",83,90,91,101],
+            "yellow": [3,33,34,"37-40",42,84,92,93],
+            "yellow-green": [41],
+            "yellow-black": [35],
+            "yellow-purple": [36],
+            "green": [4,"43-54",85,94,95],
+            "black": [5,55,57,"59-62","64-66",67,86,96,97],
+            "black-green": [56,58,63,67],
+            "purple": [6,"68-70","72-74","76-81",87,"98-100"],
+            "purple-red": [71,75],
+            "white": [102],
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver15.php"
+    },
+    // Booster Exceed Apocalypse [BT15] - Alternatives --- bt15_alts
+    {
+        "id": null,
+        "slug": "bt15_alts",
+        "name": "Booster Exceed Apocalypse [BT15] - Alternatives",
+        "release": "February 16, 2024",
+        "url": "digimoncardjpURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT15-007": "P1",
+            "BT15-014": "P1",
+            "BT15-020": "P1",
+            "BT15-026": "P1",
+            "BT15-037": "P1",
+            "BT15-038": "P1",
+            "BT15-043": "P1",
+            "BT15-049": "P1",
+            "BT15-056": "P1",
+            "BT15-064": "P1",
+            "BT15-076": "P1",
+            "BT15-081": "P1",
+            "BT15-082": "P1",
+            "BT15-083": "P1",
+            "BT15-084": "P1",
+            "BT15-085": "P1",
+            "BT15-086": "P1",
+            "BT15-087": "P1",
+            "BT15-101": "P1",
+            "BT15-102": ["P1","P2"],
+        },
+    },
+    // Booster Exceed Apocalypse [BT15] - Box Topper --- bt15_boxtopper
+    {
+        "id": null,
+        "slug": "bt15_boxtopper",
+        "name": "Booster Exceed Apocalypse [BT15] - Box Topper",
+        "release": "February 16, 2024",
+        "url": "digimoncardjpURL/setID-cardID_parallel.png",
+        "cards": {
+            "BT15-001": "P1",
+            "BT15-002": "P1",
+            "BT15-003": "P1",
+            "BT15-004": "P1",
+            "BT15-005": "P1",
+            "BT15-006": "P1",
+        },
+    },
+
+// Mid February - May 2024
+    // Official Tournament Pack Vol.12 --- otp12
+    {
+        "id": null,
+        "slug": "otp12",
+        "name": "Official Tournament Pack Vol.12",
+        "release": "Mid February - May 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT4-074": "",
+            "BT6-070": "",
+            "BT8-081": "",
+            "BT11-068": "",
+            "EX1-053": "",
+            "EX3-058": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_tournament_12/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/0/0a/Official_Tournament_Pack_Vol.12.png"
+    },
+    // Winner Pack Exceed Apocalypse --- wp12
+    {
+        "id": null,
+        "slug": "wp12",
+        "name": "Winner Pack -Exceed Apocalypse-",
+        "release": "Mid February - May 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT5-033": "",
+            "BT9-050": "",
+            "BT10-008": "",
+            "BT10-081": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_tournament_12/",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/54/Winner_Pack_Exceed_Apocalypse.png"
+    },
+
+// February-August, 2024
+    // Ultimate Cup 2024 --- ultimatecup_2024
+    {
+        "id": null,
+        "slug": "ultimatecup_2024",
+        "name": "Ultimate Cup 2024",
+        "release": "February-August, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT12-009": "P1",
+            "BT12-012": "P1",
+            "BT12-013": "P1",
+            "BT12-015": "P1",
+            "BT12-017": "P2",
+            "BT7-112": "P4",
+            "EX2-073": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/ultimate_cup/"
+    },
+    // Event Pack 6 --- eventpack6
+    {
+        "id": null,
+        "slug": "eventpack6",
+        "name": "Event Pack 6",
+        "release": "February-August, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT9-041": "",
+            "BT10-066": "",
+            "BT11-054": "",
+            "BT12-030": "",
+            "BT13-049": "",
+            "BT13-088": "",
+            "BT13-093": "",
+            "EX3-023": "",
+            "RB1-009": "",
+        },
+    },
+    // Judge Pack 5 --- judgepack5
+    {
+        "id": null,
+        "slug": "judgepack5",
+        "name": "Judge Pack 5",
+        "release": "February-August, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT9-008": "",
+            "BT9-058": "",
+            "BT10-018": "",
+            "BT11-020": "",
+            "BT12-034": "",
+            "BT12-073": "",
+            "BT13-034": "",
+            "BT13-049": "",
+            "BT13-078": "",
+            "ST12-012": "",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2e/Judge_Pack_4.png"
+    },
+
+// March 8, 2024
+    // Advanced Deck DOUBLE TYPHOON [ST17] --- st17
+    {
+        "id": "ST17",
+        "slug": "st17",
+        "name": "Advanced Deck DOUBLE TYPHOON [ST17]",
+        "release": "March 8, 2024",
+        "total": 13,
+        "url": "digimoncardjpURL/setID-cardID.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-17/",
+        "color": {
+            "green": ["1-3","10-12"],
+            "green-yellow": [6],
+            "green-black": [5,7,8],
+            "green-purple": [4,9],
+            "black-blue": [13]
+        }
     },
 
 // June, 2024
