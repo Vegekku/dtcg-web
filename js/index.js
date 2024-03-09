@@ -172,7 +172,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         var cardUrl = getImageUrl(url, setId, cardId, parallel);
                         // Override in card
                         if ( 'override' in setElement && cardNumber in setElement.override.cards ) {
-                            cardUrl = getImageUrl(setElement.override.url, setId, cardId, parallel);
+                            const overrideParallel = '' !== setElement.override.cards[cardNumber] ? setElement.override.cards[cardNumber] : parallel
+                            cardUrl = getImageUrl(setElement.override.url, setId, cardId, overrideParallel);
                         }
                         
                         cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought);
@@ -270,6 +271,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     var cardUrl = getImageUrl(setElement.url, setElement.id, cardId);
 
                     if ( 'override' in setElement && cardNumber in setElement.override.cards ) {
+                        // TODO: Pasar parallel
                         cardUrl = getImageUrl(setElement.override.url, setElement.id, cardId);
                     }
 
