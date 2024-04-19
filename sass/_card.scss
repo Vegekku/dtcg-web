@@ -1,5 +1,15 @@
-@mixin card-color($left-color,$right-color:'',$text-shadow:'',$color:'') {
-    @if $right-color != '' {
+@mixin card-color($left-color,$right-color:'',$text-shadow:'',$color:'',$center-color:'') {
+    @if $center-color != '' {
+        [data-color="#{$left-color}-#{$center-color}-#{$right-color}"] & {
+            background: repeating-linear-gradient(to right, var(--#{$left-color}-card), var(--#{$left-color}-card) 33.33%, var(--#{$center-color}-card) 33.33%, var(--#{$center-color}-card) 66.66%, var(--#{$right-color}-card) 66.66%, var(--#{$right-color}-card));
+            @if $text-shadow != '' {
+                text-shadow: -1px 0 #{$text-shadow}, 0 1px #{$text-shadow}, 1px 0 #{$text-shadow}, 0 -1px #{$text-shadow};
+            }
+            @if $color != '' {
+                color: #{$color};
+            }
+        }
+    } @else if $right-color != '' {
         [data-color="#{$left-color}-#{$right-color}"] & {
             background: linear-gradient(90deg, var(--#{$left-color}-card) 50%, var(--#{$right-color}-card) 50%);
             @if $text-shadow != '' {
@@ -48,6 +58,7 @@
     @include card-color('yellow', 'blue', 'white', 'black');
     @include card-color('yellow', 'green', 'white', 'black');
     @include card-color('yellow', 'black', 'white', 'black');
+    @include card-color('yellow', 'black', 'white', 'black', 'blue');
     @include card-color('yellow', 'purple', 'white', 'black');
 
     // Green cards
@@ -76,7 +87,7 @@
 
     // White cards
     @include card-color('white', '', '', 'black');
-    @include card-color('black', 'red', 'white', 'black');
+    @include card-color('white', 'red', 'white', 'black');
 }
 
 .card_list {
