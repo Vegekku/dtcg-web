@@ -3577,8 +3577,7 @@ const sets = [
         "slug": "judgepack2",
         "name": "Judge Pack 2",
         "release": "Mid January 2023–April 2023",
-        // "url": "digimoncardURL/setID-cardID_parallel.png",
-        "url": "noCardURL",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
             "ST1-01": "P1",
             "ST2-01": "P1",
