@@ -59,3 +59,34 @@
         display: none;
     }
 }
+
+#content {
+    &.filter--status {
+        // TODO: Añadir no-pull y no-pull-no-have
+        &.status--no_have {
+            #packs img:not([data-status="0"]) {
+                display: none;
+            }
+        }
+        &.status--got_it {
+            #packs img:not([data-status="1"]) {
+                display: none;
+            }
+        }
+        &.status--bought_it {
+            #packs img:not([data-status="2"]) {
+                display: none;
+            }
+        }
+        &.status--reservation {
+            #packs img:not([data-status="-1"]) {
+                display: none;
+            }
+        }
+        &.status--proxy {
+            #packs img:not([data-status="3"]) {
+                display: none;
+            }
+        }
+    }
+}
