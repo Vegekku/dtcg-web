@@ -145,6 +145,10 @@ input:disabled + label {
 [data-color=black-purple] .card_id {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--purple-card) 50%);
 }
+[data-color=black-white] .card_id {
+  background: linear-gradient(90deg, var(--black-card) 50%, var(--white-card) 50%);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 [data-color=purple] .card_id {
   background-color: var(--purple-card);
 }
@@ -172,6 +176,11 @@ input:disabled + label {
   background: linear-gradient(90deg, var(--white-card) 50%, var(--red-card) 50%);
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   color: black;
+}
+[data-color=white-blue-green] .card_id {
+  background: repeating-linear-gradient(to right, var(--white-card), var(--white-card) 33.33%, var(--blue-card) 33.33%, var(--blue-card) 66.66%, var(--green-card) 66.66%, var(--green-card));
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
 }
 
 .card_list {
