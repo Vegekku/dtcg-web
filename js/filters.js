@@ -1,11 +1,20 @@
-var datalistNavigation = {
+const datalistNavigation = {
     'prev': null,
     'next': null,
 };
 
+/**
+ * Toggle the navigation controls for set filter.
+ */
 const toggleSetNavigation = () => {
     document.getElementById('previusSet').disabled = datalistNavigation.prev === null;
     document.getElementById('nextSet').disabled = datalistNavigation.next === null;
+}
+
+const resetSearchSet = () => {
+    document.getElementById('setValue').value = '';
+    datalistNavigation.prev = null;
+    datalistNavigation.next = null;
 }
 
 const filterCards = () => {
@@ -36,6 +45,7 @@ const filterCards = () => {
         setLists.classList.remove('filter--status', 'filter--status--no_pull', 'filter--status--no_pull_no_have');
         content.className = 'content';
     }
+    cleanFilterStatus();
     if (filters.status !== '') {
         const status = {
             'reservation': '-1',
@@ -44,7 +54,6 @@ const filterCards = () => {
             'bought_it': '2',
             'proxy': '3'
         };
-        cleanFilterStatus();
         if ('no_pull_no_have' === filters.status) {
             setLists.classList.add('filter--status--no_pull_no_have');
             content.classList.add('filter--status--no_pull_no_have');
@@ -61,8 +70,6 @@ const filterCards = () => {
             cardClasses.push('filtered--status');
             rowClasses.push('match_filter--status');
         }
-    } else {
-        cleanFilterStatus();
     }
 
     // Color filter
@@ -73,15 +80,13 @@ const filterCards = () => {
         });
         setLists.classList.remove('filter--color');
     }
+    cleanFilterColor();
     if (filters.color !== '') {
-        cleanFilterColor();
         setLists.classList.add('filter--color');
         const filterColorRows = document.querySelectorAll(`[data-color^="${filters.color}"]`);
         filterColorRows.forEach(row => {
             row.classList.add('filtered--color');
         });
-    } else {
-        cleanFilterColor();
     }
 
     // Set filter
@@ -93,16 +98,13 @@ const filterCards = () => {
         });
         setLists.classList.remove('filter--set');
     }
+    cleanFilterSet();
     if (filters.set !== '') {
-        cleanFilterSet();
         setLists.classList.add('filter--set');
         queryCards += `[data-set="${filters.set}"]`;
         cardClasses.push('filtered--set');
         rowClasses.push('match_filter--set');
-    } else {
-        cleanFilterSet();
     }
-
    
     const hideAllSets = () => {
         const filteredSet = document.querySelectorAll('.set--visible');
@@ -140,14 +142,10 @@ const searchSet = (element) => {
             datalistNavigation.next = datalistIndex + 1 !== datalist.options.length ? datalistIndex + 1 : null;
         } else {
             element.value = '';
-            document.getElementById('setValue').value = '';
-            datalistNavigation.prev = null;
-            datalistNavigation.next = null;
+            resetSearchSet();
         }
     } else {
-        document.getElementById('setValue').value = '';
-        datalistNavigation.prev = null;
-        datalistNavigation.next = null;
+        resetSearchSet();
     }
     filterCards();
     toggleSetNavigation();
