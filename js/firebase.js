@@ -2637,10 +2637,14 @@ const sets = [
         "slug": "otp6",
         "name": "Official Tournament Pack Vol.6",
         "release": "July, 2022",
-        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "BT1-072": "36c029",
-            "BT7-064": "8ccc94",
+            "BT1-072": "P2",
+            "BT1-076": "P3",
+            "BT7-064": "P2",
+            "ST1-09": "P3",
+            "ST2-09": "P2",
+            "ST3-09": "P2",
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/23/Official_Tournament_Pack_Vol.6.png/"
     },
@@ -2650,12 +2654,12 @@ const sets = [
         "slug": "wp6",
         "name": "Winner Pack X Record",
         "release": "July, 2022",
-        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "BT3-004": "eefb00",
-            "BT4-042": "6e38e3",
-            "EX1-061": "398820",
-            "ST5-08": "acc3ae",
+            "BT3-004": "P3",
+            "BT4-042": "P2",
+            "EX1-061": "P1",
+            "ST5-08": "P2",
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/53/Winner_Pack_X_Record.png"
     },
@@ -4766,7 +4770,7 @@ const sets = [
             "P-039": "0/03/P-039_P3.png",
             "P-040": "8/89/P-040_P3.png",
         },
-        // "info_url": "https://world.digimoncard.com/event/regionals-2023/"
+        "info_url": "https://world.digimoncard.com/products/goods/adventure_box_02.php"
     },
 
 // October, 2023
@@ -6063,15 +6067,15 @@ const sets = [
         "slug": "evolution_cup_participant",
         "name": "Evolution Cup May 2024 Participant Pack",
         "release": "May 10 – June 3, 2024",
-        "url": "noCardURL",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "BT8-012": "",
-            "BT8-053": "",
-            "BT13-018": "",
-            "BT13-040": "",
-            "BT13-088": "",
-            "EX4-024": "",
-            "P-147": "",
+            "BT8-012": "P3",
+            "BT8-053": "P5",
+            "BT13-018": "P2",
+            "BT13-040": "P3",
+            "BT13-088": "P2",
+            "EX4-024": "P2",
+            "P-147": "P1",
         },
         "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_may/",
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/da/Store_Championship_Participant_Pack_2023_Wave_2.png"
@@ -6084,13 +6088,13 @@ const sets = [
         "release": "May 10 – June 3, 2024",
         "url": "noCardURL",
         "cards": {
-            "BT8-012": "",
-            "BT8-053": "",
-            "BT13-018": "",
-            "BT13-040": "",
-            "BT13-088": "",
-            "EX4-024": "",
-            "P-147": "",
+            "BT8-012": "P4",
+            "BT8-053": "P6",
+            "BT13-018": "P3",
+            "BT13-040": "P4",
+            "BT13-088": "P3",
+            "EX4-024": "P3",
+            "P-147": "P2",
         },
         "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_may/"
     },
@@ -6100,11 +6104,27 @@ const sets = [
         "slug": "evolution_cup_champion",
         "name": "Evolution Cup May 2024 Champion Card",
         "release": "May 10 – June 3, 2024",
-        "url": null,
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "BT13-040": "https://world.digimoncard.com/images/event/evolution_cup/2024_may/popup/img_03.jpg"
+            "BT13-040": "P5"
         },
         "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_may/"
+    },
+
+// May 17 - 23, 2024
+    // Booster Beginning Observer (BT16) Pre-Release Tournaments --- bt16_prerelease
+    {
+        "id": null,
+        "slug": "bt16_prerelease",
+        "name": "Booster Beginning Observer (BT16) Pre-Release Tournaments",
+        "release": "May 17 - 23, 2024",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/91/Pre_Release_Pack_Exceed_Apocalypse-EN.png/",
+        "cards": {
+            "P-117": "P1",
+            "P-123": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/pre-release-BT16/"
     },
 
 // May 24, 2024
@@ -6148,6 +6168,80 @@ const sets = [
             "white": [82,83,90],
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver16/"
+    },
+    // Booster Beginning Observer [BT16] - Alternatives --- bt16_alts
+    {
+        "id": null,
+        "slug": "bt16_alts",
+        "name": "Booster Beginning Observer [BT16] - Alternatives",
+        "release": "May 24, 2024",
+        "url": "noCardURL",
+        "cards": {
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver16/",
+    },
+    // Booster Beginning Observer [BT16] - Special SP Cards --- bt16_special_sp
+    {
+        "id": null,
+        "slug": "bt16_special_sp",
+        "name": "Booster Beginning Observer [BT16] - Special SP Cards",
+        "release": "May 24, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT16-013": "",
+            "BT16-026": "",
+            "BT16-027": "",
+            "BT16-046": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver16/",
+    },
+    // Booster Beginning Observer [BT16] - Special Design Alt --- bt16_special_design
+    {
+        "id": null,
+        "slug": "bt16_special_design",
+        "name": "Booster Beginning Observer [BT16] - Special Design Alt",
+        "release": "May 24, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT16-028": "",
+            "BT16-102": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver16/",
+    },
+    // Booster Beginning Observer [BT16] - Box Topper --- bt16_boxtopper
+    {
+        "id": null,
+        "slug": "bt16_boxtopper",
+        "name": "Booster Beginning Observer [BT16] - Box Topper",
+        "release": "May 24, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT16-001": "",
+            "BT16-002": "",
+            "BT16-003": "",
+            "BT16-004": "",
+            "BT16-005": "",
+            "BT16-006": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver16/",
+    },
+
+    // Adventure Box 3 [AB03] --- ab03
+    {
+        "id": null,
+        "slug": "ab03",
+        "name": "Adventure Box 3 [AB03]",
+        "release": "May 24, 2024",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "P-117": "P2",
+            "P-118": "P1",
+            "P-119": "P1",
+            "P-120": "P1",
+            "P-121": "P1",
+            "P-122": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/adventure_box_03.php"
     },
 
 // June, 2024
@@ -6209,8 +6303,15 @@ const sets = [
         "slug": "regional2024_2_0",
         "name": "2024 Regionals Participant Card Set Wave 2",
         "release": "June-August, 2024",
-        "url": "noCardURL",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
+            "BT11-031": "P1",
+            "BT14-081": "P2",
+            "BT15-017": "P1",
+            "BT15-042": "P1",
+            "BT15-053": "P1",
+            "BT15-067": "P1",
+            "EX4-050": "P2",
         },
         "info_url": "https://world.digimoncard.com/event/regionals-2024-jun/"
     },
@@ -6220,8 +6321,15 @@ const sets = [
         "slug": "regional2024_2_1",
         "name": "2024 Regionals Finalist Card Set Wave 2",
         "release": "June-August, 2024",
-        "url": "noCardURL",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
+            "BT11-031": "P2",
+            "BT14-081": "P3",
+            "BT15-017": "P2",
+            "BT15-042": "P2",
+            "BT15-053": "P2",
+            "BT15-067": "P2",
+            "EX4-050": "P3",
         },
         "info_url": "https://world.digimoncard.com/event/regionals-2024-jun/"
     },
@@ -6231,8 +6339,15 @@ const sets = [
         "slug": "regional2024_2_2",
         "name": "2024 Regionals Champion Card Set Wave 2",
         "release": "June-August, 2024",
-        "url": "noCardURL",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
+            "BT11-031": "P3",
+            "BT14-081": "P4",
+            "BT15-017": "P3",
+            "BT15-042": "P3",
+            "BT15-053": "P3",
+            "BT15-067": "P3",
+            "EX4-050": "P4",
         },
         "info_url": "https://world.digimoncard.com/event/regionals-2024-jun/"
     },
@@ -6248,16 +6363,57 @@ const sets = [
         "add_zero": 3,
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
         "playmat": "",
-        // "color": {
-        //     "red": [1,"7-10","13-15",17,82,88,89],
-        //     "blue": [2,"19-32",83,90,91,101],
-        //     "yellow": [3,33,34,"37-40",42,84,92,93],
-        //     "green": [4,"43-54",85,94,95],
-        //     "black": [5,55,57,"59-62","64-66",67,86,96,97],
-        //     "purple": [6,"68-70","72-74","76-81",87,"98-100"],
-        //     "white": [102],
-        // },
+        "color": {
+            "red": [1,"7-10",13,15,16,18,79,80,96],
+            "red-blue": [81,94,95],
+            "red-purple": [11,12,14,17],
+            "blue": [2,"19-21",24,27,82,83],
+            "blue-yellow": [22,23,26,28],
+            "blue-green": [84,97],
+            "blue-purple": [25],
+            "yellow": [3,29,"31-33",35,"37-39",41,85,86,98,99],
+            "yellow-red": [87],
+            "yellow-green": [30,34,36,40],
+            "green": [4,43,44,46,47,50,88],
+            "green-yellow": [89],
+            "green-purple": [42,45,48,49,51],
+            "black": [5,"52-59",100],
+            "black-white": [60],
+            "purple": [6,61,68,"70-72",90,91],
+            "purple-red": [69],
+            "purple-blue": [64],
+            "purple-yellow": [63,66,101],
+            "purple-black": [62,65,67,73],
+            "white": ["74-76",78,92,93,102],
+            "white-blue-green": [77]
+        },
         // "info_url": "https://world.digimoncard.com/products/pack/ver16/"
+    },
+
+// October, 2024
+    // Premium Heroines Set [PB18] --- pb18
+    {
+        "id": null,
+        "slug": "pb18",
+        "name": "Premium Heroines Set [PB18]",
+        "release": "October, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT7-088": "",
+            "BT8-085": "",
+            "BT10-042": "",
+            "BT10-092": "",
+            "BT11-086": "",
+            "BT13-100": "",
+            "BT14-085": "",
+            "BT15-082": "",
+            "BT15-084": "",
+            "BT17-085": "",
+            "EX2-024": "",
+            "EX6-057": "",
+            "RB1-034": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/premium-heroines-set.php"
     },
 
     // {

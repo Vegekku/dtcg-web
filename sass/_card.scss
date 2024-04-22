@@ -76,6 +76,7 @@
     @include card-color('black', 'yellow', 'black');
     @include card-color('black', 'green');
     @include card-color('black', 'purple');
+    @include card-color('black', 'white', 'black');
 
     // Purple cards
     @include card-color('purple');
@@ -88,6 +89,7 @@
     // White cards
     @include card-color('white', '', '', 'black');
     @include card-color('white', 'red', 'white', 'black');
+    @include card-color('white', 'green', 'black', 'white', 'blue');
 }
 
 .card_list {
