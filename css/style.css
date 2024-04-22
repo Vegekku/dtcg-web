@@ -387,7 +387,7 @@ thead {
 }
 
 thead tr {
-  width: 100%;
+  width: 99%;
 }
 
 tr {
@@ -403,14 +403,20 @@ td {
   display: none;
 }
 
+.view--grid thead tr {
+  display: block;
+}
 .view--grid tr {
-  display: inline-block;
+  display: inline;
 }
 .view--grid .card_id {
   display: none;
 }
 .view--grid .card_amount {
   display: none;
+}
+.view--grid .card_list {
+  display: inline;
 }
 
 .view--all .set {

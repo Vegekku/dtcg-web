@@ -13,7 +13,7 @@ thead {
     z-index: 1;
 }
 thead tr {
-    width: 100%;
+    width: 99%;
 }
 tr {
     vertical-align: top;
@@ -28,14 +28,20 @@ td {
 }
 
 .view--grid {
+    thead tr {
+        display: block;
+    }
     tr {
-        display: inline-block;
+        display: inline;
     }
     .card_id {
         display: none;
     }
     .card_amount {
         display: none;
+    }
+    .card_list {
+        display: inline;
     }
 }
 
