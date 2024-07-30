@@ -2583,7 +2583,6 @@ const sets = [
         "name": "2022 Regionals Participation Set",
         "release": "July, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
-        // digimoncardURL continue here
         "cards": {
             "ST8-04": "P1",
             "BT4-084": "P1",
@@ -2654,12 +2653,22 @@ const sets = [
         "slug": "wp6",
         "name": "Winner Pack X Record",
         "release": "July, 2022",
-        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT3-004": "P3",
+            "ST5-08": "P2",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/53/Winner_Pack_X_Record.png"
+    },
+    {
+        "id": null,
+        "slug": "wp6",
+        "name": "Winner Pack X Record",
+        "release": "July, 2022",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
             "BT4-042": "P2",
             "EX1-061": "P1",
-            "ST5-08": "P2",
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/53/Winner_Pack_X_Record.png"
     },
@@ -2671,11 +2680,22 @@ const sets = [
         "slug": "storechampion_2022_0",
         "name": "Store Championship 2022 Participant Pack",
         "release": "August, 2022",
+        "url": "bandaitcgplusURL/P/setID_cardID_d_B.png",
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d0/Store_Championship_Participant_Pack_2022.png",
+        "cards": {
+            "ST8-06": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_championship_august/"
+    },
+    {
+        "id": null,
+        "slug": "storechampion_2022_0",
+        "name": "Store Championship 2022 Participant Pack",
+        "release": "August, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d0/Store_Championship_Participant_Pack_2022.png",
         "cards": {
             "ST7-03": "P2",
-            "ST8-06": "P2",
             "BT6-034": "P1",
             "BT7-045": "P1",
             "BT7-069": "P1",
@@ -2690,10 +2710,20 @@ const sets = [
         "slug": "storechampion_2022_1",
         "name": "Store Championship 2022 Champion Card Set",
         "release": "August, 2022",
+        "url": "bandaitcgplusURL/P/setID_cardID_d_C.png",
+        "cards": {
+            "ST8-06": "P3",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_championship_august/"
+    },
+    {
+        "id": null,
+        "slug": "storechampion_2022_1",
+        "name": "Store Championship 2022 Champion Card Set",
+        "release": "August, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
             "ST7-03": "P3",
-            "ST8-06": "P3",
             "BT6-034": "P2",
             "BT7-045": "P2",
             "BT7-069": "P2",
@@ -2708,14 +2738,24 @@ const sets = [
         "slug": "regional2022_2_0",
         "name": "2022 Regionals Participant Card Set 2",
         "release": "July, 2022",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_B.png",
+        "cards": {
+            "BT7-110": "P2",
+            "ST7-06": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
+    },
+    {
+        "id": null,
+        "slug": "regional2022_2_0",
+        "name": "2022 Regionals Participant Card Set 2",
+        "release": "July, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
             "BT5-071": "P1",
             "BT7-062": "P1",
-            "BT7-110": "P2",
             "BT8-042": "P1",
             "BT8-053": "P1",
-            "ST7-06": "P2",
             "ST9-05": "P2",
         },
         "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
@@ -2726,14 +2766,24 @@ const sets = [
         "slug": "regional2022_2_1",
         "name": "2022 Regionals Finalist Card Set 2",
         "release": "July, 2022",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_C.png",
+        "cards": {
+            "BT7-110": "P3",
+            "ST7-06": "P3",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
+    },
+    {
+        "id": null,
+        "slug": "regional2022_2_1",
+        "name": "2022 Regionals Finalist Card Set 2",
+        "release": "July, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
             "BT5-071": "P2",
             "BT7-062": "P2",
-            "BT7-110": "P3",
             "BT8-042": "P2",
             "BT8-053": "P2",
-            "ST7-06": "P3",
             "ST9-05": "P3",
         },
         "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
@@ -2744,14 +2794,24 @@ const sets = [
         "slug": "regional2022_2_2",
         "name": "2022 Regionals Champion Card Set 2",
         "release": "July, 2022",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "BT7-110": "P4",
+            "ST7-06": "P4",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
+    },
+    {
+        "id": null,
+        "slug": "regional2022_2_2",
+        "name": "2022 Regionals Champion Card Set 2",
+        "release": "July, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
             "BT5-071": "P3",
             "BT7-062": "P3",
-            "BT7-110": "P4",
             "BT8-042": "P3",
             "BT8-053": "P3",
-            "ST7-06": "P4",
             "ST9-05": "P4",
         },
         "info_url": "https://world.digimoncard.com/event/regionals2022_220715/"
@@ -2905,12 +2965,22 @@ const sets = [
         "slug": "wp7",
         "name": "Winner Pack -Xros Encounter-",
         "release": "October 2022–February 2023",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_WP_D.png",
+        "cards": {
+            "BT3-004": "P2",
+            "ST4-08": "P5",
+        },
+        "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/17/Winner_Pack_Xros_Encounter.png"
+    },
+    {
+        "id": null,
+        "slug": "wp7",
+        "name": "Winner Pack -Xros Encounter-",
+        "release": "October 2022–February 2023",
         "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
             "BT1-062": "P2",
-            "BT3-004": "P2",
             "BT7-064": "P1",
-            "ST4-08": "P5",
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/17/Winner_Pack_Xros_Encounter.png"
     },
@@ -2923,6 +2993,7 @@ const sets = [
         "name": "Xros Encounter (BT10) Pre-Release Tournaments",
         "release": "October 7, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
+        // continuar digimoncardURL por aquí
         "cards": {
             "BT8-058": "P1",
             "EX2-010": "P2",
@@ -5745,18 +5816,28 @@ const sets = [
         "slug": "eventpack6",
         "name": "Event Pack 6",
         "release": "February-August, 2024",
-        "url": "digimonFandom/parallel.png",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
-            "BT9-041": "4/47/BT9-041_P2-Sample",
-            "BT10-066": "7/71/BT10-066_P1-Sample",
-            "BT11-054": "b/ba/BT11-054_P1-Sample",
-            "BT12-030": "7/71/BT10-066_P1-Sample",
-            "BT13-049": "4/43/BT13-049_P1-Sample",
-            "BT13-088": "1/19/BT13-088_P1-Sample",
-            "BT13-093": "7/7f/BT13-093_P1-Sample",
-            "EX3-023": "4/4c/EX3-023_P1-Sample",
-            "RB1-009": "b/b5/RB1-009_P1-Sample",
+            "BT9-041": "",
+            "BT10-066": "",
+            "BT11-054": "",
+            "BT12-030": "",
+            "BT13-088": "",
+            "BT13-093": "",
+            "RB1-009": "",
         },
+    },
+    {
+        "id": null,
+        "slug": "eventpack6",
+        "name": "Event Pack 6",
+        "release": "February-August, 2024",
+        "url": "bandaitcgplusURL/P/e_parallel.png",
+        "cards": {
+            "BT13-049": "BT13-049_D_B",
+            "EX3-023": "EX03-023_D",
+        },
+        "info_url": "https://world.digimoncard.com/event/spring_break_event/",
     },
     // Judge Pack 5 --- judgepack5
     {
@@ -6014,7 +6095,7 @@ const sets = [
         "slug": "serial_number_2024",
         "name": "2024 Serial Number Card",
         "release": "March-May, 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_RegionalsWave1_serial_dummy.png",
         "cards": {
             "BT5-086": "",
         },
@@ -6298,9 +6379,9 @@ const sets = [
         "id": "EX6",
         "slug": "ex6",
         "name": "Booster Infernal Ascension [EX6]",
-        "release": "May 24, 2024",
+        "release": "June 28, 2024",
         "total": 74,
-        "url": "digimoncardjpURL/setID-cardID.png",
+        "url": "digimoncardURL/setID-cardID.png",
         "add_zero": 3,
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
         "playmat": "",
@@ -6313,7 +6394,72 @@ const sets = [
         //     "purple": [6,"68-70","72-74","76-81",87,"98-100"],
         //     "white": [102],
         // },
-        "info_url": "https://world.digimoncard.com/products/pack/ver16/"
+        "info_url": "https://world.digimoncard.com/products/pack/ex-06/"
+    },
+    // Booster Infernal Ascension [EX6] - Alternatives --- ex6_alts
+    {
+        "id": null,
+        "slug": "ex6_alts",
+        "name": "Booster Infernal Ascension [EX6] - Alternatives",
+        "release": "June 28, 2024",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "EX6-011": "P1",
+            "EX6-015": "P1",
+            "EX6-018": "P1",
+            "EX6-027": "P1",
+            "EX6-028": "P1",
+            "EX6-029": "P1",
+            "EX6-030": "P1",
+            "EX6-031": "P1",
+            "EX6-035": "P1",
+            "EX6-043": "P1",
+            "EX6-054": "P1",
+            "EX6-056": "P1",
+            "EX6-057": "P1",
+            "EX6-058": "P1",
+            "EX6-059": "P1",
+            "EX6-060": "P1",
+            "EX6-061": "P1",
+            "EX6-062": "P1",
+            "EX6-073": "P1",
+            "EX6-074": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-06/",
+    },
+    // Booster Infernal Ascension [EX6] - Premium Special Design Alt --- ex6_special_design
+    {
+        "id": null,
+        "slug": "ex6_special_design",
+        "name": "Booster Infernal Ascension [EX6] - Premium Special Design Alt",
+        "release": "June 28, 2024",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "EX6-011": "P2",
+            "EX6-027": "P2",
+            "EX6-028": "P2",
+            "EX6-029": "P2",
+            "EX6-035": "P2",
+            "EX6-073": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-06/",
+    },
+    // Booster Infernal Ascension [EX6] - Box Topper --- ex6_boxtopper
+    {
+        "id": null,
+        "slug": "ex6_boxtopper",
+        "name": "Booster Infernal Ascension [EX6] - Box Topper",
+        "release": "June 28, 2024",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "EX6-001": "P1",
+            "EX6-002": "P1",
+            "EX6-003": "P1",
+            "EX6-005": "P1",
+            "EX6-063": "P1",
+            "EX6-064": "P1",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-06/",
     },
 
 // June-August, 2024
@@ -6323,15 +6469,15 @@ const sets = [
         "slug": "regional2024_2_0",
         "name": "2024 Regionals Participant Card Set Wave 2",
         "release": "June-August, 2024",
-        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDw2_parti_D.png",
         "cards": {
-            "BT11-031": "P1",
-            "BT14-081": "P2",
-            "BT15-017": "P1",
-            "BT15-042": "P1",
-            "BT15-053": "P1",
-            "BT15-067": "P1",
-            "EX4-050": "P2",
+            "BT11-031": "",
+            "BT14-081": "",
+            "BT15-017": "",
+            "BT15-042": "",
+            "BT15-053": "",
+            "BT15-067": "",
+            "EX4-050": "",
         },
         "info_url": "https://world.digimoncard.com/event/regionals-2024-jun/"
     },
@@ -6341,15 +6487,15 @@ const sets = [
         "slug": "regional2024_2_1",
         "name": "2024 Regionals Finalist Card Set Wave 2",
         "release": "June-August, 2024",
-        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDw2_fina_D.png",
         "cards": {
-            "BT11-031": "P2",
-            "BT14-081": "P3",
-            "BT15-017": "P2",
-            "BT15-042": "P2",
-            "BT15-053": "P2",
-            "BT15-067": "P2",
-            "EX4-050": "P3",
+            "BT11-031": "",
+            "BT14-081": "",
+            "BT15-017": "",
+            "BT15-042": "",
+            "BT15-053": "",
+            "BT15-067": "",
+            "EX4-050": "",
         },
         "info_url": "https://world.digimoncard.com/event/regionals-2024-jun/"
     },
@@ -6359,15 +6505,15 @@ const sets = [
         "slug": "regional2024_2_2",
         "name": "2024 Regionals Champion Card Set Wave 2",
         "release": "June-August, 2024",
-        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDw2_camp_D.png",
         "cards": {
-            "BT11-031": "P3",
-            "BT14-081": "P4",
-            "BT15-017": "P3",
-            "BT15-042": "P3",
-            "BT15-053": "P3",
-            "BT15-067": "P3",
-            "EX4-050": "P4",
+            "BT11-031": "",
+            "BT14-081": "",
+            "BT15-017": "",
+            "BT15-042": "",
+            "BT15-053": "",
+            "BT15-067": "",
+            "EX4-050": "",
         },
         "info_url": "https://world.digimoncard.com/event/regionals-2024-jun/"
     },
@@ -6408,6 +6554,62 @@ const sets = [
             "white-blue-green": [77]
         },
         // "info_url": "https://world.digimoncard.com/products/pack/ver16/"
+    },
+
+// September-November, 2024
+    // 2024 Regionals Participation Card Set Wave 3 --- regional2024_3_0
+    {
+        "id": null,
+        "slug": "regional2024_3_0",
+        "name": "2024 Regionals Participant Card Set Wave 3",
+        "release": "September-November, 2024",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDw2_parti_D.png",
+        "cards": {
+            "BT11-031": "",
+            "BT14-081": "",
+            "BT15-017": "",
+            "BT15-042": "",
+            "BT15-053": "",
+            "BT15-067": "",
+            "EX4-050": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals-2024-jun/"
+    },
+    // 2024 Regionals Finalist Card Set Wave 3 --- regional2024_3_1
+    {
+        "id": null,
+        "slug": "regional2024_3_1",
+        "name": "2024 Regionals Finalist Card Set Wave 3",
+        "release": "September-November, 2024",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDw2_fina_D.png",
+        "cards": {
+            "BT11-031": "",
+            "BT14-081": "",
+            "BT15-017": "",
+            "BT15-042": "",
+            "BT15-053": "",
+            "BT15-067": "",
+            "EX4-050": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals-2024-jun/"
+    },
+    // 2024 Regionals Champion Card Set Wave 3 --- regional2024_3_2
+    {
+        "id": null,
+        "slug": "regional2024_2_2",
+        "name": "2024 Regionals Champion Card Set Wave 3",
+        "release": "September-November, 2024",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDw2_camp_D.png",
+        "cards": {
+            "BT11-031": "",
+            "BT14-081": "",
+            "BT15-017": "",
+            "BT15-042": "",
+            "BT15-053": "",
+            "BT15-067": "",
+            "EX4-050": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/regionals-2024-jun/"
     },
 
 // October, 2024
