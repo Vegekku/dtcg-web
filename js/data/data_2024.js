@@ -1121,6 +1121,63 @@ const data2024 = [
         "info_url": "https://world.digimoncard.com/event/regionals-2024-jun/"
     },
 
+// July 1 - September 30, 2024
+    // Store Tournament 2024 Jul.-Sep. - Participation Pack --- otp14
+    {
+        "id": null,
+        "slug": "otp14",
+        "name": "Store Tournament 2024 Jul.-Sep. - Participation Pack",
+        "release": "July 1 - September 30, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "P-143": "",
+            "P-144": "",
+            "P-145": "",
+            "P-146": "",
+            "P-148": "",
+            "P-149": "",
+            "P-150": "",
+            "P-151": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_tournament_14/",
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/0/0a/Official_Tournament_Pack_Vol.12.png"
+    },
+    // Store Tournament 2024 Jul.-Sep. - Winner Pack --- wp14
+    {
+        "id": null,
+        "slug": "wp14",
+        "name": "Store Tournament 2024 Jul.-Sep. - Winner Pack",
+        "release": "July 1 - September 30, 2024",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "P-143": "",
+            "P-144": "",
+            "P-145": "",
+            "P-146": "",
+            "P-148": "",
+            "P-149": "",
+            "P-150": "",
+            "P-151": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_tournament_14/",
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/54/Winner_Pack_Exceed_Apocalypse.png"
+    },
+
+// August 2 – 8, 2024
+    // Booster Secret Crisis (BT17) Pre-Release Tournaments --- bt17_prerelease
+    {
+        "id": null,
+        "slug": "bt17_prerelease",
+        "name": "Booster Secret Crisis (BT17) Pre-Release Tournaments",
+        "release": "August 2 – 8, 2024",
+        "url": "noCardURL",
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/91/Pre_Release_Pack_Exceed_Apocalypse-EN.png/",
+        "cards": {
+            "BT13-075": ["",""], // no foil y foil
+        },
+        "info_url": "https://world.digimoncard.com/event/pre-release-BT16/"
+    },
+
     // Booster Secret Crysis [BT17] --- bt17
     {
         "id": "BT17",
@@ -1157,6 +1214,56 @@ const data2024 = [
             "white-blue-green": [77]
         },
         // "info_url": "https://world.digimoncard.com/products/pack/ver16/"
+    },
+
+// August 9 – September 10, 2024
+    // Evolution Cup August 2024 Participant Pack --- evolution_cup_participant_august2024
+    {
+        "id": null,
+        "slug": "evolution_cup_participant_august2024",
+        "name": "Evolution Cup August 2024 Participant Pack",
+        "release": "August 9 – September 10, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT9-028": "",
+            "BT14-041": "",
+            "EX3-010": "",
+            "P-132": "",
+            "P-133": "",
+            "RB1-006": "",
+            "ST18-12": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_august/",
+    },
+    // Evolution Cup August 2024 Top 4 Pack --- evolution_cup_top4_august2024
+    {
+        "id": null,
+        "slug": "evolution_cup_top4_august2024",
+        "name": "Evolution Cup August 2024 Top 4 Pack",
+        "release": "August 9 – September 10, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT9-028": "",
+            "BT14-041": "",
+            "EX3-010": "",
+            "P-132": "",
+            "P-133": "",
+            "RB1-006": "",
+            "ST18-12": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_august/"
+    },
+    // Evolution Cup August 2024 Champion Card --- evolution_cup_champion_august2024
+    {
+        "id": null,
+        "slug": "evolution_cup_champion_august2024",
+        "name": "Evolution Cup August 2024 Champion Card",
+        "release": "August 9 – September 10, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "ST18-12": ""
+        },
+        "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_august/"
     },
 
 // September-November, 2024
