@@ -1,0 +1,1 @@
+const sets = [...dataNoRelease, ...data2021, ...data2022, ...data2023, ...data2024];
