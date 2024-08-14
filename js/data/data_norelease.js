@@ -5,7 +5,7 @@ const dataNoRelease = [
         "id": "P",
         "name": "Promos",
         "release": null,
-        "total": 147,
+        "total": 151,
         "url": null,
         "add_zero": 3,
         "info_url": null,
