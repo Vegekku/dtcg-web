@@ -123,8 +123,18 @@ input:disabled + label {
 [data-color=green-black] .card_id {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--black-card) 50%);
 }
+[data-color=green-yellow-black] .card_id {
+  background: repeating-linear-gradient(to right, var(--green-card), var(--green-card) 33.33%, var(--yellow-card) 33.33%, var(--yellow-card) 66.66%, var(--black-card) 66.66%, var(--black-card));
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+}
 [data-color=green-purple] .card_id {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--purple-card) 50%);
+}
+[data-color=green-yellow-purple] .card_id {
+  background: repeating-linear-gradient(to right, var(--green-card), var(--green-card) 33.33%, var(--yellow-card) 33.33%, var(--yellow-card) 66.66%, var(--purple-card) 66.66%, var(--purple-card));
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
 }
 [data-color=black] .card_id {
   background-color: var(--black-card);
