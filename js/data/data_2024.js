@@ -1653,6 +1653,25 @@ const data2024 = [
         },
         "info_url": "https://world.digimoncard.com/event/bcgfest_24-25/"
     },
+    // Premium Card Collection Memory Boost! Set --- premium_memory_boost
+    {
+        "id": null,
+        "slug": "premium_memory_boost",
+        "name": "Premium Card Collection Memory Boost! Set",
+        "release": "September 14, 2024 - 2025",
+        "url": "noCardURL",
+        "cards": {
+            "P-035": "",
+            "P-036": "",
+            "P-037": "",
+            "P-038": "",
+            "P-039": "",
+            "P-040": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/bcgfest_24-25/"
+    },
+    // https://world.digimoncard.com/products/goods/memory_boost_set.php
+    // https://world.digimoncard.com/products/goods/sleeve_animation_series_25th.php
 
 // September 13 - October 31, 2024
     // Halloween Event 2024 --- halloween_2024
