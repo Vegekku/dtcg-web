@@ -1543,6 +1543,23 @@ const data2024 = [
         "info_url": "https://world.digimoncard.com/products/pack/ex-07/",
     },
 
+// September 13 - October 31, 2024
+    // Halloween Event 2024 --- halloween_2024
+    {
+        "id": null,
+        "slug": "halloween_2024",
+        "name": "Halloween Event 2024",
+        "release": "September 13 - October 31, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT17-080": "",
+            "EX2-060": "",
+            "ST17-10": "",
+            "EX2-062": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/halloween-event/"
+    },
+
 // September-November, 2024
     // 2024 Regionals Participation Card Set Wave 3 --- regional2024_3_0
     {
@@ -1550,17 +1567,17 @@ const data2024 = [
         "slug": "regional2024_3_0",
         "name": "2024 Regionals Participant Card Set Wave 3",
         "release": "September-November, 2024",
-        "url": "bandaitcgplusURL/P/e_setID-cardIDw2_parti_D.png",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "BT11-031": "",
-            "BT14-081": "",
-            "BT15-017": "",
-            "BT15-042": "",
-            "BT15-053": "",
-            "BT15-067": "",
-            "EX4-050": "",
+            "P-097": "P1",
+            "P-101": "P1",
+            "BT10-042": "P2",
+            "BT16-028": "P2",
+            "BT16-082": "P2",
+            "EX6-006": "P1",
+            "ST17-08": "P2",
         },
-        "info_url": "https://world.digimoncard.com/event/regionals-2024-jun/"
+        "info_url": "https://world.digimoncard.com/event/regionals-2024-sep/"
     },
     // 2024 Regionals Finalist Card Set Wave 3 --- regional2024_3_1
     {
@@ -1568,35 +1585,78 @@ const data2024 = [
         "slug": "regional2024_3_1",
         "name": "2024 Regionals Finalist Card Set Wave 3",
         "release": "September-November, 2024",
-        "url": "bandaitcgplusURL/P/e_setID-cardIDw2_fina_D.png",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "BT11-031": "",
-            "BT14-081": "",
-            "BT15-017": "",
-            "BT15-042": "",
-            "BT15-053": "",
-            "BT15-067": "",
-            "EX4-050": "",
+            "P-097": "P2",
+            "P-101": "P2",
+            "BT10-042": "P3",
+            "BT16-028": "P3",
+            "BT16-082": "P3",
+            "EX6-006": "P2",
+            "ST17-08": "P3",
         },
-        "info_url": "https://world.digimoncard.com/event/regionals-2024-jun/"
+        "info_url": "https://world.digimoncard.com/event/regionals-2024-sep/"
     },
     // 2024 Regionals Champion Card Set Wave 3 --- regional2024_3_2
     {
         "id": null,
-        "slug": "regional2024_2_2",
+        "slug": "regional2024_3_2",
         "name": "2024 Regionals Champion Card Set Wave 3",
         "release": "September-November, 2024",
-        "url": "bandaitcgplusURL/P/e_setID-cardIDw2_camp_D.png",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "BT11-031": "",
-            "BT14-081": "",
-            "BT15-017": "",
-            "BT15-042": "",
-            "BT15-053": "",
-            "BT15-067": "",
-            "EX4-050": "",
+            "P-097": "P3",
+            "P-101": "P3",
+            "BT10-042": "P4",
+            "BT16-028": "P4",
+            "BT16-082": "P4",
+            "EX6-006": "P3",
+            "ST17-08": "P4",
         },
-        "info_url": "https://world.digimoncard.com/event/regionals-2024-jun/"
+        "info_url": "https://world.digimoncard.com/event/regionals-2024-sep/"
+    },
+
+    // Event Pack 7 --- eventpack7
+    {
+        "id": null,
+        "slug": "eventpack7",
+        "name": "Event Pack 7",
+        "release": "September-November, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT4-098": "",
+            "BT8-038": "",
+            "BT9-112": "",
+            "BT12-057": "",
+            "BT12-072": "",
+            "BT16-076": "",
+            "EX4-068": "",
+            "EX5-070": "",
+            "ST12-12": "",
+            "ST12-13": "",
+        },
+    },
+
+    // Judge Pack 6 --- judgepack6
+    {
+        "id": null,
+        "slug": "judgepack6",
+        "name": "Judge Pack 6",
+        "release": "September-November, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT14-086": "",
+            "BT15-086": "",
+            "BT15-087": "",
+            "BT16-086": "",
+            "BT16-087": "",
+            "BT16-096": "",
+            "BT16-099": "",
+            "BT17-090": "",
+            "BT17-091": "",
+            "BT17-098": "",
+        },
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2e/Judge_Pack_4.png"
     },
 
 // October, 2024
@@ -1623,5 +1683,25 @@ const data2024 = [
             "RB1-034": "",
         },
         "info_url": "https://world.digimoncard.com/products/goods/premium-heroines-set.php"
+    },
+    
+// October 2024 - February 2025
+    // Ultimate Cup 2024 2 --- ultimatecup_2024_2
+    {
+        "id": null,
+        "slug": "ultimatecup_2024_2",
+        "name": "Ultimate Cup 2024 2",
+        "release": "February-August, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT12-003": "",
+            "BT13-008": "",
+            "BT13-012": "",
+            "BT13-015": "",
+            "BT12-043": "",
+            "BT7-112": "",
+            "BT13-020": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/ultimate_cup/2024_oct-2025_feb/"
     },
 ];
