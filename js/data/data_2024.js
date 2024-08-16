@@ -1162,7 +1162,7 @@ const data2024 = [
         "slug": "otp14",
         "name": "Store Tournament 2024 Jul.-Sep. - Participation Pack",
         "release": "July 1 - September 30, 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "P-143": "",
             "P-144": "",
@@ -1182,7 +1182,7 @@ const data2024 = [
         "slug": "wp14",
         "name": "Store Tournament 2024 Jul.-Sep. - Winner Pack",
         "release": "July 1 - September 30, 2024",
-        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDwin_D.png",
         "cards": {
             "P-143": "",
             "P-144": "",
@@ -1195,6 +1195,35 @@ const data2024 = [
         },
         "info_url": "https://world.digimoncard.com/event/store_tournament_14/",
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/54/Winner_Pack_Exceed_Apocalypse.png"
+    },
+
+    // DIGIMON LIBERATOR Promotion Campaign --- digimon_liberator_promo_camp
+    {
+        "id": null,
+        "slug": "digimon_liberator_promo_camp",
+        "name": "DIGIMON LIBERATOR Promotion Campaign",
+        "release": "July, 2024",
+        "url": "bandaitcgplusURL/setID/e_setID-cardIDP_D.png",
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/91/Pre_Release_Pack_Exceed_Apocalypse-EN.png/",
+        "cards": {
+            "P-131": "",
+            "P-134": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/digimon-liberator_cp/"
+    },
+
+// August 1 - 4, 2024
+    // Gen Con 2024 --- gen_con_2024
+    {
+        "id": null,
+        "slug": "gen_con_2024",
+        "name": "Gen Con 2024",
+        "release": "August 1 - 4, 2024",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDPR_D.png",
+        "cards": {
+            "BT12-047": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/gen-con-2024/"
     },
 
 // August 2 – 8, 2024
@@ -1401,6 +1430,74 @@ const data2024 = [
     },
 
 // September 13, 2024
+    // Starter Deck Guardian Vortex [ST18] --- st18
+    {
+        "id": "ST18",
+        "slug": "st18",
+        "name": "Starter Deck Guardian Vortex [ST-18]",
+        "release": "September 13, 2024",
+        "total": 15,
+        "url": "digimoncardjpURL/setID-cardID.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st18-19/",
+        "color": {
+            "green": [1,"3-15"],
+            "green-red": [2]
+        }
+    },
+    // Starter Deck Guardian Vortex [ST18] - Reprints --- st18_reprints
+    {
+        "id": null,
+        "slug": "st18_reprints",
+        "name": "Starter Deck Guardian Vortex [ST-18] - Reprints",
+        "release": "September 13, 2024",
+        "url": "digimoncardjpURL/setID-cardID_parallel.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st18-19/",
+        "cards": {
+            "P-038": "P4",
+            "P-103": "P1",
+            "P-104": "P1",
+            "P-105": "P1",
+            "P-106": "P1",
+            "P-107": "P1",
+            "P-108": "P1",
+        }
+    },
+    // Starter Deck Fable Waltz [ST19] --- st19
+    {
+        "id": "ST19",
+        "slug": "st19",
+        "name": "Starter Deck Fable Waltz [ST-19]",
+        "release": "September 13, 2024",
+        "total": 15,
+        "url": "digimoncardjpURL/setID-cardID.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st18-19/",
+        "color": {
+            "yellow": ["1-15"]
+        }
+    },
+    // Starter Deck Fable Waltz [ST19] - Reprints --- st19_reprints
+    {
+        "id": null,
+        "slug": "st19_reprints",
+        "name": "Starter Deck Fable Waltz [ST-19] - Reprints",
+        "release": "September 13, 2024",
+        "url": "digimoncardjpURL/setID-cardID_parallel.png",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st18-19/",
+        "cards": {
+            "P-037": "P4",
+            "P-103": "P2",
+            "P-104": "P2",
+            "P-105": "P2",
+            "P-106": "P2",
+            "P-107": "P2",
+            "P-108": "P2",
+        }
+    },
+
     // Booster Digimon Liberator [EX7] --- ex7
     {
         "id": "EX7",
@@ -1541,6 +1638,20 @@ const data2024 = [
             "P-151": "P2",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ex-07/",
+    },
+
+// September 14, 2024
+    // BANDAI CARD GAMES Fest 24-25 --- bcgfest_24_25
+    {
+        "id": null,
+        "slug": "bcgfest_24_25",
+        "name": "BANDAI CARD GAMES Fest 24-25",
+        "release": "September 14, 2024 - 2025",
+        "url": "noCardURL",
+        "cards": {
+            "P-151": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/bcgfest_24-25/"
     },
 
 // September 13 - October 31, 2024
