@@ -1437,7 +1437,7 @@ const data2024 = [
         "name": "Starter Deck Guardian Vortex [ST-18]",
         "release": "September 13, 2024",
         "total": 15,
-        "url": "digimoncardjpURL/setID-cardID.png",
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st18-19/",
         "color": {
@@ -1451,11 +1451,11 @@ const data2024 = [
         "slug": "st18_reprints",
         "name": "Starter Deck Guardian Vortex [ST-18] - Reprints",
         "release": "September 13, 2024",
-        "url": "digimoncardjpURL/setID-cardID_parallel.png",
+        "url": "bandaitcgplusURL/ST18/e_setID-cardIDparallel_D.png",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st18-19/",
         "cards": {
-            "P-038": "P4",
+            "P-038": "ST18",
             "P-103": "P1",
             "P-104": "P1",
             "P-105": "P1",
@@ -1471,7 +1471,7 @@ const data2024 = [
         "name": "Starter Deck Fable Waltz [ST-19]",
         "release": "September 13, 2024",
         "total": 15,
-        "url": "digimoncardjpURL/setID-cardID.png",
+        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st18-19/",
         "color": {
@@ -1484,11 +1484,11 @@ const data2024 = [
         "slug": "st19_reprints",
         "name": "Starter Deck Fable Waltz [ST-19] - Reprints",
         "release": "September 13, 2024",
-        "url": "digimoncardjpURL/setID-cardID_parallel.png",
+        "url": "bandaitcgplusURL/ST19/e_setID-cardIDparallel_D.png",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st18-19/",
         "cards": {
-            "P-037": "P4",
+            "P-037": "ST19",
             "P-103": "P2",
             "P-104": "P2",
             "P-105": "P2",
@@ -1505,7 +1505,7 @@ const data2024 = [
         "name": "Booster Digimon Liberator [EX7]",
         "release": "September 13, 2024",
         "total": 74,
-        "url": "digimoncardjpURL/setID-cardID.png",
+        "url": "bandaitcgplusURL/EX07/e_setID-cardID_d.png",
         "add_zero": 3,
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
         "playmat": "",
@@ -1521,6 +1521,13 @@ const data2024 = [
             "purple": [6,"51-54",56,"58-61",65,"71-73"],
             "purple-red": [50,55,57,62],
         },
+        "override": {
+            "url": "bandaitcgplusURL/EX07/e_setID-cardID.png",
+            "cards": {
+                "EX7-072": "",
+                "EX7-074": ""
+            }
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ex-07/"
     },
     // Booster Digimon Liberator [EX7] - Alternatives --- ex7_alts
@@ -1529,7 +1536,7 @@ const data2024 = [
         "slug": "ex7_alts",
         "name": "Booster Digimon Liberator [EX7] - Alternatives",
         "release": "September 13, 2024",
-        "url": "digimoncardjpURL/setID-cardID_P1.png",
+        "url": "bandaitcgplusURL/EX07/e_setID-cardIDp_d.png",
         "cards": {
             "EX7-013": "",
             "EX7-014": "",
@@ -1560,7 +1567,7 @@ const data2024 = [
         "slug": "ex7_limited",
         "name": "Booster Digimon Liberator [EX7] - Limited Cards",
         "release": "September 13, 2024",
-        "url": "digimoncardjpURL/setID-cardID_P1.png",
+        "url": "bandaitcgplusURL/EX07/e_setID-cardID_d_l.png",
         "cards": {
             "EX7-001": "",
             "EX7-002": "",
@@ -1613,7 +1620,7 @@ const data2024 = [
         "slug": "ex7_special",
         "name": "Booster Digimon Liberator [EX7] - Special Cards",
         "release": "September 13, 2024",
-        "url": "digimoncardjpURL/setID-cardID_P2.png",
+        "url": "bandaitcgplusURL/EX07/e_setID-cardIDsp_d.png",
         "cards": {
             "EX7-030": "",
             "EX7-036": "",
@@ -1629,7 +1636,7 @@ const data2024 = [
         "slug": "ex7_legend_pack",
         "name": "Booster Digimon Liberator [EX7] - Legend Pack 2024",
         "release": "September 13, 2024",
-        "url": "digimoncardjpURL/setID-cardID_parallel.png",
+        "url": "bandaitcgplusURL/EX07/e_setID-cardID_d.png",
         "cards": {
             "BT12-059": "P2",
             "BT15-071": "P1",
@@ -1680,7 +1687,7 @@ const data2024 = [
         "slug": "halloween_2024",
         "name": "Halloween Event 2024",
         "release": "September 13 - October 31, 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDHW_D.png",
         "cards": {
             "BT17-080": "",
             "EX2-060": "",
@@ -1752,7 +1759,7 @@ const data2024 = [
         "slug": "eventpack7",
         "name": "Event Pack 7",
         "release": "September-November, 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_EventPack7_d.png",
         "cards": {
             "BT4-098": "",
             "BT8-038": "",
@@ -1765,6 +1772,12 @@ const data2024 = [
             "ST12-12": "",
             "ST12-13": "",
         },
+        "override": {
+            "url": "bandaitcgplusURL/P/e_setID-012_EventPack7_d.png",
+            "cards": {
+                "BT12-072": ""
+            }
+        },
     },
 
     // Judge Pack 6 --- judgepack6
@@ -1773,7 +1786,7 @@ const data2024 = [
         "slug": "judgepack6",
         "name": "Judge Pack 6",
         "release": "September-November, 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDJP_D.png",
         "cards": {
             "BT14-086": "",
             "BT15-086": "",
@@ -1816,22 +1829,63 @@ const data2024 = [
     },
     
 // October 2024 - February 2025
-    // Ultimate Cup 2024 2 --- ultimatecup_2024_2
+    // Ultimate Cup 2024 Wave 2 --- ultimatecup_2024_2
     {
         "id": null,
         "slug": "ultimatecup_2024_2",
-        "name": "Ultimate Cup 2024 2",
-        "release": "February-August, 2024",
-        "url": "noCardURL",
+        "name": "Ultimate Cup 2024 Wave 2",
+        "release": "October 2024 - February 2025",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "BT12-003": "",
-            "BT13-008": "",
-            "BT13-012": "",
-            "BT13-015": "",
-            "BT12-043": "",
-            "BT7-112": "",
-            "BT13-020": "",
+            "BT12-003": "P1",
+            "BT13-008": "P1",
+            "BT13-012": "P1",
+            "BT13-015": "P1",
+            "BT12-043": "P5",
+            "BT7-112": "P3",
+            "BT13-020": "P3",
         },
         "info_url": "https://world.digimoncard.com/event/ultimate_cup/2024_oct-2025_feb/"
+    },
+
+// November 2024
+    // Booster Elemental Successor [BT18]
+    {
+        "id": "BT18",
+        "name": "Booster Elemental Successor [BT18]",
+        "release": null,
+        "total": 102,
+        "url": null,
+        "add_zero": 3,
+        "info_url": null,
+        "color": {
+            "red": [1],
+            "blue": [2],
+            "yellow": [3],
+            "green": [4],
+            "black": [5],
+            "purple": [6]
+            // "white": [112]
+        }
+    },
+    
+    // Special Booster Ver.2.0 [BT18-19] --- sbt20
+    {
+        "id": null,
+        "slug": "sbt20",
+        "name": "Special Booster Ver.2.0 [BT18-19]",
+        "release": "November 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT18-001": "",
+        },
+        // "pack": [
+        //     "https://static.wikia.nocookie.net/digimoncardgame/images/0/00/Special_Release_Booster_Pack_1.0-EN.png/",
+        //     "https://static.wikia.nocookie.net/digimoncardgame/images/4/4e/Special_Release_Booster_Pack_1.0-EN.01.png/",
+        //     "https://static.wikia.nocookie.net/digimoncardgame/images/7/7f/Special_Release_Booster_Pack_1.0-EN.02.png/",
+        //     "https://static.wikia.nocookie.net/digimoncardgame/images/a/aa/Special_Release_Booster_Pack_1.0-EN.03.png/",
+        // ],
+        // "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e0/Playsheet-BT-1.0.jpg/",
+        "info_url": "https://world.digimoncard.com/products/pack/ver18-19/"
     },
 ];
