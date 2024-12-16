@@ -644,15 +644,15 @@ const data2024 = [
         "slug": "regional2024_1_0",
         "name": "2024 Regionals Participant Card Set Wave 1",
         "release": "March-May, 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_parallel.png",
         "cards": {
-            "BT14-041": "",
-            "BT14-046": "",
-            "BT14-064": "",
-            "BT14-078": "",
-            "EX5-012": "",
-            "EX5-020": "",
-            "P-113": "",
+            "BT14-041": "wave1_parti_D",
+            "BT14-046": "wave1_parti_D",
+            "BT14-064": "wave1_parti_D",
+            "BT14-078": "wave1_parti_D",
+            "EX5-012": "wave1_parti_D",
+            "EX5-020": "wave1_parti_D",
+            "P-113": "weve1_parti_D",
         },
         "info_url": "https://world.digimoncard.com/event/regionals-2024-mar/"
     },
@@ -662,15 +662,15 @@ const data2024 = [
         "slug": "regional2024_1_1",
         "name": "2024 Regionals Finalist Card Set Wave 1",
         "release": "March-May, 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_parallel.png",
         "cards": {
-            "BT14-041": "",
-            "BT14-046": "",
-            "BT14-064": "",
-            "BT14-078": "",
-            "EX5-012": "",
-            "EX5-020": "",
-            "P-113": "",
+            "BT14-041": "wave1_fina_D",
+            "BT14-046": "wave1_fina_D",
+            "BT14-064": "wave1_fina_D",
+            "BT14-078": "wave1_fina_D",
+            "EX5-012": "wave1_fina_D",
+            "EX5-020": "wave1_fina_D",
+            "P-113": "weve1_fina_D",
         },
         "info_url": "https://world.digimoncard.com/event/regionals-2024-mar/"
     },
@@ -680,15 +680,15 @@ const data2024 = [
         "slug": "regional2024_1_2",
         "name": "2024 Regionals Champion Card Set Wave 1",
         "release": "March-May, 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_parallel.png",
         "cards": {
-            "BT14-041": "",
-            "BT14-046": "",
-            "BT14-064": "",
-            "BT14-078": "",
-            "EX5-012": "",
-            "EX5-020": "",
-            "P-113": "",
+            "BT14-041": "wave1_champ_D",
+            "BT14-046": "wave1_champ_D",
+            "BT14-064": "wave1_champ_D",
+            "BT14-078": "wave1_champ_D",
+            "EX5-012": "wave1_champ_D",
+            "EX5-020": "wave1_champ_D",
+            "P-113": "weve1_champ_D",
         },
         "info_url": "https://world.digimoncard.com/event/regionals-2024-mar/"
     },
@@ -1174,7 +1174,6 @@ const data2024 = [
             "P-151": "",
         },
         "info_url": "https://world.digimoncard.com/event/store_tournament_14/",
-        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/0/0a/Official_Tournament_Pack_Vol.12.png"
     },
     // Store Tournament 2024 Jul.-Sep. - Winner Pack --- wp14
     {
@@ -1194,7 +1193,6 @@ const data2024 = [
             "P-151": "",
         },
         "info_url": "https://world.digimoncard.com/event/store_tournament_14/",
-        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/54/Winner_Pack_Exceed_Apocalypse.png"
     },
 
     // DIGIMON LIBERATOR Promotion Campaign --- digimon_liberator_promo_camp
@@ -1377,56 +1375,6 @@ const data2024 = [
             "ST17-11": "P_BT17_D",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver17/",
-    },
-
-// August 9 – September 10, 2024
-    // Evolution Cup August 2024 Participant Pack --- evolution_cup_participant_august2024
-    {
-        "id": null,
-        "slug": "evolution_cup_participant_august2024",
-        "name": "Evolution Cup August 2024 Participant Pack",
-        "release": "August 9 – September 10, 2024",
-        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel.png",
-        "cards": {
-            "BT9-028": "_d",
-            "BT14-041": "_d",
-            "EX3-010": "_d",
-            "P-132": "_d_B",
-            "P-133": "_d_B",
-            "RB1-006": "_d",
-            "ST18-12": "_d",
-        },
-        "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_august/",
-    },
-    // Evolution Cup August 2024 Top 4 Pack --- evolution_cup_top4_august2024
-    {
-        "id": null,
-        "slug": "evolution_cup_top4_august2024",
-        "name": "Evolution Cup August 2024 Top 4 Pack",
-        "release": "August 9 – September 10, 2024",
-        "url": "bandaitcgplusURL/P/e_setID-cardID_top4_d.png",
-        "cards": {
-            "BT9-028": "",
-            "BT14-041": "",
-            "EX3-010": "",
-            "P-132": "",
-            "P-133": "",
-            "RB1-006": "",
-            "ST18-12": "",
-        },
-        "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_august/"
-    },
-    // Evolution Cup August 2024 Champion Card --- evolution_cup_champion_august2024
-    {
-        "id": null,
-        "slug": "evolution_cup_champion_august2024",
-        "name": "Evolution Cup August 2024 Champion Card",
-        "release": "August 9 – September 10, 2024",
-        "url": "bandaitcgplusURL/P/e_setID-cardID_zcamp_d.png",
-        "cards": {
-            "ST18-12": ""
-        },
-        "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_august/"
     },
 
 // September 13, 2024
@@ -1647,6 +1595,56 @@ const data2024 = [
         "info_url": "https://world.digimoncard.com/products/pack/ex-07/",
     },
 
+// August 9 – September 10, 2024
+    // Evolution Cup August 2024 Participant Pack --- evolution_cup_participant_august2024
+    {
+        "id": null,
+        "slug": "evolution_cup_participant_august2024",
+        "name": "Evolution Cup August 2024 Participant Pack",
+        "release": "August 9 – September 10, 2024",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel.png",
+        "cards": {
+            "BT9-028": "_d",
+            "BT14-041": "_d",
+            "EX3-010": "_d",
+            "P-132": "_d_B",
+            "P-133": "_d_B",
+            "RB1-006": "_d",
+            "ST18-12": "_d",
+        },
+        "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_august/",
+    },
+    // Evolution Cup August 2024 Top 4 Pack --- evolution_cup_top4_august2024
+    {
+        "id": null,
+        "slug": "evolution_cup_top4_august2024",
+        "name": "Evolution Cup August 2024 Top 4 Pack",
+        "release": "August 9 – September 10, 2024",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_top4_d.png",
+        "cards": {
+            "BT9-028": "",
+            "BT14-041": "",
+            "EX3-010": "",
+            "P-132": "",
+            "P-133": "",
+            "RB1-006": "",
+            "ST18-12": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_august/"
+    },
+    // Evolution Cup August 2024 Champion Card --- evolution_cup_champion_august2024
+    {
+        "id": null,
+        "slug": "evolution_cup_champion_august2024",
+        "name": "Evolution Cup August 2024 Champion Card",
+        "release": "August 9 – September 10, 2024",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_zcamp_d.png",
+        "cards": {
+            "ST18-12": ""
+        },
+        "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_august/"
+    },
+
 // September 14, 2024
     // BANDAI CARD GAMES Fest 24-25 --- bcgfest_24_25
     {
@@ -1654,7 +1652,7 @@ const data2024 = [
         "slug": "bcgfest_24_25",
         "name": "BANDAI CARD GAMES Fest 24-25",
         "release": "September 14, 2024 - 2025",
-        "url": "noCardURL",
+        "url": "https://world.digimoncard.com/images/event/bcgfest_24-25/orlando/P-151.png",
         "cards": {
             "P-151": "",
         },
@@ -1666,7 +1664,7 @@ const data2024 = [
         "slug": "premium_memory_boost",
         "name": "Premium Card Collection Memory Boost! Set",
         "release": "September 14, 2024 - 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "P-035": "",
             "P-036": "",
@@ -1827,6 +1825,46 @@ const data2024 = [
         },
         "info_url": "https://world.digimoncard.com/products/goods/premium-heroines-set.php"
     },
+
+// October 1 - December 31, 2024
+    // Store Tournament 2024 Oct.-Dec. - Participation Pack --- otp15
+    {
+        "id": null,
+        "slug": "otp15",
+        "name": "Store Tournament 2024 Oct.-Dec. - Participation Pack",
+        "release": "October 1 - December 31, 2024",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_d.png",
+        "cards": {
+            "P-152": "",
+            "P-153": "",
+            "P-154": "",
+            "P-155": "",
+            "P-156": "",
+            "P-157": "",
+            "P-158": "",
+            "P-159": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_tournament_14/",
+    },
+    // Store Tournament 2024 Oct.-Dec. - Winner Pack --- wp15
+    {
+        "id": null,
+        "slug": "wp15",
+        "name": "Store Tournament 2024 Oct.-Dec. - Winner Pack",
+        "release": "October 1 - December 31, 2024",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_wincard_d.png",
+        "cards": {
+            "P-152": "",
+            "P-153": "",
+            "P-154": "",
+            "P-155": "",
+            "P-156": "",
+            "P-157": "",
+            "P-158": "",
+            "P-159": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/store_tournament_14/",
+    },
     
 // October 2024 - February 2025
     // Ultimate Cup 2024 Wave 2 --- ultimatecup_2024_2
@@ -1859,14 +1897,69 @@ const data2024 = [
         "add_zero": 3,
         "info_url": null,
         "color": {
+            "red": [1,'8-10',12,14,16,17,87],
+            "red-yellow": [88,96],
+            "red-green-blue": [18,95],
+            "red-black": [19],
+            "red-purple": [7,11,13,15],
+            "blue": [2,20,23,24,27,29],
+            "blue-red": [21,22,25,26,28,89],
+            "yellow": [3,'30-36',38,39],
+            "yellow-red": [40,98],
+            "yellow-blue": [37],
+            "yellow-black": [41],
+            "yellow-purple-black": [42,97],
+            "green": [4,45,47,50,51,55],
+            "green-red": [43,48,49,53,54,90],
+            "green-black": [44,46,52,56],
+            "black": [5,'58-62','64-66',68,69,74,92],
+            "black-yellow": [57,63,67,'70-72',91],
+            "black-purple": [73],
+            "purple": [6,'78-80',85,86,93,100,101],
+            "purple-yellow": ['75-77',81,82,84,94],
+            "purple-black": [83,99],
+            "white": [86, 102]
+        }
+    },
+    // Booster Xros Evolution [BT19]
+    {
+        "id": "BT19",
+        "name": "Booster Xros Evolution [BT19]",
+        "release": null,
+        "total": 102,
+        "url": null,
+        "add_zero": 3,
+        "info_url": null,
+        "color": {
             "red": [1],
-            "blue": [2],
-            "yellow": [3],
-            "green": [4],
-            "black": [5],
-            "purple": [6]
+            "red-purple-black": [101],
+            "blue": [2,'17-19',21,23,24,27,28,82,92],
+            "yellow": [3,29,32],
+            "yellow-red": [41,42],
+            "yellow-purple": [36,39,43,94],
+            "green": [4,46,84],
+            "green-black": [45,48,52,53,96],
+            "black": [5,55,87],
+            "black-purple": [58,59,63,65],
+            "purple": [6,75,99],
+            "purple-red": [70],
+            "purple-black": [66,69,72,73]
             // "white": [112]
         }
+    },
+
+    // Special Booster Ver.2.0 [BT18-19] Celebration Event --- sbt20_prerelease
+    {
+        "id": null,
+        "slug": "sbt20_prerelease",
+        "name": "Special Booster Ver.2.0 [BT18-19] Celebration Event",
+        "release": "October 25 – November 8, 2024",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel.png",
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/91/Pre_Release_Pack_Exceed_Apocalypse-EN.png/",
+        "cards": {
+            "EX1-073": ["_PR_dummy","_WinnerPR_dummy"], // no foil y foil
+        },
+        "info_url": "https://world.digimoncard.com/event/celebration-bt18-19/"
     },
     
     // Special Booster Ver.2.0 [BT18-19] --- sbt20
@@ -1875,9 +1968,158 @@ const data2024 = [
         "slug": "sbt20",
         "name": "Special Booster Ver.2.0 [BT18-19]",
         "release": "November 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/BT18-19/e_setID-cardIDparallel.png",
         "cards": {
-            "BT18-001": "",
+            "BT18-001": "_D",
+            "BT18-002": "_D",
+            "BT18-003": "_D",
+            "BT18-004": "_D",
+            "BT18-005": "_D",
+            "BT18-006": "_D",
+            "BT18-007": "_D",
+            "BT18-008": "_D",
+            "BT18-009": "_D",
+            "BT18-010": "_D",
+            "BT18-011": "_D",
+            "BT18-012": "_D",
+            "BT18-013": "_D",
+            "BT18-014": "_D",
+            "BT18-015": "_D",
+            "BT18-016": "_D",
+            "BT18-017": "_D",
+            "BT18-018": "_D",
+            "BT18-019": "_D",
+            "BT18-020": "_D",
+            "BT18-021": "_D",
+            "BT18-022": "_D",
+            "BT18-023": "_D",
+            "BT18-024": "_D",
+            "BT18-025": "_D",
+            "BT18-026": "_D",
+            "BT18-027": "_D",
+            "BT18-028": "P_D",
+            "BT18-029": "_D",
+            "BT18-030": "_D",
+            "BT18-031": "_D",
+            "BT18-032": "_D",
+            "BT18-033": "_D",
+            "BT18-034": "_D",
+            "BT18-035": "_D",
+            "BT18-036": "_D",
+            "BT18-037": "_D",
+            "BT18-038": "_D",
+            "BT18-039": "_D",
+            "BT18-040": "_D",
+            "BT18-041": "_D",
+            "BT18-042": "_D",
+            "BT18-043": "_D",
+            "BT18-044": "_D",
+            "BT18-045": "_D",
+            "BT18-046": "_D",
+            "BT18-047": "_D",
+            "BT18-048": "_D",
+            "BT18-049": "_D",
+            "BT18-050": "_D",
+            "BT18-051": "_D",
+            "BT18-052": "_D",
+            "BT18-053": "_D",
+            "BT18-054": "_D",
+            "BT18-055": "_D",
+            "BT18-056": "_D",
+            "BT18-057": "_D",
+            "BT18-058": "_D",
+            "BT18-059": "_D",
+            "BT18-060": "_D",
+            "BT18-061": "_D",
+            "BT18-062": "_D",
+            "BT18-063": "_D",
+            "BT18-064": "_D",
+            "BT18-065": "_D",
+            "BT18-066": "_D",
+            "BT18-067": "_D",
+            "BT18-068": "_D",
+            "BT18-069": "_D",
+            "BT18-070": "_D",
+            "BT18-071": "_D",
+            "BT18-072": "_D",
+            "BT18-073": "_D",
+            "BT18-074": "_D",
+            "BT18-075": "_D",
+            "BT18-076": "_D",
+            "BT18-077": "_D",
+            "BT18-078": "_D",
+            "BT18-079": "_D",
+            "BT18-080": "_D",
+            "BT18-081": "_D",
+            "BT18-082": "_D",
+            "BT18-083": "_D",
+            "BT18-084": "_D",
+            "BT18-085": "_D",
+            "BT18-086": "_D",
+            "BT18-087": "_D",
+            "BT18-088": "_D",
+            "BT18-089": "_D",
+            "BT18-090": "_D",
+            "BT18-091": "_D",
+            "BT18-092": "_D",
+            "BT18-093": "_D",
+            "BT18-094": "_D",
+            "BT18-095": "_D",
+            "BT18-096": "_D",
+            "BT18-097": "_D",
+            "BT18-098": "_D",
+            "BT18-099": "_D",
+            "BT18-100": "_D",
+            "BT18-101": "_D",
+            "BT18-102": "_D",
+            "BT19-002": "_d",
+            "BT19-004": "_d",
+            "BT19-006": "_d",
+            "BT19-017": "_d",
+            "BT19-018": "_d",
+            "BT19-019": "_d",
+            "BT19-021": "_d",
+            "BT19-023": "_d",
+            "BT19-024": "_d",
+            "BT19-027": "_d",
+            "BT19-028": "_d",
+            "BT19-029": "_d",
+            "BT19-032": "_d",
+            "BT19-036": "_d",
+            "BT19-039": "_d",
+            "BT19-041": "_d",
+            "BT19-042": "_d",
+            "BT19-043": "_d",
+            "BT19-045": "_d",
+            "BT19-046": "_d",
+            "BT19-048": "_d",
+            "BT19-052": "_d",
+            "BT19-053": "_d",
+            "BT19-055": "_d",
+            "BT19-058": "_d",
+            "BT19-059": "_d",
+            "BT19-063": "_d",
+            "BT19-065": "_d",
+            "BT19-066": "_d",
+            "BT19-069": "_d",
+            "BT19-070": "_d",
+            "BT19-072": "_d",
+            "BT19-073": "_d",
+            "BT19-075": "_d",
+            "BT19-082": "_d",
+            "BT19-084": "_d",
+            "BT19-087": "_d",
+            "BT19-092": "_d",
+            "BT19-094": "_d",
+            "BT19-096": "_d",
+            "BT19-099": "_d",
+            "BT19-101": "_d",
+        },
+        "override": {
+            "url": "bandaitcgplusURL/BT18-19/e_Bt19-063_d.png",
+            "cards": {
+                "BT19-063": ""
+            }
         },
         // "pack": [
         //     "https://static.wikia.nocookie.net/digimoncardgame/images/0/00/Special_Release_Booster_Pack_1.0-EN.png/",
@@ -1887,5 +2129,172 @@ const data2024 = [
         // ],
         // "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e0/Playsheet-BT-1.0.jpg/",
         "info_url": "https://world.digimoncard.com/products/pack/ver18-19/"
+    },
+    // Special Booster Ver.2.0 [BT18-19] - Alternatives --- sbt20_alts
+    {
+        "id": null,
+        "slug": "sbt20_alts",
+        "name": "Special Booster Ver.2.0 [BT18-19] - Alternatives",
+        "release": "November 2024",
+        "url": "bandaitcgplusURL/BT18-19/e_setID-cardIDparallel.png",
+        "cards": {
+            "BT18-018": "P_D",
+            "BT18-019": "P_D",
+            "BT18-022": "P_D",
+            "BT18-025": "P_D",
+            "BT18-034": "P_D",
+            "BT18-040": "P_D",
+            "BT18-042": "P_D",
+            "BT18-048": "P_D",
+            "BT18-049": "P_D",
+            "BT18-056": "P_D",
+            "BT18-063": "P_D",
+            "BT18-067": "P_D",
+            "BT18-071": "P_D",
+            "BT18-078": "P_D",
+            "BT18-079": "P_D",
+            "BT18-082": "P_D",
+            "BT18-083": "P_D",
+            "BT18-093": "P_D",
+            "BT18-101": "P_D",
+            "BT18-102": "P_D",
+            "BT19-017": "p_d",
+            "BT19-027": "p_d",
+            "BT19-042": "p_d",
+            "BT19-043": "p_d",
+            "BT19-053": "p_d",
+            "BT19-073": "p_d",
+            "BT19-075": "p_d",
+            "BT19-082": "p_d",
+            "BT19-084": "p_d",
+            "BT19-087": "p_d",
+            "BT19-101": "p_d",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver18-19/"
+    },
+    // Special Booster Ver.2.0 [BT18-19] - Box Topper --- sbt20_boxtopper
+    {
+        "id": null,
+        "slug": "sbt20_boxtopper",
+        "name": "Special Booster Ver.2.0 [BT18-19] - Box Topper",
+        "release": "November 2024",
+        "url": "bandaitcgplusURL/BT18-19/e_setID-cardIDparallel.png",
+        "cards": {
+            "BT18-088": "P_D",
+            "BT18-089": "P_D",
+            "BT18-090": "P_D",
+            "BT18-091": "P_D",
+            "BT18-094": "P_D",
+            "BT18-033": "P_D",
+            "BT19-052": "p_d",
+            "BT19-065": "p_d",
+            "BT19-070": "p_d",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver18-19/",
+    },
+    // Special Booster Ver.2.0 [BT18-19] - Special Cards --- sbt20_special
+    {
+        "id": null,
+        "slug": "sbt20_special",
+        "name": "Special Booster Ver.2.0 [BT18-19] - Special Cards",
+        "release": "November 2024",
+        "url": "bandaitcgplusURL/BT18-19/e_setID-cardIDparallel.png",
+        "cards": {
+            "BT18-040": "SP_D",
+            "BT18-071": "SP_D",
+            "BT18-083": "SP_D",
+            "BT18-101": "SP_D",
+            "BT18-102": "SP_D",
+            "BT19-101": "p2_d",
+            "EX2-073": "",
+        },
+        "override": {
+            "url": "bandaitcgplusURL/BT18-19/e_SP2_setID-cardID_D.png",
+            "cards": {
+                "EX2-073": ""
+            }
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver18-19/"
+    },
+    // Special Booster Ver.2.0 [BT18-19] - Signed Cards --- sbt20_signed
+    {
+        "id": null,
+        "slug": "sbt20_signed",
+        "name": "Special Booster Ver.2.0 [BT18-19] - Signed Cards",
+        "release": "November 2024",
+        "url": "bandaitcgplusURL/BT18-19/e_setID-cardID_d.png",
+        "cards": {
+            "BT17-008": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver18-19/"
+    },
+
+// December 6, 2024 - January 31, 2025
+    // Winter Holiday Event 2024 --- whe_2024
+    {
+        "id": null,
+        "slug": "whe_2024",
+        "name": "Winter Holiday Event 2024",
+        "release": "December 6, 2024 - January 31, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT7-018": "",
+            "BT10-046": "",
+            "BT11-007": "",
+            "BT16-031": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/winter_holiday_event/"
+    },
+
+// December 7 - 8, 2024
+    // 2024 Championship Finals Tamers Pack --- tamerspack_2024
+    {
+        "id": null,
+        "slug": "tamerspack_2024",
+        "name": "2024 Championship Finals Tamers Pack",
+        "release": "December 7 - 8, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT14-058": "",
+            "BT14-078": "",
+            "BT16-076": "",
+            "BT17-007": "",
+            "BT17-019": "",
+            "RB1-018": "",
+            "EX1-066": "",
+            "EX2-007": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2024/"
+    },
+    // 2024 Championship Finals Gold Stamp Card Set --- goldstamp_2024
+    {
+        "id": null,
+        "slug": "goldstamp_2024",
+        "name": "2024 Championship Finals Gold Stamp Card Set",
+        "release": "December 7 - 8, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT8-094": "",
+            "BT12-031": "",
+            "BT13-110": "",
+            "BT14-066": "",
+            "BT14-081": "",
+            "BT17-038": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2024/"
+    },
+
+// December 2024
+    // Special Limited Set --- sls
+    {
+        "id": null,
+        "slug": "sls",
+        "name": "Special Limited Set",
+        "release": "December 2024",
+        "url": "noCardURL",
+        "cards": {
+            // TODO: Cambiar LM01 a LM. Este set es continuación del anterior (21-38)
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/special-limited-set.php"
     },
 ];
