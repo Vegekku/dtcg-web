@@ -2283,6 +2283,54 @@ const data2024 = [
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2024/"
     },
+    // 2024 Championship Finals Trophy Cards - Top 16 --- cftc_2024_top16
+    {
+        "id": null,
+        "slug": "cftc_2024_top16",
+        "name": "2024 Championship Finals Framed Trophy Cards - Top 16",
+        "release": "December 7 - 8, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT11-023": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2024/"
+    },
+    // 2024 Championship Finals Trophy Cards - 3rd Place --- cftc_2024_top3
+    {
+        "id": null,
+        "slug": "cftc_2024_top3",
+        "name": "2023 Championship Finals Framed Trophy Cards - 3rd & 4th Place",
+        "release": "December 7 - 8, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT11-027": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2024/"
+    },
+    // 2024 Championship Finals Trophy Cards - 2nd Place --- cftc_2024_top2
+    {
+        "id": null,
+        "slug": "cftc_2024_top2",
+        "name": "2023 Championship Finals Framed Trophy Cards - 2nd Place",
+        "release": "December 7 - 8, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "ST8-08": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2024/"
+    },
+    // 2024 Championship Finals Trophy Cards - 1st Place --- cftc_2024_top1
+    {
+        "id": null,
+        "slug": "cftc_2024_top1",
+        "name": "2023 Championship Finals Framed Trophy Cards - 1st Place",
+        "release": "December 7 - 8, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT13-030": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/final_championships2024/"
+    },
 
 // December 2024
     // Special Limited Set --- sls
