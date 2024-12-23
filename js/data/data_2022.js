@@ -129,9 +129,9 @@ const data2022 = [
         "slug": "fcftc_2021_3rd",
         "name": "2021 Final Championships Framed Trophy Cards - 3rd Place",
         "release": "January 2022",
-        "url": null,
+        "url": "digimonFandom/parallel.png",
         "cards": {
-            "ST1-09": "https://static.wikia.nocookie.net/digimoncardgame/images/f/f1/ST1-09_P3.png",
+            "ST1-09": "f/f1/ST1-09_P3",
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
@@ -141,9 +141,9 @@ const data2022 = [
         "slug": "fcftc_2021_2nd",
         "name": "2021 Final Championships Framed Trophy Cards - 2nd Place",
         "release": "January 2022",
-        "url": null,
+        "url": "digimonFandom/parallel.png",
         "cards": {
-            "ST1-11": "https://static.wikia.nocookie.net/digimoncardgame/images/2/28/ST1-11_P4.png",
+            "ST1-11": "2/28/ST1-11_P4",
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
@@ -153,9 +153,9 @@ const data2022 = [
         "slug": "fcftc_2021_1st",
         "name": "2021 Final Championships Framed Trophy Cards - 1st Place Champion",
         "release": "January 2022",
-        "url": null,
+        "url": "digimonFandom/parallel.png",
         "cards": {
-            "BT6-018": "https://static.wikia.nocookie.net/digimoncardgame/images/7/7c/BT6-018_P2.png",
+            "BT6-018": "7/7c/BT6-018_P2",
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2021/"
     },
@@ -467,9 +467,9 @@ const data2022 = [
         "slug": "wc2021_3rd",
         "name": "2021 World Championship Framed Trophy Cards - 3rd Place",
         "release": "March, 2022",
-        "url": null,
+        "url": "digimonFandom/parallel.png",
         "cards": {
-            "ST1-09": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c7/ST1-09_P4.png",
+            "ST1-09": "c/c7/ST1-09_P4",
         },
         "info_url": "https://world.digimoncard.com/event/world_championships2021/"
     },
@@ -479,9 +479,9 @@ const data2022 = [
         "slug": "wc2021_2nd",
         "name": "2021 World Championship Framed Trophy Cards - 2nd Place",
         "release": "March, 2022",
-        "url": null,
+        "url": "digimonFandom/parallel.png",
         "cards": {
-            "ST1-11": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fc/ST1-11_P5.png",
+            "ST1-11": "f/fc/ST1-11_P5",
         },
         "info_url": "https://world.digimoncard.com/event/world_championships2021/"
     },
@@ -491,9 +491,9 @@ const data2022 = [
         "slug": "wc2021_1st",
         "name": "2021 World Championship Framed Trophy Cards - 1st Place",
         "release": "March, 2022",
-        "url": null,
+        "url": "digimonFandom/parallel.png",
         "cards": {
-            "BT5-086": "https://static.wikia.nocookie.net/digimoncardgame/images/3/38/BT5-086_P5.png",
+            "BT5-086": "3/38/BT5-086_P5",
         },
         "info_url": "https://world.digimoncard.com/event/world_championships2021/"
     },
@@ -1665,14 +1665,23 @@ const data2022 = [
         "slug": "gb2",
         "name": "Gift Box 2022 [GB-02]",
         "release": "November 4, 2022",
-        "url": "digimonFandom/parallel.png",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_gb1_D_B.png",
         "cards": {
             "P-008": "4/41/P-008_P4",
             "P-009": "4/45/P-009_P2",
             "P-016": "5/56/P-016_P4",
-            "P-033": "6/6b/P-033_P1",
         },
         "info_url": "https://world.digimoncard.com/products/goods/gift_box_2022.php"
+    },
+    {
+        "id": null,
+        "slug": "gb2",
+        "name": "Gift Box 2022 [GB-02]",
+        "release": "November 4, 2022",
+        "url": "digimonFandom/parallel.png",
+        "cards": {
+            "P-033": "6/6b/P-033_P1",
+        },
     },
     
 // November 11, 2022
@@ -1742,16 +1751,16 @@ const data2022 = [
         "slug": "ex3_boxtopper",
         "name": "Booster Draconic Roar [EX3] - Box Topper",
         "release": "November 11, 2022",
-        "url": "digimonFandom/parallel.png",
+        "url": "bandaitcgplusURL/EX3/e_setID-cardIDparallel.png",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/de/EX-03-Booster_Pack-EN.png",
         "cards": {
-            "BT3-111": "7/7f/BT3-111_P2-Errata",
-            "EX3-010": "2/2d/EX3-010_P1",
-            "EX3-020": "b/be/EX3-020_P1",
-            "EX3-031": "2/2d/EX3-031_P1",
-            "EX3-041": "8/8b/EX3-041_P1",
-            "EX3-049": "e/e8/EX3-049_P1",
-            "EX3-061": "9/9e/EX3-061_P1",
+            "BT3-111": "P_ex3_D_errata",
+            "EX3-010": "P_D",
+            "EX3-020": "P_D",
+            "EX3-031": "P_D",
+            "EX3-041": "P_D",
+            "EX3-049": "P_D",
+            "EX3-061": "P_D",
         },
     },
 ];
