@@ -317,25 +317,56 @@ const data2024 = [
             "BT15-006": "P",
         },
     },
+    // Booster New Evolution [BT1]
+    {
+        "id": "LM",
+        "name": "Limited Pack",
+        "release": null,
+        "total": 38,
+        "url": null,
+        "add_zero": 3,
+        "info_url": null,
+        "color": {
+            "red": [1,21,27,33],
+            "blue": ["2-5",22,28,34],
+            "blue-purple": [6],
+            "yellow": [7,23,29,35],
+            "yellow-green": [20],
+            "green": ["8-13",24,30,36],
+            "black": [14,15,25,31,37],
+            "purple": ["16-18",32,38],
+            "purple-red": [26],
+            "white": [19]
+        },
+    },
     // Limited Pack Digimon Ghost Game [LM01] --- lm01
     {
-        "id": "LM01",
+        "id": null,
         "slug": "lm01",
         "name": "Limited Pack Digimon Ghost Game [LM01]",
         "release": "February 16, 2024",
-        "total": 20,
         "url": "bandaitcgplusURL/BT15/e_LM-cardID_D.png",
-        "add_zero": 3,
-        "color": {
-            "red": [1],
-            "blue": ["2-5"],
-            "blue-purple": [6],
-            "yellow": [7],
-            "yellow-green": [20],
-            "green": ["8-13"],
-            "black": [14,15],
-            "purple": ["16-18"],
-            "white": [19]
+        "cards": {
+            "LM-001": "",
+            "LM-002": "",
+            "LM-003": "",
+            "LM-004": "",
+            "LM-005": "",
+            "LM-006": "",
+            "LM-007": "",
+            "LM-008": "",
+            "LM-009": "",
+            "LM-010": "",
+            "LM-011": "",
+            "LM-012": "",
+            "LM-013": "",
+            "LM-014": "",
+            "LM-015": "",
+            "LM-016": "",
+            "LM-017": "",
+            "LM-018": "",
+            "LM-019": "",
+            "LM-020": "",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver15.php"
     },
@@ -401,18 +432,29 @@ const data2024 = [
         "slug": "ultimatecup_2024",
         "name": "Ultimate Cup 2024",
         "release": "February-August, 2024",
-        "url": "digimonFandom/parallel.png",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDUC_D.png",
         "cards": {
-            "BT12-009": "5/53/BT12-009_P1-Sample",
-            "BT12-012": "0/02/BT12-012_P2-Sample",
-            "BT12-013": "6/66/BT12-013_P1-Sample",
-            "BT12-015": "5/5f/BT12-015_P2-Sample",
-            "BT12-017": "4/4f/BT12-017_P5-Sample",
-            "BT7-112": "a/af/BT7-112_P2-Sample",
-            "EX2-073": "d/d7/EX2-073_P3-Sample",
+            "BT12-009": "",
+            "BT12-012": "",
+            "BT12-013": "",
+            "BT12-015": "",
+            "BT12-017": "",
+            "BT7-112": "",
         },
         "info_url": "https://world.digimoncard.com/event/ultimate_cup/2024_feb-aug/"
     },
+    {
+        "id": null,
+        "slug": "ultimatecup_2024",
+        "name": "Ultimate Cup 2024",
+        "release": "February-August, 2024",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "cards": {
+            "EX2-073": "P3"
+        },
+        "info_url": "https://world.digimoncard.com/event/ultimate_cup/2024_feb-aug/",
+    },
+    // https://world.digimoncard.com/images/cardlist/card/EX2-073_P3.png
     // Event Pack 6 --- eventpack6
     {
         "id": null,
@@ -448,7 +490,7 @@ const data2024 = [
         "slug": "judgepack5",
         "name": "Judge Pack 5",
         "release": "February-August, 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT9-008": "",
             "BT9-058": "",
@@ -459,7 +501,7 @@ const data2024 = [
             "BT13-034": "",
             "BT13-049": "",
             "BT13-078": "",
-            "ST12-012": "",
+            "ST12-12": "",
         },
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2e/Judge_Pack_4.png"
     },
@@ -1231,12 +1273,12 @@ const data2024 = [
         "slug": "bt17_prerelease",
         "name": "Booster Secret Crisis (BT17) Pre-Release Tournaments",
         "release": "August 2 – 8, 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_BT17Pre_parallel_D.png",
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/91/Pre_Release_Pack_Exceed_Apocalypse-EN.png/",
         "cards": {
-            "BT13-075": ["",""], // no foil y foil
+            "BT13-075": ["PR","PR2"], // no foil y foil
         },
-        "info_url": "https://world.digimoncard.com/event/pre-release-BT16/"
+        "info_url": "https://world.digimoncard.com/event/pre-release-BT17/"
     },
 
 // August 9, 2024
@@ -1807,7 +1849,7 @@ const data2024 = [
         "slug": "pb18",
         "name": "Premium Heroines Set [PB18]",
         "release": "October, 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/PB/e_setID-cardID_d.png",
         "cards": {
             "BT7-088": "",
             "BT8-085": "",
@@ -2236,7 +2278,7 @@ const data2024 = [
         "slug": "whe_2024",
         "name": "Winter Holiday Event 2024",
         "release": "December 6, 2024 - January 31, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDxmas_D.png",
         "cards": {
             "BT7-018": "",
             "BT10-046": "",
@@ -2253,7 +2295,7 @@ const data2024 = [
         "slug": "tamerspack_2024",
         "name": "2024 Championship Finals Tamers Pack",
         "release": "December 7 - 8, 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_parallelsetID-cardIDPR_D.png",
         "cards": {
             "BT14-058": "",
             "BT14-078": "",
@@ -2261,7 +2303,7 @@ const data2024 = [
             "BT17-007": "",
             "BT17-019": "",
             "RB1-018": "",
-            "EX1-066": "",
+            "EX1-066": "ch_",
             "EX2-007": "",
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2024/"
@@ -2272,7 +2314,7 @@ const data2024 = [
         "slug": "goldstamp_2024",
         "name": "2024 Championship Finals Gold Stamp Card Set",
         "release": "December 7 - 8, 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDPR_D.png",
         "cards": {
             "BT8-094": "",
             "BT12-031": "",
@@ -2281,17 +2323,23 @@ const data2024 = [
             "BT14-081": "",
             "BT17-038": "",
         },
+        "override": {
+            "url": "bandaitcgplusURL/P/e_BT08-cardIDPR_D.png",
+            "cards": {
+                "BT8-094": ""
+            }
+        },
         "info_url": "https://world.digimoncard.com/event/final_championships2024/"
     },
     // 2024 Championship Finals Trophy Cards - Top 16 --- cftc_2024_top16
     {
         "id": null,
         "slug": "cftc_2024_top16",
-        "name": "2024 Championship Finals Framed Trophy Cards - Top 16",
+        "name": "2024 Championship Finals Trophy Cards - Top 16",
         "release": "December 7 - 8, 2024",
-        "url": "noCardURL",
+        "url": "digimonFandom/parallel.png",
         "cards": {
-            "BT11-023": "",
+            "BT11-023": "5/57/BT11-023_P1-Sample",
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2024/"
     },
@@ -2299,11 +2347,11 @@ const data2024 = [
     {
         "id": null,
         "slug": "cftc_2024_top3",
-        "name": "2023 Championship Finals Framed Trophy Cards - 3rd & 4th Place",
+        "name": "2024 Championship Finals Trophy Cards - 3rd Place",
         "release": "December 7 - 8, 2024",
-        "url": "noCardURL",
+        "url": "digimonFandom/parallel.png",
         "cards": {
-            "BT11-027": "",
+            "BT11-027": "5/56/BT11-027_P3-Sample",
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2024/"
     },
@@ -2311,11 +2359,11 @@ const data2024 = [
     {
         "id": null,
         "slug": "cftc_2024_top2",
-        "name": "2023 Championship Finals Framed Trophy Cards - 2nd Place",
+        "name": "2024 Championship Finals Trophy Cards - 2nd Place",
         "release": "December 7 - 8, 2024",
-        "url": "noCardURL",
+        "url": "digimonFandom/parallel.png",
         "cards": {
-            "ST8-08": "",
+            "ST8-08": "8/8a/ST8-08_P1-Sample",
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2024/"
     },
@@ -2323,25 +2371,61 @@ const data2024 = [
     {
         "id": null,
         "slug": "cftc_2024_top1",
-        "name": "2023 Championship Finals Framed Trophy Cards - 1st Place",
+        "name": "2024 Championship Finals Trophy Cards - 1st Place",
         "release": "December 7 - 8, 2024",
-        "url": "noCardURL",
+        "url": "digimonFandom/parallel.png",
         "cards": {
-            "BT13-030": "",
+            "BT13-030": "b/b4/BT13-030_P2-Sample",
         },
         "info_url": "https://world.digimoncard.com/event/final_championships2024/"
     },
 
 // December 2024
-    // Special Limited Set --- sls
+    // Special Limited Set --- lm02
     {
         "id": null,
-        "slug": "sls",
+        "slug": "lm02",
         "name": "Special Limited Set",
         "release": "December 2024",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/Special%20Limited%20Set/e_setID-cardID_D.png",
         "cards": {
-            // TODO: Cambiar LM01 a LM. Este set es continuación del anterior (21-38)
+            "LM-020": "",
+            "LM-021": "",
+            "LM-022": "",
+            "LM-023": "",
+            "LM-024": "",
+            "LM-025": "",
+            "LM-026": "",
+            "LM-027": "",
+            "LM-028": "",
+            "LM-029": "",
+            "LM-030": "",
+            "LM-031": "",
+            "LM-032": "",
+            "LM-033": "",
+            "LM-034": "",
+            "LM-035": "",
+            "LM-036": "",
+            "LM-037": "",
+            "LM-038": "",
+            "BT9-112": "",
+            "BT12-072": "",
+            "BT16-028": "",
+            "BT16-046": "",
+            "EX4-074": "",
+            "EX7-013": "",
+            "EX7-048": "",
+            "EX7-059": "",
+            "P-143": "",
+            "P-144": "",
+            "P-145": "",
+            "P-146": "",
+            "P-148": "",
+            "P-149": "",
+            "P-150": "",
+            "P-151": "",
+            "ST12-12": "",
+            "ST12-13": "",
         },
         "info_url": "https://world.digimoncard.com/products/goods/special-limited-set.php"
     },

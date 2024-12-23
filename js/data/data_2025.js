@@ -6,7 +6,7 @@ const data2025 = [
         "slug": "otp16",
         "name": "Official Store Tournament 2025 Vol.1 - Participation Pack",
         "release": "January 1 - March 31, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "P-164": "",
             "P-165": "",
@@ -23,7 +23,7 @@ const data2025 = [
         "slug": "wp16",
         "name": "Official Store Tournament 2025 Vol.1 - Winner Pack",
         "release": "January 1 - March 31, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDP_D.png",
         "cards": {
             "P-164": "",
             "P-165": "",
