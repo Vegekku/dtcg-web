@@ -40,6 +40,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         });
     }
 
+    // 0. Actualizar datos erroneos o desactualizados.
+    // updatesData();
+
     // 1. crear objeto collection y cardmarket si no existe. Si existe, obtener de storage.
     collection = JSON.parse( window.localStorage.getItem("collection") || '{}' );
     (collection.products ??= {}).packs ??= {};
