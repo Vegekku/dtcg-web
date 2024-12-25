@@ -40,6 +40,7 @@
     @include card-color('red', 'blue');
     @include card-color('red', 'blue', '', '', 'green');
     @include card-color('red', 'yellow', 'black');
+    @include card-color('red', 'yellow', 'black', '', 'blue');
     @include card-color('red', 'green');
     @include card-color('red', 'black');
     @include card-color('red', 'black', '', '', 'purple');
@@ -50,6 +51,7 @@
     @include card-color('blue');
     @include card-color('blue', 'red');
     @include card-color('blue', 'yellow');
+    @include card-color('blue', 'yellow', 'black', '', 'black');
     @include card-color('blue', 'green');
     @include card-color('blue', 'black');
     @include card-color('blue', 'purple');
