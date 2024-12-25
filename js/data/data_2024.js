@@ -747,6 +747,18 @@ const data2024 = [
         "info_url": "https://world.digimoncard.com/event/regionals-2024-mar/"
     },
 
+// May 2024
+    // D-3 Ver.Davis Motomiya / Ken Ichijoji - d3davisken
+    {
+        "id": null,
+        "slug": "d3davisken",
+        "name": "D-3 Ver.Davis Motomiya / Ken Ichijoji",
+        "release": "May, 2024",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDPR_D.png",
+        "cards": {
+            "BT8-088": "P2",
+        },
+    },
 // May – June 2024
     // Official Tournament Pack Vol.13 --- otp13
     {
@@ -1016,6 +1028,17 @@ const data2024 = [
             "P-130": "",
         },
         "info_url": "https://world.digimoncard.com/products/goods/the_beginning_set.php"
+    },
+    // Digivice 25th Color Evolution Anniversary --- digivice25color
+    {
+        "id": null,
+        "slug": "digivice25color",
+        "name": "Digivice 25th Color Evolution Anniversary",
+        "release": "June, 2024",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D_B.png",
+        "cards": {
+            "P-156": "",
+        },
     },
 
 // June 28, 2024
