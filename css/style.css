@@ -46,6 +46,10 @@ input:disabled + label {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--yellow-card) 50%);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+[data-color=red-blue-yellow] .card_id {
+  background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--blue-card) 33.33%, var(--blue-card) 66.66%, var(--yellow-card) 66.66%, var(--yellow-card));
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 [data-color=red-green] .card_id {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--green-card) 50%);
 }
@@ -70,6 +74,10 @@ input:disabled + label {
 }
 [data-color=blue-yellow] .card_id {
   background: linear-gradient(90deg, var(--blue-card) 50%, var(--yellow-card) 50%);
+}
+[data-color=blue-black-yellow] .card_id {
+  background: repeating-linear-gradient(to right, var(--blue-card), var(--blue-card) 33.33%, var(--black-card) 33.33%, var(--black-card) 66.66%, var(--yellow-card) 66.66%, var(--yellow-card));
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 [data-color=blue-green] .card_id {
   background: linear-gradient(90deg, var(--blue-card) 50%, var(--green-card) 50%);
