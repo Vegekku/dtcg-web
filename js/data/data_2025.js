@@ -249,7 +249,7 @@ const data2025 = [
         "name": "Starter Deck Protector of Light [ST-20]",
         "release": "April 2025",
         "total": 15,
-        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
+        "url": "noCardURL",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-20/",
         "color": {
@@ -264,7 +264,7 @@ const data2025 = [
         "name": "Starter Deck Hero of Hope [ST-21]",
         "release": "April 2025",
         "total": 15,
-        "url": "bandaitcgplusURL/setID/e_setID-cardID_D.png",
+        "url": "noCardURL",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-21/",
         "color": {
@@ -279,7 +279,7 @@ const data2025 = [
         "name": "Booster World Convergence [BT21]",
         "release": "April 2025",
         "total": 74,
-        "url": "bandaitcgplusURL/EX08/e_setID-cardID_d.png",
+        "url": "noCardURL",
         "add_zero": 3,
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
         "playmat": "",
