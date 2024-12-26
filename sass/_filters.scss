@@ -23,7 +23,7 @@
     }
 
     .card.filtered--status {
-        display: block;
+        // display: block;
     }
     .card:not(.filtered--status) {
         display: none;
@@ -39,7 +39,7 @@
             display: none;
         }
         .card.filtered--status {
-            display: block;
+            // display: block;
         }
         .card:not(.filtered--status) {
             opacity: 0.5;
