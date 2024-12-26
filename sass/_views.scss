@@ -28,11 +28,18 @@ td {
 }
 
 .view--grid {
+    table {
+        border: 1px solid black;
+    }
+    thead {
+        border-bottom: 1px solid black;
+    }
     thead tr {
         display: block;
     }
     tr {
         display: inline;
+        border: none;
     }
     .card_id {
         display: none;
