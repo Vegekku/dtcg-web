@@ -29,7 +29,7 @@
     border-radius: 10px;
     background: #fff;
     position: relative;
-    padding: 30px;
+    padding: 20px;
     max-width: 450px;
   }
 
@@ -70,19 +70,19 @@
 
   &-close {
     position: absolute;
-    right: 8px;
-    top: 8px;
+    right: 10px;
+    top: 10px;
     outline: none;
     appearance: none;
-    color: white;
-    background: none;
-    border: 1px solid darkred;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1em;
-    background-color: red;
-    border-radius: 50%;
-    padding: 1px 5px;
+    color: red;
+    // background: none;
+    // border: 1px solid darkred;
+    // font-weight: bold;
+    // cursor: pointer;
+    // font-size: 1em;
+    // background-color: red;
+    // border-radius: 50%;
+    // padding: 1px 5px;
   }
 
   input[type="radio"],
