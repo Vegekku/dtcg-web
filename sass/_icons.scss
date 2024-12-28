@@ -1,0 +1,31 @@
+.icon {
+    box-sizing: content-box;
+    // color: var(--color-brand-secondary);
+    height: 20px;
+    line-height: 0;
+    position: absolute;
+    right: 0;
+    width: 20px;
+    transition: color 0.2s;
+
+    &--l {
+        height: 30px;
+        width: 30px;
+    }
+
+    &--inline {
+        display: inline-block;
+        position: relative;
+        right: inherit;
+    }
+
+    svg {
+        fill: currentColor;
+        height: 100%;
+        width: 100%;
+
+        &:not(:root) {
+            overflow: hidden;
+        }
+    }
+}

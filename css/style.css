@@ -340,6 +340,18 @@ button.accordion.active:after {
   content: "➖";
 }
 
+.button--icon-only {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 0;
+  line-height: inherit;
+  min-width: 0;
+  padding: 0;
+  outline: none;
+}
+
 .panel {
   max-height: 0;
   overflow: hidden;
@@ -349,6 +361,33 @@ button.accordion.active:after {
 .panel.show {
   opacity: 1;
   max-height: 500px;
+}
+
+.icon {
+  box-sizing: content-box;
+  height: 20px;
+  line-height: 0;
+  position: absolute;
+  right: 0;
+  width: 20px;
+  transition: color 0.2s;
+}
+.icon--l {
+  height: 30px;
+  width: 30px;
+}
+.icon--inline {
+  display: inline-block;
+  position: relative;
+  right: inherit;
+}
+.icon svg {
+  fill: currentColor;
+  height: 100%;
+  width: 100%;
+}
+.icon svg:not(:root) {
+  overflow: hidden;
 }
 
 .filter--set tbody tr:not(.match_filter--set) {
@@ -504,7 +543,7 @@ td {
   border-radius: 10px;
   background: #fff;
   position: relative;
-  padding: 30px;
+  padding: 20px;
   max-width: 450px;
 }
 .modal-title {
@@ -540,21 +579,13 @@ td {
 }
 .modal-close {
   position: absolute;
-  right: 8px;
-  top: 8px;
+  right: 10px;
+  top: 10px;
   outline: none;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  color: white;
-  background: none;
-  border: 1px solid darkred;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 1em;
-  background-color: red;
-  border-radius: 50%;
-  padding: 1px 5px;
+  color: red;
 }
 .modal input[type=radio],
 .modal input[type=radio] + label {
