@@ -1,5 +1,4 @@
 .DS_Store
-data.json
-cardmarket.json
+localstorage
 manifest.json
 node_modules
