@@ -99,15 +99,35 @@
             <img src="#" alt="" class="modal-card">
             <div class="radio-buttons">
                 <input type="radio" id="no_have" name="status" value="0">
-                <label for="no_have">Falta</label>
+                <label for="no_have" title="Falta">
+                    <span class="icon icon--inline">
+                        <svg><use xlink:href="/sources/icons.svg#disabled"></use></svg>
+                    </span>
+                </label>
                 <input type="radio" id="got_it" name="status" value="1" onclick="modalOk()">
-                <label for="got_it">Obtenida</label>
+                <label for="got_it" title="Obtenida">
+                    <span class="icon icon--inline">
+                        <svg><use xlink:href="/sources/icons.svg#check"></use></svg>
+                    </span>
+                </label>
                 <input type="radio" id="reservation" name="status" value="-1" onclick="modalOk()">
-                <label for="reservation">Reserva</label>
+                <label for="reservation" title="Reserva">
+                    <span class="icon icon--inline">
+                        <svg><use xlink:href="/sources/icons.svg#lock"></use></svg>
+                    </span>
+                </label>
                 <input type="radio" id="bought_it" name="status" value="2" onclick="priceConfirm()">
-                <label for="bought_it">Compra</label>
+                <label for="bought_it" title="Compra">
+                    <span class="icon icon--inline">
+                        <svg><use xlink:href="/sources/icons.svg#euro"></use></svg>
+                    </span>
+                </label>
                 <input type="radio" id="proxy" name="status" value="3" onclick="priceConfirm()">
-                <label for="proxy">Proxy</label>
+                <label for="proxy" title="Proxy">
+                    <span class="icon icon--inline">
+                        <svg><use xlink:href="/sources/icons.svg#print"></use></svg>
+                    </span>
+                </label>
             </div>
             <div class="price-confirm" hidden id="priceConfirm">
                 <label for="price">Precio</label>
@@ -121,7 +141,11 @@
                 <input type="text" name="cardmarketPrice" id="cardmarketPrice" placeholder="P.min">
             </div>
             <button class="modal-ok" onclick="modalOk()">confirmar</button>
-            <button class="modal-close modal-exit" onclick="modalClose(this)">X</button>
+            <button class="modal-close modal-exit button--icon-only" onclick="modalClose(this)">
+                <span class="icon icon--l icon--inline">
+                    <svg><use xlink:href="/sources/icons.svg#close"></use></svg>
+                </span>
+            </button>
         </div>
     </div>
 
@@ -136,7 +160,11 @@
                     Mínimo: <span id="card-minimum"></span>
                 </a>
             </div>
-            <button class="modal-close modal-exit" onclick="modalClose(this)">X</button>
+            <button class="modal-close modal-exit button--icon-only" onclick="modalClose(this)">
+                <span class="icon icon--l icon--inline">
+                    <svg><use xlink:href="/sources/icons.svg#close"></use></svg>
+                </span>
+            </button>
         </div>
     </div>
 
