@@ -1996,20 +1996,26 @@ const data2024 = [
         "add_zero": 3,
         "info_url": null,
         "color": {
-            "red": [1],
+            "red": [1,7,9,11,15,79,80,89,90],
+            "red-yellow": [8,10,12],
+            "red-yellow-green": [91],
+            "red-yellow-black": [14],
+            "red-black": [13],
             "red-purple-black": [101],
-            "blue": [2,'17-19',21,23,24,27,28,82,92],
-            "yellow": [3,29,32],
-            "yellow-red": [41,42],
+            "blue": [2,'16-19',21,23,24,27,28,81,82,92],
+            "blue-black": [20,22,25,26],
+            "yellow": [3,29,30,32,34,37,40,83,93],
+            "yellow-red": [31,35,41,42],
+            "yellow-green": [33,38],
             "yellow-purple": [36,39,43,94],
-            "green": [4,46,84],
-            "green-black": [45,48,52,53,96],
-            "black": [5,55,87],
-            "black-purple": [58,59,63,65],
-            "purple": [6,75,99],
+            "green": [4,44,46,49,50,54,84,85,95],
+            "green-black": [45,47,48,51,52,53,96],
+            "black": [5,55,56,60,62,64,86,87],
+            "black-purple": ["57-59",61,63,65],
+            "purple": [6,67,71,74,75,88,"97-99"],
             "purple-red": [70],
-            "purple-black": [66,69,72,73]
-            // "white": [112]
+            "purple-black": [66,68,69,72,73],
+            "white": ["76-78",100,102]
         }
     },
 
