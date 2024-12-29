@@ -42,8 +42,10 @@
     @include card-color('red', 'yellow', 'black');
     @include card-color('red', 'yellow', 'black', '', 'blue');
     @include card-color('red', 'green');
+    @include card-color('red', 'green', 'black', '', 'yellow');
     @include card-color('red', 'black');
     @include card-color('red', 'black', '', '', 'purple');
+    @include card-color('red', 'black', 'black', '', 'yellow');
     @include card-color('red', 'purple');
     @include card-color('red', 'white', 'black');
 
