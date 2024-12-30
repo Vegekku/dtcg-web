@@ -559,9 +559,9 @@ const data2022 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-9.php",
         "color": {
-            "green": [1,7,8,9,10,12,13,15,16],
             "blue": [2,3,4],
             "blue-green": [5,6,14],
+            "green": [1,7,8,9,10,12,13,15,16],
             "green-blue": [11]
         },
     },
@@ -816,10 +816,10 @@ const data2022 = [
         "slug": "ex2_boxtopper",
         "name": "Booster Digital Hazard [EX2] - Box Topper",
         "release": "June 24, 2022",
-        "url": null,
+        "url": "bandaitcgplusURL/EX2/e_parallelP_D.png",
         "cards": {
-            "ST9-06": "https://s3.amazonaws.com/prod.bandaitcgplus.files.api/card_image/DG-EN/EX2/e_ST09-06P_D.png",
-            "ST10-06": "https://s3.amazonaws.com/prod.bandaitcgplus.files.api/card_image/DG-EN/EX2/e_ST10-06P_D.png",
+            "ST9-06": "ST09-06",
+            "ST10-06": "ST10-06",
         },
     },
 
@@ -830,16 +830,16 @@ const data2022 = [
         "slug": "pb8",
         "name": "Playmat and Card Set 1 Digimon Tamers [PB-08]",
         "release": "June, 2022",
-        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "BT1-035": "913866",
-            "BT2-009": "66dcd2",
-            "BT2-068": "5e6f62",
-            "BT3-046": "d9ac05",
-            "BT3-057": "16e33c",
-            "BT5-036": "fc6be2",
-            "BT5-044": "25fe61",
-            "ST7-09": "cd9977",
+            "BT1-035": "P2",
+            "BT2-009": "P2",
+            "BT2-068": "P4",
+            "BT3-046": "P5",
+            "BT3-057": "P5",
+            "BT5-036": "P2",
+            "BT5-044": "P3",
+            "ST7-09": "P2",
         },
         "info_url": "https://world.digimoncard.com/products/goods/playmat_digimon-tamers.php"
 
@@ -937,10 +937,10 @@ const data2022 = [
         "slug": "bt9_prerelease",
         "name": "X Record (BT9) Pre-Release Tournaments",
         "release": "July 22, 2022",
-        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "EX1-027": "67d05d",
-            "BT5-020": "64499e",
+            "EX1-027": "P1",
+            "BT5-020": "P4",
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d7/X_Record_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-09/"
@@ -1603,7 +1603,7 @@ const data2022 = [
         "slug": "st11",
         "name": "Box Promotion Pack ST-11 Special Entry pack",
         "release": "October 14, 2022",
-        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "url": "bandaitcgplusURL/BT10/e_setID-cardID_D.png",
         "cards": {
             "ST1-03": "P5",
             "ST1-07": "P3",
@@ -1629,9 +1629,9 @@ const data2022 = [
         "slug": "st11",
         "name": "Box Promotion Pack ST-11 Special Entry pack",
         "release": "October 14, 2022",
-        "url": "digimonCardDev/setID-cardID_parallelen-US.jpg",
+        "url": "bandaitcgplusURL/BT10/e_setID_cardID_D.png",
         "cards": {
-            "P-065": "c2a5dd",
+            "P-065": "",
         },
     },
     // 25th Special Memorial Pack --- 25specialmemorial
