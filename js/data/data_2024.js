@@ -136,7 +136,7 @@ const data2024 = [
         "slug": "liberator_pack",
         "name": "Digimon Liberator Promotion Pack",
         "release": "January 27, 2024",
-        "url": "digimoncardURL/setID-cardID.png",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c7/Liberator_Promotion_Pack-EN.png",
         "cards": {
             "P-131": "",
@@ -2298,6 +2298,24 @@ const data2024 = [
             "BT17-008": "",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver18-19/"
+    },
+
+    // Digimon Liberator D-Storage Set --- deckbox_2
+    {
+        "id": null,
+        "slug": "deckbox_2",
+        "name": "Digimon Liberator D-Storage Set",
+        "release": "November 2024",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_d_parallel.png",
+        "cards": {
+            "P-131": "B",
+            "P-132": "C",
+            "P-133": "C",
+            "P-134": "B",
+            "P-135": "B",
+            "P-136": "B",
+        },
+        // "info_url": "https://world.digimoncard.com/products/pack/ver18-19/"
     },
 
 // December 6, 2024 - January 31, 2025
