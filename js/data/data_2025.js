@@ -316,6 +316,108 @@ const data2025 = [
             "BT19-098": "",
             "BT19-100": "",
             "BT19-102": "",
+            "BT20-001": "",
+            "BT20-002": "",
+            "BT20-003": "",
+            "BT20-004": "",
+            "BT20-005": "",
+            "BT20-006": "",
+            "BT20-007": "",
+            "BT20-008": "",
+            "BT20-009": "",
+            "BT20-010": "",
+            "BT20-011": "",
+            "BT20-012": "",
+            "BT20-013": "",
+            "BT20-014": "",
+            "BT20-015": "",
+            "BT20-016": "",
+            "BT20-017": "",
+            "BT20-018": "",
+            "BT20-019": "",
+            "BT20-020": "",
+            "BT20-021": "",
+            "BT20-022": "",
+            "BT20-023": "",
+            "BT20-024": "",
+            "BT20-025": "",
+            "BT20-026": "",
+            "BT20-027": "",
+            "BT20-028": "",
+            "BT20-029": "",
+            "BT20-030": "",
+            "BT20-031": "",
+            "BT20-032": "",
+            "BT20-033": "",
+            "BT20-034": "",
+            "BT20-035": "",
+            "BT20-036": "",
+            "BT20-037": "",
+            "BT20-038": "",
+            "BT20-039": "",
+            "BT20-040": "",
+            "BT20-041": "",
+            "BT20-042": "",
+            "BT20-043": "",
+            "BT20-044": "",
+            "BT20-045": "",
+            "BT20-046": "",
+            "BT20-047": "",
+            "BT20-048": "",
+            "BT20-049": "",
+            "BT20-050": "",
+            "BT20-051": "",
+            "BT20-052": "",
+            "BT20-053": "",
+            "BT20-054": "",
+            "BT20-055": "",
+            "BT20-056": "",
+            "BT20-057": "",
+            "BT20-058": "",
+            "BT20-059": "",
+            "BT20-060": "",
+            "BT20-061": "",
+            "BT20-062": "",
+            "BT20-063": "",
+            "BT20-064": "",
+            "BT20-065": "",
+            "BT20-066": "",
+            "BT20-067": "",
+            "BT20-068": "",
+            "BT20-069": "",
+            "BT20-070": "",
+            "BT20-071": "",
+            "BT20-072": "",
+            "BT20-073": "",
+            "BT20-074": "",
+            "BT20-075": "",
+            "BT20-076": "",
+            "BT20-077": "",
+            "BT20-078": "",
+            "BT20-079": "",
+            "BT20-080": "",
+            "BT20-081": "",
+            "BT20-082": "",
+            "BT20-083": "",
+            "BT20-084": "",
+            "BT20-085": "",
+            "BT20-086": "",
+            "BT20-087": "",
+            "BT20-088": "",
+            "BT20-089": "",
+            "BT20-090": "",
+            "BT20-091": "",
+            "BT20-092": "",
+            "BT20-093": "",
+            "BT20-094": "",
+            "BT20-095": "",
+            "BT20-096": "",
+            "BT20-097": "",
+            "BT20-098": "",
+            "BT20-099": "",
+            "BT20-100": "",
+            "BT20-101": "",
+            "BT20-102": "",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver19-20/"
     },
@@ -353,13 +455,19 @@ const data2025 = [
             "BT19-085": "",
             "BT19-086": "",
             "BT19-088": "",
+            "BT20-001": "",
+            "BT20-002": "",
+            "BT20-003": "",
+            "BT20-004": "",
+            "BT20-005": "",
+            "BT20-006": "",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver19-20/",
     },
-    // Special Booster Ver.2.5 [BT19-20] - Special Cards --- sbt20_special
+    // Special Booster Ver.2.5 [BT19-20] - Special Cards --- sbt25_special
     {
         "id": null,
-        "slug": "sbt20_special",
+        "slug": "sbt25_special",
         "name": "Special Booster Ver.2.5 [BT19-20] - Special Cards",
         "release": "February 2025",
         "url": "digimoncardjpURL/setID-cardID_P2.png",
@@ -369,8 +477,177 @@ const data2025 = [
             "BT19-050": "",
             "BT19-064": "",
             "BT19-074": "",
+            "BT20-020": "",
+            "BT20-021": "",
+            "BT20-045": "",
+            "BT20-060": "",
+            "BT20-077": "",
+            "BT20-081": "",
+            "BT20-101": "",
+            "BT20-102": "",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver19-20/"
+    },
+    // Special Booster Ver.2.5 [BT19-20] - Signed Cards --- sbt25_signed
+    {
+        "id": null,
+        "slug": "sbt25_signed",
+        "name": "Special Booster Ver.2.5 [BT19-20] - Signed Cards",
+        "release": "February 2025",
+        "url": "digimoncardjpURL/setID-cardID_P2.png",
+        "cards": {
+            "BT19-067": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver19-20/"
+    },
+    // Special Booster Ver.2.5 [BT19-20] - Serial Cards --- sbt25_serial
+    {
+        "id": null,
+        "slug": "sbt25_serial",
+        "name": "Special Booster Ver.2.5 [BT19-20] - Serial Cards",
+        "release": "February 2025",
+        "url": "digimoncardjpURL/setID-cardID_P2.png",
+        "cards": {
+            "BT14-101": "",
+            "BT15-101": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver19-20/"
+    },
+    // Special Booster Ver.2.5 [BT19-20] - Update Pack 2025 --- sbt25_update_pack
+    {
+        "id": null,
+        "slug": "sbt25_update_pack",
+        "name": "Special Booster Ver.2.5 [BT19-20] - Update Pack 2025",
+        "release": "February 2025",
+        "url": "bandaitcgplusURL/EX08/e_setID-cardID_d.png",
+        "cards": {
+            "P-170": "",
+            "P-171": "",
+            "P-172": "",
+            "P-173": "",
+            "P-174": "",
+            "P-175": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-08/",
+    },
+
+// March 2025
+    // 2025 Regionals Participation Card Set Season 1 --- regional2025_1_0
+    {
+        "id": null,
+        "slug": "regional2025_1_0",
+        "name": "2025 Regionals Participation Card Set Season 1",
+        // "release": "March-May, 2024",
+        "url": "noCardURL",
+        "cards": {
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
+    },
+    // 2025 Regionals Finalist Card Set Season 1 --- regional2025_1_1
+    {
+        "id": null,
+        "slug": "regional2025_1_1",
+        "name": "2025 Regionals Finalist Card Set Season 1",
+        // "release": "March-May, 2024",
+        "url": "noCardURL",
+        "cards": {
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
+    },
+    // 2025 Regionals Champion Card Set Season 1 --- regional2025_1_2
+    {
+        "id": null,
+        "slug": "regional2025_1_2",
+        "name": "2025 Regionals Champion Card Set Season 1",
+        // "release": "March-May, 2024",
+        "url": "noCardURL",
+        "cards": {
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
+    },
+    // Special Event Pack 2025 --- eventpack8
+    {
+        "id": null,
+        "slug": "eventpack8",
+        "name": "Special Event Pack 2025",
+        // "release": "March-May, 2024",
+        "url": "noCardURL",
+        "cards": {
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
+    },
+    // Judge Pack 2025 Season 1 --- judgepack7
+    {
+        "id": null,
+        "slug": "judgepack7",
+        "name": "Judge Pack 2025 Season 1",
+        // "release": "September-November, 2024",
+        "url": "noCardURL",
+        "cards": {
+            "BT19-019": "",
+            "BT19-048": "",
+            "BT20-068": "",
+            "BT20-069": "",
+            "BT20-083": "",
+            "EX8-011": "",
+            "EX8-022": "",
+            "EX8-048": "",
+            "P-132": "",
+            "P-135": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/",
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2e/Judge_Pack_4.png"
+    },
+
+// March 15-16, 2025
+    // 24-25 World Championship - Participation --- wc2024
+    {
+        "id": null,
+        "slug": "wc2024",
+        "name": "24-25 World Championship - Participation",
+        "release": "March 15-16, 2025",
+        "url": null,
+        "cards": {
+            "BT11-023": "https://world.digimoncard.com/images/event/world_cs_24-25/BT11-023.png",
+        },
+        "playmat": "https://world.digimoncard.com/images/event/world_cs_24-25/playmat.png",
+        "info_url": "https://world.digimoncard.com/event/world_cs_24-25/"
+    },
+    // 24-25 World Championship - 3rd Place Prize --- wc2024_3rd
+    {
+        "id": null,
+        "slug": "wc2024_3rd",
+        "name": "24-25 World Championship - 3rd Place Prize",
+        "release": "March 15-16, 2025",
+        "url": null,
+        "cards": {
+            "BT11-027": "https://world.digimoncard.com/images/event/world_cs_24-25/BT11-027.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/world_cs_24-25/"
+    },
+    // 24-25 World Championship - Runner-Up Prize --- wc2024_2nd
+    {
+        "id": null,
+        "slug": "wc2024_2nd",
+        "name": "24-25 World Championship - Runner-Up Prize",
+        "release": "March 15-16, 2025",
+        "url": null,
+        "cards": {
+            "ST8-08": "https://world.digimoncard.com/images/event/world_cs_24-25/ST8-08.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/world_cs_24-25/"
+    },
+    // 24-25 World Championship - Champion Prize --- wc2024_1st
+    {
+        "id": null,
+        "slug": "wc2024_1st",
+        "name": "24-25 World Championship - Champion Prize",
+        "release": "March 15-16, 2025",
+        "url": null,
+        "cards": {
+            "BT12-029": "https://world.digimoncard.com/images/event/world_cs_24-25/BT12-029.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/world_cs_24-25/"
     },
 
 // April 2025
@@ -436,6 +713,22 @@ const data2025 = [
         // },
         "info_url": "https://world.digimoncard.com/products/pack/ver21/"
     },
+
+    // Ultimate Cup 25-26 Season 1 --- ultimatecup_2025_1
+    {
+        "id": null,
+        "slug": "ultimatecup_2025_1",
+        "name": "Ultimate Cup 25-26 Season 1",
+        // "release": "October 2024 - February 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT19-008": "",
+            "BT19-010": "",
+            "BT12-112": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/ultimate_cup/season1/"
+    },
+
 // May 2025
     // DIGIMON ANIMATION SERIES 25th Anniversary Set [PB20] --- pb20
     {
