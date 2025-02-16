@@ -206,17 +206,17 @@ const data2025 = [
         "slug": "pb19",
         "name": "Omnimon Binder Set [PB19]",
         "release": "February 2025",
-        "url": "noCardURL",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "BT14-012": "",
-            "BT14-014": "",
-            "BT15-024": "",
-            "BT15-026": "",
-            "BT17-007": "",
-            "BT17-015": "",
-            "BT17-019": "",
-            "BT17-027": "",
-            "BT17-078": "",
+            "BT14-012": "P1",
+            "BT14-014": "P4",
+            "BT15-024": "P1",
+            "BT15-026": "P3",
+            "BT17-007": "P2",
+            "BT17-015": "P1",
+            "BT17-019": "P2",
+            "BT17-027": "P1",
+            "BT17-078": "P3",
         },
         "info_url": "https://world.digimoncard.com/products/goods/omnimon-binder-set.php"
     },
@@ -259,7 +259,7 @@ const data2025 = [
         "cards": {
             "BT20-090": ["PR","PR2"], // no foil y foil
         },
-        "info_url": "https://world.digimoncard.com/event/celebration-bt18-19/"
+        "info_url": "https://world.digimoncard.com/event/2025/celebration-bt19-20/"
     },
     // Special Booster Ver.2.5 [BT19-20] --- sbt25
     {
@@ -573,6 +573,13 @@ const data2025 = [
         // "release": "March-May, 2024",
         "url": "noCardURL",
         "cards": {
+            "BT8-059": "",
+            "BT14-009": "",
+            "BT18-081": "",
+            // "BT18-081": "" POR REVELAR,
+            "EX7-015": "",
+            "EX7-027": "",
+            "EX7-034": "",
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
     },
@@ -584,6 +591,13 @@ const data2025 = [
         // "release": "March-May, 2024",
         "url": "noCardURL",
         "cards": {
+            "BT8-059": "",
+            "BT14-009": "",
+            "BT18-081": "",
+            // "BT18-081": "" POR REVELAR,
+            "EX7-015": "",
+            "EX7-027": "",
+            "EX7-034": "",
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
     },
@@ -595,6 +609,13 @@ const data2025 = [
         // "release": "March-May, 2024",
         "url": "noCardURL",
         "cards": {
+            "BT8-059": "",
+            "BT14-009": "",
+            "BT18-081": "",
+            // "BT18-081": "" POR REVELAR,
+            "EX7-015": "",
+            "EX7-027": "",
+            "EX7-034": "",
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
     },
@@ -606,6 +627,13 @@ const data2025 = [
         // "release": "March-May, 2024",
         "url": "noCardURL",
         "cards": {
+            "BT7-005": "",
+            "BT10-024": "",
+            "BT12-057": "",
+            "EX1-066": "",
+            "EX5-070": "",
+            "P-110": "",
+            "ST14-12": "",
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
     },
@@ -713,6 +741,20 @@ const data2025 = [
             // "green": [1,"3-15"],
             // "green-red": [2]
         }
+    },
+
+    // WORLD CONVERGENCE [BT-21] Release Event --- bt21_prerelease
+    {
+        "id": null,
+        "slug": "bt21_prerelease",
+        "name": "WORLD CONVERGENCE [BT-21] Release Event",
+        "release": "April 18 – May 9, 2025",
+        "url": "noCardURL",
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/91/Pre_Release_Pack_Exceed_Apocalypse-EN.png/",
+        "cards": {
+            "BT17-077": ["PR","PR2"], // no foil y foil
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/release-event/01/"
     },
     // Booster World Convergence [BT21] --- bt21
     {
