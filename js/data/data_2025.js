@@ -723,8 +723,10 @@ const data2025 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-20/",
         "color": {
-            // "green": [1,"3-15"],
-            // "green-red": [2]
+            "red-yellow": [12],
+            "yellow": [5],
+            "black": [10],
+            "black-green": [13],
         }
     },
     // Starter Deck Hero of Hope [ST21] --- st21
@@ -738,8 +740,9 @@ const data2025 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-21/",
         "color": {
-            // "green": [1,"3-15"],
-            // "green-red": [2]
+            "blue-green": [12],
+            "purple": [10],
+            "purple-yellow": [13],
         }
     },
 
@@ -762,23 +765,28 @@ const data2025 = [
         "slug": "bt21",
         "name": "Booster World Convergence [BT21]",
         "release": "April 2025",
-        "total": 74,
+        "total": 112,
         "url": "noCardURL",
         "add_zero": 3,
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
         "playmat": "",
-        // "color": {
-        //     "red": [1,"7-14",66],
+        "color": {
+            "red": [2,9,12,20,22,82,84],
+            "red-yellow": [21,83],
+            "red-purple": [80],
         //     "blue": [2,"15-23",67],
-        //     "yellow": [3,"24-28",30,63,68],
+            "blue-red": [32,85],
+            "yellow": [4],
+            "yellow-red": [44,86],
         //     "yellow-green": [29],
         //     "green": [4,"31-36",64,69],
         //     "green-yellow-black": [37],
         //     "green-yellow-purple": [74],
-        //     "black": [5,"38-49",70],
-        //     "purple": [6,"51-54",56,"58-61",65,"71-73"],
-        //     "purple-red": [50,55,57,62],
-        // },
+            "black": [61],
+            "purple": [78],
+            "purple-red": [68,72,88,89],
+            "white": [112,]
+        },
         // "override": {
         //     "url": "bandaitcgplusURL/EX07/e_setID-cardID.png",
         //     "cards": {
