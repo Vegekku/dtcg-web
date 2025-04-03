@@ -371,6 +371,10 @@ button.accordion.active:after {
   max-height: 500px;
 }
 
+#editionButtons, #downloadButtons {
+  display: inline-block;
+}
+
 .icon {
   box-sizing: content-box;
   height: 20px;
