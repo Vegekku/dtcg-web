@@ -729,15 +729,48 @@ const data2025 = [
         "name": "Starter Deck Protector of Light [ST-20]",
         "release": "April 2025",
         "total": 15,
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/ST20/e_setID-cardID_D.png",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-20/",
         "color": {
+            "red": ["2-4"],
             "red-yellow": [12],
-            "yellow": [5],
-            "black": [10],
+            "yellow": [5,6],
+            "green": ["7-9"],
+            "black": [1,10,14],
+            "black-red": [11],
             "black-green": [13],
+            "white": [15]
         }
+    },
+    // Starter Deck Protector of Light [ST20] - Lucky Deck --- st20_lucky
+    {
+        "id": null,
+        "slug": "st20_lucky",
+        "name": "Starter Deck Protector of Light [ST20] - Lucky Deck",
+        "release": "April 2025",
+        "url": "bandaitcgplusURL/ST20/e_setID-cardIDP_D.png",
+        "cards": {
+            "ST20-10": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-20/"
+    },
+    // Starter Deck Protector of Light [ST20] - Scramble --- st20_scramble
+    {
+        "id": null,
+        "slug": "st20_scramble",
+        "name": "Starter Deck Protector of Light [ST20] - Scramble",
+        "release": "April 2025",
+        "url": "bandaitcgplusURL/ST20/e_setID-cardID_1_D.png",
+        "cards": {
+            "LM-027": "",
+            "LM-028": "",
+            "LM-029": "",
+            "LM-030": "",
+            "LM-031": "",
+            "LM-032": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-20/"
     },
     // Starter Deck Hero of Hope [ST21] --- st21
     {
@@ -746,14 +779,48 @@ const data2025 = [
         "name": "Starter Deck Hero of Hope [ST-21]",
         "release": "April 2025",
         "total": 15,
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/ST21/e_setID-cardID_D.png",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-21/",
         "color": {
+            "blue": ["2-4"],
             "blue-green": [12],
-            "purple": [10],
+            "yellow": [5,6],
+            "green": ["7-9"],
+            "purple": [1,10,14],
+            "purple-blue": [11],
             "purple-yellow": [13],
+            "white": [15]
         }
+    },
+    // Starter Deck Hero of Hope [ST21] - Lucky Deck --- st21_lucky
+    {
+        "id": null,
+        "slug": "st21_lucky",
+        "name": "Starter Deck Hero of Hope [ST21] - Lucky Deck",
+        "release": "April 2025",
+        "url": "bandaitcgplusURL/ST21/e_setID-cardIDP_D.png",
+        "cards": {
+            "ST21-10": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-21/"
+    },
+    // Starter Deck Hero of Hope [ST21] - Scramble --- st21_scramble
+    {
+        "id": null,
+        "slug": "st21_scramble",
+        "name": "Starter Deck Hero of Hope [ST21] - Scramble",
+        "release": "April 2025",
+        "url": "bandaitcgplusURL/ST21/e_setID-cardID_2_D.png",
+        "cards": {
+            "LM-027": "",
+            "LM-028": "",
+            "LM-029": "",
+            "LM-030": "",
+            "LM-031": "",
+            "LM-032": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-20/"
     },
 
     // WORLD CONVERGENCE [BT-21] Release Event --- bt21_prerelease
@@ -865,4 +932,28 @@ const data2025 = [
         },
         "info_url": "https://world.digimoncard.com/products/goods/tamer-selection-box-cs2024.php"
     },
+
+    // TAMER'S EVOLUTION BOX - RISE OF DIGIMON --- pb21
+    // {
+    //     "id": null,
+    //     "slug": "pb21",
+    //     "name": "TAMER'S EVOLUTION BOX - RISE OF DIGIMON",
+    //     "release": "January 2026",
+    //     "url": "noCardURL",
+    //     "cards": {
+    //         "BT5-086": "",
+    //         "BT9-112": "",
+    //         "BT10-042": "",
+    //         "BT10-057": "",
+    //         "BT10-112": "",
+    //         "BT11-019": "",
+    //         "BT16-102": "",
+    //         "BT16-071": "",
+    //         "EX5-063": "",
+    //         "EX6-035": "",
+    //         "EX7-023": "",
+    //         "EX8-074": "",
+    //     },
+    //     "info_url": "https://world.digimoncard.com/products/goods/tamers-evolution-box/"
+    // },
 ];
