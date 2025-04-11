@@ -982,6 +982,42 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/products/pack/ver21/"
     },
 
+// April 1 - June 30, 2025
+    // Official Store Tournament 2025 Vol.2 - Participation Pack --- otp17
+    {
+        "id": null,
+        "slug": "otp17",
+        "name": "Official Store Tournament 2025 Vol.2 - Participation Pack",
+        "release": "April 1 - June 30, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_d.png",
+        "cards": {
+            "P-176": "",
+            "P-177": "",
+            "P-178": "",
+            "P-179": "",
+            "P-180": "",
+            "P-181": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/store_tournament/02/",
+    },
+    // Official Store Tournament 2025 Vol.2 - Winner Pack --- wp17
+    {
+        "id": null,
+        "slug": "wp17",
+        "name": "Official Store Tournament 2025 Vol.2 - Winner Pack",
+        "release": "April 1 - June 30, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDwin_d.png",
+        "cards": {
+            "P-176": "",
+            "P-177": "",
+            "P-178": "",
+            "P-179": "",
+            "P-180": "",
+            "P-181": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/store_tournament/02/",
+    },
+
     // Ultimate Cup 25-26 Season 1 --- ultimatecup_2025_1
     {
         "id": null,
@@ -1019,10 +1055,10 @@ const data2025 = [
         },
         "info_url": "https://world.digimoncard.com/products/goods/animation_series_25th.php"
     },
-    // TAMER'S SELECTION BOX ver. CHAMPIONSHIP 2024 --- pb21
+    // TAMER'S SELECTION BOX ver. CHAMPIONSHIP 2024 --- tamer_champion_24
     {
         "id": null,
-        "slug": "pb21",
+        "slug": "tamer_champion_24",
         "name": "TAMER'S SELECTION BOX ver. CHAMPIONSHIP 2024",
         "release": "May 2025",
         "url": "noCardURL",
@@ -1040,28 +1076,4 @@ const data2025 = [
         },
         "info_url": "https://world.digimoncard.com/products/goods/tamer-selection-box-cs2024.php"
     },
-
-    // TAMER'S EVOLUTION BOX - RISE OF DIGIMON --- pb21
-    // {
-    //     "id": null,
-    //     "slug": "pb21",
-    //     "name": "TAMER'S EVOLUTION BOX - RISE OF DIGIMON",
-    //     "release": "January 2026",
-    //     "url": "noCardURL",
-    //     "cards": {
-    //         "BT5-086": "",
-    //         "BT9-112": "",
-    //         "BT10-042": "",
-    //         "BT10-057": "",
-    //         "BT10-112": "",
-    //         "BT11-019": "",
-    //         "BT16-102": "",
-    //         "BT16-071": "",
-    //         "EX5-063": "",
-    //         "EX6-035": "",
-    //         "EX7-023": "",
-    //         "EX8-074": "",
-    //     },
-    //     "info_url": "https://world.digimoncard.com/products/goods/tamers-evolution-box/"
-    // },
 ];
