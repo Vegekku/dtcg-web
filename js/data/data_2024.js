@@ -317,24 +317,29 @@ const data2024 = [
             "BT15-006": "P",
         },
     },
-    // Booster New Evolution [BT1]
+    // Limited Pack [LM]
     {
         "id": "LM",
         "name": "Limited Pack",
         "release": null,
-        "total": 38,
+        "total": 44,
         "url": null,
         "add_zero": 3,
         "info_url": null,
         "color": {
             "red": [1,21,27,33],
+            "red-blue": [39],
             "blue": ["2-5",22,28,34],
+            "blue-yellow": [40],
+            "blue-black": [41],
             "blue-purple": [6],
             "yellow": [7,23,29,35],
             "yellow-green": [20],
             "green": ["8-13",24,30,36],
+            "green-yellow": [42],
             "black": [14,15,25,31,37],
-            "purple": ["16-18",32,38],
+            "black-purple": [43],
+            "purple": ["16-18",32,38,44],
             "purple-red": [26],
             "white": [19]
         },
