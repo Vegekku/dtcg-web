@@ -574,22 +574,22 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/products/pack/ver19-20/",
     },
 
-// March 2025
+// March - June, 2025
     // 2025 Regionals Participation Card Set Season 1 --- regional2025_1_0
     {
         "id": null,
         "slug": "regional2025_1_0",
         "name": "2025 Regionals Participation Card Set Season 1",
-        // "release": "March-May, 2024",
-        "url": "noCardURL",
+        "release": "March - June, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel.png",
         "cards": {
-            "BT8-059": "",
-            "BT14-009": "",
-            "BT18-081": "",
-            // "BT18-081": "" POR REVELAR,
-            "EX7-015": "",
-            "EX7-027": "",
-            "EX7-034": "",
+            "BT8-059": "_prati_D",
+            "BT14-009": "_prati_D",
+            "BT18-081": "_prati_D",
+            "BT20-003": "PR_D",
+            "EX7-015": "_prati_D",
+            "EX7-027": "_prati_D",
+            "EX7-034": "_prati_D",
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
     },
@@ -598,16 +598,16 @@ const data2025 = [
         "id": null,
         "slug": "regional2025_1_1",
         "name": "2025 Regionals Finalist Card Set Season 1",
-        // "release": "March-May, 2024",
-        "url": "noCardURL",
+        "release": "March - June, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel.png",
         "cards": {
-            "BT8-059": "",
-            "BT14-009": "",
-            "BT18-081": "",
-            // "BT18-081": "" POR REVELAR,
-            "EX7-015": "",
-            "EX7-027": "",
-            "EX7-034": "",
+            "BT8-059": "_Fine_D",
+            "BT14-009": "_Fine_D",
+            "BT18-081": "_Fine_D",
+            "BT20-029": "PR_D",
+            "EX7-015": "_Fine_D",
+            "EX7-027": "_Fine_D",
+            "EX7-034": "_Fine_D",
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
     },
@@ -616,16 +616,16 @@ const data2025 = [
         "id": null,
         "slug": "regional2025_1_2",
         "name": "2025 Regionals Champion Card Set Season 1",
-        // "release": "March-May, 2024",
-        "url": "noCardURL",
+        "release": "March - June, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel.png",
         "cards": {
-            "BT8-059": "",
-            "BT14-009": "",
-            "BT18-081": "",
-            // "BT18-081": "" POR REVELAR,
-            "EX7-015": "",
-            "EX7-027": "",
-            "EX7-034": "",
+            "BT8-059": "_camp_D",
+            "BT14-009": "_camp_D",
+            "BT18-081": "_camp_D",
+            "BT20-032": "PR_D",
+            "EX7-015": "_camp_D",
+            "EX7-027": "_camp_D",
+            "EX7-034": "_camp_D",
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
     },
@@ -634,8 +634,8 @@ const data2025 = [
         "id": null,
         "slug": "eventpack8",
         "name": "Special Event Pack 2025",
-        // "release": "March-May, 2024",
-        "url": "noCardURL",
+        "release": "March - June, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT7-005": "",
             "BT10-024": "",
@@ -652,19 +652,19 @@ const data2025 = [
         "id": null,
         "slug": "judgepack7",
         "name": "Judge Pack 2025 Season 1",
-        // "release": "September-November, 2024",
-        "url": "noCardURL",
+        "release": "March - June, 2025",
+        "url": "bandaitcgplusURL/P/parallel-cardID_d.png",
         "cards": {
-            "BT19-019": "",
-            "BT19-048": "",
-            "BT20-068": "",
-            "BT20-069": "",
-            "BT20-083": "",
-            "EX8-011": "",
-            "EX8-022": "",
-            "EX8-048": "",
-            "P-132": "",
-            "P-135": "",
+            "BT19-019": "e_BT19",
+            "BT19-048": "e_BT19",
+            "BT20-068": "e_BT19",
+            "BT20-069": "e_BT19",
+            "BT20-083": "e_BT19",
+            "EX8-011": "e_EX8",
+            "EX8-022": "e_EX8",
+            "EX8-048": "e_EX8",
+            "P-132": "ch_P",
+            "P-135": "ch_P",
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/",
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2e/Judge_Pack_4.png"
@@ -829,7 +829,7 @@ const data2025 = [
         "slug": "bt21_prerelease",
         "name": "WORLD CONVERGENCE [BT-21] Release Event",
         "release": "April 18 – May 9, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel_D.png",
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/91/Pre_Release_Pack_Exceed_Apocalypse-EN.png/",
         "cards": {
             "BT17-077": ["PR","PR2"], // no foil y foil
@@ -982,6 +982,20 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/products/pack/ver21/"
     },
 
+// April 1 – May 31, 2025
+    // Regulation Battle Vol.1 --- rb_1
+    {
+        "id": null,
+        "slug": "rb_1",
+        "name": "Regulation Battle Vol.1",
+        "release": "April 1 – May 31, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel.png",
+        "cards": {
+            "EX6-012": "SPR_D",
+            "EX5-048": "PR_D",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regulation_battle/",
+    },
 // April 1 - June 30, 2025
     // Official Store Tournament 2025 Vol.2 - Participation Pack --- otp17
     {
@@ -1075,5 +1089,73 @@ const data2025 = [
             "BT18-084": "",
         },
         "info_url": "https://world.digimoncard.com/products/goods/tamer-selection-box-cs2024.php"
+    },
+
+// October 2025
+    // Limited Card Pack BILLION BULLET --- lm03
+    {
+        "id": null,
+        "slug": "lm03",
+        "name": "Limited Card Pack BILLION BULLET",
+        "release": "October 2025",
+        "url": "noCardURL",
+        "cards": {
+            "LM-045": "",
+            "LM-046": "",
+            "LM-047": "",
+            "LM-048": "",
+            "LM-049": "",
+            "LM-050": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-pack-billion-bullet.php"
+    },
+    // Limited Card Pack BILLION BULLET - Alternatives --- lm03_alts
+    {
+        "id": null,
+        "slug": "lm03_alts",
+        "name": "Limited Card Pack BILLION BULLET - Alternatives",
+        "release": "October 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT16-082": "",
+            "BT16-101": "",
+            "BT19-074": "",
+            "ST17-02": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-pack-billion-bullet.php"
+    },
+    // Limited Card Pack BILLION BULLET - Reprints --- lm03_reprints
+    {
+        "id": null,
+        "slug": "lm03_reprints",
+        "name": "Limited Card Pack BILLION BULLET - Reprints",
+        "release": "October 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT3-008": "",
+            "BT3-062": "",
+            "BT11-032": "",
+            "BT12-085": "",
+            "BT16-030": "",
+            "BT17-035": "",
+            "BT18-100": "",
+            "EX4-003": "",
+            "P-094": "",
+            "P-137": "",
+            "P-160": "",
+            "P-161": "",
+            "P-162": "",
+            "P-163": "",
+            "P-164": "",
+            "P-165": "",
+            "P-166": "",
+            "P-167": "",
+            "P-168": "",
+            "P-169": "",
+            "RB1-032": "",
+            "ST6-15": "",
+            "ST16-14": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-pack-billion-bullet.php"
     },
 ];
