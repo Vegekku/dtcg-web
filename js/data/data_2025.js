@@ -1091,6 +1091,40 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/products/goods/tamer-selection-box-cs2024.php"
     },
 
+// June 2025
+    // Booster Versus Monsters [EX9] --- ex9
+    {
+        "id": "EX9",
+        "slug": "ex9",
+        "name": "Booster Versus Monsters [EX9]",
+        "release": "June 26, 2025",
+        "total": 74,
+        "url": "noCardURL",
+        "add_zero": 3,
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
+        "playmat": "",
+        // "color": {
+        //     "red": [1,8,10,13,65],
+        //     "red-blue-yellow": [73],
+        //     "red-green": [7,11,14,16],
+        //     "red-purple": [9,12,15],
+        //     "blue": [2,17,18,20,21,24,27,66,68],
+        //     "blue-yellow": [19,22,23,28],
+        //     "blue-black": [25,26],
+        //     "blue-black-yellow": [29],
+        //     "yellow": [3,"30-32",34,35,37],
+        //     "yellow-purple": [33,36],
+        //     "green": [4,39,40,42,44,69],
+        //     "green-red": [74],
+        //     "green-black": [43],
+        //     "green-purple": [38,41,45],
+        //     "black": [5,"46-55",67,70],
+        //     "purple": [6,"56-61",63,71,72],
+        //     "purple-yellow": [62,64],
+        // },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-09/"
+    },
+
 // October 2025
     // Limited Card Pack BILLION BULLET --- lm03
     {
