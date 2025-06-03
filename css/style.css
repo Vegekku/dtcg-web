@@ -33,6 +33,9 @@ input:disabled + label {
   vertical-align: middle;
   color: white;
 }
+tr:not([data-color]) .card_id {
+  color: black;
+}
 [data-color=red] .card_id {
   background-color: var(--red-card);
 }

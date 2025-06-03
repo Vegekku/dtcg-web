@@ -35,6 +35,10 @@
     vertical-align: middle;
     color: white;
 
+    tr:not([data-color]) & {
+        color: black;
+    }
+
     // Red cards
     @include card-color('red');
     @include card-color('red', 'blue');
