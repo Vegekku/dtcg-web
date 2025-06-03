@@ -6,7 +6,7 @@ const data2026 = [
         "slug": "pb21",
         "name": "TAMER'S EVOLUTION BOX - RISE OF DIGIMON [pb21]",
         "release": "January 2026",
-        "url": "noCardURL",
+        "url": "https://world.digimoncard.com/images/products/goods/tamers-evolution-box/card/setID-cardID.png",
         "cards": {
             "BT5-086": "",
             "BT9-112": "",
@@ -15,7 +15,7 @@ const data2026 = [
             "BT10-112": "",
             "BT11-019": "",
             "BT16-102": "",
-            "BT16-071": "",
+            "BT18-071": "",
             "EX5-063": "",
             "EX6-035": "",
             "EX7-023": "",
