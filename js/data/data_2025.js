@@ -1091,7 +1091,45 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/products/goods/tamer-selection-box-cs2024.php"
     },
 
-// June 2025
+// June 1 – July 31, 2025
+    // Evolution Cup 2025 Vol. 1 Participation --- evolution_cup_2025_1_participant
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_1_participant",
+        "name": "Evolution Cup 2025 Vol. 1 Participation",
+        "release": "June 1 – July 31, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDEC_D.png",
+        "cards": {
+            "BT9-109": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/01/",
+    },
+    // Evolution Cup 2025 Vol. 1 Top 4 --- evolution_cup_2025_1_top4
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_1_top4",
+        "name": "Evolution Cup 2025 Vol. 1 Top 4",
+        "release": "June 1 – July 31, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDEC_D.png",
+        "cards": {
+            "BT9-092": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/01/",
+    },
+    // Evolution Cup 2025 Vol. 1 Winner --- evolution_cup_2025_1_winner
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_1_winner",
+        "name": "Evolution Cup 2025 Vol. 1 Winner",
+        "release": "June 1 – July 31, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDEC_D.png",
+        "cards": {
+            "BT10-086": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/01/",
+    },
+
+// June 26, 2025
     // Booster Versus Monsters [EX9] --- ex9
     {
         "id": "EX9",
