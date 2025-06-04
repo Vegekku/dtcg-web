@@ -1198,6 +1198,21 @@ const data2025 = [
         },
         "info_url": "https://world.digimoncard.com/event/2025/store_tournament/03/",
     },
+    // Ultimate Cup 25-26 Season 2 --- ultimatecup_2025_2
+    {
+        "id": null,
+        "slug": "ultimatecup_2025_2",
+        "name": "Ultimate Cup 25-26 Season 2",
+        // "release": "October 2024 - February 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT21-063": "",
+            "BT21-066": "",
+            "BT21-072": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/ultimate_cup/season2/"
+    },
+
 // October 2025
     // Limited Card Pack BILLION BULLET --- lm03
     {
