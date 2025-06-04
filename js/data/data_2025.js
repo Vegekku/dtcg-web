@@ -1176,6 +1176,21 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/event/2025/release-event/03/"
     },
 
+// July 1 – August 31, 2025
+    // Regulation Battle Vol.2 --- rb_2
+    {
+        "id": null,
+        "slug": "rb_2",
+        "name": "Regulation Battle Vol.2",
+        "release": "July 1 – August 31, 2025",
+        "url": "https://world.digimoncard.com/images/event/2025/regulation_battle-02/card/setID-cardID.png",
+        "cards": {
+            "ST19-03": "",
+            "EX6-052": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regulation_battle-02/",
+    },
+
 // July 1 - September 30, 2025
     // Official Store Tournament 2025 Vol.3 - Participation Pack --- otp18
     {
