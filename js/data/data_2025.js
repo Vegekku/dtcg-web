@@ -1162,6 +1162,19 @@ const data2025 = [
         // },
         "info_url": "https://world.digimoncard.com/products/pack/ex-09/"
     },
+    // Digital Monster Day Commemoration Event --- ex9_prerelease
+    {
+        "id": null,
+        "slug": "ex9_prerelease",
+        "name": "Digital Monster Day Commemoration Event",
+        "release": "June 26 - July 3, 2025",
+        "url": "https://world.digimoncard.com/images/event/2025/release-event/03/prize/img_parallel.png?250516",
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/91/Pre_Release_Pack_Exceed_Apocalypse-EN.png/",
+        "cards": {
+            "EX9-007": ["01","02"], // no foil y foil
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/release-event/03/"
+    },
 
 // July 1 - September 30, 2025
     // Official Store Tournament 2025 Vol.3 - Participation Pack --- otp18
