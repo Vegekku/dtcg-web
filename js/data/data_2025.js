@@ -1245,6 +1245,62 @@ const data2025 = [
         // },
         "info_url": "https://world.digimoncard.com/products/pack/ver22/"
     },
+
+// August, 2025
+    // 2025 Regionals Participation Card Set Season 2 --- regional2025_2_0
+    {
+        "id": null,
+        "slug": "regional2025_2_0",
+        "name": "2025 Regionals Participation Card Set Season 2",
+        "release": "March - June, 2025",
+        "url": "noCardURL",
+        "cards": {
+            // "BT8-059": "_prati_D",
+            // "BT14-009": "_prati_D",
+            // "BT18-081": "_prati_D",
+            // "BT20-003": "PR_D",
+            // "EX7-015": "_prati_D",
+            // "EX7-027": "_prati_D",
+            // "EX7-034": "_prati_D",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
+    },
+    // 2025 Regionals Finalist Card Set Season 2 --- regional2025_2_1
+    {
+        "id": null,
+        "slug": "regional2025_2_1",
+        "name": "2025 Regionals Finalist Card Set Season 2",
+        "release": "March - June, 2025",
+        "url": "noCardURL",
+        "cards": {
+            // "BT8-059": "_Fine_D",
+            // "BT14-009": "_Fine_D",
+            // "BT18-081": "_Fine_D",
+            // "BT20-029": "PR_D",
+            // "EX7-015": "_Fine_D",
+            // "EX7-027": "_Fine_D",
+            // "EX7-034": "_Fine_D",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
+    },
+    // 2025 Regionals Champion Card Set Season 2 --- regional2025_2_2
+    {
+        "id": null,
+        "slug": "regional2025_2_2",
+        "name": "2025 Regionals Champion Card Set Season 2",
+        "release": "March - June, 2025",
+        "url": "noCardURL",
+        "cards": {
+            // "BT8-059": "_camp_D",
+            // "BT14-009": "_camp_D",
+            // "BT18-081": "_camp_D",
+            // "BT20-032": "PR_D",
+            // "EX7-015": "_camp_D",
+            // "EX7-027": "_camp_D",
+            // "EX7-034": "_camp_D",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
+    },
     // Ultimate Cup 25-26 Season 2 --- ultimatecup_2025_2
     {
         "id": null,
