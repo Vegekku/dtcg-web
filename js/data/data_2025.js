@@ -1163,6 +1163,41 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/products/pack/ex-09/"
     },
 
+// July 1 - September 30, 2025
+    // Official Store Tournament 2025 Vol.3 - Participation Pack --- otp18
+    {
+        "id": null,
+        "slug": "otp18",
+        "name": "Official Store Tournament 2025 Vol.3 - Participation Pack",
+        "release": "July 1 - September 30, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "P-188": "",
+            "P-189": "",
+            "P-190": "",
+            "P-191": "",
+            "P-192": "",
+            "P-193": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/store_tournament/03/",
+    },
+    // Official Store Tournament 2025 Vol.3 - Winner Pack --- wp18
+    {
+        "id": null,
+        "slug": "wp18",
+        "name": "Official Store Tournament 2025 Vol.3 - Winner Pack",
+        "release": "July 1 - September 30, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "P-188": "",
+            "P-189": "",
+            "P-190": "",
+            "P-191": "",
+            "P-192": "",
+            "P-193": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/store_tournament/03/",
+    },
 // October 2025
     // Limited Card Pack BILLION BULLET --- lm03
     {
