@@ -1301,6 +1301,29 @@ const data2025 = [
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
     },
+    // Judge Pack 2025 Wave 2 --- judgepack8
+    {
+        "id": null,
+        "slug": "judgepack8",
+        "name": "Judge Pack 2025 Wave 2",
+        "release": "March - June, 2025",
+        "url": "noCardURL",
+        "cards": {
+            // "BT19-019": "e_BT19",
+            // "BT19-048": "e_BT19",
+            // "BT20-068": "e_BT19",
+            // "BT20-069": "e_BT19",
+            // "BT20-083": "e_BT19",
+            // "EX8-011": "e_EX8",
+            // "EX8-022": "e_EX8",
+            // "EX8-048": "e_EX8",
+            // "P-132": "ch_P",
+            // "P-135": "ch_P",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/",
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2e/Judge_Pack_4.png"
+    },
+
     // Ultimate Cup 25-26 Season 2 --- ultimatecup_2025_2
     {
         "id": null,
