@@ -1435,4 +1435,20 @@ const data2025 = [
         },
         "info_url": "https://world.digimoncard.com/products/goods/limited-pack-billion-bullet.php"
     },
+
+    // Digimon Story Time Stranger - Collector's Edition --- digimon_time_stranger
+    {
+        "id": null,
+        "slug": "digimon_time_stranger",
+        "name": "Digimon Story Time Stranger - Collector's Edition",
+        "release": "October 3, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "EX5-007": "",
+            "EX5-016": "",
+            "EX5-073": "",
+            "P-194": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-pack-billion-bullet.php"
+    },
 ];
