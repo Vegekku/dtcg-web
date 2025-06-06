@@ -1227,6 +1227,20 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/event/2025/store_tournament/03/",
     },
 
+// July 18 - 24, 2025
+    // CYBER EDEN [BT-22] Release Event --- bt22_prerelease
+    {
+        "id": null,
+        "slug": "bt22_prerelease",
+        "name": "CYBER EDEN [BT-22] Release Event",
+        "release": "July 18 - 24, 2025",
+        "url": "https://world.digimoncard.com/images/event/2025/release-event/04/prize/img_parallel.png",
+        "cards": {
+            "BT16-026": ["01","02"], // no foil y foil
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/release-event/04/"
+    },
+
 // July 25, 2025
     // Booster Cyber Eden [BT-22] --- bt22
     {
