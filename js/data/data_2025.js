@@ -1314,7 +1314,7 @@ const data2025 = [
         "slug": "otp18",
         "name": "Official Store Tournament 2025 Vol.3 - Participation Pack",
         "release": "July 1 - September 30, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_D.png",
         "cards": {
             "P-188": "",
             "P-189": "",
@@ -1331,7 +1331,7 @@ const data2025 = [
         "slug": "wp18",
         "name": "Official Store Tournament 2025 Vol.3 - Winner Pack",
         "release": "July 1 - September 30, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardIDP_D.png",
         "cards": {
             "P-188": "",
             "P-189": "",
