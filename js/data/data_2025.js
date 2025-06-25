@@ -1400,13 +1400,13 @@ const data2025 = [
         "release": "March - June, 2025",
         "url": "noCardURL",
         "cards": {
+            "BT14-006": "",
             "BT17-097": "",
             "BT20-052": "",
             "BT20-056": "",
             "BT20-075": "",
             "EX8-051": "",
             "ST10-14": "",
-            // "ST10-14": "", Bowmon
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
     },
@@ -1421,10 +1421,10 @@ const data2025 = [
             "BT17-097": "",
             "BT20-052": "",
             "BT20-056": "",
+            "BT20-064": "",
             "BT20-075": "",
             "EX8-051": "",
             "ST10-14": "",
-            // "BT20-064": "", Loogamon
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
     },
@@ -1439,10 +1439,10 @@ const data2025 = [
             "BT17-097": "",
             "BT20-052": "",
             "BT20-056": "",
+            "BT20-070": "",
             "BT20-075": "",
             "EX8-051": "",
             "ST10-14": "",
-            // "BT20-070": "", Loogarmon
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
     },
