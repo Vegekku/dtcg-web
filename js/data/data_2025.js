@@ -1507,6 +1507,40 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/event/2025/ultimate_cup/season2/"
     },
 
+// September 19, 2025
+    // Extra Booster Sinister Order [EX10] --- ex10
+    {
+        "id": "EX10",
+        "slug": "ex10",
+        "name": "Extra Booster Sinister Order [EX10]",
+        "release": "September 19, 2025",
+        "total": 1,
+        "url": "noCardURL",
+        "add_zero": 3,
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
+        "playmat": "",
+        // "color": {
+        //     "red": [1,8,10,13,65],
+        //     "red-blue-yellow": [73],
+        //     "red-green": [7,11,14,16],
+        //     "red-purple": [9,12,15],
+        //     "blue": [2,17,18,20,21,24,27,66,68],
+        //     "blue-yellow": [19,22,23,28],
+        //     "blue-black": [25,26],
+        //     "blue-black-yellow": [29],
+        //     "yellow": [3,"30-32",34,35,37],
+        //     "yellow-purple": [33,36],
+        //     "green": [4,39,40,42,44,69],
+        //     "green-red": [74],
+        //     "green-black": [43],
+        //     "green-purple": [38,41,45],
+        //     "black": [5,"46-55",67,70],
+        //     "purple": [6,"56-61",63,71,72],
+        //     "purple-yellow": [62,64],
+        // },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-10/"
+    },
+
 // October 2025
     // Limited Card Pack BILLION BULLET --- lm03
     {
@@ -1589,5 +1623,62 @@ const data2025 = [
             "P-194": "",
         },
         "info_url": "https://world.digimoncard.com/products/goods/limited-pack-billion-bullet.php"
+    },
+
+// October 24, 2025
+    // Booster Hackers' Slumber [BT-23] --- bt23
+    {
+        "id": "BT23",
+        "slug": "bt23",
+        "name": "Booster Hackers' Slumber [BT-23]",
+        "release": "October 24, 2025",
+        "total": 1,
+        "url": "noCardURL",
+        "add_zero": 3,
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
+        "playmat": "",
+        // "color": {
+        //     "red": [1,8,10,13,65],
+        //     "red-blue-yellow": [73],
+        //     "red-green": [7,11,14,16],
+        //     "red-purple": [9,12,15],
+        //     "blue": [2,17,18,20,21,24,27,66,68],
+        //     "blue-yellow": [19,22,23,28],
+        //     "blue-black": [25,26],
+        //     "blue-black-yellow": [29],
+        //     "yellow": [3,"30-32",34,35,37],
+        //     "yellow-purple": [33,36],
+        //     "green": [4,39,40,42,44,69],
+        //     "green-red": [74],
+        //     "green-black": [43],
+        //     "green-purple": [38,41,45],
+        //     "black": [5,"46-55",67,70],
+        //     "purple": [6,"56-61",63,71,72],
+        //     "purple-yellow": [62,64],
+        // },
+        "info_url": "https://world.digimoncard.com/products/pack/ver23/"
+    },
+
+// December 5, 2025
+    // Advanced Deck Amethyst Mandala [ST-22] --- st22
+    {
+        "id": "ST22",
+        "slug": "st22",
+        "name": "Advanced Deck Amethyst Mandala [ST-22]",
+        "release": "December 5, 2025",
+        "total": 1,
+        "url": "noCardURL",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-22/",
+        "color": {
+            // "blue": ["2-4"],
+            // "blue-green": [12],
+            // "yellow": [5,6],
+            // "green": ["7-9"],
+            // "purple": [1,10,14],
+            // "purple-blue": [11],
+            // "purple-yellow": [13],
+            // "white": [15]
+        }
     },
 ];

@@ -23,13 +23,48 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/products/goods/tamers-evolution-box/"
     },
+
+// January 23, 2026
+    // Booster Time Stranger [BT-24] --- bt24
+    {
+        "id": "BT24",
+        "slug": "bt24",
+        "name": "Booster Time Stranger [BT-24]",
+        "release": "January 23, 2026",
+        "total": 1,
+        "url": "noCardURL",
+        "add_zero": 3,
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
+        "playmat": "",
+        // "color": {
+        //     "red": [1,8,10,13,65],
+        //     "red-blue-yellow": [73],
+        //     "red-green": [7,11,14,16],
+        //     "red-purple": [9,12,15],
+        //     "blue": [2,17,18,20,21,24,27,66,68],
+        //     "blue-yellow": [19,22,23,28],
+        //     "blue-black": [25,26],
+        //     "blue-black-yellow": [29],
+        //     "yellow": [3,"30-32",34,35,37],
+        //     "yellow-purple": [33,36],
+        //     "green": [4,39,40,42,44,69],
+        //     "green-red": [74],
+        //     "green-black": [43],
+        //     "green-purple": [38,41,45],
+        //     "black": [5,"46-55",67,70],
+        //     "purple": [6,"56-61",63,71,72],
+        //     "purple-yellow": [62,64],
+        // },
+        "info_url": "https://world.digimoncard.com/products/pack/ver24/"
+    },
+
 // February 2026
     // Digimon Liberator Debuggers Set [pb22] --- pb22
     {
         "id": null,
         "slug": "pb22",
         "name": "Digimon Liberator Debuggers Set [pb21]",
-        "release": "January 2026",
+        "release": "February 2026",
         "url": "noCardURL",
         "cards": {
             "ST18-12": "",
@@ -61,4 +96,43 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/products/goods/liberator-debuggers-set.php"
     },
+
+// February 13, 2026
+    // Extra Booster Dawn Of Liberator [EX11] --- ex11
+    {
+        "id": "EX11",
+        "slug": "ex10",
+        "name": "Extra Booster Dawn Of Liberator [EX11]",
+        "release": "February 13, 2026",
+        "total": 1,
+        "url": "noCardURL",
+        "add_zero": 3,
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
+        "playmat": "",
+        // "color": {
+        //     "red": [1,8,10,13,65],
+        //     "red-blue-yellow": [73],
+        //     "red-green": [7,11,14,16],
+        //     "red-purple": [9,12,15],
+        //     "blue": [2,17,18,20,21,24,27,66,68],
+        //     "blue-yellow": [19,22,23,28],
+        //     "blue-black": [25,26],
+        //     "blue-black-yellow": [29],
+        //     "yellow": [3,"30-32",34,35,37],
+        //     "yellow-purple": [33,36],
+        //     "green": [4,39,40,42,44,69],
+        //     "green-red": [74],
+        //     "green-black": [43],
+        //     "green-purple": [38,41,45],
+        //     "black": [5,"46-55",67,70],
+        //     "purple": [6,"56-61",63,71,72],
+        //     "purple-yellow": [62,64],
+        // },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-11/"
+    },
+
+// March 2026
+    // Reprint Booster Pack
+
+    // Premium Heroines Set ver.2 [PB-23] --- pb23
 ];
