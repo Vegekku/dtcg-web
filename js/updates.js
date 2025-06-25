@@ -16,6 +16,11 @@ const updatesData = ( version ) => {
         collectionData = collectionData.replace(/"pb21"/g, '"tamer_champion_24"');
         cardmarketData = cardmarketData.replace(/"pb21"/g, '"tamer_champion_24"');
     }
+
+    if ( 'eventpack8' === version ) {
+        collectionData = collectionData.replace(/"eventpack8"/g, '"special_eventpack_2025"');
+        cardmarketData = cardmarketData.replace(/"eventpack8"/g, '"special_eventpack_2025"');
+    }
     
     localStorage.setItem('collection', collectionData);
     localStorage.setItem('cardmarket', cardmarketData);

@@ -629,10 +629,10 @@ const data2025 = [
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
     },
-    // Special Event Pack 2025 --- eventpack8
+    // Special Event Pack 2025 --- special_eventpack_2025
     {
         "id": null,
-        "slug": "eventpack8",
+        "slug": "special_eventpack_2025",
         "name": "Special Event Pack 2025",
         "release": "March - June, 2025",
         "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
