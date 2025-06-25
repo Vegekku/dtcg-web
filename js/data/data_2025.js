@@ -1397,7 +1397,7 @@ const data2025 = [
         "id": null,
         "slug": "regional2025_2_0",
         "name": "2025 Regionals Participation Card Set Season 2",
-        "release": "March - June, 2025",
+        "release": "August - September, 2025",
         "url": "noCardURL",
         "cards": {
             "BT14-006": "",
@@ -1415,7 +1415,7 @@ const data2025 = [
         "id": null,
         "slug": "regional2025_2_1",
         "name": "2025 Regionals Finalist Card Set Season 2",
-        "release": "March - June, 2025",
+        "release": "August - September, 2025",
         "url": "noCardURL",
         "cards": {
             "BT17-097": "",
@@ -1433,7 +1433,7 @@ const data2025 = [
         "id": null,
         "slug": "regional2025_2_2",
         "name": "2025 Regionals Champion Card Set Season 2",
-        "release": "March - June, 2025",
+        "release": "August - September, 2025",
         "url": "noCardURL",
         "cards": {
             "BT17-097": "",
@@ -1446,12 +1446,35 @@ const data2025 = [
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
     },
+    // Event Pack 8 --- eventpack8
+    {
+        "id": null,
+        "slug": "eventpack8",
+        "name": "Event Pack 8",
+        "release": "August - September, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "P-164": "",
+            "P-165": "",
+            "P-166": "",
+            "P-167": "",
+            "P-168": "",
+            "P-169": "",
+            "P-176": "",
+            "P-177": "",
+            "P-178": "",
+            "P-179": "",
+            "P-180": "",
+            "P-181": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
+    },
     // Judge Pack 2025 Wave 2 --- judgepack8
     {
         "id": null,
         "slug": "judgepack8",
         "name": "Judge Pack 2025 Wave 2",
-        "release": "March - June, 2025",
+        "release": "August - September, 2025",
         "url": "noCardURL",
         "cards": {
             "BT22-008": "",
@@ -1474,7 +1497,7 @@ const data2025 = [
         "id": null,
         "slug": "ultimatecup_2025_2",
         "name": "Ultimate Cup 25-26 Season 2",
-        // "release": "October 2024 - February 2025",
+        "release": "August - September, 2025",
         "url": "noCardURL",
         "cards": {
             "BT21-063": "",
