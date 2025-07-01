@@ -78,6 +78,7 @@
     @include card-color('green', 'red');
     @include card-color('green', 'blue');
     @include card-color('green', 'blue', '', 'white', 'red');
+    @include card-color('green', 'blue', '', 'white', 'yellow');
     @include card-color('green', 'yellow');
     @include card-color('green', 'black');
     @include card-color('green', 'black', 'black', 'white', 'yellow');
