@@ -155,6 +155,10 @@ tr:not([data-color]) .card_id {
   background: repeating-linear-gradient(to right, var(--green-card), var(--green-card) 33.33%, var(--red-card) 33.33%, var(--red-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card));
   color: white;
 }
+[data-color=green-yellow-blue] .card_id {
+  background: repeating-linear-gradient(to right, var(--green-card), var(--green-card) 33.33%, var(--yellow-card) 33.33%, var(--yellow-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card));
+  color: white;
+}
 [data-color=green-yellow] .card_id {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--yellow-card) 50%);
 }
