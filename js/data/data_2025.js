@@ -1301,7 +1301,7 @@ const data2025 = [
         "slug": "rb_2",
         "name": "Regulation Battle Vol.2",
         "release": "July 1 – August 31, 2025",
-        "url": "https://world.digimoncard.com/images/event/2025/regulation_battle-02/card/setID-cardID.png",
+        "url": "bandaitcgplusURL/P/Same_setID-cardIDRB_D.png",
         "cards": {
             "ST19-03": "",
             "EX6-052": "",
