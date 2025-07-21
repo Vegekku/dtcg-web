@@ -5,7 +5,7 @@ const dataNoRelease = [
         "id": "P",
         "name": "Promos",
         "release": null,
-        "total": 194,
+        "total": 206,
         "url": null,
         "add_zero": 3,
         "info_url": null,
@@ -36,7 +36,7 @@ const dataNoRelease = [
             "purple-yellow": [187],
             "purple-green": [142],
             "purple-black": [115],
-            "white": [116,123,130,151,156,158,175],
+            "white": [116,123,130,151,156,158,175,206],
         }
     },
     // Booster New Evolution [BT1]
