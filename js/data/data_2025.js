@@ -1543,6 +1543,39 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/products/pack/ex-10/"
     },
 
+// September 20, 2025
+    // BANDAI CARD GAMES Fest 25-26 --- bcgfest_25_26
+    {
+        "id": null,
+        "slug": "bcgfest_25_26",
+        "name": "BANDAI CARD GAMES Fest 25-26",
+        "release": "September 20, 2025 - 2026",
+        "url": "https://world.digimoncard.com/images/event/bcgfest_25-26/dallas/P-206.png",
+        "cards": {
+            "P-206": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/bcgfest_25-26/"
+    },
+    // PREMIUM CARD COLLECTION Digimon Training Set --- premium_training
+    {
+        "id": null,
+        "slug": "premium_training",
+        "name": "PREMIUM CARD COLLECTION Digimon Training Set",
+        "release": "September 20, 2025 - 2026",
+        "url": "noCardURL",
+        "cards": {
+            "P-103": "",
+            "P-104": "",
+            "P-105": "",
+            "P-106": "",
+            "P-107": "",
+            "P-108": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/digimon-training-set.php"
+    },
+    // https://world.digimoncard.com/products/goods/official_sleeve_omnimon.php
+    // https://world.digimoncard.com/products/goods/official_sleeve_alphamon.php
+
 // October 2025
     // Limited Card Pack BILLION BULLET --- lm03
     {
