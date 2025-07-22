@@ -35,14 +35,16 @@
     vertical-align: middle;
     color: white;
 
-    tr:not([data-color]) & {
-        color: black;
+    tr:not([data-color]) &,
+    tr[data-color="undefined"] & {
+        color: grey;
     }
 
     // Red cards
     @include card-color('red');
     @include card-color('red', 'blue');
     @include card-color('red', 'blue', '', '', 'green');
+    @include card-color('red', 'blue', 'black', '', 'white');
     @include card-color('red', 'yellow', 'black');
     @include card-color('red', 'yellow', 'black', '', 'blue');
     @include card-color('red', 'green');
@@ -72,6 +74,7 @@
     @include card-color('yellow', 'black', 'white', 'black', 'blue');
     @include card-color('yellow', 'purple', 'white', 'black');
     @include card-color('yellow', 'black', 'black', '', 'purple');
+    @include card-color('yellow', 'white', '', 'black');
 
     // Green cards
     @include card-color('green');
