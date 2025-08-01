@@ -1301,7 +1301,7 @@ const data2025 = [
         "slug": "rb_2",
         "name": "Regulation Battle Vol.2",
         "release": "July 1 – August 31, 2025",
-        "url": "https://world.digimoncard.com/images/event/2025/regulation_battle-02/card/setID-cardID.png",
+        "url": "bandaitcgplusURL/P/Same_setID-cardIDRB_D.png",
         "cards": {
             "ST19-03": "",
             "EX6-052": "",
@@ -1346,51 +1346,133 @@ const data2025 = [
     },
 
 // July 18 - 24, 2025
-    // CYBER EDEN [BT-22] Release Event --- bt22_prerelease
+    // CYBER EDEN [BT22] Release Event --- bt22_prerelease
     {
         "id": null,
         "slug": "bt22_prerelease",
         "name": "CYBER EDEN [BT-22] Release Event",
         "release": "July 18 - 24, 2025",
-        "url": "https://world.digimoncard.com/images/event/2025/release-event/04/prize/img_parallel.png",
+        "url": "bandaitcgplusURL/P/SAMe_setID-cardIDparallel.png",
         "cards": {
-            "BT16-026": ["01","02"], // no foil y foil
+            "BT16-026": ["PR_D","PR2_D"], // no foil y foil
         },
         "info_url": "https://world.digimoncard.com/event/2025/release-event/04/"
     },
 
 // July 25, 2025
-    // Booster Cyber Eden [BT-22] --- bt22
+    // Booster Cyber Eden [BT22] --- bt22
     {
         "id": "BT22",
         "slug": "bt22",
-        "name": "Booster Cyber Eden [BT-22]",
+        "name": "Booster Cyber Eden [BT22]",
         "release": "July 25, 2025",
-        "total": 74,
-        "url": "noCardURL",
+        "total": 102,
+        "url": "bandaitcgplusURL/BT22/e_setID-cardID_D.png",
         "add_zero": 3,
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
         "playmat": "",
-        // "color": {
-        //     "red": [1,8,10,13,65],
-        //     "red-blue-yellow": [73],
-        //     "red-green": [7,11,14,16],
-        //     "red-purple": [9,12,15],
-        //     "blue": [2,17,18,20,21,24,27,66,68],
-        //     "blue-yellow": [19,22,23,28],
-        //     "blue-black": [25,26],
-        //     "blue-black-yellow": [29],
-        //     "yellow": [3,"30-32",34,35,37],
-        //     "yellow-purple": [33,36],
-        //     "green": [4,39,40,42,44,69],
-        //     "green-red": [74],
-        //     "green-black": [43],
-        //     "green-purple": [38,41,45],
-        //     "black": [5,"46-55",67,70],
-        //     "purple": [6,"56-61",63,71,72],
-        //     "purple-yellow": [62,64],
-        // },
+        "color": {
+            "red": [8,9,13],
+            "red-blue": [84],
+            "red-black": [12,14,83],
+            "red-purple": [10,11],
+            "red-white-blue": [15],
+            "blue": [1,"16-28",85,86,96],
+            "yellow": [2,3,29,30,32,34,"36-38","40-42",87,88,97,98],
+            "yellow-blue": [33],
+            "yellow-black": [31,35],
+            "yellow-purple": [89],
+            "yellow-white": [39],
+            "green": [4,45,47,"49-52"],
+            "green-red": [44,48],
+            "green-yellow": [43,46],
+            "black": [5,53,55,"57-61",64,90,91,100],
+            "black-red": [67],
+            "black-yellow": [54,56,63,65,99,101],
+            "black-green": [62,66],
+            "purple": [6,92],
+            "purple-red": [71,74,78],
+            "purple-blue": [69,72,73,77,102],
+            "purple-yellow": [76],
+            "purple-green": [68,70,75],
+            "white": [7,"79-82","93-95"],
+        },
+        "override": {
+            "url": "bandaitcgplusURL/BT22/e_setID-cardID.png",
+            "cards": {
+                "BT22-096": "",
+                "BT22-097": "",
+                "BT22-098": "",
+                "BT22-099": "",
+                "BT22-100": "",
+            }
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver22/"
+    },
+    // Booster Cyber Eden [BT22] - Alternatives --- bt22_alts
+    {
+        "id": null,
+        "slug": "bt22_alts",
+        "name": "Booster Cyber Eden [BT22] - Alternatives",
+        "release": "July 25, 2025",
+        "url": "bandaitcgplusURL/BT22/e_setID-cardIDparallel.png",
+        "cards": {
+            "BT22-015": "P_D",
+            "BT22-025": "P_D",
+            "BT22-028": "P_D",
+            "BT22-039": "P_D",
+            "BT22-042": "P_D",
+            "BT22-052": "P_D",
+            "BT22-063": "P_D",
+            "BT22-077": "P_D",
+            "BT22-083": "P_D",
+            "BT22-084": "P_D",
+            "BT22-085": "P_D",
+            "BT22-089": "P_D",
+            "BT22-090": "P_D",
+            "BT22-091": "P_D",
+            "BT22-092": "P_D",
+            "BT22-093": "P_D",
+            "BT22-094": "P_D",
+            "BT22-095": "SP_D",
+            "BT22-101": "P_D",
+            "BT22-102": "P_D",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver22/"
+    },
+    // Booster Cyber Eden [BT22] - Special Cards --- bt22_special
+    {
+        "id": null,
+        "slug": "bt21_special",
+        "name": "Booster Cyber Eden [BT22] - Special Cards",
+        "release": "July 25, 2025",
+        "url": "bandaitcgplusURL/BT22/e_setID-cardIDparallel.png",
+        "cards": {
+            "BT22-083": "SP_D",
+            "BT22-084": "SP_D",
+            "BT22-091": "SP_D",
+            "BT22-093": "SP_D",
+            "BT22-094": "SP_D",
+            "BT22-101": "P2_D",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver21/"
+    },
+    // Booster Cyber Eden [BT22] - Box Promotion Pack --- bt22_boxtopper
+    {
+        "id": null,
+        "slug": "sbt25_boxtopper",
+        "name": "Booster Cyber Eden [BT22] - Box Promotion Pack",
+        "release": "July 25, 2025",
+        "url": "bandaitcgplusURL/BT22/e_setID-cardIDPR_d.png",
+        "cards": {
+            "BT22-018": "",
+            "BT22-029": "",
+            "BT22-043": "",
+            "BT22-044": "",
+            "BT22-054": "",
+            // https://world.digimoncard.com/images/cardlist/card/BT22-TOKEN.png
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver22/",
     },
 
 // August, 2025
