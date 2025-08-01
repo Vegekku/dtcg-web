@@ -1443,7 +1443,7 @@ const data2025 = [
     // Booster Cyber Eden [BT22] - Special Cards --- bt22_special
     {
         "id": null,
-        "slug": "bt21_special",
+        "slug": "bt22_special",
         "name": "Booster Cyber Eden [BT22] - Special Cards",
         "release": "July 25, 2025",
         "url": "bandaitcgplusURL/BT22/e_setID-cardIDparallel.png",
@@ -1460,7 +1460,7 @@ const data2025 = [
     // Booster Cyber Eden [BT22] - Box Promotion Pack --- bt22_boxtopper
     {
         "id": null,
-        "slug": "sbt25_boxtopper",
+        "slug": "bt22_boxtopper",
         "name": "Booster Cyber Eden [BT22] - Box Promotion Pack",
         "release": "July 25, 2025",
         "url": "bandaitcgplusURL/BT22/e_setID-cardIDPR_d.png",
