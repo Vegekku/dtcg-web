@@ -82,3 +82,7 @@ button {
         max-height: 500px;
     }
 }
+
+#editionButtons, #downloadButtons {
+    display: inline-block;
+}

@@ -33,8 +33,8 @@ input:disabled + label {
   vertical-align: middle;
   color: white;
 }
-tr:not([data-color]) .card_id {
-  color: black;
+tr:not([data-color]) .card_id, tr[data-color=undefined] .card_id {
+  color: grey;
 }
 [data-color=red] .card_id {
   background-color: var(--red-card);
@@ -44,6 +44,10 @@ tr:not([data-color]) .card_id {
 }
 [data-color=red-green-blue] .card_id {
   background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--green-card) 33.33%, var(--green-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card));
+}
+[data-color=red-white-blue] .card_id {
+  background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--white-card) 33.33%, var(--white-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card));
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 [data-color=red-yellow] .card_id {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--yellow-card) 50%);
@@ -141,6 +145,10 @@ tr:not([data-color]) .card_id {
 [data-color=yellow-purple-black] .card_id {
   background: repeating-linear-gradient(to right, var(--yellow-card), var(--yellow-card) 33.33%, var(--purple-card) 33.33%, var(--purple-card) 66.66%, var(--black-card) 66.66%, var(--black-card));
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+[data-color=yellow-white] .card_id {
+  background: linear-gradient(90deg, var(--yellow-card) 50%, var(--white-card) 50%);
+  color: black;
 }
 [data-color=green] .card_id {
   background-color: var(--green-card);
@@ -390,6 +398,10 @@ button.accordion.active:after {
 .panel.show {
   opacity: 1;
   max-height: 500px;
+}
+
+#editionButtons, #downloadButtons {
+  display: inline-block;
 }
 
 .icon {
