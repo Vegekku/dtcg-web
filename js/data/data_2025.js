@@ -1346,7 +1346,7 @@ const data2025 = [
     },
 
 // July 18 - 24, 2025
-    // CYBER EDEN [BT-22] Release Event --- bt22_prerelease
+    // CYBER EDEN [BT22] Release Event --- bt22_prerelease
     {
         "id": null,
         "slug": "bt22_prerelease",
@@ -1360,11 +1360,11 @@ const data2025 = [
     },
 
 // July 25, 2025
-    // Booster Cyber Eden [BT-22] --- bt22
+    // Booster Cyber Eden [BT22] --- bt22
     {
         "id": "BT22",
         "slug": "bt22",
-        "name": "Booster Cyber Eden [BT-22]",
+        "name": "Booster Cyber Eden [BT22]",
         "release": "July 25, 2025",
         "total": 102,
         "url": "bandaitcgplusURL/BT22/e_setID-cardID_D.png",
@@ -1409,11 +1409,11 @@ const data2025 = [
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver22/"
     },
-    // Booster Cyber Eden [BT-22] - Alternatives --- bt22_alts
+    // Booster Cyber Eden [BT22] - Alternatives --- bt22_alts
     {
         "id": null,
         "slug": "bt22_alts",
-        "name": "Booster Cyber Eden [BT-22] - Alternatives",
+        "name": "Booster Cyber Eden [BT22] - Alternatives",
         "release": "July 25, 2025",
         "url": "bandaitcgplusURL/BT22/e_setID-cardIDparallel.png",
         "cards": {
@@ -1440,11 +1440,11 @@ const data2025 = [
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver22/"
     },
-    // Booster Cyber Eden [BT-22] - Special Cards --- bt22_special
+    // Booster Cyber Eden [BT22] - Special Cards --- bt22_special
     {
         "id": null,
         "slug": "bt21_special",
-        "name": "Booster Cyber Eden [BT-22] - Special Cards",
+        "name": "Booster Cyber Eden [BT22] - Special Cards",
         "release": "July 25, 2025",
         "url": "bandaitcgplusURL/BT22/e_setID-cardIDparallel.png",
         "cards": {
@@ -1457,11 +1457,11 @@ const data2025 = [
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver21/"
     },
-    // Booster Cyber Eden [BT-22] - Box Promotion Pack --- bt22_boxtopper
+    // Booster Cyber Eden [BT22] - Box Promotion Pack --- bt22_boxtopper
     {
         "id": null,
         "slug": "sbt25_boxtopper",
-        "name": "Booster Cyber Eden [BT-22] - Box Promotion Pack",
+        "name": "Booster Cyber Eden [BT22] - Box Promotion Pack",
         "release": "July 25, 2025",
         "url": "bandaitcgplusURL/BT22/e_setID-cardIDPR_d.png",
         "cards": {
