@@ -206,17 +206,17 @@ const data2025 = [
         "slug": "pb19",
         "name": "Omnimon Binder Set [PB19]",
         "release": "February 2025",
-        "url": "digimoncardURL/setID-cardID_parallel.png",
+        "url": "bandaitcgplusURL/PB/ch_setID-cardID_d.png",
         "cards": {
-            "BT14-012": "P1",
-            "BT14-014": "P4",
-            "BT15-024": "P1",
-            "BT15-026": "P3",
-            "BT17-007": "P2",
-            "BT17-015": "P1",
-            "BT17-019": "P2",
-            "BT17-027": "P1",
-            "BT17-078": "P3",
+            "BT14-012": "",
+            "BT14-014": "",
+            "BT15-024": "",
+            "BT15-026": "",
+            "BT17-007": "",
+            "BT17-015": "",
+            "BT17-019": "",
+            "BT17-027": "",
+            "BT17-078": "",
         },
         "info_url": "https://world.digimoncard.com/products/goods/omnimon-binder-set.php"
     },
@@ -231,20 +231,30 @@ const data2025 = [
         "add_zero": 3,
         "info_url": null,
         "color": {
-            // "red": [1],
-            // "red-purple-black": [101],
-            // "blue": [2,'17-19',21,23,24,27,28,82,92],
-            // "yellow": [3,29,32],
-            // "yellow-red": [41,42],
-            // "yellow-purple": [36,39,43,94],
-            // "green": [4,46,84],
-            // "green-black": [45,48,52,53,96],
-            // "black": [5,55,87],
-            // "black-purple": [58,59,63,65],
-            // "purple": [6,75,99],
-            // "purple-red": [70],
-            // "purple-black": [66,69,72,73]
-            // "white": [112]
+            "red": [1,"7-9",11,13,14,17,19,93],
+            "red-black": [10,12,15,18,21],
+            "red-purple": [16,20,94],
+            "blue": [2,22,24,26],
+            "blue-red": [23,25,27],
+            "blue-black": [28],
+            "blue-white-red": [102],
+            "yellow": [3],
+            "yellow-green": [29,32,34,35,37],
+            "yellow-black": [30,31,33,36],
+            "green": [4,85,101],
+            "green-red": [40,42,44],
+            "green-red-blue": [45],
+            "green-yellow": [38,39,41,43],
+            "black": [5,47,49,54,57,58,59,86,95],
+            "black-red": [87],
+            "black-blue": [46,50,52,55],
+            "black-yellow": [48,51,53,56],
+            "black-yellow-red": [60],
+            "purple": [6,62,63,"65-68",72,79,88,90,96,98],
+            "purple-red": [61,64,"69-71","74-77",80],
+            "purple-yellow": [81,89],
+            "purple-black": [73,78,82,97],
+            "white": [83,84,91,92,99,100]
         }
     },
 
@@ -564,22 +574,22 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/products/pack/ver19-20/",
     },
 
-// March 2025
+// March - June, 2025
     // 2025 Regionals Participation Card Set Season 1 --- regional2025_1_0
     {
         "id": null,
         "slug": "regional2025_1_0",
         "name": "2025 Regionals Participation Card Set Season 1",
-        // "release": "March-May, 2024",
-        "url": "noCardURL",
+        "release": "March - June, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel.png",
         "cards": {
-            "BT8-059": "",
-            "BT14-009": "",
-            "BT18-081": "",
-            // "BT18-081": "" POR REVELAR,
-            "EX7-015": "",
-            "EX7-027": "",
-            "EX7-034": "",
+            "BT8-059": "_prati_D",
+            "BT14-009": "_prati_D",
+            "BT18-081": "_prati_D",
+            "BT20-003": "PR_D",
+            "EX7-015": "_prati_D",
+            "EX7-027": "_prati_D",
+            "EX7-034": "_prati_D",
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
     },
@@ -588,16 +598,16 @@ const data2025 = [
         "id": null,
         "slug": "regional2025_1_1",
         "name": "2025 Regionals Finalist Card Set Season 1",
-        // "release": "March-May, 2024",
-        "url": "noCardURL",
+        "release": "March - June, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel.png",
         "cards": {
-            "BT8-059": "",
-            "BT14-009": "",
-            "BT18-081": "",
-            // "BT18-081": "" POR REVELAR,
-            "EX7-015": "",
-            "EX7-027": "",
-            "EX7-034": "",
+            "BT8-059": "_Fine_D",
+            "BT14-009": "_Fine_D",
+            "BT18-081": "_Fine_D",
+            "BT20-029": "PR_D",
+            "EX7-015": "_Fine_D",
+            "EX7-027": "_Fine_D",
+            "EX7-034": "_Fine_D",
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
     },
@@ -606,26 +616,26 @@ const data2025 = [
         "id": null,
         "slug": "regional2025_1_2",
         "name": "2025 Regionals Champion Card Set Season 1",
-        // "release": "March-May, 2024",
-        "url": "noCardURL",
+        "release": "March - June, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel.png",
         "cards": {
-            "BT8-059": "",
-            "BT14-009": "",
-            "BT18-081": "",
-            // "BT18-081": "" POR REVELAR,
-            "EX7-015": "",
-            "EX7-027": "",
-            "EX7-034": "",
+            "BT8-059": "_camp_D",
+            "BT14-009": "_camp_D",
+            "BT18-081": "_camp_D",
+            "BT20-032": "PR_D",
+            "EX7-015": "_camp_D",
+            "EX7-027": "_camp_D",
+            "EX7-034": "_camp_D",
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/"
     },
-    // Special Event Pack 2025 --- eventpack8
+    // Special Event Pack 2025 --- special_eventpack_2025
     {
         "id": null,
-        "slug": "eventpack8",
+        "slug": "special_eventpack_2025",
         "name": "Special Event Pack 2025",
-        // "release": "March-May, 2024",
-        "url": "noCardURL",
+        "release": "March - June, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT7-005": "",
             "BT10-024": "",
@@ -642,19 +652,19 @@ const data2025 = [
         "id": null,
         "slug": "judgepack7",
         "name": "Judge Pack 2025 Season 1",
-        // "release": "September-November, 2024",
-        "url": "noCardURL",
+        "release": "March - June, 2025",
+        "url": "bandaitcgplusURL/P/parallel-cardID_d.png",
         "cards": {
-            "BT19-019": "",
-            "BT19-048": "",
-            "BT20-068": "",
-            "BT20-069": "",
-            "BT20-083": "",
-            "EX8-011": "",
-            "EX8-022": "",
-            "EX8-048": "",
-            "P-132": "",
-            "P-135": "",
+            "BT19-019": "e_BT19",
+            "BT19-048": "e_BT19",
+            "BT20-068": "e_BT19",
+            "BT20-069": "e_BT19",
+            "BT20-083": "e_BT19",
+            "EX8-011": "e_EX8",
+            "EX8-022": "e_EX8",
+            "EX8-048": "e_EX8",
+            "P-132": "ch_P",
+            "P-135": "ch_P",
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season1/",
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2e/Judge_Pack_4.png"
@@ -719,15 +729,48 @@ const data2025 = [
         "name": "Starter Deck Protector of Light [ST-20]",
         "release": "April 2025",
         "total": 15,
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/ST20/e_setID-cardID_D.png",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-20/",
         "color": {
+            "red": ["2-4"],
             "red-yellow": [12],
-            "yellow": [5],
-            "black": [10],
+            "yellow": [5,6],
+            "green": ["7-9"],
+            "black": [1,10,14],
+            "black-red": [11],
             "black-green": [13],
+            "white": [15]
         }
+    },
+    // Starter Deck Protector of Light [ST20] - Lucky Deck --- st20_lucky
+    {
+        "id": null,
+        "slug": "st20_lucky",
+        "name": "Starter Deck Protector of Light [ST20] - Lucky Deck",
+        "release": "April 2025",
+        "url": "bandaitcgplusURL/ST20/e_setID-cardIDP_D.png",
+        "cards": {
+            "ST20-10": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-20/"
+    },
+    // Starter Deck Protector of Light [ST20] - Scramble --- st20_scramble
+    {
+        "id": null,
+        "slug": "st20_scramble",
+        "name": "Starter Deck Protector of Light [ST20] - Scramble",
+        "release": "April 2025",
+        "url": "bandaitcgplusURL/ST20/e_setID-cardID_1_D.png",
+        "cards": {
+            "LM-027": "",
+            "LM-028": "",
+            "LM-029": "",
+            "LM-030": "",
+            "LM-031": "",
+            "LM-032": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-20/"
     },
     // Starter Deck Hero of Hope [ST21] --- st21
     {
@@ -736,14 +779,48 @@ const data2025 = [
         "name": "Starter Deck Hero of Hope [ST-21]",
         "release": "April 2025",
         "total": 15,
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/ST21/e_setID-cardID_D.png",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-21/",
         "color": {
+            "blue": ["2-4"],
             "blue-green": [12],
-            "purple": [10],
+            "yellow": [5,6],
+            "green": ["7-9"],
+            "purple": [1,10,14],
+            "purple-blue": [11],
             "purple-yellow": [13],
+            "white": [15]
         }
+    },
+    // Starter Deck Hero of Hope [ST21] - Lucky Deck --- st21_lucky
+    {
+        "id": null,
+        "slug": "st21_lucky",
+        "name": "Starter Deck Hero of Hope [ST21] - Lucky Deck",
+        "release": "April 2025",
+        "url": "bandaitcgplusURL/ST21/e_setID-cardIDP_D.png",
+        "cards": {
+            "ST21-10": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-21/"
+    },
+    // Starter Deck Hero of Hope [ST21] - Scramble --- st21_scramble
+    {
+        "id": null,
+        "slug": "st21_scramble",
+        "name": "Starter Deck Hero of Hope [ST21] - Scramble",
+        "release": "April 2025",
+        "url": "bandaitcgplusURL/ST21/e_setID-cardID_2_D.png",
+        "cards": {
+            "LM-027": "",
+            "LM-028": "",
+            "LM-029": "",
+            "LM-030": "",
+            "LM-031": "",
+            "LM-032": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-20/"
     },
 
     // WORLD CONVERGENCE [BT-21] Release Event --- bt21_prerelease
@@ -752,7 +829,7 @@ const data2025 = [
         "slug": "bt21_prerelease",
         "name": "WORLD CONVERGENCE [BT-21] Release Event",
         "release": "April 18 – May 9, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel_D.png",
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/91/Pre_Release_Pack_Exceed_Apocalypse-EN.png/",
         "cards": {
             "BT17-077": ["PR","PR2"], // no foil y foil
@@ -765,36 +842,194 @@ const data2025 = [
         "slug": "bt21",
         "name": "Booster World Convergence [BT21]",
         "release": "April 2025",
-        "total": 112,
-        "url": "noCardURL",
+        "total": 102,
+        "url": "bandaitcgplusURL/BT21/e_setID-cardID_d.png",
         "add_zero": 3,
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
         "playmat": "",
         "color": {
-            "red": [2,9,12,20,22,82,84],
-            "red-yellow": [21,83],
-            "red-purple": [80],
-        //     "blue": [2,"15-23",67],
-            "blue-red": [32,85],
-            "yellow": [4],
-            "yellow-red": [44,86],
-        //     "yellow-green": [29],
-        //     "green": [4,"31-36",64,69],
-        //     "green-yellow-black": [37],
-        //     "green-yellow-purple": [74],
-            "black": [61],
-            "purple": [78],
-            "purple-red": [68,72,88,89],
-            "white": [112,]
+            "red": [1,2,"7-9","12-15",17,19,20,22,"24-26",28,29,81,82,84,"90-93"],
+            "red-yellow": [11,16,21,23,27,30,83],
+            "red-green": [18],
+            "red-purple": [10,80],
+            "blue": [3,31,33,34,38,94,95],
+            "blue-red": [32,35,85],
+            "blue-yellow": [36],
+            "blue-green": [37,39],
+            "yellow": [4,41,43],
+            "yellow-red": [40,42,44,45,86,96],
+            "green": [5,"47-50",97],
+            "green-red-blue": [52],
+            "green-blue": [46],
+            "green-black": [51],
+            "black": [6,"53-62",87,98],
+            "purple": [65,67,70,71,78,99,100],
+            "purple-red": [63,64,66,68,69,72,"75-77",79,88,89],
+            "purple-black": [73,74],
+            "white": [102],
+            "white-red": [101],
         },
-        // "override": {
-        //     "url": "bandaitcgplusURL/EX07/e_setID-cardID.png",
-        //     "cards": {
-        //         "EX7-072": "",
-        //         "EX7-074": ""
-        //     }
-        // },
+        "override": {
+            "url": "bandaitcgplusURL/BT21/e_setID-cardID_d_errata.png",
+            "cards": {
+                "BT21-023": "",
+            }
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver21/"
+    },
+    // Booster World Convergence [BT21] - Alternatives --- bt21_alts
+    {
+        "id": null,
+        "slug": "bt21_alts",
+        "name": "Booster World Convergence [BT21] - Alternatives",
+        "release": "April 2025",
+        "url": "bandaitcgplusURL/BT21/e_setID-cardIDp_dparallel.png",
+        "cards": {
+            "BT21-008": "",
+            "BT21-009": "",
+            "BT21-023": "_errata",
+            "BT21-029": "",
+            "BT21-051": "",
+            "BT21-052": "",
+            "BT21-056": "",
+            "BT21-062": "",
+            "BT21-080": "",
+            "BT21-081": "",
+            "BT21-082": "",
+            "BT21-083": "",
+            "BT21-084": "",
+            "BT21-085": "",
+            "BT21-086": "",
+            "BT21-087": "",
+            "BT21-088": "",
+            "BT21-089": "",
+            "BT21-101": "",
+            "BT21-102": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver19-20/"
+    },
+    // Booster World Convergence [BT21] - Special Cards --- bt21_special
+    {
+        "id": null,
+        "slug": "bt21_special",
+        "name": "Booster World Convergence [BT21] - Special Cards",
+        "release": "April 2025",
+        "url": "bandaitcgplusURL/BT21/e_setID-cardIDparallel.png",
+        "cards": {
+            "BT21-029": "sp_d",
+            "BT21-051": "sp_d",
+            "BT21-062": "sp_d",
+            "BT21-101": "sp_d",
+            "BT21-102": "p2_d",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver21/"
+    },
+    // Booster World Convergence [BT21] - Signed Cards --- bt21_signed
+    {
+        "id": null,
+        "slug": "bt21_signed",
+        "name": "Booster World Convergence [BT21] - Signed Cards",
+        "release": "April 2025",
+        "url": "bandaitcgplusURL/BT21/e_setID-cardIDparallel.png",
+        "cards": {
+            "BT6-081": "_d",
+            "BT9-016": "_d",
+            "BT13-112": "p_d",
+            "BT18-011": "_d",
+            "BT18-023": "_d",
+            "EX2-074": "_d",
+            "EX5-073": "_d",
+            "EX7-036": "_d",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver21/"
+    },
+    // Booster World Convergence [BT21] - Illustration Celebration Pack --- bt21_ilu_cel_pack
+    {
+        "id": null,
+        "slug": "bt21_ilu_cel_pack",
+        "name": "Booster World Convergence [BT21] - Illustration Celebration Pack",
+        "release": "April 2025",
+        "url": "bandaitcgplusURL/BT21/e_setID-cardID_d.png",
+        "cards": {
+            "P-182": "",
+            "P-183": "",
+            "P-184": "",
+            "P-185": "",
+            "P-186": "",
+            "P-187": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver21/"
+    },
+    // Booster World Convergence [BT21] - Limited Card Pack --- bt21_limited
+    {
+        "id": null,
+        "slug": "bt21_limited",
+        "name": "Booster World Convergence [BT21] - Limited Card Pack",
+        "release": "April 2025",
+        "url": "bandaitcgplusURL/BT21/e_setID-cardID_d.png",
+        "cards": {
+            "LM-039": "",
+            "LM-040": "",
+            "LM-041": "",
+            "LM-042": "",
+            "LM-043": "",
+            "LM-044": "",
+            "BT13-111": "",
+            "BT14-033": "",
+            "BT15-038": "",
+            "EX1-066": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver21/"
+    },
+
+// April 1 – May 31, 2025
+    // Regulation Battle Vol.1 --- rb_1
+    {
+        "id": null,
+        "slug": "rb_1",
+        "name": "Regulation Battle Vol.1",
+        "release": "April 1 – May 31, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel.png",
+        "cards": {
+            "EX6-012": "SPR_D",
+            "EX5-048": "PR_D",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regulation_battle/",
+    },
+// April 1 - June 30, 2025
+    // Official Store Tournament 2025 Vol.2 - Participation Pack --- otp17
+    {
+        "id": null,
+        "slug": "otp17",
+        "name": "Official Store Tournament 2025 Vol.2 - Participation Pack",
+        "release": "April 1 - June 30, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_d.png",
+        "cards": {
+            "P-176": "",
+            "P-177": "",
+            "P-178": "",
+            "P-179": "",
+            "P-180": "",
+            "P-181": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/store_tournament/02/",
+    },
+    // Official Store Tournament 2025 Vol.2 - Winner Pack --- wp17
+    {
+        "id": null,
+        "slug": "wp17",
+        "name": "Official Store Tournament 2025 Vol.2 - Winner Pack",
+        "release": "April 1 - June 30, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDwin_d.png",
+        "cards": {
+            "P-176": "",
+            "P-177": "",
+            "P-178": "",
+            "P-179": "",
+            "P-180": "",
+            "P-181": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/store_tournament/02/",
     },
 
     // Ultimate Cup 25-26 Season 1 --- ultimatecup_2025_1
@@ -803,7 +1038,7 @@ const data2025 = [
         "slug": "ultimatecup_2025_1",
         "name": "Ultimate Cup 25-26 Season 1",
         // "release": "October 2024 - February 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDUC_D.png",
         "cards": {
             "BT19-008": "",
             "BT19-010": "",
@@ -819,7 +1054,7 @@ const data2025 = [
         "slug": "pb20",
         "name": "DIGIMON ANIMATION SERIES 25th Anniversary Set [PB20]",
         "release": "May 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/PB/e_setID-cardID_d.png",
         "cards": {
             "BT1-085": "",
             "BT3-093": "",
@@ -834,10 +1069,10 @@ const data2025 = [
         },
         "info_url": "https://world.digimoncard.com/products/goods/animation_series_25th.php"
     },
-    // TAMER'S SELECTION BOX ver. CHAMPIONSHIP 2024 --- pb21
+    // TAMER'S SELECTION BOX ver. CHAMPIONSHIP 2024 --- tamer_champion_24
     {
         "id": null,
-        "slug": "pb21",
+        "slug": "tamer_champion_24",
         "name": "TAMER'S SELECTION BOX ver. CHAMPIONSHIP 2024",
         "release": "May 2025",
         "url": "noCardURL",
@@ -854,5 +1089,713 @@ const data2025 = [
             "BT18-084": "",
         },
         "info_url": "https://world.digimoncard.com/products/goods/tamer-selection-box-cs2024.php"
+    },
+
+// June 1 – July 31, 2025
+    // Evolution Cup 2025 Vol. 1 Participation --- evolution_cup_2025_1_participant
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_1_participant",
+        "name": "Evolution Cup 2025 Vol. 1 Participation",
+        "release": "June 1 – July 31, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDEC_D.png",
+        "cards": {
+            "BT9-109": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/01/",
+    },
+    // Evolution Cup 2025 Vol. 1 Top 4 --- evolution_cup_2025_1_top4
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_1_top4",
+        "name": "Evolution Cup 2025 Vol. 1 Top 4",
+        "release": "June 1 – July 31, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDEC_D.png",
+        "cards": {
+            "BT9-092": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/01/",
+    },
+    // Evolution Cup 2025 Vol. 1 Winner --- evolution_cup_2025_1_winner
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_1_winner",
+        "name": "Evolution Cup 2025 Vol. 1 Winner",
+        "release": "June 1 – July 31, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDEC_D.png",
+        "cards": {
+            "BT10-086": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/01/",
+    },
+
+// June 26, 2025
+    // Booster Versus Monsters [EX9] --- ex9
+    {
+        "id": "EX9",
+        "slug": "ex9",
+        "name": "Booster Versus Monsters [EX9]",
+        "release": "June 26, 2025",
+        "total": 74,
+        "url": "bandaitcgplusURL/EX09/e_setID-cardID_D.png",
+        "add_zero": 3,
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
+        "playmat": "",
+        "color": {
+            "red": [1,"7-10",70],
+            "red-blue": [66],
+            "red-black": ["11-13"],
+            "blue": [2,"14-17",71],
+            "blue-black": ["18-20"],
+            "blue-white-red": [21],
+            "yellow": [3,22,23,25,26,28,29,31,67],
+            "yellow-black": [30],
+            "yellow-purple": [24,27,32,33],
+            "green": [4,"34-41"],
+            "green-yellow-blue": [45],
+            "green-black": [43],
+            "green-purple": [42,44],
+            "black": [5,"46-55",57,68,73],
+            "black-yellow": [56],
+            "purple": [6,"58-63"],
+            "purple-green": [65],
+            "purple-black": [64],
+            "white": [69,72,74]
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-09/"
+    },
+    // Booster Versus Monsters [EX9] - Alternatives --- ex9_alts
+    {
+        "id": null,
+        "slug": "ex9_alts",
+        "name": "Booster Versus Monsters [EX9] - Alternatives",
+        "release": "June 26, 2025",
+        "url": "bandaitcgplusURL/EX09/Same_setID-cardIDP_D.png",
+        "cards": {
+            "EX9-011": "",
+            "EX9-012": "",
+            "EX9-013": "",
+            "EX9-018": "",
+            "EX9-019": "",
+            "EX9-020": "",
+            "EX9-021": "",
+            "EX9-030": "",
+            "EX9-033": "",
+            "EX9-043": "",
+            "EX9-045": "",
+            "EX9-057": "",
+            "EX9-064": "",
+            "EX9-066": "",
+            "EX9-067": "",
+            "EX9-068": "",
+            "EX9-069": "",
+            "EX9-070": "",
+            "EX9-073": "",
+            "EX9-074": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-09/",
+    },
+    // Booster Versus Monsters [EX9] - Limited Cards --- ex9_limited
+    {
+        "id": null,
+        "slug": "ex9_limited",
+        "name": "Booster Versus Monsters [EX9] - Limited Cards",
+        "release": "June 26, 2025",
+        "url": "bandaitcgplusURL/EX09/e_setID-cardIDLP_D.png",
+        "cards": {
+            "EX9-001": "",
+            "EX9-002": "",
+            "EX9-003": "",
+            "EX9-004": "",
+            "EX9-005": "",
+            "EX9-006": "",
+            "EX9-008": "",
+            "EX9-009": "",
+            "EX9-010": "",
+            "EX9-014": "",
+            "EX9-015": "",
+            "EX9-016": "",
+            "EX9-017": "",
+            "EX9-022": "",
+            "EX9-023": "",
+            "EX9-024": "",
+            "EX9-025": "",
+            "EX9-026": "",
+            "EX9-027": "",
+            "EX9-028": "",
+            "EX9-029": "",
+            "EX9-034": "",
+            "EX9-035": "",
+            "EX9-036": "",
+            "EX9-037": "",
+            "EX9-038": "",
+            "EX9-039": "",
+            "EX9-040": "",
+            "EX9-042": "",
+            "EX9-046": "",
+            "EX9-047": "",
+            "EX9-048": "",
+            "EX9-049": "",
+            "EX9-050": "",
+            "EX9-051": "",
+            "EX9-052": "",
+            "EX9-058": "",
+            "EX9-059": "",
+            "EX9-060": "",
+            "EX9-061": "",
+            "EX9-071": "",
+            "EX9-072": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-09/",
+    },
+    // Booster Versus Monsters [EX9] - Special Cards --- ex9_special
+    {
+        "id": null,
+        "slug": "ex9_special",
+        "name": "Booster Versus Monsters [EX9] - Special Cards",
+        "release": "June 26, 2025",
+        "url": "bandaitcgplusURL/EX09/e_setID-cardIDparallel_D.png",
+        "cards": {
+            "EX9-011": "SP",
+            "EX9-018": "SP",
+            "EX9-030": "SP",
+            "EX9-043": "SP",
+            "EX9-064": "SP",
+            "EX9-073": "P2",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-09/",
+    },
+    // Booster Versus Monsters [EX9] - Legend Pack --- ex9_legend_pack
+    {
+        "id": null,
+        "slug": "ex9_legend_pack",
+        "name": "Booster Versus Monsters [EX9] - Legend Pack",
+        "release": "June 26, 2025",
+        "url": "bandaitcgplusURL/EX09/e_setID-cardIDPR_D.png",
+        "cards": {
+            "BT20-007": "",
+            "BT20-008": "",
+            "BT20-048": "",
+            "EX6-007": "",
+            "EX6-038": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-08/",
+    },
+    // Digital Monster Day Commemoration Event --- ex9_prerelease
+    {
+        "id": null,
+        "slug": "ex9_prerelease",
+        "name": "Digital Monster Day Commemoration Event",
+        "release": "June 26 - July 3, 2025",
+        "url": "bandaitcgplusURL/P/Same_setID-cardIDparallel_D.png",
+        "cards": {
+            "EX9-007": ["PR","PR2"], // no foil y foil
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/release-event/03/"
+    },
+
+// July 1 – August 31, 2025
+    // Regulation Battle Vol.2 --- rb_2
+    {
+        "id": null,
+        "slug": "rb_2",
+        "name": "Regulation Battle Vol.2",
+        "release": "July 1 – August 31, 2025",
+        "url": "bandaitcgplusURL/P/Same_setID-cardIDRB_D.png",
+        "cards": {
+            "ST19-03": "",
+            "EX6-052": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regulation_battle-02/",
+    },
+
+// July 1 - September 30, 2025
+    // Official Store Tournament 2025 Vol.3 - Participation Pack --- otp18
+    {
+        "id": null,
+        "slug": "otp18",
+        "name": "Official Store Tournament 2025 Vol.3 - Participation Pack",
+        "release": "July 1 - September 30, 2025",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_D.png",
+        "cards": {
+            "P-188": "",
+            "P-189": "",
+            "P-190": "",
+            "P-191": "",
+            "P-192": "",
+            "P-193": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/store_tournament/03/",
+    },
+    // Official Store Tournament 2025 Vol.3 - Winner Pack --- wp18
+    {
+        "id": null,
+        "slug": "wp18",
+        "name": "Official Store Tournament 2025 Vol.3 - Winner Pack",
+        "release": "July 1 - September 30, 2025",
+        "url": "bandaitcgplusURL/P/Same_setID-cardIDP_D.png",
+        "cards": {
+            "P-188": "",
+            "P-189": "",
+            "P-190": "",
+            "P-191": "",
+            "P-192": "",
+            "P-193": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/store_tournament/03/",
+    },
+
+// July 18 - 24, 2025
+    // CYBER EDEN [BT22] Release Event --- bt22_prerelease
+    {
+        "id": null,
+        "slug": "bt22_prerelease",
+        "name": "CYBER EDEN [BT-22] Release Event",
+        "release": "July 18 - 24, 2025",
+        "url": "bandaitcgplusURL/P/SAMe_setID-cardIDparallel.png",
+        "cards": {
+            "BT16-026": ["PR_D","PR2_D"], // no foil y foil
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/release-event/04/"
+    },
+
+// July 25, 2025
+    // Booster Cyber Eden [BT22] --- bt22
+    {
+        "id": "BT22",
+        "slug": "bt22",
+        "name": "Booster Cyber Eden [BT22]",
+        "release": "July 25, 2025",
+        "total": 102,
+        "url": "bandaitcgplusURL/BT22/e_setID-cardID_D.png",
+        "add_zero": 3,
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
+        "playmat": "",
+        "color": {
+            "red": [8,9,13],
+            "red-blue": [84],
+            "red-black": [12,14,83],
+            "red-purple": [10,11],
+            "red-white-blue": [15],
+            "blue": [1,"16-28",85,86,96],
+            "yellow": [2,3,29,30,32,34,"36-38","40-42",87,88,97,98],
+            "yellow-blue": [33],
+            "yellow-black": [31,35],
+            "yellow-purple": [89],
+            "yellow-white": [39],
+            "green": [4,45,47,"49-52"],
+            "green-red": [44,48],
+            "green-yellow": [43,46],
+            "black": [5,53,55,"57-61",64,90,91,100],
+            "black-red": [67],
+            "black-yellow": [54,56,63,65,99,101],
+            "black-green": [62,66],
+            "purple": [6,92],
+            "purple-red": [71,74,78],
+            "purple-blue": [69,72,73,77,102],
+            "purple-yellow": [76],
+            "purple-green": [68,70,75],
+            "white": [7,"79-82","93-95"],
+        },
+        "override": {
+            "url": "bandaitcgplusURL/BT22/e_setID-cardID.png",
+            "cards": {
+                "BT22-096": "",
+                "BT22-097": "",
+                "BT22-098": "",
+                "BT22-099": "",
+                "BT22-100": "",
+            }
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver22/"
+    },
+    // Booster Cyber Eden [BT22] - Alternatives --- bt22_alts
+    {
+        "id": null,
+        "slug": "bt22_alts",
+        "name": "Booster Cyber Eden [BT22] - Alternatives",
+        "release": "July 25, 2025",
+        "url": "bandaitcgplusURL/BT22/e_setID-cardIDparallel.png",
+        "cards": {
+            "BT22-015": "P_D",
+            "BT22-025": "P_D",
+            "BT22-028": "P_D",
+            "BT22-039": "P_D",
+            "BT22-042": "P_D",
+            "BT22-052": "P_D",
+            "BT22-063": "P_D",
+            "BT22-077": "P_D",
+            "BT22-083": "P_D",
+            "BT22-084": "P_D",
+            "BT22-085": "P_D",
+            "BT22-089": "P_D",
+            "BT22-090": "P_D",
+            "BT22-091": "P_D",
+            "BT22-092": "P_D",
+            "BT22-093": "P_D",
+            "BT22-094": "P_D",
+            "BT22-095": "SP_D",
+            "BT22-101": "P_D",
+            "BT22-102": "P_D",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver22/"
+    },
+    // Booster Cyber Eden [BT22] - Special Cards --- bt22_special
+    {
+        "id": null,
+        "slug": "bt21_special",
+        "name": "Booster Cyber Eden [BT22] - Special Cards",
+        "release": "July 25, 2025",
+        "url": "bandaitcgplusURL/BT22/e_setID-cardIDparallel.png",
+        "cards": {
+            "BT22-083": "SP_D",
+            "BT22-084": "SP_D",
+            "BT22-091": "SP_D",
+            "BT22-093": "SP_D",
+            "BT22-094": "SP_D",
+            "BT22-101": "P2_D",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver21/"
+    },
+    // Booster Cyber Eden [BT22] - Box Promotion Pack --- bt22_boxtopper
+    {
+        "id": null,
+        "slug": "sbt25_boxtopper",
+        "name": "Booster Cyber Eden [BT22] - Box Promotion Pack",
+        "release": "July 25, 2025",
+        "url": "bandaitcgplusURL/BT22/e_setID-cardIDPR_d.png",
+        "cards": {
+            "BT22-018": "",
+            "BT22-029": "",
+            "BT22-043": "",
+            "BT22-044": "",
+            "BT22-054": "",
+            // https://world.digimoncard.com/images/cardlist/card/BT22-TOKEN.png
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver22/",
+    },
+
+// August, 2025
+    // 2025 Regionals Participation Card Set Season 2 --- regional2025_2_0
+    {
+        "id": null,
+        "slug": "regional2025_2_0",
+        "name": "2025 Regionals Participation Card Set Season 2",
+        "release": "August - September, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT14-006": "",
+            "BT17-097": "",
+            "BT20-052": "",
+            "BT20-056": "",
+            "BT20-075": "",
+            "EX8-051": "",
+            "ST10-14": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
+    },
+    // 2025 Regionals Finalist Card Set Season 2 --- regional2025_2_1
+    {
+        "id": null,
+        "slug": "regional2025_2_1",
+        "name": "2025 Regionals Finalist Card Set Season 2",
+        "release": "August - September, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT17-097": "",
+            "BT20-052": "",
+            "BT20-056": "",
+            "BT20-064": "",
+            "BT20-075": "",
+            "EX8-051": "",
+            "ST10-14": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
+    },
+    // 2025 Regionals Champion Card Set Season 2 --- regional2025_2_2
+    {
+        "id": null,
+        "slug": "regional2025_2_2",
+        "name": "2025 Regionals Champion Card Set Season 2",
+        "release": "August - September, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT17-097": "",
+            "BT20-052": "",
+            "BT20-056": "",
+            "BT20-070": "",
+            "BT20-075": "",
+            "EX8-051": "",
+            "ST10-14": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
+    },
+    // Event Pack 8 --- eventpack8
+    {
+        "id": null,
+        "slug": "eventpack8",
+        "name": "Event Pack 8",
+        "release": "August - September, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "P-164": "",
+            "P-165": "",
+            "P-166": "",
+            "P-167": "",
+            "P-168": "",
+            "P-169": "",
+            "P-176": "",
+            "P-177": "",
+            "P-178": "",
+            "P-179": "",
+            "P-180": "",
+            "P-181": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
+    },
+    // Judge Pack 2025 Wave 2 --- judgepack8
+    {
+        "id": null,
+        "slug": "judgepack8",
+        "name": "Judge Pack 2025 Wave 2",
+        "release": "August - September, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT22-008": "",
+            "BT22-010": "",
+            "BT22-012": "",
+            "BT22-022": "",
+            "BT22-046": "",
+            "BT22-048": "",
+            "BT22-056": "",
+            "BT22-057": "",
+            "BT22-079": "",
+            "BT22-080": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/",
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/2e/Judge_Pack_4.png"
+    },
+
+    // Ultimate Cup 25-26 Season 2 --- ultimatecup_2025_2
+    {
+        "id": null,
+        "slug": "ultimatecup_2025_2",
+        "name": "Ultimate Cup 25-26 Season 2",
+        "release": "August - September, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT21-063": "",
+            "BT21-066": "",
+            "BT21-072": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/ultimate_cup/season2/"
+    },
+
+// September 19, 2025
+    // Extra Booster Sinister Order [EX10] --- ex10
+    {
+        "id": "EX10",
+        "slug": "ex10",
+        "name": "Extra Booster Sinister Order [EX10]",
+        "release": "September 19, 2025",
+        "total": 1,
+        "url": "noCardURL",
+        "add_zero": 3,
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
+        "playmat": "",
+        // "color": {
+        //     "red": [1,8,10,13,65],
+        //     "red-blue-yellow": [73],
+        //     "red-green": [7,11,14,16],
+        //     "red-purple": [9,12,15],
+        //     "blue": [2,17,18,20,21,24,27,66,68],
+        //     "blue-yellow": [19,22,23,28],
+        //     "blue-black": [25,26],
+        //     "blue-black-yellow": [29],
+        //     "yellow": [3,"30-32",34,35,37],
+        //     "yellow-purple": [33,36],
+        //     "green": [4,39,40,42,44,69],
+        //     "green-red": [74],
+        //     "green-black": [43],
+        //     "green-purple": [38,41,45],
+        //     "black": [5,"46-55",67,70],
+        //     "purple": [6,"56-61",63,71,72],
+        //     "purple-yellow": [62,64],
+        // },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-10/"
+    },
+
+// September 20, 2025
+    // BANDAI CARD GAMES Fest 25-26 --- bcgfest_25_26
+    {
+        "id": null,
+        "slug": "bcgfest_25_26",
+        "name": "BANDAI CARD GAMES Fest 25-26",
+        "release": "September 20, 2025 - 2026",
+        "url": "https://world.digimoncard.com/images/event/bcgfest_25-26/dallas/P-206.png",
+        "cards": {
+            "P-206": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/bcgfest_25-26/"
+    },
+    // PREMIUM CARD COLLECTION Digimon Training Set --- premium_training
+    {
+        "id": null,
+        "slug": "premium_training",
+        "name": "PREMIUM CARD COLLECTION Digimon Training Set",
+        "release": "September 20, 2025 - 2026",
+        "url": "noCardURL",
+        "cards": {
+            "P-103": "",
+            "P-104": "",
+            "P-105": "",
+            "P-106": "",
+            "P-107": "",
+            "P-108": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/digimon-training-set.php"
+    },
+    // https://world.digimoncard.com/products/goods/official_sleeve_omnimon.php
+    // https://world.digimoncard.com/products/goods/official_sleeve_alphamon.php
+
+// October 2025
+    // Limited Card Pack BILLION BULLET --- lm03
+    {
+        "id": null,
+        "slug": "lm03",
+        "name": "Limited Card Pack BILLION BULLET",
+        "release": "October 2025",
+        "url": "noCardURL",
+        "cards": {
+            "LM-045": "",
+            "LM-046": "",
+            "LM-047": "",
+            "LM-048": "",
+            "LM-049": "",
+            "LM-050": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-pack-billion-bullet.php"
+    },
+    // Limited Card Pack BILLION BULLET - Alternatives --- lm03_alts
+    {
+        "id": null,
+        "slug": "lm03_alts",
+        "name": "Limited Card Pack BILLION BULLET - Alternatives",
+        "release": "October 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT16-082": "",
+            "BT16-101": "",
+            "BT19-074": "",
+            "ST17-02": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-pack-billion-bullet.php"
+    },
+    // Limited Card Pack BILLION BULLET - Reprints --- lm03_reprints
+    {
+        "id": null,
+        "slug": "lm03_reprints",
+        "name": "Limited Card Pack BILLION BULLET - Reprints",
+        "release": "October 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT3-008": "",
+            "BT3-062": "",
+            "BT11-032": "",
+            "BT12-085": "",
+            "BT16-030": "",
+            "BT17-035": "",
+            "BT18-100": "",
+            "EX4-003": "",
+            "P-094": "",
+            "P-137": "",
+            "P-160": "",
+            "P-161": "",
+            "P-162": "",
+            "P-163": "",
+            "P-164": "",
+            "P-165": "",
+            "P-166": "",
+            "P-167": "",
+            "P-168": "",
+            "P-169": "",
+            "RB1-032": "",
+            "ST6-15": "",
+            "ST16-14": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-pack-billion-bullet.php"
+    },
+
+    // Digimon Story Time Stranger - Collector's Edition --- digimon_time_stranger
+    {
+        "id": null,
+        "slug": "digimon_time_stranger",
+        "name": "Digimon Story Time Stranger - Collector's Edition",
+        "release": "October 3, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "EX5-007": "",
+            "EX5-016": "",
+            "EX5-073": "",
+            "P-194": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-pack-billion-bullet.php"
+    },
+
+// October 24, 2025
+    // Booster Hackers' Slumber [BT-23] --- bt23
+    {
+        "id": "BT23",
+        "slug": "bt23",
+        "name": "Booster Hackers' Slumber [BT-23]",
+        "release": "October 24, 2025",
+        "total": 1,
+        "url": "noCardURL",
+        "add_zero": 3,
+        // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
+        "playmat": "",
+        // "color": {
+        //     "red": [1,8,10,13,65],
+        //     "red-blue-yellow": [73],
+        //     "red-green": [7,11,14,16],
+        //     "red-purple": [9,12,15],
+        //     "blue": [2,17,18,20,21,24,27,66,68],
+        //     "blue-yellow": [19,22,23,28],
+        //     "blue-black": [25,26],
+        //     "blue-black-yellow": [29],
+        //     "yellow": [3,"30-32",34,35,37],
+        //     "yellow-purple": [33,36],
+        //     "green": [4,39,40,42,44,69],
+        //     "green-red": [74],
+        //     "green-black": [43],
+        //     "green-purple": [38,41,45],
+        //     "black": [5,"46-55",67,70],
+        //     "purple": [6,"56-61",63,71,72],
+        //     "purple-yellow": [62,64],
+        // },
+        "info_url": "https://world.digimoncard.com/products/pack/ver23/"
+    },
+
+// December 5, 2025
+    // Advanced Deck Amethyst Mandala [ST-22] --- st22
+    {
+        "id": "ST22",
+        "slug": "st22",
+        "name": "Advanced Deck Amethyst Mandala [ST-22]",
+        "release": "December 5, 2025",
+        "total": 1,
+        "url": "noCardURL",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/products/deck/st-22/",
+        "color": {
+            // "blue": ["2-4"],
+            // "blue-green": [12],
+            // "yellow": [5,6],
+            // "green": ["7-9"],
+            // "purple": [1,10,14],
+            // "purple-blue": [11],
+            // "purple-yellow": [13],
+            // "white": [15]
+        }
     },
 ];
