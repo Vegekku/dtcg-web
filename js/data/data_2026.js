@@ -1,10 +1,10 @@
 const data2026 = [
 // January 2026
-    // TAMER'S EVOLUTION BOX - RISE OF DIGIMON [pb21] --- pb21
+    // TAMER'S EVOLUTION BOX - RISE OF DIGIMON [PB-21] --- pb21
     {
         "id": null,
         "slug": "pb21",
-        "name": "TAMER'S EVOLUTION BOX - RISE OF DIGIMON [pb21]",
+        "name": "TAMER'S EVOLUTION BOX - RISE OF DIGIMON [PB-21]",
         "release": "January 2026",
         "url": "https://world.digimoncard.com/images/products/goods/tamers-evolution-box/card/setID-cardID.png",
         "cards": {
@@ -63,7 +63,7 @@ const data2026 = [
     {
         "id": null,
         "slug": "pb22",
-        "name": "Digimon Liberator Debuggers Set [pb21]",
+        "name": "Digimon Liberator Debuggers Set [PB-22]",
         "release": "February 2026",
         "url": "noCardURL",
         "cards": {
@@ -135,4 +135,27 @@ const data2026 = [
     // Reprint Booster Pack
 
     // Premium Heroines Set ver.2 [PB-23] --- pb23
+    {
+        "id": null,
+        "slug": "pb23",
+        "name": "Premium Heroines Set ver.2 [PB-23]",
+        "release": "January 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT5-092": "",
+            "BT8-082": "",
+            "BT11-089": "",
+            "BT11-112": "",
+            "BT13-057": "",
+            "EX3-065": "",
+            "EX5-025": "",
+            "EX6-074": "",
+            "P-195": "",
+            "LM-042": "",
+            "ST10-06": "",
+            "ST14-09": "",
+            "ST19-12": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/premium-heroines-set-02.php"
+    },
 ];
