@@ -1658,6 +1658,85 @@ const data2025 = [
     // https://world.digimoncard.com/products/goods/official_sleeve_omnimon.php
     // https://world.digimoncard.com/products/goods/official_sleeve_alphamon.php
 
+// September 20-21, 2025
+    // Championship 25-26 Finals Season 1 Tamers Pack/Set --- championship_2526_finals_1_tamers
+    {
+        "id": null,
+        "slug": "championship_2526_finals_1_tamers",
+        "name": "Championship 25-26 Finals Season 1 Tamers Pack/Set",
+        "release": "September 20-21, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT5-107": "",
+            "BT8-097": "",
+            "BT19-024": "",
+            "BT19-052": "",
+            "BT19-072": "",
+            "EX4-068": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/finals-season1/"
+    },
+    // Championship 25-26 Finals Season 1 - Top 32 --- championship_2526_finals_1_top32
+    {
+        "id": null,
+        "slug": "championship_2526_finals_1_top32",
+        "name": "Championship 25-26 Finals Season 1 - Top 32",
+        "release": "September 20-21, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT20-034": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/finals-season1/"
+    },
+    // Championship 25-26 Finals Season 1 - Top 16 --- championship_2526_finals_1_top16
+    {
+        "id": null,
+        "slug": "championship_2526_finals_1_top16",
+        "name": "Championship 25-26 Finals Season 1 - Top 16",
+        "release": "September 20-21, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT17-040": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/finals-season1/"
+    },
+    // Championship 25-26 Finals Season 1 - 3rd Place --- championship_2526_finals_1_3rd
+    {
+        "id": null,
+        "slug": "championship_2526_finals_1_3rd",
+        "name": "Championship 25-26 Finals Season 1 - 3rd Place",
+        "release": "September 20-21, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT17-040": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/finals-season1/"
+    },
+    // Championship 25-26 Finals Season 1 - 2nd Place --- championship_2526_finals_1_2nd
+    {
+        "id": null,
+        "slug": "championship_2526_finals_1_2nd",
+        "name": "Championship 25-26 Finals Season 1 - 2nd Place",
+        "release": "September 20-21, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT17-040": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/finals-season1/"
+    },
+    // Championship 25-26 Finals Season 1 - 1st Place --- championship_2526_finals_1_1st
+    {
+        "id": null,
+        "slug": "championship_2526_finals_1_1st",
+        "name": "Championship 25-26 Finals Season 1 - 1st Place",
+        "release": "September 20-21, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT17-040": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/finals-season1/"
+    },
+
 // October 2025
     // Limited Card Pack BILLION BULLET --- lm03
     {
