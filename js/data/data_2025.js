@@ -1591,6 +1591,35 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/event/2025/ultimate_cup/season2/"
     },
 
+// August 20-24, 2025
+    // Time Stranger Tutorial Deck --- timestranger_tutorial_deck
+    {
+        "id": null,
+        "slug": "timestranger_tutorial_deck",
+        "name": "Time Stranger Tutorial Deck",
+        "release": "August 20-24, 2025",
+        "url": "noCardURL",
+        "pack": "https://world.digimoncard.com/images/event/2025/gamescom/img_01.png",
+        "cards": {
+            "BT1-057": "",
+            "BT3-037": "",
+            "BT3-039": "",
+            "BT8-077": "",
+            "BT14-031": "",
+            "BT15-034": "",
+            "BT18-003": "",
+            "EX1-023": "",
+            "EX1-026": "",
+            "EX7-028": "",
+            "ST10-13": "",
+            "P-037": "",
+            "P-191": "",
+            "P-194": "",
+            "P-195": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/gamescom/"
+    },
+
 // September 19, 2025
     // Extra Booster Sinister Order [EX10] --- ex10
     {
