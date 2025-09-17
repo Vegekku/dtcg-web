@@ -1620,6 +1620,45 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/event/2025/gamescom/"
     },
 
+// September 1 – October 31, 2025
+    // Evolution Cup 2025 Vol. 2 Participation --- evolution_cup_2025_2_participant
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_2_participant",
+        "name": "Evolution Cup 2025 Vol. 2 Participation",
+        "release": "September 1 – October 31, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDEC_D.png",
+        "cards": {
+            // TODO: TOKEN
+            // "BT9-109": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/02/",
+    },
+    // Evolution Cup 2025 Vol. 2 Top 4 --- evolution_cup_2025_2_top4
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_2_top4",
+        "name": "Evolution Cup 2025 Vol. 2 Top 4",
+        "release": "September 1 – October 31, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDEC_D.png",
+        "cards": {
+            "BT17-059": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/02/",
+    },
+    // Evolution Cup 2025 Vol. 2 Winner --- evolution_cup_2025_2_winner
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_2_winner",
+        "name": "Evolution Cup 2025 Vol. 2 Winner",
+        "release": "September 1 – October 31, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDEC_D.png",
+        "cards": {
+            "BT5-090": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/02/",
+    },
+
 // September 19, 2025
     // Extra Booster Sinister Order [EX10] --- ex10
     {
