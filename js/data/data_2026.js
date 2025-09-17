@@ -132,7 +132,72 @@ const data2026 = [
     },
 
 // March 2026
-    // Reprint Booster Pack
+    // Limited Card Pack ANOTHER KNIGHT --- lm07
+    {
+        "id": null,
+        "slug": "lm07",
+        "name": "Limited Card Pack ANOTHER KNIGHT",
+        "release": "March 2026",
+        "url": "noCardURL",
+        "cards": {
+            "LM-051": "",
+            "LM-052": "",
+            "LM-053": "",
+            "LM-054": "",
+            "LM-055": "",
+            "LM-056": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
+    },
+    // Limited Card Pack ANOTHER KNIGHT - Alternatives --- lm07_alts
+    {
+        "id": null,
+        "slug": "lm07_alts",
+        "name": "Limited Card Pack ANOTHER KNIGHT - Alternatives",
+        "release": "March 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT13-112": "",
+            "BT16-077": "",
+            "BT21-097": "",
+            "EX4-073": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
+    },
+    // Limited Card Pack ANOTHER KNIGHT - Reprints --- lm07_reprints
+    {
+        "id": null,
+        "slug": "lm07_reprints",
+        "name": "Limited Card Pack ANOTHER KNIGHT - Reprints",
+        "release": "March 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT10-093": "",
+            "BT20-014": "",
+            "BT20-026": "",
+            "BT21-005": "",
+            "BT21-017": "",
+            "BT21-095": "",
+            "EX6-029": "",
+            "EX6-043": "",
+            "P-092": "",
+            "P-133": "",
+            "P-136": "",
+            "P-176": "",
+            "P-177": "",
+            "P-178": "",
+            "P-179": "",
+            "P-180": "",
+            "P-181": "",
+            "P-188": "",
+            "P-189": "",
+            "P-190": "",
+            "P-191": "",
+            "P-192": "",
+            "P-193": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
+    },
 
     // Premium Heroines Set ver.2 [PB-23] --- pb23
     {
