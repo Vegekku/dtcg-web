@@ -2063,6 +2063,20 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/event/2025/store_tournament/04/",
     },
 
+// October 17 - 23, 2025
+    // HACKERS’ SLUMBER [BT-23] Release Event --- bt23_prerelease
+    {
+        "id": null,
+        "slug": "bt23_prerelease",
+        "name": "HACKERS’ SLUMBER [BT-23] Release Event",
+        "release": "October 17 - 23, 2025",
+        "url": "bandaitcgplusURL/P/SAMe_setID-cardIDparallel.png",
+        "cards": {
+            "BT16-013": ["PR_D","PR2_D"], // no foil y foil
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/release-event/05/"
+    },
+
 // October 24, 2025
     // Booster Hackers' Slumber [BT-23] --- bt23
     {
