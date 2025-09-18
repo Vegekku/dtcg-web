@@ -2012,6 +2012,21 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/products/goods/limited-pack-billion-bullet.php"
     },
 
+// October 1 – November 30, 2025
+    // Regulation Battle Vol.3 --- rb_3
+    {
+        "id": null,
+        "slug": "rb_3",
+        "name": "Regulation Battle Vol.3",
+        "release": "October 1 – November 30, 2025",
+        "url": "bandaitcgplusURL/P/Same_setID-cardIDRB_D.png",
+        "cards": {
+            "BT21-002": "",
+            "BT7-058": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regulation_battle-03/",
+    },
+
 // October 24, 2025
     // Booster Hackers' Slumber [BT-23] --- bt23
     {
