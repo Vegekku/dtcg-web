@@ -2027,6 +2027,42 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/event/2025/regulation_battle-03/",
     },
 
+// October 1 – December 31, 2025
+    // Official Store Tournament 2025 Vol.4 - Participation Pack --- otp19
+    {
+        "id": null,
+        "slug": "otp19",
+        "name": "Official Store Tournament 2025 Vol.4 - Participation Pack",
+        "release": "October 1 – December 31, 2025",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_D.png",
+        "cards": {
+            "P-201": "",
+            "P-202": "",
+            "P-203": "",
+            "P-204": "",
+            "P-205": "",
+            "P-206": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/store_tournament/04/",
+    },
+    // Official Store Tournament 2025 Vol.4 - Winner Pack --- wp19
+    {
+        "id": null,
+        "slug": "wp19",
+        "name": "Official Store Tournament 2025 Vol.4 - Winner Pack",
+        "release": "October 1 – December 31, 2025",
+        "url": "bandaitcgplusURL/P/Same_setID-cardIDP_D.png",
+        "cards": {
+            "P-201": "",
+            "P-202": "",
+            "P-203": "",
+            "P-204": "",
+            "P-205": "",
+            "P-206": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/store_tournament/04/",
+    },
+
 // October 24, 2025
     // Booster Hackers' Slumber [BT-23] --- bt23
     {
