@@ -1598,7 +1598,7 @@ const data2025 = [
         "slug": "timestranger_tutorial_deck",
         "name": "Time Stranger Tutorial Deck",
         "release": "August 20-24, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardIDTD_D.png",
         "pack": "https://world.digimoncard.com/images/event/2025/gamescom/img_01.png",
         "cards": {
             "BT1-057": "",
@@ -1996,22 +1996,6 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/products/goods/limited-pack-billion-bullet.php"
     },
 
-    // Digimon Story Time Stranger - Collector's Edition --- digimon_time_stranger
-    {
-        "id": null,
-        "slug": "digimon_time_stranger",
-        "name": "Digimon Story Time Stranger - Collector's Edition",
-        "release": "October 3, 2025",
-        "url": "noCardURL",
-        "cards": {
-            "EX5-007": "",
-            "EX5-016": "",
-            "EX5-073": "",
-            "P-194": "",
-        },
-        "info_url": "https://world.digimoncard.com/products/goods/limited-pack-billion-bullet.php"
-    },
-
 // October 1 – November 30, 2025
     // Regulation Battle Vol.3 --- rb_3
     {
@@ -2061,6 +2045,41 @@ const data2025 = [
             "P-206": "",
         },
         "info_url": "https://world.digimoncard.com/event/2025/store_tournament/04/",
+    },
+    // Time Stranger Promo Pack --- timestranger_pack
+    {
+        "id": null,
+        "slug": "timestranger_pack",
+        "name": "Time Stranger Promo Pack",
+        "release": "October 1 – December 31, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "P-194": "",
+            "P-195": "",
+            "P-196": "",
+            "P-197": "",
+            "P-198": "",
+            "P-199": "",
+            "P-200": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/store_tournament/04/",
+    },
+
+// October 3, 2025
+    // Digimon Story Time Stranger - Collector's Edition --- digimon_time_stranger
+    {
+        "id": null,
+        "slug": "digimon_time_stranger",
+        "name": "Digimon Story Time Stranger - Collector's Edition",
+        "release": "October 3, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "EX5-007": "",
+            "EX5-016": "",
+            "EX5-073": "",
+            "P-194": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-pack-billion-bullet.php"
     },
 
 // October 17 - 23, 2025
