@@ -1640,7 +1640,7 @@ const data2025 = [
         "slug": "evolution_cup_2025_2_top4",
         "name": "Evolution Cup 2025 Vol. 2 Top 4",
         "release": "September 1 – October 31, 2025",
-        "url": "bandaitcgplusURL/P/e_setID-cardIDEC_D.png",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT17-059": "",
         },
@@ -1652,7 +1652,7 @@ const data2025 = [
         "slug": "evolution_cup_2025_2_winner",
         "name": "Evolution Cup 2025 Vol. 2 Winner",
         "release": "September 1 – October 31, 2025",
-        "url": "bandaitcgplusURL/P/e_setID-cardIDEC_D.png",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT5-090": "",
         },
@@ -2019,7 +2019,7 @@ const data2025 = [
         "slug": "rb_3",
         "name": "Regulation Battle Vol.3",
         "release": "October 1 – November 30, 2025",
-        "url": "bandaitcgplusURL/P/Same_setID-cardIDRB_D.png",
+        "url": "noCardURL",
         "cards": {
             "BT21-002": "",
             "BT7-058": "",
@@ -2034,7 +2034,7 @@ const data2025 = [
         "slug": "otp19",
         "name": "Official Store Tournament 2025 Vol.4 - Participation Pack",
         "release": "October 1 – December 31, 2025",
-        "url": "bandaitcgplusURL/P/Same_setID-cardID_D.png",
+        "url": "noCardURL",
         "cards": {
             "P-201": "",
             "P-202": "",
@@ -2051,7 +2051,7 @@ const data2025 = [
         "slug": "wp19",
         "name": "Official Store Tournament 2025 Vol.4 - Winner Pack",
         "release": "October 1 – December 31, 2025",
-        "url": "bandaitcgplusURL/P/Same_setID-cardIDP_D.png",
+        "url": "noCardURL",
         "cards": {
             "P-201": "",
             "P-202": "",
@@ -2070,7 +2070,7 @@ const data2025 = [
         "slug": "bt23_prerelease",
         "name": "HACKERS’ SLUMBER [BT-23] Release Event",
         "release": "October 17 - 23, 2025",
-        "url": "bandaitcgplusURL/P/SAMe_setID-cardIDparallel.png",
+        "url": "noCardURL",
         "cards": {
             "BT16-013": ["PR_D","PR2_D"], // no foil y foil
         },
