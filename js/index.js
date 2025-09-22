@@ -16,6 +16,7 @@ const toggleTables = ( element ) => {
 document.addEventListener("DOMContentLoaded", function (event) {
     const boosterButtons = document.getElementById('boosterButtons');
     const starterButtons = document.getElementById('starterButtons');
+    const extraButtons = document.getElementById('extraButtons');
     const otherButtons = document.getElementById('otherButtons');
     // const productButtons = document.getElementById('productButtons');
     const setLists = document.getElementById('setLists');
@@ -202,6 +203,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             boosterButtons.appendChild(setButton);
         } else if ( set.id.startsWith('ST') ) {
             starterButtons.appendChild(setButton);
+        } else if ( set.id.startsWith('EX') ) {
+            extraButtons.appendChild(setButton);
         } else {
             otherButtons.appendChild(setButton);
         }
