@@ -21,6 +21,21 @@ const updatesData = ( version ) => {
         collectionData = collectionData.replace(/"eventpack8"/g, '"special_eventpack_2025"');
         cardmarketData = cardmarketData.replace(/"eventpack8"/g, '"special_eventpack_2025"');
     }
+
+    if ( 'ex10_alts' === version ) {
+        const collectionJson = JSON.parse(collectionData);
+        if (collectionJson.EX9) {
+            for (const cardID in collectionJson.EX9) {
+                if (collectionJson.EX9[cardID].cards.ex10_alts) {
+                    delete collectionJson.EX9[cardID].cards.ex10_alts;
+                }
+            }
+        }
+
+        collectionData = JSON.stringify( collectionJson );
+    }
+
+    // TODO: Borrado de simplificación de jsons. Sino tienes la carta, no se almacena json.
     
     localStorage.setItem('collection', collectionData);
     localStorage.setItem('cardmarket', cardmarketData);
