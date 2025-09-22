@@ -155,7 +155,7 @@ const modalOk = () => {
 };
 
 const toggleSetButtons = (disabled) => {
-    document.querySelectorAll('#boosterButtons button, #starterButtons button, #otherButtons button').forEach( button => {
+    document.querySelectorAll('#boosterButtons button, #starterButtons button, #extraButtons button, #otherButtons button').forEach( button => {
         button.disabled = disabled;
     });
 };

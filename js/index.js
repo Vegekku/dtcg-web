@@ -16,6 +16,7 @@ const toggleTables = ( element ) => {
 document.addEventListener("DOMContentLoaded", function (event) {
     const boosterButtons = document.getElementById('boosterButtons');
     const starterButtons = document.getElementById('starterButtons');
+    const extraButtons = document.getElementById('extraButtons');
     const otherButtons = document.getElementById('otherButtons');
     // const productButtons = document.getElementById('productButtons');
     const setLists = document.getElementById('setLists');
@@ -194,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         const setButton = document.createElement('button');
         setButton.title = set.name;
         setButton.value = set.id;
-        setButton.innerText = set.id;
+        setButton.innerText = set.id.replace(/^(BT|EX|ST)/, '');
 
         setButton.addEventListener('click', element => toggleTables(element) );
 
@@ -202,6 +203,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             boosterButtons.appendChild(setButton);
         } else if ( set.id.startsWith('ST') ) {
             starterButtons.appendChild(setButton);
+        } else if ( set.id.startsWith('EX') ) {
+            extraButtons.appendChild(setButton);
         } else {
             otherButtons.appendChild(setButton);
         }
