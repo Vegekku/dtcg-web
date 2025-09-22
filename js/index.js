@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         const setButton = document.createElement('button');
         setButton.title = set.name;
         setButton.value = set.id;
-        setButton.innerText = set.id;
+        setButton.innerText = set.id.replace(/^(BT|EX|ST)/, '');
 
         setButton.addEventListener('click', element => toggleTables(element) );
 
