@@ -92,7 +92,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return cardUrl;
     };
 
-    const getImageTag = (url, title, id, set, status = 0, bought = 0) => {
+    // TODO: pasar un objeto con todo los parámetros, en lugar de incrementar el número de parámetros
+    const getImageTag = (url, title, id, set, status = 0, bought = 0, rarity = 'aa') => {
         const [cardNumber, slug] = id.split('__');
         const [setId, cardId] = cardNumber.split('-');
         let cardmarketUrl = '';
@@ -104,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             cardmarketPrice = cardmarket[setId][cardId][slug].price?.slice(-1)[0] || '';
         }
 
-        const imageCard = `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-set="${set}" data-status="${status}" data-bought="${bought}" data-cardmarketurl="${cardmarketUrl}" data-cardmarketprice="${cardmarketPrice}" data-type="card" onclick="modalOpen(this)">`;
+        const imageCard = `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-set="${set}" data-status="${status}" data-bought="${bought}" data-cardmarketurl="${cardmarketUrl}" data-cardmarketprice="${cardmarketPrice}" data-rarity="${rarity}" data-type="card" onclick="modalOpen(this)">`;
 
         return imageCard;
     }
@@ -233,6 +234,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return cardsColor;
     }
 
+    const getCardsRarity = (setRarity) => {
+        let cardsRarity = [];
+        Object.entries(setRarity).forEach( ([rarity, cardIds]) => {
+            cardIds.forEach( id => {
+                if (typeof id === 'string') {
+                    let [start, end] = id.split('-');
+                    for (let index = parseInt(start); index <= parseInt(end); index++) {
+                        cardsRarity[index] = rarity;
+                    }
+                } else {
+                    cardsRarity[id] = rarity;
+                }
+            });
+        });
+
+        return cardsRarity;
+    }
+
     sets.forEach(setElement => {
         if (setElement.id !== null) {
             const tableSet = document.createElement('table');
@@ -257,11 +276,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
             // Body
             const tBody = tableSet.createTBody();
             const colors = setElement.color ? getCardsColor(setElement.color) : null;
+            const rarities = setElement.rarity ? getCardsRarity(setElement.rarity) : [];
 
             for (let index = 1; index <= setElement.total; index++) {
                 const cardId = String(index).padStart(setElement.add_zero, '0');
                 const row = tBody.insertRow(index - 1);
                 const cardNumber = `${setElement.id}-${cardId}`;
+                const cardRarity = rarities[index] || 'aa';
                 row.id = cardNumber;
                 row.insertCell(0).innerHTML = cardId;
 
@@ -286,7 +307,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         collection[setElement.id][cardId].cards[setElement.slug] = {status: 0, bought: 0};
                     }
 
-                    row.insertCell(2).innerHTML = getImageTag(cardUrl, setElement.name, `${cardNumber}__${setElement.slug}`, setElement.slug, collection[setElement.id][cardId].cards[setElement.slug].status, collection[setElement.id][cardId].cards[setElement.slug].bought);
+                    row.insertCell(2).innerHTML = getImageTag(cardUrl, setElement.name, `${cardNumber}__${setElement.slug}`, setElement.slug, collection[setElement.id][cardId].cards[setElement.slug].status, collection[setElement.id][cardId].cards[setElement.slug].bought, cardRarity);
                 } else {
                     row.insertCell(2).innerHTML = "";
                 }

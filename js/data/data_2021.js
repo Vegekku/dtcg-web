@@ -11,6 +11,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-1.php",
         "color": "red",
+        "rarity": {
+            "c": [2,"4-6","13-15"],
+            "u": [1,3,7,8,16],
+            "r": [9,10,12],
+            "sr": [11]
+        }
     },
     // Starter Deck COCYTUS BLUE [ST-2] --- st2
     {
