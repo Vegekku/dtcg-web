@@ -74,6 +74,18 @@
             <input list="setOptions" id="set" name="set" autocomplete="off" onchange="searchSet(this)" placeholder="Buscar set">
             <datalist id="setOptions"></datalist>
             <button id="nextSet" onclick="nextSet()" disabled title="Set posterior">></button>
+
+            <label for="rarity">Rareza</label>
+            <select name="rarity" id="rarity" onchange="filterCards()">
+                <option value="">Todos</option>
+                <option value="aa">Alternative</option>
+                <option value="sp">Special</option>
+                <option value="sec">Secret</option>
+                <option value="sr">Super Rare</option>
+                <option value="r">Rare</option>
+                <option value="u">Uncommon</option>
+                <option value="c">Common</option>
+            </select>
         </div>
         <div class="views">
             <label for="list">Listar como</label>

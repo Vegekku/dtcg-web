@@ -444,6 +444,16 @@ button.accordion.active:after {
   display: none;
 }
 
+.filter--rarity tbody tr:not(.match_filter--rarity) {
+  display: none;
+}
+.filter--rarity .card.filtered--rarity {
+  display: block;
+}
+.filter--rarity .card:not(.filtered--rarity) {
+  display: none;
+}
+
 .filter--color tbody tr:not(.filtered--color) {
   display: none;
 }

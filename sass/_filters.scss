@@ -11,6 +11,19 @@
     }
 }
 
+.filter--rarity {
+    tbody tr:not(.match_filter--rarity) {
+        display: none;
+    }
+
+    .card.filtered--rarity {
+        display: block;
+    }
+    .card:not(.filtered--rarity) {
+        display: none;
+    }
+}
+
 .filter--color {
     tbody tr:not(.filtered--color) {
         display: none;
