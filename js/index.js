@@ -92,7 +92,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return cardUrl;
     };
 
-    // TODO: pasar un objeto con todo los parámetros, en lugar de incrementar el número de parámetros
+    // TODO: pasar un objeto con todo los parámetros, en lugar de incrementar el número de parámetros.
+    // O incluso crear una clase card que se encargue de gestionar todo esto.
     const getImageTag = (url, title, id, set, status = 0, bought = 0, rarity = 'aa') => {
         const [cardNumber, slug] = id.split('__');
         const [setId, cardId] = cardNumber.split('-');
@@ -130,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     const drawAlternatives = (setElement) => {
         const {name, url, cards, slug, reprint, rarity} = setElement;
-        const cardRarity = getCardsRarity(rarity);
+        const cardRarity = getCardsRarity(rarity ?? 'aa');
         if ( url === null ) {
             Object.entries(cards).forEach(card => {
                 const [cardNumber, cardUrl] = card;
@@ -144,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     }
 
                     // TODO: añadir cardRarity
-                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought,rarities);
+                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought);
                 }
             });
         } else {

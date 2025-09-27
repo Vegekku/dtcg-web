@@ -4,7 +4,8 @@
     }
 
     .card.filtered--set {
-        display: block;
+        // Incompatible con view grid.
+        // display: block;
     }
     .card:not(.filtered--set) {
         display: none;
@@ -17,7 +18,8 @@
     }
 
     .card.filtered--rarity {
-        display: block;
+        // Incompatible con view grid.
+        // display: block;
     }
     .card:not(.filtered--rarity) {
         display: none;
@@ -36,6 +38,7 @@
     }
 
     .card.filtered--status {
+        // Incompatible con view grid.
         // display: block;
     }
     .card:not(.filtered--status) {
@@ -52,6 +55,7 @@
             display: none;
         }
         .card.filtered--status {
+            // Incompatible con view grid.
             // display: block;
         }
         .card:not(.filtered--status) {

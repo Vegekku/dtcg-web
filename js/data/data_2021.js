@@ -29,6 +29,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-2.php",
         "color": "blue",
+        "rarity": {
+            "c": [2,5,7,"13-15"],
+            "u": [1,3,4,6,9,16],
+            "r": [8,10,12],
+            "sr": [11]
+        }
     },
     // Starter Deck HEAVEN'S YELLOW [ST-3] --- st3
     {
@@ -41,6 +47,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-3.php",
         "color": "yellow",
+        "rarity": {
+            "c": [2,3,6,"13-15"],
+            "u": [1,4,5,7,9,16],
+            "r": [8,10,12],
+            "sr": [11]
+        }
     },
     // Tamer Party Vol.1 --- tp1
     {
@@ -254,6 +266,7 @@ const data2021 = [
             "BT3-107": "",
             "BT3-109": "",
         },
+        // TODO: rarity no funciona con cartas de distintos sets.
         "pack": [
             "https://static.wikia.nocookie.net/digimoncardgame/images/0/00/Special_Release_Booster_Pack_1.0-EN.png/",
             "https://static.wikia.nocookie.net/digimoncardgame/images/4/4e/Special_Release_Booster_Pack_1.0-EN.01.png/",
@@ -325,6 +338,7 @@ const data2021 = [
             "P-011": "",
             "P-012": ""
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/80/Special_Box_Promotion_Pack.png",
     },
     // Dash Pack Ver. 1.0 --- dp10
@@ -382,6 +396,7 @@ const data2021 = [
             "P-019": "",
             "P-020": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/Official_Tournament_Pack_Vol.1.png/",
     },
     // Tamer Battle Pack 1 --- tbp1
@@ -583,6 +598,7 @@ const data2021 = [
             "BT3-111": "",
             "BT3-112": "",
         },
+        // TODO: rarity no funciona con cartas de distintos sets.
         "pack": [
             "https://static.wikia.nocookie.net/digimoncardgame/images/c/c4/Special_Release_Booster_Pack_1.5-EN.png/",
             "https://static.wikia.nocookie.net/digimoncardgame/images/0/08/Special_Release_Booster_Pack_1.5-EN.01.png/",
@@ -658,6 +674,7 @@ const data2021 = [
             "P-023": "",
             "P-024": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c7/Special_Release_Memorial_Pack.png/"
     },
 
@@ -687,6 +704,7 @@ const data2021 = [
             "P-028": "",
             "ST3-08": "_P1",
         },
+        // TODO: rarity no funciona con cartas de distintos sets.
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/7/74/Great_Legend_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-04/"
     },
@@ -703,6 +721,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-4.php",
         "color": "green",
+        "rarity": {
+            "c": [2,"5-7",9,15],
+            "u": [1,3,4,8,10,16],
+            "r": [11,12,14],
+            "sr": [13]
+        }
     },
     // Starter Deck MACHINE BLACK [ST-5] --- st5
     {
@@ -715,6 +739,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-5.php",
         "color": "black",
+        "rarity": {
+            "c": [2,"5-7",10,15],
+            "u": [1,3,4,8,9,16],
+            "r": [11,12,14],
+            "sr": [13]
+        }
     },
     // Starter Deck VENOMOUS VIOLET [ST-6] --- st6
     {
@@ -727,6 +757,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-6.php",
         "color": "purple",
+        "rarity": {
+            "c": [2,3,"5-7",9,15],
+            "u": [1,4,8,10,16],
+            "r": [11,12,14],
+            "sr": [13]
+        }
     },
 
     // Booster Great Legend [BT4] --- bt4
@@ -748,7 +784,14 @@ const data2021 = [
             "black": [5,"63-75",96,109,110],
             "purple": [6,"76-89",97,111,112],
             "white": [90,91],
-        }
+        },
+        "rarity": {
+            "c": ["7-10",12,14,15,"21-24",26,29,34,36,37,"39-42",44,45,50,51,"55-57",65,66,"60-71",76,79,81,"83-85",98,102,106,108,109,111],
+            "u": ["1-6",11,13,18,25,27,28,38,43,47,"52-54",60,64,67,68,73,78,80,82,87,99,101,105],
+            "r": [19,20,"31-33",46,49,58,61,63,74,77,86,90,"92-97",100,103,104,107,110,112],
+            "sr": [16,17,30,35,48,59,62,72,75,88,89,91],
+            'sec': ["113-115"]
+        },
     },
     // Booster Great Legend [BT4] - Alternatives --- bt4_alts
     {
