@@ -1691,6 +1691,13 @@ const data2025 = [
             "purple-black": [45,50,51,55,59,64,74],
             "white": [61,68,72]
         },
+        "rarity": {
+            "c": ["1-5",7,14,16,21,25,28,29,32,"39-41",43,44,46,50,70,72],
+            "u": [6,15,24,26,27,30,31,37,42,45,47,49,51,62,63,"65-67",69,71],
+            "r": [8,12,13,17,18,20,"33-35",38,48,52,"54-58",64],
+            "sr": ["9-11",19,22,23,36,53,"59-61",68],
+            'sec': [73,74]
+        },
         "override": {
             "url": "bandaitcgplusURL/EX10/setID-cardID_D.png",
             "cards": {
@@ -1797,6 +1804,7 @@ const data2025 = [
             "EX10-060": "SP",
             "EX10-061": "SP",
         },
+        "rarity": 'sp',
         "info_url": "https://world.digimoncard.com/products/pack/ex-10/",
     },
     // Extra Booster Sinister Order [EX10] - Legend Pack --- ex10_legend_pack

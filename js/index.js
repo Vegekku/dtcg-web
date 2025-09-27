@@ -129,7 +129,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     const drawAlternatives = (setElement) => {
-        const {name, url, cards, slug, reprint} = setElement;
+        const {name, url, cards, slug, reprint, rarity} = setElement;
+        const cardRarity = getCardsRarity(rarity);
         if ( url === null ) {
             Object.entries(cards).forEach(card => {
                 const [cardNumber, cardUrl] = card;
@@ -142,7 +143,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         collection[setId][cardId].cards[slug] = {status: 0, bought: 0};
                     }
 
-                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought);
+                    // TODO: añadir cardRarity
+                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought,rarities);
                 }
             });
         } else {
@@ -166,6 +168,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                                 cardUrl = getImageUrl(setElement.override.url, setId, cardId, parallelElement);
                             }
 
+                            // TODO: añadir cardRarity
                             cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, slug, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought);
                         });
                     } else {
@@ -181,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             cardUrl = getImageUrl(setElement.override.url, setId, cardId, overrideParallel);
                         }
                         
-                        cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought);
+                        cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardRarity);
                     }
 
                     if ( reprint ) {
@@ -236,18 +239,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     const getCardsRarity = (setRarity) => {
         let cardsRarity = [];
-        Object.entries(setRarity).forEach( ([rarity, cardIds]) => {
-            cardIds.forEach( id => {
-                if (typeof id === 'string') {
-                    let [start, end] = id.split('-');
-                    for (let index = parseInt(start); index <= parseInt(end); index++) {
-                        cardsRarity[index] = rarity;
+        if ( typeof setRarity === 'string' ) {
+            cardsRarity = setRarity;
+        } else if ( typeof setRarity !== 'undefined' ) {
+            cardsRarity = [];
+            Object.entries(setRarity).forEach( ([rarity, cardIds]) => {
+                cardIds.forEach( id => {
+                    if (typeof id === 'string') {
+                        let [start, end] = id.split('-');
+                        for (let index = parseInt(start); index <= parseInt(end); index++) {
+                            cardsRarity[index] = rarity;
+                        }
+                    } else {
+                        cardsRarity[id] = rarity;
                     }
-                } else {
-                    cardsRarity[id] = rarity;
-                }
+                });
             });
-        });
+        }
 
         return cardsRarity;
     }
@@ -276,13 +284,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
             // Body
             const tBody = tableSet.createTBody();
             const colors = setElement.color ? getCardsColor(setElement.color) : null;
-            const rarities = setElement.rarity ? getCardsRarity(setElement.rarity) : [];
+            const rarities = getCardsRarity(setElement.rarity);
 
             for (let index = 1; index <= setElement.total; index++) {
                 const cardId = String(index).padStart(setElement.add_zero, '0');
                 const row = tBody.insertRow(index - 1);
                 const cardNumber = `${setElement.id}-${cardId}`;
-                const cardRarity = rarities[index] || 'aa';
+                const cardRarity = rarities[index];
                 row.id = cardNumber;
                 row.insertCell(0).innerHTML = cardId;
 
@@ -307,6 +315,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         collection[setElement.id][cardId].cards[setElement.slug] = {status: 0, bought: 0};
                     }
 
+                    // TODO: añadir cardRarity
                     row.insertCell(2).innerHTML = getImageTag(cardUrl, setElement.name, `${cardNumber}__${setElement.slug}`, setElement.slug, collection[setElement.id][cardId].cards[setElement.slug].status, collection[setElement.id][cardId].cards[setElement.slug].bought, cardRarity);
                 } else {
                     row.insertCell(2).innerHTML = "";

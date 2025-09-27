@@ -416,6 +416,7 @@ const data2021 = [
             "P-005": "",
             "P-006": ""
         },
+        'rarity': 'p',
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/7/73/Promotion_Pack_Ver_0.0-EN.png/",
         "info_url": "https://world.digimoncard.com/event/online_event_mar2021/"
     },
