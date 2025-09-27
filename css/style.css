@@ -437,10 +437,14 @@ button.accordion.active:after {
 .filter--set tbody tr:not(.match_filter--set) {
   display: none;
 }
-.filter--set .card.filtered--set {
-  display: block;
-}
 .filter--set .card:not(.filtered--set) {
+  display: none;
+}
+
+.filter--rarity tbody tr:not(.match_filter--rarity) {
+  display: none;
+}
+.filter--rarity .card:not(.filtered--rarity) {
   display: none;
 }
 
