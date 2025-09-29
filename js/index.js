@@ -130,8 +130,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     const drawAlternatives = (setElement) => {
-        const {name, url, cards, slug, reprint, rarity} = setElement;
-        const cardRarity = getCardsRarity(rarity ?? 'aa');
+        const {name, url, cards, slug, reprint, rarity, rarities} = setElement;
+        const setRarity = getCardsRarity(rarity ?? 'aa');
+        const setRarities = rarities ? getCardsRarities(rarities) : undefined;
+
         if ( url === null ) {
             Object.entries(cards).forEach(card => {
                 const [cardNumber, cardUrl] = card;
@@ -155,6 +157,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     
                 if (cardRow !== null) {
                     const [setId, cardId] = cardNumber.split('-');
+                    const cardRarity = setRarities
+                        ? (typeof setRarities[setId] === 'string' 
+                            ? setRarities[setId]
+                            : setRarities[setId][parseInt(cardId)] )
+                        : setRarity;
+
                     if ( Array.isArray( parallel )) {
                         parallel.forEach((parallelElement, index) => {
                             // 5. si no existe la carta, la añadimos al set
@@ -238,6 +246,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return cardsColor;
     }
 
+    // TODO: renombrar a getSetRarity
     const getCardsRarity = (setRarity) => {
         let cardsRarity = [];
         if ( typeof setRarity === 'string' ) {
@@ -259,6 +268,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
 
         return cardsRarity;
+    }
+
+    // TODO: renombrar a getSetRarities
+    const getCardsRarities = (setRarities) => {
+        let cardsRarities = [];
+        Object.entries(setRarities).forEach( ([setId, setRarity]) => {
+            cardsRarities[setId] = getCardsRarity(setRarity);
+        });
+
+        return cardsRarities;
     }
 
     sets.forEach(setElement => {

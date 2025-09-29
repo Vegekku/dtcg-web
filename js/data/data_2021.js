@@ -266,7 +266,28 @@ const data2021 = [
             "BT3-107": "",
             "BT3-109": "",
         },
-        // TODO: rarity no funciona con cartas de distintos sets.
+        "rarities": {
+            "BT1": {
+                "c": [9,11,13,14,18,19,24,27,28,30,32,33,37,38,45,46,"50-52",54,59,64,65,68,69,71,73,75,77,90,"92-94","97-99",102,104,105,108,109,112,113],
+                "u": [2,4,5,8,12,15,17,20,21,26,31,35,36,40,42,43,47,49,53,"56-58",62,66,67,70,72,76,78,80],
+                "r": [1,3,6,7,10,16,23,29,34,39,48,55,61,74,79,"85-89",96,110,111],
+                "sr": [22,25,41,44,60,63,81,82,84],
+                "sec": [114,115]
+            },
+            "BT2": {
+                "c": [5,7,9,18,43,44,52,"55-58",61,63,68,69,"71-73",76,78,103,104,108,109],
+                "u": [13,39,48,54,59,60,64,67,70,74,75,92,95,105,107],
+                "r": [6,8,17,30,46,49,53,62,77,79,84,85,"87-90",93,102,106,110],
+                "sr": [20,51,65,66,"80-83"],
+                "sec": [111]
+            },
+            "BT3": {
+                "c": [61,79],
+                "u": [74,81,89,107,109],
+                "r": [84],
+                "sr": [30,43,91]
+            }
+        },
         "pack": [
             "https://static.wikia.nocookie.net/digimoncardgame/images/0/00/Special_Release_Booster_Pack_1.0-EN.png/",
             "https://static.wikia.nocookie.net/digimoncardgame/images/4/4e/Special_Release_Booster_Pack_1.0-EN.01.png/",
@@ -598,7 +619,27 @@ const data2021 = [
             "BT3-111": "",
             "BT3-112": "",
         },
-        // TODO: rarity no funciona con cartas de distintos sets.
+        "rarities": {
+            "BT1": {
+                "c": [101,107],
+                "r": [91,95,100,103],
+                "sr": [83]
+            },
+            "BT2": {
+                "c": [10,11,"14-16","21-25",29,33,35,37,42,47,91,94,97,101],
+                "u": ["1-4",12,26,27,31,34,36,45,50,96,98,100],
+                "r": [19,28,38,40,86,99],
+                "sr": [32,41],
+                "sec": [112]
+            },
+            "BT3": {
+                "c": [7,9,10,12,13,20,22,23,26,32,35,37,38,44,45,48,"51-54",59,60,63,64,"66-69","76-78",80,83,"85-87",98,100,101,104,106,110],
+                "u": ["1-6",8,11,17,24,28,29,34,36,42,46,49,58,62,65,82,97,99,102,103],
+                "r": ["14-16",21,25,27,33,"39-41",47,50,55,57,"70-72",88,"92-96",105,108],
+                "sr": [18,19,31,56,73,75,90],
+                "sec": [111,112]
+            },
+        },
         "pack": [
             "https://static.wikia.nocookie.net/digimoncardgame/images/c/c4/Special_Release_Booster_Pack_1.5-EN.png/",
             "https://static.wikia.nocookie.net/digimoncardgame/images/0/08/Special_Release_Booster_Pack_1.5-EN.01.png/",
@@ -704,7 +745,10 @@ const data2021 = [
             "P-028": "",
             "ST3-08": "_P1",
         },
-        // TODO: rarity no funciona con cartas de distintos sets.
+        "rarities": {
+            "P": "p",
+            "ST3": "aa"
+        },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/7/74/Great_Legend_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-04/"
     },
