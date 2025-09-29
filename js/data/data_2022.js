@@ -198,6 +198,9 @@ const data2022 = [
             "BT3-088": "P",
             "P-057": "",
         },
+        "rarities": {
+            "P": "p",
+        },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/Official_Tournament_Pack_Vol.4.png/"
     },
     {

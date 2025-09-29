@@ -157,10 +157,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
     
                 if (cardRow !== null) {
                     const [setId, cardId] = cardNumber.split('-');
+                    // Obtener rareza y en caso de no existir, se considera aa
                     const cardRarity = setRarities
-                        ? (typeof setRarities[setId] === 'string' 
-                            ? setRarities[setId]
-                            : setRarities[setId][parseInt(cardId)] )
+                        ? (typeof setRarities[setId] === 'undefined'
+                            ? 'aa'
+                            : (typeof setRarities[setId] === 'string'
+                                ? setRarities[setId]
+                                : setRarities[setId][parseInt(cardId)] )
+                            )
                         : setRarity;
 
                     if ( Array.isArray( parallel )) {

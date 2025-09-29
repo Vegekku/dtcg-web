@@ -746,8 +746,7 @@ const data2021 = [
             "ST3-08": "_P1",
         },
         "rarities": {
-            "P": "p",
-            "ST3": "aa"
+            "P": "p"
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/7/74/Great_Legend_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-04/"
