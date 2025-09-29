@@ -890,6 +890,7 @@ const data2021 = [
             "P-026": "",
             "P-027": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/59/Great_Dash_Pack.png/"
     },
     // Great Legend Power Up Pack --- bt4_powerup
@@ -907,6 +908,7 @@ const data2021 = [
             "P-033": "",
             "P-034": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fc/Great_Legend_Power_Up_Pack.png"
     },
     // Great Legend Power Up Pack (Foil) --- bt4_powerup_foil
@@ -1010,6 +1012,13 @@ const data2021 = [
             "black": [5,"59-70",90,"103-105"],
             "purple": [6,"71-83","106-108"],
             "white": ["84-87","91-93","109-112"],
+        },
+        "rarity": {
+            "c": [7,8,"11-13",18,21,"23-27","33-35",37,38,41,42,47,48,"50-54",59,"61-64",68,"73-78",94,96,98,100,105,106],
+            "u": ["1-6",9,10,17,20,28,30,39,40,43,49,55,57,60,65,67,71,72,80,95,97,99,101,103,107],
+            "r": ["14-16",22,29,31,36,44,46,58,66,69,79,83,84,"88-93",102,104,"108-110"],
+            "sr": [19,32,45,56,70,81,82,"85-87"],
+            "sec": [111,112]
         }
     },
     // Booster Battle of Omni [BT5] - Alternatives --- bt5_alts
@@ -1245,6 +1254,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-7.php",
         "color": "red",
+        "rarity": {
+            "c": [2,4,12],
+            "u": [1,6,7,11],
+            "r": [5,8,10],
+            "sr": [3,9]
+        }
     },
     {
         "id": null,
@@ -1271,6 +1286,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-8.php",
         "color": "blue",
+        "rarity": {
+            "c": [2,3,12],
+            "u": [1,6,7,11],
+            "r": [5,8,9],
+            "sr": [4,10]
+        }
     },
     {
         "id": null,
@@ -1301,6 +1322,7 @@ const data2021 = [
             "P-039": "",
             "P-040": "",
         },
+        "rarity": "p"
     },
 
     // Booster Double Diamond [BT6] --- bt6
@@ -1322,6 +1344,13 @@ const data2021 = [
             "black": [5,"55-67",90,"104-106",111],
             "purple": [6,"68-81",91,"107-109",112],
             "white": ["82-86",92,110],
+        },
+        "rarity": {
+            "c": [8,"11-14","20-23",25,26,31,32,35,"37-40",43,45,48,50,53,"56-58",60,61,63,"69-71",73,74,76,79,83,85,93,96,100,102,104,107],
+            "u": ["1-6",7,10,15,19,24,28,34,36,42,46,49,51,55,62,66,68,75,80,95,97,99,103,105,109],
+            "r": [9,17,27,33,41,47,52,54,59,65,72,77,82,84,"87-92",94,98,101,106,108,110],
+            "sr": [16,18,29,30,44,64,67,78,81,86],
+            "sec": [111,112]
         }
     },
     // Booster Double Diamond [BT6] - Alternatives --- bt6_alts
@@ -1405,6 +1434,7 @@ const data2021 = [
             "P-045": "",
             "P-046": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/0/09/Double_Diamond_Dash_Pack.png/"
     },
 
@@ -1488,6 +1518,13 @@ const data2021 = [
             "black": ["44-54",69,73],
             "purple": ["55-64",70],
             "white": [65,66,71,72],
+        },
+        "rarity": {
+            "c": [2,6,7,12,14,"16-18",23,25,28,33,34,36,38,"44-50","55-58"],
+            "u": [1,3,4,10,11,15,20,24,26,32,35,39,41,42,"52-54",60,61,64],
+            "r": [5,8,13,19,27,31,37,40,51,59,62,"66-72"],
+            "sr": [9,21,22,29,30,43,63,65],
+            "sec": [73],
         }
     },
     // Booster Classic Collection [EX1] - Alternatives --- ex1_alts
@@ -1540,5 +1577,6 @@ const data2021 = [
         "cards": {
             "BT2-065": "",
         },
+        "rarity": "sr",
     },
 ];
