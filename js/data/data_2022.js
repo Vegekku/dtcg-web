@@ -253,6 +253,7 @@ const data2022 = [
             "P-047": "",
             "P-048": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a2/Next_Adventure_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-07/"
     },
@@ -283,6 +284,9 @@ const data2022 = [
             "black": [5,"56-66",90,"104-106"],
             "purple": [6,"67-79",91,"107-109",111],
             "white": ["80-84",110,112],
+        },
+        "rarity": {
+
         }
     },
     {
@@ -301,6 +305,7 @@ const data2022 = [
             "P-055": "",
             "P-056": "",
         },
+        "rarity": "p"
     },
     // Booster Next Adventure [BT7] - Alternatives --- bt7_alts
     {
@@ -382,6 +387,12 @@ const data2022 = [
             "ST7-06": "P_D",
             "ST8-06": "P_D",
         },
+        "rarities": {
+            "P": "p",
+            "BT2": "c",
+            "ST7": "u",
+            "ST8": "u",
+        },
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
     {
@@ -393,6 +404,10 @@ const data2022 = [
         "cards": {
             "P-004": "P1",
             "BT6-056": "P1",
+        },
+        "rarities": {
+            "P": "p",
+            "BT6": "c"
         },
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
@@ -410,6 +425,7 @@ const data2022 = [
             "BT3-006": "",
             "BT7-004": "",
         },
+        "rarity": "u",
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
     {
@@ -425,6 +441,7 @@ const data2022 = [
             "BT6-001": "P2",
             "BT6-005": "P2",
         },
+        "rarity": "u",
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
     // Fest Stamp SR --- 2021fest_stamp
@@ -437,6 +454,7 @@ const data2022 = [
         "cards": {
             "BT3-091": "",
         },
+        "rarity": "sr",
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
     // Fest WINNER Stamp SR --- 2021fest_winner
@@ -534,6 +552,7 @@ const data2022 = [
         "cards": {
             "P-058": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a5/New_Awakening_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-08/"
     },
@@ -680,6 +699,7 @@ const data2022 = [
             "P-047": "",
             "P-048": "",
         },
+        "rarity": "p"
     },
 
     // Fest Set --- 2021fest
@@ -693,6 +713,13 @@ const data2022 = [
             "BT2-051": "P_D",
             "BT2-082": "_t_D",
             "BT7-110": "P_D",
+        },
+        "rarities": {
+            "BT2": {
+                "sr": [51],
+                "t": [82]
+            },
+            "BT7": "r"
         },
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
@@ -710,6 +737,12 @@ const data2022 = [
             "BT6-077": "P1",
             "BT8-008": "P1",
             "BT8-086": "P1",
+        },
+        "rarities": {
+            "BT4": "r",
+            "BT5": "sr",
+            "BT6": "r",
+            "BT8": "r"
         },
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
