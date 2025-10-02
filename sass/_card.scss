@@ -28,7 +28,7 @@
         }
     }
 }
-.card_id {
+.card_info {
     font-size: 1.2em;
     font-weight: 700;
     text-align: center;
@@ -111,6 +111,14 @@
     @include card-color('white', '', '', 'black');
     @include card-color('white', 'red', 'white', 'black');
     @include card-color('white', 'green', 'black', 'white', 'blue');
+
+    &__rarity {
+        text-transform: uppercase;
+        font-size: small;
+        border: 1px solid;
+        border-radius: 8px;
+        padding: 1px 4px;
+    }
 }
 
 .card_list {

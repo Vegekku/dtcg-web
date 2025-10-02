@@ -26,229 +26,236 @@ input:disabled + label {
   opacity: 0.5;
 }
 
-.card_id {
+.card_info {
   font-size: 1.2em;
   font-weight: 700;
   text-align: center;
   vertical-align: middle;
   color: white;
 }
-tr:not([data-color]) .card_id, tr[data-color=undefined] .card_id {
+tr:not([data-color]) .card_info, tr[data-color=undefined] .card_info {
   color: grey;
 }
-[data-color=red] .card_id {
+[data-color=red] .card_info {
   background-color: var(--red-card);
 }
-[data-color=red-blue] .card_id {
+[data-color=red-blue] .card_info {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--blue-card) 50%);
 }
-[data-color=red-green-blue] .card_id {
+[data-color=red-green-blue] .card_info {
   background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--green-card) 33.33%, var(--green-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card));
 }
-[data-color=red-purple-blue] .card_id {
+[data-color=red-purple-blue] .card_info {
   background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--purple-card) 33.33%, var(--purple-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card));
 }
-[data-color=red-white-blue] .card_id {
+[data-color=red-white-blue] .card_info {
   background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--white-card) 33.33%, var(--white-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card));
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-[data-color=red-yellow] .card_id {
+[data-color=red-yellow] .card_info {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--yellow-card) 50%);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-[data-color=red-blue-yellow] .card_id {
+[data-color=red-blue-yellow] .card_info {
   background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--blue-card) 33.33%, var(--blue-card) 66.66%, var(--yellow-card) 66.66%, var(--yellow-card));
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-[data-color=red-green] .card_id {
+[data-color=red-green] .card_info {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--green-card) 50%);
 }
-[data-color=red-yellow-green] .card_id {
+[data-color=red-yellow-green] .card_info {
   background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--yellow-card) 33.33%, var(--yellow-card) 66.66%, var(--green-card) 66.66%, var(--green-card));
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-[data-color=red-black] .card_id {
+[data-color=red-black] .card_info {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--black-card) 50%);
 }
-[data-color=red-purple-black] .card_id {
+[data-color=red-purple-black] .card_info {
   background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--purple-card) 33.33%, var(--purple-card) 66.66%, var(--black-card) 66.66%, var(--black-card));
 }
-[data-color=red-yellow-black] .card_id {
+[data-color=red-yellow-black] .card_info {
   background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--yellow-card) 33.33%, var(--yellow-card) 66.66%, var(--black-card) 66.66%, var(--black-card));
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-[data-color=red-purple] .card_id {
+[data-color=red-purple] .card_info {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--purple-card) 50%);
 }
-[data-color=red-white] .card_id {
+[data-color=red-white] .card_info {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--white-card) 50%);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-[data-color=blue] .card_id {
+[data-color=blue] .card_info {
   background-color: var(--blue-card);
 }
-[data-color=blue-red] .card_id {
+[data-color=blue-red] .card_info {
   background: linear-gradient(90deg, var(--blue-card) 50%, var(--red-card) 50%);
 }
-[data-color=blue-white-red] .card_id {
+[data-color=blue-white-red] .card_info {
   background: repeating-linear-gradient(to right, var(--blue-card), var(--blue-card) 33.33%, var(--white-card) 33.33%, var(--white-card) 66.66%, var(--red-card) 66.66%, var(--red-card));
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color: white;
 }
-[data-color=blue-yellow] .card_id {
+[data-color=blue-yellow] .card_info {
   background: linear-gradient(90deg, var(--blue-card) 50%, var(--yellow-card) 50%);
 }
-[data-color=blue-black-yellow] .card_id {
+[data-color=blue-black-yellow] .card_info {
   background: repeating-linear-gradient(to right, var(--blue-card), var(--blue-card) 33.33%, var(--black-card) 33.33%, var(--black-card) 66.66%, var(--yellow-card) 66.66%, var(--yellow-card));
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-[data-color=blue-green] .card_id {
+[data-color=blue-green] .card_info {
   background: linear-gradient(90deg, var(--blue-card) 50%, var(--green-card) 50%);
 }
-[data-color=blue-black] .card_id {
+[data-color=blue-black] .card_info {
   background: linear-gradient(90deg, var(--blue-card) 50%, var(--black-card) 50%);
 }
-[data-color=blue-purple] .card_id {
+[data-color=blue-purple] .card_info {
   background: linear-gradient(90deg, var(--blue-card) 50%, var(--purple-card) 50%);
 }
-[data-color=yellow] .card_id {
+[data-color=yellow] .card_info {
   background-color: var(--yellow-card);
   color: black;
 }
-[data-color=yellow-red] .card_id {
+[data-color=yellow-red] .card_info {
   background: linear-gradient(90deg, var(--yellow-card) 50%, var(--red-card) 50%);
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   color: black;
 }
-[data-color=yellow-blue] .card_id {
+[data-color=yellow-blue] .card_info {
   background: linear-gradient(90deg, var(--yellow-card) 50%, var(--blue-card) 50%);
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   color: black;
 }
-[data-color=yellow-green] .card_id {
+[data-color=yellow-green] .card_info {
   background: linear-gradient(90deg, var(--yellow-card) 50%, var(--green-card) 50%);
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   color: black;
 }
-[data-color=yellow-black] .card_id {
+[data-color=yellow-black] .card_info {
   background: linear-gradient(90deg, var(--yellow-card) 50%, var(--black-card) 50%);
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   color: black;
 }
-[data-color=yellow-blue-black] .card_id {
+[data-color=yellow-blue-black] .card_info {
   background: repeating-linear-gradient(to right, var(--yellow-card), var(--yellow-card) 33.33%, var(--blue-card) 33.33%, var(--blue-card) 66.66%, var(--black-card) 66.66%, var(--black-card));
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   color: black;
 }
-[data-color=yellow-purple] .card_id {
+[data-color=yellow-purple] .card_info {
   background: linear-gradient(90deg, var(--yellow-card) 50%, var(--purple-card) 50%);
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   color: black;
 }
-[data-color=yellow-purple-black] .card_id {
+[data-color=yellow-purple-black] .card_info {
   background: repeating-linear-gradient(to right, var(--yellow-card), var(--yellow-card) 33.33%, var(--purple-card) 33.33%, var(--purple-card) 66.66%, var(--black-card) 66.66%, var(--black-card));
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-[data-color=yellow-white] .card_id {
+[data-color=yellow-white] .card_info {
   background: linear-gradient(90deg, var(--yellow-card) 50%, var(--white-card) 50%);
   color: black;
 }
-[data-color=green] .card_id {
+[data-color=green] .card_info {
   background-color: var(--green-card);
 }
-[data-color=green-red] .card_id {
+[data-color=green-red] .card_info {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--red-card) 50%);
 }
-[data-color=green-blue] .card_id {
+[data-color=green-blue] .card_info {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--blue-card) 50%);
 }
-[data-color=green-red-blue] .card_id {
+[data-color=green-red-blue] .card_info {
   background: repeating-linear-gradient(to right, var(--green-card), var(--green-card) 33.33%, var(--red-card) 33.33%, var(--red-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card));
   color: white;
 }
-[data-color=green-yellow-blue] .card_id {
+[data-color=green-yellow-blue] .card_info {
   background: repeating-linear-gradient(to right, var(--green-card), var(--green-card) 33.33%, var(--yellow-card) 33.33%, var(--yellow-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card));
   color: white;
 }
-[data-color=green-yellow] .card_id {
+[data-color=green-yellow] .card_info {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--yellow-card) 50%);
 }
-[data-color=green-black] .card_id {
+[data-color=green-black] .card_info {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--black-card) 50%);
 }
-[data-color=green-yellow-black] .card_id {
+[data-color=green-yellow-black] .card_info {
   background: repeating-linear-gradient(to right, var(--green-card), var(--green-card) 33.33%, var(--yellow-card) 33.33%, var(--yellow-card) 66.66%, var(--black-card) 66.66%, var(--black-card));
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color: white;
 }
-[data-color=green-purple] .card_id {
+[data-color=green-purple] .card_info {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--purple-card) 50%);
 }
-[data-color=green-yellow-purple] .card_id {
+[data-color=green-yellow-purple] .card_info {
   background: repeating-linear-gradient(to right, var(--green-card), var(--green-card) 33.33%, var(--yellow-card) 33.33%, var(--yellow-card) 66.66%, var(--purple-card) 66.66%, var(--purple-card));
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color: white;
 }
-[data-color=black] .card_id {
+[data-color=black] .card_info {
   background-color: var(--black-card);
 }
-[data-color=black-red] .card_id {
+[data-color=black-red] .card_info {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--red-card) 50%);
 }
-[data-color=black-yellow-red] .card_id {
+[data-color=black-yellow-red] .card_info {
   background: repeating-linear-gradient(to right, var(--black-card), var(--black-card) 33.33%, var(--yellow-card) 33.33%, var(--yellow-card) 66.66%, var(--red-card) 66.66%, var(--red-card));
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color: white;
 }
-[data-color=black-blue] .card_id {
+[data-color=black-blue] .card_info {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--blue-card) 50%);
 }
-[data-color=black-yellow] .card_id {
+[data-color=black-yellow] .card_info {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--yellow-card) 50%);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-[data-color=black-green] .card_id {
+[data-color=black-green] .card_info {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--green-card) 50%);
 }
-[data-color=black-purple] .card_id {
+[data-color=black-purple] .card_info {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--purple-card) 50%);
 }
-[data-color=black-white] .card_id {
+[data-color=black-white] .card_info {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--white-card) 50%);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-[data-color=purple] .card_id {
+[data-color=purple] .card_info {
   background-color: var(--purple-card);
 }
-[data-color=purple-red] .card_id {
+[data-color=purple-red] .card_info {
   background: linear-gradient(90deg, var(--purple-card) 50%, var(--red-card) 50%);
 }
-[data-color=purple-blue] .card_id {
+[data-color=purple-blue] .card_info {
   background: linear-gradient(90deg, var(--purple-card) 50%, var(--blue-card) 50%);
 }
-[data-color=purple-yellow] .card_id {
+[data-color=purple-yellow] .card_info {
   background: linear-gradient(90deg, var(--purple-card) 50%, var(--yellow-card) 50%);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-[data-color=purple-green] .card_id {
+[data-color=purple-green] .card_info {
   background: linear-gradient(90deg, var(--purple-card) 50%, var(--green-card) 50%);
 }
-[data-color=purple-black] .card_id {
+[data-color=purple-black] .card_info {
   background: linear-gradient(90deg, var(--purple-card) 50%, var(--black-card) 50%);
 }
-[data-color=white] .card_id {
+[data-color=white] .card_info {
   background-color: var(--white-card);
   color: black;
 }
-[data-color=white-red] .card_id {
+[data-color=white-red] .card_info {
   background: linear-gradient(90deg, var(--white-card) 50%, var(--red-card) 50%);
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   color: black;
 }
-[data-color=white-blue-green] .card_id {
+[data-color=white-blue-green] .card_info {
   background: repeating-linear-gradient(to right, var(--white-card), var(--white-card) 33.33%, var(--blue-card) 33.33%, var(--blue-card) 66.66%, var(--green-card) 66.66%, var(--green-card));
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color: white;
+}
+.card_info__rarity {
+  text-transform: uppercase;
+  font-size: small;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 1px 4px;
 }
 
 .card_list {
@@ -541,7 +548,7 @@ td {
   display: inline;
   border: none;
 }
-.view--grid .card_id {
+.view--grid .card_info {
   display: none;
 }
 .view--grid .card_amount {

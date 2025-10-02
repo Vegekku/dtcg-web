@@ -316,7 +316,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 const cardNumber = `${setElement.id}-${cardId}`;
                 const cardRarity = rarities[index];
                 row.id = cardNumber;
-                row.insertCell(0).innerHTML = cardId;
+                row.insertCell(0).innerHTML = `<span class="card-info__id">${cardId}</span><br><span class="card-info__rarity">${cardRarity}</span>`;
 
                 // 3. obtener cantidad de cartas de este id
                 if (collection[setElement.id][cardId] === undefined) {
@@ -345,7 +345,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     row.insertCell(2).innerHTML = "";
                 }
 
-                row.cells[0].className = 'card_id';
+                row.cells[0].className = 'card_info';
                 row.cells[1].className = 'card_amount';
                 row.cells[2].className = 'card_list';
 
