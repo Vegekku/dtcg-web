@@ -940,6 +940,7 @@ const data2022 = [
             "P-063": "_errata",
             "P-064": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fd/Official_Tournament_Pack_Vol.5.png/"
     },
     // Winner Pack New Awakening --- wp5
@@ -994,6 +995,7 @@ const data2022 = [
             "P-080": "",
             "P-081": "",
         },
+        "rarity": "p"
     },
 
 // July 22, 2022
@@ -1045,6 +1047,13 @@ const data2022 = [
             "purple-yellow": [74,76,80,82],
             "purple-black": [75,78,81,107,112],
             "white": [83,92,109,110],
+        },
+        "rarity": {
+            "c": [7,"10-12",19,"22-27",30,"32-36",39,45,"47-50",53,57,"59-63",70,72,73,76,77,93,96,98,"101-104",106,108],
+            "u": ["1-6",8,9,13,20,29,37,38,40,42,46,51,52,54,58,65,71,75,78,"89-91",94,109,110],
+            "r": [14,15,18,21,28,41,43,56,64,66,67,74,79,80,"84-88",92,95,97,99,100,105,107],
+            "sr": [16,17,31,44,55,68,69,"81-83"],
+            "sec": [111,112],
         }
     },
     // Booster X Record [BT9] - Alternatives --- bt9_alts
@@ -1106,6 +1115,7 @@ const data2022 = [
             "P-076": ["", "_horo"],
             "P-077": ["", "_horo"],
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/96/Update_Pack-EN.png",
     },
 
