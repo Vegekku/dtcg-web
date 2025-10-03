@@ -28,6 +28,30 @@
         }
     }
 }
+@mixin rarity-text-color {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+@mixin rarity-color($left-color,$right-color:'',$center-color:'') {
+    @if $center-color != '' {
+        [data-color="#{$left-color}-#{$center-color}-#{$right-color}"] & {
+            background: repeating-linear-gradient(to right, var(--#{$left-color}-card), var(--#{$left-color}-card) 33.33%, var(--#{$center-color}-card) 33.33%, var(--#{$center-color}-card) 66.66%, var(--#{$right-color}-card) 66.66%, var(--#{$right-color}-card));
+            @include rarity-text-color();
+        }
+    } @else if $right-color != '' {
+        [data-color="#{$left-color}-#{$right-color}"] & {
+            background: linear-gradient(90deg, var(--#{$left-color}-card) 50%, var(--#{$right-color}-card) 50%);
+            @include rarity-text-color();
+        }
+    } @else {
+        [data-color="#{$left-color}"] & {
+            background: var(--#{$left-color}-card);
+            @include rarity-text-color();
+        }
+    }
+}
 .card_info {
     font-size: 1.2em;
     font-weight: 700;
@@ -51,8 +75,8 @@
     @include card-color('red', 'green');
     @include card-color('red', 'green', 'black', '', 'yellow');
     @include card-color('red', 'black');
-    @include card-color('red', 'black', '', '', 'purple');
     @include card-color('red', 'black', 'black', '', 'yellow');
+    @include card-color('red', 'black', '', '', 'purple');
     @include card-color('red', 'purple');
     @include card-color('red', 'white', 'black');
 
@@ -114,10 +138,60 @@
 
     &__rarity {
         text-transform: uppercase;
-        font-size: small;
-        border: 1px solid;
-        border-radius: 8px;
-        padding: 1px 4px;
+        font-size: 0.5em;
+        border-radius: 10px;
+        padding: 3px 5px;
+        text-shadow: none;
+        background: white;
+        width: fit-content;
+        margin: 0 auto;
+
+        // TODO: debe poder cambiarse tanto color del texto, como color de fondo del círculo.
+        // TODO mejor meter todo esto dentro del mixin.
+        // White cards
+        [data-color="white"] &,
+        [data-color="yellow"] & {
+            background: var(--black-card);
+        }
+
+        span {
+            // Red cards
+            @include rarity-color('red');
+            @include rarity-color('red','blue');
+            @include rarity-color('red','blue','green');
+            @include rarity-color('red','blue','purple');
+            @include rarity-color('red','blue','white');
+            @include rarity-color('red','yellow');
+            @include rarity-color('red','yellow','blue');
+            @include rarity-color('red','green');
+            @include rarity-color('red','green','yellow');
+            @include rarity-color('red','black');
+            @include rarity-color('red','black','yellow');
+            @include rarity-color('red','black','purple');
+            @include rarity-color('red','purple');
+            @include rarity-color('red','white');
+
+            // Blue cards
+            @include rarity-color('blue');
+
+            // Yellow cards
+            @include rarity-color('yellow');
+
+            // Green cards
+            @include rarity-color('green');
+
+            // Black cards
+            @include rarity-color('black');
+            @include rarity-color('black','red');
+            
+            // Purple cards
+            @include rarity-color('purple');
+
+            // White cards
+            [data-color="white"] & {
+                color: var(--white-card);
+            }
+        }
     }
 }
 
