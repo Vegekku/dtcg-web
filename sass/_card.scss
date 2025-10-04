@@ -47,12 +47,6 @@ $rarity-backgrounds: (
         }
     }
 }
-@mixin rarity-text-color {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
 
 // 🧩 Función para dividir un string en partes separadas por guiones
 @function split-colors($string) {
@@ -106,7 +100,10 @@ $rarity-backgrounds: (
 
     span {
       background: rarity-span-bg($color);
-      @include rarity-text-color();
+      -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
     }
   }
 }
