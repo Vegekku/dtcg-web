@@ -1,3 +1,22 @@
+@use "sass:math";
+
+// Variables
+$rarity-backgrounds: (
+    'red': white,
+    'red-white-blue': black,
+    'blue': white,
+    'blue-white-red': black,
+    'blue-green': white,
+    'yellow': black,
+    'yellow-purple': black-white,
+    'green': white,
+    'green-blue': white,
+    'black': white,
+    'purple': white,
+    'purple-yellow': white-black,
+    'white': black
+);
+
 @mixin card-color($left-color,$right-color:'',$text-shadow:'',$color:'',$center-color:'') {
     @if $center-color != '' {
         [data-color="#{$left-color}-#{$center-color}-#{$right-color}"] & {
@@ -34,24 +53,65 @@
     background-clip: text;
     color: transparent;
 }
-@mixin rarity-color($left-color,$right-color:'',$center-color:'') {
-    @if $center-color != '' {
-        [data-color="#{$left-color}-#{$center-color}-#{$right-color}"] & {
-            background: repeating-linear-gradient(to right, var(--#{$left-color}-card), var(--#{$left-color}-card) 33.33%, var(--#{$center-color}-card) 33.33%, var(--#{$center-color}-card) 66.66%, var(--#{$right-color}-card) 66.66%, var(--#{$right-color}-card));
-            @include rarity-text-color();
-        }
-    } @else if $right-color != '' {
-        [data-color="#{$left-color}-#{$right-color}"] & {
-            background: linear-gradient(90deg, var(--#{$left-color}-card) 50%, var(--#{$right-color}-card) 50%);
-            @include rarity-text-color();
-        }
-    } @else {
-        [data-color="#{$left-color}"] & {
-            background: var(--#{$left-color}-card);
-            @include rarity-text-color();
-        }
+
+// 🧩 Función para dividir un string en partes separadas por guiones
+@function split-colors($string) {
+  $str: "#{$string}";
+  $colors: ();
+  $start: 1;
+  $sep: str-index($str, "-");
+
+  @while $sep {
+    $colors: append($colors, str-slice($str, $start, $sep - 1));
+    $start: $sep + 1;
+    $sep: str-index(str-slice($str, $start), "-");
+
+    @if $sep {
+      $sep: $sep + $start - 1;
     }
+  }
+
+  // Añadir el último fragmento
+  $colors: append($colors, str-slice($str, $start));
+  @return $colors;
 }
+// 🧠 Genera el gradiente del span según el número de colores
+@function rarity-span-bg($color) {
+  $colors: split-colors($color);
+  $count: length($colors);
+
+  @if $count > 1 {
+    $stops: ();
+    $step: math.div(100%, $count);
+    $overlap: 0.5%; // solapamiento entre franjas
+
+    @for $i from 1 through $count {
+      $c: nth($colors, $i);
+      $start: math.max(0%, ($i - 1) * $step - $overlap);
+      $end: math.min(100%, $i * $step + $overlap);
+
+      $stops: append($stops, var(--#{$c}-card) #{$start}, comma);
+      $stops: append($stops, var(--#{$c}-card) #{$end}, comma);
+    }
+
+    @return linear-gradient(90deg, $stops...);
+  }
+
+  @return var(--#{nth($colors, 1)}-card);
+}
+
+@mixin rarity-color($color, $background) {
+  [data-color="#{$color}"] & {
+    background: rarity-span-bg($background);
+
+    span {
+      background: rarity-span-bg($color);
+      @include rarity-text-color();
+    }
+  }
+}
+
+
 .card_info {
     font-size: 1.2em;
     font-weight: 700;
@@ -138,60 +198,77 @@
 
     &__rarity {
         text-transform: uppercase;
-        font-size: 0.5em;
-        border-radius: 10px;
-        padding: 3px 5px;
+        font-size: 0.7em;
+        border-radius: 11px;
+        // padding: 3px 5px;
         text-shadow: none;
-        background: white;
-        width: fit-content;
+        background: grey;
+        // width: fit-content;
         margin: 0 auto;
+        width: 22px;
+        height: 22px;
+        align-content: center;
+
+        tr:not([data-color]) &,
+        tr[data-color="undefined"] & {
+            background: grey;
+        }
+
+        @each $color, $background in $rarity-backgrounds {
+            @include rarity-color($color, $background);
+        }
 
         // TODO: debe poder cambiarse tanto color del texto, como color de fondo del círculo.
         // TODO mejor meter todo esto dentro del mixin.
         // White cards
-        [data-color="white"] &,
-        [data-color="yellow"] & {
-            background: var(--black-card);
-        }
+        // [data-color="white"] &,
+        // [data-color="yellow"] & {
+        //     background: var(--black-card);
+        // }
 
-        span {
+        // span {
             // Red cards
-            @include rarity-color('red');
-            @include rarity-color('red','blue');
-            @include rarity-color('red','blue','green');
-            @include rarity-color('red','blue','purple');
-            @include rarity-color('red','blue','white');
-            @include rarity-color('red','yellow');
-            @include rarity-color('red','yellow','blue');
-            @include rarity-color('red','green');
-            @include rarity-color('red','green','yellow');
-            @include rarity-color('red','black');
-            @include rarity-color('red','black','yellow');
-            @include rarity-color('red','black','purple');
-            @include rarity-color('red','purple');
-            @include rarity-color('red','white');
+            // @include rarity-color('red');
+            // @include rarity-color('red','blue');
+            // @include rarity-color('red','blue','','green');
+            // @include rarity-color('red','blue','','purple');
+            // @include rarity-color('red','blue','','white');
+            // @include rarity-color('red','yellow');
+            // @include rarity-color('red','yellow','','blue');
+            // @include rarity-color('red','green');
+            // @include rarity-color('red','green','','yellow');
+            // @include rarity-color('red','black');
+            // @include rarity-color('red','black','','yellow');
+            // @include rarity-color('red','black','','purple');
+            // @include rarity-color('red','purple');
+            // @include rarity-color('red','white');
 
             // Blue cards
-            @include rarity-color('blue');
+            // @include rarity-color('blue');
+            // @include rarity-color('blue','green');
 
             // Yellow cards
-            @include rarity-color('yellow');
+            // @include rarity-color('yellow','','black');
+            // @include rarity-color('yellow','purple','black','white');
 
             // Green cards
-            @include rarity-color('green');
+            // @include rarity-color('green');
+            // @include rarity-color('green','blue');
 
             // Black cards
-            @include rarity-color('black');
-            @include rarity-color('black','red');
+            // @include rarity-color('black');
+            // @include rarity-color('black','red');
             
             // Purple cards
-            @include rarity-color('purple');
+            // @include rarity-color('purple');
+            // @include rarity-color('purple','yellow');
 
             // White cards
-            [data-color="white"] & {
-                color: var(--white-card);
-            }
-        }
+            // [data-color="white"] & {
+            //     color: var(--white-card);
+            // }
+            // @include rarity-color('white','','black');
+        // }
     }
 }
 
