@@ -595,6 +595,8 @@ const data2022 = [
             "u": [1,2,4,9,15],
             "r": [11,13,14],
             "sr": [5,6],
+            // FIXME: Debería ser R, no AA.
+            "aa": [16]
         }
     },
     // Starter Deck PARALLEL WORLD TACTICIAN [ST-10] --- st10
@@ -618,6 +620,8 @@ const data2022 = [
             "u": [1,8,9,13,15],
             "r": [5,12,14],
             "sr": [4,6],
+            // FIXME: Debería ser R, no AA.
+            "aa": [16]
         }
     },
 

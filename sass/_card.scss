@@ -3,17 +3,35 @@
 // Variables
 $rarity-backgrounds: (
   "red": white,
+  "red-blue": white,
+  "red-yellow": white-black,
+  "red-green": white,
+  "red-black": white,
+  "red-purple": white,
   "red-white-blue": black,
   "blue": white,
+  "blue-red": white,
+  "blue-yellow": white-black,
+  "blue-black": white,
   "blue-white-red": black,
   "blue-green": white,
   "yellow": black,
+  "yellow-red": black-white,
+  "yellow-blue": black-white,
+  "yellow-green": black-white,
+  "yellow-black": black-white,
   "yellow-purple": black-white,
   "green": white,
+  "green-red": white,
   "green-blue": white,
+  "green-yellow": white-black,
+  "green-black": white,
   "black": white,
+  "black-red": white,
   "purple": white,
   "purple-yellow": white-black,
+  "purple-green": white,
+  "purple-black": white,
   "white": black,
 );
 
@@ -89,8 +107,8 @@ $rarity-backgrounds: (
   $colors: append($colors, str-slice($str, $start));
   @return $colors;
 }
-// 🧠 Genera el gradiente del span según el número de colores
-@function rarity-span-bg($color) {
+// 🧠 Genera el color de fondo según el número de colores
+@function compose-bg($color) {
   $colors: split-colors($color);
   $count: length($colors);
 
@@ -116,10 +134,10 @@ $rarity-backgrounds: (
 
 @mixin rarity-color($color, $background) {
   [data-color="#{$color}"] & {
-    background: rarity-span-bg($background);
+    background: compose-bg($background);
 
     span {
-      background: rarity-span-bg($color);
+      background: compose-bg($color);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;

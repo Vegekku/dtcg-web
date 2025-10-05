@@ -274,6 +274,56 @@ tr:not([data-color]) .card_info__rarity, tr[data-color=undefined] .card_info__ra
   background-clip: text;
   color: transparent;
 }
+[data-color=red-blue] .card_info__rarity {
+  background: var(--white-card);
+}
+[data-color=red-blue] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--red-card) 0%, var(--red-card) 50.5%, var(--blue-card) 49.5%, var(--blue-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+[data-color=red-yellow] .card_info__rarity {
+  background: linear-gradient(90deg, var(--white-card) 0%, var(--white-card) 50.5%, var(--black-card) 49.5%, var(--black-card) 100%);
+}
+[data-color=red-yellow] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--red-card) 0%, var(--red-card) 50.5%, var(--yellow-card) 49.5%, var(--yellow-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+[data-color=red-green] .card_info__rarity {
+  background: var(--white-card);
+}
+[data-color=red-green] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--red-card) 0%, var(--red-card) 50.5%, var(--green-card) 49.5%, var(--green-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+[data-color=red-black] .card_info__rarity {
+  background: var(--white-card);
+}
+[data-color=red-black] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--red-card) 0%, var(--red-card) 50.5%, var(--black-card) 49.5%, var(--black-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+[data-color=red-purple] .card_info__rarity {
+  background: var(--white-card);
+}
+[data-color=red-purple] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--red-card) 0%, var(--red-card) 50.5%, var(--purple-card) 49.5%, var(--purple-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
 [data-color=red-white-blue] .card_info__rarity {
   background: var(--black-card);
 }
@@ -289,6 +339,36 @@ tr:not([data-color]) .card_info__rarity, tr[data-color=undefined] .card_info__ra
 }
 [data-color=blue] .card_info__rarity span {
   background: var(--blue-card);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+[data-color=blue-red] .card_info__rarity {
+  background: var(--white-card);
+}
+[data-color=blue-red] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--blue-card) 0%, var(--blue-card) 50.5%, var(--red-card) 49.5%, var(--red-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+[data-color=blue-yellow] .card_info__rarity {
+  background: linear-gradient(90deg, var(--white-card) 0%, var(--white-card) 50.5%, var(--black-card) 49.5%, var(--black-card) 100%);
+}
+[data-color=blue-yellow] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--blue-card) 0%, var(--blue-card) 50.5%, var(--yellow-card) 49.5%, var(--yellow-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+[data-color=blue-black] .card_info__rarity {
+  background: var(--white-card);
+}
+[data-color=blue-black] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--blue-card) 0%, var(--blue-card) 50.5%, var(--black-card) 49.5%, var(--black-card) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -324,6 +404,46 @@ tr:not([data-color]) .card_info__rarity, tr[data-color=undefined] .card_info__ra
   background-clip: text;
   color: transparent;
 }
+[data-color=yellow-red] .card_info__rarity {
+  background: linear-gradient(90deg, var(--black-card) 0%, var(--black-card) 50.5%, var(--white-card) 49.5%, var(--white-card) 100%);
+}
+[data-color=yellow-red] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--yellow-card) 0%, var(--yellow-card) 50.5%, var(--red-card) 49.5%, var(--red-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+[data-color=yellow-blue] .card_info__rarity {
+  background: linear-gradient(90deg, var(--black-card) 0%, var(--black-card) 50.5%, var(--white-card) 49.5%, var(--white-card) 100%);
+}
+[data-color=yellow-blue] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--yellow-card) 0%, var(--yellow-card) 50.5%, var(--blue-card) 49.5%, var(--blue-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+[data-color=yellow-green] .card_info__rarity {
+  background: linear-gradient(90deg, var(--black-card) 0%, var(--black-card) 50.5%, var(--white-card) 49.5%, var(--white-card) 100%);
+}
+[data-color=yellow-green] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--yellow-card) 0%, var(--yellow-card) 50.5%, var(--green-card) 49.5%, var(--green-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+[data-color=yellow-black] .card_info__rarity {
+  background: linear-gradient(90deg, var(--black-card) 0%, var(--black-card) 50.5%, var(--white-card) 49.5%, var(--white-card) 100%);
+}
+[data-color=yellow-black] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--yellow-card) 0%, var(--yellow-card) 50.5%, var(--black-card) 49.5%, var(--black-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
 [data-color=yellow-purple] .card_info__rarity {
   background: linear-gradient(90deg, var(--black-card) 0%, var(--black-card) 50.5%, var(--white-card) 49.5%, var(--white-card) 100%);
 }
@@ -344,6 +464,16 @@ tr:not([data-color]) .card_info__rarity, tr[data-color=undefined] .card_info__ra
   background-clip: text;
   color: transparent;
 }
+[data-color=green-red] .card_info__rarity {
+  background: var(--white-card);
+}
+[data-color=green-red] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--green-card) 0%, var(--green-card) 50.5%, var(--red-card) 49.5%, var(--red-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
 [data-color=green-blue] .card_info__rarity {
   background: var(--white-card);
 }
@@ -354,11 +484,41 @@ tr:not([data-color]) .card_info__rarity, tr[data-color=undefined] .card_info__ra
   background-clip: text;
   color: transparent;
 }
+[data-color=green-yellow] .card_info__rarity {
+  background: linear-gradient(90deg, var(--white-card) 0%, var(--white-card) 50.5%, var(--black-card) 49.5%, var(--black-card) 100%);
+}
+[data-color=green-yellow] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--green-card) 0%, var(--green-card) 50.5%, var(--yellow-card) 49.5%, var(--yellow-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+[data-color=green-black] .card_info__rarity {
+  background: var(--white-card);
+}
+[data-color=green-black] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--green-card) 0%, var(--green-card) 50.5%, var(--black-card) 49.5%, var(--black-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
 [data-color=black] .card_info__rarity {
   background: var(--white-card);
 }
 [data-color=black] .card_info__rarity span {
   background: var(--black-card);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+[data-color=black-red] .card_info__rarity {
+  background: var(--white-card);
+}
+[data-color=black-red] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--black-card) 0%, var(--black-card) 50.5%, var(--red-card) 49.5%, var(--red-card) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -379,6 +539,26 @@ tr:not([data-color]) .card_info__rarity, tr[data-color=undefined] .card_info__ra
 }
 [data-color=purple-yellow] .card_info__rarity span {
   background: linear-gradient(90deg, var(--purple-card) 0%, var(--purple-card) 50.5%, var(--yellow-card) 49.5%, var(--yellow-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+[data-color=purple-green] .card_info__rarity {
+  background: var(--white-card);
+}
+[data-color=purple-green] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--purple-card) 0%, var(--purple-card) 50.5%, var(--green-card) 49.5%, var(--green-card) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+[data-color=purple-black] .card_info__rarity {
+  background: var(--white-card);
+}
+[data-color=purple-black] .card_info__rarity span {
+  background: linear-gradient(90deg, var(--purple-card) 0%, var(--purple-card) 50.5%, var(--black-card) 49.5%, var(--black-card) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
