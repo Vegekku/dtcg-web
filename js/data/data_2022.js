@@ -1732,6 +1732,7 @@ const data2022 = [
         "cards": {
             "P-065": "",
         },
+        "rarity": "p"
     },
     // 25th Special Memorial Pack --- 25specialmemorial
     {

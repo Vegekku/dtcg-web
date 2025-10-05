@@ -113,6 +113,7 @@ const data2023 = [
             "P-080": "",
             "P-081": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/tamer_party_07/"
     },
 
@@ -725,6 +726,7 @@ const data2023 = [
             "P-070": "",
             "P-071": ""
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/8d/Limited_Card_Pack.png"
     },
     // Ultimate Cup 2023 --- ultimatecup_2023
@@ -1057,6 +1059,9 @@ const data2023 = [
         "cards": {
             "BT8-071": "_P2",
             "P-078": "",
+        },
+        "rarities": {
+            "P": "p"
         },
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-13/",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/be/Royal_Knights_Pre-Release_Pack.png"

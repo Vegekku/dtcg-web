@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             }
 
                             // TODO: añadir cardRarity
-                            cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, slug, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought);
+                            cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, slug, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought, cardRarity);
                         });
                     } else {
                         // 5. si no existe la carta, la añadimos al set
