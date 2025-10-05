@@ -8,6 +8,7 @@ $rarity-backgrounds: (
   "red-green": white,
   "red-black": white,
   "red-purple": white,
+  "red-purple-blue": white,
   "red-white-blue": black,
   "blue": white,
   "blue-red": white,
@@ -26,9 +27,14 @@ $rarity-backgrounds: (
   "green-blue": white,
   "green-yellow": white-black,
   "green-black": white,
+  "green-purple": white,
   "black": white,
   "black-red": white,
+  "black-yellow": white-black,
+  "black-purple": white,
+  "black-white": white-black,
   "purple": white,
+  "purple-red": white,
   "purple-yellow": white-black,
   "purple-green": white,
   "purple-black": white,
@@ -232,7 +238,7 @@ $rarity-backgrounds: (
 
   &__rarity {
     text-transform: uppercase;
-    font-size: 0.7em;
+    font-size: 0.8em;
     border-radius: 11px;
     // padding: 3px 5px;
     text-shadow: none;
@@ -243,66 +249,20 @@ $rarity-backgrounds: (
     height: 22px;
     align-content: center;
 
+    tr[data-rarity="sec"] & {
+        width: 33px;
+    }
+
     tr:not([data-color]) &,
     tr[data-color="undefined"] & {
       background: grey;
     }
 
+    // TODO: debe poder cambiarse tanto color del texto, como color de fondo del círculo.
+    // TODO que el mixin se encargue de generar todo lo relacionado con el color de la carta (incluido rareza).
     @each $color, $background in $rarity-backgrounds {
       @include rarity-color($color, $background);
     }
-
-    // TODO: debe poder cambiarse tanto color del texto, como color de fondo del círculo.
-    // TODO mejor meter todo esto dentro del mixin.
-    // White cards
-    // [data-color="white"] &,
-    // [data-color="yellow"] & {
-    //     background: var(--black-card);
-    // }
-
-    // span {
-    // Red cards
-    // @include rarity-color('red');
-    // @include rarity-color('red','blue');
-    // @include rarity-color('red','blue','','green');
-    // @include rarity-color('red','blue','','purple');
-    // @include rarity-color('red','blue','','white');
-    // @include rarity-color('red','yellow');
-    // @include rarity-color('red','yellow','','blue');
-    // @include rarity-color('red','green');
-    // @include rarity-color('red','green','','yellow');
-    // @include rarity-color('red','black');
-    // @include rarity-color('red','black','','yellow');
-    // @include rarity-color('red','black','','purple');
-    // @include rarity-color('red','purple');
-    // @include rarity-color('red','white');
-
-    // Blue cards
-    // @include rarity-color('blue');
-    // @include rarity-color('blue','green');
-
-    // Yellow cards
-    // @include rarity-color('yellow','','black');
-    // @include rarity-color('yellow','purple','black','white');
-
-    // Green cards
-    // @include rarity-color('green');
-    // @include rarity-color('green','blue');
-
-    // Black cards
-    // @include rarity-color('black');
-    // @include rarity-color('black','red');
-
-    // Purple cards
-    // @include rarity-color('purple');
-    // @include rarity-color('purple','yellow');
-
-    // White cards
-    // [data-color="white"] & {
-    //     color: var(--white-card);
-    // }
-    // @include rarity-color('white','','black');
-    // }
   }
 }
 
