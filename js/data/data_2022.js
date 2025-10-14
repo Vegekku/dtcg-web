@@ -596,6 +596,7 @@ const data2022 = [
             "r": [11,13,14],
             "sr": [5,6],
             // FIXME: Debería ser R, no AA.
+            // Cardmarket la considera AA, pero el icono que debería salir es R.
             "aa": [16]
         }
     },
@@ -621,6 +622,7 @@ const data2022 = [
             "r": [5,12,14],
             "sr": [4,6],
             // FIXME: Debería ser R, no AA.
+            // Cardmarket la considera AA, pero el icono que debería salir es R.
             "aa": [16]
         }
     },

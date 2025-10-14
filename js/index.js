@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                                 ? setRarities[setId]
                                 : setRarities[setId][parseInt(cardId)] )
                             )
-                        : setRarity;
+                        : setRarity[parseInt(cardId)] ?? setRarity;
 
                     if ( Array.isArray( parallel )) {
                         parallel.forEach((parallelElement, index) => {
@@ -181,7 +181,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
                                 cardUrl = getImageUrl(setElement.override.url, setId, cardId, parallelElement);
                             }
 
-                            // TODO: añadir cardRarity
                             cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, slug, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought, cardRarity);
                         });
                     } else {
@@ -255,7 +254,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let cardsRarity = [];
         if ( typeof setRarity === 'string' ) {
             cardsRarity = setRarity;
-        } else if ( typeof setRarity !== 'undefined' ) {
+        } else if ( typeof setRarity === 'object' ) {
             cardsRarity = [];
             Object.entries(setRarity).forEach( ([rarity, cardIds]) => {
                 cardIds.forEach( id => {
