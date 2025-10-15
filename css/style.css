@@ -70,12 +70,12 @@ tr:not([data-color]) .card_info, tr[data-color=undefined] .card_info {
 [data-color=red-black] .card_info {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--black-card) 50%);
 }
+[data-color=red-purple-black] .card_info {
+  background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--purple-card) 33.33%, var(--purple-card) 66.66%, var(--black-card) 66.66%, var(--black-card));
+}
 [data-color=red-yellow-black] .card_info {
   background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--yellow-card) 33.33%, var(--yellow-card) 66.66%, var(--black-card) 66.66%, var(--black-card));
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-[data-color=red-purple-black] .card_info {
-  background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--purple-card) 33.33%, var(--purple-card) 66.66%, var(--black-card) 66.66%, var(--black-card));
 }
 [data-color=red-purple] .card_info {
   background: linear-gradient(90deg, var(--red-card) 50%, var(--purple-card) 50%);
@@ -97,6 +97,7 @@ tr:not([data-color]) .card_info, tr[data-color=undefined] .card_info {
 }
 [data-color=blue-yellow] .card_info {
   background: linear-gradient(90deg, var(--blue-card) 50%, var(--yellow-card) 50%);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 [data-color=blue-black-yellow] .card_info {
   background: repeating-linear-gradient(to right, var(--blue-card), var(--blue-card) 33.33%, var(--black-card) 33.33%, var(--black-card) 66.66%, var(--yellow-card) 66.66%, var(--yellow-card));
@@ -110,6 +111,10 @@ tr:not([data-color]) .card_info, tr[data-color=undefined] .card_info {
 }
 [data-color=blue-purple] .card_info {
   background: linear-gradient(90deg, var(--blue-card) 50%, var(--purple-card) 50%);
+}
+[data-color=blue-white] .card_info {
+  background: linear-gradient(90deg, var(--blue-card) 50%, var(--white-card) 50%);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 [data-color=yellow] .card_info {
   background-color: var(--yellow-card);
@@ -172,6 +177,7 @@ tr:not([data-color]) .card_info, tr[data-color=undefined] .card_info {
 }
 [data-color=green-yellow] .card_info {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--yellow-card) 50%);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 [data-color=green-black] .card_info {
   background: linear-gradient(90deg, var(--green-card) 50%, var(--black-card) 50%);
