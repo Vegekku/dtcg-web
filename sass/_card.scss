@@ -60,11 +60,12 @@
     @include card-color('blue');
     @include card-color('blue', 'red');
     @include card-color('blue', 'red', 'black', 'white', 'white');
-    @include card-color('blue', 'yellow');
+    @include card-color('blue', 'yellow', 'black');
     @include card-color('blue', 'yellow', 'black', '', 'black');
     @include card-color('blue', 'green');
     @include card-color('blue', 'black');
     @include card-color('blue', 'purple');
+    @include card-color('blue', 'white', 'black');
 
     // Yellow cards
     @include card-color('yellow', '', '', 'black');
@@ -83,7 +84,7 @@
     @include card-color('green', 'blue');
     @include card-color('green', 'blue', '', 'white', 'red');
     @include card-color('green', 'blue', '', 'white', 'yellow');
-    @include card-color('green', 'yellow');
+    @include card-color('green', 'yellow', 'black');
     @include card-color('green', 'black');
     @include card-color('green', 'black', 'black', 'white', 'yellow');
     @include card-color('green', 'purple');
