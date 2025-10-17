@@ -503,6 +503,10 @@ const data2023 = [
             "BT6-068": "P2",
             "EX2-044": "P2",
         },
+        "rarities": {
+            "BT6": "u",
+            "EX2": "sr",
+        },
         "info_url": "https://world.digimoncard.com/event/pre-release_ST14/",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/Beelzemon_Cup_Participation_Pack.png"
     },
@@ -580,6 +584,10 @@ const data2023 = [
         "cards": {
             "BT6-068": "P3",
             "EX2-044": "P3",
+        },
+        "rarities": {
+            "BT6": "u",
+            "EX2": "sr"
         }
         // "info_url": "https://world.digimoncard.com/event/pre-release_ST14/",
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/Beelzemon_Cup_Participation_Pack.png"
@@ -687,6 +695,13 @@ const data2023 = [
                 "BT12-036": ""
             }
         },
+        "rarity": {
+            "c": ["7-10",14,"19-21",23,25,27,33,34,36,"38-41",45,46,49,"51-54","58-62",64,66,67,69,73,76,"78-80",99,102,103,105,107],
+            "u": ["1-6","11-13",22,24,26,35,37,44,47,48,50,63,65,74,75,77,81,84,91,93,94,97,110],
+            "r": [15,16,28,30,32,42,55,56,68,71,82,"86-90",92,95,96,98,100,101,104,106,108,109],
+            "sr": [17,18,29,31,43,57,70,72,83,85],
+            "sec": [111,112],
+        }
     },
     // Booster Across Time [BT12] - Alternatives --- bt12_alts
     {
@@ -731,6 +746,12 @@ const data2023 = [
             "BT12-064": "P1",
             "BT12-077": "P1",
             "BT12-081": "P1",
+        },
+        "rarities": {
+            "BT12": {
+                "c": [14,41,51,64],
+                "u": [77,81]
+            }
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/6/64/Box_Promotion_Pack_Across_Time-EN.png"
     },
@@ -961,6 +982,13 @@ const data2023 = [
             "purple-yellow": [74],
             "purple-green": [54,57,59],
             "white": [60,72]
+        },
+        "rarity": {
+            "c": [6,7,14,17,18,24,25,29,32,34,"38-41",43,44,52,54,55,57,65,"67-70"],
+            "u": ["1-5",8,10,15,16,26,28,35,36,42,45,46,56,66,72],
+            "r": [9,11,19,20,23,27,31,33,47,48,50,53,59,"61-64",71],
+            "sr": [12,13,21,22,30,37,49,51,58,60],
+            "sec": [73,74],
         }
     },
     // Booster Alternative Being [EX4] - Alternatives --- ex4_alts
@@ -1015,6 +1043,9 @@ const data2023 = [
             "EX4-064": "",
             "EX4-066": "",
             "EX4-072": "",
+        },
+        "rarity": {
+            "u": [66,72]
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6c/Box_Promotion_Pack_Alternative_Being-EN.png"
     },
@@ -1117,6 +1148,13 @@ const data2023 = [
             "purple": [6,"78-92",102,103,109],
             "white": [7,93,110,112],
         },
+        "rarity": {
+            "c": [8,9,"11-13",15,"21-27","36-39",42,43,47,"49-52",54,55,"61-63","65-70",72,"78-85"],
+            "u": ["1-6",14,16,28,29,32,34,41,48,53,71,73,74,76,86,93,94,96,98,99,101,103,"106-108"],
+            "r": [10,"17-19",30,31,35,40,44,45,56,57,59,64,"87-90",95,97,100,102,104,105,109,110],
+            "sr": [7,20,33,46,58,60,75,77,91,92],
+            "sec": [111,112],
+        }
     },
     // Booster Versus Royal Knights [BT13] - Alternatives --- bt13_alts
     {
@@ -1183,6 +1221,12 @@ const data2023 = [
         "info_url": "https://world.digimoncard.com/products/deck/st-15.php",
         "color": {
             "black": ["1-16"]
+        },
+        "rarity": {
+            "c": ["4-7",9,16],
+            "u": [1,3,10,13,15],
+            "r": [2,11,14],
+            "sr": [8,12],
         }
     },
     // Starter Deck Wolf of Friendship [ST16] --- st16
@@ -1197,6 +1241,12 @@ const data2023 = [
         "info_url": "https://world.digimoncard.com/products/deck/st-16.php",
         "color": {
             "purple": ["1-16"]
+        },
+         "rarity": {
+            "c": [1,2,"5-7",9,16],
+            "u": [4,10,13,15],
+            "r": [3,11,14],
+            "sr": [8,12],
         }
     },
     // Booster Versus Royal Knights [BT13] - Ace Box Topper --- bt13_aceboxtopper
