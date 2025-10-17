@@ -1470,6 +1470,13 @@ const data2023 = [
             "purple": ["28-31"],
             "white": [35],
         },
+        "rarity": {
+            "c": ["1-3",8,12,13,17,21,22,26],
+            "u": [5,9,11,14,20,24,29],
+            "r": [4,6,7,15,18,23,28,30,"32-35"],
+            "sr": [10,16,19,25,27,31,],
+            "sec": [36],
+        }
     },
     // Resurgence Booster [RB01] - Alternatives --- rb1_alts
     {
@@ -1592,6 +1599,49 @@ const data2023 = [
             "P-047": "P2",
             "P-048": "P2",
         },
+        "rarities": {
+            "P": {
+                "sr": ["35-40"],
+                "p": [7,8,"11-13",16,17,28,32,47,48]
+            },
+            "ST1": "u",
+            "ST2": "u",
+            "ST3": "u",
+            "ST5": "r",
+            "BT1": {
+                "u": [67],
+                "r": [3,6,7,10,48,85,87,89],
+                "sr": [60],
+                "sec": [114]
+            },
+            "BT2": {
+                "c": [55,69],
+                "u": [34,70,74],
+                "r": [6,38,90],
+                "sr": [32,41],
+                "sec": [112]
+            },
+            "BT3": {
+                "c": [54,61],
+                "u": [2,3,6,46,97,103],
+                "r": [21,39,88],
+                "sr": [75,91]
+            },
+            "BT4": {
+                "c": [79,111],
+                "u": [6,11,25],
+                "r": [96,97,104],
+                "sr": [17,62],
+                "sec": [115]
+            },
+            "BT5": {
+                "c": [21,50,105],
+                "u": [1,65],
+                "r": [88,92],
+                "sr": [86,87],
+                "sec": [111,112]
+            }
+        },
         "reprint": true,
     },
     // Resurgence Booster [RB01] - English Reprints --- rb1_en_reprints
@@ -1608,11 +1658,26 @@ const data2023 = [
             "P-062": "_P1",
             "P-063": "_P1",
             "P-064": "_P1",
+        },
+        "rarities": {
+            "P": "p",
+            "ST2": "c",
+            "ST3": "c"
+        },
+        "reprint": true,
+    },
+    {
+        "id": null,
+        "slug": "rb1_en_reprints",
+        "name": "Resurgence Booster [RB01] - English Reprints",
+        "release": "September 29, 2023",
+        "url": "bandaitcgplusURL/RB01/e_setID_cardID.png",
+        "cards": {
             "P-088": "",
             "P-089": "",
             "P-090": "",
         },
-        "reprint": true,
+        "rarity": "p",
     },
 
     // Adventure Box 2 [AB02] --- ab02
