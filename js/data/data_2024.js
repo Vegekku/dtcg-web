@@ -34,6 +34,13 @@ const data2024 = [
                 "EX5-045": ""
             }
         },
+        "rarity": {
+            "c": ["9-11",19,21,22,27,29,30,35,37,38,40,44,"50-52",56,57,66,67,71],
+            "u": ["1-6",7,12,16,18,20,28,31,39,"46-48",58,59,72],
+            "r": [8,13,15,17,23,24,32,36,41,45,49,53,60,61,64,65,68,69],
+            "sr": [14,25,26,33,34,42,43,54,55,62,63,70],
+            "sec": [73,74],
+        }
     },
     // Booster Animal Colusseum [EX5] - Alternatives --- ex5_alts
     {
@@ -80,6 +87,7 @@ const data2024 = [
             "EX5-005": "P1",
             "EX5-006": "P1",
         },
+        "rarity": "u",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/25/Box_Promotion_Pack_Animal_Colosseum-EN.png"
     },
     // Booster Animal Colusseum [EX5] - Limited Card Set ver.2 --- ex5_limited_2
@@ -97,6 +105,7 @@ const data2024 = [
             "P-101": "d",
             "P-102": "d",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/f8/Limited_Card_Set_Ver_2.png"
     },
     // Booster Animal Colusseum [EX5] - 3rd Anniversary Update Pack --- ex5_update_pack_3
@@ -114,6 +123,7 @@ const data2024 = [
             "P-095": "d",
             "P-096": "d",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c9/3rd_Anniversary_Update_Pack-EN.png"
     },
 
@@ -128,6 +138,7 @@ const data2024 = [
         "cards": {
             "P-109": "P1",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/bcgfest_23-24/"
     },
     // Digimon Liberator Promotion Pack --- liberator_pack
@@ -146,6 +157,7 @@ const data2024 = [
             "P-135": "",
             "P-136": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/bcgfest_23-24/"
     },
     // Digimon Illustration Competition Pack 2023 --- ilustration_pack_2023
@@ -251,6 +263,13 @@ const data2024 = [
             "purple-red": [71,75],
             "white": [102],
         },
+        "rarity": {
+            "c": ["8-11",15,19,"22-24",27,28,33,35,36,40,41,"44-48",50,51,58,59,62,"68-73",75,77,89,90,93,94,97,99],
+            "u": ["1-6",12,13,16,18,21,25,29,30,39,39,55,60,61,65,74,78,88,91,92,95,98],
+            "r": [17,31,32,34,42,"52-54",57,63,66,67,79,80,"82-87",96,100],
+            "sr": [7,14,20,26,37,38,43,49,56,64,76,81,],
+            "sec": [101,102],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver15.php"
     },
     // Booster Exceed Apocalypse [BT15] - Alternatives --- bt15_alts
@@ -300,6 +319,7 @@ const data2024 = [
             "BT15-038": "",
             "BT15-049": "",
         },
+        "rarity": "sp"
     },
     // Booster Exceed Apocalypse [BT15] - Box Topper --- bt15_boxtopper
     {
@@ -346,6 +366,14 @@ const data2024 = [
             "purple-blue": [56],
             "white": [19]
         },
+        "rarity": {
+            "c": [6,7,10,14,15,18],
+            "u": ["2-4",8,9,11,12,19],
+            "r": [16],
+            "sr": [1,5,13,17],
+            "sec": [20],
+            "p": ["21-44"]
+        },
     },
     // Limited Pack Digimon Ghost Game [LM01] --- lm01
     {
@@ -375,6 +403,13 @@ const data2024 = [
             "LM-018": "",
             "LM-019": "",
             "LM-020": "",
+        },
+        "rarity": {
+            "c": [6,7,10,14,15,18],
+            "u": ["2-4",8,9,11,12,19],
+            "r": [16],
+            "sr": [1,5,13,17],
+            "sec": [20],
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver15.php"
     },
