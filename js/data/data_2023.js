@@ -1913,6 +1913,13 @@ const data2023 = [
             "purple": [6,"69-81",87,99,100],
             "white": [88],
         },
+        "rarity": {
+            "c": ["8-11",15,16,19,21,22,24,25,27,31,32,35,42,43,45,47,"50-52",55,57,59,61,62,65,69,70,"72-74",77,89,92,94,95,98,100],
+            "u": ["1-6",13,17,28,30,34,36,40,46,54,60,63,67,78,80,90,91,93,96,97,99],
+            "r": [12,18,23,29,38,39,41,48,53,58,64,66,75,76,79,"82-88"],
+            "sr": [7,14,20,26,33,37,44,49,56,68,71,81],
+            "sec": [101,102],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver14.php"
     },
     // Booster Blast Ace [BT14] - Alternatives --- bt14_alts
@@ -2001,6 +2008,7 @@ const data2023 = [
             "P-107": "",
             "P-108": "",
         },
+        "rarity": "p"
     },
     // Booster Blast Ace [BT14] - Survey Pack --- bt14_survey_pack
     {
@@ -2017,6 +2025,7 @@ const data2023 = [
             "P-114": "",
             "P-115": "",
         },
+        "rarity": "p"
     },
     // Demo Deck: Imperialdramon --- demo_deck_imperialdramon
     {
@@ -2043,6 +2052,11 @@ const data2023 = [
             "P-124": "4/40/P-124_P1",
             "P-130": "4/48/P-130_P1",
         },
+        "rarities": {
+            "P": {
+                "p": [109,117,123,124,130]
+            }
+        }
     },
 
     // 3 on 3 Battle - Participation Prize --- 3on3_battle_participation
@@ -2101,6 +2115,11 @@ const data2023 = [
             "P-065": "P1",
             "P-116": "P1",
         },
+        "rarities": {
+            "P": {
+                "p": [116]
+            }
+        },
         "info_url": "https://world.digimoncard.com/event/store_tournament_11/",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d5/Official_Tournament_Pack_Vol.11.png"
     },
@@ -2144,6 +2163,9 @@ const data2023 = [
             "P-128": "",
             "P-129": "",
             "P-130": "",
+        },
+        "rarity": {
+            "p": [118,119,120,121,122,123,125,126,127,128,129,130]
         },
         "info_url": "https://world.digimoncard.com/event/tamer_party_sp/",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b6/Tamer_Party_Pack_The_Beginning_Ver_2.png"
