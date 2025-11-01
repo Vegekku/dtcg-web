@@ -1691,6 +1691,13 @@ const data2025 = [
             "purple-black": [45,50,51,55,59,64,74],
             "white": [61,68,72]
         },
+        "rarity": {
+            "c": ["1-5",7,14,16,21,25,28,29,32,"39-41",43,44,46,50,70,72],
+            "u": [6,15,24,26,27,30,31,37,42,45,47,49,51,62,63,"65-67",69,71],
+            "r": [8,12,13,17,18,20,"33-35",38,48,52,"54-58",64],
+            "sr": ["9-11",19,22,23,36,53,"59-61",68],
+            'sec': [73,74]
+        },
         "override": {
             "url": "bandaitcgplusURL/EX10/setID-cardID_D.png",
             "cards": {
@@ -1798,6 +1805,7 @@ const data2025 = [
             "EX10-060": "SP",
             "EX10-061": "SP",
         },
+        "rarity": 'sp',
         "info_url": "https://world.digimoncard.com/products/pack/ex-10/",
     },
     // Extra Booster Sinister Order [EX10] - Legend Pack --- ex10_legend_pack
@@ -2135,6 +2143,13 @@ const data2025 = [
             "purple": [4,"61-71",87,88,97,98],
             "white": ["72-77",89,90,99,100]
         },
+        "rarity": {
+            "c": ["1-5",7,"9-12",19,23,26,27,29,30,"38-40","42-44",49,50,52,53,56,"61-64",73,"91-96",98,100],
+            "u": [8,15,17,18,20,21,25,28,31,34,36,37,41,46,48,51,60,65,67,74,78,80,82,86,88,99],
+            "r": [6,14,16,22,32,33,35,54,55,"57-59",66,69,72,"75-77",79,83,87,97],
+            "sr": [13,24,45,47,68,70,71,81,84,85,89,90],
+            "sec": [101,102],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver23/"
     },
     // Booster Hackers' Slumber [BT-23] - Alternatives --- bt23_alts
@@ -2182,6 +2197,7 @@ const data2025 = [
             "BT23-089": "",
             "BT23-090": "",
         },
+        "rarity": "sp",
         "info_url": "https://world.digimoncard.com/products/pack/ver21/"
     },
     // Booster Hackers' Slumber [BT-23] - Box Promotion Pack --- bt23_boxtopper
@@ -2204,6 +2220,12 @@ const data2025 = [
             "P-210": "_D",
             "P-211": "_D",
             "P-212": "_D",
+        },
+        "rarities": {
+            // "BT23": {
+            //     "t": ["token"]
+            // },
+            "P": "p"
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver22/",
     },
