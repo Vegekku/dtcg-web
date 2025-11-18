@@ -2226,6 +2226,44 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/products/pack/ver22/",
     },
 
+// December 1, 2025 – January 31, 2026
+    // Evolution Cup 2025 Vol. 3 Participation --- evolution_cup_2025_3_participant
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_3_participant",
+        "name": "Evolution Cup 2025 Vol. 3 Participation",
+        "release": "December 1, 2025 – January 31, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT22-026": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/03/",
+    },
+    // Evolution Cup 2025 Vol. 3 Top 4 --- evolution_cup_2025_3_top4
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_3_top4",
+        "name": "Evolution Cup 2025 Vol. 3 Top 4",
+        "release": "December 1, 2025 – January 31, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT22-013": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/03/",
+    },
+    // Evolution Cup 2025 Vol. 3 Winner --- evolution_cup_2025_3_winner
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_3_winner",
+        "name": "Evolution Cup 2025 Vol. 3 Winner",
+        "release": "December 1, 2025 – January 31, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT5-092": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/03/",
+    },
+
 // December 5, 2025
     // Advanced Deck Amethyst Mandala [ST-22] --- st22
     {
