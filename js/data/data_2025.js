@@ -2022,7 +2022,7 @@ const data2025 = [
         "slug": "rb_3",
         "name": "Regulation Battle Vol.3",
         "release": "October 1 – November 30, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT21-002": "",
             "BT7-058": "",
