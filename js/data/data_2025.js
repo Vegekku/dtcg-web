@@ -1842,7 +1842,7 @@ const data2025 = [
         "slug": "bcgfest_25_26",
         "name": "BANDAI CARD GAMES Fest 25-26",
         "release": "September 20, 2025 - 2026",
-        "url": "https://world.digimoncard.com/images/event/bcgfest_25-26/dallas/P-206.png",
+        "url": "bandaitcgplusURL/P/setID-cardIDCF_D.png",
         "cards": {
             "P-206": "",
         },
