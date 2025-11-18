@@ -1600,7 +1600,7 @@ const data2025 = [
         "slug": "ultimatecup_2025_2",
         "name": "Ultimate Cup 25-26 Season 2",
         "release": "August - September, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_D.png",
         "cards": {
             "BT21-063": "",
             "BT21-066": "",
