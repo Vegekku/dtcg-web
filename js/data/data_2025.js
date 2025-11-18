@@ -1875,7 +1875,7 @@ const data2025 = [
         "slug": "championship_2526_finals_1_tamers",
         "name": "Championship 25-26 Finals Season 1 Tamers Pack/Set",
         "release": "September 20-21, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDCS_D.png",
         "cards": {
             "BT5-107": "",
             "BT8-097": "",
