@@ -1854,7 +1854,7 @@ const data2025 = [
         "slug": "premium_training",
         "name": "PREMIUM CARD COLLECTION Digimon Training Set",
         "release": "September 20, 2025 - 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_D.png",
         "cards": {
             "P-103": "",
             "P-104": "",
