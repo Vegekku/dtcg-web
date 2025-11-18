@@ -2233,19 +2233,18 @@ const data2025 = [
         "slug": "st22",
         "name": "Advanced Deck Amethyst Mandala [ST-22]",
         "release": "December 5, 2025",
-        "total": 1,
+        "total": 14,
         "url": "noCardURL",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-22/",
         "color": {
-            // "blue": ["2-4"],
-            // "blue-green": [12],
-            // "yellow": [5,6],
-            // "green": ["7-9"],
-            // "purple": [1,10,14],
-            // "purple-blue": [11],
-            // "purple-yellow": [13],
-            // "white": [15]
+            "red": [8],
+            "red-blue": [12],
+            "blue": [9],
+            "yellow": ["1-7",10],
+            "green": [13],
+            "black": [11],
+            "purple": [14],
         }
     },
 ];
