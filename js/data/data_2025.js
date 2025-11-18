@@ -2091,7 +2091,7 @@ const data2025 = [
         "slug": "digimon_time_stranger",
         "name": "Digimon Story Time Stranger - Collector's Edition",
         "release": "October 3, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_D.png",
         "cards": {
             "EX5-007": "",
             "EX5-016": "",
