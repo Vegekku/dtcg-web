@@ -372,7 +372,7 @@ const data2024 = [
             "r": [16],
             "sr": [1,5,13,17],
             "sec": [20],
-            "p": ["21-44"]
+            "p": ["21-56"]
         },
     },
     // Limited Pack Digimon Ghost Game [LM01] --- lm01
