@@ -1482,7 +1482,7 @@ const data2025 = [
         "slug": "regional2025_2_0",
         "name": "2025 Regionals Participation Card Set Season 2",
         "release": "August - September, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_Parti_D.png",
         "cards": {
             "BT14-006": "",
             "BT17-097": "",
@@ -1492,6 +1492,12 @@ const data2025 = [
             "EX8-051": "",
             "ST10-14": "",
         },
+        "override": {
+            "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+            "cards": {
+                "BT14-006": ""
+            }
+        },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
     },
     // 2025 Regionals Finalist Card Set Season 2 --- regional2025_2_1
@@ -1500,7 +1506,7 @@ const data2025 = [
         "slug": "regional2025_2_1",
         "name": "2025 Regionals Finalist Card Set Season 2",
         "release": "August - September, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_Fina_D.png",
         "cards": {
             "BT17-097": "",
             "BT20-052": "",
@@ -1510,6 +1516,12 @@ const data2025 = [
             "EX8-051": "",
             "ST10-14": "",
         },
+        "override": {
+            "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+            "cards": {
+                "BT20-064": ""
+            }
+        },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
     },
     // 2025 Regionals Champion Card Set Season 2 --- regional2025_2_2
@@ -1518,7 +1530,7 @@ const data2025 = [
         "slug": "regional2025_2_2",
         "name": "2025 Regionals Champion Card Set Season 2",
         "release": "August - September, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_camp_D.png",
         "cards": {
             "BT17-097": "",
             "BT20-052": "",
@@ -1527,6 +1539,12 @@ const data2025 = [
             "BT20-075": "",
             "EX8-051": "",
             "ST10-14": "",
+        },
+        "override": {
+            "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+            "cards": {
+                "BT20-070": ""
+            }
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
     },
@@ -1559,7 +1577,7 @@ const data2025 = [
         "slug": "judgepack8",
         "name": "Judge Pack 2025 Wave 2",
         "release": "August - September, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardIDjp_D.png",
         "cards": {
             "BT22-008": "",
             "BT22-010": "",
@@ -1582,7 +1600,7 @@ const data2025 = [
         "slug": "ultimatecup_2025_2",
         "name": "Ultimate Cup 25-26 Season 2",
         "release": "August - September, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_D.png",
         "cards": {
             "BT21-063": "",
             "BT21-066": "",
@@ -1832,7 +1850,7 @@ const data2025 = [
         "slug": "bcgfest_25_26",
         "name": "BANDAI CARD GAMES Fest 25-26",
         "release": "September 20, 2025 - 2026",
-        "url": "https://world.digimoncard.com/images/event/bcgfest_25-26/dallas/P-206.png",
+        "url": "bandaitcgplusURL/P/setID-cardIDCF_D.png",
         "cards": {
             "P-206": "",
         },
@@ -1844,7 +1862,7 @@ const data2025 = [
         "slug": "premium_training",
         "name": "PREMIUM CARD COLLECTION Digimon Training Set",
         "release": "September 20, 2025 - 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_D.png",
         "cards": {
             "P-103": "",
             "P-104": "",
@@ -1865,7 +1883,7 @@ const data2025 = [
         "slug": "championship_2526_finals_1_tamers",
         "name": "Championship 25-26 Finals Season 1 Tamers Pack/Set",
         "release": "September 20-21, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDCS_D.png",
         "cards": {
             "BT5-107": "",
             "BT8-097": "",
@@ -1882,7 +1900,7 @@ const data2025 = [
         "slug": "championship_2526_finals_1_top32",
         "name": "Championship 25-26 Finals Season 1 - Top 32",
         "release": "September 20-21, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT20-034": "",
         },
@@ -1894,7 +1912,7 @@ const data2025 = [
         "slug": "championship_2526_finals_1_top16",
         "name": "Championship 25-26 Finals Season 1 - Top 16",
         "release": "September 20-21, 2025",
-        "url": "noCardURL",
+        "url": "https://world.digimoncard.com/images/event/2025/championship/finals-season2/popup/img_trophy04.png",
         "cards": {
             "BT17-040": "",
         },
@@ -1906,7 +1924,7 @@ const data2025 = [
         "slug": "championship_2526_finals_1_3rd",
         "name": "Championship 25-26 Finals Season 1 - 3rd Place",
         "release": "September 20-21, 2025",
-        "url": "noCardURL",
+        "url": "https://world.digimoncard.com/images/event/2025/championship/finals-season2/popup/img_trophy03.png",
         "cards": {
             "BT17-040": "",
         },
@@ -1918,7 +1936,7 @@ const data2025 = [
         "slug": "championship_2526_finals_1_2nd",
         "name": "Championship 25-26 Finals Season 1 - 2nd Place",
         "release": "September 20-21, 2025",
-        "url": "noCardURL",
+        "url": "https://world.digimoncard.com/images/event/2025/championship/finals-season2/popup/img_trophy02.png",
         "cards": {
             "BT17-040": "",
         },
@@ -1930,7 +1948,7 @@ const data2025 = [
         "slug": "championship_2526_finals_1_1st",
         "name": "Championship 25-26 Finals Season 1 - 1st Place",
         "release": "September 20-21, 2025",
-        "url": "noCardURL",
+        "url": "https://world.digimoncard.com/images/event/2025/championship/finals-season2/popup/img_trophy01.png",
         "cards": {
             "BT17-040": "",
         },
@@ -2012,7 +2030,7 @@ const data2025 = [
         "slug": "rb_3",
         "name": "Regulation Battle Vol.3",
         "release": "October 1 – November 30, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT21-002": "",
             "BT7-058": "",
@@ -2027,7 +2045,7 @@ const data2025 = [
         "slug": "otp19",
         "name": "Official Store Tournament 2025 Vol.4 - Participation Pack",
         "release": "October 1 – December 31, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_D.png",
         "cards": {
             "P-201": "",
             "P-202": "",
@@ -2044,7 +2062,7 @@ const data2025 = [
         "slug": "wp19",
         "name": "Official Store Tournament 2025 Vol.4 - Winner Pack",
         "release": "October 1 – December 31, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardIDP_D.png",
         "cards": {
             "P-201": "",
             "P-202": "",
@@ -2081,7 +2099,7 @@ const data2025 = [
         "slug": "digimon_time_stranger",
         "name": "Digimon Story Time Stranger - Collector's Edition",
         "release": "October 3, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_D.png",
         "cards": {
             "EX5-007": "",
             "EX5-016": "",
@@ -2098,9 +2116,9 @@ const data2025 = [
         "slug": "bt23_prerelease",
         "name": "HACKERS’ SLUMBER [BT-23] Release Event",
         "release": "October 17 - 23, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel_D.png",
         "cards": {
-            "BT16-013": ["PR_D","PR2_D"], // no foil y foil
+            "BT16-013": ["","P"], // no foil y foil
         },
         "info_url": "https://world.digimoncard.com/event/2025/release-event/05/"
     },
@@ -2230,6 +2248,44 @@ const data2025 = [
         "info_url": "https://world.digimoncard.com/products/pack/ver22/",
     },
 
+// December 1, 2025 – January 31, 2026
+    // Evolution Cup 2025 Vol. 3 Participation --- evolution_cup_2025_3_participant
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_3_participant",
+        "name": "Evolution Cup 2025 Vol. 3 Participation",
+        "release": "December 1, 2025 – January 31, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT22-026": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/03/",
+    },
+    // Evolution Cup 2025 Vol. 3 Top 4 --- evolution_cup_2025_3_top4
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_3_top4",
+        "name": "Evolution Cup 2025 Vol. 3 Top 4",
+        "release": "December 1, 2025 – January 31, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT22-013": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/03/",
+    },
+    // Evolution Cup 2025 Vol. 3 Winner --- evolution_cup_2025_3_winner
+    {
+        "id": null,
+        "slug": "evolution_cup_2025_3_winner",
+        "name": "Evolution Cup 2025 Vol. 3 Winner",
+        "release": "December 1, 2025 – January 31, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT5-092": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/03/",
+    },
+
 // December 5, 2025
     // Advanced Deck Amethyst Mandala [ST-22] --- st22
     {
@@ -2237,19 +2293,33 @@ const data2025 = [
         "slug": "st22",
         "name": "Advanced Deck Amethyst Mandala [ST-22]",
         "release": "December 5, 2025",
-        "total": 1,
+        "total": 14,
         "url": "noCardURL",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-22/",
         "color": {
-            // "blue": ["2-4"],
-            // "blue-green": [12],
-            // "yellow": [5,6],
-            // "green": ["7-9"],
-            // "purple": [1,10,14],
-            // "purple-blue": [11],
-            // "purple-yellow": [13],
-            // "white": [15]
+            "red": [8],
+            "red-blue": [12],
+            "blue": [9],
+            "yellow": ["1-7",10],
+            "green": [13],
+            "black": [11],
+            "purple": [14],
         }
+    },
+
+// December 13, 2025
+    // Playmat & Card Set Paildramon & Dinobeemon --- bcgfest_25_26_playmat
+    {
+        "id": null,
+        "slug": "bcgfest_25_26_playmat",
+        "name": "Playmat & Card Set Paildramon & Dinobeemon",
+        "release": "December 13, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT20-016": "",
+            "BT20-074": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver21/"
     },
 ];
