@@ -2247,4 +2247,19 @@ const data2025 = [
             "purple": [14],
         }
     },
+
+// December 13, 2025
+    // Playmat & Card Set Paildramon & Dinobeemon --- bcgfest_25_26_playmat
+    {
+        "id": null,
+        "slug": "bcgfest_25_26_playmat",
+        "name": "Playmat & Card Set Paildramon & Dinobeemon",
+        "release": "December 13, 2025",
+        "url": "noCardURL",
+        "cards": {
+            "BT20-016": "",
+            "BT20-074": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver21/"
+    },
 ];
