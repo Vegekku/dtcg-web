@@ -1892,7 +1892,7 @@ const data2025 = [
         "slug": "championship_2526_finals_1_top32",
         "name": "Championship 25-26 Finals Season 1 - Top 32",
         "release": "September 20-21, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT20-034": "",
         },
@@ -1904,7 +1904,7 @@ const data2025 = [
         "slug": "championship_2526_finals_1_top16",
         "name": "Championship 25-26 Finals Season 1 - Top 16",
         "release": "September 20-21, 2025",
-        "url": "noCardURL",
+        "url": "https://world.digimoncard.com/images/event/2025/championship/finals-season2/popup/img_trophy04.png",
         "cards": {
             "BT17-040": "",
         },
@@ -1916,7 +1916,7 @@ const data2025 = [
         "slug": "championship_2526_finals_1_3rd",
         "name": "Championship 25-26 Finals Season 1 - 3rd Place",
         "release": "September 20-21, 2025",
-        "url": "noCardURL",
+        "url": "https://world.digimoncard.com/images/event/2025/championship/finals-season2/popup/img_trophy03.png",
         "cards": {
             "BT17-040": "",
         },
@@ -1928,7 +1928,7 @@ const data2025 = [
         "slug": "championship_2526_finals_1_2nd",
         "name": "Championship 25-26 Finals Season 1 - 2nd Place",
         "release": "September 20-21, 2025",
-        "url": "noCardURL",
+        "url": "https://world.digimoncard.com/images/event/2025/championship/finals-season2/popup/img_trophy02.png",
         "cards": {
             "BT17-040": "",
         },
@@ -1940,7 +1940,7 @@ const data2025 = [
         "slug": "championship_2526_finals_1_1st",
         "name": "Championship 25-26 Finals Season 1 - 1st Place",
         "release": "September 20-21, 2025",
-        "url": "noCardURL",
+        "url": "https://world.digimoncard.com/images/event/2025/championship/finals-season2/popup/img_trophy01.png",
         "cards": {
             "BT17-040": "",
         },
