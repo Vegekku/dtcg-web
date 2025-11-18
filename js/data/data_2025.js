@@ -1577,7 +1577,7 @@ const data2025 = [
         "slug": "judgepack8",
         "name": "Judge Pack 2025 Wave 2",
         "release": "August - September, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardIDjp_D.png",
         "cards": {
             "BT22-008": "",
             "BT22-010": "",
