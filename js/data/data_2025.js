@@ -1482,7 +1482,7 @@ const data2025 = [
         "slug": "regional2025_2_0",
         "name": "2025 Regionals Participation Card Set Season 2",
         "release": "August - September, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_Parti_D.png",
         "cards": {
             "BT14-006": "",
             "BT17-097": "",
@@ -1492,6 +1492,12 @@ const data2025 = [
             "EX8-051": "",
             "ST10-14": "",
         },
+        "override": {
+            "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+            "cards": {
+                "BT14-006": ""
+            }
+        },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
     },
     // 2025 Regionals Finalist Card Set Season 2 --- regional2025_2_1
@@ -1500,7 +1506,7 @@ const data2025 = [
         "slug": "regional2025_2_1",
         "name": "2025 Regionals Finalist Card Set Season 2",
         "release": "August - September, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_Fina_D.png",
         "cards": {
             "BT17-097": "",
             "BT20-052": "",
@@ -1510,6 +1516,12 @@ const data2025 = [
             "EX8-051": "",
             "ST10-14": "",
         },
+        "override": {
+            "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+            "cards": {
+                "BT20-064": ""
+            }
+        },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
     },
     // 2025 Regionals Champion Card Set Season 2 --- regional2025_2_2
@@ -1518,7 +1530,7 @@ const data2025 = [
         "slug": "regional2025_2_2",
         "name": "2025 Regionals Champion Card Set Season 2",
         "release": "August - September, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/Same_setID-cardID_camp_D.png",
         "cards": {
             "BT17-097": "",
             "BT20-052": "",
@@ -1527,6 +1539,12 @@ const data2025 = [
             "BT20-075": "",
             "EX8-051": "",
             "ST10-14": "",
+        },
+        "override": {
+            "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+            "cards": {
+                "BT20-070": ""
+            }
         },
         "info_url": "https://world.digimoncard.com/event/2025/regionals/season2/"
     },
