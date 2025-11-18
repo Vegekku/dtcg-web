@@ -2108,9 +2108,9 @@ const data2025 = [
         "slug": "bt23_prerelease",
         "name": "HACKERS’ SLUMBER [BT-23] Release Event",
         "release": "October 17 - 23, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel_D.png",
         "cards": {
-            "BT16-013": ["PR_D","PR2_D"], // no foil y foil
+            "BT16-013": ["","P"], // no foil y foil
         },
         "info_url": "https://world.digimoncard.com/event/2025/release-event/05/"
     },
