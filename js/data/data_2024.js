@@ -630,6 +630,12 @@ const data2024 = [
                 "ST17-13": "",
             }
         },
+        "rarity": {
+            "c": [5,7],
+            "u": [1,4,12],
+            "r": ["9-11"],
+            "sr": [2,3,6,8,13]
+        }
     },
     // Advanced Deck DOUBLE TYPHOON [ST17] - Alternatives --- st17_alts
     {
@@ -947,6 +953,13 @@ const data2024 = [
             "purple-green": [67,71,79],
             "white": [82,83,90],
         },
+        "rarity": {
+            "c": ["7-9",16,"18-23",29,"32-34",37,39,42,43,49,50,"52-54","56-60",62,"67-73",94,95,98,100],
+            "u": ["1-6",10,11,17,24,31,35,38,41,44,45,47,55,61,66,75,76,78,91,92,97],
+            "r": [14,15,27,28,30,40,46,64,65,74,79,82,"84-90",93,96,99],
+            "sr": [12,13,25,26,36,48,51,63,77,80,81,83],
+            "sec": [101,102],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver16/"
     },
     // Booster Beginning Observer [BT16] - Alternatives --- bt16_alts
@@ -993,6 +1006,10 @@ const data2024 = [
             "BT16-026": "",
             "BT16-027": "",
             "BT16-046": "",
+        },
+        "rarity": {
+            "sp": [13,26,27],
+            "aa": [46]
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver16/",
     },
