@@ -1146,6 +1146,13 @@ const data2024 = [
                 "EX6-006": "",
             }
         },
+        "rarity": {
+            "c": [2,4,8,9,12,16,20,"23-25",32,36,39,40,42,"45-48",51,66,67],
+            "u": [1,3,5,7,13,17,19,22,26,33,38,41,49,50,52,53,63,64,70,71],
+            "r": [6,10,14,18,21,28,34,37,44,55,56,58,60,61,65,68,69,72],
+            "sr": [11,15,27,"29-31",35,43,54,57,59,62],
+            "sec": [73,74],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ex-06/"
     },
     // Booster Infernal Ascension [EX6] - Alternatives --- ex6_alts
@@ -1193,6 +1200,10 @@ const data2024 = [
             "EX6-029": "SP",
             "EX6-035": "SP",
             "EX6-073": "P2",
+        },
+        "rarity": {
+            "sp": [11,"27-29",35],
+            "aa": [73],
         },
         "info_url": "https://world.digimoncard.com/products/pack/ex-06/",
     },
