@@ -15,6 +15,7 @@ const data2025 = [
             "P-168": "",
             "P-169": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/2025/store_tournament/01/",
     },
     // Official Store Tournament 2025 Vol.1 - Winner Pack --- wp16
@@ -196,6 +197,7 @@ const data2025 = [
             "P-162": "",
             "P-163": ""
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/products/pack/ex-08/",
     },
 
@@ -571,6 +573,7 @@ const data2025 = [
             "P-174": "",
             "P-175": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/products/pack/ver19-20/",
     },
 
@@ -958,6 +961,7 @@ const data2025 = [
             "P-186": "",
             "P-187": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/products/pack/ver21/"
     },
     // Booster World Convergence [BT21] - Limited Card Pack --- bt21_limited
@@ -1012,6 +1016,7 @@ const data2025 = [
             "P-180": "",
             "P-181": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/2025/store_tournament/02/",
     },
     // Official Store Tournament 2025 Vol.2 - Winner Pack --- wp17
@@ -1325,6 +1330,7 @@ const data2025 = [
             "P-192": "",
             "P-193": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/2025/store_tournament/03/",
     },
     // Official Store Tournament 2025 Vol.3 - Winner Pack --- wp18
@@ -1634,6 +1640,12 @@ const data2025 = [
             "P-191": "",
             "P-194": "",
             "P-195": "",
+        },
+        "rarities": {
+            // TODO: preparar el script para en caso de rarities, pueda asignar por defecto aa sino encuentra coincidencia.
+            "P": {
+                "p": [194,195]
+            }
         },
         "info_url": "https://world.digimoncard.com/event/2025/gamescom/"
     },
@@ -2054,6 +2066,7 @@ const data2025 = [
             "P-205": "",
             "P-206": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/2025/store_tournament/04/",
     },
     // Official Store Tournament 2025 Vol.4 - Winner Pack --- wp19
@@ -2088,6 +2101,10 @@ const data2025 = [
             "P-198": "",
             "P-199": "",
             "P-200": "",
+        },
+        "rarity": {
+            "p": ["196-200"],
+            "aa": [194,195]
         },
         "info_url": "https://world.digimoncard.com/event/2025/store_tournament/04/",
     },

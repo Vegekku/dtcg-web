@@ -231,6 +231,10 @@ const data2024 = [
             "P-087": "P1",
             "BT10-008": "P1",
         },
+        "rarities": {
+            "P": "p",
+            "BT10": "aa",
+        },
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-15/"
     },
 
@@ -1099,6 +1103,7 @@ const data2024 = [
         "cards": {
             "P-156": "",
         },
+        "rarity": "p"
     },
 
 // June 28, 2024
@@ -1309,6 +1314,7 @@ const data2024 = [
             "P-150": "",
             "P-151": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/store_tournament_14/",
     },
     // Store Tournament 2024 Jul.-Sep. - Winner Pack --- wp14
@@ -1980,6 +1986,7 @@ const data2024 = [
             "P-158": "",
             "P-159": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/store_tournament_14/",
     },
     // Store Tournament 2024 Oct.-Dec. - Winner Pack --- wp15
