@@ -1417,6 +1417,13 @@ const data2024 = [
             "white": ["74-76",78,92,93,102],
             "white-blue-green": [77]
         },
+        "rarity": {
+            "c": ["9-14","20-24",26,29,"31-35",37,42,43,45,48,49,"52-56",58,"61-68",71,74],
+            "u": ["1-6",8,25,36,46,57,72,75,82,85,88,89,91,92,"94-100"],
+            "r": [7,15,16,19,27,38,39,44,47,50,59,69,70,"79-81",83,84,86,87,90,93],
+            "sr": [17,18,28,30,40,41,51,60,73,"76-78"],
+            "sec": [101,102],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver17/"
     },
     // Booster Secret Crysis [BT17] - Alternatives --- bt17_alts
@@ -1466,6 +1473,10 @@ const data2024 = [
             "BT17-101": "P2",
             "BT17-102": ["P2","P3"],
         },
+        "rarity": {
+            "sp": [18,41,77,78],
+            "aa": [101,102]
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver17/",
     },
     // Booster Secret Crysis [BT17] - Box Topper --- bt17_boxtopper
@@ -1500,6 +1511,7 @@ const data2024 = [
             "P-141": "",
             "P-142": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/products/pack/ver17/",
     },
     // Booster Secret Crysis [BT17] - Movie Memorial Pack --- bt17_movie_memorial
