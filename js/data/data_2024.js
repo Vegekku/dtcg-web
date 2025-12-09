@@ -1654,6 +1654,13 @@ const data2024 = [
                 "EX7-074": ""
             }
         },
+        "rarity": {
+            "c": [1,2,9,11,17,19,26,28,33,35,"41-45",52,53,55,56,"67-69"],
+            "u": ["3-6",8,12,15,18,20,22,25,32,38,40,46,54,57,66,70,71],
+            "r": [7,10,16,21,24,27,31,34,39,47,50,51,58,60,"63-65",72],
+            "sr": [13,14,23,29,30,36,37,48,49,59,61,62],
+            "sec": [73,74],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ex-07/"
     },
     // Booster Digimon Liberator [EX7] - Alternatives --- ex7_alts
@@ -1753,6 +1760,9 @@ const data2024 = [
             "EX7-059": "",
             "EX7-062": "",
             "EX7-073": "",
+        },
+        "rarity": {
+            "sp": [30,36,59,62]
         },
         "info_url": "https://world.digimoncard.com/products/pack/ex-07/",
     },
