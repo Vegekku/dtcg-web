@@ -2335,6 +2335,13 @@ const data2025 = [
             "green": [13],
             "black": [11],
             "purple": [14],
+        },
+        "rarity": {
+            "c": [1,3],
+            "u": [8,9,11],
+            "r": [4,7],
+            "sr": [2,5,6,10,"12-14"],
+            // TODO: tiene 2 tokens
         }
     },
     // Advanced Deck Amethyst Mandala [ST-22] - Lucky Deck --- st22_lucky
