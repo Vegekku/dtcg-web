@@ -2324,7 +2324,7 @@ const data2025 = [
         "name": "Advanced Deck Amethyst Mandala [ST-22]",
         "release": "December 5, 2025",
         "total": 14,
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/ST22/e_setID-cardID_D.png",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-22/",
         "color": {
@@ -2336,6 +2336,38 @@ const data2025 = [
             "black": [11],
             "purple": [14],
         }
+    },
+    // Advanced Deck Amethyst Mandala [ST-22] - Lucky Deck --- st22_lucky
+    {
+        "id": null,
+        "slug": "st22_lucky",
+        "name": "Advanced Deck Amethyst Mandala [ST-22] - Lucky Deck",
+        "release": "December 5, 2025",
+        "url": "bandaitcgplusURL/ST22/e_setID-cardIDP_D.png",
+        "cards": {
+            "ST22-02": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-22/"
+    },
+    // Advanced Deck Amethyst Mandala [ST-22] - reprints --- st22_reprint
+    {
+        "id": null,
+        "slug": "st22_reprint",
+        "name": "Advanced Deck Amethyst Mandala [ST-22] - reprints",
+        "release": "December 5, 2025",
+        "url": "bandaitcgplusURL/ST22/e_setID-cardID_D.png",
+        "cards": {
+            "BT17-031": "",
+            "BT17-035": "",
+            "BT19-034": "",
+            "BT19-037": "",
+            "BT19-083": "",
+            "EX2-019": "",
+            "EX8-037": "",
+            "P-105": "",
+            "LM-029": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-22/"
     },
 
 // December 13, 2025
