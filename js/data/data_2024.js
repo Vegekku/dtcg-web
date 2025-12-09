@@ -867,6 +867,9 @@ const data2024 = [
             "EX4-024": "",
             "P-147": "",
         },
+        "rarities": {
+            "P": "p"
+        },
         "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_may/",
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/da/Store_Championship_Participant_Pack_2023_Wave_2.png"
     },
@@ -885,6 +888,9 @@ const data2024 = [
             "BT13-088": "P",
             "EX4-024": "",
             "P-147": "",
+        },
+         "rarities": {
+            "P": "p"
         },
         "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_may/"
     },
@@ -1545,6 +1551,12 @@ const data2024 = [
         "color": {
             "green": [1,"3-15"],
             "green-red": [2]
+        },
+        "rarity": {
+            "c": ["1-3",6,9],
+            "u": [5,7,11,13,15],
+            "r": [4,10,14],
+            "sr": [8,12],
         }
     },
     // Starter Deck Guardian Vortex [ST18] - Reprints --- st18_reprints
@@ -1564,6 +1576,9 @@ const data2024 = [
             "P-106": "P1",
             "P-107": "P1",
             "P-108": "P1",
+        },
+        "rarity": {
+            "sr": [38]
         }
     },
     // Starter Deck Fable Waltz [ST19] --- st19
@@ -1578,6 +1593,12 @@ const data2024 = [
         "info_url": "https://world.digimoncard.com/products/deck/st18-19/",
         "color": {
             "yellow": ["1-15"]
+        },
+        "rarity": {
+            "c": [1,"4-6",9],
+            "u": [2,7,10,13,15],
+            "r": [3,11,14],
+            "sr": [8,12],
         }
     },
     // Starter Deck Fable Waltz [ST19] - Reprints --- st19_reprints
@@ -1597,6 +1618,9 @@ const data2024 = [
             "P-106": "P2",
             "P-107": "P2",
             "P-108": "P2",
+        },
+        "rarity": {
+            "sr": [37]
         }
     },
 
