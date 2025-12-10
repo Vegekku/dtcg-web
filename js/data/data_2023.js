@@ -1666,6 +1666,7 @@ const data2023 = [
         },
         "reprint": true,
     },
+    // TODO: Revise this cards in localstorage.
     {
         "id": null,
         "slug": "rb1_en_reprints",
