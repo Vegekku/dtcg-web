@@ -769,6 +769,12 @@ const data2025 = [
             "black-red": [11],
             "black-green": [13],
             "white": [15]
+        },
+        "rarity": {
+            "c": [1,3,5,7,14],
+            "u": [2,8,9,12,15],
+            "r": [4,10,13],
+            "sr": [6,11],
         }
     },
     // Starter Deck Protector of Light [ST20] - Lucky Deck --- st20_lucky
@@ -819,6 +825,12 @@ const data2025 = [
             "purple-blue": [11],
             "purple-yellow": [13],
             "white": [15]
+        },
+        "rarity": {
+            "c": [1,3,5,8,14],
+            "u": [2,4,7,12,15],
+            "r": [9,10,13],
+            "sr": [6,11],
         }
     },
     // Starter Deck Hero of Hope [ST21] - Lucky Deck --- st21_lucky
