@@ -1530,11 +1530,21 @@ const data2023 = [
             "P-062": "_P1",
             "P-063": "_P1",
             "P-064": "_P1",
+        },
+        "reprint": true,
+    },
+    // TODO: Revise this cards in localstorage.
+    {
+        "id": null,
+        "slug": "rb1_en_reprints",
+        "name": "Resurgence Booster [RB01] - English Reprints",
+        "release": "September 29, 2023",
+        "url": "bandaitcgplusURL/RB01/e_setID_cardID.png",
+        "cards": {
             "P-088": "",
             "P-089": "",
             "P-090": "",
-        },
-        "reprint": true,
+        }
     },
 
     // Adventure Box 2 [AB02] --- ab02

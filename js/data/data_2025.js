@@ -2315,6 +2315,7 @@ const data2025 = [
             "P-105": "",
             "LM-029": "",
         },
+        "reprint": true,
         "info_url": "https://world.digimoncard.com/products/deck/st-22/"
     },
 
