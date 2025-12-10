@@ -66,6 +66,13 @@ const data2025 = [
             "purple": [6,"56-61",63,71,72],
             "purple-yellow": [62,64],
         },
+        "rarity": {
+            "c": [3,8,10,12,13,15,17,19,20,30,32,34,35,38,40,41,46,48,49,56,58,70],
+            "u": [1,2,"4-7",14,21,23,25,36,42,43,50,52,59,61,68,69,71],
+            "r": [9,11,18,22,24,27,31,33,39,47,51,53,57,60,"65-67",72],
+            "sr": [16,26,28,29,37,44,45,54,55,"62-64"],
+            "sec": [73,74],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ex-08/"
     },
     // Booster Chain of Liberation [EX8] - Alternatives --- ex8_alts
@@ -165,6 +172,11 @@ const data2025 = [
             "EX8-062": "",
             "EX8-073": "",
             "EX8-074": "",
+        },
+        "rarities": {
+            "EX8": {
+                "sp": [26,44,62,74],
+            },
         },
         "info_url": "https://world.digimoncard.com/products/pack/ex-08/",
     },
