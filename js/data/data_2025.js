@@ -1214,6 +1214,13 @@ const data2025 = [
             "purple-black": [64],
             "white": [69,72,74]
         },
+        "rarity": {
+            "c": ["1-4",6,10,15,22,24,27,29,"34-36",39,40,42,"46-48",59,60],
+            "u": [5,8,9,14,16,17,23,25,26,28,37,38,"49-52",58,61,71,72],
+            "r": [7,13,20,31,32,41,44,"53-56",62,63,"65-68",70],
+            "sr": [11,12,18,19,21,30,33,43,45,57,64,69],
+            "sec": [73,74],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ex-09/"
     },
     // Booster Versus Monsters [EX9] - Alternatives --- ex9_alts
@@ -1314,6 +1321,9 @@ const data2025 = [
             "EX9-043": "SP",
             "EX9-064": "SP",
             "EX9-073": "P2",
+        },
+        "rarity": {
+            "sp": [11,18,30,43,64]
         },
         "info_url": "https://world.digimoncard.com/products/pack/ex-09/",
     },
