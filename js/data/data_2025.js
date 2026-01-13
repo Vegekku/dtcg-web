@@ -2333,4 +2333,81 @@ const data2025 = [
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver21/"
     },
+    // Championship 25-26 Finals Season 2 Tamers Pack/Set --- championship_2526_finals_2_tamers
+    {
+        "id": null,
+        "slug": "championship_2526_finals_2_tamers",
+        "name": "Championship 25-26 Finals Season 2 Tamers Pack/Set",
+        "release": "December 13-14, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDCS_D.png",
+        "cards": {
+            "BT21-025": "",
+            "BT21-036": "",
+            "BT21-060": "",
+            "EX8-030": "",
+            "EX9-032": "",
+            "ST18-04": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/finals-season2/"
+    },
+    // Championship 25-26 Finals Season 2 - Top 32 --- championship_2526_finals_2_top32
+    {
+        "id": null,
+        "slug": "championship_2526_finals_2_top32",
+        "name": "Championship 25-26 Finals Season 2 - Top 32",
+        "release": "December 13-14, 2025",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "BT20-071": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/finals-season2/"
+    },
+    // Championship 25-26 Finals Season 2 - Top 16 --- championship_2526_finals_2_top16
+    {
+        "id": null,
+        "slug": "championship_2526_finals_2_top16",
+        "name": "Championship 25-26 Finals Season 2 - Top 16",
+        "release": "December 13-14, 2025",
+        "url": "https://world.digimoncard.com/images/event/2025/championship/finals-season2/card/trophyCard_04.png",
+        "cards": {
+            "BT20-080": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/finals-season2/"
+    },
+    // Championship 25-26 Finals Season 2 - 3rd Place --- championship_2526_finals_2_3rd
+    {
+        "id": null,
+        "slug": "championship_2526_finals_2_3rd",
+        "name": "Championship 25-26 Finals Season 2 - 3rd Place",
+        "release": "December 13-14, 2025",
+        "url": "https://world.digimoncard.com/images/event/2025/championship/finals-season2/card/trophyCard_03.png",
+        "cards": {
+            "BT20-080": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/finals-season2/"
+    },
+    // Championship 25-26 Finals Season 2 - 2nd Place --- championship_2526_finals_2_2nd
+    {
+        "id": null,
+        "slug": "championship_2526_finals_2_2nd",
+        "name": "Championship 25-26 Finals Season 2 - 2nd Place",
+        "release": "December 13-14, 2025",
+        "url": "https://world.digimoncard.com/images/event/2025/championship/finals-season2/card/trophyCard_02.png",
+        "cards": {
+            "BT20-080": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/finals-season2/"
+    },
+    // Championship 25-26 Finals Season 2 - 1st Place --- championship_2526_finals_2_1st
+    {
+        "id": null,
+        "slug": "championship_2526_finals_2_1st",
+        "name": "Championship 25-26 Finals Season 2 - 1st Place",
+        "release": "December 13-14, 2025",
+        "url": "https://world.digimoncard.com/images/event/2025/championship/finals-season2/card/trophyCard_01.png",
+        "cards": {
+            "BT20-080": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/finals-season2/"
+    },
 ];
