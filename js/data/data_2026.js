@@ -31,8 +31,8 @@ const data2026 = [
         "slug": "bt24",
         "name": "Booster Time Stranger [BT-24]",
         "release": "January 23, 2026",
-        "total": 1,
-        "url": "noCardURL",
+        "total": 102,
+        "url": "bandaitcgplusURL/BT24/e_setID-cardID_D.png",
         "add_zero": 3,
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b3/BT-15-Booster_Pack-EN.png",
         "playmat": "",
@@ -56,6 +56,75 @@ const data2026 = [
         //     "purple-yellow": [62,64],
         // },
         "info_url": "https://world.digimoncard.com/products/pack/ver24/"
+    },
+    // Booster Time Stranger [BT-24] - Alternatives --- bt24_alts
+    {
+        "id": null,
+        "slug": "bt24_alts",
+        "name": "Booster Time Stranger [BT-24] - Alternatives",
+        "release": "January 23, 2026",
+        "url": "bandaitcgplusURL/BT24/e_setID-cardIDparallel.png",
+        "cards": {
+            "BT24-014": "P_D",
+            "BT24-018": "P_D",
+            "BT24-030": "P_D",
+            "BT24-031": "P_D",
+            "BT24-034": "P_D",
+            "BT24-040": "P_D",
+            "BT24-041": "P_D",
+            "BT24-051": "P_D",
+            "BT24-065": "P_D",
+            "BT24-078": "P_D",
+            "BT24-079": "P_D",
+            "BT24-081": "P_D",
+            "BT24-083": "P_D",
+            "BT24-084": "P_D",
+            "BT24-085": "P_D",
+            "BT24-086": "P_D",
+            "BT24-088": "P_D",
+            "BT24-100": "P_D",
+            "BT24-101": ["P_D","P2_D"],
+            "BT24-102": ["P_D","P2_D"],
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver24/"
+    },
+    // Booster Time Stranger [BT-24] - Special Cards --- bt24_special
+    {
+        "id": null,
+        "slug": "bt24_special",
+        "name": "Booster Time Stranger [BT-24] - Special Cards",
+        "release": "January 23, 2026",
+        "url": "bandaitcgplusURL/BT24/e_setID-cardIDSP_D.png",
+        "cards": {
+            "BT24-034": "",
+            "BT24-083": "",
+            "BT24-084": "",
+            "BT24-085": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver24/"
+    },
+    // Booster Time Stranger [BT-24] - Box Promotion Pack --- bt24_boxtopper
+    {
+        "id": null,
+        "slug": "bt24_boxtopper",
+        "name": "Booster Time Stranger [BT-24] - Box Promotion Pack",
+        "release": "January 23, 2026",
+        "url": "bandaitcgplusURL/BT24/e_setID-cardIDparallel.png",
+        "cards": {
+            "P-220": "_D",
+            "P-221": "_D",
+            "P-222": "_D",
+            "P-223": "_D",
+            "P-224": "_D",
+            "P-225": "_D",
+            "BT24-008": "P_D",
+            "BT24-020": "P_D",
+            "BT24-044": "P_D",
+            "BT24-054": "P_D",
+            "BT24-067": "P_D",
+            // https://world.digimoncard.com/images/products/pack/ver24/card/BT24_TOKEN.png
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver24/",
     },
 
 // February 2026
