@@ -24,6 +24,43 @@ const data2026 = [
         "info_url": "https://world.digimoncard.com/products/goods/tamers-evolution-box/"
     },
 
+// January 1 – March 31, 2026
+    // Official Store Tournament 2026 Vol.1 - Participation Pack --- otp20
+    {
+        "id": null,
+        "slug": "otp20",
+        "name": "Official Store Tournament 2026 Vol.1 - Participation Pack",
+        "release": "January 1 – March 31, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "P-214": "",
+            "P-215": "",
+            "P-216": "",
+            "P-217": "",
+            "P-218": "",
+            "P-219": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/store-tournament/01/",
+    },
+    // During February only participants will also receive this promo card! - P-213 Aegiochusmon
+    // Official Store Tournament 2026 Vol.1 - Winner Pack --- wp20
+    {
+        "id": null,
+        "slug": "wp20",
+        "name": "Official Store Tournament 2026 Vol.1 - Winner Pack",
+        "release": "January 1 – March 31, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDP_D.png",
+        "cards": {
+            "P-214": "",
+            "P-215": "",
+            "P-216": "",
+            "P-217": "",
+            "P-218": "",
+            "P-219": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/store-tournament/01/",
+    },
+
 // January 23, 2026
     // Booster Time Stranger [BT-24] --- bt24
     {
