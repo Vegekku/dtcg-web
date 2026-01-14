@@ -76,6 +76,20 @@ const data2026 = [
         "info_url": "https://world.digimoncard.com/event/2025/regulation_battle-03/",
     },
 
+// January 16 - 22, 2026
+    // TIME STRANGER [BT-24] Release Event --- bt24_prerelease
+    {
+        "id": null,
+        "slug": "bt24_prerelease",
+        "name": "TIME STRANGER [BT-24] Release Event",
+        "release": "January 16 - 22, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel_D.png",
+        "cards": {
+            "ST17-06": ["","P"], // no foil y foil
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/release-event/01/"
+    },
+
 // January 23, 2026
     // Booster Time Stranger [BT-24] --- bt24
     {
