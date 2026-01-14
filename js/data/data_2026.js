@@ -61,6 +61,21 @@ const data2026 = [
         "info_url": "https://world.digimoncard.com/event/2026/store-tournament/01/",
     },
 
+// January 1 – February 28, 2026
+    // Regulation Battle Vol.4 --- rb_4
+    {
+        "id": null,
+        "slug": "rb_4",
+        "name": "Regulation Battle Vol.4",
+        "release": "January 1 – February 28, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "BT22-069": "",
+            "EX7-021": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regulation_battle-03/",
+    },
+
 // January 23, 2026
     // Booster Time Stranger [BT-24] --- bt24
     {
