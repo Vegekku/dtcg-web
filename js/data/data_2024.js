@@ -34,6 +34,13 @@ const data2024 = [
                 "EX5-045": ""
             }
         },
+        "rarity": {
+            "c": ["9-11",19,21,22,27,29,30,35,37,38,40,44,"50-52",56,57,66,67,71],
+            "u": ["1-6",7,12,16,18,20,28,31,39,"46-48",58,59,72],
+            "r": [8,13,15,17,23,24,32,36,41,45,49,53,60,61,64,65,68,69],
+            "sr": [14,25,26,33,34,42,43,54,55,62,63,70],
+            "sec": [73,74],
+        }
     },
     // Booster Animal Colusseum [EX5] - Alternatives --- ex5_alts
     {
@@ -80,6 +87,7 @@ const data2024 = [
             "EX5-005": "P1",
             "EX5-006": "P1",
         },
+        "rarity": "u",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/2/25/Box_Promotion_Pack_Animal_Colosseum-EN.png"
     },
     // Booster Animal Colusseum [EX5] - Limited Card Set ver.2 --- ex5_limited_2
@@ -97,6 +105,7 @@ const data2024 = [
             "P-101": "d",
             "P-102": "d",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/f8/Limited_Card_Set_Ver_2.png"
     },
     // Booster Animal Colusseum [EX5] - 3rd Anniversary Update Pack --- ex5_update_pack_3
@@ -114,6 +123,7 @@ const data2024 = [
             "P-095": "d",
             "P-096": "d",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c9/3rd_Anniversary_Update_Pack-EN.png"
     },
 
@@ -128,6 +138,7 @@ const data2024 = [
         "cards": {
             "P-109": "P1",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/bcgfest_23-24/"
     },
     // Digimon Liberator Promotion Pack --- liberator_pack
@@ -146,6 +157,7 @@ const data2024 = [
             "P-135": "",
             "P-136": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/bcgfest_23-24/"
     },
     // Digimon Illustration Competition Pack 2023 --- ilustration_pack_2023
@@ -219,6 +231,10 @@ const data2024 = [
             "P-087": "P1",
             "BT10-008": "P1",
         },
+        "rarities": {
+            "P": "p",
+            "BT10": "aa",
+        },
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-15/"
     },
 
@@ -250,6 +266,13 @@ const data2024 = [
             "purple": [6,"68-70","72-74","76-81","98-100"],
             "purple-red": [71,75],
             "white": [102],
+        },
+        "rarity": {
+            "c": ["8-11",15,19,"22-24",27,28,33,35,36,40,41,"44-48",50,51,58,59,62,"68-73",75,77,89,90,93,94,97,99],
+            "u": ["1-6",12,13,16,18,21,25,29,30,39,39,55,60,61,65,74,78,88,91,92,95,98],
+            "r": [17,31,32,34,42,"52-54",57,63,66,67,79,80,"82-87",96,100],
+            "sr": [7,14,20,26,37,38,43,49,56,64,76,81,],
+            "sec": [101,102],
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver15.php"
     },
@@ -300,6 +323,7 @@ const data2024 = [
             "BT15-038": "",
             "BT15-049": "",
         },
+        "rarity": "sp"
     },
     // Booster Exceed Apocalypse [BT15] - Box Topper --- bt15_boxtopper
     {
@@ -346,6 +370,14 @@ const data2024 = [
             "purple-blue": [56],
             "white": [19]
         },
+        "rarity": {
+            "c": [6,7,10,14,15,18],
+            "u": ["2-4",8,9,11,12,19],
+            "r": [16],
+            "sr": [1,5,13,17],
+            "sec": [20],
+            "p": ["21-56"]
+        },
     },
     // Limited Pack Digimon Ghost Game [LM01] --- lm01
     {
@@ -375,6 +407,13 @@ const data2024 = [
             "LM-018": "",
             "LM-019": "",
             "LM-020": "",
+        },
+        "rarity": {
+            "c": [6,7,10,14,15,18],
+            "u": ["2-4",8,9,11,12,19],
+            "r": [16],
+            "sr": [1,5,13,17],
+            "sec": [20],
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver15.php"
     },
@@ -595,6 +634,12 @@ const data2024 = [
                 "ST17-13": "",
             }
         },
+        "rarity": {
+            "c": [5,7],
+            "u": [1,4,12],
+            "r": ["9-11"],
+            "sr": [2,3,6,8,13]
+        }
     },
     // Advanced Deck DOUBLE TYPHOON [ST17] - Alternatives --- st17_alts
     {
@@ -822,6 +867,9 @@ const data2024 = [
             "EX4-024": "",
             "P-147": "",
         },
+        "rarities": {
+            "P": "p"
+        },
         "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_may/",
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/da/Store_Championship_Participant_Pack_2023_Wave_2.png"
     },
@@ -840,6 +888,9 @@ const data2024 = [
             "BT13-088": "P",
             "EX4-024": "",
             "P-147": "",
+        },
+         "rarities": {
+            "P": "p"
         },
         "info_url": "https://world.digimoncard.com/event/evolution_cup/2024_may/"
     },
@@ -912,6 +963,13 @@ const data2024 = [
             "purple-green": [67,71,79],
             "white": [82,83,90],
         },
+        "rarity": {
+            "c": ["7-9",16,"18-23",29,"32-34",37,39,42,43,49,50,"52-54","56-60",62,"67-73",94,95,98,100],
+            "u": ["1-6",10,11,17,24,31,35,38,41,44,45,47,55,61,66,75,76,78,91,92,97],
+            "r": [14,15,27,28,30,40,46,64,65,74,79,82,"84-90",93,96,99],
+            "sr": [12,13,25,26,36,48,51,63,77,80,81,83],
+            "sec": [101,102],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver16/"
     },
     // Booster Beginning Observer [BT16] - Alternatives --- bt16_alts
@@ -958,6 +1016,10 @@ const data2024 = [
             "BT16-026": "",
             "BT16-027": "",
             "BT16-046": "",
+        },
+        "rarity": {
+            "sp": [13,26,27],
+            "aa": [46]
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver16/",
     },
@@ -1047,6 +1109,7 @@ const data2024 = [
         "cards": {
             "P-156": "",
         },
+        "rarity": "p"
     },
 
 // June 28, 2024
@@ -1093,6 +1156,13 @@ const data2024 = [
                 "EX6-005": "",
                 "EX6-006": "",
             }
+        },
+        "rarity": {
+            "c": [2,4,8,9,12,16,20,"23-25",32,36,39,40,42,"45-48",51,66,67],
+            "u": [1,3,5,7,13,17,19,22,26,33,38,41,49,50,52,53,63,64,70,71],
+            "r": [6,10,14,18,21,28,34,37,44,55,56,58,60,61,65,68,69,72],
+            "sr": [11,15,27,"29-31",35,43,54,57,59,62],
+            "sec": [73,74],
         },
         "info_url": "https://world.digimoncard.com/products/pack/ex-06/"
     },
@@ -1141,6 +1211,10 @@ const data2024 = [
             "EX6-029": "SP",
             "EX6-035": "SP",
             "EX6-073": "P2",
+        },
+        "rarity": {
+            "sp": [11,"27-29",35],
+            "aa": [73],
         },
         "info_url": "https://world.digimoncard.com/products/pack/ex-06/",
     },
@@ -1246,6 +1320,7 @@ const data2024 = [
             "P-150": "",
             "P-151": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/store_tournament_14/",
     },
     // Store Tournament 2024 Jul.-Sep. - Winner Pack --- wp14
@@ -1348,6 +1423,13 @@ const data2024 = [
             "white": ["74-76",78,92,93,102],
             "white-blue-green": [77]
         },
+        "rarity": {
+            "c": ["9-14","20-24",26,29,"31-35",37,42,43,45,48,49,"52-56",58,"61-68",71,74],
+            "u": ["1-6",8,25,36,46,57,72,75,82,85,88,89,91,92,"94-100"],
+            "r": [7,15,16,19,27,38,39,44,47,50,59,69,70,"79-81",83,84,86,87,90,93],
+            "sr": [17,18,28,30,40,41,51,60,73,"76-78"],
+            "sec": [101,102],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver17/"
     },
     // Booster Secret Crysis [BT17] - Alternatives --- bt17_alts
@@ -1397,6 +1479,10 @@ const data2024 = [
             "BT17-101": "P2",
             "BT17-102": ["P2","P3"],
         },
+        "rarity": {
+            "sp": [18,41,77,78],
+            "aa": [101,102]
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver17/",
     },
     // Booster Secret Crysis [BT17] - Box Topper --- bt17_boxtopper
@@ -1431,6 +1517,7 @@ const data2024 = [
             "P-141": "",
             "P-142": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/products/pack/ver17/",
     },
     // Booster Secret Crysis [BT17] - Movie Memorial Pack --- bt17_movie_memorial
@@ -1464,6 +1551,12 @@ const data2024 = [
         "color": {
             "green": [1,"3-15"],
             "green-red": [2]
+        },
+        "rarity": {
+            "c": ["1-3",6,9],
+            "u": [5,7,11,13,15],
+            "r": [4,10,14],
+            "sr": [8,12],
         }
     },
     // Starter Deck Guardian Vortex [ST18] - Reprints --- st18_reprints
@@ -1483,6 +1576,9 @@ const data2024 = [
             "P-106": "P1",
             "P-107": "P1",
             "P-108": "P1",
+        },
+        "rarity": {
+            "sr": [38]
         }
     },
     // Starter Deck Fable Waltz [ST19] --- st19
@@ -1497,6 +1593,12 @@ const data2024 = [
         "info_url": "https://world.digimoncard.com/products/deck/st18-19/",
         "color": {
             "yellow": ["1-15"]
+        },
+        "rarity": {
+            "c": [1,"4-6",9],
+            "u": [2,7,10,13,15],
+            "r": [3,11,14],
+            "sr": [8,12],
         }
     },
     // Starter Deck Fable Waltz [ST19] - Reprints --- st19_reprints
@@ -1516,6 +1618,9 @@ const data2024 = [
             "P-106": "P2",
             "P-107": "P2",
             "P-108": "P2",
+        },
+        "rarity": {
+            "sr": [37]
         }
     },
 
@@ -1548,6 +1653,13 @@ const data2024 = [
                 "EX7-072": "",
                 "EX7-074": ""
             }
+        },
+        "rarity": {
+            "c": [1,2,9,11,17,19,26,28,33,35,"41-45",52,53,55,56,"67-69"],
+            "u": ["3-6",8,12,15,18,20,22,25,32,38,40,46,54,57,66,70,71],
+            "r": [7,10,16,21,24,27,31,34,39,47,50,51,58,60,"63-65",72],
+            "sr": [13,14,23,29,30,36,37,48,49,59,61,62],
+            "sec": [73,74],
         },
         "info_url": "https://world.digimoncard.com/products/pack/ex-07/"
     },
@@ -1648,6 +1760,9 @@ const data2024 = [
             "EX7-059": "",
             "EX7-062": "",
             "EX7-073": "",
+        },
+        "rarity": {
+            "sp": [30,36,59,62]
         },
         "info_url": "https://world.digimoncard.com/products/pack/ex-07/",
     },
@@ -1917,6 +2032,7 @@ const data2024 = [
             "P-158": "",
             "P-159": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/store_tournament_14/",
     },
     // Store Tournament 2024 Oct.-Dec. - Winner Pack --- wp15
@@ -1992,6 +2108,13 @@ const data2024 = [
             "purple-yellow": ['75-77',81,82,84,94],
             "purple-black": [83,99],
             "white": [86, 102]
+        },
+        "rarity": {
+            "c": ["7-10","12-14",16,20,21,23,24,27,"30-32",35,36,43,"45-47",50,51,"57-62","64-66",68,75,80,95,"97-99"],
+            "u": ["1-6",17,26,29,38,39,41,44,52,53,55,69,70,74,81,85,87,92,93,96,100],
+            "r": [11,15,25,28,33,34,37,49,54,67,72,73,76,77,79,84,86,"88-91",94],
+            "sr": [18,19,22,40,42,48,56,63,71,78,82,83],
+            "sec": [101,102],
         }
     },
     // Booster Xros Evolution [BT19]
@@ -2024,6 +2147,13 @@ const data2024 = [
             "purple-red": [70],
             "purple-black": [66,68,69,72,73],
             "white": ["76-78",100,102]
+        },
+        "rarity": {
+            "c": ["1-6",9,10,16,18,19,"21-23",29,"31-34","46-49","55-57",59,60,67,69,78,"89-93","95-97",100],
+            "u": [7,8,13,17,20,28,30,36,39,44,52,58,62,65,66,68,70,76,79,81,82,84,87,88,98,99],
+            "r": [12,15,"24-26",35,38,40,41,45,51,54,61,63,71,72,77,80,83,85,86,94],
+            "sr": [11,14,27,37,42,43,50,53,64,"73-75"],
+            "sec": [101,102],
         }
     },
 
@@ -2291,6 +2421,11 @@ const data2024 = [
             "url": "bandaitcgplusURL/BT18-19/e_SP2_setID-cardID_D.png",
             "cards": {
                 "EX2-073": ""
+            }
+        },
+        "rarities": {
+            "BT18": {
+                "sp": [40,71,83,102]
             }
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver18-19/"

@@ -198,6 +198,9 @@ const data2022 = [
             "BT3-088": "P",
             "P-057": "",
         },
+        "rarities": {
+            "P": "p",
+        },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/Official_Tournament_Pack_Vol.4.png/"
     },
     {
@@ -250,6 +253,7 @@ const data2022 = [
             "P-047": "",
             "P-048": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a2/Next_Adventure_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-07/"
     },
@@ -280,6 +284,13 @@ const data2022 = [
             "black": [5,"56-66",90,"104-106"],
             "purple": [6,"67-79",91,"107-109",111],
             "white": ["80-84",110,112],
+        },
+        "rarity": {
+            "c": [7,9,10,12,"20-23",27,28,"32-35",37,43,45,47,48,50,52,57,"59-62",67,"69-72",74,76,80,81,92,94,95,97,98,101,102,106,108],
+            "u": ["1-6",11,14,15,18,24,25,36,38,39,46,49,51,64,66,73,75,77,84,93,96,99,103,105,107],
+            "r": [8,17,19,30,31,42,44,53,54,56,58,68,78,82,83,"85-91",100,104,109,110],
+            "sr": [13,16,26,29,40,41,55,63,65,79,],
+            "sec": [111,112]
         }
     },
     {
@@ -298,6 +309,7 @@ const data2022 = [
             "P-055": "",
             "P-056": "",
         },
+        "rarity": "p"
     },
     // Booster Next Adventure [BT7] - Alternatives --- bt7_alts
     {
@@ -379,6 +391,12 @@ const data2022 = [
             "ST7-06": "P_D",
             "ST8-06": "P_D",
         },
+        "rarities": {
+            "P": "p",
+            "BT2": "c",
+            "ST7": "u",
+            "ST8": "u",
+        },
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
     {
@@ -390,6 +408,10 @@ const data2022 = [
         "cards": {
             "P-004": "P1",
             "BT6-056": "P1",
+        },
+        "rarities": {
+            "P": "p",
+            "BT6": "c"
         },
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
@@ -407,6 +429,7 @@ const data2022 = [
             "BT3-006": "",
             "BT7-004": "",
         },
+        "rarity": "u",
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
     {
@@ -422,6 +445,7 @@ const data2022 = [
             "BT6-001": "P2",
             "BT6-005": "P2",
         },
+        "rarity": "u",
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
     // Fest Stamp SR --- 2021fest_stamp
@@ -434,6 +458,7 @@ const data2022 = [
         "cards": {
             "BT3-091": "",
         },
+        "rarity": "sr",
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
     // Fest WINNER Stamp SR --- 2021fest_winner
@@ -531,6 +556,7 @@ const data2022 = [
         "cards": {
             "P-058": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/a/a5/New_Awakening_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-08/"
     },
@@ -564,6 +590,15 @@ const data2022 = [
             "green": [1,7,8,9,10,12,13,15,16],
             "green-blue": [11]
         },
+        "rarity": {
+            "c": [3,7,8,10,12],
+            "u": [1,2,4,9,15],
+            "r": [11,13,14],
+            "sr": [5,6],
+            // FIXME: Debería ser R, no AA.
+            // Cardmarket la considera AA, pero el icono que debería salir es R.
+            "aa": [16]
+        }
     },
     // Starter Deck PARALLEL WORLD TACTICIAN [ST-10] --- st10
     {
@@ -581,6 +616,15 @@ const data2022 = [
             "yellow-purple": [4,6,14],
             "purple-yellow": [10]
         },
+         "rarity": {
+            "c": [2,3,7,10,11],
+            "u": [1,8,9,13,15],
+            "r": [5,12,14],
+            "sr": [4,6],
+            // FIXME: Debería ser R, no AA.
+            // Cardmarket la considera AA, pero el icono que debería salir es R.
+            "aa": [16]
+        }
     },
 
     // Booster New Awakening [BT8] --- bt8
@@ -620,6 +664,13 @@ const data2022 = [
             "purple-yellow": [77,82,109],
             "purple-green": [75],
             "white": [84,94,110,112],
+        },
+        "rarity": {
+            "c": [7,10,13,14,16,17,20,22,24,25,"27-30","34-36",40,41,45,47,50,52,54,56,59,61,"63-66",71,73,74,76,78,79,95,96,100,103,106,108,110],
+            "u": ["1-6",9,11,18,21,23,33,37,43,46,48,49,62,72,75,77,81,87,90,97,98,101,102,104,107],
+            "r": [8,12,15,26,31,42,44,51,53,55,58,60,67,68,80,85,86,88,89,"91-94",99,105,109],
+            "sr": [19,32,38,39,57,69,70,"82-84"],
+            "sec": [111,112]
         }
     },
     // Booster New Awakening [BT8] - Alternatives --- bt8_alts
@@ -677,6 +728,7 @@ const data2022 = [
             "P-047": "",
             "P-048": "",
         },
+        "rarity": "p"
     },
 
     // Fest Set --- 2021fest
@@ -690,6 +742,13 @@ const data2022 = [
             "BT2-051": "P_D",
             "BT2-082": "_t_D",
             "BT7-110": "P_D",
+        },
+        "rarities": {
+            "BT2": {
+                "sr": [51],
+                "t": [82]
+            },
+            "BT7": "r"
         },
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
@@ -707,6 +766,12 @@ const data2022 = [
             "BT6-077": "P1",
             "BT8-008": "P1",
             "BT8-086": "P1",
+        },
+        "rarities": {
+            "BT4": "r",
+            "BT5": "sr",
+            "BT6": "r",
+            "BT8": "r"
         },
         "info_url": "https://world.digimoncard.com/event/fest_2022/"
     },
@@ -768,6 +833,13 @@ const data2022 = [
             "black": [5,"30-38",62,63],
             "purple": [6,"39-44",64,65,71,74],
             "white": [7,"45-55",72]
+        },
+        "rarity": {
+            "c": [9,"13-16",20,21,26,"32-34",36,40,42,"46-48","50-54",66,"68-70"],
+            "u": ["1-6",10,23,27,28,30,37,49,"57-59",63,64,67,71],
+            "r": [7,8,18,19,22,25,31,35,39,41,45,55,56,"60-62",65,72],
+            "sr": [11,12,17,24,29,38,43,44],
+            "sec": [73,74]
         }
     },
     // Booster Digital Hazard [EX2] - Alternatives --- ex2_alts
@@ -874,6 +946,7 @@ const data2022 = [
             "P-063": "_errata",
             "P-064": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fd/Official_Tournament_Pack_Vol.5.png/"
     },
     // Winner Pack New Awakening --- wp5
@@ -928,6 +1001,7 @@ const data2022 = [
             "P-080": "",
             "P-081": "",
         },
+        "rarity": "p"
     },
 
 // July 22, 2022
@@ -979,6 +1053,13 @@ const data2022 = [
             "purple-yellow": [74,76,80,82],
             "purple-black": [75,78,81,107,112],
             "white": [83,92,109,110],
+        },
+        "rarity": {
+            "c": [7,"10-12",19,"22-27",30,"32-36",39,45,"47-50",53,57,"59-63",70,72,73,76,77,93,96,98,"101-104",106,108],
+            "u": ["1-6",8,9,13,20,29,37,38,40,42,46,51,52,54,58,65,71,75,78,"89-91",94,109,110],
+            "r": [14,15,18,21,28,41,43,56,64,66,67,74,79,80,"84-88",92,95,97,99,100,105,107],
+            "sr": [16,17,31,44,55,68,69,"81-83"],
+            "sec": [111,112],
         }
     },
     // Booster X Record [BT9] - Alternatives --- bt9_alts
@@ -1040,6 +1121,7 @@ const data2022 = [
             "P-076": ["", "_horo"],
             "P-077": ["", "_horo"],
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/9/96/Update_Pack-EN.png",
     },
 
@@ -1486,6 +1568,12 @@ const data2022 = [
             "red-black": [9],
             "black": [11, 16],
             "white": [12,13]
+        },
+        "rarity": {
+            "c": [2,3,6,7,14,15],
+            "u": [1,5,9,12,13],
+            "r": [4,8,16],
+            "sr": [10,11]
         }
     },
     // Starter Deck RagnaLoardmon [ST-13] --- st13
@@ -1503,6 +1591,12 @@ const data2022 = [
             "red-black": [6],
             "black": [1, "7-11", 13, 14],
             "black-red": [12, 16],
+        },
+        "rarity": {
+            "c": [3,7,8,10,12,16],
+            "u": [1,2,4,9,11],
+            "r": ["13-15"],
+            "sr": [5,6]
         }
     },
     // Bonus Tamer Cards Pack --- bonus_tamer_cards
@@ -1548,6 +1642,13 @@ const data2022 = [
             "black-purple": [69,70,104],
             "purple": [6,"71-84",93,107,108],
             "white": [85,86,109,110],
+        },
+        "rarity": {
+            "c": [7,10,17,18,22,25,27,"29-31","33-37",43,45,"47-52",58,"61-65",71,72,74,76,77,79,81,84,96,"98-100",102,105,107],
+            "u": ["1-6",8,12,14,20,21,28,32,39,46,53,55,59,70,73,75,80,82,94,101,103,106,"108-110"],
+            "r": [9,11,15,19,23,26,38,40,44,54,56,60,66,67,78,85,"87-93",95,97,104],
+            "sr": [13,16,24,41,42,57,68,69,83,86],
+            "sec": [111,112]
         }
     },
     // Booster Xros Encounter [BT10] - Alternatives --- bt10_alts
@@ -1633,6 +1734,7 @@ const data2022 = [
         "cards": {
             "P-065": "",
         },
+        "rarity": "p"
     },
     // 25th Special Memorial Pack --- 25specialmemorial
     {
@@ -1715,6 +1817,13 @@ const data2022 = [
             "purple-red": [56,57,"61-63",73],
             "purple-green": [59,60],
             "white": [65]
+        },
+        "rarity": {
+            "c": [3,6,8,9,"15-17",19,21,"27-30",32,40,42,46,50,"56-60",68,71,72],
+            "u": [1,2,5,7,10,18,20,23,31,34,37,38,39,41,"47-49",61,62,67],
+            "r": [4,11,14,22,24,25,33,36,43,44,51,52,55,"64-66",69,70],
+            "sr": [12,13,26,35,45,53,54,63],
+            "sec": [73,74],
         }
     },
     // Booster Draconic Roar [EX3] - Alternatives --- ex3_alts
@@ -1762,5 +1871,9 @@ const data2022 = [
             "EX3-049": "P_D",
             "EX3-061": "P_D",
         },
+        "rarities": {
+            "BT3": "sec",
+            "EX3": "u"
+        }
     },
 ];

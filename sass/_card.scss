@@ -1,152 +1,305 @@
-@mixin card-color($left-color,$right-color:'',$text-shadow:'',$color:'',$center-color:'') {
-    @if $center-color != '' {
-        [data-color="#{$left-color}-#{$center-color}-#{$right-color}"] & {
-            background: repeating-linear-gradient(to right, var(--#{$left-color}-card), var(--#{$left-color}-card) 33.33%, var(--#{$center-color}-card) 33.33%, var(--#{$center-color}-card) 66.66%, var(--#{$right-color}-card) 66.66%, var(--#{$right-color}-card));
-            @if $text-shadow != '' {
-                text-shadow: -1px 0 #{$text-shadow}, 0 1px #{$text-shadow}, 1px 0 #{$text-shadow}, 0 -1px #{$text-shadow};
-            }
-            @if $color != '' {
-                color: #{$color};
-            }
-        }
-    } @else if $right-color != '' {
-        [data-color="#{$left-color}-#{$right-color}"] & {
-            background: linear-gradient(90deg, var(--#{$left-color}-card) 50%, var(--#{$right-color}-card) 50%);
-            @if $text-shadow != '' {
-                text-shadow: -1px 0 #{$text-shadow}, 0 1px #{$text-shadow}, 1px 0 #{$text-shadow}, 0 -1px #{$text-shadow};
-            }
-            @if $color != '' {
-                color: #{$color};
-            }
-        }
-    } @else {
-        [data-color="#{$left-color}"] & {
-            background-color: var(--#{$left-color}-card);
-            @if $color != '' {
-                color: #{$color};
-            }
-        }
+@use "sass:math";
+
+// Variables
+$rarity-backgrounds: (
+  "red": white,
+  "red-blue": white,
+  "red-yellow": white-black,
+  "red-green": white,
+  "red-black": white,
+  "red-purple": white,
+  "red-purple-blue": white,
+  "red-white-blue": black,
+  "blue": white,
+  "blue-red": white,
+  "blue-yellow": white-black,
+  "blue-black": white,
+  "blue-white-red": black,
+  "blue-green": white,
+  "yellow": black,
+  "yellow-red": black-white,
+  "yellow-blue": black-white,
+  "yellow-green": black-white,
+  "yellow-black": black-white,
+  "yellow-purple": black-white,
+  "green": white,
+  "green-red": white,
+  "green-blue": white,
+  "green-yellow": white-black,
+  "green-black": white,
+  "green-purple": white,
+  "black": white,
+  "black-red": white,
+  "black-yellow": white-black,
+  "black-purple": white,
+  "black-white": white-black,
+  "purple": white,
+  "purple-red": white,
+  "purple-yellow": white-black,
+  "purple-green": white,
+  "purple-black": white,
+  "white": black,
+);
+
+@mixin card-color(
+  $left-color,
+  $right-color: "",
+  $text-shadow: "",
+  $color: "",
+  $center-color: ""
+) {
+  @if $center-color != "" {
+    [data-color="#{$left-color}-#{$center-color}-#{$right-color}"] & {
+      background: repeating-linear-gradient(
+        to right,
+        var(--#{$left-color}-card),
+        var(--#{$left-color}-card) 33.33%,
+        var(--#{$center-color}-card) 33.33%,
+        var(--#{$center-color}-card) 66.66%,
+        var(--#{$right-color}-card) 66.66%,
+        var(--#{$right-color}-card)
+      );
+      @if $text-shadow != "" {
+        text-shadow: -1px 0 #{$text-shadow}, 0 1px #{$text-shadow},
+          1px 0 #{$text-shadow}, 0 -1px #{$text-shadow};
+      }
+      @if $color != "" {
+        color: #{$color};
+      }
     }
+  } @else if $right-color != "" {
+    [data-color="#{$left-color}-#{$right-color}"] & {
+      background: linear-gradient(
+        90deg,
+        var(--#{$left-color}-card) 50%,
+        var(--#{$right-color}-card) 50%
+      );
+      @if $text-shadow != "" {
+        text-shadow: -1px 0 #{$text-shadow}, 0 1px #{$text-shadow},
+          1px 0 #{$text-shadow}, 0 -1px #{$text-shadow};
+      }
+      @if $color != "" {
+        color: #{$color};
+      }
+    }
+  } @else {
+    [data-color="#{$left-color}"] & {
+      background-color: var(--#{$left-color}-card);
+      @if $color != "" {
+        color: #{$color};
+      }
+    }
+  }
 }
-.card_id {
-    font-size: 1.2em;
-    font-weight: 700;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
+
+// 🧩 Función para dividir un string en partes separadas por guiones
+@function split-colors($string) {
+  $str: "#{$string}";
+  $colors: ();
+  $start: 1;
+  $sep: str-index($str, "-");
+
+  @while $sep {
+    $colors: append($colors, str-slice($str, $start, $sep - 1));
+    $start: $sep + 1;
+    $sep: str-index(str-slice($str, $start), "-");
+
+    @if $sep {
+      $sep: $sep + $start - 1;
+    }
+  }
+
+  // Añadir el último fragmento
+  $colors: append($colors, str-slice($str, $start));
+  @return $colors;
+}
+// 🧠 Genera el color de fondo según el número de colores
+@function compose-bg($color) {
+  $colors: split-colors($color);
+  $count: length($colors);
+
+  @if $count > 1 {
+    $stops: ();
+    $step: math.div(100%, $count);
+    $overlap: 0.5%; // solapamiento entre franjas
+
+    @for $i from 1 through $count {
+      $c: nth($colors, $i);
+      $start: math.max(0%, ($i - 1) * $step - $overlap);
+      $end: math.min(100%, $i * $step + $overlap);
+
+      $stops: append($stops, var(--#{$c}-card) #{$start}, comma);
+      $stops: append($stops, var(--#{$c}-card) #{$end}, comma);
+    }
+
+    @return linear-gradient(90deg, $stops...);
+  }
+
+  @return var(--#{nth($colors, 1)}-card);
+}
+
+@mixin rarity-color($color, $background) {
+  [data-color="#{$color}"] & {
+    background: compose-bg($background);
+
+    span {
+      background: compose-bg($color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+}
+
+.card_info {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+
+  tr:not([data-color]) &,
+  tr[data-color="undefined"] & {
+    color: grey;
+  }
+
+  // Red cards
+  @include card-color("red");
+  @include card-color("red", "blue");
+  @include card-color("red", "blue", "", "", "green");
+  @include card-color("red", "blue", "", "", "purple");
+  @include card-color("red", "blue", "black", "", "white");
+  @include card-color("red", "yellow", "black");
+  @include card-color("red", "yellow", "black", "", "blue");
+  @include card-color("red", "green");
+  @include card-color("red", "green", "black", "", "yellow");
+  @include card-color("red", "black");
+  @include card-color("red", "black", "", "", "purple");
+  @include card-color("red", "black", "black", "", "yellow");
+  @include card-color("red", "purple");
+  @include card-color("red", "white", "black");
+
+  // Blue cards
+  @include card-color("blue");
+  @include card-color("blue", "red");
+  @include card-color("blue", "red", "black", "white", "white");
+  @include card-color("blue", "yellow", "black");
+  @include card-color("blue", "yellow", "black", "", "black");
+  @include card-color("blue", "green");
+  @include card-color("blue", "black");
+  @include card-color("blue", "purple");
+  @include card-color("blue", "white", "black");
+
+  // Yellow cards
+  @include card-color("yellow", "", "", "black");
+  @include card-color("yellow", "red", "white", "black");
+  @include card-color("yellow", "blue", "white", "black");
+  @include card-color("yellow", "green", "white", "black");
+  @include card-color("yellow", "black", "white", "black");
+  @include card-color("yellow", "black", "white", "black", "blue");
+  @include card-color("yellow", "purple", "white", "black");
+  @include card-color("yellow", "black", "black", "", "purple");
+  @include card-color("yellow", "white", "", "black");
+
+  // Green cards
+  @include card-color("green");
+  @include card-color("green", "red");
+  @include card-color("green", "blue");
+  @include card-color("green", "blue", "", "white", "red");
+  @include card-color("green", "blue", "", "white", "yellow");
+  @include card-color("green", "yellow", "black");
+  @include card-color("green", "black");
+  @include card-color("green", "black", "black", "white", "yellow");
+  @include card-color("green", "purple");
+  @include card-color("green", "purple", "black", "white", "yellow");
+
+  // Black cards
+  @include card-color("black");
+  @include card-color("black", "red");
+  @include card-color("black", "red", "black", "white", "yellow");
+  @include card-color("black", "blue");
+  @include card-color("black", "yellow", "black");
+  @include card-color("black", "green");
+  @include card-color("black", "purple");
+  @include card-color("black", "white", "black");
+
+  // Purple cards
+  @include card-color("purple");
+  @include card-color("purple", "red");
+  @include card-color("purple", "blue");
+  @include card-color("purple", "yellow", "black");
+  @include card-color("purple", "green");
+  @include card-color("purple", "black");
+
+  // White cards
+  @include card-color("white", "", "", "black");
+  @include card-color("white", "red", "white", "black");
+  @include card-color("white", "green", "black", "white", "blue");
+
+  &__rarity {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    border-radius: 11px;
+    // padding: 3px 5px;
+    text-shadow: none;
+    background: grey;
+    // width: fit-content;
+    margin: 0 auto;
+    width: 22px;
+    height: 22px;
+    align-content: center;
+
+    tr[data-rarity="sec"] & {
+      width: 33px;
+    }
 
     tr:not([data-color]) &,
     tr[data-color="undefined"] & {
-        color: grey;
+      background: grey;
     }
 
-    // Red cards
-    @include card-color('red');
-    @include card-color('red', 'blue');
-    @include card-color('red', 'blue', '', '', 'green');
-    @include card-color('red', 'blue', '', '', 'purple');
-    @include card-color('red', 'blue', 'black', '', 'white');
-    @include card-color('red', 'yellow', 'black');
-    @include card-color('red', 'yellow', 'black', '', 'blue');
-    @include card-color('red', 'green');
-    @include card-color('red', 'green', 'black', '', 'yellow');
-    @include card-color('red', 'black');
-    @include card-color('red', 'black', '', '', 'purple');
-    @include card-color('red', 'black', 'black', '', 'yellow');
-    @include card-color('red', 'purple');
-    @include card-color('red', 'white', 'black');
-
-    // Blue cards
-    @include card-color('blue');
-    @include card-color('blue', 'red');
-    @include card-color('blue', 'red', 'black', 'white', 'white');
-    @include card-color('blue', 'yellow', 'black');
-    @include card-color('blue', 'yellow', 'black', '', 'black');
-    @include card-color('blue', 'green');
-    @include card-color('blue', 'black');
-    @include card-color('blue', 'purple');
-    @include card-color('blue', 'white', 'black');
-
-    // Yellow cards
-    @include card-color('yellow', '', '', 'black');
-    @include card-color('yellow', 'red', 'white', 'black');
-    @include card-color('yellow', 'blue', 'white', 'black');
-    @include card-color('yellow', 'green', 'white', 'black');
-    @include card-color('yellow', 'black', 'white', 'black');
-    @include card-color('yellow', 'black', 'white', 'black', 'blue');
-    @include card-color('yellow', 'purple', 'white', 'black');
-    @include card-color('yellow', 'black', 'black', '', 'purple');
-    @include card-color('yellow', 'white', '', 'black');
-
-    // Green cards
-    @include card-color('green');
-    @include card-color('green', 'red');
-    @include card-color('green', 'blue');
-    @include card-color('green', 'blue', '', 'white', 'red');
-    @include card-color('green', 'blue', '', 'white', 'yellow');
-    @include card-color('green', 'yellow', 'black');
-    @include card-color('green', 'black');
-    @include card-color('green', 'black', 'black', 'white', 'yellow');
-    @include card-color('green', 'purple');
-    @include card-color('green', 'purple', 'black', 'white', 'yellow');
-
-    // Black cards
-    @include card-color('black');
-    @include card-color('black', 'red');
-    @include card-color('black', 'red', 'black', 'white', 'yellow');
-    @include card-color('black', 'blue');
-    @include card-color('black', 'yellow', 'black');
-    @include card-color('black', 'green');
-    @include card-color('black', 'purple');
-    @include card-color('black', 'white', 'black');
-
-    // Purple cards
-    @include card-color('purple');
-    @include card-color('purple', 'red');
-    @include card-color('purple', 'blue');
-    @include card-color('purple', 'yellow', 'black');
-    @include card-color('purple', 'green');
-    @include card-color('purple', 'black');
-
-    // White cards
-    @include card-color('white', '', '', 'black');
-    @include card-color('white', 'red', 'white', 'black');
-    @include card-color('white', 'green', 'black', 'white', 'blue');
+    // TODO: debe poder cambiarse tanto color del texto, como color de fondo del círculo.
+    // TODO que el mixin se encargue de generar todo lo relacionado con el color de la carta (incluido rareza).
+    @each $color, $background in $rarity-backgrounds {
+      @include rarity-color($color, $background);
+    }
+  }
 }
 
 .card_list {
-    display: flex;
+  display: flex;
 }
 .card {
-    max-height: 111px;
-    cursor: pointer;
-    max-width: 79px;
-    object-fit: cover;
+  max-height: 111px;
+  cursor: pointer;
+  max-width: 79px;
+  object-fit: cover;
 }
 .card--gotit {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .card.card--no-release {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 .card[data-status="-1"] {
-    filter: blur(1px);
+  filter: blur(1px);
 }
 .card[data-status="1"] {
-    padding-right: 7px;
-    background-color: var(--correct-card);
+  padding-right: 7px;
+  background-color: var(--correct-card);
 }
 .card[data-status="2"] {
-    padding-right: 7px;
-    background-color: var(--bought-card);
+  padding-right: 7px;
+  background-color: var(--bought-card);
 }
 .card[data-status="3"] {
-    padding-right: 7px;
-    background-color: var(--proxy-card);
+  padding-right: 7px;
+  background-color: var(--proxy-card);
 }
 .card[data-status="2"][data-bought="0"],
 .card[data-status="3"][data-bought="0"] {
-    padding-right: 7px;
-    background-color: var(--revision-card);
+  padding-right: 7px;
+  background-color: var(--revision-card);
 }

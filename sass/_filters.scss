@@ -4,9 +4,24 @@
     }
 
     .card.filtered--set {
-        display: block;
+        // Incompatible con view grid.
+        // display: block;
     }
     .card:not(.filtered--set) {
+        display: none;
+    }
+}
+
+.filter--rarity {
+    tbody tr:not(.match_filter--rarity) {
+        display: none;
+    }
+
+    .card.filtered--rarity {
+        // Incompatible con view grid.
+        // display: block;
+    }
+    .card:not(.filtered--rarity) {
         display: none;
     }
 }
@@ -23,6 +38,7 @@
     }
 
     .card.filtered--status {
+        // Incompatible con view grid.
         // display: block;
     }
     .card:not(.filtered--status) {
@@ -39,6 +55,7 @@
             display: none;
         }
         .card.filtered--status {
+            // Incompatible con view grid.
             // display: block;
         }
         .card:not(.filtered--status) {
