@@ -400,4 +400,72 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/products/goods/premium-heroines-set-02.php"
     },
+
+// August 2026
+    // Limited Card Pack FINAL CREST --- lm08
+    {
+        "id": null,
+        "slug": "lm08",
+        "name": "Limited Card Pack FINAL CREST",
+        "release": "August 2026",
+        "url": "noCardURL",
+        "cards": {
+            "LM-057": "",
+            "LM-058": "",
+            "LM-059": "",
+            "LM-060": "",
+            "LM-061": "",
+            "LM-062": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-08.php"
+    },
+    // Limited Card Pack FINAL CREST - Alternatives --- lm08_alts
+    {
+        "id": null,
+        "slug": "lm08_alts",
+        "name": "Limited Card Pack FINAL CREST - Alternatives",
+        "release": "August 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT20-060": "",
+            "BT20-077": "",
+            "BT22-088": "",
+            "EX8-074": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-08.php"
+    },
+    // Limited Card Pack FINAL CREST - Reprints --- lm08_reprints
+    {
+        "id": null,
+        "slug": "lm08_reprints",
+        "name": "Limited Card Pack FINAL CREST - Reprints",
+        "release": "August 2026",
+        "url": "noCardURL",
+        "cards": {
+            "P-201": "",
+            "P-202": "",
+            "P-203": "",
+            "P-204": "",
+            "P-205": "",
+            "P-206": "",
+            "P-214": "",
+            "P-215": "",
+            "P-216": "",
+            "P-217": "",
+            "P-218": "",
+            "P-219": "",
+            "BT9-102": "",
+            "BT11-023": "",
+            "BT11-112": "",
+            "BT15-096": "",
+            "BT20-018": "",
+            "BT20-037": "",
+            "BT20-061": "",
+            "BT21-071": "",
+            "BT22-008": "",
+            "BT22-017": "",
+            "EX8-029": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
+    },
 ];
