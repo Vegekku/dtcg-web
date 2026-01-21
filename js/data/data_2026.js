@@ -266,6 +266,32 @@ const data2026 = [
         "info_url": "https://world.digimoncard.com/products/pack/ex-11/"
     },
 
+// March 28-29, 2026
+    // Event Pack 9 --- eventpack9
+    {
+        "id": null,
+        "slug": "eventpack9",
+        "name": "Event Pack 9",
+        "release": "March 28-29, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT11-069": "",
+            "BT21-013": "",
+            "BT23-032": "",
+            "EX9-021": "",
+            "ST10-04": "",
+            "ST21-09": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
+    },
+    // Regionals 26-27 Season 1 Participation Card Set
+    // Regionals 26-27 Season 1 Finalist Card Set
+    // Regionals 26-27 Season 1 Champion Card Set
+    // Regionals 26-27 Promotion Card Participant: Koromon
+    // Regionals 26-27 Promotion Card Top 64: Agumon
+    // Regionals 26-27 Promotion Card Top 16: Greymon
+    // Regionals 26-27 Promotion Card Top 2: MetalGreymon
+
 // March 2026
     // Limited Card Pack ANOTHER KNIGHT --- lm07
     {
