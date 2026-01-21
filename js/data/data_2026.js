@@ -76,6 +76,22 @@ const data2026 = [
         "info_url": "https://world.digimoncard.com/event/2025/regulation_battle-03/",
     },
 
+// January 16, 2026
+    // 2026 Dash Pack Campaign - 2026_dashpack
+    {
+        "id": null,
+        "slug": "2026_dashpack",
+        "name": "2026 Dash Pack Campaign",
+        "release": "January 16, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel.png",
+        "cards": {
+            "BT21-029": ['_JP_D','_CH_D'],
+            "BT21-062": ['_JP_D','_CH_D'],
+            "BT21-101": ['_JP_D','_CH_D'],
+        },
+        "info_url": "https://world.digimoncard.com/news/2026-dash-pack-cp.php",
+    },
+
 // January 16 - 22, 2026
     // TIME STRANGER [BT-24] Release Event --- bt24_prerelease
     {
