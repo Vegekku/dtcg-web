@@ -107,6 +107,7 @@
     @include card-color('purple', 'yellow', 'black');
     @include card-color('purple', 'green');
     @include card-color('purple', 'black');
+    @include card-color('purple', 'white', 'black');
 
     // White cards
     @include card-color('white', '', '', 'black');
