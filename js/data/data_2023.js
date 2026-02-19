@@ -113,6 +113,7 @@ const data2023 = [
             "P-080": "",
             "P-081": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/tamer_party_07/"
     },
 
@@ -164,6 +165,13 @@ const data2023 = [
             "purple-yellow": [94],
             "purple-black": [82],
             "white": [95],
+        },
+        "rarity": {
+            "c": [1,2,4,6,"8-10",13,21,"24-26",34,35,37,39,41,"47-51",53,60,61,63,64,66,71,75,78,79,81,84,"96-102",104,106,110],
+            "u": [3,5,11,12,14,22,23,27,28,30,36,38,40,"44-46",54,55,57,62,65,67,73,76,77,80,85,103,105,109],
+            "r": [7,15,18,20,29,31,42,43,52,58,59,"68-70",72,82,83,87,"89-93",95,107,108],
+            "sr": [16,17,19,32,33,56,74,86,88,94],
+            "sec": [111,112],
         }
     },
     // Booster Dimensional Phase [BT11] - Alternatives --- bt11_alts
@@ -280,6 +288,10 @@ const data2023 = [
             "BT11-109": "",
             "BT11-110": "",
         },
+        "rarity": {
+            "c": [1,2,4,6,"8-10",13,21,"24-26",34,35,37,39,41,"47-51",53,60,61,63,64,66,71,75,78,79,81,84,"96-102",104,106,110],
+            "u": [3,5,11,12,14,22,23,27,28,30,36,38,40,"44-46",54,55,57,62,65,67,73,76,77,80,85,103,105,109],
+        }
     },
     // Digimon Illustration Competition Pack --- ilustration_pack
     {
@@ -392,7 +404,7 @@ const data2023 = [
             "BT3-031": "P2",
             "BT3-075": "P2",
             "BT3-091": "P4",
-            "BT3-105": "P1", // NO EXIST
+            "BT3-105": "P1", // FIXME: NO EXISTE
             "P-001": "P2",
             "P-002": "P1",
             "P-003": "P1",
@@ -491,6 +503,10 @@ const data2023 = [
             "BT6-068": "P2",
             "EX2-044": "P2",
         },
+        "rarities": {
+            "BT6": "u",
+            "EX2": "sr",
+        },
         "info_url": "https://world.digimoncard.com/event/pre-release_ST14/",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/Beelzemon_Cup_Participation_Pack.png"
     },
@@ -508,6 +524,12 @@ const data2023 = [
         "info_url": "https://world.digimoncard.com/products/deck/st-14.php",
         "color": {
             "purple": ["1-12"]
+        },
+        "rarity": {
+            "c": [4,5],
+            "u": [1,3,6],
+            "r": [7,11,12],
+            "sr": [2,"8-10"]
         }
     },
     // Advanced Deck BEELZEMON [ST-14] - Alternatives --- st14_alts
@@ -523,6 +545,12 @@ const data2023 = [
             "EX2-071": "P1",
             "P-077": "P1",
             "ST14-08": "P1",
+        },
+        "rarities": {
+            "BT2": "c",
+            "BT8": "c",
+            "EX2": "u",
+            "P": "p"
         }
     },
     // Advanced Deck BEELZEMON [ST-14] - Special Reprints --- st14_spe_rep
@@ -556,6 +584,10 @@ const data2023 = [
         "cards": {
             "BT6-068": "P3",
             "EX2-044": "P3",
+        },
+        "rarities": {
+            "BT6": "u",
+            "EX2": "sr"
         }
         // "info_url": "https://world.digimoncard.com/event/pre-release_ST14/",
         // "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/Beelzemon_Cup_Participation_Pack.png"
@@ -663,6 +695,13 @@ const data2023 = [
                 "BT12-036": ""
             }
         },
+        "rarity": {
+            "c": ["7-10",14,"19-21",23,25,27,33,34,36,"38-41",45,46,49,"51-54","58-62",64,66,67,69,73,76,"78-80",99,102,103,105,107],
+            "u": ["1-6","11-13",22,24,26,35,37,44,47,48,50,63,65,74,75,77,81,84,91,93,94,97,110],
+            "r": [15,16,28,30,32,42,55,56,68,71,82,"86-90",92,95,96,98,100,101,104,106,108,109],
+            "sr": [17,18,29,31,43,57,70,72,83,85],
+            "sec": [111,112],
+        }
     },
     // Booster Across Time [BT12] - Alternatives --- bt12_alts
     {
@@ -708,6 +747,12 @@ const data2023 = [
             "BT12-077": "P1",
             "BT12-081": "P1",
         },
+        "rarities": {
+            "BT12": {
+                "c": [14,41,51,64],
+                "u": [77,81]
+            }
+        },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/6/64/Box_Promotion_Pack_Across_Time-EN.png"
     },
     // Booster Across Time [BT12] - Limited Card Pack --- bt12_limitedcardpack
@@ -725,6 +770,7 @@ const data2023 = [
             "P-070": "",
             "P-071": ""
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/8d/Limited_Card_Pack.png"
     },
     // Ultimate Cup 2023 --- ultimatecup_2023
@@ -936,6 +982,13 @@ const data2023 = [
             "purple-yellow": [74],
             "purple-green": [54,57,59],
             "white": [60,72]
+        },
+        "rarity": {
+            "c": [6,7,14,17,18,24,25,29,32,34,"38-41",43,44,52,54,55,57,65,"67-70"],
+            "u": ["1-5",8,10,15,16,26,28,35,36,42,45,46,56,66,72],
+            "r": [9,11,19,20,23,27,31,33,47,48,50,53,59,"61-64",71],
+            "sr": [12,13,21,22,30,37,49,51,58,60],
+            "sec": [73,74],
         }
     },
     // Booster Alternative Being [EX4] - Alternatives --- ex4_alts
@@ -990,6 +1043,9 @@ const data2023 = [
             "EX4-064": "",
             "EX4-066": "",
             "EX4-072": "",
+        },
+        "rarity": {
+            "u": [66,72]
         },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/6/6c/Box_Promotion_Pack_Alternative_Being-EN.png"
     },
@@ -1058,6 +1114,9 @@ const data2023 = [
             "BT8-071": "_P2",
             "P-078": "",
         },
+        "rarities": {
+            "P": "p"
+        },
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-13/",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/be/Royal_Knights_Pre-Release_Pack.png"
     },
@@ -1089,6 +1148,13 @@ const data2023 = [
             "purple": [6,"78-92",102,103,109],
             "white": [7,93,110,112],
         },
+        "rarity": {
+            "c": [8,9,"11-13",15,"21-27","36-39",42,43,47,"49-52",54,55,"61-63","65-70",72,"78-85"],
+            "u": ["1-6",14,16,28,29,32,34,41,48,53,71,73,74,76,86,93,94,96,98,99,101,103,"106-108"],
+            "r": [10,"17-19",30,31,35,40,44,45,56,57,59,64,"87-90",95,97,100,102,104,105,109,110],
+            "sr": [7,20,33,46,58,60,75,77,91,92],
+            "sec": [111,112],
+        }
     },
     // Booster Versus Royal Knights [BT13] - Alternatives --- bt13_alts
     {
@@ -1155,6 +1221,12 @@ const data2023 = [
         "info_url": "https://world.digimoncard.com/products/deck/st-15.php",
         "color": {
             "black": ["1-16"]
+        },
+        "rarity": {
+            "c": ["4-7",9,16],
+            "u": [1,3,10,13,15],
+            "r": [2,11,14],
+            "sr": [8,12],
         }
     },
     // Starter Deck Wolf of Friendship [ST16] --- st16
@@ -1169,6 +1241,12 @@ const data2023 = [
         "info_url": "https://world.digimoncard.com/products/deck/st-16.php",
         "color": {
             "purple": ["1-16"]
+        },
+         "rarity": {
+            "c": [1,2,"5-7",9,16],
+            "u": [4,10,13,15],
+            "r": [3,11,14],
+            "sr": [8,12],
         }
     },
     // Booster Versus Royal Knights [BT13] - Ace Box Topper --- bt13_aceboxtopper
@@ -1392,6 +1470,13 @@ const data2023 = [
             "purple": ["28-31"],
             "white": [35],
         },
+        "rarity": {
+            "c": ["1-3",8,12,13,17,21,22,26],
+            "u": [5,9,11,14,20,24,29],
+            "r": [4,6,7,15,18,23,28,30,"32-35"],
+            "sr": [10,16,19,25,27,31,],
+            "sec": [36],
+        }
     },
     // Resurgence Booster [RB01] - Alternatives --- rb1_alts
     {
@@ -1514,6 +1599,49 @@ const data2023 = [
             "P-047": "P2",
             "P-048": "P2",
         },
+        "rarities": {
+            "P": {
+                "sr": ["35-40"],
+                "p": [7,8,"11-13",16,17,28,32,47,48]
+            },
+            "ST1": "u",
+            "ST2": "u",
+            "ST3": "u",
+            "ST5": "r",
+            "BT1": {
+                "u": [67],
+                "r": [3,6,7,10,48,85,87,89],
+                "sr": [60],
+                "sec": [114]
+            },
+            "BT2": {
+                "c": [55,69],
+                "u": [34,70,74],
+                "r": [6,38,90],
+                "sr": [32,41],
+                "sec": [112]
+            },
+            "BT3": {
+                "c": [54,61],
+                "u": [2,3,6,46,97,103],
+                "r": [21,39,88],
+                "sr": [75,91]
+            },
+            "BT4": {
+                "c": [79,111],
+                "u": [6,11,25],
+                "r": [96,97,104],
+                "sr": [17,62],
+                "sec": [115]
+            },
+            "BT5": {
+                "c": [21,50,105],
+                "u": [1,65],
+                "r": [88,92],
+                "sr": [86,87],
+                "sec": [111,112]
+            }
+        },
         "reprint": true,
     },
     // Resurgence Booster [RB01] - English Reprints --- rb1_en_reprints
@@ -1531,6 +1659,11 @@ const data2023 = [
             "P-063": "_P1",
             "P-064": "_P1",
         },
+        "rarities": {
+            "P": "p",
+            "ST2": "c",
+            "ST3": "c"
+        },
         "reprint": true,
     },
     // TODO: Revise this cards in localstorage.
@@ -1544,7 +1677,8 @@ const data2023 = [
             "P-088": "",
             "P-089": "",
             "P-090": "",
-        }
+        },
+        "rarity": "p",
     },
 
     // Adventure Box 2 [AB02] --- ab02
@@ -1780,6 +1914,13 @@ const data2023 = [
             "purple": [6,"69-81",87,99,100],
             "white": [88],
         },
+        "rarity": {
+            "c": ["8-11",15,16,19,21,22,24,25,27,31,32,35,42,43,45,47,"50-52",55,57,59,61,62,65,69,70,"72-74",77,89,92,94,95,98,100],
+            "u": ["1-6",13,17,28,30,34,36,40,46,54,60,63,67,78,80,90,91,93,96,97,99],
+            "r": [12,18,23,29,38,39,41,48,53,58,64,66,75,76,79,"82-88"],
+            "sr": [7,14,20,26,33,37,44,49,56,68,71,81],
+            "sec": [101,102],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver14.php"
     },
     // Booster Blast Ace [BT14] - Alternatives --- bt14_alts
@@ -1868,6 +2009,7 @@ const data2023 = [
             "P-107": "",
             "P-108": "",
         },
+        "rarity": "p"
     },
     // Booster Blast Ace [BT14] - Survey Pack --- bt14_survey_pack
     {
@@ -1884,6 +2026,7 @@ const data2023 = [
             "P-114": "",
             "P-115": "",
         },
+        "rarity": "p"
     },
     // Demo Deck: Imperialdramon --- demo_deck_imperialdramon
     {
@@ -1910,6 +2053,11 @@ const data2023 = [
             "P-124": "4/40/P-124_P1",
             "P-130": "4/48/P-130_P1",
         },
+        "rarities": {
+            "P": {
+                "p": [109,117,123,124,130]
+            }
+        }
     },
 
     // 3 on 3 Battle - Participation Prize --- 3on3_battle_participation
@@ -1968,6 +2116,11 @@ const data2023 = [
             "P-065": "P1",
             "P-116": "P1",
         },
+        "rarities": {
+            "P": {
+                "p": [116]
+            }
+        },
         "info_url": "https://world.digimoncard.com/event/store_tournament_11/",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/d/d5/Official_Tournament_Pack_Vol.11.png"
     },
@@ -2011,6 +2164,9 @@ const data2023 = [
             "P-128": "",
             "P-129": "",
             "P-130": "",
+        },
+        "rarity": {
+            "p": [118,119,120,121,122,123,125,126,127,128,129,130]
         },
         "info_url": "https://world.digimoncard.com/event/tamer_party_sp/",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/b/b6/Tamer_Party_Pack_The_Beginning_Ver_2.png"

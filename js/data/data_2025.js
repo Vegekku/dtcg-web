@@ -15,6 +15,7 @@ const data2025 = [
             "P-168": "",
             "P-169": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/2025/store_tournament/01/",
     },
     // Official Store Tournament 2025 Vol.1 - Winner Pack --- wp16
@@ -64,6 +65,13 @@ const data2025 = [
             "black": [5,"46-55",67,70],
             "purple": [6,"56-61",63,71,72],
             "purple-yellow": [62,64],
+        },
+        "rarity": {
+            "c": [3,8,10,12,13,15,17,19,20,30,32,34,35,38,40,41,46,48,49,56,58,70],
+            "u": [1,2,"4-7",14,21,23,25,36,42,43,50,52,59,61,68,69,71],
+            "r": [9,11,18,22,24,27,31,33,39,47,51,53,57,60,"65-67",72],
+            "sr": [16,26,28,29,37,44,45,54,55,"62-64"],
+            "sec": [73,74],
         },
         "info_url": "https://world.digimoncard.com/products/pack/ex-08/"
     },
@@ -165,6 +173,11 @@ const data2025 = [
             "EX8-073": "",
             "EX8-074": "",
         },
+        "rarities": {
+            "EX8": {
+                "sp": [26,44,62,74],
+            },
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ex-08/",
     },
     // Booster Chain of Liberation [EX8] - Legend Pack 2024 --- ex8_legend_pack
@@ -196,6 +209,7 @@ const data2025 = [
             "P-162": "",
             "P-163": ""
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/products/pack/ex-08/",
     },
 
@@ -255,6 +269,13 @@ const data2025 = [
             "purple-yellow": [81,89],
             "purple-black": [73,78,82,97],
             "white": [83,84,91,92,99,100]
+        },
+        "rarity": {
+            "c": ["1-6","11-14","22-24",29,"31-34","38-41",47,"49-51",54,62,"66-71",73,"93-95",97,99],
+            "u": ["8-10",16,25,30,36,42,43,46,48,52,53,58,61,63,64,72,74,75,78,86,92,96,98,100],
+            "r": [7,15,"17-19",26,27,35,44,56,57,59,65,76,80,"83-85","87-90"],
+            "sr": [20,21,28,37,45,55,60,77,79,81,82,91],
+            "sec": [101,102],
         }
     },
 
@@ -529,6 +550,12 @@ const data2025 = [
             "BT20-101": "p2_d",
             "BT20-102": "p2_d",
         },
+        "rarities": {
+            "BT19": "sp",
+            "BT20": {
+                "sp": [21,45,60,77,81]
+            }
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver19-20/"
     },
     // Special Booster Ver.2.5 [BT19-20] - Signed Cards --- sbt25_signed
@@ -571,6 +598,7 @@ const data2025 = [
             "P-174": "",
             "P-175": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/products/pack/ver19-20/",
     },
 
@@ -741,6 +769,12 @@ const data2025 = [
             "black-red": [11],
             "black-green": [13],
             "white": [15]
+        },
+        "rarity": {
+            "c": [1,3,5,7,14],
+            "u": [2,8,9,12,15],
+            "r": [4,10,13],
+            "sr": [6,11],
         }
     },
     // Starter Deck Protector of Light [ST20] - Lucky Deck --- st20_lucky
@@ -791,6 +825,12 @@ const data2025 = [
             "purple-blue": [11],
             "purple-yellow": [13],
             "white": [15]
+        },
+        "rarity": {
+            "c": [1,3,5,8,14],
+            "u": [2,4,7,12,15],
+            "r": [9,10,13],
+            "sr": [6,11],
         }
     },
     // Starter Deck Hero of Hope [ST21] - Lucky Deck --- st21_lucky
@@ -875,6 +915,13 @@ const data2025 = [
                 "BT21-023": "",
             }
         },
+        "rarity": {
+            "c": ["1-7",12,14,15,19,31,34,38,"41-43",48,49,53,55,56,58,65,"68-71",75,"90-100"],
+            "u": [10,11,13,16,17,21,22,24,26,32,33,35,37,40,44,47,50,57,60,61,63,64,66,67,76,78],
+            "r": [8,9,18,20,25,27,28,30,36,39,45,46,54,59,"72-74",77,79,81,84,87],
+            "sr": [23,29,51,52,62,80,82,83,85,86,88,89],
+            "sec": [101,102],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver21/"
     },
     // Booster World Convergence [BT21] - Alternatives --- bt21_alts
@@ -922,6 +969,9 @@ const data2025 = [
             "BT21-101": "sp_d",
             "BT21-102": "p2_d",
         },
+        "rarity": {
+            "sp": [29,51,62,101]
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver21/"
     },
     // Booster World Convergence [BT21] - Signed Cards --- bt21_signed
@@ -958,6 +1008,7 @@ const data2025 = [
             "P-186": "",
             "P-187": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/products/pack/ver21/"
     },
     // Booster World Convergence [BT21] - Limited Card Pack --- bt21_limited
@@ -1012,6 +1063,7 @@ const data2025 = [
             "P-180": "",
             "P-181": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/2025/store_tournament/02/",
     },
     // Official Store Tournament 2025 Vol.2 - Winner Pack --- wp17
@@ -1162,6 +1214,13 @@ const data2025 = [
             "purple-black": [64],
             "white": [69,72,74]
         },
+        "rarity": {
+            "c": ["1-4",6,10,15,22,24,27,29,"34-36",39,40,42,"46-48",59,60],
+            "u": [5,8,9,14,16,17,23,25,26,28,37,38,"49-52",58,61,71,72],
+            "r": [7,13,20,31,32,41,44,"53-56",62,63,"65-68",70],
+            "sr": [11,12,18,19,21,30,33,43,45,57,64,69],
+            "sec": [73,74],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ex-09/"
     },
     // Booster Versus Monsters [EX9] - Alternatives --- ex9_alts
@@ -1263,6 +1322,9 @@ const data2025 = [
             "EX9-064": "SP",
             "EX9-073": "P2",
         },
+        "rarity": {
+            "sp": [11,18,30,43,64]
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ex-09/",
     },
     // Booster Versus Monsters [EX9] - Legend Pack --- ex9_legend_pack
@@ -1325,6 +1387,7 @@ const data2025 = [
             "P-192": "",
             "P-193": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/2025/store_tournament/03/",
     },
     // Official Store Tournament 2025 Vol.3 - Winner Pack --- wp18
@@ -1407,6 +1470,13 @@ const data2025 = [
                 "BT22-100": "",
             }
         },
+        "rarity": {
+            "c": ["1-6","9-12",16,18,"20-22",29,32,34,37,38,"45-48",50,51,53,"55-58",60,61,"70-72",79,80,97,100],
+            "u": [7,8,17,23,24,31,33,36,43,44,49,54,59,62,66,68,73,74,78,81,92,"94-96",98,99],
+            "r": [13,14,19,26,27,30,35,40,41,64,65,67,69,75,76,82,"85-90"],
+            "sr": [15,25,28,39,42,52,63,77,83,84,91,93],
+            "sec": [101,102],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver22/"
     },
     // Booster Cyber Eden [BT22] - Alternatives --- bt22_alts
@@ -1454,6 +1524,9 @@ const data2025 = [
             "BT22-093": "SP_D",
             "BT22-094": "SP_D",
             "BT22-101": "P2_D",
+        },
+        "rarity": {
+            "sp": [83,84,91,93,94]
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver21/"
     },
@@ -1635,6 +1708,12 @@ const data2025 = [
             "P-194": "",
             "P-195": "",
         },
+        "rarities": {
+            // TODO: preparar el script para en caso de rarities, pueda asignar por defecto aa sino encuentra coincidencia.
+            "P": {
+                "p": [194,195]
+            }
+        },
         "info_url": "https://world.digimoncard.com/event/2025/gamescom/"
     },
 
@@ -1708,6 +1787,13 @@ const data2025 = [
             "purple-green": [54],
             "purple-black": [45,50,51,55,59,64,74],
             "white": [61,68,72]
+        },
+        "rarity": {
+            "c": ["1-5",7,14,16,21,25,28,29,32,"39-41",43,44,46,50,70,72],
+            "u": [6,15,24,26,27,30,31,37,42,45,47,49,51,62,63,"65-67",69,71],
+            "r": [8,12,13,17,18,20,"33-35",38,48,52,"54-58",64],
+            "sr": ["9-11",19,22,23,36,53,"59-61",68],
+            'sec': [73,74]
         },
         "override": {
             "url": "bandaitcgplusURL/EX10/setID-cardID_D.png",
@@ -1816,6 +1902,7 @@ const data2025 = [
             "EX10-060": "SP",
             "EX10-061": "SP",
         },
+        "rarity": 'sp',
         "info_url": "https://world.digimoncard.com/products/pack/ex-10/",
     },
     // Extra Booster Sinister Order [EX10] - Legend Pack --- ex10_legend_pack
@@ -2046,6 +2133,7 @@ const data2025 = [
             "P-205": "",
             "P-206": "",
         },
+        "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/2025/store_tournament/04/",
     },
     // Official Store Tournament 2025 Vol.4 - Winner Pack --- wp19
@@ -2080,6 +2168,10 @@ const data2025 = [
             "P-198": "",
             "P-199": "",
             "P-200": "",
+        },
+        "rarity": {
+            "p": ["196-200"],
+            "aa": [194,195]
         },
         "info_url": "https://world.digimoncard.com/event/2025/store_tournament/04/",
     },
@@ -2153,6 +2245,13 @@ const data2025 = [
             "purple": [4,"61-71",87,88,97,98],
             "white": ["72-77",89,90,99,100]
         },
+        "rarity": {
+            "c": ["1-5",7,"9-12",19,23,26,27,29,30,"38-40","42-44",49,50,52,53,56,"61-64",73,"91-96",98,100],
+            "u": [8,15,17,18,20,21,25,28,31,34,36,37,41,46,48,51,60,65,67,74,78,80,82,86,88,99],
+            "r": [6,14,16,22,32,33,35,54,55,"57-59",66,69,72,"75-77",79,83,87,97],
+            "sr": [13,24,45,47,68,70,71,81,84,85,89,90],
+            "sec": [101,102],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver23/"
     },
     // Booster Hackers' Slumber [BT-23] - Alternatives --- bt23_alts
@@ -2200,6 +2299,7 @@ const data2025 = [
             "BT23-089": "",
             "BT23-090": "",
         },
+        "rarity": "sp",
         "info_url": "https://world.digimoncard.com/products/pack/ver21/"
     },
     // Booster Hackers' Slumber [BT-23] - Box Promotion Pack --- bt23_boxtopper
@@ -2222,6 +2322,12 @@ const data2025 = [
             "P-210": "_D",
             "P-211": "_D",
             "P-212": "_D",
+        },
+        "rarities": {
+            // "BT23": {
+            //     "t": ["token"]
+            // },
+            "P": "p"
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver22/",
     },
@@ -2283,6 +2389,13 @@ const data2025 = [
             "green": [13],
             "black": [11],
             "purple": [14],
+        },
+        "rarity": {
+            "c": [1,3],
+            "u": [8,9,11],
+            "r": [4,7],
+            "sr": [2,5,6,10,"12-14"],
+            // TODO: tiene 2 tokens
         }
     },
     // Advanced Deck Amethyst Mandala [ST-22] - Lucky Deck --- st22_lucky
