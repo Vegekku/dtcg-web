@@ -147,6 +147,13 @@ const data2026 = [
             "purple-white": [79],
             "white": [100,102]
         },
+        "rarity": {
+            "c": ["1-7","9-11",15,19,21,22,32,33,35,36,39,42,43,46,47,49,50,"52-55",57,61,63,66,"68-70",73,76,90,99],
+            "u": [8,12,13,16,20,23,24,26,29,38,44,45,58,67,72,74,88,89,"91-95",97,98],
+            "r": [14,17,25,27,28,31,37,48,56,59,62,64,71,74,77,80,82,83,86,87,96,100],
+            "sr": [18,30,34,40,41,51,65,78,79,81,84,85],
+            "sec": [101,102],
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver24/"
     },
     // Booster Time Stranger [BT-24] - Alternatives --- bt24_alts
@@ -193,6 +200,7 @@ const data2026 = [
             "BT24-084": "",
             "BT24-085": "",
         },
+        "rarity": "sp",
         "info_url": "https://world.digimoncard.com/products/pack/ver24/"
     },
     // Booster Time Stranger [BT-24] - Box Promotion Pack --- bt24_boxtopper
@@ -215,6 +223,12 @@ const data2026 = [
             "BT24-054": "P_D",
             "BT24-067": "P_D",
             // https://world.digimoncard.com/images/products/pack/ver24/card/BT24_TOKEN.png
+        },
+        "rarities": {
+            // "BT24": {
+            //     "t": ["token"]
+            // },
+            "P": "p"
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver24/",
     },

@@ -21,7 +21,8 @@ const filterCards = () => {
     const filters = {
         "status": document.getElementById('status').value,
         "color": document.getElementById('color').value,
-        "set": document.getElementById('setValue').value
+        "set": document.getElementById('setValue').value,
+        "rarity": document.getElementById('rarity').value
     }
     const setLists = document.getElementById('setLists');
     const content = document.getElementById('content');
@@ -104,6 +105,23 @@ const filterCards = () => {
         queryCards += `[data-set="${filters.set}"]`;
         cardClasses.push('filtered--set');
         rowClasses.push('match_filter--set');
+    }
+
+    // Rarity filter
+    const cleanFilterRarity = () => {
+        const filterCards = document.querySelectorAll('.filtered--rarity');
+        filterCards.forEach(card => {
+            card.classList.remove('filtered--rarity');
+            card.parentElement.parentElement.classList.remove('match_filter--rarity');
+        });
+        setLists.classList.remove('filter--rarity');
+    }
+    cleanFilterRarity();
+    if (filters.rarity !== '') {
+        setLists.classList.add('filter--rarity');
+        queryCards += `[data-rarity="${filters.rarity}"]`;
+        cardClasses.push('filtered--rarity');
+        rowClasses.push('match_filter--rarity');
     }
    
     const hideAllSets = () => {
