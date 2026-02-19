@@ -11,6 +11,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-1.php",
         "color": "red",
+        "rarity": {
+            "c": [2,"4-6","13-15"],
+            "u": [1,3,7,8,16],
+            "r": [9,10,12],
+            "sr": [11]
+        }
     },
     // Starter Deck COCYTUS BLUE [ST-2] --- st2
     {
@@ -23,6 +29,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-2.php",
         "color": "blue",
+        "rarity": {
+            "c": [2,5,7,"13-15"],
+            "u": [1,3,4,6,9,16],
+            "r": [8,10,12],
+            "sr": [11]
+        }
     },
     // Starter Deck HEAVEN'S YELLOW [ST-3] --- st3
     {
@@ -35,6 +47,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-3.php",
         "color": "yellow",
+        "rarity": {
+            "c": [2,3,6,"13-15"],
+            "u": [1,4,5,7,9,16],
+            "r": [8,10,12],
+            "sr": [11]
+        }
     },
     // Tamer Party Vol.1 --- tp1
     {
@@ -248,6 +266,28 @@ const data2021 = [
             "BT3-107": "",
             "BT3-109": "",
         },
+        "rarities": {
+            "BT1": {
+                "c": [9,11,13,14,18,19,24,27,28,30,32,33,37,38,45,46,"50-52",54,59,64,65,68,69,71,73,75,77,90,"92-94","97-99",102,104,105,108,109,112,113],
+                "u": [2,4,5,8,12,15,17,20,21,26,31,35,36,40,42,43,47,49,53,"56-58",62,66,67,70,72,76,78,80],
+                "r": [1,3,6,7,10,16,23,29,34,39,48,55,61,74,79,"85-89",96,106,110,111],
+                "sr": [22,25,41,44,60,63,81,82,84],
+                "sec": [114,115]
+            },
+            "BT2": {
+                "c": [5,7,9,18,43,44,52,"55-58",61,63,68,69,"71-73",76,78,103,104,108,109],
+                "u": [13,39,48,54,59,60,64,67,70,74,75,92,95,105,107],
+                "r": [6,8,17,30,46,49,53,62,77,79,84,85,"87-90",93,102,106,110],
+                "sr": [20,51,65,66,"80-83"],
+                "sec": [111]
+            },
+            "BT3": {
+                "c": [61,79],
+                "u": [74,81,89,107,109],
+                "r": [84],
+                "sr": [30,43,91]
+            }
+        },
         "pack": [
             "https://static.wikia.nocookie.net/digimoncardgame/images/0/00/Special_Release_Booster_Pack_1.0-EN.png/",
             "https://static.wikia.nocookie.net/digimoncardgame/images/4/4e/Special_Release_Booster_Pack_1.0-EN.01.png/",
@@ -319,6 +359,7 @@ const data2021 = [
             "P-011": "",
             "P-012": ""
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/8/80/Special_Box_Promotion_Pack.png",
     },
     // Dash Pack Ver. 1.0 --- dp10
@@ -376,6 +417,7 @@ const data2021 = [
             "P-019": "",
             "P-020": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/1/1a/Official_Tournament_Pack_Vol.1.png/",
     },
     // Tamer Battle Pack 1 --- tbp1
@@ -410,6 +452,7 @@ const data2021 = [
             "P-005": "",
             "P-006": ""
         },
+        'rarity': 'p',
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/7/73/Promotion_Pack_Ver_0.0-EN.png/",
         "info_url": "https://world.digimoncard.com/event/online_event_mar2021/"
     },
@@ -576,6 +619,27 @@ const data2021 = [
             "BT3-111": "",
             "BT3-112": "",
         },
+        "rarities": {
+            "BT1": {
+                "c": [101,107],
+                "r": [91,95,100,103],
+                "sr": [83]
+            },
+            "BT2": {
+                "c": [10,11,"14-16","21-25",29,33,35,37,42,47,91,94,97,101],
+                "u": ["1-4",12,26,27,31,34,36,45,50,96,98,100],
+                "r": [19,28,38,40,86,99],
+                "sr": [32,41],
+                "sec": [112]
+            },
+            "BT3": {
+                "c": [7,9,10,12,13,20,22,23,26,32,35,37,38,44,45,48,"51-54",59,60,63,64,"66-69","76-78",80,83,"85-87",98,100,101,104,106,110],
+                "u": ["1-6",8,11,17,24,28,29,34,36,42,46,49,58,62,65,82,97,99,102,103],
+                "r": ["14-16",21,25,27,33,"39-41",47,50,55,57,"70-72",88,"92-96",105,108],
+                "sr": [18,19,31,56,73,75,90],
+                "sec": [111,112]
+            },
+        },
         "pack": [
             "https://static.wikia.nocookie.net/digimoncardgame/images/c/c4/Special_Release_Booster_Pack_1.5-EN.png/",
             "https://static.wikia.nocookie.net/digimoncardgame/images/0/08/Special_Release_Booster_Pack_1.5-EN.01.png/",
@@ -651,6 +715,7 @@ const data2021 = [
             "P-023": "",
             "P-024": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/c/c7/Special_Release_Memorial_Pack.png/"
     },
 
@@ -680,6 +745,9 @@ const data2021 = [
             "P-028": "",
             "ST3-08": "_P1",
         },
+        "rarities": {
+            "P": "p"
+        },
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/7/74/Great_Legend_Pre-Release_Promotion_Pack.png/",
         "info_url": "https://world.digimoncard.com/event/pre-release_BT-04/"
     },
@@ -696,6 +764,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-4.php",
         "color": "green",
+        "rarity": {
+            "c": [2,"5-7",9,15],
+            "u": [1,3,4,8,10,16],
+            "r": [11,12,14],
+            "sr": [13]
+        }
     },
     // Starter Deck MACHINE BLACK [ST-5] --- st5
     {
@@ -708,6 +782,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-5.php",
         "color": "black",
+        "rarity": {
+            "c": [2,"5-7",10,15],
+            "u": [1,3,4,8,9,16],
+            "r": [11,12,14],
+            "sr": [13]
+        }
     },
     // Starter Deck VENOMOUS VIOLET [ST-6] --- st6
     {
@@ -720,6 +800,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-6.php",
         "color": "purple",
+        "rarity": {
+            "c": [2,3,"5-7",9,15],
+            "u": [1,4,8,10,16],
+            "r": [11,12,14],
+            "sr": [13]
+        }
     },
 
     // Booster Great Legend [BT4] --- bt4
@@ -741,7 +827,14 @@ const data2021 = [
             "black": [5,"63-75",96,109,110],
             "purple": [6,"76-89",97,111,112],
             "white": [90,91],
-        }
+        },
+        "rarity": {
+            "c": ["7-10",12,14,15,"21-24",26,29,34,36,37,"39-42",44,45,50,51,"55-57",65,66,"60-71",76,79,81,"83-85",98,102,106,108,109,111],
+            "u": ["1-6",11,13,18,25,27,28,38,43,47,"52-54",60,64,67,68,73,78,80,82,87,99,101,105],
+            "r": [19,20,"31-33",46,49,58,61,63,74,77,86,90,"92-97",100,103,104,107,110,112],
+            "sr": [16,17,30,35,48,59,62,72,75,88,89,91],
+            'sec': ["113-115"]
+        },
     },
     // Booster Great Legend [BT4] - Alternatives --- bt4_alts
     {
@@ -796,6 +889,7 @@ const data2021 = [
             "P-026": "",
             "P-027": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/5/59/Great_Dash_Pack.png/"
     },
     // Great Legend Power Up Pack --- bt4_powerup
@@ -813,6 +907,7 @@ const data2021 = [
             "P-033": "",
             "P-034": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/f/fc/Great_Legend_Power_Up_Pack.png"
     },
     // Great Legend Power Up Pack (Foil) --- bt4_powerup_foil
@@ -916,6 +1011,13 @@ const data2021 = [
             "black": [5,"59-70",90,"103-105"],
             "purple": [6,"71-83","106-108"],
             "white": ["84-87","91-93","109-112"],
+        },
+        "rarity": {
+            "c": [7,8,"11-13",18,21,"23-27","33-35",37,38,41,42,47,48,"50-54",59,"61-64",68,"73-78",94,96,98,100,105,106],
+            "u": ["1-6",9,10,17,20,28,30,39,40,43,49,55,57,60,65,67,71,72,80,95,97,99,101,103,107],
+            "r": ["14-16",22,29,31,36,44,46,58,66,69,79,83,84,"88-93",102,104,"108-110"],
+            "sr": [19,32,45,56,70,81,82,"85-87"],
+            "sec": [111,112]
         }
     },
     // Booster Battle of Omni [BT5] - Alternatives --- bt5_alts
@@ -1151,6 +1253,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-7.php",
         "color": "red",
+        "rarity": {
+            "c": [2,4,12],
+            "u": [1,6,7,11],
+            "r": [5,8,10],
+            "sr": [3,9]
+        }
     },
     {
         "id": null,
@@ -1177,6 +1285,12 @@ const data2021 = [
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/products/deck/st-8.php",
         "color": "blue",
+        "rarity": {
+            "c": [2,3,12],
+            "u": [1,6,7,11],
+            "r": [5,8,9],
+            "sr": [4,10]
+        }
     },
     {
         "id": null,
@@ -1207,6 +1321,7 @@ const data2021 = [
             "P-039": "",
             "P-040": "",
         },
+        "rarity": "p"
     },
 
     // Booster Double Diamond [BT6] --- bt6
@@ -1228,6 +1343,13 @@ const data2021 = [
             "black": [5,"55-67",90,"104-106",111],
             "purple": [6,"68-81",91,"107-109",112],
             "white": ["82-86",92,110],
+        },
+        "rarity": {
+            "c": [8,"11-14","20-23",25,26,31,32,35,"37-40",43,45,48,50,53,"56-58",60,61,63,"69-71",73,74,76,79,83,85,93,96,100,102,104,107],
+            "u": ["1-6",7,10,15,19,24,28,34,36,42,46,49,51,55,62,66,68,75,80,95,97,99,103,105,109],
+            "r": [9,17,27,33,41,47,52,54,59,65,72,77,82,84,"87-92",94,98,101,106,108,110],
+            "sr": [16,18,29,30,44,64,67,78,81,86],
+            "sec": [111,112]
         }
     },
     // Booster Double Diamond [BT6] - Alternatives --- bt6_alts
@@ -1311,6 +1433,7 @@ const data2021 = [
             "P-045": "",
             "P-046": "",
         },
+        "rarity": "p",
         "pack": "https://static.wikia.nocookie.net/digimoncardgame/images/0/09/Double_Diamond_Dash_Pack.png/"
     },
 
@@ -1394,6 +1517,13 @@ const data2021 = [
             "black": ["44-54",69,73],
             "purple": ["55-64",70],
             "white": [65,66,71,72],
+        },
+        "rarity": {
+            "c": [2,6,7,12,14,"16-18",23,25,28,33,34,36,38,"44-50","55-58"],
+            "u": [1,3,4,10,11,15,20,24,26,32,35,39,41,42,"52-54",60,61,64],
+            "r": [5,8,13,19,27,31,37,40,51,59,62,"66-72"],
+            "sr": [9,21,22,29,30,43,63,65],
+            "sec": [73],
         }
     },
     // Booster Classic Collection [EX1] - Alternatives --- ex1_alts
@@ -1446,5 +1576,6 @@ const data2021 = [
         "cards": {
             "BT2-065": "",
         },
+        "rarity": "sr",
     },
 ];
