@@ -168,6 +168,9 @@ $rarity-backgrounds: (
   tr:not([data-color]) &,
   tr[data-color="undefined"] & {
     color: grey;
+    &__rarity {
+      color: white;
+    }
   }
 
   // Red cards
