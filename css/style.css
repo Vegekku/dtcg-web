@@ -36,6 +36,9 @@ input:disabled + label {
 tr:not([data-color]) .card_info, tr[data-color=undefined] .card_info {
   color: grey;
 }
+tr:not([data-color]) .card_info__rarity, tr[data-color=undefined] .card_info__rarity {
+  color: white;
+}
 [data-color=red] .card_info {
   background-color: var(--red-card);
 }
