@@ -165,7 +165,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
                                 ? setRarities[setId]
                                 : setRarities[setId][parseInt(cardId)] )
                             )
-                        : setRarity[parseInt(cardId)] ?? setRarity;
+                        : (typeof setRarity === 'string'
+                            ? setRarity
+                            : setRarity[parseInt(cardId)]
+                        );
 
                     if ( Array.isArray( parallel )) {
                         parallel.forEach((parallelElement, index) => {
