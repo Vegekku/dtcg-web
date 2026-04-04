@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // 0. Actualizar datos erroneos o desactualizados.
     // updatesData();
+    // migrateReprints();
 
     // 1. crear objeto collection y cardmarket si no existe. Si existe, obtener de storage.
     collection = JSON.parse( window.localStorage.getItem("collection") || '{}' );
@@ -203,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     }
 
                     if ( reprint ) {
-                        cardRow.cells[1].innerHTML += `<input class="amount-card amount-card--reprint" type="text" data-card-number="${cardNumber}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setId][cardId].reprint || 0}">`;
+                        cardRow.cells[1].innerHTML += `<input class="amount-card amount-card--reprint" type="text" data-card-number="${cardNumber}" data-slug="${slug}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setId][cardId].reprint?.[slug] || 0}">`;
                     }
                 }
             });
