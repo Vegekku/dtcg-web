@@ -702,6 +702,7 @@ const data2026 = [
             }
         },
         "reprint": true,
+        "block": 5,
     },
     // ADVANCED BOOSTER DIGIMON GENERATION [AD-01] - Reprints --- ad1_reprints
     {
