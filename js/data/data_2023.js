@@ -1643,6 +1643,7 @@ const data2023 = [
             }
         },
         "reprint": true,
+        "block": 2,
     },
     // Resurgence Booster [RB01] - English Reprints --- rb1_en_reprints
     {
@@ -1665,6 +1666,7 @@ const data2023 = [
             "ST3": "c"
         },
         "reprint": true,
+        "block": 2,
     },
     // TODO: Revise this cards in localstorage.
     {
