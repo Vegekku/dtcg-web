@@ -196,10 +196,14 @@ const updateValue = (element) => {
     element.setAttribute('value', element.value);
     const [set, id] = element.dataset.cardNumber.split('-');
     if ( element.classList.contains('amount-card--reprint') ) {
+        const block = element.dataset.block;
         if ( element.value > 0 ) {
-            collection[set][id].reprint = parseInt(element.value);
-        } else {
-            delete collection[set][id].reprint;
+            (collection[set][id].reprint ??= {})[block] = parseInt(element.value);
+        } else if ( collection[set][id].reprint ) {
+            delete collection[set][id].reprint[block];
+            if ( Object.keys(collection[set][id].reprint).length === 0 ) {
+                delete collection[set][id].reprint;
+            }
         }
     } else {
         element.parentElement.parentElement.dataset.pull = element.value >= 4;

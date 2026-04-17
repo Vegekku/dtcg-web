@@ -2429,6 +2429,7 @@ const data2025 = [
             "LM-029": "",
         },
         "reprint": true,
+        "block": 5,
         "info_url": "https://world.digimoncard.com/products/deck/st-22/"
     },
 
