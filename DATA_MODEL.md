@@ -225,8 +225,8 @@ Rarezas soportadas:
 | `u` | Uncommon |
 | `r` | Rare |
 | `sr` | Super Rare |
-| `sec` | Secret Rare |
 | `ur` | Ultimate Rare |
+| `sec` | Secret Rare |
 | `p` | Promo |
 | `aa` | Alternative Art (valor por defecto si no se especifica) |
 | `sp` | Special |
@@ -260,8 +260,8 @@ Un bloque (`block`) representa el periodo temporal en el que se imprimieron las 
 | 2 | 2022 | ST12–ST14, BT10–BT13, EX3–EX4 |
 | 3 | 2023 | ST15–ST17, BT14–BT17, EX5–EX6, RB1, LM |
 | 4 | 2024 | ST18–ST19, BT18–BT20, EX7–EX8 |
-| 5 | 2025 | ST20–ST22, BT21–BT23, EX9–EX10, AD1 |
-| 6 | 2026 | ST23+, BT24+, EX11+ |
+| 5 | 2025 | ST20–ST22, BT21–BT24, EX9–EX11, AD1 |
+| 6 | 2026 | ST23+, BT25+, EX12+ |
 
 ### Objetivo
 

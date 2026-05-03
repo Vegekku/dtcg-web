@@ -368,4 +368,3 @@ Definir un sistema de diseño mínimo pero cohesivo:
 - Componentes reutilizables: botón, input, select, badge, card, modal.
 - Dark mode como variante de la misma paleta.
 
-
