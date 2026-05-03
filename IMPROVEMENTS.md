@@ -1,5 +1,15 @@
 # Sugerencias de mejora — DTCG Web Collection
 
+## Prioridad sugerida
+
+| Prioridad | Items |
+|-----------|-------|
+| 🔴 Alta | [1](#item-1), [5](#item-5), [7](#item-7), [19](#item-19), [33](#item-33), [38](#item-38), [64](#item-64) |
+| 🟠 Media | [2](#item-2), [3](#item-3), [4](#item-4), [8](#item-8), [10](#item-10), [12](#item-12), [16](#item-16), [17](#item-17), [18](#item-18), [20](#item-20), [27](#item-27), [29](#item-29), [39](#item-39), [40](#item-40), [68](#item-68), [73](#item-73) |
+| 🟡 Baja | [6](#item-6), [9](#item-9), [11](#item-11), [13](#item-13), [14](#item-14), [15](#item-15), [21](#item-21)–[26](#item-26), [28](#item-28), [30](#item-30)–[32](#item-32), [34](#item-34)–[37](#item-37), [41](#item-41)–[67](#item-67), [69](#item-69)–[72](#item-72) |
+
+---
+
 ## Índice
 
 - [🔧 Refactorización de código](#-refactorización-de-código)
@@ -16,7 +26,9 @@
 
 ## 🔧 Refactorización de código
 
-### 1. Eliminar `var` y usar `const`/`let`
+<a id="item-1"></a>
+
+### 1. Eliminar `var` y usar `const`/`let` <sup>[↑](#prioridad-sugerida)</sup>
 
 En `index.js` hay varios `var cardUrl` dentro de bloques `if/else`. Esto causa hoisting y puede generar bugs sutiles. Reemplazarlos por `let cardUrl` declarado antes del `if`.
 
@@ -37,7 +49,9 @@ if (url.includes('bandaitcgplusURL')) {
 }
 ```
 
-### 2. Simplificar `getImageUrl` con un mapa de URLs base
+<a id="item-2"></a>
+
+### 2. Simplificar `getImageUrl` con un mapa de URLs base <sup>[↑](#prioridad-sugerida)</sup>
 
 La cadena de `if/else if` para resolver URLs base se puede simplificar con un objeto:
 
@@ -59,14 +73,18 @@ for (const [key, base] of Object.entries(urlBases)) {
 }
 ```
 
-### 3. Reducir duplicación en `drawAlternatives`
+<a id="item-3"></a>
+
+### 3. Reducir duplicación en `drawAlternatives` <sup>[↑](#prioridad-sugerida)</sup>
 
 La lógica de "si no existe la carta, crearla" y "si hay override, recalcular URL" se repite en 3-4 sitios. Extraer funciones auxiliares:
 
 - `ensureCardExists(setId, cardId, slug)` — Inicializa la carta en `collection` si no existe.
 - `resolveCardUrl(setElement, url, setId, cardId, parallel)` — Resuelve la URL final teniendo en cuenta overrides.
 
-### 4. Reducir duplicación en `modalOk`
+<a id="item-4"></a>
+
+### 4. Reducir duplicación en `modalOk` <sup>[↑](#prioridad-sugerida)</sup>
 
 La lógica de guardar el precio de Cardmarket se repite casi idéntica para `card` y `pack`. Extraer a una función:
 
@@ -79,15 +97,21 @@ const updateCardmarketPrice = (target, price) => {
 };
 ```
 
-### 5. Eliminar `innerHTML +=` para inyectar imágenes
+<a id="item-5"></a>
+
+### 5. Eliminar `innerHTML +=` para inyectar imágenes <sup>[↑](#prioridad-sugerida)</sup>
 
 Cada vez que se hace `innerHTML +=` en `card_list`, el navegador re-parsea todo el HTML existente de esa celda, destruyendo event listeners y forzando re-renders innecesarios. Usar `insertAdjacentHTML('beforeend', ...)` o crear elementos con `document.createElement`.
 
-### 6. Eliminar `onclick` inline en HTML
+<a id="item-6"></a>
+
+### 6. Eliminar `onclick` inline en HTML <sup>[↑](#prioridad-sugerida)</sup>
 
 Hay muchos `onclick="editSet()"`, `onclick="modalClose(this)"`, etc. en `index.html`. Usar `addEventListener` desde JS para mantener la separación HTML/JS y facilitar el testing.
 
-### 7. Evitar `this.event` en `selectValue`
+<a id="item-7"></a>
+
+### 7. Evitar `this.event` en `selectValue` <sup>[↑](#prioridad-sugerida)</sup>
 
 ```js
 // ❌ Actual — this.event es legacy y no funciona en strict mode
@@ -105,7 +129,9 @@ const selectValue = (e) => {
 }
 ```
 
-### 8. Unificar la lógica de expansión de rangos
+<a id="item-8"></a>
+
+### 8. Unificar la lógica de expansión de rangos <sup>[↑](#prioridad-sugerida)</sup>
 
 `getCardsColor` y `getCardsRarity` comparten la misma lógica de expandir rangos tipo `"1-5"` a índices individuales. Extraer a una función genérica:
 
@@ -126,7 +152,9 @@ const expandRanges = (mapping) => {
 };
 ```
 
-### 9. Usar template literals consistentemente
+<a id="item-9"></a>
+
+### 9. Usar template literals consistentemente <sup>[↑](#prioridad-sugerida)</sup>
 
 En `views.js` se usa concatenación con `+` para construir clases CSS:
 
@@ -142,18 +170,24 @@ setLists.classList.add(`view--${list}`);
 
 ## 🏗️ Arquitectura
 
-### 10. Migrar a módulos ES
+<a id="item-10"></a>
+
+### 10. Migrar a módulos ES <sup>[↑](#prioridad-sugerida)</sup>
 
 Actualmente se cargan 10+ scripts con `<script>` globales. Usar `type="module"` e `import`/`export` eliminaría la dependencia del orden de carga y las variables globales (`collection`, `cardmarket`, `editingSet`, etc.).
 
-### 11. Separar datos de presentación
+<a id="item-11"></a>
+
+### 11. Separar datos de presentación <sup>[↑](#prioridad-sugerida)</sup>
 
 `index.js` mezcla lógica de negocio (gestión de colección/localStorage) con generación de DOM. Separar en:
 
 - `collection.js` — Solo gestiona el estado (CRUD sobre localStorage).
 - `renderer.js` — Solo dibuja el DOM a partir del estado.
 
-### 12. Sistema de versiones para migraciones
+<a id="item-12"></a>
+
+### 12. Sistema de versiones para migraciones <sup>[↑](#prioridad-sugerida)</sup>
 
 En `updates.js` ya existe el TODO. Implementar un `dataVersion` en localStorage y un array de migraciones secuenciales:
 
@@ -177,7 +211,9 @@ const runMigrations = () => {
 };
 ```
 
-### 13. Crear una clase `Card`
+<a id="item-13"></a>
+
+### 13. Crear una clase `Card` <sup>[↑](#prioridad-sugerida)</sup>
 
 Como indica el TODO en `index.js`, pasar a un modelo orientado a objetos para las cartas simplificaría mucho la lógica:
 
@@ -190,11 +226,15 @@ class Card {
 }
 ```
 
-### 14. Centralizar constantes
+<a id="item-14"></a>
+
+### 14. Centralizar constantes <sup>[↑](#prioridad-sugerida)</sup>
 
 Los mapas de estado (`0=falta, 1=obtenida, -1=reservada...`) se repiten en `modal.js` y `filters.js` con formatos distintos. Centralizar en un único archivo de constantes.
 
-### 15. Separar los datos de sets en JSON
+<a id="item-15"></a>
+
+### 15. Separar los datos de sets en JSON <sup>[↑](#prioridad-sugerida)</sup>
 
 Los archivos `data_*.js` son scripts que declaran variables globales. Si fueran archivos `.json`, podrían cargarse dinámicamente (fetch o import) y serían más fáciles de validar, generar automáticamente y versionar.
 
@@ -202,15 +242,21 @@ Los archivos `data_*.js` son scripts que declaran variables globales. Si fueran 
 
 ## 🎨 UX/UI
 
-### 16. Feedback visual al guardar
+<a id="item-16"></a>
+
+### 16. Feedback visual al guardar <sup>[↑](#prioridad-sugerida)</sup>
 
 Cuando se pulsa "Guardar", no hay confirmación visual. Un toast/snackbar temporal ("Colección guardada ✓") daría confianza al usuario.
 
-### 17. Confirmación antes de cancelar edición
+<a id="item-17"></a>
+
+### 17. Confirmación antes de cancelar edición <sup>[↑](#prioridad-sugerida)</sup>
 
 Si el usuario ha hecho cambios y pulsa "Cancelar", se pierden sin aviso. Un `confirm()` simple evitaría pérdidas accidentales.
 
-### 18. Diseño responsive
+<a id="item-18"></a>
+
+### 18. Diseño responsive <sup>[↑](#prioridad-sugerida)</sup>
 
 No hay media queries significativas fuera del modal. En móvil, la barra de filtros, botones de sets y la tabla se ven apretados. Considerar:
 
@@ -218,7 +264,9 @@ No hay media queries significativas fuera del modal. En móvil, la barra de filt
 - Botones de sets en scroll horizontal.
 - Vista grid como default en móvil.
 
-### 19. Accesibilidad
+<a id="item-19"></a>
+
+### 19. Accesibilidad <sup>[↑](#prioridad-sugerida)</sup>
 
 - `<html lang="en">` debería ser `lang="es"` ya que la UI está en español.
 - Los botones `<` y `>` de navegación de sets no tienen texto accesible (solo `title`), añadir `aria-label`.
@@ -226,29 +274,41 @@ No hay media queries significativas fuera del modal. En móvil, la barra de filt
 - Añadir `role="dialog"` y `aria-modal="true"` a los modales.
 - Gestionar el foco al abrir/cerrar modales (focus trap).
 
-### 20. Atajos de teclado en el modal
+<a id="item-20"></a>
+
+### 20. Atajos de teclado en el modal <sup>[↑](#prioridad-sugerida)</sup>
 
 - Cerrar con `Escape`.
 - Confirmar con `Enter`.
 - Navegar entre estados con flechas izquierda/derecha.
 
-### 21. Indicador de progreso de colección
+<a id="item-21"></a>
+
+### 21. Indicador de progreso de colección <sup>[↑](#prioridad-sugerida)</sup>
 
 Una barra o porcentaje por set (ej. "BT15: 87/112 — 78%") sería muy útil para ver de un vistazo cuánto falta. Podría mostrarse en los botones de set o como tooltip.
 
-### 22. Tema oscuro
+<a id="item-22"></a>
+
+### 22. Tema oscuro <sup>[↑](#prioridad-sugerida)</sup>
 
 Dado que es una app de coleccionismo que se usa mucho tiempo, un dark mode reduciría fatiga visual. Se puede implementar con CSS custom properties y un toggle.
 
-### 23. Mejorar la vista grid
+<a id="item-23"></a>
+
+### 23. Mejorar la vista grid <sup>[↑](#prioridad-sugerida)</sup>
 
 Actualmente la vista grid solo oculta columnas de la tabla. Podría ser un layout CSS Grid real con las imágenes de cartas más grandes y con indicadores de estado superpuestos (badges).
 
-### 24. Indicadores visuales en botones de set
+<a id="item-24"></a>
+
+### 24. Indicadores visuales en botones de set <sup>[↑](#prioridad-sugerida)</sup>
 
 Mostrar en cada botón de set un indicador de completitud (ej. un punto verde si está completo, amarillo si está en progreso, rojo si no se ha empezado).
 
-### 25. Mejorar la impresión
+<a id="item-25"></a>
+
+### 25. Mejorar la impresión <sup>[↑](#prioridad-sugerida)</sup>
 
 El CSS de impresión es muy básico. Podría incluir:
 
@@ -256,7 +316,9 @@ El CSS de impresión es muy básico. Podría incluir:
 - Lista de cartas que faltan.
 - Totales de gasto por set.
 
-### 26. Swipe en móvil para navegar entre sets
+<a id="item-26"></a>
+
+### 26. Swipe en móvil para navegar entre sets <sup>[↑](#prioridad-sugerida)</sup>
 
 En dispositivos táctiles, permitir deslizar izquierda/derecha para cambiar de set, similar a la navegación con los botones `<` y `>`.
 
@@ -264,27 +326,39 @@ En dispositivos táctiles, permitir deslizar izquierda/derecha para cambiar de s
 
 ## ⚡ Rendimiento
 
-### 27. Carga diferida de sets (lazy rendering)
+<a id="item-27"></a>
+
+### 27. Carga diferida de sets (lazy rendering) <sup>[↑](#prioridad-sugerida)</sup>
 
 Actualmente se generan TODAS las tablas de TODOS los sets al cargar la página. Con 20+ sets y cientos de cartas cada uno, el DOM inicial es enorme. Generar las tablas solo cuando el usuario selecciona un set.
 
-### 28. Debounce en filtros
+<a id="item-28"></a>
+
+### 28. Debounce en filtros <sup>[↑](#prioridad-sugerida)</sup>
 
 Si el usuario cambia filtros rápidamente, cada cambio ejecuta `filterCards()` que recorre todo el DOM. Un debounce de ~150ms evitaría trabajo innecesario.
 
-### 29. Reducir el tamaño de localStorage
+<a id="item-29"></a>
+
+### 29. Reducir el tamaño de localStorage <sup>[↑](#prioridad-sugerida)</sup>
 
 Como indica el TODO existente, no almacenar cartas con estado por defecto (`{status: 0, bought: 0}`) reduciría significativamente el JSON almacenado. Solo guardar las cartas que el usuario ha modificado.
 
-### 30. Usar `DocumentFragment` para inserciones masivas
+<a id="item-30"></a>
+
+### 30. Usar `DocumentFragment` para inserciones masivas <sup>[↑](#prioridad-sugerida)</sup>
 
 En el bucle principal de `sets.forEach`, cada `setLists.appendChild(tableSet)` causa un reflow. Acumular en un `DocumentFragment` y hacer un solo append al final.
 
-### 31. Optimizar `filterCards`
+<a id="item-31"></a>
+
+### 31. Optimizar `filterCards` <sup>[↑](#prioridad-sugerida)</sup>
 
 `filterCards` limpia y re-aplica todos los filtros cada vez. Podría mantener un estado de filtros activos y solo recalcular lo que cambió. Además, usar `requestAnimationFrame` para agrupar cambios de DOM.
 
-### 32. Considerar virtualización para "todas las colecciones"
+<a id="item-32"></a>
+
+### 32. Considerar virtualización para "todas las colecciones" <sup>[↑](#prioridad-sugerida)</sup>
 
 Cuando se muestra "todas las colecciones" a la vez, el DOM puede tener miles de filas. Una librería de virtualización (o implementación propia) renderizaría solo las filas visibles.
 
@@ -292,31 +366,45 @@ Cuando se muestra "todas las colecciones" a la vez, el DOM puede tener miles de 
 
 ## 🔒 Robustez y datos
 
-### 33. Importar colección desde JSON
+<a id="item-33"></a>
+
+### 33. Importar colección desde JSON <sup>[↑](#prioridad-sugerida)</sup>
 
 Hay exportación pero no importación. Si el usuario cambia de navegador o borra localStorage, pierde todo. Un botón "Importar colección" complementaría al de descarga.
 
-### 34. Validación de datos importados
+<a id="item-34"></a>
+
+### 34. Validación de datos importados <sup>[↑](#prioridad-sugerida)</sup>
 
 Si se implementa importación, validar la estructura del JSON antes de escribir en localStorage para evitar corrupción de datos.
 
-### 35. Manejo de errores en `getImageUrl`
+<a id="item-35"></a>
+
+### 35. Manejo de errores en `getImageUrl` <sup>[↑](#prioridad-sugerida)</sup>
 
 Si la URL no coincide con ningún patrón conocido, cae al `else` con `digimonFandom` por defecto, lo cual puede generar URLs rotas silenciosamente. Añadir un log de warning o un fallback visual.
 
-### 36. Backup automático en localStorage
+<a id="item-36"></a>
+
+### 36. Backup automático en localStorage <sup>[↑](#prioridad-sugerida)</sup>
 
 Guardar una copia de seguridad periódica (ej. `collection_backup`) con timestamp. Si la colección principal se corrompe, poder restaurar desde el backup.
 
-### 37. Detectar y avisar sobre límite de localStorage
+<a id="item-37"></a>
+
+### 37. Detectar y avisar sobre límite de localStorage <sup>[↑](#prioridad-sugerida)</sup>
 
 localStorage tiene un límite de ~5-10MB. Con una colección grande y muchos datos de Cardmarket, podría alcanzarse. Detectar el tamaño actual y avisar al usuario cuando se acerque al límite.
 
-### 38. Proteger contra pérdida de datos al editar
+<a id="item-38"></a>
+
+### 38. Proteger contra pérdida de datos al editar <sup>[↑](#prioridad-sugerida)</sup>
 
 Actualmente, si el usuario cierra el navegador sin pulsar "Guardar", pierde los cambios de la sesión de edición. Considerar auto-guardado o guardar en cada `modalOk`.
 
-### 39. Sanitizar URLs de Cardmarket
+<a id="item-39"></a>
+
+### 39. Sanitizar URLs de Cardmarket <sup>[↑](#prioridad-sugerida)</sup>
 
 El campo `cardmarketUrl` acepta cualquier URL. Validar que sea una URL de `cardmarket.com` para evitar inyección de contenido malicioso vía `data-cardmarketurl`.
 
@@ -324,19 +412,27 @@ El campo `cardmarketUrl` acepta cualquier URL. Validar que sea una URL de `cardm
 
 ## 🧪 Calidad y testing
 
-### 40. Añadir un linter (ESLint)
+<a id="item-40"></a>
+
+### 40. Añadir un linter (ESLint) <sup>[↑](#prioridad-sugerida)</sup>
 
 No hay configuración de linter. ESLint ayudaría a detectar problemas como el uso de `var`, variables no declaradas, etc.
 
-### 41. Añadir tests unitarios
+<a id="item-41"></a>
+
+### 41. Añadir tests unitarios <sup>[↑](#prioridad-sugerida)</sup>
 
 Las funciones puras como `getCardsColor`, `getCardsRarity`, `expandRanges` (si se extrae) son candidatas perfectas para tests unitarios con un framework ligero como Vitest.
 
-### 42. Validar la integridad de los datos de sets
+<a id="item-42"></a>
+
+### 42. Validar la integridad de los datos de sets <sup>[↑](#prioridad-sugerida)</sup>
 
 Crear un script que valide que todos los archivos `data_*.js` tienen la estructura correcta: campos obligatorios, rangos de cartas coherentes, URLs válidas, etc.
 
-### 43. Añadir JSDoc a las funciones principales
+<a id="item-43"></a>
+
+### 43. Añadir JSDoc a las funciones principales <sup>[↑](#prioridad-sugerida)</sup>
 
 Algunas funciones ya tienen comentarios, pero la mayoría no. JSDoc mejoraría la documentación y el autocompletado en el IDE.
 
@@ -344,7 +440,9 @@ Algunas funciones ya tienen comentarios, pero la mayoría no. JSDoc mejoraría l
 
 ## 📦 Build y tooling
 
-### 44. Migrar de Gulp a un bundler moderno
+<a id="item-44"></a>
+
+### 44. Migrar de Gulp a un bundler moderno <sup>[↑](#prioridad-sugerida)</sup>
 
 Gulp solo se usa para compilar SASS. Un bundler como Vite o esbuild podría:
 
@@ -354,15 +452,21 @@ Gulp solo se usa para compilar SASS. Un bundler como Vite o esbuild podría:
 - Hot reload en desarrollo.
 - Tree-shaking para eliminar código muerto.
 
-### 45. Minificar CSS y JS para producción
+<a id="item-45"></a>
+
+### 45. Minificar CSS y JS para producción <sup>[↑](#prioridad-sugerida)</sup>
 
 Actualmente el CSS compilado no está minificado (el `style.css` generado tiene ~1200 líneas). Añadir un paso de minificación reduciría el tamaño de carga.
 
-### 46. Añadir un `favicon.ico`
+<a id="item-46"></a>
+
+### 46. Añadir un `favicon.ico` <sup>[↑](#prioridad-sugerida)</sup>
 
 No hay favicon definido en el HTML. Añadir uno con el logo de la app o un icono de Digimon.
 
-### 47. Generar source maps
+<a id="item-47"></a>
+
+### 47. Generar source maps <sup>[↑](#prioridad-sugerida)</sup>
 
 Para facilitar el debugging en producción, generar source maps del CSS compilado.
 
@@ -370,7 +474,9 @@ Para facilitar el debugging en producción, generar source maps del CSS compilad
 
 ## 🌐 SEO y PWA
 
-### 48. Convertir en PWA (Progressive Web App)
+<a id="item-48"></a>
+
+### 48. Convertir en PWA (Progressive Web App) <sup>[↑](#prioridad-sugerida)</sup>
 
 Ya existe un `manifest.json` básico. Completarlo y añadir un Service Worker permitiría:
 
@@ -392,7 +498,9 @@ El `manifest.json` actual solo tiene `name` y `permissions`. Completar con:
 }
 ```
 
-### 49. Añadir meta tags
+<a id="item-49"></a>
+
+### 49. Añadir meta tags <sup>[↑](#prioridad-sugerida)</sup>
 
 ```html
 <meta name="description" content="Gestiona tu colección de Digimon TCG">
@@ -404,11 +512,15 @@ El `manifest.json` actual solo tiene `name` y `permissions`. Completar con:
 
 ## 💡 Funcionalidades nuevas
 
-### 50. Búsqueda por nombre de carta
+<a id="item-50"></a>
+
+### 50. Búsqueda por nombre de carta <sup>[↑](#prioridad-sugerida)</sup>
 
 Actualmente solo se puede filtrar por set, color, estado y rareza. Buscar por nombre (ej. "Omnimon") sería muy práctico. Requeriría añadir el nombre de cada carta a los datos o al DOM.
 
-### 51. Estadísticas de colección
+<a id="item-51"></a>
+
+### 51. Estadísticas de colección <sup>[↑](#prioridad-sugerida)</sup>
 
 Un panel de estadísticas con:
 
@@ -418,55 +530,81 @@ Un panel de estadísticas con:
 - Evolución del gasto en el tiempo (usando el historial de precios de Cardmarket).
 - Set más completo / menos completo.
 
-### 52. Historial de precios de Cardmarket
+<a id="item-52"></a>
+
+### 52. Historial de precios de Cardmarket <sup>[↑](#prioridad-sugerida)</sup>
 
 Ya se almacena un array de precios en `cardmarket[set][id][slug].price`. Mostrar un mini-gráfico de evolución de precio al hacer hover o en el modal de visualización.
 
-### 53. Lista de deseos / wishlist
+<a id="item-53"></a>
+
+### 53. Lista de deseos / wishlist <sup>[↑](#prioridad-sugerida)</sup>
 
 Permitir marcar cartas como "deseadas" para generar una lista de compra rápida con enlaces a Cardmarket.
 
-### 54. Compartir colección
+<a id="item-54"></a>
+
+### 54. Compartir colección <sup>[↑](#prioridad-sugerida)</sup>
 
 Generar un enlace o código que permita compartir la colección (o una vista de solo lectura) con otros coleccionistas. Podría ser un JSON codificado en base64 en la URL o un servicio externo.
 
-### 55. Comparar colecciones
+<a id="item-55"></a>
+
+### 55. Comparar colecciones <sup>[↑](#prioridad-sugerida)</sup>
 
 Permitir importar la colección de otro usuario y ver qué cartas tiene uno que le faltan al otro (y viceversa), útil para intercambios.
 
-### 56. Notificaciones de nuevos sets
+<a id="item-56"></a>
+
+### 56. Notificaciones de nuevos sets <sup>[↑](#prioridad-sugerida)</sup>
 
 Cuando se añade un nuevo set a los datos, mostrar un badge o notificación al usuario indicando que hay contenido nuevo.
 
-### 57. Modo "deck builder" ligero
+<a id="item-57"></a>
+
+### 57. Modo "deck builder" ligero <sup>[↑](#prioridad-sugerida)</sup>
 
 Permitir seleccionar cartas de la colección para armar un deck de 50 cartas, con validación de reglas básicas (máximo 4 copias, etc.).
 
-### 58. Integración con la API de Cardmarket
+<a id="item-58"></a>
+
+### 58. Integración con la API de Cardmarket <sup>[↑](#prioridad-sugerida)</sup>
 
 En lugar de introducir manualmente URLs y precios, consultar la API de Cardmarket para obtener precios mínimos automáticamente (si la API lo permite).
 
-### 59. Soporte multi-idioma
+<a id="item-59"></a>
+
+### 59. Soporte multi-idioma <sup>[↑](#prioridad-sugerida)</sup>
 
 La UI mezcla español e inglés. Implementar un sistema de i18n básico con un objeto de traducciones permitiría soportar ambos idiomas completamente.
 
-### 60. Ordenación de cartas en la tabla
+<a id="item-60"></a>
+
+### 60. Ordenación de cartas en la tabla <sup>[↑](#prioridad-sugerida)</sup>
 
 Permitir ordenar las filas por: número, estado, precio de compra, precio de Cardmarket, rareza, etc.
 
-### 61. Filtro combinado avanzado
+<a id="item-61"></a>
+
+### 61. Filtro combinado avanzado <sup>[↑](#prioridad-sugerida)</sup>
 
 Permitir combinar filtros con operadores AND/OR. Por ejemplo: "Cartas que me faltan Y son Super Rare Y del color rojo".
 
-### 62. Resumen de gasto por sesión de edición
+<a id="item-62"></a>
+
+### 62. Resumen de gasto por sesión de edición <sup>[↑](#prioridad-sugerida)</sup>
 
 Al pulsar "Guardar", mostrar un resumen de los cambios realizados: cuántas cartas se marcaron, cuánto se gastó en total en esa sesión.
 
-### 63. Soporte para tokens
+<a id="item-63"></a>
+
+### 63. Soporte para tokens <sup>[↑](#prioridad-sugerida)</sup>
 
 Algunos sets incluyen tokens (como se indica en los TODOs de `data_2025.js`). Añadir soporte para mostrarlos y trackearlos.
 
-### 64. Caché de imágenes con fallback
+<a id="item-64"></a>
+
+### 64. Caché de imágenes con fallback <sup>[↑](#prioridad-sugerida)</sup>
 
 Si una imagen de carta no carga (404), mostrar un placeholder genérico en lugar de una imagen rota. Actualmente no hay manejo de errores de carga de imágenes.
 
@@ -474,19 +612,27 @@ Si una imagen de carta no carga (404), mostrar un placeholder genérico en lugar
 img.onerror = () => { img.src = noCardURL; };
 ```
 
-### 65. Listado de sleeves
+<a id="item-65"></a>
+
+### 65. Listado de sleeves <sup>[↑](#prioridad-sugerida)</sup>
 
 Añadir las fundas (sleeves) como producto gestionable dentro de la sección Products, con el mismo sistema de estados y tracking que los sobres.
 
-### 66. Listado de memory gauges
+<a id="item-66"></a>
+
+### 66. Listado de memory gauges <sup>[↑](#prioridad-sugerida)</sup>
 
 Añadir los contadores de memoria (memory gauges) como producto gestionable dentro de la sección Products.
 
-### 67. Listado de cajas
+<a id="item-67"></a>
+
+### 67. Listado de cajas <sup>[↑](#prioridad-sugerida)</sup>
 
 Añadir las cajas (booster boxes, starter boxes, etc.) como producto gestionable dentro de la sección Products.
 
-### 68. Filtrar cartas por datos de Cardmarket
+<a id="item-68"></a>
+
+### 68. Filtrar cartas por datos de Cardmarket <sup>[↑](#prioridad-sugerida)</sup>
 
 Nuevos filtros basados en los datos de Cardmarket almacenados:
 
@@ -495,21 +641,29 @@ Nuevos filtros basados en los datos de Cardmarket almacenados:
 
 Útil para identificar cartas que aún no se han vinculado a Cardmarket o que no tienen precio actualizado.
 
-### 69. Conteo de imágenes por origen
+<a id="item-69"></a>
+
+### 69. Conteo de imágenes por origen <sup>[↑](#prioridad-sugerida)</sup>
 
 Herramienta o vista que muestre cuántas imágenes de cartas provienen de cada base de URL (bandaitcgplus, digimoncard, fandom, etc.). Útil para mantenimiento y para detectar dependencias de fuentes externas.
 
-### 70. Filtrado por edición de Cardmarket
+<a id="item-70"></a>
+
+### 70. Filtrado por edición de Cardmarket <sup>[↑](#prioridad-sugerida)</sup>
 
 Añadir un nuevo campo en los datos de set para indicar la edición con la que Cardmarket clasifica el producto. Permitiría filtrar cartas según la edición de Cardmarket, facilitando la búsqueda y vinculación de precios.
 
-### 71. Tracking de mazos (fase 1)
+<a id="item-71"></a>
+
+### 71. Tracking de mazos (fase 1) <sup>[↑](#prioridad-sugerida)</sup>
 
 Permitir registrar mazos como un listado de cartas (identificador + cantidad) para llevar un control de qué cartas están en uso en qué mazo. Esto evita el descontrol entre lo que no se encuentra en el álbum y lo que aparece en los listados. Incluir alguna distinción visual en las cartas que están asignadas a un mazo.
 
 En una segunda fase, esto podría evolucionar hacia un deck builder completo con validación de reglas (máximo 4 copias, 50 cartas, etc.).
 
-### 72. Marcar cartas baneadas, limitadas o con límite de 50
+<a id="item-72"></a>
+
+### 72. Marcar cartas baneadas, limitadas o con límite de 50 <sup>[↑](#prioridad-sugerida)</sup>
 
 Añadir soporte en los datos de sets para indicar el estado de regulación de cada carta:
 
@@ -519,16 +673,10 @@ Añadir soporte en los datos de sets para indicar el estado de regulación de ca
 
 Mostrar esta información visualmente en la tabla y/o en el modal de la carta.
 
-### 73. Nuevo color de fondo para playset >4
+<a id="item-73"></a>
+
+### 73. Nuevo color de fondo para playset >4 <sup>[↑](#prioridad-sugerida)</sup>
 
 Actualmente el input de cantidad usa verde (`--four-cards`) para 4 o más copias. Añadir un color diferenciado (azul) cuando la cantidad supera las 4 copias, para distinguir visualmente entre "playset completo" y "exceso de copias".
 
----
 
-## Prioridad sugerida
-
-| Prioridad | Items |
-|-----------|-------|
-| 🔴 Alta | 1, 5, 7, 19, 33, 38, 64 |
-| 🟠 Media | 2, 3, 4, 8, 10, 12, 16, 17, 18, 20, 27, 29, 39, 40, 68, 73 |
-| 🟡 Baja | 6, 9, 11, 13, 14, 15, 21-26, 28, 30-32, 34-37, 41-67, 69-72 |
