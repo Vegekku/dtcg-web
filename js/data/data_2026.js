@@ -746,6 +746,8 @@ const data2026 = [
         "slug": "ad1_alt_reprints",
         "name": "ADVANCED BOOSTER DIGIMON GENERATION [AD-01] - Alternative Reprints",
         "release": "March 27, 2026",
+        "reprint": true,
+        "block": 5,
         "url": "bandaitcgplusURL/AD01/e_setID-cardIDparallel.png",
         "cards": {
             "BT12-022": "P_d",
