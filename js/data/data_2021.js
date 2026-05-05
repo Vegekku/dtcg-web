@@ -3,6 +3,7 @@ const data2021 = [
     // Starter Deck GAIA RED [ST-1] --- st1
     {
         "id": "ST1",
+        "block": 0,
         "slug": "st1", 
         "name": "Starter Deck GAIA RED [ST-1]",
         "release": "January 29th, 2021",
@@ -21,6 +22,7 @@ const data2021 = [
     // Starter Deck COCYTUS BLUE [ST-2] --- st2
     {
         "id": "ST2",
+        "block": 0,
         "slug": "st2", 
         "name": "Starter Deck COCYTUS BLUE [ST-2]",
         "release": "January 29th, 2021",
@@ -39,6 +41,7 @@ const data2021 = [
     // Starter Deck HEAVEN'S YELLOW [ST-3] --- st3
     {
         "id": "ST3",
+        "block": 0,
         "slug": "st3", 
         "name": "Starter Deck HEAVEN'S YELLOW [ST-3]",
         "release": "January 29th, 2021",
@@ -756,6 +759,7 @@ const data2021 = [
     // Starter Deck GIGA GREEN [ST-4] --- st4
     {
         "id": "ST4",
+        "block": 0,
         "slug": "st4",
         "name": "Starter Deck GIGA GREEN [ST-4]",
         "release": "June 11, 2021",
@@ -774,6 +778,7 @@ const data2021 = [
     // Starter Deck MACHINE BLACK [ST-5] --- st5
     {
         "id": "ST5",
+        "block": 0,
         "slug": "st5",
         "name": "Starter Deck MACHINE BLACK [ST-5]",
         "release": "June 11, 2021",
@@ -792,6 +797,7 @@ const data2021 = [
     // Starter Deck VENOMOUS VIOLET [ST-6] --- st6
     {
         "id": "ST6",
+        "block": 0,
         "slug": "st6",
         "name": "Starter Deck VENOMOUS VIOLET [ST-6]",
         "release": "June 11, 2021",
@@ -811,6 +817,7 @@ const data2021 = [
     // Booster Great Legend [BT4] --- bt4
     {
         "id": "BT4",
+        "block": 0,
         "slug": "bt4",
         "name": "Booster Great Legend [BT4]",
         "release": "June 11, 2021",
@@ -995,6 +1002,7 @@ const data2021 = [
     // Booster Battle of Omni [BT5] --- bt5
     {
         "id": "BT5",
+        "block": 0,
         "slug": "bt5",
         "name": "Booster Battle of Omni [BT5]",
         "release": "August 6, 2021",

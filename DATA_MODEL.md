@@ -40,6 +40,7 @@ Representan un conjunto de cartas con identidad propia (ej. `"BT1"`, `"ST7"`, `"
 ```js
 {
     "id": "BT21",           // Identificador del set
+    "block": 5,             // Bloque temporal
     "slug": "bt21",         // Identificador del producto/release
     "name": "Booster World Convergence [BT21]",
     "release": "April 2025",
@@ -97,6 +98,7 @@ Representan variantes de cartas existentes: arts alternativos, reprints, limited
 | Campo | Tipo | Descripción |
 |-------|------|-------------|
 | `total` | `number` | Número total de cartas en el set |
+| `block` | `number` | Bloque temporal al que pertenece el set (ver [Bloques](#bloques-y-reprints)) |
 | `add_zero` | `number` | Dígitos de padding para el ID de carta (2 → `"01"`, 3 → `"001"`) |
 | `color` | `string \| object` | Color(es) de las cartas (ver [Color](#color)) |
 | `override` | `object` | Opcional. URLs alternativas para cartas específicas (ver [Override](#override)) |
@@ -250,18 +252,60 @@ Cuando un set con `id: null` inyecta cartas en múltiples sets base, se usa `rar
 
 Un bloque (`block`) representa el periodo temporal en el que se imprimieron las cartas:
 
-| Bloque | Periodo aproximado |
-|--------|-------------------|
-| 0 | Primer año de vida del TCG |
-| 1 | Segundo año |
-| 2 | Tercer año |
-| ... | ... |
-| 5 | Sexto año (actual) |
+| Bloque | Periodo | Sets de referencia |
+|--------|---------|-------------------|
+| 0 | 2020 (sin icono) | ST1–ST6, BT1–BT5 |
+| 1 | 2021 | ST7–ST10, BT6–BT9, EX1–EX2 |
+| 2 | 2022 | ST12–ST14, BT10–BT13, EX3–EX4 |
+| 3 | 2023 | ST15–ST17, BT14–BT17, EX5–EX6, RB1, LM |
+| 4 | 2024 | ST18–ST19, BT18–BT20, EX7–EX8 |
+| 5 | 2025 | ST20–ST22, BT21–BT23, EX9–EX10, AD1 |
+| 6 | 2026 | ST23+, BT24+, EX11+ |
+
+### Objetivo
+
+Todas las cartas deben tener un bloque asignado. Esto permite:
+
+- **Filtrar por bloque:** Mostrar solo las cartas de un periodo concreto.
+- **Inputs de cantidad por bloque:** Al filtrar por bloque X, se muestran las cartas de ese bloque y solo el input de cantidad correspondiente a ese bloque.
+
+### Block en sets base
+
+Todos los sets con `id` llevan `"block"` indicando a qué periodo pertenecen:
+
+```js
+{
+    "id": "BT21",
+    "block": 5,
+    "slug": "bt21",
+    "name": "Booster World Convergence [BT21]",
+    ...
+}
+```
+
+### Block en sets con cartas de distintos bloques
+
+Cuando un set contiene cartas de distintos bloques (ej. Promos, o productos que mezclan sets de distintos periodos), `block` se define como un mapa bloque → cartas:
+
+```js
+"block": {
+    "0": ["1-20"],
+    "1": ["21-50"],
+    "2": ["51-80"],
+    ...
+}
+```
+
+Esto aplica a:
+- **Promos** (`"id": "P"`) — cada carta puede pertenecer a un bloque distinto.
+- **Sets sin ID** que inyectan cartas de distintos periodos en un mismo producto.
 
 ### Diferencia entre alternativa y reprint
 
 - **Alternativa:** Mismo ID de carta pero con arte diferente. Pertenece al mismo bloque que la carta original.
 - **Reprint:** Misma carta reimpresa en un producto posterior. Cambia de bloque al del momento de la reimpresión.
+
+> **Pendiente de decisión:** Si el cambio de bloque es condición suficiente para considerar una carta como reprint. A priori parece que sí, pero esto trataría como reprints a muchas cartas alternativas que se publican en bloques posteriores al original.
 
 ### Cómo se define un reprint
 
