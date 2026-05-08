@@ -679,11 +679,30 @@ Mostrar esta información visualmente en la tabla y/o en el modal de la carta.
 
 Actualmente el input de cantidad usa verde (`--four-cards`) para 4 o más copias. Añadir un color diferenciado (azul) cuando la cantidad supera las 4 copias, para distinguir visualmente entre "playset completo" y "exceso de copias".
 
+> **Nota:** El playset se calcula sobre la suma total de copias de todos los bloques. En modo visualización se muestra un único contador con la suma total y un desglose por bloque (tags). En modo edición se muestran los inputs individuales por bloque.
+
 
 
 <a id="item-74"></a>
 
 ### 74. Soporte de prefijos de set en el mapa de bloques <sup>[↑](#prioridad-sugerida)</sup>
 
-Cuando `block` es un mapa (bloque → cartas), permitir que los valores del array sean prefijos de set (ej. `"BT1"`, `"BT6"`) además de IDs completos de carta (ej. `"BT1-084"`). La lógica debe distinguir entre ambos casos (por ejemplo comprobando si contiene `-`) y usar `startsWith` para los prefijos. Esto simplifica la definición de bloques en sets con `id: null` que mezclan cartas de distintos sets.
+Cuando `block` es un mapa (bloque → cartas), permitir que los valores del array sean prefijos de set (ej. `"BT1"`, `"BT6"`) además de IDs completos de carta (ej. `"BT1-084"`). Esto simplifica la definición de bloques en sets con `id: null` que mezclan cartas de distintos sets.
+
+Función de resolución acordada (busca primero por ID exacto, luego por prefijo de set):
+
+```js
+function getCardBlock(cardId, block) {
+    if (typeof block === 'number') return block;
+    const setPrefix = cardId.replace(/-\d+$/, '');
+    for (const [b, entries] of Object.entries(block)) {
+        if (entries.includes(cardId) || entries.includes(setPrefix)) return Number(b);
+    }
+    return null;
+}
+```
+
+No separar en dos pasadas (IDs exactos vs prefijos): el coste es insignificante con arrays pequeños y una sola pasada es más legible.
+
+> **Contexto:** Reprint = cualquier reimpresión posterior a la original (incluye alternativas y cambios de bloque). Se mantiene tracking por bloque para posible rotación futura. En la UI, el modo visualización muestra la suma total con desglose por bloque; el modo edición muestra inputs individuales por bloque.
 

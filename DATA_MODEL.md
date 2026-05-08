@@ -300,12 +300,15 @@ Esto aplica a:
 - **Promos** (`"id": "P"`) — cada carta puede pertenecer a un bloque distinto.
 - **Sets sin ID** que inyectan cartas de distintos periodos en un mismo producto.
 
-### Diferencia entre alternativa y reprint
+### Definición de reprint
 
-- **Alternativa:** Mismo ID de carta pero con arte diferente. Pertenece al mismo bloque que la carta original.
-- **Reprint:** Misma carta reimpresa en un producto posterior. Cambia de bloque al del momento de la reimpresión.
+**Reprint = cualquier reimpresión de una carta posterior a su publicación original.** Esto incluye:
 
-> **Pendiente de decisión:** Si el cambio de bloque es condición suficiente para considerar una carta como reprint. A priori parece que sí, pero esto trataría como reprints a muchas cartas alternativas que se publican en bloques posteriores al original.
+- Arts alternativos publicados en bloques posteriores.
+- Cambios de bloque (misma carta reimpresa en un producto de otro periodo).
+- Cualquier otra variante que se publique después de la original.
+
+Se mantiene el tracking de cantidad por bloque para un posible futuro sistema de rotación (jugar solo determinados bloques).
 
 ### Cómo se define un reprint
 
