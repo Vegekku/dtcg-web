@@ -704,5 +704,7 @@ function getCardBlock(cardId, block) {
 
 No separar en dos pasadas (IDs exactos vs prefijos): el coste es insignificante con arrays pequeños y una sola pasada es más legible.
 
+Cuando un set mezcla cartas de distintos bloques y se quiere usar un prefijo general para el bloque mayoritario, colocar el prefijo en el bloque más alto y los IDs específicos en los bloques inferiores. Así los IDs exactos se encuentran antes en la iteración y el prefijo actúa como fallback. El orden inverso (prefijo en bloque bajo) requeriría dos pasadas.
+
 > **Contexto:** Reprint = cualquier reimpresión posterior a la original (incluye alternativas y cambios de bloque). Se mantiene tracking por bloque para posible rotación futura. En la UI, el modo visualización muestra la suma total con desglose por bloque; el modo edición muestra inputs individuales por bloque.
 
