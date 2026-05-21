@@ -3,6 +3,7 @@ const data2025 = [
     // Official Store Tournament 2025 Vol.1 - Participation Pack --- otp16
     {
         "id": null,
+        "block": 4,
         "slug": "otp16",
         "name": "Official Store Tournament 2025 Vol.1 - Participation Pack",
         "release": "January 1 - March 31, 2025",
@@ -21,6 +22,7 @@ const data2025 = [
     // Official Store Tournament 2025 Vol.1 - Winner Pack --- wp16
     {
         "id": null,
+        "block": 4,
         "slug": "wp16",
         "name": "Official Store Tournament 2025 Vol.1 - Winner Pack",
         "release": "January 1 - March 31, 2025",
@@ -39,6 +41,7 @@ const data2025 = [
     // Booster Chain of Liberation [EX8] --- ex8
     {
         "id": "EX8",
+        "block": 4,
         "slug": "ex8",
         "name": "Booster Chain of Liberation [EX8]",
         "release": "January 10, 2025",
@@ -78,6 +81,7 @@ const data2025 = [
     // Booster Chain of Liberation [EX8] - Alternatives --- ex8_alts
     {
         "id": null,
+        "block": 4,
         "slug": "ex8_alts",
         "name": "Booster Chain of Liberation [EX8] - Alternatives",
         "release": "January 10, 2025",
@@ -109,6 +113,7 @@ const data2025 = [
     // Booster Chain of Liberation [EX8] - Limited Cards --- ex8_limited
     {
         "id": null,
+        "block": 4,
         "slug": "ex8_limited",
         "name": "Booster Chain of Liberation [EX8] - Limited Cards",
         "release": "January 10, 2025",
@@ -162,6 +167,7 @@ const data2025 = [
     // Booster Chain of Liberation [EX8] - Special Cards --- ex8_special
     {
         "id": null,
+        "block": 4,
         "slug": "ex8_special",
         "name": "Booster Chain of Liberation [EX8] - Special Cards",
         "release": "January 10, 2025",
@@ -183,6 +189,7 @@ const data2025 = [
     // Booster Chain of Liberation [EX8] - Legend Pack 2024 --- ex8_legend_pack
     {
         "id": null,
+        "block": 4,
         "slug": "ex8_legend_pack",
         "name": "Booster Chain of Liberation [EX8] - Legend Pack 2024",
         "release": "January 10, 2025",
@@ -199,6 +206,7 @@ const data2025 = [
     // Booster Chain of Liberation [EX8] - Upgrade Pack --- ex8_upgrade_pack
     {
         "id": null,
+        "block": 4,
         "slug": "ex8_upgrade_pack",
         "name": "Booster Chain of Liberation [EX8] - Upgrade Pack",
         "release": "January 10, 2025",
@@ -217,6 +225,7 @@ const data2025 = [
     // Omnimon Binder Set [PB19] --- pb19
     {
         "id": null,
+        "block": 3,
         "slug": "pb19",
         "name": "Omnimon Binder Set [PB19]",
         "release": "February 2025",
@@ -238,6 +247,7 @@ const data2025 = [
     // Booster Over The X [BT20]
     {
         "id": "BT20",
+        "block": 4,
         "name": "Booster Over The X [BT20]",
         "release": null,
         "total": 102,
@@ -282,6 +292,7 @@ const data2025 = [
     // Special Booster Ver.2.5 [BT19-20] Celebration Event --- sbt25_prerelease
     {
         "id": null,
+        "block": 4,
         "slug": "sbt25_prerelease",
         "name": "Special Booster Ver.2.5 [BT19-20] Celebration Event",
         "release": "February 21 – March 7, 2025",
@@ -295,6 +306,7 @@ const data2025 = [
     // Special Booster Ver.2.5 [BT19-20] --- sbt25
     {
         "id": null,
+        "block": 4,
         "slug": "sbt25",
         "name": "Special Booster Ver.2.5 [BT19-20]",
         "release": "February 2025",
@@ -468,6 +480,7 @@ const data2025 = [
     // Special Booster Ver.2.5 [BT19-20] - Alternatives --- sbt25_alts
     {
         "id": null,
+        "block": 4,
         "slug": "sbt25_alts",
         "name": "Special Booster Ver.2.5 [BT19-20] - Alternatives",
         "release": "February 2025",
@@ -508,6 +521,7 @@ const data2025 = [
     // Special Booster Ver.2.5 [BT19-20] - Box Topper --- sbt25_boxtopper
     {
         "id": null,
+        "block": 4,
         "slug": "sbt25_boxtopper",
         "name": "Special Booster Ver.2.5 [BT19-20] - Box Topper",
         "release": "February 2025",
@@ -531,6 +545,7 @@ const data2025 = [
     // Special Booster Ver.2.5 [BT19-20] - Special Cards --- sbt25_special
     {
         "id": null,
+        "block": 4,
         "slug": "sbt25_special",
         "name": "Special Booster Ver.2.5 [BT19-20] - Special Cards",
         "release": "February 2025",
@@ -561,6 +576,7 @@ const data2025 = [
     // Special Booster Ver.2.5 [BT19-20] - Signed Cards --- sbt25_signed
     {
         "id": null,
+        "block": 4,
         "slug": "sbt25_signed",
         "name": "Special Booster Ver.2.5 [BT19-20] - Signed Cards",
         "release": "February 2025",
@@ -573,6 +589,7 @@ const data2025 = [
     // Special Booster Ver.2.5 [BT19-20] - Serial Cards --- sbt25_serial
     {
         "id": null,
+        "block": 3,
         "slug": "sbt25_serial",
         "name": "Special Booster Ver.2.5 [BT19-20] - Serial Cards",
         "release": "February 2025",
@@ -586,6 +603,7 @@ const data2025 = [
     // Special Booster Ver.2.5 [BT19-20] - Update Pack 2025 --- sbt25_update_pack
     {
         "id": null,
+        "block": 4,
         "slug": "sbt25_update_pack",
         "name": "Special Booster Ver.2.5 [BT19-20] - Update Pack 2025",
         "release": "February 2025",
@@ -606,6 +624,11 @@ const data2025 = [
     // 2025 Regionals Participation Card Set Season 1 --- regional2025_1_0
     {
         "id": null,
+        "block": {
+            "1": ["BT8"],
+            "3": ["BT14"],
+            "4": ["BT18","BT20","EX7"],
+        },
         "slug": "regional2025_1_0",
         "name": "2025 Regionals Participation Card Set Season 1",
         "release": "March - June, 2025",
@@ -624,6 +647,11 @@ const data2025 = [
     // 2025 Regionals Finalist Card Set Season 1 --- regional2025_1_1
     {
         "id": null,
+        "block": {
+            "1": ["BT8"],
+            "3": ["BT14"],
+            "4": ["BT18","BT20","EX7"],
+        },
         "slug": "regional2025_1_1",
         "name": "2025 Regionals Finalist Card Set Season 1",
         "release": "March - June, 2025",
@@ -642,6 +670,11 @@ const data2025 = [
     // 2025 Regionals Champion Card Set Season 1 --- regional2025_1_2
     {
         "id": null,
+        "block": {
+            "1": ["BT8"],
+            "3": ["BT14"],
+            "4": ["BT18","BT20","EX7"],
+        },
         "slug": "regional2025_1_2",
         "name": "2025 Regionals Champion Card Set Season 1",
         "release": "March - June, 2025",
@@ -660,6 +693,11 @@ const data2025 = [
     // Special Event Pack 2025 --- special_eventpack_2025
     {
         "id": null,
+        "block": {
+            "1": ["BT7","EX1"],
+            "2": ["BT10","BT12","ST14"],
+            "3": ["EX5","P"]
+        },
         "slug": "special_eventpack_2025",
         "name": "Special Event Pack 2025",
         "release": "March - June, 2025",
@@ -678,6 +716,7 @@ const data2025 = [
     // Judge Pack 2025 Season 1 --- judgepack7
     {
         "id": null,
+        "block": 4,
         "slug": "judgepack7",
         "name": "Judge Pack 2025 Season 1",
         "release": "March - June, 2025",
@@ -702,6 +741,7 @@ const data2025 = [
     // 24-25 World Championship - Participation --- wc2024
     {
         "id": null,
+        "block": 2,
         "slug": "wc2024",
         "name": "24-25 World Championship - Participation",
         "release": "March 15-16, 2025",
@@ -715,6 +755,7 @@ const data2025 = [
     // 24-25 World Championship - 3rd Place Prize --- wc2024_3rd
     {
         "id": null,
+        "block": 2,
         "slug": "wc2024_3rd",
         "name": "24-25 World Championship - 3rd Place Prize",
         "release": "March 15-16, 2025",
@@ -727,6 +768,7 @@ const data2025 = [
     // 24-25 World Championship - Runner-Up Prize --- wc2024_2nd
     {
         "id": null,
+        "block": 1,
         "slug": "wc2024_2nd",
         "name": "24-25 World Championship - Runner-Up Prize",
         "release": "March 15-16, 2025",
@@ -739,6 +781,7 @@ const data2025 = [
     // 24-25 World Championship - Champion Prize --- wc2024_1st
     {
         "id": null,
+        "block": 2,
         "slug": "wc2024_1st",
         "name": "24-25 World Championship - Champion Prize",
         "release": "March 15-16, 2025",
@@ -753,6 +796,7 @@ const data2025 = [
     // Starter Deck Protector of Light [ST20] --- st20
     {
         "id": "ST20",
+        "block": 5,
         "slug": "st20",
         "name": "Starter Deck Protector of Light [ST-20]",
         "release": "April 2025",
@@ -780,6 +824,7 @@ const data2025 = [
     // Starter Deck Protector of Light [ST20] - Lucky Deck --- st20_lucky
     {
         "id": null,
+        "block": 5,
         "slug": "st20_lucky",
         "name": "Starter Deck Protector of Light [ST20] - Lucky Deck",
         "release": "April 2025",
@@ -792,6 +837,7 @@ const data2025 = [
     // Starter Deck Protector of Light [ST20] - Scramble --- st20_scramble
     {
         "id": null,
+        "block": 5,
         "slug": "st20_scramble",
         "name": "Starter Deck Protector of Light [ST20] - Scramble",
         "release": "April 2025",
@@ -809,6 +855,7 @@ const data2025 = [
     // Starter Deck Hero of Hope [ST21] --- st21
     {
         "id": "ST21",
+        "block": 5,
         "slug": "st21",
         "name": "Starter Deck Hero of Hope [ST-21]",
         "release": "April 2025",
@@ -836,6 +883,7 @@ const data2025 = [
     // Starter Deck Hero of Hope [ST21] - Lucky Deck --- st21_lucky
     {
         "id": null,
+        "block": 5,
         "slug": "st21_lucky",
         "name": "Starter Deck Hero of Hope [ST21] - Lucky Deck",
         "release": "April 2025",
@@ -848,6 +896,7 @@ const data2025 = [
     // Starter Deck Hero of Hope [ST21] - Scramble --- st21_scramble
     {
         "id": null,
+        "block": 5,
         "slug": "st21_scramble",
         "name": "Starter Deck Hero of Hope [ST21] - Scramble",
         "release": "April 2025",
@@ -866,6 +915,7 @@ const data2025 = [
     // WORLD CONVERGENCE [BT-21] Release Event --- bt21_prerelease
     {
         "id": null,
+        "block": 3,
         "slug": "bt21_prerelease",
         "name": "WORLD CONVERGENCE [BT-21] Release Event",
         "release": "April 18 – May 9, 2025",
@@ -879,6 +929,7 @@ const data2025 = [
     // Booster World Convergence [BT21] --- bt21
     {
         "id": "BT21",
+        "block": 5,
         "slug": "bt21",
         "name": "Booster World Convergence [BT21]",
         "release": "April 2025",
@@ -927,6 +978,7 @@ const data2025 = [
     // Booster World Convergence [BT21] - Alternatives --- bt21_alts
     {
         "id": null,
+        "block": 5,
         "slug": "bt21_alts",
         "name": "Booster World Convergence [BT21] - Alternatives",
         "release": "April 2025",
@@ -958,6 +1010,7 @@ const data2025 = [
     // Booster World Convergence [BT21] - Special Cards --- bt21_special
     {
         "id": null,
+        "block": 5,
         "slug": "bt21_special",
         "name": "Booster World Convergence [BT21] - Special Cards",
         "release": "April 2025",
@@ -977,6 +1030,12 @@ const data2025 = [
     // Booster World Convergence [BT21] - Signed Cards --- bt21_signed
     {
         "id": null,
+        "block": {
+            "1": ["BT6","BT9","EX1"],
+            "2": ["BT13"],
+            "3": ["EX5"],
+            "4": ["BT18","EX7"]
+        },
         "slug": "bt21_signed",
         "name": "Booster World Convergence [BT21] - Signed Cards",
         "release": "April 2025",
@@ -996,6 +1055,7 @@ const data2025 = [
     // Booster World Convergence [BT21] - Illustration Celebration Pack --- bt21_ilu_cel_pack
     {
         "id": null,
+        "block": 5,
         "slug": "bt21_ilu_cel_pack",
         "name": "Booster World Convergence [BT21] - Illustration Celebration Pack",
         "release": "April 2025",
@@ -1014,6 +1074,12 @@ const data2025 = [
     // Booster World Convergence [BT21] - Limited Card Pack --- bt21_limited
     {
         "id": null,
+        "block": {
+            "1": ["EX1"],
+            "2": ["BT13"],
+            "3": ["BT14","BT15","EX5"],
+            "4": ["LM"]
+        },
         "slug": "bt21_limited",
         "name": "Booster World Convergence [BT21] - Limited Card Pack",
         "release": "April 2025",
@@ -1037,6 +1103,7 @@ const data2025 = [
     // Regulation Battle Vol.1 --- rb_1
     {
         "id": null,
+        "block": 3,
         "slug": "rb_1",
         "name": "Regulation Battle Vol.1",
         "release": "April 1 – May 31, 2025",
@@ -1051,6 +1118,7 @@ const data2025 = [
     // Official Store Tournament 2025 Vol.2 - Participation Pack --- otp17
     {
         "id": null,
+        "block": 5,
         "slug": "otp17",
         "name": "Official Store Tournament 2025 Vol.2 - Participation Pack",
         "release": "April 1 - June 30, 2025",
@@ -1069,6 +1137,7 @@ const data2025 = [
     // Official Store Tournament 2025 Vol.2 - Winner Pack --- wp17
     {
         "id": null,
+        "block": 5,
         "slug": "wp17",
         "name": "Official Store Tournament 2025 Vol.2 - Winner Pack",
         "release": "April 1 - June 30, 2025",
@@ -1087,6 +1156,10 @@ const data2025 = [
     // Ultimate Cup 25-26 Season 1 --- ultimatecup_2025_1
     {
         "id": null,
+        "block": {
+            "2": ["BT12"],
+            "4": ["BT19"]
+        },
         "slug": "ultimatecup_2025_1",
         "name": "Ultimate Cup 25-26 Season 1",
         // "release": "October 2024 - February 2025",
@@ -1103,6 +1176,11 @@ const data2025 = [
     // DIGIMON ANIMATION SERIES 25th Anniversary Set [PB20] --- pb20
     {
         "id": null,
+        "block": {
+            "1": ["BT7","EX2"],
+            "2": ["BT1","BT3","BT10","BT12","BT13","RB1"],
+            "4": ["P"]
+        },
         "slug": "pb20",
         "name": "DIGIMON ANIMATION SERIES 25th Anniversary Set [PB20]",
         "release": "May 2025",
@@ -1124,21 +1202,25 @@ const data2025 = [
     // TAMER'S SELECTION BOX ver. CHAMPIONSHIP 2024 --- tamer_champion_24
     {
         "id": null,
+        "block": {
+            "3": ["BT17"],
+            "4": ["BT18"]
+        },
         "slug": "tamer_champion_24",
         "name": "TAMER'S SELECTION BOX ver. CHAMPIONSHIP 2024",
         "release": "May 2025",
-        "url": "noCardURL",
+        "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
-            "BT17-017": "",
-            "BT17-028": "",
-            "BT18-017": "",
-            "BT18-028": "",
-            "BT18-029": "",
-            "BT18-054": "",
-            "BT18-055": "",
-            "BT18-072": "",
-            "BT18-074": "",
-            "BT18-084": "",
+            "BT17-017": "P2",
+            "BT17-028": "P2",
+            "BT18-017": "P1",
+            "BT18-028": "P1",
+            "BT18-029": "P1",
+            "BT18-054": "P1",
+            "BT18-055": "P1",
+            "BT18-072": "P1",
+            "BT18-074": "P1",
+            "BT18-084": "P1",
         },
         "info_url": "https://world.digimoncard.com/products/goods/tamer-selection-box-cs2024.php"
     },
@@ -1147,6 +1229,7 @@ const data2025 = [
     // Evolution Cup 2025 Vol. 1 Participation --- evolution_cup_2025_1_participant
     {
         "id": null,
+        "block": 1,
         "slug": "evolution_cup_2025_1_participant",
         "name": "Evolution Cup 2025 Vol. 1 Participation",
         "release": "June 1 – July 31, 2025",
@@ -1159,6 +1242,7 @@ const data2025 = [
     // Evolution Cup 2025 Vol. 1 Top 4 --- evolution_cup_2025_1_top4
     {
         "id": null,
+        "block": 1,
         "slug": "evolution_cup_2025_1_top4",
         "name": "Evolution Cup 2025 Vol. 1 Top 4",
         "release": "June 1 – July 31, 2025",
@@ -1171,6 +1255,7 @@ const data2025 = [
     // Evolution Cup 2025 Vol. 1 Winner --- evolution_cup_2025_1_winner
     {
         "id": null,
+        "block": 2,
         "slug": "evolution_cup_2025_1_winner",
         "name": "Evolution Cup 2025 Vol. 1 Winner",
         "release": "June 1 – July 31, 2025",
@@ -1185,6 +1270,7 @@ const data2025 = [
     // Booster Versus Monsters [EX9] --- ex9
     {
         "id": "EX9",
+        "block": 5,
         "slug": "ex9",
         "name": "Booster Versus Monsters [EX9]",
         "release": "June 26, 2025",
@@ -1226,6 +1312,7 @@ const data2025 = [
     // Booster Versus Monsters [EX9] - Alternatives --- ex9_alts
     {
         "id": null,
+        "block": 5,
         "slug": "ex9_alts",
         "name": "Booster Versus Monsters [EX9] - Alternatives",
         "release": "June 26, 2025",
@@ -1257,6 +1344,7 @@ const data2025 = [
     // Booster Versus Monsters [EX9] - Limited Cards --- ex9_limited
     {
         "id": null,
+        "block": 5,
         "slug": "ex9_limited",
         "name": "Booster Versus Monsters [EX9] - Limited Cards",
         "release": "June 26, 2025",
@@ -1310,6 +1398,7 @@ const data2025 = [
     // Booster Versus Monsters [EX9] - Special Cards --- ex9_special
     {
         "id": null,
+        "block": 5,
         "slug": "ex9_special",
         "name": "Booster Versus Monsters [EX9] - Special Cards",
         "release": "June 26, 2025",
@@ -1330,6 +1419,7 @@ const data2025 = [
     // Booster Versus Monsters [EX9] - Legend Pack --- ex9_legend_pack
     {
         "id": null,
+        "block": 5,
         "slug": "ex9_legend_pack",
         "name": "Booster Versus Monsters [EX9] - Legend Pack",
         "release": "June 26, 2025",
@@ -1346,6 +1436,7 @@ const data2025 = [
     // Digital Monster Day Commemoration Event --- ex9_prerelease
     {
         "id": null,
+        "block": 5,
         "slug": "ex9_prerelease",
         "name": "Digital Monster Day Commemoration Event",
         "release": "June 26 - July 3, 2025",
@@ -1360,6 +1451,10 @@ const data2025 = [
     // Regulation Battle Vol.2 --- rb_2
     {
         "id": null,
+        "block": {
+            "3": ["EX6"],
+            "4": ["ST19"]
+        },
         "slug": "rb_2",
         "name": "Regulation Battle Vol.2",
         "release": "July 1 – August 31, 2025",
@@ -1375,6 +1470,7 @@ const data2025 = [
     // Official Store Tournament 2025 Vol.3 - Participation Pack --- otp18
     {
         "id": null,
+        "block": 5,
         "slug": "otp18",
         "name": "Official Store Tournament 2025 Vol.3 - Participation Pack",
         "release": "July 1 - September 30, 2025",
@@ -1393,6 +1489,7 @@ const data2025 = [
     // Official Store Tournament 2025 Vol.3 - Winner Pack --- wp18
     {
         "id": null,
+        "block": 5,
         "slug": "wp18",
         "name": "Official Store Tournament 2025 Vol.3 - Winner Pack",
         "release": "July 1 - September 30, 2025",
@@ -1412,6 +1509,7 @@ const data2025 = [
     // CYBER EDEN [BT22] Release Event --- bt22_prerelease
     {
         "id": null,
+        "block": 3,
         "slug": "bt22_prerelease",
         "name": "CYBER EDEN [BT-22] Release Event",
         "release": "July 18 - 24, 2025",
@@ -1426,6 +1524,7 @@ const data2025 = [
     // Booster Cyber Eden [BT22] --- bt22
     {
         "id": "BT22",
+        "block": 5,
         "slug": "bt22",
         "name": "Booster Cyber Eden [BT22]",
         "release": "July 25, 2025",
@@ -1482,6 +1581,7 @@ const data2025 = [
     // Booster Cyber Eden [BT22] - Alternatives --- bt22_alts
     {
         "id": null,
+        "block": 5,
         "slug": "bt22_alts",
         "name": "Booster Cyber Eden [BT22] - Alternatives",
         "release": "July 25, 2025",
@@ -1513,6 +1613,7 @@ const data2025 = [
     // Booster Cyber Eden [BT22] - Special Cards --- bt22_special
     {
         "id": null,
+        "block": 5,
         "slug": "bt22_special",
         "name": "Booster Cyber Eden [BT22] - Special Cards",
         "release": "July 25, 2025",
@@ -1533,6 +1634,7 @@ const data2025 = [
     // Booster Cyber Eden [BT22] - Box Promotion Pack --- bt22_boxtopper
     {
         "id": null,
+        "block": 5,
         "slug": "bt22_boxtopper",
         "name": "Booster Cyber Eden [BT22] - Box Promotion Pack",
         "release": "July 25, 2025",
@@ -1552,6 +1654,11 @@ const data2025 = [
     // 2025 Regionals Participation Card Set Season 2 --- regional2025_2_0
     {
         "id": null,
+        "block": {
+            "1": ["ST10"],
+            "3": ["BT14","BT17"],
+            "4": ["BT20","EX8"]
+        },
         "slug": "regional2025_2_0",
         "name": "2025 Regionals Participation Card Set Season 2",
         "release": "August - September, 2025",
@@ -1576,6 +1683,11 @@ const data2025 = [
     // 2025 Regionals Finalist Card Set Season 2 --- regional2025_2_1
     {
         "id": null,
+        "block": {
+            "1": ["ST10"],
+            "3": ["BT14","BT17"],
+            "4": ["BT20","EX8"]
+        },
         "slug": "regional2025_2_1",
         "name": "2025 Regionals Finalist Card Set Season 2",
         "release": "August - September, 2025",
@@ -1600,6 +1712,11 @@ const data2025 = [
     // 2025 Regionals Champion Card Set Season 2 --- regional2025_2_2
     {
         "id": null,
+        "block": {
+            "1": ["ST10"],
+            "3": ["BT14","BT17"],
+            "4": ["BT20","EX8"]
+        },
         "slug": "regional2025_2_2",
         "name": "2025 Regionals Champion Card Set Season 2",
         "release": "August - September, 2025",
@@ -1624,6 +1741,10 @@ const data2025 = [
     // Event Pack 8 --- eventpack8
     {
         "id": null,
+        "block": {
+            "4": ["P-164","P-165","P-166","P-167","P-168","P-169",],
+            "5": ["P"]
+        },
         "slug": "eventpack8",
         "name": "Event Pack 8",
         "release": "August - September, 2025",
@@ -1647,6 +1768,7 @@ const data2025 = [
     // Judge Pack 2025 Wave 2 --- judgepack8
     {
         "id": null,
+        "block": 5,
         "slug": "judgepack8",
         "name": "Judge Pack 2025 Wave 2",
         "release": "August - September, 2025",
@@ -1670,6 +1792,7 @@ const data2025 = [
     // Ultimate Cup 25-26 Season 2 --- ultimatecup_2025_2
     {
         "id": null,
+        "block": 5,
         "slug": "ultimatecup_2025_2",
         "name": "Ultimate Cup 25-26 Season 2",
         "release": "August - September, 2025",
@@ -1686,6 +1809,14 @@ const data2025 = [
     // Time Stranger Tutorial Deck --- timestranger_tutorial_deck
     {
         "id": null,
+        "block": {
+            "0": ["BT1","BT3-037"],
+            "1": ["EX1","BT8"],
+            "2": ["BT3","ST10"],
+            "3": ["BT14","BT15"],
+            "4": ["BT18","EX7","P-037"],
+            "5": ["P"] // "P-191","P-194","P-195"
+        },
         "slug": "timestranger_tutorial_deck",
         "name": "Time Stranger Tutorial Deck",
         "release": "August 20-24, 2025",
@@ -1734,6 +1865,7 @@ const data2025 = [
     // Evolution Cup 2025 Vol. 2 Top 4 --- evolution_cup_2025_2_top4
     {
         "id": null,
+        "block": 3,
         "slug": "evolution_cup_2025_2_top4",
         "name": "Evolution Cup 2025 Vol. 2 Top 4",
         "release": "September 1 – October 31, 2025",
@@ -1746,6 +1878,7 @@ const data2025 = [
     // Evolution Cup 2025 Vol. 2 Winner --- evolution_cup_2025_2_winner
     {
         "id": null,
+        "block": 0,
         "slug": "evolution_cup_2025_2_winner",
         "name": "Evolution Cup 2025 Vol. 2 Winner",
         "release": "September 1 – October 31, 2025",
@@ -1760,6 +1893,7 @@ const data2025 = [
     // Extra Booster Sinister Order [EX10] --- ex10
     {
         "id": "EX10",
+        "block": 5,
         "slug": "ex10",
         "name": "Extra Booster Sinister Order [EX10]",
         "release": "September 19, 2025",
@@ -1807,6 +1941,7 @@ const data2025 = [
     // Extra Booster Sinister Order [EX10] - Alternatives --- ex10_alts
     {
         "id": null,
+        "block": 5,
         "slug": "ex10_alts",
         "name": "Extra Booster Sinister Order [EX10] - Alternatives",
         "release": "September 19, 2025",
@@ -1838,6 +1973,7 @@ const data2025 = [
     // Extra Booster Sinister Order [EX10] - Limited Cards --- ex10_limited
     {
         "id": null,
+        "block": 5,
         "slug": "ex10_limited",
         "name": "Extra Booster Sinister Order [EX10] - Limited Cards",
         "release": "September 19, 2025",
@@ -1891,6 +2027,7 @@ const data2025 = [
     // Extra Booster Sinister Order [EX10] - Special Cards --- ex10_special
     {
         "id": null,
+        "block": 5,
         "slug": "ex10_special",
         "name": "Extra Booster Sinister Order [EX10] - Special Cards",
         "release": "September 19, 2025",
@@ -1908,6 +2045,10 @@ const data2025 = [
     // Extra Booster Sinister Order [EX10] - Legend Pack --- ex10_legend_pack
     {
         "id": null,
+        "block": {
+            "2": ["ST14"],
+            "3": ["BT8","BT15","LM","P"]
+        },
         "slug": "ex10_legend_pack",
         "name": "Extra Booster Sinister Order [EX10] - Legend Pack",
         "release": "September 19, 2025",
@@ -1926,6 +2067,7 @@ const data2025 = [
     // BANDAI CARD GAMES Fest 25-26 --- bcgfest_25_26
     {
         "id": null,
+        "block": 5,
         "slug": "bcgfest_25_26",
         "name": "BANDAI CARD GAMES Fest 25-26",
         "release": "September 20, 2025 - 2026",
@@ -1938,6 +2080,7 @@ const data2025 = [
     // PREMIUM CARD COLLECTION Digimon Training Set --- premium_training
     {
         "id": null,
+        "block": 4,
         "slug": "premium_training",
         "name": "PREMIUM CARD COLLECTION Digimon Training Set",
         "release": "September 20, 2025 - 2026",
@@ -1959,6 +2102,12 @@ const data2025 = [
     // Championship 25-26 Finals Season 1 Tamers Pack/Set --- championship_2526_finals_1_tamers
     {
         "id": null,
+        "block": {
+            "0": ["BT5"],
+            "1": ["BT8"],
+            "2": ["EX4"],
+            "4": ["BT19"]
+        },
         "slug": "championship_2526_finals_1_tamers",
         "name": "Championship 25-26 Finals Season 1 Tamers Pack/Set",
         "release": "September 20-21, 2025",
@@ -1976,6 +2125,7 @@ const data2025 = [
     // Championship 25-26 Finals Season 1 - Top 32 --- championship_2526_finals_1_top32
     {
         "id": null,
+        "block": 4,
         "slug": "championship_2526_finals_1_top32",
         "name": "Championship 25-26 Finals Season 1 - Top 32",
         "release": "September 20-21, 2025",
@@ -1988,6 +2138,7 @@ const data2025 = [
     // Championship 25-26 Finals Season 1 - Top 16 --- championship_2526_finals_1_top16
     {
         "id": null,
+        "block": 3,
         "slug": "championship_2526_finals_1_top16",
         "name": "Championship 25-26 Finals Season 1 - Top 16",
         "release": "September 20-21, 2025",
@@ -2000,6 +2151,7 @@ const data2025 = [
     // Championship 25-26 Finals Season 1 - 3rd Place --- championship_2526_finals_1_3rd
     {
         "id": null,
+        "block": 3,
         "slug": "championship_2526_finals_1_3rd",
         "name": "Championship 25-26 Finals Season 1 - 3rd Place",
         "release": "September 20-21, 2025",
@@ -2012,6 +2164,7 @@ const data2025 = [
     // Championship 25-26 Finals Season 1 - 2nd Place --- championship_2526_finals_1_2nd
     {
         "id": null,
+        "block": 3,
         "slug": "championship_2526_finals_1_2nd",
         "name": "Championship 25-26 Finals Season 1 - 2nd Place",
         "release": "September 20-21, 2025",
@@ -2024,6 +2177,7 @@ const data2025 = [
     // Championship 25-26 Finals Season 1 - 1st Place --- championship_2526_finals_1_1st
     {
         "id": null,
+        "block": 3,
         "slug": "championship_2526_finals_1_1st",
         "name": "Championship 25-26 Finals Season 1 - 1st Place",
         "release": "September 20-21, 2025",
@@ -2038,6 +2192,7 @@ const data2025 = [
     // Limited Card Pack BILLION BULLET --- lm03
     {
         "id": null,
+        "block": 5,
         "slug": "lm03",
         "name": "Limited Card Pack BILLION BULLET",
         "release": "October 2025",
@@ -2055,6 +2210,10 @@ const data2025 = [
     // Limited Card Pack BILLION BULLET - Alternatives --- lm03_alts
     {
         "id": null,
+        "block": {
+            "3": ["BT16","ST17"],
+            "4": ["BT19"]
+        },
         "slug": "lm03_alts",
         "name": "Limited Card Pack BILLION BULLET - Alternatives",
         "release": "October 2025",
@@ -2070,6 +2229,12 @@ const data2025 = [
     // Limited Card Pack BILLION BULLET - Reprints --- lm03_reprints
     {
         "id": null,
+        "block": {
+            "0": ["BT3","ST6"],
+            "2": ["BT11","BT12","EX4","RB1","P-094"],
+            "3": ["BT16","BT17","ST16","P-137"],
+            "4": ["BT18","P"]
+        },
         "slug": "lm03_reprints",
         "name": "Limited Card Pack BILLION BULLET - Reprints",
         "release": "October 2025",
@@ -2106,6 +2271,10 @@ const data2025 = [
     // Regulation Battle Vol.3 --- rb_3
     {
         "id": null,
+        "block": {
+            "1": ["BT7"],
+            "5": ["BT21"]
+        },
         "slug": "rb_3",
         "name": "Regulation Battle Vol.3",
         "release": "October 1 – November 30, 2025",
@@ -2121,6 +2290,7 @@ const data2025 = [
     // Official Store Tournament 2025 Vol.4 - Participation Pack --- otp19
     {
         "id": null,
+        "block": 5,
         "slug": "otp19",
         "name": "Official Store Tournament 2025 Vol.4 - Participation Pack",
         "release": "October 1 – December 31, 2025",
@@ -2139,6 +2309,7 @@ const data2025 = [
     // Official Store Tournament 2025 Vol.4 - Winner Pack --- wp19
     {
         "id": null,
+        "block": 5,
         "slug": "wp19",
         "name": "Official Store Tournament 2025 Vol.4 - Winner Pack",
         "release": "October 1 – December 31, 2025",
@@ -2156,6 +2327,7 @@ const data2025 = [
     // Time Stranger Promo Pack --- timestranger_pack
     {
         "id": null,
+        "block": 5,
         "slug": "timestranger_pack",
         "name": "Time Stranger Promo Pack",
         "release": "October 1 – December 31, 2025",
@@ -2180,6 +2352,10 @@ const data2025 = [
     // Digimon Story Time Stranger - Collector's Edition --- digimon_time_stranger
     {
         "id": null,
+        "block": {
+            "3": ["EX5"],
+            "5": ["P"]
+        },
         "slug": "digimon_time_stranger",
         "name": "Digimon Story Time Stranger - Collector's Edition",
         "release": "October 3, 2025",
@@ -2197,6 +2373,7 @@ const data2025 = [
     // HACKERS’ SLUMBER [BT-23] Release Event --- bt23_prerelease
     {
         "id": null,
+        "block": 3,
         "slug": "bt23_prerelease",
         "name": "HACKERS’ SLUMBER [BT-23] Release Event",
         "release": "October 17 - 23, 2025",
@@ -2211,6 +2388,7 @@ const data2025 = [
     // Booster Hackers' Slumber [BT-23] --- bt23
     {
         "id": "BT23",
+        "block": 5,
         "slug": "bt23",
         "name": "Booster Hackers' Slumber [BT-23]",
         "release": "October 24, 2025",
@@ -2257,6 +2435,7 @@ const data2025 = [
     // Booster Hackers' Slumber [BT-23] - Alternatives --- bt23_alts
     {
         "id": null,
+        "block": 5,
         "slug": "bt23_alts",
         "name": "Booster Hackers' Slumber [BT-23] - Alternatives",
         "release": "October 24, 2025",
@@ -2288,6 +2467,7 @@ const data2025 = [
     // Booster Hackers' Slumber [BT-23] - Special Cards --- bt23_special
     {
         "id": null,
+        "block": 5,
         "slug": "bt23_special",
         "name": "Booster Hackers' Slumber [BT-23] - Special Cards",
         "release": "October 24, 2025",
@@ -2305,6 +2485,7 @@ const data2025 = [
     // Booster Hackers' Slumber [BT-23] - Box Promotion Pack --- bt23_boxtopper
     {
         "id": null,
+        "block": 5,
         "slug": "bt23_boxtopper",
         "name": "Booster Hackers' Slumber [BT-23] - Box Promotion Pack",
         "release": "October 24, 2025",
@@ -2336,10 +2517,11 @@ const data2025 = [
     // Evolution Cup 2025 Vol. 3 Participation --- evolution_cup_2025_3_participant
     {
         "id": null,
+        "block": 5,
         "slug": "evolution_cup_2025_3_participant",
         "name": "Evolution Cup 2025 Vol. 3 Participation",
         "release": "December 1, 2025 – January 31, 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT22-026": "",
         },
@@ -2348,10 +2530,11 @@ const data2025 = [
     // Evolution Cup 2025 Vol. 3 Top 4 --- evolution_cup_2025_3_top4
     {
         "id": null,
+        "block": 5,
         "slug": "evolution_cup_2025_3_top4",
         "name": "Evolution Cup 2025 Vol. 3 Top 4",
         "release": "December 1, 2025 – January 31, 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT22-013": "",
         },
@@ -2360,10 +2543,11 @@ const data2025 = [
     // Evolution Cup 2025 Vol. 3 Winner --- evolution_cup_2025_3_winner
     {
         "id": null,
+        "block": 2,
         "slug": "evolution_cup_2025_3_winner",
         "name": "Evolution Cup 2025 Vol. 3 Winner",
         "release": "December 1, 2025 – January 31, 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT5-092": "",
         },
@@ -2374,6 +2558,7 @@ const data2025 = [
     // Advanced Deck Amethyst Mandala [ST-22] --- st22
     {
         "id": "ST22",
+        "block": 5,
         "slug": "st22",
         "name": "Advanced Deck Amethyst Mandala [ST-22]",
         "release": "December 5, 2025",
@@ -2401,6 +2586,7 @@ const data2025 = [
     // Advanced Deck Amethyst Mandala [ST-22] - Lucky Deck --- st22_lucky
     {
         "id": null,
+        "block": 5,
         "slug": "st22_lucky",
         "name": "Advanced Deck Amethyst Mandala [ST-22] - Lucky Deck",
         "release": "December 5, 2025",
@@ -2429,6 +2615,7 @@ const data2025 = [
             "LM-029": "",
         },
         "reprint": true,
+        "block": 5,
         "info_url": "https://world.digimoncard.com/products/deck/st-22/"
     },
 
@@ -2436,10 +2623,11 @@ const data2025 = [
     // Playmat & Card Set Paildramon & Dinobeemon --- bcgfest_25_26_playmat
     {
         "id": null,
+        "block": 4,
         "slug": "bcgfest_25_26_playmat",
         "name": "Playmat & Card Set Paildramon & Dinobeemon",
         "release": "December 13, 2025",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_2_D.png",
         "cards": {
             "BT20-016": "",
             "BT20-074": "",
@@ -2449,10 +2637,14 @@ const data2025 = [
     // Championship 25-26 Finals Season 2 Tamers Pack/Set --- championship_2526_finals_2_tamers
     {
         "id": null,
+        "block": {
+            "4": ["EX8","ST18"],
+            "5": ["BT21","EX9"]
+        },
         "slug": "championship_2526_finals_2_tamers",
         "name": "Championship 25-26 Finals Season 2 Tamers Pack/Set",
         "release": "December 13-14, 2025",
-        "url": "bandaitcgplusURL/P/e_setID-cardIDCS_D.png",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDPR_D.png",
         "cards": {
             "BT21-025": "",
             "BT21-036": "",
@@ -2466,6 +2658,7 @@ const data2025 = [
     // Championship 25-26 Finals Season 2 - Top 32 --- championship_2526_finals_2_top32
     {
         "id": null,
+        "block": 4,
         "slug": "championship_2526_finals_2_top32",
         "name": "Championship 25-26 Finals Season 2 - Top 32",
         "release": "December 13-14, 2025",
@@ -2478,6 +2671,7 @@ const data2025 = [
     // Championship 25-26 Finals Season 2 - Top 16 --- championship_2526_finals_2_top16
     {
         "id": null,
+        "block": 4,
         "slug": "championship_2526_finals_2_top16",
         "name": "Championship 25-26 Finals Season 2 - Top 16",
         "release": "December 13-14, 2025",
@@ -2490,6 +2684,7 @@ const data2025 = [
     // Championship 25-26 Finals Season 2 - 3rd Place --- championship_2526_finals_2_3rd
     {
         "id": null,
+        "block": 4,
         "slug": "championship_2526_finals_2_3rd",
         "name": "Championship 25-26 Finals Season 2 - 3rd Place",
         "release": "December 13-14, 2025",
@@ -2502,6 +2697,7 @@ const data2025 = [
     // Championship 25-26 Finals Season 2 - 2nd Place --- championship_2526_finals_2_2nd
     {
         "id": null,
+        "block": 4,
         "slug": "championship_2526_finals_2_2nd",
         "name": "Championship 25-26 Finals Season 2 - 2nd Place",
         "release": "December 13-14, 2025",
@@ -2514,6 +2710,7 @@ const data2025 = [
     // Championship 25-26 Finals Season 2 - 1st Place --- championship_2526_finals_2_1st
     {
         "id": null,
+        "block": 4,
         "slug": "championship_2526_finals_2_1st",
         "name": "Championship 25-26 Finals Season 2 - 1st Place",
         "release": "December 13-14, 2025",

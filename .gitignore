@@ -1,4 +1,5 @@
 .DS_Store
+.amazonq
 localstorage
 manifest.json
 node_modules

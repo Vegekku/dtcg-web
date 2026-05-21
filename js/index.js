@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // 0. Actualizar datos erroneos o desactualizados.
     // updatesData();
+    // migrateReprints();
+    // migrateReprintSlugsToBlocks();
 
     // 1. crear objeto collection y cardmarket si no existe. Si existe, obtener de storage.
     collection = JSON.parse( window.localStorage.getItem("collection") || '{}' );
@@ -130,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     const drawAlternatives = (setElement) => {
-        const {name, url, cards, slug, reprint, rarity, rarities} = setElement;
+        const {name, url, cards, slug, reprint, block, rarity, rarities} = setElement;
         const setRarity = getCardsRarity(rarity ?? 'aa');
         const setRarities = rarities ? getCardsRarities(rarities) : undefined;
 
@@ -202,8 +204,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardRarity);
                     }
 
-                    if ( reprint ) {
-                        cardRow.cells[1].innerHTML += `<input class="amount-card amount-card--reprint" type="text" data-card-number="${cardNumber}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setId][cardId].reprint || 0}">`;
+                    if ( reprint && block !== undefined && !cardRow.querySelector(`.amount-card--reprint[data-block="${block}"]`) ) {
+                        cardRow.cells[1].innerHTML += `<input class="amount-card amount-card--reprint" type="text" data-card-number="${cardNumber}" data-block="${block}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setId][cardId].reprint?.[block] || 0}">`;
                     }
                 }
             });

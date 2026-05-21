@@ -3,6 +3,7 @@ const data2023 = [
     // SCSA D-Scanner Promo Card --- dscanner
     {
         "id": null,
+        "block": 1,
         "slug": "dscanner",
         "name": "SCSA D-Scanner Promo Card",
         "release": "January, 2023",
@@ -17,6 +18,10 @@ const data2023 = [
     // 2022 Championship Finals Event Pack Alt-Art Gold Stamp Set --- eventpack_goldstamp_2022
     {
         "id": null,
+        "block": {
+            "0": ["P"],
+            "1": ["BT6","BT7"]
+        },
         "slug": "eventpack_goldstamp_2022",
         "name": "2022 Championship Finals Event Pack Alt-Art Gold Stamp Set",
         "release": "February 2023",
@@ -35,6 +40,7 @@ const data2023 = [
     // 2022 Championship Finals Digimon Tamers Pack --- tamerpack_goldstamp
     {
         "id": null,
+        "block": 1,
         "slug": "tamerpack_goldstamp",
         "name": "2022 Championship Finals Digimon Tamers Pack",
         "release": "February 2023",
@@ -56,6 +62,7 @@ const data2023 = [
     // 2022 Final Championships Framed Trophy Cards - Top 16 --- fcftc_2022_top16
     {
         "id": null,
+        "block": 1,
         "slug": "fcftc_2022_top16",
         "name": "2022 Final Championships Framed Trophy Cards - Top 16",
         "release": "February 2023",
@@ -68,6 +75,7 @@ const data2023 = [
     // 2022 Final Championships Framed Trophy Cards - 3rd Place --- fcftc_2022_3rd
     {
         "id": null,
+        "block": 1,
         "slug": "fcftc_2022_3rd",
         "name": "2022 Final Championships Framed Trophy Cards - 3rd Place",
         "release": "February 2023",
@@ -80,6 +88,7 @@ const data2023 = [
     // 2022 Final Championships Framed Trophy Cards - 2nd Place --- fcftc_2022_2nd
     {
         "id": null,
+        "block": 1,
         "slug": "fcftc_2022_2nd",
         "name": "2022 Final Championships Framed Trophy Cards - 2nd Place",
         "release": "February 2023",
@@ -92,6 +101,7 @@ const data2023 = [
     // 2022 Final Championships Framed Trophy Cards - 1st Place Champion --- fcftc_2022_1st
     {
         "id": null,
+        "block": 1,
         "slug": "fcftc_2022_1st",
         "name": "2022 Final Championships Framed Trophy Cards - 1st Place Champion",
         "release": "February 2023",
@@ -104,6 +114,7 @@ const data2023 = [
     // Tamer Party Vol.7 --- tp7
     {
         "id": null,
+        "block": 2,
         "slug": "tp7",
         "name": "Tamer Party Vol.7",
         "release": "February 2023",
@@ -121,6 +132,7 @@ const data2023 = [
     // Dimensional Phase (BT11) Pre-Release Tournaments --- bt11_prerelease
     {
         "id": null,
+        "block": 1,
         "slug": "bt11_prerelease",
         "name": "Dimensional Phase (BT11) Pre-Release Tournaments",
         "release": "February 10 - February 16, 2023",
@@ -137,6 +149,7 @@ const data2023 = [
     // Booster Dimensional Phase [BT11] --- bt11
     {
         "id": "BT11",
+        "block": 2,
         "slug": "bt11",
         "name": "Booster Dimensional Phase [BT11]",
         "release": "February 17, 2023",
@@ -177,6 +190,11 @@ const data2023 = [
     // Booster Dimensional Phase [BT11] - Alternatives --- bt11_alts
     {
         "id": null,
+        "block": {
+            "0": ["BT2"],
+            "1": ["EX1","ST10"],
+            "2": ["BT11"]
+        },
         "slug": "bt11_alts",
         "name": "Booster Dimensional Phase [BT11] - Alternatives",
         "release": "February 17, 2023",
@@ -208,6 +226,7 @@ const data2023 = [
     // Booster Dimensional Phase [BT11] - Foils --- bt11_foils
     {
         "id": null,
+        "block": 2,
         "slug": "bt11_foils",
         "name": "Booster Dimensional Phase [BT11] - Foils",
         "release": "February 17, 2023",
@@ -296,6 +315,7 @@ const data2023 = [
     // Digimon Illustration Competition Pack --- ilustration_pack
     {
         "id": null,
+        "block": 2,
         "slug": "ilustration_pack",
         "name": "Digimon Illustration Competition Pack",
         "release": "February 17, 2023",
@@ -315,6 +335,10 @@ const data2023 = [
     // English Version 2nd Anniversary Alternate Art Poll - 2ndanniversary_artpoll
     {
         "id": null,
+        "block": {
+            "0": ["BT1","BT2","BT3","BT4","BT5"],
+            "1": ["BT6","BT7"],
+        },
         "slug": "2ndanniversary_artpoll",
         "name": "English Version 2nd Anniversary Alternate Art Poll",
         "release": "February 17, 2023",
@@ -337,6 +361,7 @@ const data2023 = [
     // Official Tournament Pack Vol.8 --- otp8
     {
         "id": null,
+        "block": 2,
         "slug": "ot8",
         "name": "Official Tournament Pack Vol.8",
         "release": "Mid January 2023–April 2023",
@@ -354,6 +379,7 @@ const data2023 = [
     // Winner Pack Dimensional Phase --- wp8
     {
         "id": null,
+        "block": 2,
         "slug": "wp8",
         "name": "Winner Pack -Dimensional Phase-",
         "release": "Mid January 2023–April 2023",
@@ -369,6 +395,10 @@ const data2023 = [
     // Judge Pack 2 --- judgepack2
     {
         "id": null,
+        "block": {
+            "0": ["ST1","ST2","ST3","ST4","ST5","ST6"],
+            "1": ["ST7","ST8","ST9","ST10"]
+        },
         "slug": "judgepack2",
         "name": "Judge Pack 2",
         "release": "Mid January 2023–April 2023",
@@ -392,6 +422,10 @@ const data2023 = [
     // 2nd Anniversary Set [PB-12E] --- pb12e
     {
         "id": null,
+        "block": {
+            "0": ["BT1","BT3","P"],
+            "1": ["BT7"]
+        },
         "slug": "pb12e",
         "name": "2nd Anniversary Set [PB-12E]",
         "release": "March, 2023",
@@ -433,6 +467,7 @@ const data2023 = [
     // 2022 World Championship - Participation --- wc2022
     {
         "id": null,
+        "block": 1,
         "slug": "wc2022",
         "name": "2022 World Championship - Participation",
         "release": "March 11,12,18, 2023",
@@ -445,6 +480,7 @@ const data2023 = [
     // 2022 World Championship 3rd Place --- wc2022_3rd
     {
         "id": null,
+        "block": 1,
         "slug": "wc2022_3rd",
         "name": "2022 World Championship - 3rd Place",
         "release": "March 11,12,18, 2023",
@@ -457,6 +493,7 @@ const data2023 = [
     // 2022 World Championship 2nd Place --- wc2022_2nd
     {
         "id": null,
+        "block": 1,
         "slug": "wc2022_2nd",
         "name": "2022 World Championship - 2nd Place",
         "release": "March 11,12,18, 2023",
@@ -469,6 +506,7 @@ const data2023 = [
     // 2022 World Championship 1st Place --- wc2022_1st
     {
         "id": null,
+        "block": 1,
         "slug": "wc2022_1st",
         "name": "2022 World Championship - 1st Place",
         "release": "March 11,12,18, 2023",
@@ -481,6 +519,7 @@ const data2023 = [
     // 2022 World Championship - Special Multi-Region Match --- wc2022_specialmatch
     {
         "id": null,
+        "block": 1,
         "slug": "wc2022_specialmatch",
         "name": "2022 World Championship - Special Multi-Region Match",
         "release": "March 19, 2023",
@@ -495,6 +534,7 @@ const data2023 = [
     // Advanced Deck Set (ST14) Pre-Release BEELZEMON CUP --- st14_prerelease
     {
         "id": null,
+        "block": 1,
         "slug": "st14_prerelease",
         "name": "Advanced Deck Set (ST14) Pre-Release BEELZEMON CUP",
         "release": "March 17 – March 23, 2023",
@@ -515,6 +555,7 @@ const data2023 = [
     // Advanced Deck BEELZEMON [ST-14] --- st14
     {
         "id": "ST14",
+        "block": 2,
         "slug": "st14",
         "name": "Advanced Deck BEELZEMON [ST-14]",
         "release": "March 24, 2023",
@@ -535,6 +576,7 @@ const data2023 = [
     // Advanced Deck BEELZEMON [ST-14] - Alternatives --- st14_alts
     {
         "id": null,
+        "block": 2,
         "slug": "st14_alts",
         "name": "Advanced Deck BEELZEMON [ST-14] - Alternatives",
         "release": "March 24, 2023",
@@ -556,6 +598,7 @@ const data2023 = [
     // Advanced Deck BEELZEMON [ST-14] - Special Reprints --- st14_spe_rep
     {
         "id": null,
+        "block": 2,
         "slug": "st14_spe_rep",
         "name": "Advanced Deck BEELZEMON [ST-14] - Special Reprints",
         "release": "March 24, 2023",
@@ -577,6 +620,7 @@ const data2023 = [
     // Official Tournament April 2023 Beelzemon Special --- ot_beelzemon
     {
         "id": null,
+        "block": 1,
         "slug": "ot_beelzemon",
         "name": "Official Tournament April 2023 Beelzemon Special",
         "release": "April, 2023",
@@ -597,6 +641,11 @@ const data2023 = [
     // Event Pack 4 --- eventpack4
     {
         "id": null,
+        "block": {
+            "0": ["BT2","BT3"],
+            "1": ["BT6","BT7","BT8","BT9","EX2","P"],
+            "2": ["BT10","ST12"]
+        },
         "slug": "eventpack4",
         "name": "Event Pack 4",
         "release": "March-April, 2023",
@@ -626,6 +675,10 @@ const data2023 = [
     // Judge Pack 3 --- judgepack3
     {
         "id": null,
+        "block": {
+            "0": ["BT6","BT7","BT8"],
+            "1": ["BT10","ST12","ST13"]
+        },
         "slug": "judgepack3",
         "name": "Judge Pack 3",
         "release": "March-April, 2023",
@@ -649,6 +702,7 @@ const data2023 = [
     // Across Time (BT12) Pre-Release Tournaments --- bt12_prerelease
     {
         "id": null,
+        "block": 0,
         "slug": "bt12_prerelease",
         "name": "Across Time (BT12) Pre-Release Tournaments",
         "release": "April 21 - April 28, 2023",
@@ -665,6 +719,7 @@ const data2023 = [
     // Booster Across Time [BT12] --- bt12
     {
         "id": "BT12",
+        "block": 2,
         "slug": "bt12",
         "name": "Booster Across Time [BT12]",
         "release": "April 28, 2023",
@@ -706,6 +761,7 @@ const data2023 = [
     // Booster Across Time [BT12] - Alternatives --- bt12_alts
     {
         "id": null,
+        "block": 2,
         "slug": "bt12_alts",
         "name": "Booster Across Time [BT12] - Alternatives",
         "release": "April 28, 2023",
@@ -734,6 +790,10 @@ const data2023 = [
     // Booster Across Time [BT12] - Box Promotion Pack --- bt12_boxpromopack
     {
         "id": null,
+        "block": {
+            "0": ["BT5"],
+            "2": ["BT12"]
+        },
         "slug": "bt12_boxpromopack",
         "name": "Booster Across Time [BT12] - Box Promotion Pack",
         "release": "April 28, 2023",
@@ -758,6 +818,7 @@ const data2023 = [
     // Booster Across Time [BT12] - Limited Card Pack --- bt12_limitedcardpack
     {
         "id": null,
+        "block": 1,
         "slug": "bt12_limitedcardpack",
         "name": "Booster Across Time [BT12] - Limited Card Pack",
         "release": "April 28, 2023",
@@ -776,6 +837,10 @@ const data2023 = [
     // Ultimate Cup 2023 --- ultimatecup_2023
     {
         "id": null,
+        "block": {
+            "1": ["BT8","EX2","BT12-001"],
+            "2": ["BT12-007","BT12-010","BT12-016","BT12-018"]
+        },
         "slug": "ultimatecup_2023",
         "name": "Ultimate Cup 2023",
         "release": "March-April, 2023",
@@ -794,6 +859,11 @@ const data2023 = [
     // 2023 Regionals Participant Set 1 --- regional2023_1_0
     {
         "id": null,
+        "block": {
+            "0": ["BT2","BT4","P"],
+            "1": ["BT8","EX2","ST9"],
+            "2": ["BT12"]
+        },
         "slug": "regional2023_1_0",
         "name": "2023 Regionals Participant Set 1",
         "release": "March-April, 2023",
@@ -812,6 +882,11 @@ const data2023 = [
     // 2023 Regionals Finalist Set 1 --- regional2023_1_1
     {
         "id": null,
+        "block": {
+            "0": ["BT2","BT4","P"],
+            "1": ["BT8","EX2","ST9"],
+            "2": ["BT12"]
+        },
         "slug": "regional2023_1_1",
         "name": "2023 Regionals Finalist Set 1",
         "release": "March-April, 2023",
@@ -830,6 +905,11 @@ const data2023 = [
     // 2023 Regionals Champion Set 1 --- regional2023_1_2
     {
         "id": null,
+        "block": {
+            "0": ["BT2","BT4","P"],
+            "1": ["BT8","EX2","ST9"],
+            "2": ["BT12"]
+        },
         "slug": "regional2023_1_2",
         "name": "2023 Regionals Champion Set 1",
         "release": "March-April, 2023",
@@ -850,6 +930,7 @@ const data2023 = [
     // Official Tournament Pack Vol.9 --- otp9
     {
         "id": null,
+        "block": 1,
         "slug": "ot9",
         "name": "Official Tournament Pack Vol.9",
         "release": "Late April - July 2023",
@@ -868,6 +949,10 @@ const data2023 = [
     // Winner Pack Across Time --- wp9
     {
         "id": null,
+        "block": {
+            "0": ["P"],
+            "1": ["BT7"]
+        },
         "slug": "wp9",
         "name": "Winner Pack -Across Time-",
         "release": "Late April - July 2023",
@@ -885,6 +970,10 @@ const data2023 = [
     // Store Championship 2023 Participant Pack --- storechampion_2023_0
     {
         "id": null,
+        "block": {
+            "1": ["BT6","ST9","ST10"],
+            "1": ["BT10","BT11","ST13"]
+        },
         "slug": "storechampion_2023_0",
         "name": "Store Championship 2023 Participant Pack",
         "release": "June, 2023",
@@ -904,6 +993,10 @@ const data2023 = [
     // Store Championship 2023 Top 4 Pack --- storechampion_2023_1
     {
         "id": null,
+        "block": {
+            "1": ["BT6","ST9","ST10"],
+            "1": ["BT10","BT11","ST13"]
+        },
         "slug": "storechampion_2023_1",
         "name": "Store Championship 2023 Top 4 Pack",
         "release": "June, 2023",
@@ -922,6 +1015,7 @@ const data2023 = [
     // Store Championship 2023 Champion Card --- storechampion_2023_2
     {
         "id": null,
+        "block": 1,
         "slug": "storechampion_2023_2",
         "name": "Store Championship 2023 Champion Card",
         "release": "June, 2023",
@@ -934,6 +1028,10 @@ const data2023 = [
     // Tamer Party -Special- --- tp_special
     {
         "id": null,
+        "block": {
+            "1": ["BT8"],
+            "2": ["BT12"]
+        },
         "slug": "tp_special",
         "name": "Tamer Party -Special-",
         "release": "June, 2023",
@@ -952,6 +1050,7 @@ const data2023 = [
     // Booster Alternative Being [EX4] --- ex4
     {
         "id": "EX4",
+        "block": 2,
         "slug": "ex4",
         "name": "Booster Alternative Being [EX4]",
         "release": "June 23, 2023",
@@ -994,6 +1093,7 @@ const data2023 = [
     // Booster Alternative Being [EX4] - Alternatives --- ex4_alts
     {
         "id": null,
+        "block": 2,
         "slug": "ex4_alts",
         "name": "Booster Alternative Being [EX4] - Alternatives",
         "release": "June 23, 2023",
@@ -1021,6 +1121,7 @@ const data2023 = [
     },
     {
         "id": null,
+        "block": 0,
         "slug": "ex4_alts",
         "name": "Booster Alternative Being [EX4] - Alternatives",
         "release": "June 23, 2023",
@@ -1032,6 +1133,7 @@ const data2023 = [
     // Booster Alternative Being [EX4] - Box Topper --- ex4_boxtopper
     {
         "id": null,
+        "block": 2,
         "slug": "ex4_boxtopper",
         "name": "Booster Alternative Being [EX4] - Box Topper",
         "release": "June 23, 2023",
@@ -1053,6 +1155,7 @@ const data2023 = [
     // Royal Knights Binder Set [PB13] --- pb13
     {
         "id": null,
+        "block": 1,
         "slug": "pb13",
         "name": "Royal Knights Binder Set [PB13]",
         "release": "March, 2023",
@@ -1073,6 +1176,10 @@ const data2023 = [
     // Deck Box Set / Beelzemon --- deckbox
     {
         "id": null,
+        "block": {
+            "0": ["BT5-083"],
+            "1": ["BT3-057","BT5-044","BT6-017","BT6-065","EX2-045"]
+        },
         "slug": "deckbox",
         "name": "Deck Box Set / Beelzemon",
         "release": "June, 2023",
@@ -1091,6 +1198,7 @@ const data2023 = [
     // Tamer Goods Set Angewomon & LadyDevimon [PB14] --- pb14
     {
         "id": null,
+        "block": 1,
         "slug": "pb14",
         "name": "Tamer Goods Set Angewomon & LadyDevimon [PB14]",
         "release": "June, 2023",
@@ -1106,6 +1214,7 @@ const data2023 = [
     // Versus Royal Knights (BT13) Pre-Release Tournaments --- bt13_prerelease
     {
         "id": null,
+        "block": 2,
         "slug": "bt13_prerelease",
         "name": "Versus Royal Knights (BT13) Pre-Release Tournaments",
         "release": "April 21 - April 28, 2023",
@@ -1124,6 +1233,7 @@ const data2023 = [
     // Booster Versus Royal Knights [BT13] --- bt13
     {
         "id": "BT13",
+        "block": 2,
         "slug": "bt13",
         "name": "Versus Royal Knights [BT13]",
         "release": "July 21, 2023",
@@ -1159,6 +1269,7 @@ const data2023 = [
     // Booster Versus Royal Knights [BT13] - Alternatives --- bt13_alts
     {
         "id": null,
+        "block": 2,
         "slug": "bt13_alts",
         "name": "Versus Royal Knights [BT13] - Alternatives",
         "release": "July 21, 2023",
@@ -1195,6 +1306,7 @@ const data2023 = [
     // Booster Versus Royal Knights [BT13] - Box Topper --- bt13_boxtopper
     {
         "id": null,
+        "block": 2,
         "slug": "bt13_boxtopper",
         "name": "Versus Royal Knights [BT13] - Box Topper",
         "release": "July 21, 2023",
@@ -1212,6 +1324,7 @@ const data2023 = [
     // Starter Deck Dragon of Courage [ST15] --- st15
     {
         "id": "ST15",
+        "block": 3,
         "slug": "st15",
         "name": "Starter Deck Dragon of Courage [ST-15]",
         "release": "October, 2023",
@@ -1232,6 +1345,7 @@ const data2023 = [
     // Starter Deck Wolf of Friendship [ST16] --- st16
     {
         "id": "ST16",
+        "block": 3,
         "slug": "st16",
         "name": "Starter Deck Wolf of Friendship [ST-16]",
         "release": "October, 2023",
@@ -1252,6 +1366,7 @@ const data2023 = [
     // Booster Versus Royal Knights [BT13] - Ace Box Topper --- bt13_aceboxtopper
     {
         "id": null,
+        "block": 3,
         "slug": "bt13_aceboxtopper",
         "name": "Versus Royal Knights [BT13] - Ace Box Topper",
         "release": "July 21, 2023",
@@ -1266,6 +1381,7 @@ const data2023 = [
     // Official Tournament Pack Vol.10 --- otp10
     {
         "id": null,
+        "block": 2,
         "slug": "otp10",
         "name": "Official Tournament Pack Vol.10",
         "release": "Mid July - November 2023",
@@ -1284,6 +1400,7 @@ const data2023 = [
     // Winner Pack Royal Knights --- wp10
     {
         "id": null,
+        "block": 2,
         "slug": "wp10",
         "name": "Winner Pack -Royal Knights-",
         "release": "Mid July - November 2023",
@@ -1302,6 +1419,10 @@ const data2023 = [
     // Store Championship 2023 Participant Pack Wave 2 --- storechampion_2023_wave2_0
     {
         "id": null,
+        "block": {
+            "1": ["BT7","BT8","BT9"],
+            "2": ["EX3"]
+        },
         "slug": "storechampion_2023_wave2_0",
         "name": "Store Championship 2023 Participant Pack Wave 2",
         "release": "June, 2023",
@@ -1321,6 +1442,10 @@ const data2023 = [
     // Store Championship 2023 Top 4 Pack --- storechampion_2023_wave2_1
     {
         "id": null,
+        "block": {
+            "1": ["BT7","BT8","BT9"],
+            "2": ["EX3"]
+        },
         "slug": "storechampion_2023_wave2_1",
         "name": "Store Championship 2023 Top 4 Pack Wave 2",
         "release": "June, 2023",
@@ -1339,6 +1464,7 @@ const data2023 = [
     // Store Championship 2023 Champion Card --- storechampion_2023_wave2_2
     {
         "id": null,
+        "block": 1,
         "slug": "storechampion_2023_wave2_2",
         "name": "Store Championship 2023 Champion Card Wave 2",
         "release": "June, 2023",
@@ -1353,6 +1479,7 @@ const data2023 = [
     // Bandai Card Games Official Guide --- bandai_cgo_guide
     {
         "id": null,
+        "block": 2,
         "slug": "bandai_cgo_guide",
         "name": "Bandai Card Games Official Guide",
         "release": "3 August, 2023",
@@ -1365,6 +1492,11 @@ const data2023 = [
     // 2023 Regionals Participant Set 2 --- regional2023_2_0
     {
         "id": null,
+        "block": {
+            "0": ["BT1","BT3","BT4"],
+            "1": ["BT7"],
+            "2": ["BT10","BT11","EX3"]
+        },
         "slug": "regional2023_2_0",
         "name": "2023 Regionals Participant Set 2",
         "release": "July-September, 2023",
@@ -1383,6 +1515,11 @@ const data2023 = [
     // 2023 Regionals Finalist Set 2 --- regional2023_2_1
     {
         "id": null,
+        "block": {
+            "0": ["BT1","BT3","BT4"],
+            "1": ["BT7"],
+            "2": ["BT10","BT11","EX3"]
+        },
         "slug": "regional2023_2_1",
         "name": "2023 Regionals Finalist Set 2",
         "release": "July-September, 2023",
@@ -1401,6 +1538,11 @@ const data2023 = [
     // 2023 Regionals Champion Set 2 --- regional2023_2_2
     {
         "id": null,
+        "block": {
+            "0": ["BT1","BT3","BT4"],
+            "1": ["BT7"],
+            "2": ["BT10","BT11","EX3"]
+        },
         "slug": "regional2023_2_2",
         "name": "2023 Regionals Champion Set 2",
         "release": "July-September, 2023",
@@ -1419,6 +1561,11 @@ const data2023 = [
     // Event Pack 5 --- eventpack5
     {
         "id": null,
+        "block": {
+            "0": ["BT1","BT5"],
+            "1": ["BT6","BT8","BT9","EX2"],
+            "2": ["BT10","BT11"]
+        },
         "slug": "eventpack5",
         "name": "Event Pack 5",
         "release": "July-September, 2023",
@@ -1451,6 +1598,7 @@ const data2023 = [
     // Resurgence Booster [RB01] --- rb01
     {
         "id": "RB1",
+        "block": 2,
         "slug": "rb1",
         "name": "Resurgence Booster [RB01]",
         "release": "September 29, 2023",
@@ -1481,6 +1629,7 @@ const data2023 = [
     // Resurgence Booster [RB01] - Alternatives --- rb1_alts
     {
         "id": null,
+        "block": 2,
         "slug": "rb1_alts",
         "name": "Resurgence Booster [RB01] - Alternatives",
         "release": "September 29, 2023",
@@ -1498,6 +1647,7 @@ const data2023 = [
     // Resurgence Booster [RB01] - Box Topper --- rb1_boxtopper
     {
         "id": null,
+        "block": 2,
         "slug": "rb1_boxtopper",
         "name": "Resurgence Booster [RB01] - Box Topper",
         "release": "September 29, 2023",
@@ -1643,6 +1793,7 @@ const data2023 = [
             }
         },
         "reprint": true,
+        "block": 2,
     },
     // Resurgence Booster [RB01] - English Reprints --- rb1_en_reprints
     {
@@ -1665,10 +1816,12 @@ const data2023 = [
             "ST3": "c"
         },
         "reprint": true,
+        "block": 2,
     },
     // TODO: Revise this cards in localstorage.
     {
         "id": null,
+        "block": 2,
         "slug": "rb1_en_reprints",
         "name": "Resurgence Booster [RB01] - English Reprints",
         "release": "September 29, 2023",
@@ -1684,6 +1837,7 @@ const data2023 = [
     // Adventure Box 2 [AB02] --- ab02
     {
         "id": null,
+        "block": 2,
         "slug": "ab02",
         "name": "Adventure Box 2 [AB02]",
         "release": "September, 2023",
@@ -1703,6 +1857,10 @@ const data2023 = [
     // Starter Deck ST15 & ST16 Pre-Release Tournament --- st15st16_prerelease
     {
         "id": null,
+        "block": {
+            "1": ["BT9"],
+            "2": ["BT5"]
+        },
         "slug": "st15st16_prerelease",
         "name": "Starter Deck ST15 & ST16 Pre-Release Tournament",
         "release": "October 6 – 12, 2023",
@@ -1713,13 +1871,14 @@ const data2023 = [
         ],
         "cards": {
             "BT9-020": "P2",
-            "BT5-087": "P4",
+            "BT5-087": "P5",
         },
         "info_url": "https://world.digimoncard.com/event/pre-release_ST15-ST16/",
     },
     // Starter Deck Dragon of Courage [ST15] - Alternatives --- st15_alts
     {
         "id": null,
+        "block": 3,
         "slug": "st15_alts",
         "name": "Starter Deck Dragon of Courage [ST15] - Alternatives",
         "release": "October, 2023",
@@ -1731,6 +1890,7 @@ const data2023 = [
     // Starter Deck Wolf of Friendship [ST16] - Alternatives --- st16_alts
     {
         "id": null,
+        "block": 3,
         "slug": "st16_alts",
         "name": "Starter Deck Wolf of Friendship [ST16] - Alternatives",
         "release": "October, 2023",
@@ -1742,6 +1902,7 @@ const data2023 = [
     // 2023 Regionals Participant Set 3 --- regional2023_3_0
     {
         "id": null,
+        "block": 2,
         "slug": "regional2023_3_0",
         "name": "2023 Regionals Participant Set 3",
         "release": "October, 2023",
@@ -1760,6 +1921,7 @@ const data2023 = [
     // 2023 Regionals Finalist Set 3 --- regional2023_3_1
     {
         "id": null,
+        "block": 2,
         "slug": "regional2023_3_1",
         "name": "2023 Regionals Finalist Set 3",
         "release": "October, 2023",
@@ -1778,6 +1940,7 @@ const data2023 = [
     // 2023 Regionals Champion Set 3 --- regional2023_3_2
     {
         "id": null,
+        "block": 2,
         "slug": "regional2023_3_2",
         "name": "2023 Regionals Champion Set 3",
         "release": "October, 2023",
@@ -1796,6 +1959,11 @@ const data2023 = [
     // Judge Pack 4 --- judgepack4
     {
         "id": null,
+        "block": {
+            "0": ["BT1","BT5"],
+            "1": ["BT7"],
+            "2": ["EX4","P","ST14"]
+        },
         "slug": "judgepack4",
         "name": "Judge Pack 4",
         "release": "October, 2023",
@@ -1818,6 +1986,7 @@ const data2023 = [
     // Booster Blast Ace (BT14) Pre-Release Tournaments --- bt14_prerelease
     {
         "id": null,
+        "block": 3,
         "slug": "bt14_prerelease",
         "name": "Booster Blast Ace (BT14) Pre-Release Tournaments",
         "release": "November 10 - 16, 2023",
@@ -1833,6 +2002,10 @@ const data2023 = [
     // Tamer Party -THE BEGINNING- ver.1.0 --- tp_beginning
     {
         "id": null,
+        "block": {
+            "0": ["BT3","BT5"],
+            "1": ["BT8","ST9"]
+        },
         "slug": "tp_beginning",
         "name": "Tamer Party -THE BEGINNING- ver.1.0",
         "release": "November, 2023",
@@ -1858,6 +2031,7 @@ const data2023 = [
     // Double Pack Set [DP-01] --- dp01
     {
         "id": null,
+        "block": 1,
         "slug": "dp01",
         "name": "Double Pack Set [DP-01]",
         "release": "November 17, 2023",
@@ -1876,6 +2050,10 @@ const data2023 = [
     // Gift Box 2023 [GB03] --- gb03
     {
         "id": null,
+        "block": {
+            "0": ["BT3"],
+            "3": ["ST15","ST16"]
+        },
         "slug": "gb03",
         "name": "Gift Box 2023 [GB03]",
         "release": "November 17, 2023",
@@ -1892,6 +2070,7 @@ const data2023 = [
     // Booster Blast Ace [BT14] --- bt14
     {
         "id": "BT14",
+        "block": 3,
         "slug": "bt14",
         "name": "Booster Blast Ace [BT14]",
         "release": "November 17, 2023",
@@ -1926,6 +2105,7 @@ const data2023 = [
     // Booster Blast Ace [BT14] - Alternatives --- bt14_alts
     {
         "id": null,
+        "block": 3,
         "slug": "bt14_alts",
         "name": "Booster Blast Ace [BT14] - Alternatives",
         "release": "November 17, 2023",
@@ -1956,6 +2136,7 @@ const data2023 = [
     // Booster Blast Ace [BT14] - English Alternatives --- bt14_en_alts
     {
         "id": null,
+        "block": 3,
         "slug": "bt14_en_alts",
         "name": "Booster Blast Ace [BT14] - English Alternatives",
         "release": "November 17, 2023",
@@ -1970,6 +2151,7 @@ const data2023 = [
     // TODO: Esta carta es una SP.
     {
         "id": null,
+        "block": 1,
         "slug": "bt14_en_alts",
         "name": "Booster Blast Ace [BT14] - English Alternatives",
         "release": "November 17, 2023",
@@ -1981,6 +2163,7 @@ const data2023 = [
     // Booster Blast Ace [BT14] - Box Topper --- bt14_boxtopper
     {
         "id": null,
+        "block": 3,
         "slug": "bt14_boxtopper",
         "name": "Booster Blast Ace [BT14] - Box Topper",
         "release": "November 17, 2023",
@@ -1997,6 +2180,7 @@ const data2023 = [
     // Booster Blast Ace [BT14] - Limited Card Set --- bt14_en_boxtopper
     {
         "id": null,
+        "block": 2,
         "slug": "bt14_en_boxtopper",
         "name": "Booster Blast Ace [BT14] - Limited Card Set",
         "release": "November 17, 2023",
@@ -2014,6 +2198,7 @@ const data2023 = [
     // Booster Blast Ace [BT14] - Survey Pack --- bt14_survey_pack
     {
         "id": null,
+        "block": 3,
         "slug": "bt14_survey_pack",
         "name": "Booster Blast Ace [BT14] - Survey Pack",
         "release": "November 17, 2023",
@@ -2031,6 +2216,12 @@ const data2023 = [
     // Demo Deck: Imperialdramon --- demo_deck_imperialdramon
     {
         "id": null,
+        "block": {
+            "0": ["BT3"],
+            "1": ["ST9"],
+            "2": ["BT12","P-036"],
+            "3": ["P-109","P-117","P-123","P-124","P-130"]
+        },
         "slug": "demo_deck_imperialdramon",
         "name": "Demo Deck: Imperialdramon",
         "release": "November 17, 2023",
@@ -2063,6 +2254,7 @@ const data2023 = [
     // 3 on 3 Battle - Participation Prize --- 3on3_battle_participation
     {
         "id": null,
+        "block": 2,
         "slug": "3on3_battle_participation",
         "name": "3 on 3 Battle - Participation Prize",
         "release": "November",
@@ -2076,6 +2268,10 @@ const data2023 = [
     // 3on3 Battle - Top 4 --- 3on3_battle_top4
     {
         "id": null,
+        "block": {
+            "1": ["BT8"],
+            "2": ["ST14"]
+        },
         "slug": "3on3_battle_top4",
         "name": "3 on 3 Battle - Top 4",
         "release": "November",
@@ -2089,6 +2285,10 @@ const data2023 = [
     // 3on3 Battle - 1st Place --- 3on3_battle_1st
     {
         "id": null,
+        "block": {
+            "1": ["BT8"],
+            "2": ["ST14"]
+        },
         "slug": "3on3_battle_1st",
         "name": "3 on 3 Battle - 1st Place",
         "release": "November",
@@ -2103,6 +2303,7 @@ const data2023 = [
     // Official Tournament Pack Vol.11 --- otp11
     {
         "id": null,
+        "block": 3,
         "slug": "otp11",
         "name": "Official Tournament Pack Vol.11",
         "release": "Mid November - February 2024",
@@ -2127,6 +2328,7 @@ const data2023 = [
     // Winner Pack Blast Ace --- wp11
     {
         "id": null,
+        "block": 3,
         "slug": "wp11",
         "name": "Winner Pack -Blast Ace-",
         "release": "Mid November - February 2024",
@@ -2145,6 +2347,7 @@ const data2023 = [
     // Tamer Party -THE BEGINNING- ver.2.0 --- tp_beginning_2
     {
         "id": null,
+        "block": 3,
         "slug": "tp_beginning_2",
         "name": "Tamer Party -THE BEGINNING- ver.2.0",
         "release": "December, 2023",
@@ -2176,6 +2379,11 @@ const data2023 = [
     // Winter Holiday Event --- whe
     {
         "id": null,
+        "block": {
+            "0": ["ST3"],
+            "1": ["EX1"],
+            "3": ["ST15","ST16"]
+        },
         "slug": "whe",
         "name": "Winter Holiday Event",
         "release": "December 1, 2023 – January 31, 2024",
@@ -2192,6 +2400,10 @@ const data2023 = [
     // 2023 Championship Finals Tamers Pack --- tamerpack_2023
     {
         "id": null,
+        "block": {
+            "2": ["BT10","BT11","BT12","BT13"],
+            "3": ["BT14"]
+        },
         "slug": "tamerpack_2023",
         "name": "2023 Championship Finals Tamers Pack",
         "release": "December 2 - 3, 2023",
@@ -2221,6 +2433,7 @@ const data2023 = [
     // 2023 Championship Finals Gold Card Set --- goldcardset_2023
     {
         "id": null,
+        "block": 1,
         "slug": "goldcardset_2023",
         "name": "2023 Championship Finals Gold Card Set",
         "release": "December 2 - 3, 2023",
@@ -2238,6 +2451,7 @@ const data2023 = [
     // 2023 Championship Finals Trophy Cards - Top 16 --- cftc_2023_top16
     {
         "id": null,
+        "block": 2,
         "slug": "cftc_2023_top16",
         "name": "2023 Championship Finals Framed Trophy Cards - Top 16",
         "release": "December 2 - 3, 2023",
@@ -2250,6 +2464,7 @@ const data2023 = [
     // 2023 Championship Finals Trophy Cards - 3rd & 4th Place --- cftc_2023_top3&4
     {
         "id": null,
+        "block": 2,
         "slug": "cftc_2023_top3&4",
         "name": "2023 Championship Finals Framed Trophy Cards - 3rd & 4th Place",
         "release": "December 2 - 3, 2023",
@@ -2262,6 +2477,7 @@ const data2023 = [
     // 2023 Championship Finals Trophy Cards - 2nd Place --- cftc_2023_top2
     {
         "id": null,
+        "block": 2,
         "slug": "cftc_2023_top2",
         "name": "2023 Championship Finals Framed Trophy Cards - 2nd Place",
         "release": "December 2 - 3, 2023",
@@ -2274,6 +2490,7 @@ const data2023 = [
     // 2023 Championship Finals Trophy Cards - 1st Place --- cftc_2023_top1
     {
         "id": null,
+        "block": 2,
         "slug": "cftc_2023_top1",
         "name": "2023 Championship Finals Framed Trophy Cards - 1st Place",
         "release": "December 2 - 3, 2023",
