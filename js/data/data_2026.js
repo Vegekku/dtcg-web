@@ -3,6 +3,12 @@ const data2026 = [
     // TAMER'S EVOLUTION BOX - RISE OF DIGIMON [PB-21] --- pb21
     {
         "id": null,
+        "block": {
+            "1": ["BT9"],
+            "2": ["BT5","BT10","BT11"],
+            "3": ["BT16","EX5","EX6"],
+            "4": ["BT18","EX7","EX8"]
+        },
         "slug": "pb21",
         "name": "TAMER'S EVOLUTION BOX - RISE OF DIGIMON [PB-21]",
         "release": "January 2026",
@@ -28,6 +34,7 @@ const data2026 = [
     // Official Store Tournament 2026 Vol.1 - Participation Pack --- otp20
     {
         "id": null,
+        "block": 5,
         "slug": "otp20",
         "name": "Official Store Tournament 2026 Vol.1 - Participation Pack",
         "release": "January 1 – March 31, 2026",
@@ -46,6 +53,7 @@ const data2026 = [
     // Official Store Tournament 2026 Vol.1 - Winner Pack --- wp20
     {
         "id": null,
+        "block": 5,
         "slug": "wp20",
         "name": "Official Store Tournament 2026 Vol.1 - Winner Pack",
         "release": "January 1 – March 31, 2026",
@@ -65,6 +73,10 @@ const data2026 = [
     // Regulation Battle Vol.4 --- rb_4
     {
         "id": null,
+        "block": {
+            "4": ["EX7"],
+            "5": ["BT22"]
+        },
         "slug": "rb_4",
         "name": "Regulation Battle Vol.4",
         "release": "January 1 – February 28, 2026",
@@ -80,6 +92,7 @@ const data2026 = [
     // 2026 Dash Pack Campaign - 2026_dashpack
     {
         "id": null,
+        "block": 5,
         "slug": "2026_dashpack",
         "name": "2026 Dash Pack Campaign",
         "release": "January 16, 2026",
@@ -96,6 +109,7 @@ const data2026 = [
     // TIME STRANGER [BT-24] Release Event --- bt24_prerelease
     {
         "id": null,
+        "block": 3,
         "slug": "bt24_prerelease",
         "name": "TIME STRANGER [BT-24] Release Event",
         "release": "January 16 - 22, 2026",
@@ -110,6 +124,7 @@ const data2026 = [
     // Booster Time Stranger [BT-24] --- bt24
     {
         "id": "BT24",
+        "block": 5,
         "slug": "bt24",
         "name": "Booster Time Stranger [BT-24]",
         "release": "January 23, 2026",
@@ -159,6 +174,7 @@ const data2026 = [
     // Booster Time Stranger [BT-24] - Alternatives --- bt24_alts
     {
         "id": null,
+        "block": 5,
         "slug": "bt24_alts",
         "name": "Booster Time Stranger [BT-24] - Alternatives",
         "release": "January 23, 2026",
@@ -190,6 +206,7 @@ const data2026 = [
     // Booster Time Stranger [BT-24] - Special Cards --- bt24_special
     {
         "id": null,
+        "block": 5,
         "slug": "bt24_special",
         "name": "Booster Time Stranger [BT-24] - Special Cards",
         "release": "January 23, 2026",
@@ -206,6 +223,7 @@ const data2026 = [
     // Booster Time Stranger [BT-24] - Box Promotion Pack --- bt24_boxtopper
     {
         "id": null,
+        "block": 5,
         "slug": "bt24_boxtopper",
         "name": "Booster Time Stranger [BT-24] - Box Promotion Pack",
         "release": "January 23, 2026",
@@ -237,10 +255,14 @@ const data2026 = [
     // Digimon Liberator Debuggers Set [pb22] --- pb22
     {
         "id": null,
+        "block": {
+            "4": ["P","ST18","ST19","EX7","BT19","EX8","BT20"],
+            "5": ["BT21","EX9"]
+        },
         "slug": "pb22",
         "name": "Digimon Liberator Debuggers Set [PB-22]",
         "release": "February 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/PB22/e_PB22_setID-cardID_d.png",
         "cards": {
             "ST18-12": "",
             "ST18-14": "",
@@ -269,6 +291,17 @@ const data2026 = [
             "BT21-081": "",
             "P-151": "",
         },
+        "override": {
+            "url": "bandaitcgplusURL/PB22/e_setID-cardID_D.png",
+            "cards": {
+                "ST18-12": "",
+                "EX7-030": "",
+                "EX8-055": "",
+                "BT19-027": "",
+                "BT20-079": "",
+                "BT21-029": "",
+            }
+        },
         "info_url": "https://world.digimoncard.com/products/goods/liberator-debuggers-set.php"
     },
 
@@ -276,6 +309,7 @@ const data2026 = [
     // Extra Booster Dawn Of Liberator [EX11] --- ex11
     {
         "id": "EX11",
+        "block": 5,
         "slug": "ex11",
         "name": "Extra Booster Dawn Of Liberator [EX11]",
         "release": "February 13, 2026",
@@ -305,6 +339,7 @@ const data2026 = [
     // Extra Booster Dawn Of Liberator [EX11] - Alternatives --- ex11_alts
     {
         "id": null,
+        "block": 5,
         "slug": "ex11_alts",
         "name": "Extra Booster Dawn Of Liberator [EX11] - Alternatives",
         "release": "February 13, 2026",
@@ -336,6 +371,7 @@ const data2026 = [
     // Extra Booster Dawn Of Liberator [EX11] - Limited Cards --- ex11_limited
     {
         "id": null,
+        "block": 5,
         "slug": "ex11_limited",
         "name": "Extra Booster Dawn Of Liberator [EX11] - Limited Cards",
         "release": "February 13, 2026",
@@ -382,6 +418,7 @@ const data2026 = [
     // Extra Booster Dawn Of Liberator [EX11] - Special Cards --- ex11_special
     {
         "id": null,
+        "block": 5,
         "slug": "ex11_special",
         "name": "Extra Booster Dawn Of Liberator [EX11] - Special Cards",
         "release": "February 13, 2026",
@@ -400,6 +437,10 @@ const data2026 = [
     // Extra Booster Dawn Of Liberator [EX11] - Special Edition Cards --- ex11_special_edition
     {
         "id": null,
+        "block": {
+            "4": ["BT18","BT20","ST18","ST19"],
+            "5": ["BT21","BT23","EX11"]
+        },
         "slug": "ex11_special_edition",
         "name": "Extra Booster Dawn Of Liberator [EX11] - Special Edition Cards",
         "release": "February 13, 2026",
@@ -426,6 +467,7 @@ const data2026 = [
     // Extra Booster Dawn Of Liberator [EX11] - Box Promotion Pack --- ex11_boxtopper
     {
         "id": null,
+        "block": 5,
         "slug": "ex11_boxtopper",
         "name": "Extra Booster Dawn Of Liberator [EX11] - Box Promotion Pack",
         "release": "February 13, 2026",
@@ -457,6 +499,7 @@ const data2026 = [
     // ADVANCED BOOSTER DIGIMON GENERATION [AD-01] - ad1
     {
         "id": "AD1",
+        "block": 5,
         "slug": "ad1",
         "name": "ADVANCED BOOSTER DIGIMON GENERATION [AD-01]",
         "release": "March 27, 2026",
@@ -492,6 +535,7 @@ const data2026 = [
     // ADVANCED BOOSTER DIGIMON GENERATION [AD-01] - Alternatives --- ad1_alts
     {
         "id": null,
+        "block": 5,
         "slug": "ad1_alts",
         "name": "ADVANCED BOOSTER DIGIMON GENERATION [AD-01] - Alternatives",
         "release": "March 27, 2026",
@@ -522,6 +566,7 @@ const data2026 = [
     // ADVANCED BOOSTER DIGIMON GENERATION [AD-01] - Special Cards --- ad1_special
     {
         "id": null,
+        "block": 5,
         "slug": "ad1_special",
         "name": "ADVANCED BOOSTER DIGIMON GENERATION [AD-01] - Special Cards",
         "release": "March 27, 2026",
@@ -707,6 +752,7 @@ const data2026 = [
     // ADVANCED BOOSTER DIGIMON GENERATION [AD-01] - Reprints --- ad1_reprints
     {
         "id": null,
+        "block": 5,
         "slug": "ad1_reprints",
         "name": "ADVANCED BOOSTER DIGIMON GENERATION [AD-01] - Reprints",
         "release": "March 27, 2026",
@@ -764,6 +810,7 @@ const data2026 = [
     // ADVANCED BOOSTER DIGIMON GENERATION [AD-01] - Gold Foil --- ad1_gold_foil
     {
         "id": null,
+        "block": 5,
         "slug": "ad1_gold_foil",
         "name": "ADVANCED BOOSTER DIGIMON GENERATION [AD-01] - Gold Foil",
         "release": "March 27, 2026",
@@ -844,10 +891,15 @@ const data2026 = [
     // Event Pack 9 --- eventpack9
     {
         "id": null,
+        "block": {
+            "1": ["ST10"],
+            "2": ["BT11"],
+            "5": ["ST21","BT21","EX9","BT23"]
+        },
         "slug": "eventpack9",
         "name": "Event Pack 9",
         "release": "March 28-29, 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDEP_D.png",
         "cards": {
             "BT11-069": "",
             "BT21-013": "",
@@ -870,6 +922,7 @@ const data2026 = [
     // Limited Card Pack ANOTHER KNIGHT --- lm07
     {
         "id": null,
+        "block": 5,
         "slug": "lm07",
         "name": "Limited Card Pack ANOTHER KNIGHT",
         "release": "March 2026",
@@ -887,6 +940,11 @@ const data2026 = [
     // Limited Card Pack ANOTHER KNIGHT - Alternatives --- lm07_alts
     {
         "id": null,
+        "block": {
+            "2": ["EX4","BT13"],
+            "3": ["BT16"],
+            "5": ["BT21"]
+        },
         "slug": "lm07_alts",
         "name": "Limited Card Pack ANOTHER KNIGHT - Alternatives",
         "release": "March 2026",
@@ -902,6 +960,12 @@ const data2026 = [
     // Limited Card Pack ANOTHER KNIGHT - Reprints --- lm07_reprints
     {
         "id": null,
+        "block": {
+            "2": ["P-092","BT10"],
+            "3": ["EX6"],
+            "4": ["BT20","P-133","P-136"],
+            "5": ["BT21","P"]
+        },
         "slug": "lm07_reprints",
         "name": "Limited Card Pack ANOTHER KNIGHT - Reprints",
         "release": "March 2026",
@@ -947,24 +1011,30 @@ const data2026 = [
     // Premium Heroines Set ver.2 [PB-23] --- pb23
     {
         "id": null,
+        "block": {
+            "1": ["BT8","ST10"],
+            "2": ["BT5","BT11","BT13","EX3","ST14"],
+            "3": ["EX5","EX6"],
+            "4": ["LM","ST19"]
+        },
         "slug": "pb23",
         "name": "Premium Heroines Set ver.2 [PB-23]",
         "release": "January 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/PB23/parallel_setID-cardID.png",
         "cards": {
-            "BT5-092": "",
-            "BT8-082": "",
-            "BT11-089": "",
-            "BT11-112": "",
-            "BT13-057": "",
-            "EX3-065": "",
-            "EX5-025": "",
-            "EX6-074": "",
-            "P-195": "",
-            "LM-042": "",
-            "ST10-06": "",
-            "ST14-09": "",
-            "ST19-12": "",
+            "BT5-092": "Same",
+            "BT8-082": "Same",
+            "BT11-089": "Same",
+            "BT11-112": "Same",
+            "BT13-057": "Same",
+            "EX3-065": "e",
+            "EX5-025": "Same",
+            "EX6-074": "Same",
+            "P-195": "Same",
+            "LM-042": "Same",
+            "ST10-06": "Same",
+            "ST14-09": "Same",
+            "ST19-12": "Same",
         },
         "info_url": "https://world.digimoncard.com/products/goods/premium-heroines-set-02.php"
     },
@@ -973,6 +1043,7 @@ const data2026 = [
     // Limited Card Pack FINAL CREST --- lm08
     {
         "id": null,
+        "block": 6,
         "slug": "lm08",
         "name": "Limited Card Pack FINAL CREST",
         "release": "August 2026",
@@ -990,6 +1061,10 @@ const data2026 = [
     // Limited Card Pack FINAL CREST - Alternatives --- lm08_alts
     {
         "id": null,
+        "block": {
+            "4": ["BT20","EX8"],
+            "5": ["BT22"]
+        },
         "slug": "lm08_alts",
         "name": "Limited Card Pack FINAL CREST - Alternatives",
         "release": "August 2026",
@@ -1007,6 +1082,7 @@ const data2026 = [
         "id": null,
         "slug": "lm08_reprints",
         "name": "Limited Card Pack FINAL CREST - Reprints",
+        // TODO: revisar block
         "release": "August 2026",
         "url": "noCardURL",
         "cards": {
