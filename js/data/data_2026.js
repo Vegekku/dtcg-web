@@ -1247,6 +1247,22 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
+    // Ultimate Cup 26-27 Season 1 --- ultimatecup_2026_1
+    {
+        "id": null,
+        "block": 5,
+        "slug": "ultimatecup_2026_1",
+        "name": "Ultimate Cup 26-27 Season 1",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "RB1-001": "", // Participation
+            "RB1-005": "", // Top 16
+            "BT21-022": "", // Top 4
+            "BT21-028": "", // Champion
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/ultimate-cup/season1/"
+    },
 
 // August 2026
     // Limited Card Pack FINAL CREST --- lm08
