@@ -85,7 +85,7 @@ const data2026 = [
             "BT22-069": "",
             "EX7-021": "",
         },
-        "info_url": "https://world.digimoncard.com/event/2025/regulation_battle-03/",
+        "info_url": "https://world.digimoncard.com/event/2025/regulation_battle-04/",
     },
 
 // January 16, 2026
@@ -917,6 +917,47 @@ const data2026 = [
     // Regionals 26-27 Promotion Card Top 64: Agumon
     // Regionals 26-27 Promotion Card Top 16: Greymon
     // Regionals 26-27 Promotion Card Top 2: MetalGreymon
+
+// March 1 – April 30, 2026
+    // Evolution Cup 2026 Vol.1 Participation --- evolution_cup_2026_1_participant
+    {
+        "id": null,
+        "block": 5,
+        "slug": "evolution_cup_2026_1_participant",
+        "name": "Evolution Cup 2026 Vol.1 Participation",
+        "release": "March 1 – April 30, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "BT21-060": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/evolution-cup/01/",
+    },
+    // Evolution Cup 2026 Vol.1 Top 4 --- evolution_cup_2026_1_top4
+    {
+        "id": null,
+        "block": 5,
+        "slug": "evolution_cup_2026_1_top4",
+        "name": "Evolution Cup 2026 Vol.1 Top 4",
+        "release": "March 1 – April 30, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "BT21-098": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/evolution-cup/01/",
+    },
+    // Evolution Cup 2026 Vol.1 Winner --- evolution_cup_2026_1_winner
+    {
+        "id": null,
+        "block": 4,
+        "slug": "evolution_cup_2026_1_winner",
+        "name": "Evolution Cup 2026 Vol.1 Winner",
+        "release": "March 1 – April 30, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "BT18-092": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/evolution-cup/01/",
+    },
 
 // March 2026
     // Limited Card Pack ANOTHER KNIGHT --- lm07
