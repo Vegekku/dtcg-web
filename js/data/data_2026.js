@@ -1264,6 +1264,45 @@ const data2026 = [
         "info_url": "https://world.digimoncard.com/event/2026/ultimate-cup/season1/"
     },
 
+// April 1 – June 30, 2026
+    // Official Store Tournament 2026 Vol.2 - Participation Pack --- otp21
+    {
+        "id": null,
+        "block": 6,
+        "slug": "otp21",
+        "name": "Official Store Tournament 2026 Vol.2 - Participation Pack",
+        "release": "April 1 – June 30, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "P-233": "",
+            "P-234": "",
+            "P-235": "",
+            "P-236": "",
+            "P-237": "",
+            "P-238": "",
+        },
+        "rarity": "p",
+        "info_url": "https://world.digimoncard.com/event/2026/store-tournament/02/",
+    },
+    // Official Store Tournament 2026 Vol.2 - Winner Pack --- wp21
+    {
+        "id": null,
+        "block": 6,
+        "slug": "wp21",
+        "name": "Official Store Tournament 2026 Vol.2 - Winner Pack",
+        "release": "April 1 – June 30, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDP_D.png",
+        "cards": {
+            "P-233": "",
+            "P-234": "",
+            "P-235": "",
+            "P-236": "",
+            "P-237": "",
+            "P-238": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/store-tournament/02/",
+    },
+
 // August 2026
     // Limited Card Pack FINAL CREST --- lm08
     {
