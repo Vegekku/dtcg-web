@@ -1193,10 +1193,58 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
-    // Regionals 26-27 Promotion Card Participant: Koromon
-    // Regionals 26-27 Promotion Card Top 64: Agumon
-    // Regionals 26-27 Promotion Card Top 16: Greymon
-    // Regionals 26-27 Promotion Card Top 2: MetalGreymon
+    // Regionals 26-27 Promotion Card Participant: Koromon --- regional2627_1_promo_participant
+    {
+        "id": null,
+        "block": 5,
+        "slug": "regional2627_1_promo_participant",
+        "name": "Regionals 26-27 Promotion Card Participant: Koromon",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "ST20-01": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
+    },
+    // Regionals 26-27 Promotion Card Top 64: Agumon --- regional2627_1_promo_top64
+    {
+        "id": null,
+        "block": 5,
+        "slug": "regional2627_1_promo_top64",
+        "name": "Regionals 26-27 Promotion Card Top 64: Agumon",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "ST20-10": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
+    },
+    // Regionals 26-27 Promotion Card Top 16: Greymon --- regional2627_1_promo_top16
+    {
+        "id": null,
+        "block": 5,
+        "slug": "regional2627_1_promo_top16",
+        "name": "Regionals 26-27 Promotion Card Top 16: Greymon",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "AD1-001": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
+    },
+    // Regionals 26-27 Promotion Card Top 2: MetalGreymon --- regional2627_1_promo_top2
+    {
+        "id": null,
+        "block": 5,
+        "slug": "regional2627_1_promo_top2",
+        "name": "Regionals 26-27 Promotion Card Top 2: MetalGreymon",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "BT21-061": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
+    },
 
 // August 2026
     // Limited Card Pack FINAL CREST --- lm08
