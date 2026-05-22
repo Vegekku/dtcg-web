@@ -1161,6 +1161,7 @@ const data2026 = [
         "name": "Regionals 26-27 Season 1 Finalist Card Set",
         "release": "March 28-29, 2026",
         "url": "bandaitcgplusURL/P/e_setID-cardID_fina_D.png",
+        // TODO: sleeve: "https://world.digimoncard.com/images/event/2026/championship/regionals-season1/popup/img_sleeve01.png",
         "cards": {
             "BT20-072": "",
             "BT22-064": "",
@@ -1183,6 +1184,7 @@ const data2026 = [
         "name": "Regionals 26-27 Season 1 Champion Card Set",
         "release": "March 28-29, 2026",
         "url": "bandaitcgplusURL/P/e_setID-cardID_camp_D.png",
+        // TODO: playmat: "https://world.digimoncard.com/images/event/2026/championship/regionals-season1/popup/img_playmat01.png",
         "cards": {
             "BT20-072": "",
             "BT22-064": "",
