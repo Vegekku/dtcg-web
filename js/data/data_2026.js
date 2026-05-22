@@ -1284,6 +1284,28 @@ const data2026 = [
         "rarity": "p",
         "info_url": "https://world.digimoncard.com/event/2026/store-tournament/02/",
     },
+    // Judge Pack 9 --- judgepack9
+    {
+        "id": null,
+        "block": 5,
+        "slug": "judgepack9",
+        "name": "Judge Pack 9",
+        "release": "April 1 – June 30, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDJP_D.png",
+        "cards": {
+            "BT22-024": "",
+            "BT22-036": "",
+            "BT23-065": "",
+            "BT24-016": "",
+            "BT24-075": "",
+            "BT24-090": "",
+            "BT24-093": "",
+            "BT24-094": "",
+            "EX10-032": "",
+            "EX11-032": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/store-tournament/02/",
+    },
     // Official Store Tournament 2026 Vol.2 - Winner Pack --- wp21
     {
         "id": null,
