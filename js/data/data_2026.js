@@ -918,6 +918,61 @@ const data2026 = [
     // Regionals 26-27 Promotion Card Top 16: Greymon
     // Regionals 26-27 Promotion Card Top 2: MetalGreymon
 
+// March 15, 2026
+    // 25-26 World Championship - Participation --- wc2025
+    {
+        "id": null,
+        "block": 3,
+        "slug": "wc2025",
+        "name": "25-26 World Championship - Participation",
+        "release": "March 15, 2026",
+        "url": null,
+        "cards": {
+            "BT17-101": "https://world.digimoncard.com/images/event/2025/championship/world-final/participation.png",
+        },
+        "playmat": "https://world.digimoncard.com/images/event/2025/championship/world-final/playmat.png",
+        "info_url": "https://world.digimoncard.com/event/2025/championship/world-final/"
+    },
+    // 25-26 World Championship - 3rd Place Prize --- wc2025_3rd
+    {
+        "id": null,
+        "block": 3,
+        "slug": "wc2025_3rd",
+        "name": "25-26 World Championship - 3rd Place Prize",
+        "release": "March 15, 2026",
+        "url": null,
+        "cards": {
+            "BT17-101": "https://world.digimoncard.com/images/event/2025/championship/world-final/3rd.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/world-final/"
+    },
+    // 25-26 World Championship - Runner-Up Prize --- wc2025_2nd
+    {
+        "id": null,
+        "block": 3,
+        "slug": "wc2025_2nd",
+        "name": "25-26 World Championship - Runner-Up Prize",
+        "release": "March 15, 2026",
+        "url": null,
+        "cards": {
+            "BT17-101": "https://world.digimoncard.com/images/event/2025/championship/world-final/2nd.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/world-final/"
+    },
+    // 25-26 World Championship - Champion Prize --- wc2025_1st
+    {
+        "id": null,
+        "block": 3,
+        "slug": "wc2025_1st",
+        "name": "25-26 World Championship - Champion Prize",
+        "release": "March 15, 2026",
+        "url": null,
+        "cards": {
+            "BT17-101": "https://world.digimoncard.com/images/event/2025/championship/world-final/1st.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/world-final/"
+    },
+
 // March 1 – April 30, 2026
     // Evolution Cup 2026 Vol.1 Participation --- evolution_cup_2026_1_participant
     {
@@ -1060,7 +1115,7 @@ const data2026 = [
         },
         "slug": "pb23",
         "name": "Premium Heroines Set ver.2 [PB-23]",
-        "release": "January 2026",
+        "release": "March 2026",
         "url": "bandaitcgplusURL/PB23/parallel_setID-cardID.png",
         "cards": {
             "BT5-092": "Same",
