@@ -1127,9 +1127,72 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
-    // Regionals 26-27 Season 1 Participation Card Set
-    // Regionals 26-27 Season 1 Finalist Card Set
-    // Regionals 26-27 Season 1 Champion Card Set
+    // Regionals 26-27 Season 1 Participation Card Set --- regional2627_1_0
+    {
+        "id": null,
+        "block": {
+            "3": ["EX5"],
+            "4": ["BT20"],
+            "5": ["BT22","ST22","P"]
+        },
+        "slug": "regional2627_1_0",
+        "name": "Regionals 26-27 Season 1 Participation Card Set",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_parti_D.png",
+        "cards": {
+            "BT20-072": "",
+            "BT22-064": "",
+            "BT22-073": "",
+            "EX5-001": "",
+            "ST22-06": "",
+            "P-209": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
+    },
+    // Regionals 26-27 Season 1 Finalist Card Set --- regional2627_1_1
+    {
+        "id": null,
+        "block": {
+            "3": ["EX5"],
+            "4": ["BT20"],
+            "5": ["BT22","ST22","P"]
+        },
+        "slug": "regional2627_1_1",
+        "name": "Regionals 26-27 Season 1 Finalist Card Set",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_fina_D.png",
+        "cards": {
+            "BT20-072": "",
+            "BT22-064": "",
+            "BT22-073": "",
+            "EX5-001": "",
+            "ST22-06": "",
+            "P-209": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
+    },
+    // Regionals 26-27 Season 1 Champion Card Set --- regional2627_1_2
+    {
+        "id": null,
+        "block": {
+            "3": ["EX5"],
+            "4": ["BT20"],
+            "5": ["BT22","ST22","P"]
+        },
+        "slug": "regional2627_1_2",
+        "name": "Regionals 26-27 Season 1 Champion Card Set",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_camp_D.png",
+        "cards": {
+            "BT20-072": "",
+            "BT22-064": "",
+            "BT22-073": "",
+            "EX5-001": "",
+            "ST22-06": "",
+            "P-209": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
+    },
     // Regionals 26-27 Promotion Card Participant: Koromon
     // Regionals 26-27 Promotion Card Top 64: Agumon
     // Regionals 26-27 Promotion Card Top 16: Greymon
