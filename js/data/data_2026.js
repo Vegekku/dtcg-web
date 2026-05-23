@@ -1325,6 +1325,109 @@ const data2026 = [
         "info_url": "https://world.digimoncard.com/event/2026/store-tournament/02/",
     },
 
+// May 15, 2026
+    // Starter Deck DIGIMON BEATBREAK [ST-23] --- st23
+    {
+        "id": "ST23",
+        "block": 6,
+        "slug": "st23",
+        "name": "Starter Deck DIGIMON BEATBREAK [ST-23]",
+        "release": "May 15, 2026",
+        "total": 15,
+        "url": "bandaitcgplusURL/ST23/e_setID-cardID_D.png",
+        "add_zero": 2,
+        "color": {
+            "yellow": ["2-5"],
+            "green": [1,"6-9"],
+            "green-yellow": [13],
+            "black": [10,11],
+            "black-purple": [14],
+            "purple": [12],
+            "white": [15]
+        },
+        "rarity": {
+            "c": [1,2,10,12,15],
+            "u": [3,4,7,11,14],
+            "r": [6,8,13],
+            "sr": [5,9]
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-23/"
+    },
+    // Starter Deck DIGIMON BEATBREAK [ST-23] - Lucky Deck --- st23_lucky
+    {
+        "id": null,
+        "block": 6,
+        "slug": "st23_lucky",
+        "name": "Starter Deck DIGIMON BEATBREAK [ST-23] - Lucky Deck",
+        "release": "May 15, 2026",
+        "url": "bandaitcgplusURL/ST23/e_setID-cardIDP.png",
+        "cards": {
+            "ST23-06": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-23/"
+    },
+    // Starter Deck DIGIMON DATA SQUAD [ST-24] --- st24
+    {
+        "id": "ST24",
+        "block": 6,
+        "slug": "st24",
+        "name": "Starter Deck DIGIMON DATA SQUAD [ST-24]",
+        "release": "May 15, 2026",
+        "total": 15,
+        "url": "bandaitcgplusURL/ST24/e_setID-cardID_D.png",
+        "add_zero": 2,
+        "color": {
+            "blue": [2,3],
+            "yellow": [1],
+            "yellow-blue": [13],
+            "yellow-red": ["4-7"],
+            "green": ["8-10"],
+            "green-red": [11],
+            "green-purple": [14],
+            "purple": [12],
+            "white": [15]
+        },
+        "rarity": {
+            "c": [1,2,8,12,15],
+            "u": [3,5,9,10,14],
+            "r": [4,6,13],
+            "sr": [7,11]
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-24/"
+    },
+    // Starter Deck DIGIMON DATA SQUAD [ST-24] - Lucky Deck --- st24_lucky
+    {
+        "id": null,
+        "block": 6,
+        "slug": "st24_lucky",
+        "name": "Starter Deck DIGIMON DATA SQUAD [ST-24] - Lucky Deck",
+        "release": "May 15, 2026",
+        "url": "bandaitcgplusURL/ST24/e_setID-cardID_P1_D.png",
+        "cards": {
+            "ST24-04": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-24/"
+    },
+    // New Illustration Memory Boost! --- lm_memory_boost
+    {
+        "id": null,
+        "slug": "lm_memory_boost",
+        "name": "New Illustration Memory Boost!",
+        "release": "May 15, 2026",
+        "url": "bandaitcgplusURL/ST23/e_setID-cardID_D.png",
+        "cards": {
+            "LM-033": "",
+            "LM-034": "",
+            "LM-035": "",
+            "LM-036": "",
+            "LM-037": "",
+            "LM-038": "",
+        },
+        "reprint": true,
+        "block": 6,
+        "info_url": "https://world.digimoncard.com/products/deck/st-23/"
+    },
+
 // August 2026
     // Limited Card Pack FINAL CREST --- lm08
     {
