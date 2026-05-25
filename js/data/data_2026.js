@@ -1585,6 +1585,77 @@ const data2026 = [
         "info_url": "https://world.digimoncard.com/products/pack/ver25/"
     },
 
+// July 3, 2026
+    // Extra Booster Digital World Shambala [EX-12] --- ex12
+    {
+        "id": "EX12",
+        "block": 6,
+        "slug": "ex12",
+        "name": "Extra Booster Digital World Shambala [EX-12]",
+        "release": "July 3, 2026",
+        "total": 77,
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX12/e_setID-cardID_D.png",
+        "add_zero": 3,
+        "playmat": "",
+        "color": {},
+        "rarity": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
+    },
+    // Extra Booster Digital World Shambala [EX-12] - Alternatives --- ex12_alts
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex12_alts",
+        "name": "Extra Booster Digital World Shambala [EX-12] - Alternatives",
+        "release": "July 3, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX12/e_setID-cardIDparallel_D.png",
+        "cards": {
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
+    },
+    // Extra Booster Digital World Shambala [EX-12] - Limited Cards --- ex12_limited
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex12_limited",
+        "name": "Extra Booster Digital World Shambala [EX-12] - Limited Cards",
+        "release": "July 3, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX12/e_setID-cardIDLP_D.png",
+        "cards": {
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
+    },
+    // Extra Booster Digital World Shambala [EX-12] - Special Cards --- ex12_special
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex12_special",
+        "name": "Extra Booster Digital World Shambala [EX-12] - Special Cards",
+        "release": "July 3, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX12/e_setID-cardIDSP_D.png",
+        "cards": {
+        },
+        "rarity": "sp",
+        "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
+    },
+    // Extra Booster Digital World Shambala [EX-12] - Box Promotion Pack --- ex12_boxtopper
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex12_boxtopper",
+        "name": "Extra Booster Digital World Shambala [EX-12] - Box Promotion Pack",
+        "release": "July 3, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX12/e_setID-cardIDparallel_D.png",
+        "cards": {
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
+    },
+
 // August 2026
     // Limited Card Pack FINAL CREST --- lm08
     {
