@@ -1770,4 +1770,79 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
     },
+
+// November 2026
+    // Limited Card Pack DISTANCIA CERO [LM-09] --- lm09
+    {
+        "id": null,
+        "block": 6,
+        "slug": "lm09",
+        "name": "Limited Card Pack DISTANCIA CERO [LM-09]",
+        "release": "November 2026",
+        "url": "noCardURL",
+        "cards": {
+            "LM-063": "",
+            "LM-064": "",
+            "LM-065": "",
+            "LM-066": "",
+            "LM-067": "",
+            "LM-068": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-09.php"
+    },
+    // Limited Card Pack DISTANCIA CERO [LM-09] - Alternatives --- lm09_alts
+    {
+        "id": null,
+        "block": {
+            "3": ["EX5"],
+            "4": ["EX7"],
+            "5": ["BT22","BT23"]
+        },
+        "slug": "lm09_alts",
+        "name": "Limited Card Pack DISTANCIA CERO [LM-09] - Alternatives",
+        "release": "November 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT22-005": "",
+            "BT23-013": "",
+            "EX5-063": "",
+            "EX7-073": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-09.php"
+    },
+    // Limited Card Pack DISTANCIA CERO [LM-09] - Reprints --- lm09_reprints
+    {
+        "id": null,
+        "slug": "lm09_reprints",
+        "name": "Limited Card Pack DISTANCIA CERO [LM-09] - Reprints",
+        "release": "November 2026",
+        // TODO: revisar block
+        "url": "noCardURL",
+        "cards": {
+            "P-229": "",
+            "P-232": "",
+            "P-233": "",
+            "P-234": "",
+            "P-235": "",
+            "P-236": "",
+            "P-237": "",
+            "P-238": "",
+            "P-239": "",
+            "P-240": "",
+            "P-241": "",
+            "P-242": "",
+            "P-243": "",
+            "P-244": "",
+            "BT20-013": "",
+            "BT21-046": "",
+            "BT23-092": "",
+            "BT23-099": "",
+            "BT24-018": "",
+            "BT24-085": "",
+            "ST22-13": "",
+            "EX5-058": "",
+            "EX7-051": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-09.php"
+    },
 ];
