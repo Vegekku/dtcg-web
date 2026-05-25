@@ -1428,6 +1428,163 @@ const data2026 = [
         "info_url": "https://world.digimoncard.com/products/deck/st-23/"
     },
 
+// May 15 – 21, 2026
+    // Booster Dual Revolution [BT-25] Release Event --- bt25_prerelease
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt25_prerelease",
+        "name": "Booster Dual Revolution [BT-25] Release Event",
+        "release": "May 15 – 21, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel_D.png",
+        "cards": {
+            "ST24-07": ["P1","P2"]
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/release-event/02/"
+    },
+
+// May 22, 2026
+    // Booster Dual Revolution [BT-25] --- bt25
+    {
+        "id": "BT25",
+        "block": 6,
+        "slug": "bt25",
+        "name": "Booster Dual Revolution [BT-25]",
+        "release": "May 22, 2026",
+        "total": 104,
+        "url": "bandaitcgplusURL/BT25/e_setID-cardID_D.png",
+        "add_zero": 3,
+        "playmat": "",
+        "color": {
+            "red": [1,"7-9",13,14,17,86,93],
+            "red-blue": [94,103],
+            "red-yellow": [18,104],
+            "red-green": ["10-12",15,16,20,95],
+            "red-black": [19],
+            "blue": [2,"21-24",26,87,96],
+            "blue-black": [25,27,29],
+            "blue-purple": [28],
+            "yellow": [3,"30-36",40,41,43,88,98],
+            "yellow-blue": [37],
+            "yellow-green": [39],
+            "yellow-black": [38,42],
+            "yellow-purple": [44,97],
+            "green": [4,"45-50",55,57,89,90],
+            "green-red": [52,53],
+            "green-yellow": [56,59],
+            "green-black": [51,54,58,99],
+            "green-white": [60],
+            "black": [5,61,62,"64-66",68,69,71,73,76,91,100,101],
+            "black-red": [75,102],
+            "black-green": [77],
+            "black-purple": [63,67,70,72,74],
+            "purple": [6,"78-81",83,85,92],
+            "purple-red-green": [84],
+            "purple-black": [82]
+        },
+        "rarity": {
+            "c": ["1-7","10-14",21,23,24,30,32,34,36,38,47,50,51,55,"62-67",69,"78-81",83,96,98,100,101],
+            "u": [8,9,15,22,27,31,33,35,37,40,45,46,48,49,52,61,68,70,71,73,"93-95",97,99,102],
+            "r": [16,17,19,25,26,39,41,42,53,54,56,58,72,74,76,82,"86-90"],
+            "sr": [18,20,28,29,44,59,60,75,77,84,91,92],
+            "ur": [43,57,85],
+            "sec": [103,104]
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver25/"
+    },
+    // Booster Dual Revolution [BT-25] - Alternatives --- bt25_alts
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt25_alts",
+        "name": "Booster Dual Revolution [BT-25] - Alternatives",
+        "release": "May 22, 2026",
+        "url": "bandaitcgplusURL/BT25/e_setID-cardIDparallel.png",
+        "cards": {
+            "BT25-018": "P_D",
+            "BT25-020": "P_D",
+            "BT25-028": "P_D",
+            "BT25-029": "P_D",
+            "BT25-043": "P_D",
+            "BT25-044": "P_D",
+            "BT25-057": "P_D",
+            "BT25-059": "P_D",
+            "BT25-060": "P_D",
+            "BT25-075": "P_D",
+            "BT25-077": "P_D",
+            "BT25-084": "P_D",
+            "BT25-085": "P_D",
+            "BT25-086": "P_D",
+            "BT25-088": "P_D",
+            "BT25-090": "P_D",
+            "BT25-091": "P_D",
+            "BT25-092": "P_D",
+            "BT25-103": ["P_D","P2"],
+            "BT25-104": ["P_D","P2"],
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver25/"
+    },
+    // Booster Dual Revolution [BT-25] - Special Cards --- bt25_special
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt25_special",
+        "name": "Booster Dual Revolution [BT-25] - Special Cards",
+        "release": "May 22, 2026",
+        "url": "bandaitcgplusURL/BT25/e_setID-cardIDSP_D.png",
+        "cards": {
+            "BT25-043": "",
+            "BT25-057": "",
+            "BT25-085": "",
+            "BT25-091": "",
+            "BT25-092": "",
+        },
+        "rarity": "sp",
+        "info_url": "https://world.digimoncard.com/products/pack/ver25/"
+    },
+    // Booster Dual Revolution [BT-25] - Box Promotion Pack --- bt25_boxtopper
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt25_boxtopper",
+        "name": "Booster Dual Revolution [BT-25] - Box Promotion Pack",
+        "release": "May 22, 2026",
+        "url": "bandaitcgplusURL/BT25/e_setID-cardIDP_D.png",
+        "cards": {
+            "BT25-009": "",
+            "BT25-031": "",
+            "BT25-035": "",
+            "BT25-045": "",
+            "BT25-046": "",
+            "BT25-061": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver25/"
+    },
+    // Booster Dual Revolution [BT-25] - Restricted Reprints --- bt25_restricted
+    {
+        "id": null,
+        "block": {
+            "0": ["BT2"],
+            "1": ["EX1","BT7"],
+            "2": ["BT3","BT11"],
+            "3": ["BT4"]
+        },
+        "slug": "bt25_restricted",
+        "name": "Booster Dual Revolution [BT-25] - Restricted Reprints",
+        "release": "May 22, 2026",
+        "url": "bandaitcgplusURL/BT25/e_setID-cardID_BT25_D.png",
+        "cards": {
+            "BT2-047": "",
+            "BT3-103": "",
+            "BT4-104": "",
+            "BT7-107": "",
+            "BT11-064": "",
+            "EX1-068": "",
+
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver25/"
+    },
+
 // August 2026
     // Limited Card Pack FINAL CREST --- lm08
     {
