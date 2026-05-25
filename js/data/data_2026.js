@@ -30,6 +30,25 @@ const data2026 = [
         "info_url": "https://world.digimoncard.com/products/goods/tamers-evolution-box/"
     },
 
+// January 1 – February 28, 2026
+    // Regulation Battle Vol.4 --- rb_4
+    {
+        "id": null,
+        "block": {
+            "4": ["EX7"],
+            "5": ["BT22"]
+        },
+        "slug": "rb_4",
+        "name": "Regulation Battle Vol.4",
+        "release": "January 1 – February 28, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "BT22-069": "",
+            "EX7-021": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/regulation_battle-04/",
+    },
+
 // January 1 – March 31, 2026
     // Official Store Tournament 2026 Vol.1 - Participation Pack --- otp20
     {
@@ -67,25 +86,6 @@ const data2026 = [
             "P-219": "",
         },
         "info_url": "https://world.digimoncard.com/event/2026/store-tournament/01/",
-    },
-
-// January 1 – February 28, 2026
-    // Regulation Battle Vol.4 --- rb_4
-    {
-        "id": null,
-        "block": {
-            "4": ["EX7"],
-            "5": ["BT22"]
-        },
-        "slug": "rb_4",
-        "name": "Regulation Battle Vol.4",
-        "release": "January 1 – February 28, 2026",
-        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
-        "cards": {
-            "BT22-069": "",
-            "EX7-021": "",
-        },
-        "info_url": "https://world.digimoncard.com/event/2025/regulation_battle-03/",
     },
 
 // January 16, 2026
@@ -493,6 +493,223 @@ const data2026 = [
             "P": "p"
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver22/",
+    },
+
+// March 2026
+    // Limited Card Pack ANOTHER KNIGHT --- lm07
+    {
+        "id": null,
+        "block": 5,
+        "slug": "lm07",
+        "name": "Limited Card Pack ANOTHER KNIGHT",
+        "release": "March 2026",
+        "url": "bandaitcgplusURL/LM07/e_LM07-setID-cardID_d.png",
+        "cards": {
+            "LM-051": "",
+            "LM-052": "",
+            "LM-053": "",
+            "LM-054": "",
+            "LM-055": "",
+            "LM-056": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
+    },
+    // Limited Card Pack ANOTHER KNIGHT - Alternatives --- lm07_alts
+    {
+        "id": null,
+        "block": {
+            "2": ["EX4","BT13"],
+            "3": ["BT16"],
+            "5": ["BT21"]
+        },
+        "slug": "lm07_alts",
+        "name": "Limited Card Pack ANOTHER KNIGHT - Alternatives",
+        "release": "March 2026",
+        "url": "bandaitcgplusURL/LM07/e_LM07-setID-cardID_d.png",
+        "cards": {
+            "BT13-112": "",
+            "BT16-077": "",
+            "BT21-097": "",
+            "EX4-073": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
+    },
+    // Limited Card Pack ANOTHER KNIGHT - Reprints --- lm07_reprints
+    {
+        "id": null,
+        "block": {
+            "2": ["P-092","BT10"],
+            "3": ["EX6"],
+            "4": ["BT20","P-133","P-136"],
+            "5": ["BT21","P"]
+        },
+        "slug": "lm07_reprints",
+        "name": "Limited Card Pack ANOTHER KNIGHT - Reprints",
+        "release": "March 2026",
+        "url": "bandaitcgplusURL/LM07/e_setID-cardID_D.png",
+        "cards": {
+            "BT10-093": "",
+            "BT20-014": "",
+            "BT20-026": "",
+            "BT21-005": "",
+            "BT21-017": "",
+            "BT21-095": "",
+            "EX6-029": "",
+            "EX6-043": "",
+            "P-092": "",
+            "P-133": "",
+            "P-136": "",
+            "P-188": "",
+            "P-189": "",
+            "P-190": "",
+            "P-191": "",
+            "P-192": "",
+            "P-193": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
+    },
+    {
+        "id": null,
+        "slug": "lm07_reprints",
+        "name": "Limited Card Pack ANOTHER KNIGHT - Reprints",
+        "release": "March 2026",
+        "url": "bandaitcgplusURL/LM07/e_LM07-setID-cardID_d.png",
+        "cards": {
+            "P-176": "",
+            "P-177": "",
+            "P-178": "",
+            "P-179": "",
+            "P-180": "",
+            "P-181": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
+    },
+
+    // Premium Heroines Set ver.2 [PB-23] --- pb23
+    {
+        "id": null,
+        "block": {
+            "1": ["BT8","ST10"],
+            "2": ["BT5","BT11","BT13","EX3","ST14"],
+            "3": ["EX5","EX6"],
+            "4": ["LM","ST19"]
+        },
+        "slug": "pb23",
+        "name": "Premium Heroines Set ver.2 [PB-23]",
+        "release": "March 2026",
+        "url": "bandaitcgplusURL/PB23/parallel_setID-cardID.png",
+        "cards": {
+            "BT5-092": "Same",
+            "BT8-082": "Same",
+            "BT11-089": "Same",
+            "BT11-112": "Same",
+            "BT13-057": "Same",
+            "EX3-065": "e",
+            "EX5-025": "Same",
+            "EX6-074": "Same",
+            "P-195": "Same",
+            "LM-042": "Same",
+            "ST10-06": "Same",
+            "ST14-09": "Same",
+            "ST19-12": "Same",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/premium-heroines-set-02.php"
+    },
+
+// March 1 – April 30, 2026
+    // Evolution Cup 2026 Vol.1 Participation --- evolution_cup_2026_1_participant
+    {
+        "id": null,
+        "block": 5,
+        "slug": "evolution_cup_2026_1_participant",
+        "name": "Evolution Cup 2026 Vol.1 Participation",
+        "release": "March 1 – April 30, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "BT21-060": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/evolution-cup/01/",
+    },
+    // Evolution Cup 2026 Vol.1 Top 4 --- evolution_cup_2026_1_top4
+    {
+        "id": null,
+        "block": 5,
+        "slug": "evolution_cup_2026_1_top4",
+        "name": "Evolution Cup 2026 Vol.1 Top 4",
+        "release": "March 1 – April 30, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "BT21-098": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/evolution-cup/01/",
+    },
+    // Evolution Cup 2026 Vol.1 Winner --- evolution_cup_2026_1_winner
+    {
+        "id": null,
+        "block": 4,
+        "slug": "evolution_cup_2026_1_winner",
+        "name": "Evolution Cup 2026 Vol.1 Winner",
+        "release": "March 1 – April 30, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "BT18-092": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/evolution-cup/01/",
+    },
+
+// March 15, 2026
+    // 25-26 World Championship - Participation --- wc2025
+    {
+        "id": null,
+        "block": 3,
+        "slug": "wc2025",
+        "name": "25-26 World Championship - Participation",
+        "release": "March 15, 2026",
+        "url": null,
+        "cards": {
+            "BT17-101": "https://world.digimoncard.com/images/event/2025/championship/world-final/participation.png",
+        },
+        "playmat": "https://world.digimoncard.com/images/event/2025/championship/world-final/playmat.png",
+        "info_url": "https://world.digimoncard.com/event/2025/championship/world-final/"
+    },
+    // 25-26 World Championship - 3rd Place Prize --- wc2025_3rd
+    {
+        "id": null,
+        "block": 3,
+        "slug": "wc2025_3rd",
+        "name": "25-26 World Championship - 3rd Place Prize",
+        "release": "March 15, 2026",
+        "url": null,
+        "cards": {
+            "BT17-101": "https://world.digimoncard.com/images/event/2025/championship/world-final/3rd.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/world-final/"
+    },
+    // 25-26 World Championship - Runner-Up Prize --- wc2025_2nd
+    {
+        "id": null,
+        "block": 3,
+        "slug": "wc2025_2nd",
+        "name": "25-26 World Championship - Runner-Up Prize",
+        "release": "March 15, 2026",
+        "url": null,
+        "cards": {
+            "BT17-101": "https://world.digimoncard.com/images/event/2025/championship/world-final/2nd.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/world-final/"
+    },
+    // 25-26 World Championship - Champion Prize --- wc2025_1st
+    {
+        "id": null,
+        "block": 3,
+        "slug": "wc2025_1st",
+        "name": "25-26 World Championship - Champion Prize",
+        "release": "March 15, 2026",
+        "url": null,
+        "cards": {
+            "BT17-101": "https://world.digimoncard.com/images/event/2025/championship/world-final/1st.png",
+        },
+        "info_url": "https://world.digimoncard.com/event/2025/championship/world-final/"
     },
 
 // March 27, 2026
@@ -910,133 +1127,574 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
-    // Regionals 26-27 Season 1 Participation Card Set
-    // Regionals 26-27 Season 1 Finalist Card Set
-    // Regionals 26-27 Season 1 Champion Card Set
-    // Regionals 26-27 Promotion Card Participant: Koromon
-    // Regionals 26-27 Promotion Card Top 64: Agumon
-    // Regionals 26-27 Promotion Card Top 16: Greymon
-    // Regionals 26-27 Promotion Card Top 2: MetalGreymon
-
-// March 2026
-    // Limited Card Pack ANOTHER KNIGHT --- lm07
+    // Regionals 26-27 Season 1 Participation Card Set --- regional2627_1_0
+    {
+        "id": null,
+        "block": {
+            "3": ["EX5"],
+            "4": ["BT20"],
+            "5": ["BT22","ST22","P"]
+        },
+        "slug": "regional2627_1_0",
+        "name": "Regionals 26-27 Season 1 Participation Card Set",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_parti_D.png",
+        "cards": {
+            "BT20-072": "",
+            "BT22-064": "",
+            "BT22-073": "",
+            "EX5-001": "",
+            "ST22-06": "",
+            "P-209": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
+    },
+    // Regionals 26-27 Season 1 Finalist Card Set --- regional2627_1_1
+    {
+        "id": null,
+        "block": {
+            "3": ["EX5"],
+            "4": ["BT20"],
+            "5": ["BT22","ST22","P"]
+        },
+        "slug": "regional2627_1_1",
+        "name": "Regionals 26-27 Season 1 Finalist Card Set",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_fina_D.png",
+        // TODO: sleeve: "https://world.digimoncard.com/images/event/2026/championship/regionals-season1/popup/img_sleeve01.png",
+        "cards": {
+            "BT20-072": "",
+            "BT22-064": "",
+            "BT22-073": "",
+            "EX5-001": "",
+            "ST22-06": "",
+            "P-209": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
+    },
+    // Regionals 26-27 Season 1 Champion Card Set --- regional2627_1_2
+    {
+        "id": null,
+        "block": {
+            "3": ["EX5"],
+            "4": ["BT20"],
+            "5": ["BT22","ST22","P"]
+        },
+        "slug": "regional2627_1_2",
+        "name": "Regionals 26-27 Season 1 Champion Card Set",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_camp_D.png",
+        // TODO: playmat: "https://world.digimoncard.com/images/event/2026/championship/regionals-season1/popup/img_playmat01.png",
+        "cards": {
+            "BT20-072": "",
+            "BT22-064": "",
+            "BT22-073": "",
+            "EX5-001": "",
+            "ST22-06": "",
+            "P-209": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
+    },
+    // Regionals 26-27 Promotion Card Participant: Koromon --- regional2627_1_promo_participant
     {
         "id": null,
         "block": 5,
-        "slug": "lm07",
-        "name": "Limited Card Pack ANOTHER KNIGHT",
-        "release": "March 2026",
-        "url": "bandaitcgplusURL/LM07/e_LM07-setID-cardID_d.png",
+        "slug": "regional2627_1_promo_participant",
+        "name": "Regionals 26-27 Promotion Card Participant: Koromon",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
-            "LM-051": "",
-            "LM-052": "",
-            "LM-053": "",
-            "LM-054": "",
-            "LM-055": "",
-            "LM-056": "",
+            "ST20-01": "",
         },
-        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
-    // Limited Card Pack ANOTHER KNIGHT - Alternatives --- lm07_alts
+    // Regionals 26-27 Promotion Card Top 64: Agumon --- regional2627_1_promo_top64
     {
         "id": null,
-        "block": {
-            "2": ["EX4","BT13"],
-            "3": ["BT16"],
-            "5": ["BT21"]
-        },
-        "slug": "lm07_alts",
-        "name": "Limited Card Pack ANOTHER KNIGHT - Alternatives",
-        "release": "March 2026",
-        "url": "bandaitcgplusURL/LM07/e_LM07-setID-cardID_d.png",
+        "block": 5,
+        "slug": "regional2627_1_promo_top64",
+        "name": "Regionals 26-27 Promotion Card Top 64: Agumon",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
-            "BT13-112": "",
-            "BT16-077": "",
-            "BT21-097": "",
-            "EX4-073": "",
+            "ST20-10": "",
         },
-        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
-    // Limited Card Pack ANOTHER KNIGHT - Reprints --- lm07_reprints
+    // Regionals 26-27 Promotion Card Top 16: Greymon --- regional2627_1_promo_top16
     {
         "id": null,
-        "block": {
-            "2": ["P-092","BT10"],
-            "3": ["EX6"],
-            "4": ["BT20","P-133","P-136"],
-            "5": ["BT21","P"]
-        },
-        "slug": "lm07_reprints",
-        "name": "Limited Card Pack ANOTHER KNIGHT - Reprints",
-        "release": "March 2026",
-        "url": "bandaitcgplusURL/LM07/e_setID-cardID_D.png",
+        "block": 5,
+        "slug": "regional2627_1_promo_top16",
+        "name": "Regionals 26-27 Promotion Card Top 16: Greymon",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
-            "BT10-093": "",
-            "BT20-014": "",
-            "BT20-026": "",
-            "BT21-005": "",
-            "BT21-017": "",
-            "BT21-095": "",
-            "EX6-029": "",
-            "EX6-043": "",
-            "P-092": "",
-            "P-133": "",
-            "P-136": "",
-            "P-188": "",
-            "P-189": "",
-            "P-190": "",
-            "P-191": "",
-            "P-192": "",
-            "P-193": "",
+            "AD1-001": "",
         },
-        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
+    // Regionals 26-27 Promotion Card Top 2: MetalGreymon --- regional2627_1_promo_top2
     {
         "id": null,
-        "slug": "lm07_reprints",
-        "name": "Limited Card Pack ANOTHER KNIGHT - Reprints",
-        "release": "March 2026",
-        "url": "bandaitcgplusURL/LM07/e_LM07-setID-cardID_d.png",
+        "block": 5,
+        "slug": "regional2627_1_promo_top2",
+        "name": "Regionals 26-27 Promotion Card Top 2: MetalGreymon",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
-            "P-176": "",
-            "P-177": "",
-            "P-178": "",
-            "P-179": "",
-            "P-180": "",
-            "P-181": "",
+            "BT21-061": "",
         },
-        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
+    },
+    // Ultimate Cup 26-27 Season 1 --- ultimatecup_2026_1
+    {
+        "id": null,
+        "block": 5,
+        "slug": "ultimatecup_2026_1",
+        "name": "Ultimate Cup 26-27 Season 1",
+        "release": "March 28-29, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "RB1-001": "", // Participation
+            "RB1-005": "", // Top 16
+            "BT21-022": "", // Top 4
+            "BT21-028": "", // Champion
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/ultimate-cup/season1/"
     },
 
-    // Premium Heroines Set ver.2 [PB-23] --- pb23
+// April 1 – June 30, 2026
+    // Official Store Tournament 2026 Vol.2 - Participation Pack --- otp21
+    {
+        "id": null,
+        "block": 6,
+        "slug": "otp21",
+        "name": "Official Store Tournament 2026 Vol.2 - Participation Pack",
+        "release": "April 1 – June 30, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "P-233": "",
+            "P-234": "",
+            "P-235": "",
+            "P-236": "",
+            "P-237": "",
+            "P-238": "",
+        },
+        "rarity": "p",
+        "info_url": "https://world.digimoncard.com/event/2026/store-tournament/02/",
+    },
+    // Judge Pack 9 --- judgepack9
+    {
+        "id": null,
+        "block": 5,
+        "slug": "judgepack9",
+        "name": "Judge Pack 9",
+        "release": "April 1 – June 30, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDJP_D.png",
+        "cards": {
+            "BT22-024": "",
+            "BT22-036": "",
+            "BT23-065": "",
+            "BT24-016": "",
+            "BT24-075": "",
+            "BT24-090": "",
+            "BT24-093": "",
+            "BT24-094": "",
+            "EX10-032": "",
+            "EX11-032": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/store-tournament/02/",
+    },
+    // Official Store Tournament 2026 Vol.2 - Winner Pack --- wp21
+    {
+        "id": null,
+        "block": 6,
+        "slug": "wp21",
+        "name": "Official Store Tournament 2026 Vol.2 - Winner Pack",
+        "release": "April 1 – June 30, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDP_D.png",
+        "cards": {
+            "P-233": "",
+            "P-234": "",
+            "P-235": "",
+            "P-236": "",
+            "P-237": "",
+            "P-238": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/store-tournament/02/",
+    },
+
+// May 15, 2026
+    // Starter Deck DIGIMON BEATBREAK [ST-23] --- st23
+    {
+        "id": "ST23",
+        "block": 6,
+        "slug": "st23",
+        "name": "Starter Deck DIGIMON BEATBREAK [ST-23]",
+        "release": "May 15, 2026",
+        "total": 15,
+        "url": "bandaitcgplusURL/ST23/e_setID-cardID_D.png",
+        "add_zero": 2,
+        "color": {
+            "yellow": ["2-5"],
+            "green": [1,"6-9"],
+            "green-yellow": [13],
+            "black": [10,11],
+            "black-purple": [14],
+            "purple": [12],
+            "white": [15]
+        },
+        "rarity": {
+            "c": [1,2,10,12,15],
+            "u": [3,4,7,11,14],
+            "r": [6,8,13],
+            "sr": [5,9]
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-23/"
+    },
+    // Starter Deck DIGIMON BEATBREAK [ST-23] - Lucky Deck --- st23_lucky
+    {
+        "id": null,
+        "block": 6,
+        "slug": "st23_lucky",
+        "name": "Starter Deck DIGIMON BEATBREAK [ST-23] - Lucky Deck",
+        "release": "May 15, 2026",
+        "url": "bandaitcgplusURL/ST23/e_setID-cardIDP.png",
+        "cards": {
+            "ST23-06": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-23/"
+    },
+    // Starter Deck DIGIMON DATA SQUAD [ST-24] --- st24
+    {
+        "id": "ST24",
+        "block": 6,
+        "slug": "st24",
+        "name": "Starter Deck DIGIMON DATA SQUAD [ST-24]",
+        "release": "May 15, 2026",
+        "total": 15,
+        "url": "bandaitcgplusURL/ST24/e_setID-cardID_D.png",
+        "add_zero": 2,
+        "color": {
+            "blue": [2,3],
+            "yellow": [1],
+            "yellow-blue": [13],
+            "yellow-red": ["4-7"],
+            "green": ["8-10"],
+            "green-red": [11],
+            "green-purple": [14],
+            "purple": [12],
+            "white": [15]
+        },
+        "rarity": {
+            "c": [1,2,8,12,15],
+            "u": [3,5,9,10,14],
+            "r": [4,6,13],
+            "sr": [7,11]
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-24/"
+    },
+    // Starter Deck DIGIMON DATA SQUAD [ST-24] - Lucky Deck --- st24_lucky
+    {
+        "id": null,
+        "block": 6,
+        "slug": "st24_lucky",
+        "name": "Starter Deck DIGIMON DATA SQUAD [ST-24] - Lucky Deck",
+        "release": "May 15, 2026",
+        "url": "bandaitcgplusURL/ST24/e_setID-cardID_P1_D.png",
+        "cards": {
+            "ST24-04": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/deck/st-24/"
+    },
+    // New Illustration Memory Boost! --- lm_memory_boost
+    {
+        "id": null,
+        "slug": "lm_memory_boost",
+        "name": "New Illustration Memory Boost!",
+        "release": "May 15, 2026",
+        "url": "bandaitcgplusURL/ST23/e_setID-cardID_D.png",
+        "cards": {
+            "LM-033": "",
+            "LM-034": "",
+            "LM-035": "",
+            "LM-036": "",
+            "LM-037": "",
+            "LM-038": "",
+        },
+        "reprint": true,
+        "block": 6,
+        "info_url": "https://world.digimoncard.com/products/deck/st-23/"
+    },
+
+// May 15 – 21, 2026
+    // Booster Dual Revolution [BT-25] Release Event --- bt25_prerelease
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt25_prerelease",
+        "name": "Booster Dual Revolution [BT-25] Release Event",
+        "release": "May 15 – 21, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDparallel_D.png",
+        "cards": {
+            "ST24-07": ["P1","P2"]
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/release-event/02/"
+    },
+
+// May 22, 2026
+    // Booster Dual Revolution [BT-25] --- bt25
+    {
+        "id": "BT25",
+        "block": 6,
+        "slug": "bt25",
+        "name": "Booster Dual Revolution [BT-25]",
+        "release": "May 22, 2026",
+        "total": 104,
+        "url": "bandaitcgplusURL/BT25/e_setID-cardID_D.png",
+        "add_zero": 3,
+        "playmat": "",
+        "color": {
+            "red": [1,"7-9",13,14,17,86,93],
+            "red-blue": [94,103],
+            "red-yellow": [18,104],
+            "red-green": ["10-12",15,16,20,95],
+            "red-black": [19],
+            "blue": [2,"21-24",26,87,96],
+            "blue-black": [25,27,29],
+            "blue-purple": [28],
+            "yellow": [3,"30-36",40,41,43,88,98],
+            "yellow-blue": [37],
+            "yellow-green": [39],
+            "yellow-black": [38,42],
+            "yellow-purple": [44,97],
+            "green": [4,"45-50",55,57,89,90],
+            "green-red": [52,53],
+            "green-yellow": [56,59],
+            "green-black": [51,54,58,99],
+            "green-white": [60],
+            "black": [5,61,62,"64-66",68,69,71,73,76,91,100,101],
+            "black-red": [75,102],
+            "black-green": [77],
+            "black-purple": [63,67,70,72,74],
+            "purple": [6,"78-81",83,85,92],
+            "purple-red-green": [84],
+            "purple-black": [82]
+        },
+        "rarity": {
+            "c": ["1-7","10-14",21,23,24,30,32,34,36,38,47,50,51,55,"62-67",69,"78-81",83,96,98,100,101],
+            "u": [8,9,15,22,27,31,33,35,37,40,45,46,48,49,52,61,68,70,71,73,"93-95",97,99,102],
+            "r": [16,17,19,25,26,39,41,42,53,54,56,58,72,74,76,82,"86-90"],
+            "sr": [18,20,28,29,44,59,60,75,77,84,91,92],
+            "ur": [43,57,85],
+            "sec": [103,104]
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver25/"
+    },
+    // Booster Dual Revolution [BT-25] - Alternatives --- bt25_alts
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt25_alts",
+        "name": "Booster Dual Revolution [BT-25] - Alternatives",
+        "release": "May 22, 2026",
+        "url": "bandaitcgplusURL/BT25/e_setID-cardIDparallel.png",
+        "cards": {
+            "BT25-018": "P_D",
+            "BT25-020": "P_D",
+            "BT25-028": "P_D",
+            "BT25-029": "P_D",
+            "BT25-043": "P_D",
+            "BT25-044": "P_D",
+            "BT25-057": "P_D",
+            "BT25-059": "P_D",
+            "BT25-060": "P_D",
+            "BT25-075": "P_D",
+            "BT25-077": "P_D",
+            "BT25-084": "P_D",
+            "BT25-085": "P_D",
+            "BT25-086": "P_D",
+            "BT25-088": "P_D",
+            "BT25-090": "P_D",
+            "BT25-091": "P_D",
+            "BT25-092": "P_D",
+            "BT25-103": ["P_D","P2"],
+            "BT25-104": ["P_D","P2"],
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver25/"
+    },
+    // Booster Dual Revolution [BT-25] - Special Cards --- bt25_special
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt25_special",
+        "name": "Booster Dual Revolution [BT-25] - Special Cards",
+        "release": "May 22, 2026",
+        "url": "bandaitcgplusURL/BT25/e_setID-cardIDSP_D.png",
+        "cards": {
+            "BT25-043": "",
+            "BT25-057": "",
+            "BT25-085": "",
+            "BT25-091": "",
+            "BT25-092": "",
+        },
+        "rarity": "sp",
+        "info_url": "https://world.digimoncard.com/products/pack/ver25/"
+    },
+    // Booster Dual Revolution [BT-25] - Box Promotion Pack --- bt25_boxtopper
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt25_boxtopper",
+        "name": "Booster Dual Revolution [BT-25] - Box Promotion Pack",
+        "release": "May 22, 2026",
+        "url": "bandaitcgplusURL/BT25/e_setID-cardIDP_D.png",
+        "cards": {
+            "BT25-009": "",
+            "BT25-031": "",
+            "BT25-035": "",
+            "BT25-045": "",
+            "BT25-046": "",
+            "BT25-061": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver25/"
+    },
+    // Booster Dual Revolution [BT-25] - Restricted Reprints --- bt25_restricted
     {
         "id": null,
         "block": {
-            "1": ["BT8","ST10"],
-            "2": ["BT5","BT11","BT13","EX3","ST14"],
-            "3": ["EX5","EX6"],
-            "4": ["LM","ST19"]
+            "0": ["BT2"],
+            "1": ["EX1","BT7"],
+            "2": ["BT3","BT11"],
+            "3": ["BT4"]
         },
-        "slug": "pb23",
-        "name": "Premium Heroines Set ver.2 [PB-23]",
-        "release": "January 2026",
-        "url": "bandaitcgplusURL/PB23/parallel_setID-cardID.png",
+        "slug": "bt25_restricted",
+        "name": "Booster Dual Revolution [BT-25] - Restricted Reprints",
+        "release": "May 22, 2026",
+        "url": "bandaitcgplusURL/BT25/e_setID-cardID_BT25_D.png",
         "cards": {
-            "BT5-092": "Same",
-            "BT8-082": "Same",
-            "BT11-089": "Same",
-            "BT11-112": "Same",
-            "BT13-057": "Same",
-            "EX3-065": "e",
-            "EX5-025": "Same",
-            "EX6-074": "Same",
-            "P-195": "Same",
-            "LM-042": "Same",
-            "ST10-06": "Same",
-            "ST14-09": "Same",
-            "ST19-12": "Same",
+            "BT2-047": "",
+            "BT3-103": "",
+            "BT4-104": "",
+            "BT7-107": "",
+            "BT11-064": "",
+            "EX1-068": "",
+
         },
-        "info_url": "https://world.digimoncard.com/products/goods/premium-heroines-set-02.php"
+        "info_url": "https://world.digimoncard.com/products/pack/ver25/"
+    },
+
+// June 1 - July 31, 2026
+    // Evolution Cup 2026 Vol.2 Participation --- evolution_cup_2026_2_participant
+    {
+        "id": null,
+        "block": 5,
+        "slug": "evolution_cup_2026_2_participant",
+        "name": "Evolution Cup 2026 Vol.2 Participation",
+        "release": "June 1 - July 31, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT22-004": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/evolution-cup/02/",
+    },
+    // Evolution Cup 2026 Vol.2 Top 4 --- evolution_cup_2026_2_top4
+    {
+        "id": null,
+        "block": 5,
+        "slug": "evolution_cup_2026_2_top4",
+        "name": "Evolution Cup 2026 Vol.2 Top 4",
+        "release": "June 1 - July 31, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT22-099": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/evolution-cup/02/",
+    },
+    // Evolution Cup 2026 Vol.2 Winner --- evolution_cup_2026_2_winner
+    {
+        "id": null,
+        "block": 5,
+        "slug": "evolution_cup_2026_2_winner",
+        "name": "Evolution Cup 2026 Vol.2 Winner",
+        "release": "June 1 - July 31, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT22-063": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/evolution-cup/02/",
+    },
+
+// July 3, 2026
+    // Extra Booster Digital World Shambala [EX-12] --- ex12
+    {
+        "id": "EX12",
+        "block": 6,
+        "slug": "ex12",
+        "name": "Extra Booster Digital World Shambala [EX-12]",
+        "release": "July 3, 2026",
+        "total": 77,
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX12/e_setID-cardID_D.png",
+        "add_zero": 3,
+        "playmat": "",
+        "color": {},
+        "rarity": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
+    },
+    // Extra Booster Digital World Shambala [EX-12] - Alternatives --- ex12_alts
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex12_alts",
+        "name": "Extra Booster Digital World Shambala [EX-12] - Alternatives",
+        "release": "July 3, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX12/e_setID-cardIDparallel_D.png",
+        "cards": {
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
+    },
+    // Extra Booster Digital World Shambala [EX-12] - Limited Cards --- ex12_limited
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex12_limited",
+        "name": "Extra Booster Digital World Shambala [EX-12] - Limited Cards",
+        "release": "July 3, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX12/e_setID-cardIDLP_D.png",
+        "cards": {
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
+    },
+    // Extra Booster Digital World Shambala [EX-12] - Special Cards --- ex12_special
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex12_special",
+        "name": "Extra Booster Digital World Shambala [EX-12] - Special Cards",
+        "release": "July 3, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX12/e_setID-cardIDSP_D.png",
+        "cards": {
+        },
+        "rarity": "sp",
+        "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
+    },
+    // Extra Booster Digital World Shambala [EX-12] - Box Promotion Pack --- ex12_boxtopper
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex12_boxtopper",
+        "name": "Extra Booster Digital World Shambala [EX-12] - Box Promotion Pack",
+        "release": "July 3, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX12/e_setID-cardIDparallel_D.png",
+        "cards": {
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
     },
 
 // August 2026
@@ -1111,5 +1769,80 @@ const data2026 = [
             "EX8-029": "",
         },
         "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
+    },
+
+// November 2026
+    // Limited Card Pack DISTANCIA CERO [LM-09] --- lm09
+    {
+        "id": null,
+        "block": 6,
+        "slug": "lm09",
+        "name": "Limited Card Pack DISTANCIA CERO [LM-09]",
+        "release": "November 2026",
+        "url": "noCardURL",
+        "cards": {
+            "LM-063": "",
+            "LM-064": "",
+            "LM-065": "",
+            "LM-066": "",
+            "LM-067": "",
+            "LM-068": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-09.php"
+    },
+    // Limited Card Pack DISTANCIA CERO [LM-09] - Alternatives --- lm09_alts
+    {
+        "id": null,
+        "block": {
+            "3": ["EX5"],
+            "4": ["EX7"],
+            "5": ["BT22","BT23"]
+        },
+        "slug": "lm09_alts",
+        "name": "Limited Card Pack DISTANCIA CERO [LM-09] - Alternatives",
+        "release": "November 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT22-005": "",
+            "BT23-013": "",
+            "EX5-063": "",
+            "EX7-073": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-09.php"
+    },
+    // Limited Card Pack DISTANCIA CERO [LM-09] - Reprints --- lm09_reprints
+    {
+        "id": null,
+        "slug": "lm09_reprints",
+        "name": "Limited Card Pack DISTANCIA CERO [LM-09] - Reprints",
+        "release": "November 2026",
+        // TODO: revisar block
+        "url": "noCardURL",
+        "cards": {
+            "P-229": "",
+            "P-232": "",
+            "P-233": "",
+            "P-234": "",
+            "P-235": "",
+            "P-236": "",
+            "P-237": "",
+            "P-238": "",
+            "P-239": "",
+            "P-240": "",
+            "P-241": "",
+            "P-242": "",
+            "P-243": "",
+            "P-244": "",
+            "BT20-013": "",
+            "BT21-046": "",
+            "BT23-092": "",
+            "BT23-099": "",
+            "BT24-018": "",
+            "BT24-085": "",
+            "ST22-13": "",
+            "EX5-058": "",
+            "EX7-051": "",
+        },
+        "info_url": "https://world.digimoncard.com/products/goods/limited-lm-09.php"
     },
 ];

@@ -226,6 +226,7 @@ Rarezas soportadas:
 | `r` | Rare |
 | `sr` | Super Rare |
 | `sec` | Secret Rare |
+| `ur` | Ultimate Rare |
 | `p` | Promo |
 | `aa` | Alternative Art (valor por defecto si no se especifica) |
 | `sp` | Special |

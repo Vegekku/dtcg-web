@@ -32,6 +32,7 @@ $rarity-backgrounds: (
   "green-yellow": white-black,
   "green-black": white,
   "green-purple": white,
+  "green-white": white-black,
   "black": white,
   "black-red": white,
   "black-yellow": white-black,
@@ -40,6 +41,7 @@ $rarity-backgrounds: (
   "black-white": white-black,
   "purple": white,
   "purple-red": white,
+  "purple-red-green": white,
   "purple-yellow": white-black,
   "purple-green": white,
   "purple-black": white,
@@ -229,6 +231,7 @@ $rarity-backgrounds: (
   @include card-color("green", "black", "black", "white", "yellow");
   @include card-color("green", "purple");
   @include card-color("green", "purple", "black", "white", "yellow");
+  @include card-color("green", "white", "black");
 
   // Black cards
   @include card-color("black");
@@ -244,6 +247,7 @@ $rarity-backgrounds: (
   // Purple cards
   @include card-color("purple");
   @include card-color("purple", "red");
+  @include card-color("purple", "green", "", "", "red");
   @include card-color("purple", "blue");
   @include card-color("purple", "yellow", "black");
   @include card-color("purple", "green");

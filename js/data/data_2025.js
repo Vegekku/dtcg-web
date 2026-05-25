@@ -1846,6 +1846,7 @@ const data2025 = [
             }
         },
         "info_url": "https://world.digimoncard.com/event/2025/gamescom/"
+        // https://world.digimoncard.com/event/2025/learn-to-play/
     },
 
 // September 1 – October 31, 2025
