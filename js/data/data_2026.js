@@ -1585,6 +1585,47 @@ const data2026 = [
         "info_url": "https://world.digimoncard.com/products/pack/ver25/"
     },
 
+// June 1 - July 31, 2026
+    // Evolution Cup 2026 Vol.2 Participation --- evolution_cup_2026_2_participant
+    {
+        "id": null,
+        "block": 5,
+        "slug": "evolution_cup_2026_2_participant",
+        "name": "Evolution Cup 2026 Vol.2 Participation",
+        "release": "June 1 - July 31, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT22-004": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/evolution-cup/02/",
+    },
+    // Evolution Cup 2026 Vol.2 Top 4 --- evolution_cup_2026_2_top4
+    {
+        "id": null,
+        "block": 5,
+        "slug": "evolution_cup_2026_2_top4",
+        "name": "Evolution Cup 2026 Vol.2 Top 4",
+        "release": "June 1 - July 31, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT22-099": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/evolution-cup/02/",
+    },
+    // Evolution Cup 2026 Vol.2 Winner --- evolution_cup_2026_2_winner
+    {
+        "id": null,
+        "block": 5,
+        "slug": "evolution_cup_2026_2_winner",
+        "name": "Evolution Cup 2026 Vol.2 Winner",
+        "release": "June 1 - July 31, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT22-063": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/evolution-cup/02/",
+    },
+
 // July 3, 2026
     // Extra Booster Digital World Shambala [EX-12] --- ex12
     {
