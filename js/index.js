@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // TODO: pasar un objeto con todo los parámetros, en lugar de incrementar el número de parámetros.
     // O incluso crear una clase card que se encargue de gestionar todo esto.
-    const getImageTag = (url, title, id, set, status = 0, bought = 0, rarity = 'aa') => {
+    const getImageTag = (url, title, id, set, status = 0, bought = 0, rarity = 'aa', block = null) => {
         const [cardNumber, slug] = id.split('__');
         const [setId, cardId] = cardNumber.split('-');
         let cardmarketUrl = '';
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             cardmarketPrice = cardmarket[setId][cardId][slug].price?.slice(-1)[0] || '';
         }
 
-        const imageCard = `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-set="${set}" data-status="${status}" data-bought="${bought}" data-cardmarketurl="${cardmarketUrl}" data-cardmarketprice="${cardmarketPrice}" data-rarity="${rarity}" data-type="card" onclick="modalOpen(this)">`;
+        const imageCard = `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-set="${set}" data-status="${status}" data-bought="${bought}" data-cardmarketurl="${cardmarketUrl}" data-cardmarketprice="${cardmarketPrice}" data-rarity="${rarity}" data-block="${block}" data-type="card" onclick="modalOpen(this)">`;
 
         return imageCard;
     }
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     }
 
                     // TODO: añadir cardRarity
-                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought);
+                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, undefined, getCardBlock(cardNumber, block));
                 }
             });
         } else {
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                                 cardUrl = getImageUrl(setElement.override.url, setId, cardId, parallelElement);
                             }
 
-                            cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, slug, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought, cardRarity);
+                            cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, slug, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought, cardRarity, getCardBlock(cardNumber, block));
                         });
                     } else {
                         // 5. si no existe la carta, la añadimos al set
@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             cardUrl = getImageUrl(setElement.override.url, setId, cardId, overrideParallel);
                         }
                         
-                        cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardRarity);
+                        cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardRarity, getCardBlock(cardNumber, block));
                     }
 
                     if ( reprint && block !== undefined && !cardRow.querySelector(`.amount-card--reprint[data-block="${block}"]`) ) {
@@ -288,6 +288,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return cardsRarities;
     }
 
+    const getCardBlock = (cardId, block) => {
+        if (typeof block === 'number') return block;
+        if (!block) return null;
+        const setPrefix = cardId.replace(/-\d+$/, '');
+        for (const [b, entries] of Object.entries(block)) {
+            if (entries.includes(cardId) || entries.includes(setPrefix)) return Number(b);
+        }
+        return null;
+    }
+
     sets.forEach(setElement => {
         if (setElement.id !== null) {
             const tableSet = document.createElement('table');
@@ -345,7 +355,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     }
 
                     // TODO: añadir cardRarity
-                    row.insertCell(2).innerHTML = getImageTag(cardUrl, setElement.name, `${cardNumber}__${setElement.slug}`, setElement.slug, collection[setElement.id][cardId].cards[setElement.slug].status, collection[setElement.id][cardId].cards[setElement.slug].bought, cardRarity);
+                    row.insertCell(2).innerHTML = getImageTag(cardUrl, setElement.name, `${cardNumber}__${setElement.slug}`, setElement.slug, collection[setElement.id][cardId].cards[setElement.slug].status, collection[setElement.id][cardId].cards[setElement.slug].bought, cardRarity, setElement.block);
                 } else {
                     row.insertCell(2).innerHTML = "";
                 }
