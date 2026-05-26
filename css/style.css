@@ -934,6 +934,13 @@ button.accordion.active:after {
   display: none;
 }
 
+.filter--block tbody tr:not(.match_filter--block) {
+  display: none;
+}
+.filter--block .card:not(.filtered--block) {
+  display: none;
+}
+
 .filter--color tbody tr:not(.filtered--color) {
   display: none;
 }

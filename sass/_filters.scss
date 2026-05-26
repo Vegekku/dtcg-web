@@ -26,6 +26,16 @@
     }
 }
 
+.filter--block {
+    tbody tr:not(.match_filter--block) {
+        display: none;
+    }
+
+    .card:not(.filtered--block) {
+        display: none;
+    }
+}
+
 .filter--color {
     tbody tr:not(.filtered--color) {
         display: none;
