@@ -204,8 +204,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardRarity, getCardBlock(cardNumber, block));
                     }
 
-                    if ( reprint && block !== undefined && !cardRow.querySelector(`.amount-card--reprint[data-block="${block}"]`) ) {
-                        cardRow.cells[1].innerHTML += `<input class="amount-card amount-card--reprint" type="text" data-card-number="${cardNumber}" data-block="${block}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setId][cardId].reprint?.[block] || 0}">`;
+                    const cardBlock = getCardBlock(cardNumber, block);
+                    if ( cardBlock !== null ) {
+                        const mainInput = cardRow.querySelector('.amount-card:not([data-block])');
+                        if ( mainInput ) {
+                            mainInput.dataset.block = cardBlock;
+                        } else if ( !cardRow.querySelector(`.amount-card[data-block="${cardBlock}"]`) ) {
+                            cardRow.cells[1].innerHTML += `<input class="amount-card amount-card--reprint" type="text" data-card-number="${cardNumber}" data-block="${cardBlock}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setId][cardId].reprint?.[cardBlock] || 0}">`;
+                        }
                     }
                 }
             });
@@ -337,7 +343,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     collection[setElement.id][cardId] = {amount: 0, cards: {}};
                 }
                 
-                row.insertCell(1).innerHTML = `<input class="amount-card" type="text" data-card-number="${cardNumber}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setElement.id][cardId].amount}">`;
+                row.insertCell(1).innerHTML = `<input class="amount-card" type="text" data-card-number="${cardNumber}"${setElement.block !== undefined ? ` data-block="${setElement.block}"` : ''} onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setElement.id][cardId].amount}">`;
                 row.dataset.pull = collection[setElement.id][cardId].amount >= 4;
                 row.dataset.rarity = cardRarity;
 
