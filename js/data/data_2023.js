@@ -676,8 +676,8 @@ const data2023 = [
     {
         "id": null,
         "block": {
-            "0": ["BT6","BT7","BT8"],
-            "1": ["BT10","ST12","ST13"]
+            "1": ["BT6","BT7","BT8"],
+            "2": ["BT10","ST12","ST13"]
         },
         "slug": "judgepack3",
         "name": "Judge Pack 3",
@@ -838,8 +838,8 @@ const data2023 = [
     {
         "id": null,
         "block": {
-            "1": ["BT8","EX2","BT12-001"],
-            "2": ["BT12-007","BT12-010","BT12-016","BT12-018"]
+            "1": ["BT8","EX2"],
+            "2": ["BT12"] // BT12-001 tiene bloque 1, pero es un premio asique lo consideramos por su bloque original 2.
         },
         "slug": "ultimatecup_2023",
         "name": "Ultimate Cup 2023",
@@ -972,7 +972,7 @@ const data2023 = [
         "id": null,
         "block": {
             "1": ["BT6","ST9","ST10"],
-            "1": ["BT10","BT11","ST13"]
+            "2": ["BT10","BT11","ST13"]
         },
         "slug": "storechampion_2023_0",
         "name": "Store Championship 2023 Participant Pack",
@@ -995,7 +995,7 @@ const data2023 = [
         "id": null,
         "block": {
             "1": ["BT6","ST9","ST10"],
-            "1": ["BT10","BT11","ST13"]
+            "2": ["BT10","BT11","ST13"]
         },
         "slug": "storechampion_2023_1",
         "name": "Store Championship 2023 Top 4 Pack",

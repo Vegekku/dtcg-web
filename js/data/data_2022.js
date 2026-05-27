@@ -162,7 +162,7 @@ const data2022 = [
     // 2021 Final Championships Framed Trophy Cards - 1st Place Champion --- fcftc_2021_1st
     {
         "id": null,
-        "block": 0, // Posible error de impresión y le corresponda bloque 1
+        "block": 1, // La carta tiene bloque 0, pero es un premio asique lo consideramos por su bloque original 1
         "slug": "fcftc_2021_1st",
         "name": "2021 Final Championships Framed Trophy Cards - 1st Place Champion",
         "release": "January 2022",

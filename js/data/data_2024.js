@@ -2051,7 +2051,7 @@ const data2024 = [
         "id": null,
         "block": {
             "2": ["BT10","P"],
-            "4": ["BT16","EX6","ST17"]
+            "3": ["BT16","EX6","ST17"]
         },
         "slug": "regional2024_3_0",
         "name": "2024 Regionals Participant Card Set Wave 3",
@@ -2073,7 +2073,7 @@ const data2024 = [
         "id": null,
         "block": {
             "2": ["BT10","P"],
-            "4": ["BT16","EX6","ST17"]
+            "3": ["BT16","EX6","ST17"]
         },
         "slug": "regional2024_3_1",
         "name": "2024 Regionals Finalist Card Set Wave 3",
@@ -2095,7 +2095,7 @@ const data2024 = [
         "id": null,
         "block": {
             "2": ["BT10","P"],
-            "4": ["BT16","EX6","ST17"]
+            "3": ["BT16","EX6","ST17"]
         },
         "slug": "regional2024_3_2",
         "name": "2024 Regionals Champion Card Set Wave 3",

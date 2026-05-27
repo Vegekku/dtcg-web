@@ -434,6 +434,8 @@ Estructura del objeto `collection` almacenado en localStorage:
 | `[setId][cardId].reprint` | `object` | Opcional. Cantidad de copias por bloque de reprint: `{ "5": 2 }` |
 | `products.packs[slug]` | `object` | Estado y precio de cada sobre/producto |
 
+> **Pendiente (#37):** `amount` pasará a ser un mapa por bloque `{ "0": 2, "1": 3 }` y se eliminará el campo `reprint`. La suma total se calculará en runtime. Ver issue [#37](https://github.com/Vegekku/dtcg-web/issues/37).
+
 ---
 
 ## localStorage: cardmarket

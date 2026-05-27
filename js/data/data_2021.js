@@ -1092,7 +1092,7 @@ const data2021 = [
     // June Premier TO events --- premierto
     {
         "id": null,
-        "block": 1,
+        "block": 0, // las cartas tiene bloque 1, pero al ser premios lo consideramos por su bloque original 0
         "slug": "premierto",
         "name": "June Premier TO events",
         "release": "June 2021",
