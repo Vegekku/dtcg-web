@@ -34,6 +34,14 @@
     .card:not(.filtered--block) {
         display: none;
     }
+
+    @for $i from 0 through 6 {
+        &.block--#{$i} {
+            .amount-card:not([data-block="#{$i}"]) {
+                display: none;
+            }
+        }
+    }
 }
 
 .filter--color {

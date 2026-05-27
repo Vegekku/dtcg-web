@@ -940,6 +940,27 @@ button.accordion.active:after {
 .filter--block .card:not(.filtered--block) {
   display: none;
 }
+.filter--block.block--0 .amount-card:not([data-block="0"]) {
+  display: none;
+}
+.filter--block.block--1 .amount-card:not([data-block="1"]) {
+  display: none;
+}
+.filter--block.block--2 .amount-card:not([data-block="2"]) {
+  display: none;
+}
+.filter--block.block--3 .amount-card:not([data-block="3"]) {
+  display: none;
+}
+.filter--block.block--4 .amount-card:not([data-block="4"]) {
+  display: none;
+}
+.filter--block.block--5 .amount-card:not([data-block="5"]) {
+  display: none;
+}
+.filter--block.block--6 .amount-card:not([data-block="6"]) {
+  display: none;
+}
 
 .filter--color tbody tr:not(.filtered--color) {
   display: none;

@@ -132,11 +132,12 @@ const filterCards = () => {
             card.classList.remove('filtered--block');
             card.parentElement.parentElement.classList.remove('match_filter--block');
         });
+        setLists.className = setLists.className.replace(/\bblock--\d+\b/g, '').trim();
         setLists.classList.remove('filter--block');
     }
     cleanFilterBlock();
     if (filters.block !== '') {
-        setLists.classList.add('filter--block');
+        setLists.classList.add('filter--block', `block--${filters.block}`);
         queryCards += `[data-block="${filters.block}"]`;
         cardClasses.push('filtered--block');
         rowClasses.push('match_filter--block');
