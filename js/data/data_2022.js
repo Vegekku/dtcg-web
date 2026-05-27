@@ -3,6 +3,7 @@ const data2022 = [
     // 2021 Championship Finals Tamer‘s Evolution Pack --- cf_tamerevolution
     {
         "id": null,
+        "block": 0,
         "slug": "cf_tamerevolution",
         "name": "2021 Championship Finals Tamer‘s Evolution Pack",
         "release": "January 2022",
@@ -23,6 +24,7 @@ const data2022 = [
     // Event Pack 2 --- eventpack2
     {
         "id": null,
+        "block": 0,
         "slug": "eventpack2",
         "name": "Event Pack 2",
         "release": "January 2022",
@@ -40,6 +42,10 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": {
+            "0": ["BT4","BT5"],
+            "1": ["BT6"]
+        },
         "slug": "eventpack2",
         "name": "Event Pack 2",
         "release": "January 2022",
@@ -64,6 +70,7 @@ const data2022 = [
     // Event Pack Alt-Art Gold Stamp Set --- eventpack_goldstamp
     {
         "id": null,
+        "block": 0,
         "slug": "eventpack_goldstamp",
         "name": "Event Pack Alt-Art Gold Stamp Set",
         "release": "January 2022",
@@ -81,6 +88,7 @@ const data2022 = [
     // Judge Pack --- judgepack
     {
         "id": null,
+        "block": 0,
         "slug": "judgepack",
         "name": "Judge Pack",
         "release": "January 2022",
@@ -95,6 +103,7 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": 0,
         "slug": "judgepack",
         "name": "Judge Pack",
         "release": "January 2022",
@@ -114,6 +123,7 @@ const data2022 = [
     // 2021 Final Championships Framed Trophy Cards - Top 16 --- fcftc_2021_top16
     {
         "id": null,
+        "block": 0,
         "slug": "fcftc_2021_top16",
         "name": "2021 Final Championships Framed Trophy Cards - Top 16",
         "release": "January 2022",
@@ -126,6 +136,7 @@ const data2022 = [
     // 2021 Final Championships Framed Trophy Cards - 3rd Place --- fcftc_2021_3rd
     {
         "id": null,
+        "block": 0,
         "slug": "fcftc_2021_3rd",
         "name": "2021 Final Championships Framed Trophy Cards - 3rd Place",
         "release": "January 2022",
@@ -138,6 +149,7 @@ const data2022 = [
     // 2021 Final Championships Framed Trophy Cards - 2nd Place --- fcftc_2021_2nd
     {
         "id": null,
+        "block": 0,
         "slug": "fcftc_2021_2nd",
         "name": "2021 Final Championships Framed Trophy Cards - 2nd Place",
         "release": "January 2022",
@@ -150,6 +162,7 @@ const data2022 = [
     // 2021 Final Championships Framed Trophy Cards - 1st Place Champion --- fcftc_2021_1st
     {
         "id": null,
+        "block": 1, // La carta tiene bloque 0, pero es un premio asique lo consideramos por su bloque original 1
         "slug": "fcftc_2021_1st",
         "name": "2021 Final Championships Framed Trophy Cards - 1st Place Champion",
         "release": "January 2022",
@@ -164,6 +177,7 @@ const data2022 = [
     // Tamer Party Vol.4 --- tp4
     {
         "id": null,
+        "block": 1,
         "slug": "tp4",
         "name": "Tamer Party Vol.4",
         "release": "February 2022",
@@ -176,6 +190,7 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": 1,
         "slug": "tp4",
         "name": "Tamer Party Vol.4",
         "release": "February 2022",
@@ -188,6 +203,10 @@ const data2022 = [
     // Official Tournament Pack Vol.4 --- otp4
     {
         "id": null,
+        "block": {
+            "0": ["BT2"],
+            "1": ["BT3","P"]
+        },
         "slug": "otp4",
         "name": "Official Tournament Pack Vol.4",
         "release": "February, 2022",
@@ -205,6 +224,7 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": 1,
         "slug": "otp4",
         "name": "Official Tournament Pack Vol.4",
         "release": "February 2022",
@@ -218,6 +238,7 @@ const data2022 = [
     // Winner Pack Next Adventure --- wp4
     {
         "id": null,
+        "block": 1,
         "slug": "wp4",
         "name": "Winner Pack Next Adventure",
         "release": "February, 2022",
@@ -231,6 +252,7 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": 1,
         "slug": "wp4",
         "name": "Winner Pack Next Adventure",
         "release": "February 2022",
@@ -245,6 +267,7 @@ const data2022 = [
     // Next Adventure (BT7) Pre-Release Tournaments --- bt7_prerelease
     {
         "id": null,
+        "block": 1,
         "slug": "bt7_prerelease",
         "name": "Next Adventure (BT7) Pre-Release Tournaments",
         "release": "February 25, 2022",
@@ -262,6 +285,7 @@ const data2022 = [
     // Booster Next Adventure [BT7] --- bt7
     {
         "id": "BT7",
+        "block": 1,
         "slug": "bt7",
         "name": "Booster Next Adventure [BT7]",
         "release": "March 4, 2022",
@@ -295,6 +319,7 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": 1,
         "slug": "bt7",
         "name": "Booster Next Adventure [BT7]",
         "release": "March 4, 2022",
@@ -314,6 +339,7 @@ const data2022 = [
     // Booster Next Adventure [BT7] - Alternatives --- bt7_alts
     {
         "id": null,
+        "block": 1,
         "slug": "bt7_alts",
         "name": "Booster Next Adventure [BT7] - Alternatives",
         "release": "March 4, 2022",
@@ -342,6 +368,7 @@ const data2022 = [
     // Booster Next Adventure [BT7] - Box Topper --- bt7_boxtopper
     {
         "id": null,
+        "block": 1,
         "slug": "bt7_boxtopper",
         "name": "Booster Next Adventure [BT7] - Box Topper",
         "release": "March 4, 2022",
@@ -358,6 +385,7 @@ const data2022 = [
     // Box Promotion Pack Next Adventure --- bt7_promotion
     {
         "id": null,
+        "block": 1,
         "slug": "bt7_promotion",
         "name": "Box Promotion Pack Next Adventure",
         "release": "March 4, 2022",
@@ -377,6 +405,10 @@ const data2022 = [
     // 2021 Vault Set --- 2021fest_vault
     {
         "id": null,
+        "block": {
+            "0": ["P-009","P-016","P-028","P-032","BT2"],
+            "1": ["ST7","ST8","P-046"]
+        },
         "slug": "2021fest_vault",
         "name": "2021 Vault Set",
         "release": "March, 2022",
@@ -401,6 +433,10 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": {
+            "0": ["P"],
+            "1": ["BT6"]
+        },
         "slug": "2021fest_vault",
         "name": "2021 Vault Set",
         "release": "March, 2022",
@@ -418,6 +454,10 @@ const data2022 = [
     // Digi-Egg Set --- 2021fest_digiegg
     {
         "id": null,
+        "block": {
+            "0": ["BT2","BT3"],
+            "1": ["BT7"]
+        },
         "slug": "2021fest_digiegg",
         "name": "Digi-Egg Set",
         "release": "March, 2022",
@@ -434,6 +474,10 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": {
+            "0": ["BT4","BT5"],
+            "1": ["BT6"]
+        },
         "slug": "2021fest_digiegg",
         "name": "Digi-Egg Set",
         "release": "March, 2022",
@@ -451,6 +495,7 @@ const data2022 = [
     // Fest Stamp SR --- 2021fest_stamp
     {
         "id": null,
+        "block": 0,
         "slug": "2021fest_stamp",
         "name": "Fest Stamp SR",
         "release": "March, 2022",
@@ -464,6 +509,7 @@ const data2022 = [
     // Fest WINNER Stamp SR --- 2021fest_winner
     {
         "id": null,
+        "block": 0,
         "slug": "2021fest_winner",
         "name": "Fest WINNER Stamp SR",
         "release": "March, 2022",
@@ -477,6 +523,7 @@ const data2022 = [
     // 2021 World Championship --- wc2021
     {
         "id": null,
+        "block": 0,
         "slug": "wc2021",
         "name": "2021 World Championship Participation",
         "release": "March, 2022",
@@ -489,6 +536,7 @@ const data2022 = [
     // 2021 World Championship 3rd Place --- wc2021_3rd
     {
         "id": null,
+        "block": 0,
         "slug": "wc2021_3rd",
         "name": "2021 World Championship Framed Trophy Cards - 3rd Place",
         "release": "March, 2022",
@@ -501,6 +549,7 @@ const data2022 = [
     // 2021 World Championship 2nd Place --- wc2021_2nd
     {
         "id": null,
+        "block": 0,
         "slug": "wc2021_2nd",
         "name": "2021 World Championship Framed Trophy Cards - 2nd Place",
         "release": "March, 2022",
@@ -513,6 +562,7 @@ const data2022 = [
     // 2021 World Championship 1st Place --- wc2021_1st
     {
         "id": null,
+        "block": 0,
         "slug": "wc2021_1st",
         "name": "2021 World Championship Framed Trophy Cards - 1st Place",
         "release": "March, 2022",
@@ -527,6 +577,10 @@ const data2022 = [
     // Tamer's Evolution Box2 [PB-06] --- pb6
     {
         "id": null,
+        "block": {
+            "0": ["BT2","BT3","BT4","BT5","P"],
+            "1": ["EX1","ST7"]
+        },
         "slug": "pb6",
         "name": "Tamer's Evolution Box2 [PB-06]",
         "release": "May, 2022",
@@ -549,6 +603,7 @@ const data2022 = [
     // New Awakening (BT8) Pre-Release Tournaments --- bt8_prerelease
     {
         "id": null,
+        "block": 1,
         "slug": "bt8_prerelease",
         "name": "New Awakening (BT8) Pre-Release Tournaments",
         "release": "May 6, 2022",
@@ -562,6 +617,7 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": 1,
         "slug": "bt8_prerelease",
         "name": "New Awakening (BT8) Pre-Release Tournaments",
         "release": "May 6, 2022",
@@ -577,6 +633,7 @@ const data2022 = [
     // Starter Deck ULTIMATE ANCIENT DRAGON [ST-9] --- st9
     {
         "id": "ST9",
+        "block": 1,
         "slug": "st9",
         "name": "Starter Deck ULTIMATE ANCIENT DRAGON [ST-9]",
         "release": "May 13, 2022",
@@ -603,6 +660,7 @@ const data2022 = [
     // Starter Deck PARALLEL WORLD TACTICIAN [ST-10] --- st10
     {
         "id": "ST10",
+        "block": 1,
         "slug": "st10",
         "name": "Starter Deck PARALLEL WORLD TACTICIAN [ST-10]",
         "release": "May 13, 2022",
@@ -630,6 +688,7 @@ const data2022 = [
     // Booster New Awakening [BT8] --- bt8
     {
         "id": "BT8",
+        "block": 1,
         "slug": "bt8",
         "name": "Booster New Awakening [BT8]",
         "release": "May 13, 2022",
@@ -676,6 +735,7 @@ const data2022 = [
     // Booster New Awakening [BT8] - Alternatives --- bt8_alts
     {
         "id": null,
+        "block": 1,
         "slug": "bt8_alts",
         "name": "Booster New Awakening [BT8] - Alternatives",
         "release": "May 13, 2022",
@@ -704,6 +764,7 @@ const data2022 = [
     // Booster New Awakening [BT8] - Box Topper --- bt8_boxtopper
     {
         "id": null,
+        "block": 1,
         "slug": "bt8_boxtopper",
         "name": "Booster New Awakening [BT8] - Box Topper",
         "release": "May 13, 2022",
@@ -720,6 +781,7 @@ const data2022 = [
     // Booster New Awakening [BT8] - Promo Box Topper --- bt8_promoboxtopper
     {
         "id": null,
+        "block": 1,
         "slug": "bt8_promoboxtopper",
         "name": "Booster New Awakening [BT8] - Promo Box Topper",
         "release": "May 13, 2022",
@@ -734,6 +796,10 @@ const data2022 = [
     // Fest Set --- 2021fest
     {
         "id": null,
+        "block": {
+            "0": ["BT2"],
+            "1": ["BT7"]
+        },
         "slug": "2021fest",
         "name": "Fest Set",
         "release": "March, 2022",
@@ -754,8 +820,13 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": {
+            "0": ["BT1","BT4","BT5"],
+            "1": ["BT6","BT8"]
+        },
         "slug": "2021fest",
         "name": "Fest Set",
+        // TODO: revisar block
         "release": "March, 2022",
         "url": "digimoncardURL/setID-cardID_parallel.png",
         "cards": {
@@ -779,6 +850,7 @@ const data2022 = [
     // Ultimate Cup --- ultimatecup
     {
         "id": null,
+        "block": 0,
         "slug": "ultimatecup",
         "name": "Ultimate Cup",
         "release": "April, 2022",
@@ -790,6 +862,10 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": {
+            "0": ["BT1","BT3"],
+            "1": ["BT8","EX1","ST9"]
+        },
         "slug": "ultimatecup",
         "name": "Ultimate Cup",
         "release": "April, 2022",
@@ -809,6 +885,7 @@ const data2022 = [
     // Booster Digital Hazard [EX2] --- ex2
     {
         "id": "EX2",
+        "block": 1,
         "slug": "ex2",
         "name": "Booster Digital Hazard [EX2]",
         "release": "June 24, 2022",
@@ -845,6 +922,7 @@ const data2022 = [
     // Booster Digital Hazard [EX2] - Alternatives --- ex2_alts
     {
         "id": null,
+        "block": 1,
         "slug": "ex2_alts",
         "name": "Booster Digital Hazard [EX2] - Alternatives",
         "release": "June 24, 2022",
@@ -885,6 +963,7 @@ const data2022 = [
     // Booster Digital Hazard [EX2] - Box Topper --- ex2_boxtopper
     {
         "id": null,
+        "block": 1,
         "slug": "ex2_boxtopper",
         "name": "Booster Digital Hazard [EX2] - Box Topper",
         "release": "June 24, 2022",
@@ -899,6 +978,7 @@ const data2022 = [
     // Playmat and Card Set 1 Digimon Tamers [PB-08] --- pb8
     {
         "id": null,
+        "block": 1,
         "slug": "pb8",
         "name": "Playmat and Card Set 1 Digimon Tamers [PB-08]",
         "release": "June, 2022",
@@ -920,6 +1000,10 @@ const data2022 = [
     // Tamer Party Vol.5 --- tp5
     {
         "id": null,
+        "block": {
+            "0": ["BT3","BT5"],
+            "1": ["BT6"]
+        },
         "slug": "tp5",
         "name": "Tamer Party Vol.5",
         "release": "June 2022",
@@ -934,6 +1018,7 @@ const data2022 = [
     // Official Tournament Pack Vol.5 --- otp5
     {
         "id": null,
+        "block": 1,
         "slug": "otp5",
         "name": "Official Tournament Pack Vol.5",
         "release": "June, 2022",
@@ -952,6 +1037,7 @@ const data2022 = [
     // Winner Pack New Awakening --- wp5
     {
         "id": null,
+        "block": 1,
         "slug": "wp5",
         "name": "Winner Pack New Awakening",
         "release": "June, 2022",
@@ -963,6 +1049,7 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": 1,
         "slug": "wp5",
         "name": "Winner Pack New Awakening",
         "release": "June, 2022",
@@ -979,6 +1066,10 @@ const data2022 = [
     // Summer 2022 Dash Pack --- 2022summer_dashpack
     {
         "id": null,
+        "block": {
+            "0": ["BT5"],
+            "1": ["BT7","BT8"]
+        },
         "slug": "2022summer_dashpack",
         "name": "Summer 2022 Dash Pack",
         "release": "July 1, 2022",
@@ -992,6 +1083,7 @@ const data2022 = [
     // Digimon Survive Promo Pack --- digimon_survive
     {
         "id": null,
+        "block": 2,
         "slug": "digimon_survive",
         "name": "Digimon Survive Promo Pack",
         "release": "July 1, 2022",
@@ -1008,6 +1100,10 @@ const data2022 = [
     // X Record (BT9) Pre-Release Tournaments --- bt9_prerelease
     {
         "id": null,
+        "block": {
+            "1": ["BT5"],
+            "2": ["EX1"]
+        },
         "slug": "bt9_prerelease",
         "name": "X Record (BT9) Pre-Release Tournaments",
         "release": "July 22, 2022",
@@ -1024,6 +1120,7 @@ const data2022 = [
     // Booster X Record [BT9] --- bt9
     {
         "id": "BT9",
+        "block": 1,
         "slug": "bt9",
         "name": "Booster X Record [BT9]",
         "release": "July 29, 2022",
@@ -1065,6 +1162,7 @@ const data2022 = [
     // Booster X Record [BT9] - Alternatives --- bt9_alts
     {
         "id": null,
+        "block": 1,
         "slug": "bt9_alts",
         "name": "Booster X Record [BT9] - Alternatives",
         "release": "July 29, 2022",
@@ -1093,6 +1191,7 @@ const data2022 = [
     // Booster X Record [BT9] - Box Topper --- bt9_boxtopper
     {
         "id": null,
+        "block": 1,
         "slug": "bt9_boxtopper",
         "name": "Booster X Record [BT9] - Box Topper",
         "release": "July 29, 2022",
@@ -1109,6 +1208,7 @@ const data2022 = [
     // Box Promotion Pack Update Pack --- bt9_promotion
     {
         "id": null,
+        "block": 1,
         "slug": "bt9_promotion",
         "name": "Box Promotion Pack Update Pack",
         "release": "July 29, 2022",
@@ -1129,6 +1229,10 @@ const data2022 = [
     // 2022 Regionals Participation Set --- regional2022_0
     {
         "id": null,
+        "block": {
+            "0": ["BT4"],
+            "1": ["BT6","BT7","ST8","EX1"]
+        },
         "slug": "regional2022_0",
         "name": "2022 Regionals Participation Set",
         "release": "July, 2022",
@@ -1147,6 +1251,10 @@ const data2022 = [
     // 2022 Regionals Finalist Set --- regional2022_1
     {
         "id": null,
+        "block": {
+            "0": ["BT4"],
+            "1": ["BT6","BT7","ST8","EX1"]
+        },
         "slug": "regional2022_1",
         "name": "2022 Regionals Finalist Set",
         "release": "July, 2022",
@@ -1165,6 +1273,10 @@ const data2022 = [
     // 2022 Regionals Champion Set --- regional2022_2
     {
         "id": null,
+        "block": {
+            "0": ["BT4"],
+            "1": ["BT6","BT7","ST8","EX1"]
+        },
         "slug": "regional2022_2",
         "name": "2022 Regionals Champion Set",
         "release": "July, 2022",
@@ -1183,6 +1295,10 @@ const data2022 = [
     // Official Tournament Pack Vol.6 --- otp6
     {
         "id": null,
+        "block": {
+            "0": ["BT1-076","ST1","ST2","ST3"],
+            "2": ["BT1-072","BT7"]
+        },
         "slug": "otp6",
         "name": "Official Tournament Pack Vol.6",
         "release": "July, 2022",
@@ -1200,6 +1316,7 @@ const data2022 = [
     // Winner Pack X Record --- wp6
     {
         "id": null,
+        "block": 1,
         "slug": "wp6",
         "name": "Winner Pack X Record",
         "release": "July, 2022",
@@ -1212,6 +1329,7 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": 1,
         "slug": "wp6",
         "name": "Winner Pack X Record",
         "release": "July, 2022",
@@ -1227,6 +1345,7 @@ const data2022 = [
     // Store Championship 2022 Participant Pack --- storechampion_2022_0
     {
         "id": null,
+        "block": 1,
         "slug": "storechampion_2022_0",
         "name": "Store Championship 2022 Participant Pack",
         "release": "August, 2022",
@@ -1239,6 +1358,7 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": 1,
         "slug": "storechampion_2022_0",
         "name": "Store Championship 2022 Participant Pack",
         "release": "August, 2022",
@@ -1257,6 +1377,7 @@ const data2022 = [
     // Store Championship 2022 Champion Card Set --- storechampion_2022_1
     {
         "id": null,
+        "block": 1,
         "slug": "storechampion_2022_1",
         "name": "Store Championship 2022 Champion Card Set",
         "release": "August, 2022",
@@ -1268,6 +1389,7 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": 1,
         "slug": "storechampion_2022_1",
         "name": "Store Championship 2022 Champion Card Set",
         "release": "August, 2022",
@@ -1285,6 +1407,7 @@ const data2022 = [
     // 2022 Regionals Participant Card Set 2 --- regional2022_2_0
     {
         "id": null,
+        "block": 1,
         "slug": "regional2022_2_0",
         "name": "2022 Regionals Participant Card Set 2",
         "release": "July, 2022",
@@ -1297,6 +1420,10 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": {
+            "0": ["BT5"],
+            "1": ["BT7","BT8","ST7"]
+        },
         "slug": "regional2022_2_0",
         "name": "2022 Regionals Participant Card Set 2",
         "release": "July, 2022",
@@ -1313,6 +1440,7 @@ const data2022 = [
     // 2022 Regionals Finalist Card Set 2 --- regional2022_2_1
     {
         "id": null,
+        "block": 1,
         "slug": "regional2022_2_1",
         "name": "2022 Regionals Finalist Card Set 2",
         "release": "July, 2022",
@@ -1325,6 +1453,10 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": {
+            "0": ["BT5"],
+            "1": ["BT7","BT8","ST7"]
+        },
         "slug": "regional2022_2_1",
         "name": "2022 Regionals Finalist Card Set 2",
         "release": "July, 2022",
@@ -1341,6 +1473,7 @@ const data2022 = [
     // 2022 Regionals Champion Card Set 2 --- regional2022_2_2
     {
         "id": null,
+        "block": 1,
         "slug": "regional2022_2_2",
         "name": "2022 Regionals Champion Card Set 2",
         "release": "July, 2022",
@@ -1353,6 +1486,10 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": {
+            "0": ["BT5"],
+            "1": ["BT7","BT8","ST7"]
+        },
         "slug": "regional2022_2_2",
         "name": "2022 Regionals Champion Card Set 2",
         "release": "July, 2022",
@@ -1371,6 +1508,7 @@ const data2022 = [
     // Playmat and Card Set 2 Floral Fun [PB-09] --- pb9
     {
         "id": null,
+        "block": 1,
         "slug": "pb9",
         "name": "Playmat and Card Set 2 Floral Fun [PB-09]",
         "release": "September, 2022",
@@ -1392,6 +1530,7 @@ const data2022 = [
     // Premium Deck Set [PD-01] --- pd1
     {
         "id": null,
+        "block": 1,
         "slug": "pd1",
         "name": "Premium Deck Set [PD-01]",
         "release": "September 30, 2022",
@@ -1406,6 +1545,7 @@ const data2022 = [
     // Premium Deck Set Lucky Pack [PD-01] --- pd1_lucky
     {
         "id": null,
+        "block": 1,
         "slug": "pd1_lucky",
         "name": "Premium Deck Set Lucky Pack [PD-01]",
         "release": "September 30, 2022",
@@ -1420,6 +1560,7 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": 0,
         "slug": "pd1_lucky",
         "name": "Premium Deck Set Lucky Pack [PD-01]",
         "release": "September 30, 2022",
@@ -1434,6 +1575,7 @@ const data2022 = [
     // Tamer Party Vol.6 --- tp6
     {
         "id": null,
+        "block": 2,
         "slug": "tp6",
         "name": "Tamer Party Vol.6",
         "release": "October 2022",
@@ -1448,6 +1590,10 @@ const data2022 = [
     // Event Pack 3 --- eventpack3
     {
         "id": null,
+        "block": {
+            "0": ["P"],
+            "1": ["BT6","BT7"]
+        },
         "slug": "eventpack3",
         "name": "Event Pack 3",
         "release": "October 2022",
@@ -1477,6 +1623,7 @@ const data2022 = [
     // 2022 DC-1 Tournament --- dc1_2022
     {
         "id": null,
+        "block": 1,
         "slug": "dc1_2022",
         "name": "2022 DC-1 Tournament",
         "release": "October 2022",
@@ -1495,6 +1642,10 @@ const data2022 = [
     // Official Tournament Pack Vol.7 --- otp7
     {
         "id": null,
+        "block": {
+            "1": ["BT3","ST6"],
+            "2": ["BT1","BT5","EX1"]
+        },
         "slug": "otp7",
         "name": "Official Tournament Pack Vol.7",
         "release": "October 2022–February 2023",
@@ -1512,6 +1663,7 @@ const data2022 = [
     // Winner Pack Xros Encounter --- wp7
     {
         "id": null,
+        "block": 1,
         "slug": "wp7",
         "name": "Winner Pack -Xros Encounter-",
         "release": "October 2022–February 2023",
@@ -1524,6 +1676,9 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": {
+            "1": ["BT1"],
+            "2": ["BT7"]},
         "slug": "wp7",
         "name": "Winner Pack -Xros Encounter-",
         "release": "October 2022–February 2023",
@@ -1539,6 +1694,7 @@ const data2022 = [
     // Xros Encounter (BT10) Pre-Release Tournaments --- bt10_prerelease
     {
         "id": null,
+        "block": 2,
         "slug": "bt10_prerelease",
         "name": "Xros Encounter (BT10) Pre-Release Tournaments",
         "release": "October 7, 2022",
@@ -1556,6 +1712,7 @@ const data2022 = [
     // Starter Deck JESMON [ST-12] --- st12
     {
         "id": "ST12",
+        "block": 2,
         "slug": "st12",
         "name": "Starter Deck JESMON [ST-12]",
         "release": "October 14, 2022",
@@ -1579,6 +1736,7 @@ const data2022 = [
     // Starter Deck RagnaLoardmon [ST-13] --- st13
     {
         "id": "ST13",
+        "block": 2,
         "slug": "st13",
         "name": "Starter Deck RagnaLoardmon [ST-13]",
         "release": "October 14, 2022",
@@ -1602,6 +1760,7 @@ const data2022 = [
     // Bonus Tamer Cards Pack --- bonus_tamer_cards
     {
         "id": null,
+        "block": 2,
         "slug": "bonus_tamer_cards",
         "name": "Bonus Tamer Cards Pack",
         "release": "October 14, 2022",
@@ -1619,6 +1778,7 @@ const data2022 = [
     // Booster Xros Encounter [BT10] --- bt10
     {
         "id": "BT10",
+        "block": 2,
         "slug": "bt10",
         "name": "Booster Xros Encounter [BT10]",
         "release": "October 14, 2022",
@@ -1654,6 +1814,10 @@ const data2022 = [
     // Booster Xros Encounter [BT10] - Alternatives --- bt10_alts
     {
         "id": null,
+        "block": {
+            "1": ["BT6"],
+            "2": ["BT10"]
+        },
         "slug": "bt10_alts",
         "name": "Booster Xros Encounter [BT10] - Alternatives",
         "release": "October 14, 2022",
@@ -1685,6 +1849,7 @@ const data2022 = [
     // Booster Xros Encounter [BT10] - Box Topper --- bt10_boxtopper
     {
         "id": null,
+        "block": 2,
         "slug": "bt10_boxtopper",
         "name": "Booster Xros Encounter [BT10] - Box Topper",
         "release": "October 14, 2022",
@@ -1701,6 +1866,7 @@ const data2022 = [
     // Box Promotion Pack ST-11 Special Entry pack --- st11
     {
         "id": null,
+        "block": 1,
         "slug": "st11",
         "name": "Box Promotion Pack ST-11 Special Entry pack",
         "release": "October 14, 2022",
@@ -1727,6 +1893,7 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": 1,
         "slug": "st11",
         "name": "Box Promotion Pack ST-11 Special Entry pack",
         "release": "October 14, 2022",
@@ -1739,6 +1906,10 @@ const data2022 = [
     // 25th Special Memorial Pack --- 25specialmemorial
     {
         "id": null,
+        "block": {
+            "0": ["BT1","BT2","BT3","BT5","P"],
+            "1": ["BT6","BT7","BT8"]
+        },
         "slug": "25specialmemorial",
         "name": "25th Special Memorial Pack",
         "release": "October 14, 2022",
@@ -1764,6 +1935,7 @@ const data2022 = [
     // Gift Box 2022 [GB-02] --- gb2
     {
         "id": null,
+        "block": 0,
         "slug": "gb2",
         "name": "Gift Box 2022 [GB-02]",
         "release": "November 4, 2022",
@@ -1777,6 +1949,7 @@ const data2022 = [
     },
     {
         "id": null,
+        "block": 0,
         "slug": "gb2",
         "name": "Gift Box 2022 [GB-02]",
         "release": "November 4, 2022",
@@ -1790,6 +1963,7 @@ const data2022 = [
     // Booster Draconic Roar [EX3] --- ex3
     {
         "id": "EX3",
+        "block": 2,
         "slug": "ex3",
         "name": "Booster Draconic Roar [EX3]",
         "release": "November 11, 2022",
@@ -1829,6 +2003,7 @@ const data2022 = [
     // Booster Draconic Roar [EX3] - Alternatives --- ex3_alts
     {
         "id": null,
+        "block": 2,
         "slug": "ex3_alts",
         "name": "Booster Draconic Roar [EX3] - Alternatives",
         "release": "November 11, 2022",
@@ -1857,6 +2032,10 @@ const data2022 = [
     // Booster Draconic Roar [EX3] - Box Topper --- ex3_boxtopper
     {
         "id": null,
+        "block": {
+            "0": ["BT3"],
+            "2": ["EX3"]
+        },
         "slug": "ex3_boxtopper",
         "name": "Booster Draconic Roar [EX3] - Box Topper",
         "release": "November 11, 2022",

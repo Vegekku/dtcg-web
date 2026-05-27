@@ -98,11 +98,11 @@ El filtro de estado actual es un select simple. Reemplazar por un sistema que pe
 - Seleccionar múltiples estados a la vez: "Reservada + Comprada".
 - Seleccionar múltiples rarezas: "SR + SEC".
 
-Opciones de implementación (a decidir):
+**Decisión tomada:** Reemplazar los `<select>` actuales por checkboxes. Permite selección múltiple de forma visual y directa, sin interacciones extra. Ocupa más espacio horizontal, pero encaja bien si se combina con el panel de filtros colapsable (propuesta 3.4).
 
-- **Checkboxes directos** — Más visual, todo visible de un vistazo. Ocupa más espacio horizontal, encajaría bien si se implementa el panel de filtros colapsable (propuesta 3.4).
-- **Select con checkboxes dentro** (dropdown con checkboxes) — Compacto como un select, pero al desplegarlo muestra checkboxes. Patrón habitual en apps modernas. Requiere algo más de JS.
-- **Multi-select nativo** (`<select multiple>`) — Descartado: UX pobre (Ctrl+click), inconsistente entre navegadores.
+Opciones descartadas:
+- **Select con checkboxes dentro** (dropdown) — Más compacto pero requiere JS adicional y oculta las opciones activas.
+- **Multi-select nativo** (`<select multiple>`) — UX pobre (Ctrl+click), inconsistente entre navegadores.
 
 <a id="prop-23"></a>
 
@@ -157,25 +157,21 @@ El flujo de edición actual (inputs directamente editables sin modal ni desplieg
 
 Propuesta principal: **en modo visualización, reemplazar todos los inputs (principal + reprints) por una representación compacta**. Al activar edición, se muestran los inputs reales.
 
-**Opción A — Números compactos con color de fondo (recomendada)**: Sustituir los inputs por bloques pequeños con el número y el color de fondo correspondiente (`--zero-cards`, `--one-cards`, etc.). Todas las cantidades de una carta se muestran en línea, ocupando una fracción del espacio actual.
+**Decisión tomada:** En modo visualización se muestra un único contador con la **suma total** de copias de todos los bloques, acompañado de un desglose por bloque a modo de "tags" dentro del contador. En modo edición se muestran los inputs individuales por bloque.
+
+Esto combina las opciones A y D: el número principal es la suma total (como D), pero el desglose por bloque es visible de un vistazo sin interacción (como A), usando tags compactos.
 
 ```
-┌───┐
-│ 4 │        ← carta sin reprints
-└───┘
+┌─────────────┐
+│ 4           │  ← carta sin reprints: solo el total
+└─────────────┘
 
-┌───┬───┬───┐
-│ 4 │ 2 │ 0 │  ← carta con reprints: original + bloque 2 + bloque 5
-└───┴───┴───┘
+┌─────────────────────────┐
+│ 6  [●4] [●2]           │  ← carta con reprints: total + tags por bloque
+└─────────────────────────┘
 ```
 
-De un vistazo se ve el estado de cada tipo. Las cartas sin reprints se ven igual de bien pero más compactas. Las cartas con reprints muestran toda la información sin ensanchar la columna para las demás filas.
-
-**Opción B — Tooltip al hacer hover**: En modo visualización, mostrar solo el input principal compacto. Al pasar el ratón, un tooltip muestra el desglose: "Original: 4 | ST17 Reprint: 2 | RB01 Reprint: 0". Contra: requiere interacción, la información no es visible de un vistazo.
-
-**Opción C — Mini barras de progreso**: Reemplazar los inputs por barras horizontales apiladas (tipo stacked bar) donde cada segmento representa un tipo (original + cada bloque de reprint). El ancho indica la cantidad (0-4). Contra: menos legible que un número directo, más complejo de implementar.
-
-**Opción D — Indicador único con total**: Mostrar un solo número con la suma de todas las copias (original + reprints), con un indicador visual (punto, borde) que señale que hay reprints. Al hacer click o hover, se desglosa. Contra: se pierde el detalle por tipo a primera vista.
+> **Nota:** El diseño exacto de los tags (icono de bloque, color, forma) está pendiente de definir. La idea es que sean lo suficientemente compactos para no ensanchar la columna pero informativos de un vistazo.
 
 <a id="prop-28"></a>
 
@@ -184,6 +180,8 @@ De un vistazo se ve el estado de cada tipo. Las cartas sin reprints se ven igual
 El filtro actual (`no_pull`) oculta filas donde `data-pull="true"` (cantidad principal ≥ 4). Esto solo evalúa el input de cantidad global de la carta, sin tener en cuenta los inputs individuales de cada variante (original, reprints por bloque).
 
 Comportamiento deseado: mostrar la fila completa (todos los inputs + todas las imágenes) siempre que **al menos un input** de esa carta no tenga playset. El filtro opera a nivel de fila, no de input individual.
+
+> **Nota:** Dado que en modo visualización se muestra la suma total de todos los bloques, el filtro "sin playset" debe evaluar cada bloque individualmente (no la suma). Una carta con 6 copias totales (4 del bloque original + 2 de un reprint) no tiene playset en el bloque de reprint, por lo que debe mostrarse.
 
 Esto implica:
 
@@ -369,5 +367,4 @@ Definir un sistema de diseño mínimo pero cohesivo:
 - Espaciado consistente (múltiplos de 4px u 8px).
 - Componentes reutilizables: botón, input, select, badge, card, modal.
 - Dark mode como variante de la misma paleta.
-
 

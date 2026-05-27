@@ -3,6 +3,7 @@ const data2021 = [
     // Starter Deck GAIA RED [ST-1] --- st1
     {
         "id": "ST1",
+        "block": 0,
         "slug": "st1", 
         "name": "Starter Deck GAIA RED [ST-1]",
         "release": "January 29th, 2021",
@@ -21,6 +22,7 @@ const data2021 = [
     // Starter Deck COCYTUS BLUE [ST-2] --- st2
     {
         "id": "ST2",
+        "block": 0,
         "slug": "st2", 
         "name": "Starter Deck COCYTUS BLUE [ST-2]",
         "release": "January 29th, 2021",
@@ -39,6 +41,7 @@ const data2021 = [
     // Starter Deck HEAVEN'S YELLOW [ST-3] --- st3
     {
         "id": "ST3",
+        "block": 0,
         "slug": "st3", 
         "name": "Starter Deck HEAVEN'S YELLOW [ST-3]",
         "release": "January 29th, 2021",
@@ -57,6 +60,7 @@ const data2021 = [
     // Tamer Party Vol.1 --- tp1
     {
         "id": null,
+        "block": 0,
         "slug": "tp1", 
         "name": "Tamer Party Vol.1",
         "release": "January 29th, 2021",
@@ -73,6 +77,7 @@ const data2021 = [
     // Release Special Booster Ver.1.0 [BT01-03] --- sbt10
     {
         "id": null,
+        "block": 0,
         "slug": "sbt10",
         "name": "Release Special Booster Ver.1.0 [BT01-03]",
         "release": "February 12, 2021",
@@ -300,6 +305,7 @@ const data2021 = [
     // Release Special Booster Ver.1.0 [BT01-03] - Alternatives --- sbt10_alts
     {
         "id": null,
+        "block": 0,
         "slug": "sbt10_alts",
         "name": "Release Special Booster Ver.1.0 [BT01-03] - Alternatives",
         "release": "February 12, 2021",
@@ -327,6 +333,7 @@ const data2021 = [
     // Release Special Booster Ver.1.0 [BT01-03] - Box Topper --- sbt10_boxtopper
     {
         "id": null,
+        "block": 0,
         "slug": "sbt10_boxtopper",
         "name": "Release Special Booster Ver.1.0 [BT01-03] - Box Topper",
         "release": "February 12, 2021",
@@ -347,6 +354,7 @@ const data2021 = [
     // Special Box Promotion Pack --- sbp
     {
         "id": null,
+        "block": 0,
         "slug": "sbp",
         "name": "Special Box Promotion Pack",
         "release": "February 12, 2021",
@@ -365,6 +373,7 @@ const data2021 = [
     // Dash Pack Ver. 1.0 --- dp10
     {
         "id": null,
+        "block": 0,
         "slug": "dp10",
         "name": "Dash Pack Ver. 1.0",
         "release": "February 12, 2021",
@@ -383,6 +392,7 @@ const data2021 = [
     // Tamer's Evolution Box [PB-01] --- pb01
     {
         "id": null,
+        "block": 0,
         "slug": "pb01",
         "name": "Tamer's Evolution Box [PB-01]",
         "release": "February, 2021",
@@ -403,6 +413,7 @@ const data2021 = [
     // Official Tournament Pack Vol.1 --- otp1
     {
         "id": null,
+        "block": 0,
         "slug": "otp1",
         "name": "Official Tournament Pack Vol.1",
         "release": "February, 2021",
@@ -423,6 +434,7 @@ const data2021 = [
     // Tamer Battle Pack 1 --- tbp1
     {
         "id": null,
+        "block": 0,
         "slug": "tbp1",
         "name": "Tamer Battle Pack 1",
         "release": "February, 2021",
@@ -440,6 +452,7 @@ const data2021 = [
     // Promotion Pack Ver.0.0 --- pp0
     {
         "id": null,
+        "block": 0,
         "slug": "pp0",
         "name": "Promotion Pack Ver.0.0",
         "release": "March 2021",
@@ -461,6 +474,7 @@ const data2021 = [
     // Release Special Booster Ver.1.5 [BT01-03] --- sbt15
     {
         "id": null,
+        "block": 0,
         "slug": "sbt15",
         "name": "Release Special Booster Ver.1.5 [BT01-03]",
         "release": "March 12, 2021",
@@ -652,6 +666,7 @@ const data2021 = [
     // Release Special Booster Ver.1.5 [BT01-03] - Alternatives --- sbt15_alts
     {
         "id": null,
+        "block": 0,
         "slug": "sbt15_alts",
         "name": "Release Special Booster Ver.1.5 [BT01-03] - Alternatives",
         "release": "March 12, 2021",
@@ -673,6 +688,7 @@ const data2021 = [
     // Release Special Booster Ver.1.5 [BT01-03] - Box Topper --- sbt15_boxtopper
     {
         "id": null,
+        "block": 0,
         "slug": "sbt15_boxtopper",
         "name": "Release Special Booster Ver.1.5 [BT01-03] - Box Topper",
         "release": "March 12, 2021",
@@ -689,6 +705,7 @@ const data2021 = [
     // Dash Pack Ver. 1.5 --- dp15
     {
         "id": null,
+        "block": 0,
         "slug": "dp15",
         "name": "Dash Pack Ver. 1.5",
         "release": "March 12, 2021",
@@ -705,6 +722,7 @@ const data2021 = [
     // Special Release Memorial Pack! --- srmp
     {
         "id": null,
+        "block": 0,
         "slug": "srmp",
         "name": "Special Release Memorial Pack!",
         "release": "March 12, 2021",
@@ -723,6 +741,7 @@ const data2021 = [
     // Premium Pack Set 01 [PP01] --- pp01
     {
         "id": null,
+        "block": 0,
         "slug": "pp01",
         "name": "Premium Pack Set 01 [PP01]",
         "release": "May 28th, 2021",
@@ -737,6 +756,7 @@ const data2021 = [
     // Great Legend (BT-04) Pre-Release Tournaments --- bt4_prerelease
     {
         "id": null,
+        "block": 0,
         "slug": "bt4_prerelease",
         "name": "Great Legend (BT-04) Pre-Release Tournaments",
         "release": "June 4-10, 2021",
@@ -756,6 +776,7 @@ const data2021 = [
     // Starter Deck GIGA GREEN [ST-4] --- st4
     {
         "id": "ST4",
+        "block": 0,
         "slug": "st4",
         "name": "Starter Deck GIGA GREEN [ST-4]",
         "release": "June 11, 2021",
@@ -774,6 +795,7 @@ const data2021 = [
     // Starter Deck MACHINE BLACK [ST-5] --- st5
     {
         "id": "ST5",
+        "block": 0,
         "slug": "st5",
         "name": "Starter Deck MACHINE BLACK [ST-5]",
         "release": "June 11, 2021",
@@ -792,6 +814,7 @@ const data2021 = [
     // Starter Deck VENOMOUS VIOLET [ST-6] --- st6
     {
         "id": "ST6",
+        "block": 0,
         "slug": "st6",
         "name": "Starter Deck VENOMOUS VIOLET [ST-6]",
         "release": "June 11, 2021",
@@ -811,6 +834,7 @@ const data2021 = [
     // Booster Great Legend [BT4] --- bt4
     {
         "id": "BT4",
+        "block": 0,
         "slug": "bt4",
         "name": "Booster Great Legend [BT4]",
         "release": "June 11, 2021",
@@ -839,6 +863,7 @@ const data2021 = [
     // Booster Great Legend [BT4] - Alternatives --- bt4_alts
     {
         "id": null,
+        "block": 0,
         "slug": "bt4_alts",
         "name": "Booster Great Legend [BT4] - Alternatives",
         "release": "June 11, 2021",
@@ -864,6 +889,7 @@ const data2021 = [
     // Booster Great Legend [BT4] - Box Topper --- bt4_boxtopper
     {
         "id": null,
+        "block": 0,
         "slug": "bt4_boxtopper",
         "name": "Booster Great Legend [BT4] - Box Topper",
         "release": "June 11, 2021",
@@ -880,6 +906,7 @@ const data2021 = [
     // Great Dash Pack --- bt4_dash
     {
         "id": null,
+        "block": 0,
         "slug": "bt4_dash",
         "name": "Great Dash Pack",
         "release": "June 11, 2021",
@@ -895,6 +922,7 @@ const data2021 = [
     // Great Legend Power Up Pack --- bt4_powerup
     {
         "id": null,
+        "block": 0,
         "slug": "bt4_powerup",
         "name": "Great Legend Power Up Pack",
         "release": "June 11, 2021",
@@ -913,6 +941,7 @@ const data2021 = [
     // Great Legend Power Up Pack (Foil) --- bt4_powerup_foil
     {
         "id": null,
+        "block": 0,
         "slug": "bt4_powerup_foil",
         "name": "Great Legend Power Up Pack (Foil)",
         "release": "June 11, 2021",
@@ -931,6 +960,7 @@ const data2021 = [
     // Tamer Party Vol.2 --- tp2
     {
         "id": null,
+        "block": 0,
         "slug": "tp2",
         "name": "Tamer Party Vol.2",
         "release": "June 2021",
@@ -945,6 +975,7 @@ const data2021 = [
     // Official Tournament Pack Vol.2 --- otp2
     {
         "id": null,
+        "block": 0,
         "slug": "otp2",
         "name": "Official Tournament Pack Vol.2",
         "release": "June, 2021",
@@ -964,6 +995,7 @@ const data2021 = [
     // Battle of Omni (BT-05) Pre-Release Tournaments --- bt5_prerelease
     {
         "id": null,
+        "block": 0,
         "slug": "bt5_prerelease",
         "name": "Battle of Omni (BT-05) Pre-Release Tournaments",
         "release": "July 30-August 5, 2021",
@@ -980,6 +1012,7 @@ const data2021 = [
     // July Evolution Cup --- evocup
     {
         "id": null,
+        "block": 0,
         "slug": "evocup",
         "name": "July Evolution Cup",
         "release": "July 2021",
@@ -995,6 +1028,7 @@ const data2021 = [
     // Booster Battle of Omni [BT5] --- bt5
     {
         "id": "BT5",
+        "block": 0,
         "slug": "bt5",
         "name": "Booster Battle of Omni [BT5]",
         "release": "August 6, 2021",
@@ -1023,6 +1057,7 @@ const data2021 = [
     // Booster Battle of Omni [BT5] - Alternatives --- bt5_alts
     {
         "id": null,
+        "block": 0,
         "slug": "bt5_alts",
         "name": "Booster Battle of Omni [BT5] - Alternatives",
         "release": "August 6, 2021",
@@ -1040,6 +1075,7 @@ const data2021 = [
     // Booster Battle of Omni [BT5] - Box Topper --- bt5_boxtopper
     {
         "id": null,
+        "block": 0,
         "slug": "bt5_boxtopper",
         "name": "Booster Battle of Omni [BT5] - Box Topper",
         "release": "August 6, 2021",
@@ -1056,6 +1092,7 @@ const data2021 = [
     // June Premier TO events --- premierto
     {
         "id": null,
+        "block": 0, // las cartas tiene bloque 1, pero al ser premios lo consideramos por su bloque original 0
         "slug": "premierto",
         "name": "June Premier TO events",
         "release": "June 2021",
@@ -1070,6 +1107,7 @@ const data2021 = [
     // Event Pack 1 --- eventpack1
     {
         "id": null,
+        "block": 0,
         "slug": "eventpack1",
         "name": "Event Pack 1",
         "release": "July 2021",
@@ -1101,6 +1139,7 @@ const data2021 = [
     // 2021 Online Regionals Participant Set --- regional2021_0
     {
         "id": null,
+        "block": 0,
         "slug": "regional2021_0",
         "name": "2021 Online Regionals Participant Set",
         "release": "August 2021",
@@ -1119,6 +1158,7 @@ const data2021 = [
     // 2021 Online Regionals Finalist Set --- regional2021_1
     {
         "id": null,
+        "block": 0,
         "slug": "regional2021_1",
         "name": "2021 Online Regionals Finalist Set",
         "release": "August 2021",
@@ -1137,6 +1177,7 @@ const data2021 = [
     // 2021 Online Regionals Champion Set --- regional2021_2
     {
         "id": null,
+        "block": 0,
         "slug": "regional2021_2",
         "name": "2021 Online Regionals Champion Set",
         "release": "August 2021",
@@ -1157,6 +1198,7 @@ const data2021 = [
     // Store Championship Participant Pack --- storechampion_0
     {
         "id": null,
+        "block": 0,
         "slug": "storechampion_0",
         "name": "Store Championship Participant Pack",
         "release": "September 13 – October 17, 2021",
@@ -1176,6 +1218,7 @@ const data2021 = [
     // Store Champion Card Set --- storechampion_1
     {
         "id": null,
+        "block": 0,
         "slug": "storechampion_1",
         "name": "Store Champion Card Set",
         "release": "September 13 – October 17, 2021",
@@ -1196,6 +1239,7 @@ const data2021 = [
     // Tamer Party Vol.3 --- tp3
     {
         "id": null,
+        "block": 1,
         "slug": "tp3",
         "name": "Tamer Party Vol.3",
         "release": "September 2021",
@@ -1212,6 +1256,7 @@ const data2021 = [
     // DC-1 Grand Prix --- dc1
     {
         "id": null,
+        "block": 0,
         "slug": "dc1",
         "name": "DC-1 Grand Prix",
         "release": "September-October 2021",
@@ -1229,6 +1274,7 @@ const data2021 = [
     // Double Diamond (BT-06) Pre-Release Tournaments --- bt6_prerelease
     {
         "id": null,
+        "block": 0,
         "slug": "bt6_prerelease",
         "name": "Double Diamond (BT-06) Pre-Release Tournaments",
         "release": "October 8, 2021",
@@ -1245,6 +1291,7 @@ const data2021 = [
     // Starter Deck GALLANTMON [ST-7] --- st7
     {
         "id": "ST7",
+        "block": 1,
         "slug": "st7",
         "name": "Starter Deck GALLANTMON [ST-7]",
         "release": "October 15, 2021",
@@ -1262,6 +1309,7 @@ const data2021 = [
     },
     {
         "id": null,
+        "block": 1,
         "slug": "st7",
         "name": "Starter Deck GALLANTMON [ST-7]",
         "release": "October 15, 2021",
@@ -1277,6 +1325,7 @@ const data2021 = [
     // Starter Deck ULFORCEVEEDRAMON [ST-8] --- st8
     {
         "id": "ST8",
+        "block": 1,
         "slug": "st8",
         "name": "Starter Deck ULFORCEVEEDRAMON [ST-8]",
         "release": "October 15, 2021",
@@ -1294,6 +1343,7 @@ const data2021 = [
     },
     {
         "id": null,
+        "block": 1,
         "slug": "st8",
         "name": "Starter Deck ULFORCEVEEDRAMON [ST-8]",
         "release": "October 15, 2021",
@@ -1309,6 +1359,7 @@ const data2021 = [
     // First Anniversary Promo Pack --- first_anniversary
     {
         "id": null,
+        "block": 1,
         "slug": "first_anniversary",
         "name": "First Anniversary Promo Pack",
         "release": "October 15, 2021",
@@ -1327,6 +1378,7 @@ const data2021 = [
     // Booster Double Diamond [BT6] --- bt6
     {
         "id": "BT6",
+        "block": 1,
         "slug": "bt6",
         "name": "Booster Double Diamond [BT6]",
         "release": "October 15, 2021",
@@ -1355,6 +1407,10 @@ const data2021 = [
     // Booster Double Diamond [BT6] - Alternatives --- bt6_alts
     {
         "id": null,
+        "block": {
+            "0": ["BT1"],
+            "1": ["BT6"]
+        },
         "slug": "bt6_alts",
         "name": "Booster Double Diamond [BT6] - Alternatives",
         "release": "October 15, 2021",
@@ -1384,6 +1440,7 @@ const data2021 = [
     // Booster Double Diamond [BT6] - Box Topper --- bt6_boxtopper
     {
         "id": null,
+        "block": 1,
         "slug": "bt6_boxtopper",
         "name": "Booster Double Diamond [BT6] - Box Topper",
         "release": "October 15, 2021",
@@ -1400,6 +1457,7 @@ const data2021 = [
     // 1-Year Anniversary Promo Pack --- 1year_anniversary
     {
         "id": null,
+        "block": 1,
         "slug": "1year_anniversary",
         "name": "1-Year Anniversary Promo Pack",
         "release": "October 15, 2021",
@@ -1421,6 +1479,7 @@ const data2021 = [
     // Double Diamond Dash Pack --- bt6_dash
     {
         "id": null,
+        "block": 1,
         "slug": "bt6_dash",
         "name": "Double Diamond Dash Pack",
         "release": "October 15, 2021",
@@ -1441,6 +1500,7 @@ const data2021 = [
     // Official Tournament Pack Vol.3 --- otp3
     {
         "id": null,
+        "block": 0,
         "slug": "otp3",
         "name": "Official Tournament Pack Vol.3",
         "release": "October, 2021",
@@ -1484,6 +1544,10 @@ const data2021 = [
     // Winner Pack Double Diamond --- wp3
     {
         "id": null,
+        "block": {
+            "0": ["BT1"],
+            "1": ["BT2","BT3"]
+        },
         "slug": "wp3",
         "name": "Winner Pack Double Diamond",
         "release": "October, 2021",
@@ -1501,6 +1565,7 @@ const data2021 = [
     // Booster Classic Collection [EX1] --- ex1
     {
         "id": "EX1",
+        "block": 1,
         "slug": "ex1",
         "name": "Booster Classic Collection [EX1]",
         "release": "December 10, 2021",
@@ -1529,6 +1594,7 @@ const data2021 = [
     // Booster Classic Collection [EX1] - Alternatives --- ex1_alts
     {
         "id": null,
+        "block": 1,
         "slug": "ex1_alts",
         "name": "Booster Classic Collection [EX1] - Alternatives",
         "release": "December 10, 2021",
@@ -1569,6 +1635,7 @@ const data2021 = [
     // Booster Classic Collection [EX1] - Box Topper --- ex1_boxtopper
     {
         "id": null,
+        "block": 0,
         "slug": "ex1_boxtopper",
         "name": "Booster Classic Collection [EX1] - Box Topper",
         "release": "December 10, 2021",

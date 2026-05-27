@@ -6,7 +6,7 @@
 |-----------|-------|
 | 🔴 Alta | [1](#item-1), [5](#item-5), [7](#item-7), [19](#item-19), [33](#item-33), [38](#item-38), [64](#item-64) |
 | 🟠 Media | [2](#item-2), [3](#item-3), [4](#item-4), [8](#item-8), [10](#item-10), [12](#item-12), [16](#item-16), [17](#item-17), [18](#item-18), [20](#item-20), [27](#item-27), [29](#item-29), [39](#item-39), [40](#item-40), [68](#item-68), [73](#item-73) |
-| 🟡 Baja | [6](#item-6), [9](#item-9), [11](#item-11), [13](#item-13), [14](#item-14), [15](#item-15), [21](#item-21)–[26](#item-26), [28](#item-28), [30](#item-30)–[32](#item-32), [34](#item-34)–[37](#item-37), [41](#item-41)–[67](#item-67), [69](#item-69)–[72](#item-72) |
+| 🟡 Baja | [6](#item-6), [9](#item-9), [11](#item-11), [13](#item-13), [14](#item-14), [15](#item-15), [21](#item-21)–[26](#item-26), [28](#item-28), [30](#item-30)–[32](#item-32), [34](#item-34)–[37](#item-37), [41](#item-41)–[67](#item-67), [69](#item-69)–[72](#item-72), [74](#item-74), [75](#item-75) |
 
 ---
 
@@ -679,4 +679,48 @@ Mostrar esta información visualmente en la tabla y/o en el modal de la carta.
 
 Actualmente el input de cantidad usa verde (`--four-cards`) para 4 o más copias. Añadir un color diferenciado (azul) cuando la cantidad supera las 4 copias, para distinguir visualmente entre "playset completo" y "exceso de copias".
 
+> **Nota:** El playset se calcula sobre la suma total de copias de todos los bloques. En modo visualización se muestra un único contador con la suma total y un desglose por bloque (tags). En modo edición se muestran los inputs individuales por bloque.
+
+
+
+<a id="item-74"></a>
+
+### 74. Soporte de prefijos de set en el mapa de bloques <sup>[↑](#prioridad-sugerida)</sup>
+
+Cuando `block` es un mapa (bloque → cartas), permitir que los valores del array sean prefijos de set (ej. `"BT1"`, `"BT6"`) además de IDs completos de carta (ej. `"BT1-084"`). Esto simplifica la definición de bloques en sets con `id: null` que mezclan cartas de distintos sets.
+
+Función de resolución acordada (busca primero por ID exacto, luego por prefijo de set):
+
+```js
+function getCardBlock(cardId, block) {
+    if (typeof block === 'number') return block;
+    const setPrefix = cardId.replace(/-\d+$/, '');
+    for (const [b, entries] of Object.entries(block)) {
+        if (entries.includes(cardId) || entries.includes(setPrefix)) return Number(b);
+    }
+    return null;
+}
+```
+
+No separar en dos pasadas (IDs exactos vs prefijos): el coste es insignificante con arrays pequeños y una sola pasada es más legible.
+
+Cuando un set mezcla cartas de distintos bloques y se quiere usar un prefijo general para el bloque mayoritario, colocar el prefijo en el bloque más alto y los IDs específicos en los bloques inferiores. Así los IDs exactos se encuentran antes en la iteración y el prefijo actúa como fallback. El orden inverso (prefijo en bloque bajo) requeriría dos pasadas.
+
+> **Contexto:** Reprint = cualquier reimpresión posterior a la original (incluye alternativas y cambios de bloque). Se mantiene tracking por bloque para posible rotación futura. En la UI, el modo visualización muestra la suma total con desglose por bloque; el modo edición muestra inputs individuales por bloque.
+
+<a id="item-75"></a>
+
+### 75. `amount` como mapa por bloque <sup>[↑](#prioridad-sugerida)</sup>
+
+Cambiar la estructura de `collection[setId][cardId].amount` de número a mapa por bloque, eliminando el campo `reprint`. Ver issue [#37](https://github.com/Vegekku/dtcg-web/issues/37).
+
+```js
+// Antes
+{ amount: 4, reprint: { "0": 2, "1": 3 }, cards: { ... } }
+
+// Después
+{ amount: { "0": 4, "1": 2, "2": 3 }, cards: { ... } }
+```
+
+La suma total se calcula en runtime: `Object.values(amount).reduce((a, b) => a + b, 0)`. Cambio MAJOR — requiere migración de datos en localStorage.
 

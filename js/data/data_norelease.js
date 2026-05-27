@@ -5,7 +5,7 @@ const dataNoRelease = [
         "id": "P",
         "name": "Promos",
         "release": null,
-        "total": 232,
+        "total": 238,
         "url": null,
         "add_zero": 3,
         "info_url": null,
@@ -47,6 +47,7 @@ const dataNoRelease = [
     // Booster New Evolution [BT1]
     {
         "id": "BT1",
+        "block": 0,
         "name": "Booster New Evolution [BT1]",
         "release": null,
         "total": 115,
@@ -71,6 +72,7 @@ const dataNoRelease = [
     // Booster Ultimate Power [BT2]
     {
         "id": "BT2",
+        "block": 0,
         "name": "Booster Ultimate Power [BT2]",
         "release": null,
         "total": 112,
@@ -97,6 +99,7 @@ const dataNoRelease = [
     // Booster Union Impact [BT3]
     {
         "id": "BT3",
+        "block": 0,
         "name": "Booster Union Impact [BT3]",
         "release": null,
         "total": 112,

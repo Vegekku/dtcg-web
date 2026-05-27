@@ -31,7 +31,7 @@ Una línea con:
 
 | ID + Rareza | Cantidad | Cartas (imágenes) |
 |:-:|:-:|:--|
-| `001` con badge circular de rareza (coloreado según el color de la carta) | Uno o varios inputs de cantidad. El input principal muestra las copias totales. Si la carta tiene reprints en distintos bloques, se añaden inputs adicionales por cada bloque de reprint. El fondo del input varía por cantidad: rojo=0, naranja=1, amarillo=2, verde claro=3, verde=4+. | Fila horizontal de miniaturas (~79×111px). Cada carta tiene un indicador visual de estado: borde lateral verde=obtenida, azul=comprada, teal=proxy, blur=reservada, sin indicador=falta. Si es comprada/proxy sin precio registrado, borde amarillo de revisión. |
+| `001` con badge circular de rareza (coloreado según el color de la carta) | **Modo visualización:** Un único contador con la suma total de copias de todos los bloques. Incluye un desglose visual (tipo "tag") que muestra la cantidad por bloque. **Modo edición:** Se muestran inputs individuales por cada bloque para editar la cantidad de cada impresión por separado. El fondo del input varía por cantidad: rojo=0, naranja=1, amarillo=2, verde claro=3, verde=4+. | Fila horizontal de miniaturas (~79×111px). Cada carta tiene un indicador visual de estado: borde lateral verde=obtenida, azul=comprada, teal=proxy, blur=reservada, sin indicador=falta. Si es comprada/proxy sin precio registrado, borde amarillo de revisión. |
 
 **En vista grid**: Se ocultan las columnas de ID y cantidad. Las cartas se muestran como un mosaico inline de miniaturas.
 
@@ -59,6 +59,7 @@ Fondo oscuro semitransparente. Caja blanca centrada con bordes redondeados:
 Similar pero sin radio buttons ni inputs editables. Muestra:
 - Imagen de la carta (más grande)
 - Estado en texto + precio si aplica
+- Cantidad total de copias (suma de todos los bloques) con desglose por bloque
 - Enlace a Cardmarket con precio mínimo
 
 ### Impresión
