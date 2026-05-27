@@ -4,6 +4,34 @@ Todos los cambios notables de este proyecto se documentan aquí.
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/).
 Versionado según [Semantic Versioning](https://semver.org/lang/es/).
 
+## [Unreleased]
+
+## [1.4.0] - 2026-05-27
+
+### Added
+
+- Función `getCardBlock(cardId, block)` para resolver el bloque de una carta dado su ID y el campo `block` del set
+- Atributo `data-block` en todas las imágenes de carta (sets base y variantes)
+- Inputs de cantidad por bloque en `drawAlternatives`: un input por cada bloque distinto que tenga la carta
+- Sets sin `block` definido (Promos) reciben `data-block` dinámicamente al procesar sus variantes
+- Filtro por bloque en la barra de filtros (después de rareza)
+- Al filtrar por bloque, se ocultan también los inputs de cantidad que no correspondan al bloque seleccionado
+
+## [1.3.0] - 2026-05-25
+
+### Added
+
+- Sets de 2026: Evolution Cup 2026 Vol.1 y Vol.2, World Championship 2025, Regionals 2026/27 Season 1, Ultimate Cup 2026 Vol.1, OTP21/WP21, Judge Pack 9, ST-23, ST-24, LM Memory Boost, BT-25, EX-12, LM-09 y sus variantes
+- Nuevos colores CSS: `green-white`, `purple-red-green`
+- Nueva rareza `ur` (Ultimate Rare) en datos, filtro y estilos
+
+## [1.2.0] - 2026-05-25
+
+### Added
+
+- Campo `block` asignado a todos los sets en todos los archivos `data_*.js`
+- Soporte de `block` como mapa bloque → cartas para sets con cartas de distintos bloques
+
 ## [1.1.1] - 2025-01-01
 
 ### Estado base
@@ -18,4 +46,8 @@ Versionado según [Semantic Versioning](https://semver.org/lang/es/).
 - Soporte de impresión con CSS dedicado
 - Migraciones de datos en localStorage (`updates.js`)
 
+[Unreleased]: https://github.com/Vegekku/dtcg-web/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/Vegekku/dtcg-web/compare/v1.3.0...v1.4.0
+[1.3.0]: https://github.com/Vegekku/dtcg-web/compare/v1.2.0...v1.3.0
+[1.2.0]: https://github.com/Vegekku/dtcg-web/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/Vegekku/dtcg-web/releases/tag/v1.1.1
