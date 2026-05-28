@@ -52,6 +52,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     cardmarket = JSON.parse( window.localStorage.getItem("cardmarket") || '{}' );
     (cardmarket.products ??= {}).packs ??= {};
 
+    migrateAmountToBlocks();
+
     /**
      * Gets the full URL to image card source.
      * @param {string} url The card url.
@@ -209,8 +211,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         const mainInput = cardRow.querySelector('.amount-card:not([data-block])');
                         if ( mainInput ) {
                             mainInput.dataset.block = cardBlock;
+                            mainInput.value = collection[setId][cardId].amount?.[cardBlock] ?? 0;
+                            mainInput.setAttribute('value', mainInput.value);
                         } else if ( !cardRow.querySelector(`.amount-card[data-block="${cardBlock}"]`) ) {
-                            cardRow.cells[1].innerHTML += `<input class="amount-card amount-card--reprint" type="text" data-card-number="${cardNumber}" data-block="${cardBlock}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setId][cardId].reprint?.[cardBlock] || 0}">`;
+                            cardRow.cells[1].innerHTML += `<input class="amount-card amount-card--reprint" type="text" data-card-number="${cardNumber}" data-block="${cardBlock}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setId][cardId].amount?.[cardBlock] || 0}">`;
                         }
                     }
                 }
@@ -294,16 +298,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return cardsRarities;
     }
 
-    const getCardBlock = (cardId, block) => {
-        if (typeof block === 'number') return block;
-        if (!block) return null;
-        const setPrefix = cardId.replace(/-\d+$/, '');
-        for (const [b, entries] of Object.entries(block)) {
-            if (entries.includes(cardId) || entries.includes(setPrefix)) return Number(b);
-        }
-        return null;
-    }
-
     sets.forEach(setElement => {
         if (setElement.id !== null) {
             const tableSet = document.createElement('table');
@@ -340,11 +334,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
                 // 3. obtener cantidad de cartas de este id
                 if (collection[setElement.id][cardId] === undefined) {
-                    collection[setElement.id][cardId] = {amount: 0, cards: {}};
+                    collection[setElement.id][cardId] = {amount: {}, cards: {}};
                 }
-                
-                row.insertCell(1).innerHTML = `<input class="amount-card" type="text" data-card-number="${cardNumber}"${setElement.block !== undefined ? ` data-block="${setElement.block}"` : ''} onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setElement.id][cardId].amount}">`;
-                row.dataset.pull = collection[setElement.id][cardId].amount >= 4;
+
+                const blockKey = setElement.block !== undefined ? String(setElement.block) : null;
+                const blockAmount = blockKey !== null ? (collection[setElement.id][cardId].amount[blockKey] ?? 0) : 0;
+                const totalAmount = Object.values(collection[setElement.id][cardId].amount).reduce((a, b) => a + b, 0);
+                row.insertCell(1).innerHTML = `<input class="amount-card" type="text" data-card-number="${cardNumber}"${blockKey !== null ? ` data-block="${blockKey}"` : ''} onblur="updateValue(this)" onfocus="selectValue()" readonly value="${blockAmount}">`;
+                row.dataset.pull = totalAmount >= 4;
                 row.dataset.rarity = cardRarity;
 
                 if (setElement.url) {
