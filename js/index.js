@@ -213,8 +213,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             mainInput.dataset.block = cardBlock;
                             mainInput.value = collection[setId][cardId].amount?.[cardBlock] ?? 0;
                             mainInput.setAttribute('value', mainInput.value);
+                            mainInput.closest('.amount-card-wrapper')?.insertAdjacentHTML('afterend', getBlockBadge(cardBlock)) || mainInput.insertAdjacentHTML('afterend', getBlockBadge(cardBlock));
                         } else if ( !cardRow.querySelector(`.amount-card[data-block="${cardBlock}"]`) ) {
-                            cardRow.cells[1].innerHTML += `<input class="amount-card amount-card--reprint" type="text" data-card-number="${cardNumber}" data-block="${cardBlock}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setId][cardId].amount?.[cardBlock] || 0}">`;
+                            cardRow.cells[1].insertAdjacentHTML('beforeend', `<div class="amount-card-wrapper"><input class="amount-card amount-card--reprint" type="text" data-card-number="${cardNumber}" data-block="${cardBlock}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setId][cardId].amount?.[cardBlock] || 0}">${getBlockBadge(cardBlock)}</div>`);
                         }
                     }
                 }
@@ -340,7 +341,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 const blockKey = setElement.block !== undefined ? String(setElement.block) : null;
                 const blockAmount = blockKey !== null ? (collection[setElement.id][cardId].amount[blockKey] ?? 0) : 0;
                 const totalAmount = Object.values(collection[setElement.id][cardId].amount).reduce((a, b) => a + b, 0);
-                row.insertCell(1).innerHTML = `<input class="amount-card" type="text" data-card-number="${cardNumber}"${blockKey !== null ? ` data-block="${blockKey}"` : ''} onblur="updateValue(this)" onfocus="selectValue()" readonly value="${blockAmount}">`;
+                row.insertCell(1).innerHTML = `<div class="amount-card-wrapper"><input class="amount-card" type="text" data-card-number="${cardNumber}"${blockKey !== null ? ` data-block="${blockKey}"` : ''} onblur="updateValue(this)" onfocus="selectValue()" readonly value="${blockAmount}">${blockKey !== null ? getBlockBadge(blockKey) : ''}</div>`;
                 row.dataset.pull = totalAmount >= 4;
                 row.dataset.rarity = cardRarity;
 

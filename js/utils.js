@@ -7,3 +7,8 @@ const getCardBlock = (cardId, block) => {
     }
     return null;
 };
+
+const getBlockBadge = (block) => {
+    if (block === null || block === undefined) return '';
+    return `<span class="block-badge">${block}</span>`;
+};
