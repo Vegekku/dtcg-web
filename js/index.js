@@ -41,10 +41,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         });
     }
 
-    // 0. Actualizar datos erroneos o desactualizados.
-    // updatesData();
-    // migrateReprints();
-    // migrateReprintSlugsToBlocks();
 
     // 1. crear objeto collection y cardmarket si no existe. Si existe, obtener de storage.
     collection = JSON.parse( window.localStorage.getItem("collection") || '{}' );
@@ -52,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     cardmarket = JSON.parse( window.localStorage.getItem("cardmarket") || '{}' );
     (cardmarket.products ??= {}).packs ??= {};
 
-    migrateAmountToBlocks();
+    runMigrations();
 
     /**
      * Gets the full URL to image card source.

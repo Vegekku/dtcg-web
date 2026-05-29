@@ -173,6 +173,8 @@ Esto combina las opciones A y D: el número principal es la suma total (como D),
 
 > **Nota:** El diseño exacto de los tags (icono de bloque, color, forma) está pendiente de definir. La idea es que sean lo suficientemente compactos para no ensanchar la columna pero informativos de un vistazo.
 
+> **Parcialmente implementado:** En modo edición ya se muestran inputs individuales por bloque con badge de número de bloque (hexágono). La parte de visualización compacta (suma total + tags en modo no edición) está pendiente.
+
 <a id="prop-28"></a>
 
 ### 2.8 Filtro "Sin playset" basado en inputs <sup>[↑](#prioridad-sugerida)</sup>
@@ -185,7 +187,7 @@ Comportamiento deseado: mostrar la fila completa (todos los inputs + todas las i
 
 Esto implica:
 
-- Evaluar el input principal (`amount-card`) y los inputs de reprint (`amount-card--reprint`) de cada fila.
+- Evaluar todos los inputs `.amount-card` de cada fila (cada uno corresponde a un bloque).
 - Si todos los inputs de la fila tienen valor ≥ 4, la fila se oculta.
 - Si al menos uno tiene valor < 4, la fila se muestra entera.
 
