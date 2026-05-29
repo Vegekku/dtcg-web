@@ -819,6 +819,11 @@ tr:not([data-color]) .card_info__rarity, tr[data-color=undefined] .card_info__ra
   background-color: var(--three-cards);
 }
 
+.amount-card:not([value=""]):not([value="0"]):not([value="1"]):not([value="2"]):not([value="3"]):not([value="4"]) {
+  background-color: var(--bought-card);
+  color: white;
+}
+
 .block-badge {
   position: absolute;
   bottom: 4px;
@@ -910,6 +915,11 @@ button.accordion.active:after {
 .panel.show {
   opacity: 1;
   max-height: 500px;
+}
+
+#boosterButtons button.active, #starterButtons button.active, #extraButtons button.active, #otherButtons button.active {
+  background-color: var(--blue-card);
+  color: white;
 }
 
 #editionButtons, #downloadButtons {

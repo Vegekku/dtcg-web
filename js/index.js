@@ -6,11 +6,14 @@ const toggleTables = ( element ) => {
 
     if ( '' !== currentSet ) {
         document.getElementById(currentSet).classList.remove('active');
+        document.querySelector(`button[value="${currentSet}"]`)?.classList.remove('active');
     }
-    document.getElementById(element.target?.value || element.value).classList.add('active');
+    const newSet = element.target?.value || element.value;
+    document.getElementById(newSet).classList.add('active');
+    document.querySelector(`button[value="${newSet}"]`)?.classList.add('active');
 
     // add set id to URL
-    window.location.hash = element.target?.value || element.value;
+    window.location.hash = newSet;
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -405,6 +408,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     window.localStorage.setItem("collection", JSON.stringify(collection));
 
     if ( '' !== window.location.hash ) {
-        document.getElementById(window.location.hash.substring(1)).classList.add('active');
+        const setId = window.location.hash.substring(1);
+        document.getElementById(setId).classList.add('active');
+        document.querySelector(`button[value="${setId}"]`)?.classList.add('active');
     }
 });

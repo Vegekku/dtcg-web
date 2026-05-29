@@ -29,3 +29,8 @@
 .amount-card[value="3"] {
     background-color: var(--three-cards);
 }
+
+.amount-card:not([value=""]):not([value="0"]):not([value="1"]):not([value="2"]):not([value="3"]):not([value="4"]) {
+    background-color: var(--bought-card);
+    color: white;
+}

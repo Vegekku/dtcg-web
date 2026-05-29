@@ -83,6 +83,15 @@ button {
     }
 }
 
+#boosterButtons, #starterButtons, #extraButtons, #otherButtons {
+    button {
+        &.active {
+            background-color: var(--blue-card);
+            color: white;
+        }
+    }
+}
+
 #editionButtons, #downloadButtons {
     display: inline-block;
 }
