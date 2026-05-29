@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     cardmarket = JSON.parse( window.localStorage.getItem("cardmarket") || '{}' );
     (cardmarket.products ??= {}).packs ??= {};
 
-    migrateAmountToBlocks();
+    runMigrations();
 
     /**
      * Gets the full URL to image card source.

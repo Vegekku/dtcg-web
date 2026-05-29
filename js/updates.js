@@ -1,3 +1,20 @@
+const DATA_VERSION = 1;
+
+const runMigrations = () => {
+    const currentVersion = parseInt(localStorage.getItem('dataVersion') || '0');
+    if (currentVersion >= DATA_VERSION) return;
+
+    const migrations = [
+        { version: 1, fn: migrateAmountToBlocks },
+    ];
+
+    migrations
+        .filter(m => m.version > currentVersion)
+        .forEach(m => m.fn());
+
+    localStorage.setItem('dataVersion', String(DATA_VERSION));
+};
+
 const migrateAmountToBlocks = () => {
     let migrated = false;
 
@@ -130,18 +147,18 @@ const updatesData = ( version ) => {
     let cardmarketData = localStorage.getItem('cardmarket');
 
     if ( 'LM01' === version ) {
-        collectionData = collectionData.replace(/"LM01"/g, '"LM"');
-        cardmarketData = cardmarketData.replace(/"LM01"/g, '"LM"');
+        collectionData = collectionData.replace(/\"LM01\"/g, '"LM"');
+        cardmarketData = cardmarketData.replace(/\"LM01\"/g, '"LM"');
     }
 
     if ( 'pb21' === version ) {
-        collectionData = collectionData.replace(/"pb21"/g, '"tamer_champion_24"');
-        cardmarketData = cardmarketData.replace(/"pb21"/g, '"tamer_champion_24"');
+        collectionData = collectionData.replace(/\"pb21\"/g, '"tamer_champion_24"');
+        cardmarketData = cardmarketData.replace(/\"pb21\"/g, '"tamer_champion_24"');
     }
 
     if ( 'eventpack8' === version ) {
-        collectionData = collectionData.replace(/"eventpack8"/g, '"special_eventpack_2025"');
-        cardmarketData = cardmarketData.replace(/"eventpack8"/g, '"special_eventpack_2025"');
+        collectionData = collectionData.replace(/\"eventpack8\"/g, '"special_eventpack_2025"');
+        cardmarketData = cardmarketData.replace(/\"eventpack8\"/g, '"special_eventpack_2025"');
     }
 
     if ( 'ex10_alts' === version ) {
