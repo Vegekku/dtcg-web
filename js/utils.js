@@ -9,6 +9,6 @@ const getCardBlock = (cardId, block) => {
 };
 
 const getBlockBadge = (block) => {
-    if (block === null || block === undefined) return '';
-    return `<span class="block-badge">${block}</span>`;
+    if (block === null || block === undefined || Number(block) === 0) return '';
+    return `<span class="block-badge">${String(block).padStart(2, '0')}</span>`;
 };

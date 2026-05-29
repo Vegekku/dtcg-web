@@ -829,10 +829,10 @@ tr:not([data-color]) .card_info__rarity, tr[data-color=undefined] .card_info__ra
   justify-content: center;
   background: white;
   color: black;
-  font-size: 0.6em;
+  font-size: 0.65em;
   font-weight: 700;
-  width: 18px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   clip-path: polygon(15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%, 0% 50%);
   pointer-events: none;
 }
