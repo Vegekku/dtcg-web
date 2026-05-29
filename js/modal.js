@@ -195,20 +195,19 @@ const saveSet = () => {
 const updateValue = (element) => {
     element.setAttribute('value', element.value);
     const [set, id] = element.dataset.cardNumber.split('-');
-    if ( element.classList.contains('amount-card--reprint') ) {
-        const block = element.dataset.block;
-        if ( element.value > 0 ) {
-            (collection[set][id].reprint ??= {})[block] = parseInt(element.value);
-        } else if ( collection[set][id].reprint ) {
-            delete collection[set][id].reprint[block];
-            if ( Object.keys(collection[set][id].reprint).length === 0 ) {
-                delete collection[set][id].reprint;
-            }
+    const block = element.dataset.block;
+    const value = parseInt(element.value) || 0;
+
+    if ( block !== undefined ) {
+        if ( value > 0 ) {
+            (collection[set][id].amount ??= {})[block] = value;
+        } else {
+            delete (collection[set][id].amount ??= {})[block];
         }
-    } else {
-        element.parentElement.parentElement.dataset.pull = element.value >= 4;
-        collection[set][id].amount = parseInt(element.value);
     }
+
+    const total = Object.values(collection[set][id].amount ?? {}).reduce((a, b) => a + b, 0);
+    element.closest('tr').dataset.pull = total >= 4;
 }
 
 const selectValue = () => {
