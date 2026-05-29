@@ -399,18 +399,21 @@ Estructura del objeto `collection` almacenado en localStorage:
 {
     "BT21": {
         "001": {
-            "amount": 4,
+            "amount": { "5": 4 },
             "cards": {
                 "bt21": { "status": 1, "bought": 0 },
                 "bt21_alts": { "status": 2, "bought": 3.50 },
                 "bt21_special": { "status": 0, "bought": 0 }
-            },
-            "reprint": {
-                "5": 2
             }
         },
         "002": {
-            "amount": 0,
+            "amount": { "5": 2, "6": 1 },
+            "cards": {
+                "bt21": { "status": 0, "bought": 0 }
+            }
+        },
+        "003": {
+            "amount": {},
             "cards": {
                 "bt21": { "status": 0, "bought": 0 }
             }
@@ -427,14 +430,11 @@ Estructura del objeto `collection` almacenado en localStorage:
 
 | Campo | Tipo | Descripción |
 |-------|------|-------------|
-| `[setId][cardId].amount` | `number` | Cantidad total de copias de esa carta (todas las variantes) |
+| `[setId][cardId].amount` | `object` | Mapa de cantidad por bloque: `{ "0": 4, "1": 2 }`. La suma total se calcula en runtime. |
 | `[setId][cardId].cards[slug]` | `object` | Estado y precio de cada variante, indexado por `slug` del set de origen |
 | `[setId][cardId].cards[slug].status` | `number` | Estado de la carta (-1, 0, 1, 2, 3) |
 | `[setId][cardId].cards[slug].bought` | `number` | Precio de compra (solo si status > 1) |
-| `[setId][cardId].reprint` | `object` | Opcional. Cantidad de copias por bloque de reprint: `{ "5": 2 }` |
 | `products.packs[slug]` | `object` | Estado y precio de cada sobre/producto |
-
-> **Pendiente (#37):** `amount` pasará a ser un mapa por bloque `{ "0": 2, "1": 3 }` y se eliminará el campo `reprint`. La suma total se calculará en runtime. Ver issue [#37](https://github.com/Vegekku/dtcg-web/issues/37).
 
 ---
 
