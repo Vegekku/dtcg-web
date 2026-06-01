@@ -189,6 +189,8 @@ const filterCards = () => {
         table.classList.toggle('set--hidden', !hasResults);
         table.classList.toggle('set--visible', hasResults);
     });
+
+    updateFilterCount();
 }
 
 const searchSet = (element) => {

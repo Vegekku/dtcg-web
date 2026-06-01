@@ -1046,6 +1046,29 @@ button.accordion.active:after {
   display: none;
 }
 
+#filterCount {
+  display: inline-block;
+  background: #f0f4f8;
+  color: #2d3748;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+#filterCount.pulse {
+  animation: pulse 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .content {
   height: calc(100vh - 175px);
   overflow: scroll;

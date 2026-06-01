@@ -14,6 +14,7 @@ const toggleTables = ( element ) => {
 
     // add set id to URL
     window.location.hash = newSet;
+    updateFilterCount();
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -412,4 +413,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
         document.getElementById(setId).classList.add('active');
         document.querySelector(`button[value="${setId}"]`)?.classList.add('active');
     }
+    updateFilterCount();
 });
