@@ -1,6 +1,7 @@
 .content {
     height: calc(100vh - 175px);
     overflow: scroll;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 table {
     border-collapse: collapse;
@@ -17,7 +18,7 @@ thead tr {
 }
 tr {
     vertical-align: top;
-    border: 1px solid black;
+    border: 1px solid #e0e0e0;
 }
 td {
     padding: 0;
@@ -29,10 +30,11 @@ td {
 
 .view--grid {
     table {
-        border: 1px solid black;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
     }
     thead {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #e0e0e0;
     }
     thead tr {
         display: block;
