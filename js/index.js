@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             cardmarketPrice = cardmarket[setId][cardId][slug].price?.slice(-1)[0] || '';
         }
 
-        const imageCard = `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-set="${set}" data-status="${status}" data-bought="${bought}" data-cardmarketurl="${cardmarketUrl}" data-cardmarketprice="${cardmarketPrice}" data-rarity="${rarity}" data-block="${block}" data-type="card" onclick="modalOpen(this)">`;
+        const imageCard = `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-set="${set}" data-status="${status}" data-bought="${bought}" data-cardmarketurl="${cardmarketUrl}" data-cardmarketprice="${cardmarketPrice}" data-rarity="${rarity}" data-block="${block}" data-type="card" onclick="modalOpen(this)" onerror="this.onerror=null;this.src='/sources/error_card.png';">`;
 
         return imageCard;
     }
