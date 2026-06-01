@@ -747,6 +747,11 @@ tr:not([data-color]) .card_info__rarity, tr[data-color=undefined] .card_info__ra
   max-width: 79px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .card--gotit {
