@@ -157,12 +157,38 @@ const filterCards = () => {
             card.classList.add(...cardClasses);
             const rowCard = card.parentElement.parentElement;
             rowCard.classList.add(...rowClasses);
-            if (filters.color === '' || rowCard.dataset.color === filters.color) {
-                const parentSet = card.parentElement.parentElement.parentElement.parentElement;
-                parentSet.classList.replace('set--hidden','set--visible');
-            }
         });
     }
+
+    // Ocultar tablas sin filas visibles
+    const anyFilter = filters.status !== '' || filters.color !== '' || filters.set !== '' || filters.rarity !== '' || filters.block !== '';
+    document.querySelectorAll('.set').forEach(table => {
+        if (!anyFilter) {
+            table.classList.remove('set--hidden', 'set--visible');
+            return;
+        }
+
+        let hasResults = false;
+        const rows = table.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+            let match = true;
+            if (filters.color !== '' && !row.classList.contains('filtered--color')) match = false;
+            if (filters.rarity !== '' && !row.classList.contains('match_filter--rarity')) match = false;
+            if (filters.set !== '' && !row.classList.contains('match_filter--set')) match = false;
+            if (filters.block !== '' && !row.classList.contains('match_filter--block')) match = false;
+            if (filters.status === 'no_pull') {
+                if (row.dataset.pull === 'true') match = false;
+            } else if (filters.status === 'no_pull_no_have') {
+                if (row.dataset.pull === 'true' && !row.classList.contains('match_filter')) match = false;
+            } else if (filters.status !== '') {
+                if (!row.classList.contains('match_filter--status')) match = false;
+            }
+            if (match) hasResults = true;
+        });
+
+        table.classList.toggle('set--hidden', !hasResults);
+        table.classList.toggle('set--visible', hasResults);
+    });
 }
 
 const searchSet = (element) => {

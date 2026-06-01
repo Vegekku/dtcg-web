@@ -1101,6 +1101,9 @@ td {
 .view--all .set {
   display: block;
 }
+.view--all .set--hidden {
+  display: none;
+}
 
 .view--collection .active {
   display: block;
