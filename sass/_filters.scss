@@ -37,7 +37,7 @@
 
     @for $i from 0 through 6 {
         &.block--#{$i} {
-            .amount-card:not([data-block="#{$i}"]) {
+            .amount-card-wrapper:has(.amount-card:not([data-block="#{$i}"])) {
                 display: none;
             }
         }
