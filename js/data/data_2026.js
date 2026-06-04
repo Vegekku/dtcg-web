@@ -68,7 +68,6 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/event/2026/store-tournament/01/",
     },
-    // During February only participants will also receive this promo card! - P-213 Aegiochusmon
     // Official Store Tournament 2026 Vol.1 - Winner Pack --- wp20
     {
         "id": null,
@@ -303,6 +302,20 @@ const data2026 = [
             }
         },
         "info_url": "https://world.digimoncard.com/products/goods/liberator-debuggers-set.php"
+    },
+    // During February only participants will also receive this promo card! - P-213 Aegiochusmon
+    // Promo February Events --- promo_feb2026
+    {
+        "id": null,
+        "block": 5,
+        "slug": "promo_feb2026",
+        "name": "Promo February Events",
+        "release": "February 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "P-213": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/store-tournament/01/",
     },
 
 // February 13, 2026
