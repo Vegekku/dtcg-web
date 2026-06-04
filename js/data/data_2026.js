@@ -1606,7 +1606,7 @@ const data2026 = [
         "slug": "evolution_cup_2026_2_participant",
         "name": "Evolution Cup 2026 Vol.2 Participation",
         "release": "June 1 - July 31, 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT22-004": "",
         },
@@ -1619,7 +1619,7 @@ const data2026 = [
         "slug": "evolution_cup_2026_2_top4",
         "name": "Evolution Cup 2026 Vol.2 Top 4",
         "release": "June 1 - July 31, 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT22-099": "",
         },
@@ -1632,7 +1632,7 @@ const data2026 = [
         "slug": "evolution_cup_2026_2_winner",
         "name": "Evolution Cup 2026 Vol.2 Winner",
         "release": "June 1 - July 31, 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT22-063": "",
         },
