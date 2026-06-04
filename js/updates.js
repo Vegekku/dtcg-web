@@ -1,4 +1,4 @@
-const DATA_VERSION = 1;
+const DATA_VERSION = 2;
 
 const runMigrations = () => {
     const currentVersion = parseInt(localStorage.getItem('dataVersion') || '0');
@@ -6,7 +6,8 @@ const runMigrations = () => {
 
     const migrations = [
         { version: 1, fn: migrateAmountToBlocks },
-        // TODO v2: no almacenar cartas con estado por defecto ({ status: 0, bought: 0 }) para reducir tamaño de localStorage (#29)
+        { version: 2, fn: migrateRemoveWrongPromos },
+        // TODO v3: no almacenar cartas con estado por defecto ({ status: 0, bought: 0 }) para reducir tamaño de localStorage (#29)
     ];
 
     migrations
@@ -66,4 +67,13 @@ const migrateAmountToBlocks = () => {
     }
 
     return migrated;
+};
+
+const migrateRemoveWrongPromos = () => {
+    if (!collection['P']) return;
+    ['139', '140', '141', '142', '143', '144'].forEach(id => {
+        if (!collection['P'][id]?.cards) return;
+        delete collection['P'][id].cards['otp22'];
+        delete collection['P'][id].cards['wp22'];
+    });
 };
