@@ -6,11 +6,15 @@ const toggleTables = ( element ) => {
 
     if ( '' !== currentSet ) {
         document.getElementById(currentSet).classList.remove('active');
+        document.querySelector(`button[value="${currentSet}"]`)?.classList.remove('active');
     }
-    document.getElementById(element.target?.value || element.value).classList.add('active');
+    const newSet = element.target?.value || element.value;
+    document.getElementById(newSet).classList.add('active');
+    document.querySelector(`button[value="${newSet}"]`)?.classList.add('active');
 
     // add set id to URL
-    window.location.hash = element.target?.value || element.value;
+    window.location.hash = newSet;
+    updateFilterCount();
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -106,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             cardmarketPrice = cardmarket[setId][cardId][slug].price?.slice(-1)[0] || '';
         }
 
-        const imageCard = `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-set="${set}" data-status="${status}" data-bought="${bought}" data-cardmarketurl="${cardmarketUrl}" data-cardmarketprice="${cardmarketPrice}" data-rarity="${rarity}" data-block="${block}" data-type="card" onclick="modalOpen(this)">`;
+        const imageCard = `<img loading="lazy" class="card" src="${url}" title="${title}" alt="${title}" id="${id}" data-set="${set}" data-status="${status}" data-bought="${bought}" data-cardmarketurl="${cardmarketUrl}" data-cardmarketprice="${cardmarketPrice}" data-rarity="${rarity}" data-block="${block}" data-type="card" onclick="modalOpen(this)" onerror="this.onerror=null;this.src='/sources/error_card.png';">`;
 
         return imageCard;
     }
@@ -405,6 +409,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     window.localStorage.setItem("collection", JSON.stringify(collection));
 
     if ( '' !== window.location.hash ) {
-        document.getElementById(window.location.hash.substring(1)).classList.add('active');
+        const setId = window.location.hash.substring(1);
+        document.getElementById(setId).classList.add('active');
+        document.querySelector(`button[value="${setId}"]`)?.classList.add('active');
     }
+    updateFilterCount();
 });

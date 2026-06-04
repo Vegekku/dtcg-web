@@ -747,6 +747,11 @@ tr:not([data-color]) .card_info__rarity, tr[data-color=undefined] .card_info__ra
   max-width: 79px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .card--gotit {
@@ -817,6 +822,11 @@ tr:not([data-color]) .card_info__rarity, tr[data-color=undefined] .card_info__ra
 
 .amount-card[value="3"] {
   background-color: var(--three-cards);
+}
+
+.amount-card:not([value=""]):not([value="0"]):not([value="1"]):not([value="2"]):not([value="3"]):not([value="4"]) {
+  background-color: var(--bought-card);
+  color: white;
 }
 
 .block-badge {
@@ -912,6 +922,11 @@ button.accordion.active:after {
   max-height: 500px;
 }
 
+#boosterButtons button.active, #starterButtons button.active, #extraButtons button.active, #otherButtons button.active {
+  background-color: var(--blue-card);
+  color: white;
+}
+
 #editionButtons, #downloadButtons {
   display: inline-block;
 }
@@ -963,25 +978,25 @@ button.accordion.active:after {
 .filter--block .card:not(.filtered--block) {
   display: none;
 }
-.filter--block.block--0 .amount-card:not([data-block="0"]) {
+.filter--block.block--0 .amount-card-wrapper:has(.amount-card:not([data-block="0"])) {
   display: none;
 }
-.filter--block.block--1 .amount-card:not([data-block="1"]) {
+.filter--block.block--1 .amount-card-wrapper:has(.amount-card:not([data-block="1"])) {
   display: none;
 }
-.filter--block.block--2 .amount-card:not([data-block="2"]) {
+.filter--block.block--2 .amount-card-wrapper:has(.amount-card:not([data-block="2"])) {
   display: none;
 }
-.filter--block.block--3 .amount-card:not([data-block="3"]) {
+.filter--block.block--3 .amount-card-wrapper:has(.amount-card:not([data-block="3"])) {
   display: none;
 }
-.filter--block.block--4 .amount-card:not([data-block="4"]) {
+.filter--block.block--4 .amount-card-wrapper:has(.amount-card:not([data-block="4"])) {
   display: none;
 }
-.filter--block.block--5 .amount-card:not([data-block="5"]) {
+.filter--block.block--5 .amount-card-wrapper:has(.amount-card:not([data-block="5"])) {
   display: none;
 }
-.filter--block.block--6 .amount-card:not([data-block="6"]) {
+.filter--block.block--6 .amount-card-wrapper:has(.amount-card:not([data-block="6"])) {
   display: none;
 }
 
@@ -1031,9 +1046,33 @@ button.accordion.active:after {
   display: none;
 }
 
+#filterCount {
+  display: inline-block;
+  background: #f0f4f8;
+  color: #2d3748;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+#filterCount.pulse {
+  animation: pulse 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .content {
   height: calc(100vh - 175px);
   overflow: scroll;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 table {
@@ -1054,7 +1093,7 @@ thead tr {
 
 tr {
   vertical-align: top;
-  border: 1px solid black;
+  border: 1px solid #e0e0e0;
 }
 
 td {
@@ -1066,10 +1105,11 @@ td {
 }
 
 .view--grid table {
-  border: 1px solid black;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
 }
 .view--grid thead {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #e0e0e0;
 }
 .view--grid thead tr {
   display: block;
@@ -1090,6 +1130,9 @@ td {
 
 .view--all .set {
   display: block;
+}
+.view--all .set--hidden {
+  display: none;
 }
 
 .view--collection .active {

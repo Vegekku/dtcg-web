@@ -297,6 +297,12 @@ $rarity-backgrounds: (
   cursor: pointer;
   max-width: 79px;
   object-fit: cover;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
 }
 .card--gotit {
   opacity: 0.5;
