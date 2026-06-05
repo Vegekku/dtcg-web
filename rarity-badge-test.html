@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Rarity Badge — Test completo</title>
+  <style>
+    :root {
+      --red-card: #ea4335;
+      --blue-card: #4285f4;
+      --yellow-card: #fbbc04;
+      --green-card: #34a853;
+      --black-card: #000000;
+      --purple-card: #8e7cc3;
+      --white-card: #ffffff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 24px;
+      background: #f0f0f0;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.65rem;
+      color: #444;
+      width: 60px;
+      text-align: center;
+    }
+
+    .badge-wrap {
+      width: 44px;
+      height: 28px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* 1 color */
+    .c-red    { background-color: var(--red-card); }
+    .c-blue   { background-color: var(--blue-card); }
+    .c-yellow { background-color: var(--yellow-card); }
+    .c-green  { background-color: var(--green-card); }
+    .c-black  { background-color: var(--black-card); }
+    .c-purple { background-color: var(--purple-card); }
+    .c-white  { background-color: var(--white-card); border: 1px solid #ccc; }
+
+    /* 2 colores */
+    .c-red-blue   { background: linear-gradient(90deg, var(--red-card) 50%, var(--blue-card) 50%); }
+    .c-red-yellow { background: linear-gradient(90deg, var(--red-card) 50%, var(--yellow-card) 50%); }
+    .c-red-green  { background: linear-gradient(90deg, var(--red-card) 50%, var(--green-card) 50%); }
+    .c-red-black  { background: linear-gradient(90deg, var(--red-card) 50%, var(--black-card) 50%); }
+    .c-red-purple { background: linear-gradient(90deg, var(--red-card) 50%, var(--purple-card) 50%); }
+    .c-blue-yellow { background: linear-gradient(90deg, var(--blue-card) 50%, var(--yellow-card) 50%); }
+    .c-blue-green  { background: linear-gradient(90deg, var(--blue-card) 50%, var(--green-card) 50%); }
+    .c-blue-black  { background: linear-gradient(90deg, var(--blue-card) 50%, var(--black-card) 50%); }
+    .c-blue-purple { background: linear-gradient(90deg, var(--blue-card) 50%, var(--purple-card) 50%); }
+    .c-yellow-green  { background: linear-gradient(90deg, var(--yellow-card) 50%, var(--green-card) 50%); }
+    .c-yellow-black  { background: linear-gradient(90deg, var(--yellow-card) 50%, var(--black-card) 50%); }
+    .c-yellow-purple { background: linear-gradient(90deg, var(--yellow-card) 50%, var(--purple-card) 50%); }
+    .c-green-black  { background: linear-gradient(90deg, var(--green-card) 50%, var(--black-card) 50%); }
+    .c-green-purple { background: linear-gradient(90deg, var(--green-card) 50%, var(--purple-card) 50%); }
+    .c-purple-white { background: linear-gradient(90deg, var(--purple-card) 50%, var(--white-card) 50%); }
+
+    /* 3 colores */
+    .c-red-blue-green  { background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--green-card) 33.33%, var(--green-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card)); }
+    .c-red-blue-black  { background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--black-card) 33.33%, var(--black-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card)); }
+    .c-red-blue-purple { background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--purple-card) 33.33%, var(--purple-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card)); }
+    .c-red-blue-white  { background: repeating-linear-gradient(to right, var(--red-card), var(--red-card) 33.33%, var(--white-card) 33.33%, var(--white-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card)); }
+    .c-blue-white-red  { background: repeating-linear-gradient(to right, var(--blue-card), var(--blue-card) 33.33%, var(--white-card) 33.33%, var(--white-card) 66.66%, var(--red-card) 66.66%, var(--red-card)); }
+
+    /* badge color según contexto */
+    .c-red    .rarity-badge-wrap { color: white; }
+    .c-blue   .rarity-badge-wrap { color: white; }
+    .c-yellow .rarity-badge-wrap { color: black; }
+    .c-green  .rarity-badge-wrap { color: white; }
+    .c-black  .rarity-badge-wrap { color: white; }
+    .c-purple .rarity-badge-wrap { color: white; }
+    .c-white  .rarity-badge-wrap { color: black; }
+    .c-red-blue   .rarity-badge-wrap { color: white; }
+    .c-red-yellow .rarity-badge-wrap { color: white; }
+    .c-red-green  .rarity-badge-wrap { color: white; }
+    .c-red-black  .rarity-badge-wrap { color: white; }
+    .c-red-purple .rarity-badge-wrap { color: white; }
+    .c-blue-yellow .rarity-badge-wrap { color: black; }
+    .c-blue-green  .rarity-badge-wrap { color: white; }
+    .c-blue-black  .rarity-badge-wrap { color: white; }
+    .c-blue-purple .rarity-badge-wrap { color: white; }
+    .c-yellow-green  .rarity-badge-wrap { color: black; }
+    .c-yellow-black  .rarity-badge-wrap { color: black; }
+    .c-yellow-purple .rarity-badge-wrap { color: black; }
+    .c-green-black   .rarity-badge-wrap { color: white; }
+    .c-green-purple  .rarity-badge-wrap { color: white; }
+    .c-purple-white  .rarity-badge-wrap { color: black; }
+    .c-red-blue-green  .rarity-badge-wrap { color: white; }
+    .c-red-blue-black  .rarity-badge-wrap { color: white; }
+    .c-red-blue-purple .rarity-badge-wrap { color: white; }
+    .c-red-blue-white  .rarity-badge-wrap { color: black; }
+    .c-blue-white-red  .rarity-badge-wrap { color: black; }
+  </style>
+  <script src="js/utils.js"></script>
+</head>
+<body>
+<script>
+  const rarezas = ['c','u','r','sr','ur','sec','p','sp','aa','t'];
+  const colores = [
+    'red','blue','yellow','green','black','purple','white',
+    'red-blue','red-yellow','red-green','red-black','red-purple',
+    'blue-yellow','blue-green','blue-black','blue-purple',
+    'yellow-green','yellow-black','yellow-purple',
+    'green-black','green-purple','purple-white',
+    'red-blue-green','red-blue-black','red-blue-purple','red-blue-white','blue-white-red'
+  ];
+
+  // Sección por rareza
+  rarezas.forEach(r => {
+    const h2 = document.createElement('h2');
+    h2.style.cssText = 'width:100%;margin:12px 0 4px;font-size:0.9rem;color:#333';
+    h2.textContent = `Rareza: ${r.toUpperCase()}`;
+    document.body.appendChild(h2);
+
+    colores.forEach(color => {
+      const item = document.createElement('div');
+      item.className = 'item';
+      item.innerHTML = `
+        <div class="badge-wrap c-${color}">
+          <div class="rarity-badge-wrap">${rarityBadge(r)}</div>
+        </div>
+        <span>${color}</span>
+      `;
+      document.body.appendChild(item);
+    });
+  });
+</script>
+</body>
+</html>

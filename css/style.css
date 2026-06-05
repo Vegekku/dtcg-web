@@ -282,6 +282,8 @@ tr:not([data-color]) .card_info__rarity, tr[data-color=undefined] .card_info__ra
 .card_info__rarity {
   margin: 0 auto;
   color: grey;
+  font-size: 0;
+  text-shadow: none;
   display: flex;
   align-items: center;
   justify-content: center;

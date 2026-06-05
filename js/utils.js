@@ -36,9 +36,9 @@ const rarityBadge = (() => {
     };
 
     const CONFIGS = {
-        1: { fontSize: 56, y: 58, vbWidth: 80 },
-        2: { fontSize: 52, y: 57, vbWidth: 80 },
-        3: { fontSize: 48, y: 57, vbWidth: 120 },
+        1: { fontSize: 15, y: 16, vbWidth: 22 },
+        2: { fontSize: 14, y: 16, vbWidth: 22 },
+        3: { fontSize: 13, y: 16, vbWidth: 33 },
     };
 
     let uid = 0;
@@ -50,14 +50,14 @@ const rarityBadge = (() => {
         const maskId = `cl-mask-${++uid}`;
         const width = len === 3 ? 33 : 22;
 
-        return `<svg class="rarity-badge" width="${width}" height="22" viewBox="0 0 ${vbWidth} 80" xmlns="http://www.w3.org/2000/svg">
+        return `<svg class="rarity-badge" width="${width}" height="22" viewBox="0 0 ${vbWidth} 22" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <mask id="${maskId}">
-                    <rect width="${vbWidth}" height="80" rx="40" fill="white"/>
+                    <rect width="${vbWidth}" height="22" rx="11" fill="white"/>
                     <text x="${vbWidth / 2}" y="${y}" font-size="${fontSize}" font-weight="900" font-family="sans-serif" text-anchor="middle" fill="black">${label}</text>
                 </mask>
             </defs>
-            <rect width="${vbWidth}" height="80" rx="40" fill="currentColor" mask="url(#${maskId})"/>
+            <rect width="${vbWidth}" height="22" rx="11" fill="currentColor" mask="url(#${maskId})"/>
         </svg>`;
     };
 })();
