@@ -68,7 +68,6 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/event/2026/store-tournament/01/",
     },
-    // During February only participants will also receive this promo card! - P-213 Aegiochusmon
     // Official Store Tournament 2026 Vol.1 - Winner Pack --- wp20
     {
         "id": null,
@@ -303,6 +302,20 @@ const data2026 = [
             }
         },
         "info_url": "https://world.digimoncard.com/products/goods/liberator-debuggers-set.php"
+    },
+    // During February only participants will also receive this promo card! - P-213 Aegiochusmon
+    // Promo February Events --- promo_feb2026
+    {
+        "id": null,
+        "block": 5,
+        "slug": "promo_feb2026",
+        "name": "Promo February Events",
+        "release": "February 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "P-213": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/store-tournament/01/",
     },
 
 // February 13, 2026
@@ -1593,7 +1606,7 @@ const data2026 = [
         "slug": "evolution_cup_2026_2_participant",
         "name": "Evolution Cup 2026 Vol.2 Participation",
         "release": "June 1 - July 31, 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT22-004": "",
         },
@@ -1606,7 +1619,7 @@ const data2026 = [
         "slug": "evolution_cup_2026_2_top4",
         "name": "Evolution Cup 2026 Vol.2 Top 4",
         "release": "June 1 - July 31, 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT22-099": "",
         },
@@ -1619,11 +1632,50 @@ const data2026 = [
         "slug": "evolution_cup_2026_2_winner",
         "name": "Evolution Cup 2026 Vol.2 Winner",
         "release": "June 1 - July 31, 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT22-063": "",
         },
         "info_url": "https://world.digimoncard.com/event/2026/evolution-cup/02/",
+    },
+
+// July 1 – September 30, 2026
+    // Official Store Tournament 2026 Vol.3 - Participation Pack --- otp22
+    {
+        "id": null,
+        "block": 6,
+        "slug": "otp22",
+        "name": "Official Store Tournament 2026 Vol.3 - Participation Pack",
+        "release": "July 1 – September 30, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "P-239": "",
+            "P-240": "",
+            "P-241": "",
+            "P-242": "",
+            "P-243": "",
+            "P-244": "",
+        },
+        "rarity": "p",
+        "info_url": "https://world.digimoncard.com/event/2026/store-tournament/03/",
+    },
+    // Official Store Tournament 2026 Vol.3 - Winner Pack --- wp22
+    {
+        "id": null,
+        "block": 6,
+        "slug": "wp22",
+        "name": "Official Store Tournament 2026 Vol.3 - Winner Pack",
+        "release": "July 1 – September 30, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "P-239": "",
+            "P-240": "",
+            "P-241": "",
+            "P-242": "",
+            "P-243": "",
+            "P-244": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/store-tournament/03/",
     },
 
 // July 3, 2026
