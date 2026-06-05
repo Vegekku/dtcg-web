@@ -286,10 +286,6 @@ tr:not([data-color]) .card_info__rarity, tr[data-color=undefined] .card_info__ra
   align-items: center;
   justify-content: center;
 }
-tr[data-rarity=sec] .card_info__rarity .rarity-badge {
-  width: 33px;
-  height: 33px;
-}
 [data-color=red] .card_info__rarity {
   color: var(--white-card);
 }

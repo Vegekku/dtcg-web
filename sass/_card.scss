@@ -266,11 +266,6 @@ $rarity-backgrounds: (
     align-items: center;
     justify-content: center;
 
-    tr[data-rarity="sec"] & .rarity-badge {
-      width: 33px;
-      height: 33px;
-    }
-
     @each $color, $background in $rarity-backgrounds {
       [data-color="#{$color}"] & {
         color: compose-bg($background);
