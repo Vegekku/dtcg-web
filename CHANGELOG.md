@@ -6,6 +6,33 @@ Versionado según [Semantic Versioning](https://semver.org/lang/es/).
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-06-05
+
+### Added
+
+- Imagen de error dedicada (`/sources/error_card.png`) cuando falla la carga de una carta (#47)
+- Transición hover con scale y sombra en miniaturas de carta en vista grid (#48)
+- Contador de cartas visibles en la barra de filtros, con animación de pulso al cambiar (#50)
+- Función `updateFilterCount()` en `utils.js` para contar cartas visibles
+- Set Promo February Events (`promo_feb2026`) con P-213
+- Sets OST 2026 Vol.3 (`otp22`, `wp22`) con P-239–P-244
+- Archivo `data_2027.js` con el set PB-24 Nexus of Digimon
+- Migración v2: elimina slugs `otp22`/`wp22` incorrectamente asignados a P-139–P-144
+- Propuesta 2.9 (panel de filtros colapsable con chips) en `UI_REDESIGN.md`
+
+### Changed
+
+- Bordes de tabla suavizados a `#e0e0e0` y sombra en `.content` (#49)
+- `border-radius: 4px` en tablas de vista grid (#49)
+- Contador de filtros con estilo pill (fondo `#f0f4f8`, `border-radius: 12px`) (#50)
+- URLs de Evolution Cup 2026 Vol.2 actualizadas
+- Fecha de última consulta actualizada a June 5, 2026
+
+### Fixed
+
+- Visibilidad de conjuntos cuando se combinan filtros de rareza y color
+- Visibilidad del block badge al filtrar por bloque
+
 ## [1.4.0] - 2026-05-27
 
 ### Added
@@ -46,7 +73,8 @@ Versionado según [Semantic Versioning](https://semver.org/lang/es/).
 - Soporte de impresión con CSS dedicado
 - Migraciones de datos en localStorage (`updates.js`)
 
-[Unreleased]: https://github.com/Vegekku/dtcg-web/compare/v1.4.0...HEAD
+[Unreleased]: https://github.com/Vegekku/dtcg-web/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/Vegekku/dtcg-web/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/Vegekku/dtcg-web/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/Vegekku/dtcg-web/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/Vegekku/dtcg-web/compare/v1.1.1...v1.2.0
