@@ -12,6 +12,7 @@ const show = () => {
 
     setLists.classList.remove('view--collection', 'view--all');
     setLists.classList.add('view--' + show);
+    updateFilterCount();
 }
 
 const downloadJson = (data) => {

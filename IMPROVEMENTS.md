@@ -685,42 +685,13 @@ Actualmente el input de cantidad usa verde (`--four-cards`) para 4 o más copias
 
 <a id="item-74"></a>
 
-### 74. Soporte de prefijos de set en el mapa de bloques <sup>[↑](#prioridad-sugerida)</sup>
+### 74. ~~Soporte de prefijos de set en el mapa de bloques~~ ✅ <sup>[↑](#prioridad-sugerida)</sup>
 
-Cuando `block` es un mapa (bloque → cartas), permitir que los valores del array sean prefijos de set (ej. `"BT1"`, `"BT6"`) además de IDs completos de carta (ej. `"BT1-084"`). Esto simplifica la definición de bloques en sets con `id: null` que mezclan cartas de distintos sets.
-
-Función de resolución acordada (busca primero por ID exacto, luego por prefijo de set):
-
-```js
-function getCardBlock(cardId, block) {
-    if (typeof block === 'number') return block;
-    const setPrefix = cardId.replace(/-\d+$/, '');
-    for (const [b, entries] of Object.entries(block)) {
-        if (entries.includes(cardId) || entries.includes(setPrefix)) return Number(b);
-    }
-    return null;
-}
-```
-
-No separar en dos pasadas (IDs exactos vs prefijos): el coste es insignificante con arrays pequeños y una sola pasada es más legible.
-
-Cuando un set mezcla cartas de distintos bloques y se quiere usar un prefijo general para el bloque mayoritario, colocar el prefijo en el bloque más alto y los IDs específicos en los bloques inferiores. Así los IDs exactos se encuentran antes en la iteración y el prefijo actúa como fallback. El orden inverso (prefijo en bloque bajo) requeriría dos pasadas.
-
-> **Contexto:** Reprint = cualquier reimpresión posterior a la original (incluye alternativas y cambios de bloque). Se mantiene tracking por bloque para posible rotación futura. En la UI, el modo visualización muestra la suma total con desglose por bloque; el modo edición muestra inputs individuales por bloque.
+> **Implementado en PR #38** (`feat/block-ui`). `getCardBlock` extraída a `js/utils.js`.
 
 <a id="item-75"></a>
 
-### 75. `amount` como mapa por bloque <sup>[↑](#prioridad-sugerida)</sup>
+### 75. ~~`amount` como mapa por bloque~~ ✅ <sup>[↑](#prioridad-sugerida)</sup>
 
-Cambiar la estructura de `collection[setId][cardId].amount` de número a mapa por bloque, eliminando el campo `reprint`. Ver issue [#37](https://github.com/Vegekku/dtcg-web/issues/37).
-
-```js
-// Antes
-{ amount: 4, reprint: { "0": 2, "1": 3 }, cards: { ... } }
-
-// Después
-{ amount: { "0": 4, "1": 2, "2": 3 }, cards: { ... } }
-```
-
-La suma total se calcula en runtime: `Object.values(amount).reduce((a, b) => a + b, 0)`. Cambio MAJOR — requiere migración de datos en localStorage.
+> **Implementado en PR #45** (`feat/amount-by-block`). `amount` es ahora un mapa `{ "0": 2, "1": 3 }`. El campo `reprint` ha sido eliminado. Migración automática via `migrateAmountToBlocks` (versión 1 del esquema).
 

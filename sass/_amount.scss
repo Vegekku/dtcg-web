@@ -9,6 +9,11 @@
     text-align: center;
     padding: 0;
 }
+
+.amount-card-wrapper {
+    position: relative;
+    display: inline-block;
+}
 .amount-card[value=""] {
     background-color: transparent;
 }
@@ -23,4 +28,9 @@
 }
 .amount-card[value="3"] {
     background-color: var(--three-cards);
+}
+
+.amount-card:not([value=""]):not([value="0"]):not([value="1"]):not([value="2"]):not([value="3"]):not([value="4"]) {
+    background-color: var(--bought-card);
+    color: white;
 }

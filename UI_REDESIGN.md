@@ -8,7 +8,7 @@ Propuestas ordenadas de menor a mayor esfuerzo. Cada nivel se puede implementar 
 |-----------|-----------|--------|
 | 🔴 Alta | [2.1](#prop-21), [2.2](#prop-22), [2.3](#prop-23), [2.7](#prop-27), [2.8](#prop-28) | Resuelven directamente los pain points: búsqueda flexible, filtros combinables, edición multi-set, cantidad compacta en visualización, filtro sin playset real |
 | 🟠 Media | [1.1](#prop-11)–[1.5](#prop-15), [2.4](#prop-24), [2.6](#prop-26), [3.2](#prop-32), [3.3](#prop-33), [3.6](#prop-36) | Mejoran la percepción visual, velocidad de edición y cantidad en grid |
-| 🟡 Baja | [2.5](#prop-25), [3.1](#prop-31), [3.4](#prop-34)–[3.5](#prop-35), [4.x](#nivel-4-redise%C3%B1o-de-layout-completo) | Mejoras de calidad de vida y rediseño mayor, para cuando las prioridades altas estén resueltas |
+| 🟡 Baja | [2.5](#prop-25), [2.9](#prop-29), [3.1](#prop-31), [3.4](#prop-34)–[3.5](#prop-35), [4.x](#nivel-4-redise%C3%B1o-de-layout-completo) | Mejoras de calidad de vida y rediseño mayor, para cuando las prioridades altas estén resueltas |
 
 ---
 
@@ -173,6 +173,8 @@ Esto combina las opciones A y D: el número principal es la suma total (como D),
 
 > **Nota:** El diseño exacto de los tags (icono de bloque, color, forma) está pendiente de definir. La idea es que sean lo suficientemente compactos para no ensanchar la columna pero informativos de un vistazo.
 
+> **Parcialmente implementado:** En modo edición ya se muestran inputs individuales por bloque con badge de número de bloque (hexágono). La parte de visualización compacta (suma total + tags en modo no edición) está pendiente.
+
 <a id="prop-28"></a>
 
 ### 2.8 Filtro "Sin playset" basado en inputs <sup>[↑](#prioridad-sugerida)</sup>
@@ -185,7 +187,7 @@ Comportamiento deseado: mostrar la fila completa (todos los inputs + todas las i
 
 Esto implica:
 
-- Evaluar el input principal (`amount-card`) y los inputs de reprint (`amount-card--reprint`) de cada fila.
+- Evaluar todos los inputs `.amount-card` de cada fila (cada uno corresponde a un bloque).
 - Si todos los inputs de la fila tienen valor ≥ 4, la fila se oculta.
 - Si al menos uno tiene valor < 4, la fila se muestra entera.
 
@@ -194,6 +196,23 @@ Evolución futura (por fases):
 1. **Filtrar por playset específico**: Permitir seleccionar qué tipo de playset evaluar (original, reprint bloque N, etc.).
 2. **Mostrar solo inputs sin playset**: Dentro de una fila visible, resaltar u ocultar los inputs que ya tienen playset, mostrando solo los que faltan.
 3. **Filtrar imágenes por bloque**: Mostrar solo las imágenes de las cartas que pertenezcan al input sin playset, usando el bloque (original vs reprint) para vincular cada imagen con su input correspondiente.
+
+<a id="prop-29"></a>
+
+### 2.9 Panel de filtros colapsable con chips <sup>[↑](#prioridad-sugerida)</sup>
+
+Rediseñar el panel de filtros para mostrar solo los filtros activos como "chips" (etiquetas con botón de cerrar). El resto de filtros se ocultan tras un desplegable "Más filtros" o "Búsqueda avanzada".
+
+Ventajas:
+- Menos ruido visual cuando no se filtran muchas dimensiones
+- Los filtros activos son más evidentes de un vistazo
+- Escala mejor si se añaden más filtros en el futuro
+
+Ejemplo:
+
+```
+[Estado: Comprada ✕] [Color: Rojo ✕]  [+ Más filtros]
+```
 
 ---
 
