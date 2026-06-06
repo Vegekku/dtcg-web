@@ -806,7 +806,7 @@ const data2022 = [
         "url": "bandaitcgplusURL/P/e_setID-cardIDparallel.png",
         "cards": {
             "BT2-051": "P_D",
-            "BT2-082": "_t_D",
+            "BT2-082": "_t_D", // TODO: Mover a Tokens como T-02?
             "BT7-110": "P_D",
         },
         "rarities": {
