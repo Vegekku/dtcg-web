@@ -127,23 +127,13 @@ const dataNoRelease = [
         "id": "T",
         "name": "Tokens",
         "release": null,
-        "total": 6,
-        "url": null,
-        "add_zero": 3,
-        "info_url": null,
+        "total": 17,
+        "slug": "t",
+        "url": "digimoncardTokenURL/token_cardID.webp",
+        "add_zero": 2,
+        "info_url": "https://world.digimoncard.com/rule/#download",
         "color": {},
         "rarity": "t"
-    },
-    // Bandai Printable Tokens --- t_bandai_printable
-    {
-        "id": null,
-        "slug": "t_bandai_printable",
-        "name": "Bandai Printable Tokens",
-        "release": null,
-        "url": "noCardURL",
-        "cards": {},
-        "rarity": "t",
-        "info_url": null,
     },
     // Custom Tokens --- t_custom
     {

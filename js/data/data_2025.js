@@ -1661,12 +1661,12 @@ const data2025 = [
             "BT22-043": "",
             "BT22-044": "",
             "BT22-054": "",
-            "T-002": "",
+            "T-08": "",
         },
         "override": {
             "url": "digimoncardURL/BT22-TOKEN.png",
             "cards": {
-                "T-002": "",
+                "T-08": "",
             }
         },
         "rarities": {
@@ -1883,12 +1883,12 @@ const data2025 = [
         "release": "September 1 – October 31, 2025",
         "url": "bandaitcgplusURL/P/e_setID-cardIDEC_D.png",
         "cards": {
-            "T-001": "",
+            "T-02": "",
         },
         "override": {
             "url": "digimoncardURL/TOKEN.png",
             "cards": {
-                "T-001": "",
+                "T-02": "",
             }
         },
         "rarity": "t",
@@ -2528,7 +2528,7 @@ const data2025 = [
             "BT23-040": "P_D",
             "BT23-048": "P_D",
             "BT23-061": "P_D",
-            "T-003": "",
+            "T-15": "",
             "P-207": "_D",
             "P-208": "_D",
             "P-209": "_D",
@@ -2539,7 +2539,7 @@ const data2025 = [
         "override": {
             "url": "digimoncardURL/BT23-TOKEN.png",
             "cards": {
-                "T-003": "",
+                "T-15": "",
             }
         },
         "rarities": {
@@ -2627,8 +2627,8 @@ const data2025 = [
         "release": "December 5, 2025",
         "url": "digimoncardURL/ST22-TOKENparallel.png",
         "cards": {
-            "T-005": "01",
-            "T-006": "02",
+            "T-10": "01",
+            "T-14": "02",
         },
         "rarity": "t",
         "info_url": "https://world.digimoncard.com/products/deck/st-22/",

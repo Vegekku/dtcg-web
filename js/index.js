@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         const bandaitcgplusURL = 'https://files.bandai-tcg-plus.com/card_image/DG-EN';
         const digimoncardURL = 'https://world.digimoncard.com/images/cardlist/card';
+        const digimoncardTokenURL = 'https://world.digimoncard.com/images/rule/token';
         const digimoncardjpURL = 'https://digimoncard.com/images/cardlist/card';
         const digimonCardDev = 'https://assets.cardlist.dev/images/communitycards';
         const digimonFandom = 'https://static.wikia.nocookie.net/digimoncardgame/images';
@@ -79,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             var cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
         } else if (url.includes('digimoncardjpURL')) {
             var cardUrl = url.replace('digimoncardjpURL', digimoncardjpURL);
+        } else if (url.includes('digimoncardTokenURL')) {
+            var cardUrl = url.replace('digimoncardTokenURL', digimoncardTokenURL);
         } else if (url.includes('digimoncardURL')) {
             var cardUrl = url.replace('digimoncardURL', digimoncardURL);
         } else if (url.includes('digimonCardDev')) {
