@@ -19,14 +19,16 @@
         var(--#{$right-color}-card)
       );
       @if $text-shadow != "" {
-        text-shadow:
-          -1px 0 #{$text-shadow},
-          0 1px #{$text-shadow},
-          1px 0 #{$text-shadow},
-          0 -1px #{$text-shadow};
+        &__id {
+          text-shadow:
+            -1px 0 #{$text-shadow},
+            0 1px #{$text-shadow},
+            1px 0 #{$text-shadow},
+            0 -1px #{$text-shadow};
+        }
       }
       @if $color != "" {
-        color: #{$color};
+        &__id { color: #{$color}; }
       }
     }
   } @else if $right-color != "" {
@@ -37,21 +39,23 @@
         var(--#{$right-color}-card) 50%
       );
       @if $text-shadow != "" {
-        text-shadow:
-          -1px 0 #{$text-shadow},
-          0 1px #{$text-shadow},
-          1px 0 #{$text-shadow},
-          0 -1px #{$text-shadow};
+        &__id {
+          text-shadow:
+            -1px 0 #{$text-shadow},
+            0 1px #{$text-shadow},
+            1px 0 #{$text-shadow},
+            0 -1px #{$text-shadow};
+        }
       }
       @if $color != "" {
-        color: #{$color};
+        &__id { color: #{$color}; }
       }
     }
   } @else {
     [data-color="#{$left-color}"] & {
       background-color: var(--#{$left-color}-card);
       @if $color != "" {
-        color: #{$color};
+        &__id { color: #{$color}; }
       }
     }
   }
@@ -107,13 +111,15 @@
   font-weight: 700;
   text-align: center;
   vertical-align: middle;
-  color: white;
+
+  &__id {
+    color: white;
+  }
 
   tr:not([data-color]) &,
   tr[data-color="undefined"] & {
-    color: grey;
-    &__rarity {
-      color: white;
+    &__id {
+      color: grey;
     }
   }
 

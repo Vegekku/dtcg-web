@@ -46,7 +46,7 @@ const rarityBadge = (() => {
     let uid = 0;
 
     const badgeColor = (cardColor) => {
-        if (!cardColor) return 'white';
+        if (!cardColor) return 'grey';
         const parts = cardColor.split('-');
         if (parts.length === 1) return DARK_COLORS.has(parts[0]) ? 'black' : 'white';
         const stops = parts.map(c => DARK_COLORS.has(c) ? 'black' : 'white');
