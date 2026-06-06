@@ -134,12 +134,11 @@ $rarity-backgrounds: (
   @if $count > 1 {
     $stops: ();
     $step: math.div(100%, $count);
-    $overlap: 0.5%; // solapamiento entre franjas
 
     @for $i from 1 through $count {
       $c: nth($colors, $i);
-      $start: math.max(0%, ($i - 1) * $step - $overlap);
-      $end: math.min(100%, $i * $step + $overlap);
+      $start: ($i - 1) * $step;
+      $end: $i * $step;
 
       $stops: append($stops, var(--#{$c}-card) #{$start}, comma);
       $stops: append($stops, var(--#{$c}-card) #{$end}, comma);
