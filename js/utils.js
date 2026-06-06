@@ -59,7 +59,6 @@ const rarityBadge = (() => {
         const len = Math.min(label.length, 3);
         const { fontSize, y, vbWidth } = CONFIGS[len] || CONFIGS[3];
         const maskId = `cl-mask-${++uid}`;
-        const gradId = `cl-grad-${uid}`;
         const width = len === 3 ? 33 : 22;
         const color = badgeColor(cardColor);
 
@@ -67,6 +66,7 @@ const rarityBadge = (() => {
         let fillVal;
 
         if (Array.isArray(color)) {
+            const gradId = `cl-grad-${uid}`;
             let stops;
             if (color.length === 3) {
                 stops = [
