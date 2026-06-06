@@ -174,6 +174,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             : setRarity[parseInt(cardId)]
                         );
 
+
                     if ( Array.isArray( parallel )) {
                         parallel.forEach((parallelElement, index) => {
                             // 5. si no existe la carta, la añadimos al set

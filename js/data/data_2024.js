@@ -2533,7 +2533,23 @@ const data2024 = [
         //     "https://static.wikia.nocookie.net/digimoncardgame/images/a/aa/Special_Release_Booster_Pack_1.0-EN.03.png/",
         // ],
         // "playmat": "https://static.wikia.nocookie.net/digimoncardgame/images/e/e0/Playsheet-BT-1.0.jpg/",
-        "info_url": "https://world.digimoncard.com/products/pack/ver18-19/"
+        "info_url": "https://world.digimoncard.com/products/pack/ver18-19/",
+        "rarities": {
+            "BT18": {
+                "c": ["7-10","12-14",16,20,21,23,24,27,"30-32",35,36,43,"45-47",50,51,"57-62","64-66",68,75,80,95,"97-99"],
+                "u": ["1-6",17,26,29,38,39,41,44,52,53,55,69,70,74,81,85,87,92,93,96,100],
+                "r": [11,15,25,28,33,34,37,49,54,67,72,73,76,77,79,84,86,"88-91",94],
+                "sr": [18,19,22,40,42,48,56,63,71,78,82,83],
+                "sec": [101,102]
+            },
+            "BT19": {
+                "c": [2,4,6,18,19,21,23,29,32,46,48,55,59,69,92,96,99],
+                "u": [17,28,36,39,52,58,65,66,70,82,84,87],
+                "r": [24,41,45,63,72,94],
+                "sr": [27,42,43,53,73,75],
+                "sec": [101]
+            }
+        }
     },
     // Special Booster Ver.2.0 [BT18-19] - Alternatives --- sbt20_alts
     {
