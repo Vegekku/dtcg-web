@@ -239,13 +239,17 @@ const data2026 = [
             "BT24-044": "P_D",
             "BT24-054": "P_D",
             "BT24-067": "P_D",
-            // https://world.digimoncard.com/images/products/pack/ver24/card/BT24_TOKEN.png
+            "T-004": "",
+        },
+        "override": {
+            "url": "digimoncardURL/BT24-TOKEN.png",
+            "cards": {
+                "T-004": "",
+            }
         },
         "rarities": {
-            // "BT24": {
-            //     "t": ["token"]
-            // },
-            "P": "p"
+            "P": "p",
+            "T": "t",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver24/",
     },

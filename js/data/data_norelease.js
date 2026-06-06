@@ -122,4 +122,38 @@ const dataNoRelease = [
             "sec": [111,112]
         }
     },
+    // Tokens
+    {
+        "id": "T",
+        "name": "Tokens",
+        "release": null,
+        "total": 6,
+        "url": null,
+        "add_zero": 3,
+        "info_url": null,
+        "color": {},
+        "rarity": "t"
+    },
+    // Bandai Printable Tokens --- t_bandai_printable
+    {
+        "id": null,
+        "slug": "t_bandai_printable",
+        "name": "Bandai Printable Tokens",
+        "release": null,
+        "url": "noCardURL",
+        "cards": {},
+        "rarity": "t",
+        "info_url": null,
+    },
+    // Custom Tokens --- t_custom
+    {
+        "id": null,
+        "slug": "t_custom",
+        "name": "Custom Tokens",
+        "release": null,
+        "url": "noCardURL",
+        "cards": {},
+        "rarity": "t",
+        "info_url": null,
+    },
 ];
