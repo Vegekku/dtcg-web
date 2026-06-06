@@ -329,9 +329,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 const cardId = String(index).padStart(setElement.add_zero, '0');
                 const row = tBody.insertRow(index - 1);
                 const cardNumber = `${setElement.id}-${cardId}`;
-                const cardRarity = rarities[index] ?? rarities;
+                const cardColor = Array.isArray(colors) ? (colors[index] ?? null) : colors;
+                const cardRarity = Array.isArray(rarities) ? (rarities[index] ?? '?') : rarities;
                 row.id = cardNumber;
-                row.insertCell(0).innerHTML = `<div class="card_info__id">${cardId}</div><div class="card_info__rarity"><span>${cardRarity}</span></div>`;
+                row.insertCell(0).innerHTML = `<div class="card_info__id">${cardId}</div><div class="card_info__rarity">${rarityBadge(cardRarity, cardColor)}</div>`;
 
                 // 3. obtener cantidad de cartas de este id
                 if (collection[setElement.id][cardId] === undefined) {
