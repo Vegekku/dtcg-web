@@ -89,7 +89,7 @@ const modalClose = (element) => {
 const modalOk = () => {
     const editModal = document.getElementById('editModal');
     const status = parseInt(document.querySelector('input[name="status"]:checked').value);
-    const price = parseFloat(document.getElementById('price').value || 0);
+    const price = parseFloat(document.getElementById('price').value || 0); // TODO: normalizar separador decimal (. o ,) antes de parsear (#57)
     const cardId = document.getElementById('cardId').value;
 
     if ( 'card' === typeEdit ) {
@@ -109,7 +109,7 @@ const modalOk = () => {
     document.getElementById(cardId).setAttribute('data-bought', status > 1 ? price : 0);
 
     const cardmarketUrl = document.getElementById('cardmarketUrl').value || '';
-    const cardmarketPrice = parseFloat( document.getElementById('cardmarketPrice').value || 0 );
+    const cardmarketPrice = parseFloat( document.getElementById('cardmarketPrice').value || 0 ); // TODO: normalizar separador decimal (. o ,) antes de parsear (#57)
 
     if ( cardmarketUrl !== '' || cardmarketPrice !== 0 ) {
         if ( cardmarketUrl !== '' ) {

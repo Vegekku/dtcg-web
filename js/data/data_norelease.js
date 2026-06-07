@@ -132,7 +132,31 @@ const dataNoRelease = [
         "url": "digimoncardTokenURL/token_cardID.webp",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/rule/#download",
-        "color": {},
+        "color": {
+            "red": [3,11],
+            "yellow": [4,8,10,12,14],
+            "green": [13],
+            "black": [7],
+            "purple": [5,6,9],
+            "white": [1,2,"15-17"]
+        },
+        // T-01: TOKEN CARD
+        // T-02: Diaboromon
+        // T-03: Amon of Crimson Flame
+        // T-04: Umon of Blue Thunder
+        // T-05: Gyuukimon
+        // T-06: Fujitsumon
+        // T-07: KoHagurumon
+        // T-08: Familiar
+        // T-09: Volée＆Zerdrücken
+        // T-10: Pipe Fox
+        // T-11: WarGrowlmon
+        // T-12: Taomon
+        // T-13: Rapidmon
+        // T-14: Uka no Mitama
+        // T-15: Atho, René & Por
+        // T-16: Petrification
+        // T-17: Hinukamuy
         "rarity": "t"
     },
     // Custom Tokens --- t_custom
