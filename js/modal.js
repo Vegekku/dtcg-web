@@ -34,14 +34,14 @@ const modalOpen = (element) => {
         document.getElementById('cardId').value = element.id;
 
         if ( parseInt(element.dataset.status) > 1 ) {
-            document.getElementById('price').value = element.dataset.bought;
+            document.getElementById('price').value = element.dataset.bought.replace('.', ',');
             document.getElementById('priceConfirm').hidden = false;
         } else {
             document.getElementById('price').value = '';
             document.getElementById('priceConfirm').hidden = true;
         }
         document.getElementById('cardmarketUrl').value = element.dataset.cardmarketurl || '';
-        document.getElementById('cardmarketPrice').value = element.dataset.cardmarketprice || '';
+        document.getElementById('cardmarketPrice').value = element.dataset.cardmarketprice ? element.dataset.cardmarketprice.replace('.', ',') : '';
     } else {
         const cardInfo = modal.querySelector('.card-info');
         cardInfo.hidden = false;
@@ -91,7 +91,7 @@ const modalClose = (element) => {
 const modalOk = () => {
     const editModal = document.getElementById('editModal');
     const status = parseInt(document.querySelector('input[name="status"]:checked').value);
-    const price = parseFloat(document.getElementById('price').value || 0); // TODO: normalizar separador decimal (. o ,) antes de parsear (#57)
+    const price = Math.round(parseFloat((document.getElementById('price').value || '0').replace(',', '.')) * 100) / 100;
     const cardId = document.getElementById('cardId').value;
 
     if ( 'card' === typeEdit ) {
@@ -111,7 +111,7 @@ const modalOk = () => {
     document.getElementById(cardId).setAttribute('data-bought', status > 1 ? price : 0);
 
     const cardmarketUrl = document.getElementById('cardmarketUrl').value || '';
-    const cardmarketPrice = parseFloat( document.getElementById('cardmarketPrice').value || 0 ); // TODO: normalizar separador decimal (. o ,) antes de parsear (#57)
+    const cardmarketPrice = Math.round(parseFloat((document.getElementById('cardmarketPrice').value || '0').replace(',', '.')) * 100) / 100;
 
     if ( cardmarketUrl !== '' || cardmarketPrice !== 0 ) {
         if ( cardmarketUrl !== '' ) {
