@@ -43,6 +43,8 @@ const modalOpen = (element) => {
         document.getElementById('cardmarketUrl').value = element.dataset.cardmarketurl || '';
         document.getElementById('cardmarketPrice').value = element.dataset.cardmarketprice || '';
     } else {
+        const cardInfo = modal.querySelector('.card-info');
+        cardInfo.hidden = false;
         const cardStatus = document.getElementById('card-status');
         const cardPrice = document.getElementById('card-price');
         const cardMinimum = document.getElementById('card-minimum');
@@ -220,3 +222,12 @@ const priceConfirm = () => {
     document.getElementById('priceConfirm').hidden = false;
     document.getElementById('price').select();
 }
+
+const viewCustomToken = (element) => {
+    const modal = document.getElementById('viewModal');
+    modal.querySelector('.modal-title').innerHTML = element.title;
+    modal.querySelector('.modal-card').src = element.src;
+    modal.querySelector('.modal-card').alt = element.alt;
+    modal.querySelector('.card-info').hidden = true;
+    modal.classList.add('open');
+};

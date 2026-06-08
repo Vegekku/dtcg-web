@@ -418,4 +418,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
         document.querySelector(`button[value="${setId}"]`)?.classList.add('active');
     }
     updateFilterCount();
+
+    // Cargar tokens custom desde manifest local (solo visual, sin localStorage)
+    fetch('sources/tokens/manifest.json')
+        .then(r => r.ok ? r.json() : Promise.reject())
+        .then(manifest => {
+            if (!manifest.length) return;
+            const hidden = !document.getElementById('showCustomTokens').checked;
+            manifest.forEach(token => {
+                const row = document.getElementById(token.id);
+                if (!row) return;
+                const cardList = row.getElementsByClassName('card_list')[0];
+                const imgs = token.files.map(file =>
+                    `<img loading="lazy" class="card custom-token${hidden ? ' custom-token--hidden' : ''}" src="sources/tokens/${token.id}/${file}" title="${token.id}: Custom token" alt="${token.id}: Custom token" data-set="t_custom" onclick="viewCustomToken(this)" onerror="this.onerror=null;this.src='/sources/error_card.png';">`
+                ).join('');
+                cardList.innerHTML += imgs;
+            });
+            document.getElementById('showCustomTokens').disabled = false;
+        })
+        .catch(() => {
+            document.getElementById('showCustomTokens').disabled = true;
+        });
 });

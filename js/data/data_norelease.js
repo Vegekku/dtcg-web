@@ -159,15 +159,4 @@ const dataNoRelease = [
         // T-17: Hinukamuy
         "rarity": "t"
     },
-    // Custom Tokens --- t_custom
-    {
-        "id": null,
-        "slug": "t_custom",
-        "name": "Custom Tokens",
-        "release": null,
-        "url": "noCardURL",
-        "cards": {},
-        "rarity": "t",
-        "info_url": null,
-    },
 ];
