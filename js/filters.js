@@ -1,3 +1,38 @@
+const SESSION_FILTERS_KEY = 'uiFilters';
+
+const saveFiltersToSession = () => {
+    const state = {
+        status: document.getElementById('status').value,
+        color: document.getElementById('color').value,
+        set: document.getElementById('setValue').value,
+        setLabel: document.getElementById('set').value,
+        rarity: document.getElementById('rarity').value,
+        block: document.getElementById('block').value,
+        list: document.getElementById('list').value,
+        show: document.getElementById('show').value,
+    };
+    sessionStorage.setItem(SESSION_FILTERS_KEY, JSON.stringify(state));
+};
+
+const restoreFiltersFromSession = () => {
+    const raw = sessionStorage.getItem(SESSION_FILTERS_KEY);
+    if (!raw) return;
+    const state = JSON.parse(raw);
+
+    document.getElementById('status').value = state.status || '';
+    document.getElementById('color').value = state.color || '';
+    document.getElementById('setValue').value = state.set || '';
+    document.getElementById('set').value = state.setLabel || '';
+    document.getElementById('rarity').value = state.rarity || '';
+    document.getElementById('block').value = state.block || '';
+    document.getElementById('list').value = state.list || 'table';
+    document.getElementById('show').value = state.show || 'collection';
+
+    list();
+    show();
+    filterCards();
+};
+
 const datalistNavigation = {
     'prev': null,
     'next': null,
@@ -191,6 +226,7 @@ const filterCards = () => {
     });
 
     updateFilterCount();
+    saveFiltersToSession();
 }
 
 const searchSet = (element) => {

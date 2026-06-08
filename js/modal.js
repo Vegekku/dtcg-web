@@ -34,15 +34,17 @@ const modalOpen = (element) => {
         document.getElementById('cardId').value = element.id;
 
         if ( parseInt(element.dataset.status) > 1 ) {
-            document.getElementById('price').value = element.dataset.bought;
+            document.getElementById('price').value = element.dataset.bought.replace('.', ',');
             document.getElementById('priceConfirm').hidden = false;
         } else {
             document.getElementById('price').value = '';
             document.getElementById('priceConfirm').hidden = true;
         }
         document.getElementById('cardmarketUrl').value = element.dataset.cardmarketurl || '';
-        document.getElementById('cardmarketPrice').value = element.dataset.cardmarketprice || '';
+        document.getElementById('cardmarketPrice').value = element.dataset.cardmarketprice ? element.dataset.cardmarketprice.replace('.', ',') : '';
     } else {
+        const cardInfo = modal.querySelector('.card-info');
+        cardInfo.hidden = false;
         const cardStatus = document.getElementById('card-status');
         const cardPrice = document.getElementById('card-price');
         const cardMinimum = document.getElementById('card-minimum');
@@ -86,10 +88,12 @@ const modalClose = (element) => {
     modal.classList.remove('open');
 };
 
+const parsePrice = (value) => Math.round(parseFloat((value || '0').replace(',', '.')) * 100) / 100;
+
 const modalOk = () => {
     const editModal = document.getElementById('editModal');
     const status = parseInt(document.querySelector('input[name="status"]:checked').value);
-    const price = parseFloat(document.getElementById('price').value || 0);
+    const price = parsePrice(document.getElementById('price').value);
     const cardId = document.getElementById('cardId').value;
 
     if ( 'card' === typeEdit ) {
@@ -109,7 +113,7 @@ const modalOk = () => {
     document.getElementById(cardId).setAttribute('data-bought', status > 1 ? price : 0);
 
     const cardmarketUrl = document.getElementById('cardmarketUrl').value || '';
-    const cardmarketPrice = parseFloat( document.getElementById('cardmarketPrice').value || 0 );
+    const cardmarketPrice = parsePrice(document.getElementById('cardmarketPrice').value);
 
     if ( cardmarketUrl !== '' || cardmarketPrice !== 0 ) {
         if ( cardmarketUrl !== '' ) {
@@ -220,3 +224,12 @@ const priceConfirm = () => {
     document.getElementById('priceConfirm').hidden = false;
     document.getElementById('price').select();
 }
+
+const viewCustomToken = (element) => {
+    const modal = document.getElementById('viewModal');
+    modal.querySelector('.modal-title').innerHTML = element.title;
+    modal.querySelector('.modal-card').src = element.src;
+    modal.querySelector('.modal-card').alt = element.alt;
+    modal.querySelector('.card-info').hidden = true;
+    modal.classList.add('open');
+};

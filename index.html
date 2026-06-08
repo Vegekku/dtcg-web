@@ -117,6 +117,8 @@
                 <option value="collection">colección individual</option>
                 <option value="all">todas las colecciones</option>
             </select>
+            <label for="showCustomTokens">Tokens custom</label>
+            <input type="checkbox" id="showCustomTokens" onchange="toggleCustomTokens(this)">
         </div>
     </div>
     <div id="content" class="content">
@@ -168,7 +170,7 @@
             </div>
             <div class="price-confirm" hidden id="priceConfirm">
                 <label for="price">Precio</label>
-                <input type="number" name="price" id="price" step="0.01" onfocus="selectValue()">
+                <input type="text" name="price" id="price" inputmode="decimal" onfocus="selectValue()">
             </div>
             <div class="cardmarket" id="cardmarket">
                 <img src="https://static.cardmarket.com/img/526dbb9ae52c5e62404fe903e9769807/static/misc/favicon-96x96.png" alt="">

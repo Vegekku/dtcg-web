@@ -475,7 +475,23 @@ const data2025 = [
             "BT20-101": "_d",
             "BT20-102": "_d",
         },
-        "info_url": "https://world.digimoncard.com/products/pack/ver19-20/"
+        "info_url": "https://world.digimoncard.com/products/pack/ver19-20/",
+        "rarities": {
+            "BT19": {
+                "c": [1,3,5,9,10,16,22,31,33,34,47,49,56,57,60,67,78,89,90,91,93,95,97,100],
+                "u": [7,8,13,20,30,38,44,62,68,76,79,81,88,98],
+                "r": [12,15,25,26,35,40,51,54,61,71,77,80,83,85,86],
+                "sr": [11,14,37,50,64,74],
+                "sec": [102]
+            },
+            "BT20": {
+                "c": ["1-6","11-14","22-24",29,"31-34","38-41",47,"49-51",54,62,"66-71",73,"93-95",97,99],
+                "u": ["8-10",16,25,30,36,42,43,46,48,52,53,58,61,63,64,72,74,75,78,86,92,96,98,100],
+                "r": [7,15,"17-19",26,27,35,44,56,57,59,65,76,80,"83-85","87-90"],
+                "sr": [20,21,28,37,45,55,60,77,79,81,82,91],
+                "sec": [101,102]
+            }
+        }
     },
     // Special Booster Ver.2.5 [BT19-20] - Alternatives --- sbt25_alts
     {
@@ -1645,7 +1661,16 @@ const data2025 = [
             "BT22-043": "",
             "BT22-044": "",
             "BT22-054": "",
-            // https://world.digimoncard.com/images/cardlist/card/BT22-TOKEN.png
+            "T-08": "",
+        },
+        "override": {
+            "url": "digimoncardURL/BT22-TOKEN.png",
+            "cards": {
+                "T-08": "",
+            }
+        },
+        "rarities": {
+            "T": "t",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver22/",
     },
@@ -1858,9 +1883,15 @@ const data2025 = [
         "release": "September 1 – October 31, 2025",
         "url": "bandaitcgplusURL/P/e_setID-cardIDEC_D.png",
         "cards": {
-            // TODO: TOKEN
-            // "BT9-109": "",
+            "T-02": "",
         },
+        "override": {
+            "url": "digimoncardURL/TOKEN.png",
+            "cards": {
+                "T-02": "",
+            }
+        },
+        "rarity": "t",
         "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/02/",
     },
     // Evolution Cup 2025 Vol. 2 Top 4 --- evolution_cup_2025_2_top4
@@ -2497,7 +2528,7 @@ const data2025 = [
             "BT23-040": "P_D",
             "BT23-048": "P_D",
             "BT23-061": "P_D",
-            // https://world.digimoncard.com/images/cardlist/card/BT23-TOKEN.png
+            "T-15": "",
             "P-207": "_D",
             "P-208": "_D",
             "P-209": "_D",
@@ -2505,11 +2536,15 @@ const data2025 = [
             "P-211": "_D",
             "P-212": "_D",
         },
+        "override": {
+            "url": "digimoncardURL/BT23-TOKEN.png",
+            "cards": {
+                "T-15": "",
+            }
+        },
         "rarities": {
-            // "BT23": {
-            //     "t": ["token"]
-            // },
-            "P": "p"
+            "P": "p",
+            "T": "t",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver22/",
     },
@@ -2581,8 +2616,22 @@ const data2025 = [
             "u": [8,9,11],
             "r": [4,7],
             "sr": [2,5,6,10,"12-14"],
-            // TODO: tiene 2 tokens
         }
+    },
+    // Advanced Deck Amethyst Mandala [ST-22] --- st22
+    {
+        "id": null,
+        "block": 5,
+        "slug": "st22",
+        "name": "Advanced Deck Amethyst Mandala [ST-22]",
+        "release": "December 5, 2025",
+        "url": "digimoncardURL/ST22-TOKENparallel.png",
+        "cards": {
+            "T-10": "01",
+            "T-14": "02",
+        },
+        "rarity": "t",
+        "info_url": "https://world.digimoncard.com/products/deck/st-22/",
     },
     // Advanced Deck Amethyst Mandala [ST-22] - Lucky Deck --- st22_lucky
     {

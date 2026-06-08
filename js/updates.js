@@ -1,4 +1,4 @@
-const DATA_VERSION = 2;
+const DATA_VERSION = 4;
 
 const runMigrations = () => {
     const currentVersion = parseInt(localStorage.getItem('dataVersion') || '0');
@@ -7,7 +7,9 @@ const runMigrations = () => {
     const migrations = [
         { version: 1, fn: migrateAmountToBlocks },
         { version: 2, fn: migrateRemoveWrongPromos },
-        // TODO v3: no almacenar cartas con estado por defecto ({ status: 0, bought: 0 }) para reducir tamaño de localStorage (#29)
+        { version: 3, fn: migrateTokenIds },
+        { version: 4, fn: migrateCleanTokenResidual },
+        // TODO: no almacenar cartas con estado por defecto ({ status: 0, bought: 0 }) para reducir tamaño de localStorage (#29)
     ];
 
     migrations
@@ -75,5 +77,30 @@ const migrateRemoveWrongPromos = () => {
         if (!collection['P'][id]?.cards) return;
         delete collection['P'][id].cards['otp22'];
         delete collection['P'][id].cards['wp22'];
+    });
+};
+
+const migrateTokenIds = () => {
+    if (!collection['T']) return;
+    // Renombrar de 3 dígitos a 2 dígitos
+    Object.keys(collection['T']).forEach(id => {
+        if (id.length === 3) {
+            const newId = id.replace(/^0/, '');
+            collection['T'][newId] = collection['T'][id];
+            delete collection['T'][id];
+        }
+    });
+    // Eliminar IDs que ya no existen (T-001..T-006 incorrectos, ahora son T-02,T-08,T-10,T-14,T-15,T-16)
+    const validIds = Array.from({length: 17}, (_, i) => String(i + 1).padStart(2, '0'));
+    Object.keys(collection['T']).forEach(id => {
+        if (!validIds.includes(id)) delete collection['T'][id];
+    });
+};
+
+const migrateCleanTokenResidual = () => {
+    if (!collection['T']) return;
+    const validIds = Array.from({length: 17}, (_, i) => String(i + 1).padStart(2, '0'));
+    Object.keys(collection['T']).forEach(id => {
+        if (!validIds.includes(id)) delete collection['T'][id];
     });
 };

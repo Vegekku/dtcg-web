@@ -1,9 +1,16 @@
+const toggleCustomTokens = (checkbox) => {
+    document.querySelectorAll('img.custom-token').forEach(img => {
+        img.classList.toggle('custom-token--hidden', !checkbox.checked);
+    });
+};
+
 const list = () => {
     const list = document.getElementById('list').value;
     const setLists = document.getElementById('setLists');
 
     setLists.classList.remove('view--table', 'view--grid');
     setLists.classList.add('view--' + list);
+    saveFiltersToSession();
 };
 
 const show = () => {
@@ -13,6 +20,7 @@ const show = () => {
     setLists.classList.remove('view--collection', 'view--all');
     setLists.classList.add('view--' + show);
     updateFilterCount();
+    saveFiltersToSession();
 }
 
 const downloadJson = (data) => {

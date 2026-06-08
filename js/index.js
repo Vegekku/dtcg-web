@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         const bandaitcgplusURL = 'https://files.bandai-tcg-plus.com/card_image/DG-EN';
         const digimoncardURL = 'https://world.digimoncard.com/images/cardlist/card';
+        const digimoncardTokenURL = 'https://world.digimoncard.com/images/rule/token';
         const digimoncardjpURL = 'https://digimoncard.com/images/cardlist/card';
         const digimonCardDev = 'https://assets.cardlist.dev/images/communitycards';
         const digimonFandom = 'https://static.wikia.nocookie.net/digimoncardgame/images';
@@ -79,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             var cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
         } else if (url.includes('digimoncardjpURL')) {
             var cardUrl = url.replace('digimoncardjpURL', digimoncardjpURL);
+        } else if (url.includes('digimoncardTokenURL')) {
+            var cardUrl = url.replace('digimoncardTokenURL', digimoncardTokenURL);
         } else if (url.includes('digimoncardURL')) {
             var cardUrl = url.replace('digimoncardURL', digimoncardURL);
         } else if (url.includes('digimonCardDev')) {
@@ -151,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     }
 
                     // TODO: añadir cardRarity
-                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, undefined, getCardBlock(cardNumber, block));
+                    cardRow.getElementsByClassName('card_list')[0].insertAdjacentHTML('beforeend', getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, undefined, getCardBlock(cardNumber, block)));
                 }
             });
         } else {
@@ -188,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                                 cardUrl = getImageUrl(setElement.override.url, setId, cardId, parallelElement);
                             }
 
-                            cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, slug, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought, cardRarity, getCardBlock(cardNumber, block));
+                            cardRow.getElementsByClassName('card_list')[0].insertAdjacentHTML('beforeend', getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, slug, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought, cardRarity, getCardBlock(cardNumber, block)));
                         });
                     } else {
                         // 5. si no existe la carta, la añadimos al set
@@ -203,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             cardUrl = getImageUrl(setElement.override.url, setId, cardId, overrideParallel);
                         }
                         
-                        cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardRarity, getCardBlock(cardNumber, block));
+                        cardRow.getElementsByClassName('card_list')[0].insertAdjacentHTML('beforeend', getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardRarity, getCardBlock(cardNumber, block)));
                     }
 
                     const cardBlock = getCardBlock(cardNumber, block);
@@ -329,9 +332,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 const cardId = String(index).padStart(setElement.add_zero, '0');
                 const row = tBody.insertRow(index - 1);
                 const cardNumber = `${setElement.id}-${cardId}`;
-                const cardRarity = rarities[index] ?? rarities;
+                const cardColor = Array.isArray(colors) ? (colors[index] ?? null) : colors;
+                const cardRarity = Array.isArray(rarities) ? (rarities[index] ?? '?') : rarities;
                 row.id = cardNumber;
-                row.insertCell(0).innerHTML = `<div class="card_info__id">${cardId}</div><div class="card_info__rarity"><span>${cardRarity}</span></div>`;
+                row.insertCell(0).innerHTML = `<div class="card_info__id">${cardId}</div><div class="card_info__rarity">${rarityBadge(cardRarity, cardColor)}</div>`;
 
                 // 3. obtener cantidad de cartas de este id
                 if (collection[setElement.id][cardId] === undefined) {
@@ -414,4 +418,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
         document.querySelector(`button[value="${setId}"]`)?.classList.add('active');
     }
     updateFilterCount();
+    restoreFiltersFromSession();
+
+    // Cargar tokens custom desde manifest local (solo visual, sin localStorage)
+    fetch('sources/tokens/manifest.json')
+        .then(r => r.ok ? r.json() : Promise.reject())
+        .then(manifest => {
+            if (!manifest.length) return;
+            const hidden = !document.getElementById('showCustomTokens').checked;
+            manifest.forEach(token => {
+                const row = document.getElementById(token.id);
+                if (!row) return;
+                const cardList = row.getElementsByClassName('card_list')[0];
+                const imgs = token.files.map(file =>
+                    `<img loading="lazy" class="card custom-token${hidden ? ' custom-token--hidden' : ''}" src="sources/tokens/${token.id}/${file}" title="${token.id}: Custom token" alt="${token.id}: Custom token" data-set="t_custom" onclick="viewCustomToken(this)" onerror="this.onerror=null;this.src='/sources/error_card.png';">`
+                ).join('');
+                cardList.insertAdjacentHTML('beforeend', imgs);
+            });
+            document.getElementById('showCustomTokens').disabled = false;
+        })
+        .catch(() => {
+            document.getElementById('showCustomTokens').disabled = true;
+        });
 });
