@@ -418,6 +418,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         document.querySelector(`button[value="${setId}"]`)?.classList.add('active');
     }
     updateFilterCount();
+    restoreFiltersFromSession();
 
     // Cargar tokens custom desde manifest local (solo visual, sin localStorage)
     fetch('sources/tokens/manifest.json')

@@ -10,6 +10,7 @@ const list = () => {
 
     setLists.classList.remove('view--table', 'view--grid');
     setLists.classList.add('view--' + list);
+    saveFiltersToSession();
 };
 
 const show = () => {
@@ -19,6 +20,7 @@ const show = () => {
     setLists.classList.remove('view--collection', 'view--all');
     setLists.classList.add('view--' + show);
     updateFilterCount();
+    saveFiltersToSession();
 }
 
 const downloadJson = (data) => {
