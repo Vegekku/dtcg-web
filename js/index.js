@@ -432,7 +432,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 const imgs = token.files.map(file =>
                     `<img loading="lazy" class="card custom-token${hidden ? ' custom-token--hidden' : ''}" src="sources/tokens/${token.id}/${file}" title="${token.id}: Custom token" alt="${token.id}: Custom token" data-set="t_custom" onclick="viewCustomToken(this)" onerror="this.onerror=null;this.src='/sources/error_card.png';">`
                 ).join('');
-                cardList.innerHTML += imgs;
+                cardList.insertAdjacentHTML('beforeend', imgs);
             });
             document.getElementById('showCustomTokens').disabled = false;
         })
