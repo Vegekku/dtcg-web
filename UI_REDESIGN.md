@@ -7,8 +7,8 @@ Propuestas ordenadas de menor a mayor esfuerzo. Cada nivel se puede implementar 
 | Prioridad | Propuestas | Motivo |
 |-----------|-----------|--------|
 | 🔴 Alta | [2.1](#prop-21), [2.2](#prop-22), [2.3](#prop-23), [2.7](#prop-27), [2.8](#prop-28) | Resuelven directamente los pain points: búsqueda flexible, filtros combinables, edición multi-set, cantidad compacta en visualización, filtro sin playset real |
-| 🟠 Media | [1.1](#prop-11)–[1.5](#prop-15), [2.4](#prop-24), [2.6](#prop-26), [3.2](#prop-32), [3.3](#prop-33), [3.6](#prop-36) | Mejoran la percepción visual, velocidad de edición y cantidad en grid |
-| 🟡 Baja | [2.5](#prop-25), [2.9](#prop-29), [3.1](#prop-31), [3.4](#prop-34)–[3.5](#prop-35), [4.x](#nivel-4-redise%C3%B1o-de-layout-completo) | Mejoras de calidad de vida y rediseño mayor, para cuando las prioridades altas estén resueltas |
+| 🟠 Media | [1.1](#prop-11), [1.3](#prop-13), [1.4](#prop-14), [2.6](#prop-26), [3.2](#prop-32), [3.3](#prop-33), [3.6](#prop-36) | Mejoran la percepción visual, velocidad de edición y cantidad en grid |
+| 🟡 Baja | [2.9](#prop-29), [3.1](#prop-31), [3.4](#prop-34)–[3.5](#prop-35), [4.x](#nivel-4-redise%C3%B1o-de-layout-completo) | Mejoras de calidad de vida y rediseño mayor, para cuando las prioridades altas estén resueltas |
 
 ---
 
@@ -35,14 +35,6 @@ La fuente actual (Arial/Helvetica) y la falta de espaciado entre secciones contr
 - Añadir `gap`/`margin` consistente entre la barra de acordeones, los filtros y el contenido.
 - Aumentar ligeramente el `padding` de los botones de set y los filtros.
 
-<a id="prop-12"></a>
-
-### 1.2 Suavizar bordes y sombras <sup>[↑](#prioridad-sugerida)</sup>
-
-- Los bordes de la tabla son `1px solid black`. Cambiar a un gris suave (`#e0e0e0`) y añadir `border-radius` sutil a la tabla.
-- Añadir una sombra ligera (`box-shadow`) al contenedor de contenido para dar profundidad.
-- Los botones de acordeón no tienen fondo visible en estado inactivo. Darles un fondo sutil (`#f5f5f5`) para que se perciban como elementos interactivos.
-
 <a id="prop-13"></a>
 
 ### 1.3 Paleta de colores más cohesiva <sup>[↑](#prioridad-sugerida)</sup>
@@ -62,15 +54,6 @@ Actualmente son botones planos sin mucha identidad. Mejoras rápidas:
 - Fondo con el color predominante del set (o un gradiente sutil).
 - Indicar visualmente cuál está activo (no solo con la clase CSS, sino con un estilo más marcado: borde inferior, fondo más oscuro).
 - Tooltip más informativo: además del nombre, mostrar "BT21 — 45/102" (progreso).
-
-<a id="prop-15"></a>
-
-### 1.5 Hover y transiciones en las cartas <sup>[↑](#prioridad-sugerida)</sup>
-
-Las miniaturas de cartas no tienen feedback visual al pasar el ratón. Añadir:
-
-- `transform: scale(1.05)` con `transition` al hacer hover.
-- `cursor: pointer` (ya lo tiene) + un ligero `box-shadow` al hover.
 
 ---
 
@@ -112,30 +95,6 @@ Cuando compras cartas de varios sets, actualmente tienes que navegar entre sets 
 
 - **Barra de búsqueda rápida de carta**: Un input donde escribes "BT21-029" y te abre directamente el modal de esa carta, sin necesidad de navegar al set.
 - **Modo "edición rápida"**: Al activar edición, mostrar un input de búsqueda prominente arriba que permita saltar entre cartas de cualquier set.
-
-<a id="prop-24"></a>
-
-### 2.4 Contador de resultados en filtros <sup>[↑](#prioridad-sugerida)</sup>
-
-Cuando aplicas filtros, no sabes cuántas cartas coinciden. Mostrar un contador:
-
-```
-Filtros: Estado[Comprada] Color[Rojo] → 23 cartas encontradas
-```
-
-Relacionado: ocultar automáticamente las tablas de sets que no tengan resultados tras aplicar filtros, para no mostrar tablas vacías.
-
-<a id="prop-25"></a>
-
-### 2.5 Persistir filtros y vista en la URL <sup>[↑](#prioridad-sugerida)</sup>
-
-Actualmente solo el set activo se guarda en el hash de la URL. Guardar también los filtros activos y el tipo de vista como query params:
-
-```
-#BT21?status=bought_it&color=red&view=grid
-```
-
-Esto permite compartir enlaces con filtros aplicados y que al recargar la página se mantengan.
 
 <a id="prop-26"></a>
 

@@ -4,9 +4,9 @@
 
 | Prioridad | Items |
 |-----------|-------|
-| 🔴 Alta | [1](#item-1), [5](#item-5), [7](#item-7), [19](#item-19), [33](#item-33), [38](#item-38), [64](#item-64) |
-| 🟠 Media | [2](#item-2), [3](#item-3), [4](#item-4), [8](#item-8), [10](#item-10), [12](#item-12), [16](#item-16), [17](#item-17), [18](#item-18), [20](#item-20), [27](#item-27), [29](#item-29), [39](#item-39), [40](#item-40), [68](#item-68), [73](#item-73) |
-| 🟡 Baja | [6](#item-6), [9](#item-9), [11](#item-11), [13](#item-13), [14](#item-14), [15](#item-15), [21](#item-21)–[26](#item-26), [28](#item-28), [30](#item-30)–[32](#item-32), [34](#item-34)–[37](#item-37), [41](#item-41)–[67](#item-67), [69](#item-69)–[72](#item-72), [74](#item-74), [75](#item-75) |
+| 🔴 Alta | [1](#item-1), [7](#item-7), [19](#item-19), [33](#item-33), [38](#item-38) |
+| 🟠 Media | [2](#item-2), [3](#item-3), [4](#item-4), [8](#item-8), [10](#item-10), [16](#item-16), [17](#item-17), [18](#item-18), [20](#item-20), [27](#item-27), [29](#item-29), [39](#item-39), [40](#item-40), [68](#item-68), [73](#item-73) |
+| 🟡 Baja | [6](#item-6), [9](#item-9), [11](#item-11), [13](#item-13), [14](#item-14), [15](#item-15), [21](#item-21)–[26](#item-26), [28](#item-28), [30](#item-30)–[32](#item-32), [34](#item-34)–[37](#item-37), [41](#item-41)–[67](#item-67), [69](#item-69)–[72](#item-72) |
 
 ---
 
@@ -97,12 +97,6 @@ const updateCardmarketPrice = (target, price) => {
 };
 ```
 
-<a id="item-5"></a>
-
-### 5. Eliminar `innerHTML +=` para inyectar imágenes <sup>[↑](#prioridad-sugerida)</sup>
-
-Cada vez que se hace `innerHTML +=` en `card_list`, el navegador re-parsea todo el HTML existente de esa celda, destruyendo event listeners y forzando re-renders innecesarios. Usar `insertAdjacentHTML('beforeend', ...)` o crear elementos con `document.createElement`.
-
 <a id="item-6"></a>
 
 ### 6. Eliminar `onclick` inline en HTML <sup>[↑](#prioridad-sugerida)</sup>
@@ -184,32 +178,6 @@ Actualmente se cargan 10+ scripts con `<script>` globales. Usar `type="module"` 
 
 - `collection.js` — Solo gestiona el estado (CRUD sobre localStorage).
 - `renderer.js` — Solo dibuja el DOM a partir del estado.
-
-<a id="item-12"></a>
-
-### 12. Sistema de versiones para migraciones <sup>[↑](#prioridad-sugerida)</sup>
-
-En `updates.js` ya existe el TODO. Implementar un `dataVersion` en localStorage y un array de migraciones secuenciales:
-
-```js
-const CURRENT_VERSION = 5;
-const migrations = [
-    { version: 1, fn: () => { /* LM01 -> LM */ } },
-    { version: 2, fn: () => { /* migrateReprints */ } },
-    // ...
-];
-
-const runMigrations = () => {
-    let version = parseInt(localStorage.getItem('dataVersion') || '0');
-    for (const m of migrations) {
-        if (version < m.version) {
-            m.fn();
-            version = m.version;
-        }
-    }
-    localStorage.setItem('dataVersion', String(CURRENT_VERSION));
-};
-```
 
 <a id="item-13"></a>
 
@@ -596,22 +564,6 @@ Permitir combinar filtros con operadores AND/OR. Por ejemplo: "Cartas que me fal
 
 Al pulsar "Guardar", mostrar un resumen de los cambios realizados: cuántas cartas se marcaron, cuánto se gastó en total en esa sesión.
 
-<a id="item-63"></a>
-
-### 63. Soporte para tokens <sup>[↑](#prioridad-sugerida)</sup>
-
-Algunos sets incluyen tokens (como se indica en los TODOs de `data_2025.js`). Añadir soporte para mostrarlos y trackearlos.
-
-<a id="item-64"></a>
-
-### 64. Caché de imágenes con fallback <sup>[↑](#prioridad-sugerida)</sup>
-
-Si una imagen de carta no carga (404), mostrar un placeholder genérico en lugar de una imagen rota. Actualmente no hay manejo de errores de carga de imágenes.
-
-```js
-img.onerror = () => { img.src = noCardURL; };
-```
-
 <a id="item-65"></a>
 
 ### 65. Listado de sleeves <sup>[↑](#prioridad-sugerida)</sup>
@@ -683,15 +635,4 @@ Actualmente el input de cantidad usa verde (`--four-cards`) para 4 o más copias
 
 
 
-<a id="item-74"></a>
-
-### 74. ~~Soporte de prefijos de set en el mapa de bloques~~ ✅ <sup>[↑](#prioridad-sugerida)</sup>
-
-> **Implementado en PR #38** (`feat/block-ui`). `getCardBlock` extraída a `js/utils.js`.
-
-<a id="item-75"></a>
-
-### 75. ~~`amount` como mapa por bloque~~ ✅ <sup>[↑](#prioridad-sugerida)</sup>
-
-> **Implementado en PR #45** (`feat/amount-by-block`). `amount` es ahora un mapa `{ "0": 2, "1": 3 }`. El campo `reprint` ha sido eliminado. Migración automática via `migrateAmountToBlocks` (versión 1 del esquema).
 

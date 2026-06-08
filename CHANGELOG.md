@@ -6,6 +6,29 @@ Versionado según [Semantic Versioning](https://semver.org/lang/es/).
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-06-08
+
+### Added
+
+- Rarity badge con SVG mask para cartas multicolor (#52)
+- Soporte para tokens: set T con 17 tokens oficiales, custom tokens locales via manifest, checkbox para mostrar/ocultar (#59)
+- Persistir filtros y vista en sessionStorage entre recargas de página (#14)
+- Migraciones v3 (renombrar IDs de token) y v4 (limpiar residuos)
+- Función `parsePrice` helper en `modal.js`
+- Sistema de versiones para migraciones con `DATA_VERSION` y ejecución secuencial (#44)
+- Migración v1: `amount` como mapa por bloque (#37)
+
+### Changed
+
+- Input de precio cambiado a `type="text" inputmode="decimal"` para permitir coma como separador
+- Precios mostrados con coma en el modal de edición
+- `innerHTML +=` reemplazado por `insertAdjacentHTML` en toda la inyección de cartas (rendimiento)
+
+### Fixed
+
+- Separador decimal: normaliza coma → punto antes de parsear y redondea a 2 decimales (#57)
+- `.card-info[hidden]` no se ocultaba por override de `display: flex`
+
 ## [1.5.0] - 2026-06-05
 
 ### Added
@@ -73,7 +96,8 @@ Versionado según [Semantic Versioning](https://semver.org/lang/es/).
 - Soporte de impresión con CSS dedicado
 - Migraciones de datos en localStorage (`updates.js`)
 
-[Unreleased]: https://github.com/Vegekku/dtcg-web/compare/v1.5.0...HEAD
+[Unreleased]: https://github.com/Vegekku/dtcg-web/compare/v1.6.0...HEAD
+[1.6.0]: https://github.com/Vegekku/dtcg-web/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/Vegekku/dtcg-web/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/Vegekku/dtcg-web/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/Vegekku/dtcg-web/compare/v1.2.0...v1.3.0
