@@ -88,10 +88,12 @@ const modalClose = (element) => {
     modal.classList.remove('open');
 };
 
+const parsePrice = (value) => Math.round(parseFloat((value || '0').replace(',', '.')) * 100) / 100;
+
 const modalOk = () => {
     const editModal = document.getElementById('editModal');
     const status = parseInt(document.querySelector('input[name="status"]:checked').value);
-    const price = Math.round(parseFloat((document.getElementById('price').value || '0').replace(',', '.')) * 100) / 100;
+    const price = parsePrice(document.getElementById('price').value);
     const cardId = document.getElementById('cardId').value;
 
     if ( 'card' === typeEdit ) {
@@ -111,7 +113,7 @@ const modalOk = () => {
     document.getElementById(cardId).setAttribute('data-bought', status > 1 ? price : 0);
 
     const cardmarketUrl = document.getElementById('cardmarketUrl').value || '';
-    const cardmarketPrice = Math.round(parseFloat((document.getElementById('cardmarketPrice').value || '0').replace(',', '.')) * 100) / 100;
+    const cardmarketPrice = parsePrice(document.getElementById('cardmarketPrice').value);
 
     if ( cardmarketUrl !== '' || cardmarketPrice !== 0 ) {
         if ( cardmarketUrl !== '' ) {
