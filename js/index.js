@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     }
 
                     // TODO: añadir cardRarity
-                    cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, undefined, getCardBlock(cardNumber, block));
+                    cardRow.getElementsByClassName('card_list')[0].insertAdjacentHTML('beforeend', getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, undefined, getCardBlock(cardNumber, block)));
                 }
             });
         } else {
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                                 cardUrl = getImageUrl(setElement.override.url, setId, cardId, parallelElement);
                             }
 
-                            cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, slug, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought, cardRarity, getCardBlock(cardNumber, block));
+                            cardRow.getElementsByClassName('card_list')[0].insertAdjacentHTML('beforeend', getImageTag(cardUrl, name, `${cardNumber}__${slug}_${index}`, slug, collection[setId][cardId].cards[parallel_slug].status, collection[setId][cardId].cards[parallel_slug].bought, cardRarity, getCardBlock(cardNumber, block)));
                         });
                     } else {
                         // 5. si no existe la carta, la añadimos al set
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             cardUrl = getImageUrl(setElement.override.url, setId, cardId, overrideParallel);
                         }
                         
-                        cardRow.getElementsByClassName('card_list')[0].innerHTML += getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardRarity, getCardBlock(cardNumber, block));
+                        cardRow.getElementsByClassName('card_list')[0].insertAdjacentHTML('beforeend', getImageTag(cardUrl, name, `${cardNumber}__${slug}`, slug, collection[setId][cardId].cards[slug].status, collection[setId][cardId].cards[slug].bought, cardRarity, getCardBlock(cardNumber, block)));
                     }
 
                     const cardBlock = getCardBlock(cardNumber, block);
@@ -432,7 +432,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 const imgs = token.files.map(file =>
                     `<img loading="lazy" class="card custom-token${hidden ? ' custom-token--hidden' : ''}" src="sources/tokens/${token.id}/${file}" title="${token.id}: Custom token" alt="${token.id}: Custom token" data-set="t_custom" onclick="viewCustomToken(this)" onerror="this.onerror=null;this.src='/sources/error_card.png';">`
                 ).join('');
-                cardList.innerHTML += imgs;
+                cardList.insertAdjacentHTML('beforeend', imgs);
             });
             document.getElementById('showCustomTokens').disabled = false;
         })
