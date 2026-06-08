@@ -1,3 +1,9 @@
+const toggleCustomTokens = (checkbox) => {
+    document.querySelectorAll('img.custom-token').forEach(img => {
+        img.classList.toggle('custom-token--hidden', !checkbox.checked);
+    });
+};
+
 const list = () => {
     const list = document.getElementById('list').value;
     const setLists = document.getElementById('setLists');

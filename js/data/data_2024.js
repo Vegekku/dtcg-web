@@ -226,14 +226,14 @@ const data2024 = [
         "release": "February, 2024",
         "url": "bandaitcgplusURL/PB/e_setID-cardID_PB_D.png",
         "cards": {
-            "BT2-082": "",
+            "BT2-082": "", // TODO: Mover a Tokens como T-02?
             "BT5-085": "",
             "P-114": "",
         },
         "override": {
             "url": "digimonFandom/7/71/BT2-Diaboromon_Token_P2.png",
             "cards": {
-                "BT2-082": "",
+                "BT2-082": "", // TODO: Mover a Tokens como T-02?
             }
         },
         "info_url": "https://world.digimoncard.com/products/goods/tamer-goods-set_PB16.php"

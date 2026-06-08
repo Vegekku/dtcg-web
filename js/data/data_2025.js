@@ -1661,7 +1661,16 @@ const data2025 = [
             "BT22-043": "",
             "BT22-044": "",
             "BT22-054": "",
-            // https://world.digimoncard.com/images/cardlist/card/BT22-TOKEN.png
+            "T-08": "",
+        },
+        "override": {
+            "url": "digimoncardURL/BT22-TOKEN.png",
+            "cards": {
+                "T-08": "",
+            }
+        },
+        "rarities": {
+            "T": "t",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver22/",
     },
@@ -1874,9 +1883,15 @@ const data2025 = [
         "release": "September 1 – October 31, 2025",
         "url": "bandaitcgplusURL/P/e_setID-cardIDEC_D.png",
         "cards": {
-            // TODO: TOKEN
-            // "BT9-109": "",
+            "T-02": "",
         },
+        "override": {
+            "url": "digimoncardURL/TOKEN.png",
+            "cards": {
+                "T-02": "",
+            }
+        },
+        "rarity": "t",
         "info_url": "https://world.digimoncard.com/event/2025/evolution-cup/02/",
     },
     // Evolution Cup 2025 Vol. 2 Top 4 --- evolution_cup_2025_2_top4
@@ -2513,7 +2528,7 @@ const data2025 = [
             "BT23-040": "P_D",
             "BT23-048": "P_D",
             "BT23-061": "P_D",
-            // https://world.digimoncard.com/images/cardlist/card/BT23-TOKEN.png
+            "T-15": "",
             "P-207": "_D",
             "P-208": "_D",
             "P-209": "_D",
@@ -2521,11 +2536,15 @@ const data2025 = [
             "P-211": "_D",
             "P-212": "_D",
         },
+        "override": {
+            "url": "digimoncardURL/BT23-TOKEN.png",
+            "cards": {
+                "T-15": "",
+            }
+        },
         "rarities": {
-            // "BT23": {
-            //     "t": ["token"]
-            // },
-            "P": "p"
+            "P": "p",
+            "T": "t",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ver22/",
     },
@@ -2597,8 +2616,22 @@ const data2025 = [
             "u": [8,9,11],
             "r": [4,7],
             "sr": [2,5,6,10,"12-14"],
-            // TODO: tiene 2 tokens
         }
+    },
+    // Advanced Deck Amethyst Mandala [ST-22] --- st22
+    {
+        "id": null,
+        "block": 5,
+        "slug": "st22",
+        "name": "Advanced Deck Amethyst Mandala [ST-22]",
+        "release": "December 5, 2025",
+        "url": "digimoncardURL/ST22-TOKENparallel.png",
+        "cards": {
+            "T-10": "01",
+            "T-14": "02",
+        },
+        "rarity": "t",
+        "info_url": "https://world.digimoncard.com/products/deck/st-22/",
     },
     // Advanced Deck Amethyst Mandala [ST-22] - Lucky Deck --- st22_lucky
     {

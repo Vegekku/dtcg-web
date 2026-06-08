@@ -709,6 +709,10 @@ button.accordion.active:after {
     transform: scale(1);
   }
 }
+.custom-token--hidden {
+  display: none !important;
+}
+
 .content {
   height: calc(100vh - 175px);
   overflow: scroll;
@@ -953,6 +957,9 @@ td {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.card-info[hidden] {
+  display: none;
 }
 
 #card-status,
