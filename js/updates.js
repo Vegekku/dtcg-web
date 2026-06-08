@@ -1,4 +1,4 @@
-const DATA_VERSION = 3;
+const DATA_VERSION = 4;
 
 const runMigrations = () => {
     const currentVersion = parseInt(localStorage.getItem('dataVersion') || '0');
@@ -8,7 +8,8 @@ const runMigrations = () => {
         { version: 1, fn: migrateAmountToBlocks },
         { version: 2, fn: migrateRemoveWrongPromos },
         { version: 3, fn: migrateTokenIds },
-        // TODO v4: no almacenar cartas con estado por defecto ({ status: 0, bought: 0 }) para reducir tamaño de localStorage (#29)
+        { version: 4, fn: migrateCleanTokenResidual },
+        // TODO: no almacenar cartas con estado por defecto ({ status: 0, bought: 0 }) para reducir tamaño de localStorage (#29)
     ];
 
     migrations
@@ -90,6 +91,14 @@ const migrateTokenIds = () => {
         }
     });
     // Eliminar IDs que ya no existen (T-001..T-006 incorrectos, ahora son T-02,T-08,T-10,T-14,T-15,T-16)
+    const validIds = Array.from({length: 17}, (_, i) => String(i + 1).padStart(2, '0'));
+    Object.keys(collection['T']).forEach(id => {
+        if (!validIds.includes(id)) delete collection['T'][id];
+    });
+};
+
+const migrateCleanTokenResidual = () => {
+    if (!collection['T']) return;
     const validIds = Array.from({length: 17}, (_, i) => String(i + 1).padStart(2, '0'));
     Object.keys(collection['T']).forEach(id => {
         if (!validIds.includes(id)) delete collection['T'][id];
