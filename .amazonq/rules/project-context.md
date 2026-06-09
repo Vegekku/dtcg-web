@@ -131,14 +131,16 @@ Referencia rápida de prefijo → bloque:
 
 Cuando haya un conjunto de features listas para release, seguir el flujo Gitflow:
 
+0. **ANTES de crear la rama de release:** verificar que `develop` tiene el sync de la release anterior (PR de sync mergeada). Si no, sincronizar primero para evitar conflictos con `main`.
 1. Crear rama `release/vX.Y.Z` desde `develop`
 2. Actualizar `CHANGELOG.md` y `version` en `package.json` en esa rama
 3. Pushear la rama
 4. Amazon Q crea PR de `release/vX.Y.Z` → `main` con `Closes #XX` para todos los issues incluidos en el release
-5. El usuario revisa y mergea
-6. Amazon Q crea PR de `release/vX.Y.Z` → `develop`
-7. El usuario revisa y mergea
+5. El usuario revisa y mergea (o Amazon Q si se lo pide)
+6. Amazon Q crea rama `chore/sync-vX.Y.Z` desde `release/vX.Y.Z` y PR → `develop` (squash merge, porque `develop` no permite merge commits)
+7. Mergear la PR de sync
 8. El tag se crea automáticamente via GitHub Action
+9. Limpiar ramas: `release/vX.Y.Z` y `chore/sync-vX.Y.Z`
 
 ## Orden cronológico en archivos de datos
 
