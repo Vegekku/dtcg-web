@@ -146,6 +146,7 @@
   @include card-color("blue", "red", "black", "white", "white");
   @include card-color("blue", "yellow", "black");
   @include card-color("blue", "yellow", "black", "", "black");
+  @include card-color("blue", "red", "", "", "yellow");
   @include card-color("blue", "green");
   @include card-color("blue", "green", "", "", "red");
   @include card-color("blue", "black");
@@ -155,7 +156,10 @@
   // Yellow cards
   @include card-color("yellow", "", "", "black");
   @include card-color("yellow", "red", "white", "black");
+  @include card-color("yellow", "blue", "white", "black", "red");
   @include card-color("yellow", "blue", "white", "black");
+  @include card-color("yellow", "red", "black", "white", "white");
+  @include card-color("yellow", "blue", "black", "white", "green");
   @include card-color("yellow", "green", "white", "black");
   @include card-color("yellow", "black", "white", "black");
   @include card-color("yellow", "black", "white", "black", "blue");
@@ -181,6 +185,8 @@
   @include card-color("black", "red");
   @include card-color("black", "red", "black", "white", "yellow");
   @include card-color("black", "blue");
+  @include card-color("black", "red", "", "", "blue");
+  @include card-color("black", "red", "", "", "purple");
   @include card-color("black", "yellow", "black");
   @include card-color("black", "green");
   @include card-color("black", "purple");
@@ -200,6 +206,7 @@
   // White cards
   @include card-color("white", "", "", "black");
   @include card-color("white", "red", "white", "black");
+  @include card-color("white", "purple", "black", "white", "red");
   @include card-color("white", "green", "black", "white", "blue");
 
   &__rarity {

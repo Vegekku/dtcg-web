@@ -128,6 +128,9 @@ tr:not([data-color]) .card_info__id, tr[data-color=undefined] .card_info__id {
 [data-color=blue-black-yellow] .card_info__id {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+[data-color=blue-yellow-red] .card_info {
+  background: repeating-linear-gradient(to right, var(--blue-card), var(--blue-card) 33.33%, var(--yellow-card) 33.33%, var(--yellow-card) 66.66%, var(--red-card) 66.66%, var(--red-card));
+}
 [data-color=blue-green] .card_info {
   background: linear-gradient(90deg, var(--blue-card) 50%, var(--green-card) 50%);
 }
@@ -161,6 +164,15 @@ tr:not([data-color]) .card_info__id, tr[data-color=undefined] .card_info__id {
 [data-color=yellow-red] .card_info__id {
   color: black;
 }
+[data-color=yellow-red-blue] .card_info {
+  background: repeating-linear-gradient(to right, var(--yellow-card), var(--yellow-card) 33.33%, var(--red-card) 33.33%, var(--red-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card));
+}
+[data-color=yellow-red-blue] .card_info__id {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+[data-color=yellow-red-blue] .card_info__id {
+  color: black;
+}
 [data-color=yellow-blue] .card_info {
   background: linear-gradient(90deg, var(--yellow-card) 50%, var(--blue-card) 50%);
 }
@@ -169,6 +181,24 @@ tr:not([data-color]) .card_info__id, tr[data-color=undefined] .card_info__id {
 }
 [data-color=yellow-blue] .card_info__id {
   color: black;
+}
+[data-color=yellow-white-red] .card_info {
+  background: repeating-linear-gradient(to right, var(--yellow-card), var(--yellow-card) 33.33%, var(--white-card) 33.33%, var(--white-card) 66.66%, var(--red-card) 66.66%, var(--red-card));
+}
+[data-color=yellow-white-red] .card_info__id {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+[data-color=yellow-white-red] .card_info__id {
+  color: white;
+}
+[data-color=yellow-green-blue] .card_info {
+  background: repeating-linear-gradient(to right, var(--yellow-card), var(--yellow-card) 33.33%, var(--green-card) 33.33%, var(--green-card) 66.66%, var(--blue-card) 66.66%, var(--blue-card));
+}
+[data-color=yellow-green-blue] .card_info__id {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+[data-color=yellow-green-blue] .card_info__id {
+  color: white;
 }
 [data-color=yellow-green] .card_info {
   background: linear-gradient(90deg, var(--yellow-card) 50%, var(--green-card) 50%);
@@ -293,6 +323,12 @@ tr:not([data-color]) .card_info__id, tr[data-color=undefined] .card_info__id {
 [data-color=black-blue] .card_info {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--blue-card) 50%);
 }
+[data-color=black-blue-red] .card_info {
+  background: repeating-linear-gradient(to right, var(--black-card), var(--black-card) 33.33%, var(--blue-card) 33.33%, var(--blue-card) 66.66%, var(--red-card) 66.66%, var(--red-card));
+}
+[data-color=black-purple-red] .card_info {
+  background: repeating-linear-gradient(to right, var(--black-card), var(--black-card) 33.33%, var(--purple-card) 33.33%, var(--purple-card) 66.66%, var(--red-card) 66.66%, var(--red-card));
+}
 [data-color=black-yellow] .card_info {
   background: linear-gradient(90deg, var(--black-card) 50%, var(--yellow-card) 50%);
 }
@@ -358,6 +394,15 @@ tr:not([data-color]) .card_info__id, tr[data-color=undefined] .card_info__id {
 }
 [data-color=white-red] .card_info__id {
   color: black;
+}
+[data-color=white-red-purple] .card_info {
+  background: repeating-linear-gradient(to right, var(--white-card), var(--white-card) 33.33%, var(--red-card) 33.33%, var(--red-card) 66.66%, var(--purple-card) 66.66%, var(--purple-card));
+}
+[data-color=white-red-purple] .card_info__id {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+[data-color=white-red-purple] .card_info__id {
+  color: white;
 }
 [data-color=white-blue-green] .card_info {
   background: repeating-linear-gradient(to right, var(--white-card), var(--white-card) 33.33%, var(--blue-card) 33.33%, var(--blue-card) 66.66%, var(--green-card) 66.66%, var(--green-card));
