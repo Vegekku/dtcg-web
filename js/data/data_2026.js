@@ -1942,7 +1942,9 @@ const data2026 = [
         "slug": "regional2627_2_0",
         "name": "Regionals 26-27 Season 2 Participation Card Set",
         "release": "August 15-16, 2026",
-        "url": "bandaitcgplusURL/P/e_setID-cardID_parti_D.png",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/P/e_setID-cardID_parti_D.png",
+        // TODO: sleeve: "",
         "cards": {
             "BT25-039": "",
             "BT25-082": "",
@@ -1963,8 +1965,8 @@ const data2026 = [
         "slug": "regional2627_2_1",
         "name": "Regionals 26-27 Season 2 Finalist Card Set",
         "release": "August 15-16, 2026",
-        "url": "bandaitcgplusURL/P/e_setID-cardID_fina_D.png",
-        // TODO: sleeve: "",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/P/e_setID-cardID_fina_D.png",
         "cards": {
             "BT25-039": "",
             "BT25-082": "",
@@ -1985,8 +1987,8 @@ const data2026 = [
         "slug": "regional2627_2_2",
         "name": "Regionals 26-27 Season 2 Champion Card Set",
         "release": "August 15-16, 2026",
-        "url": "bandaitcgplusURL/P/e_setID-cardID_camp_D.png",
-        // TODO: playmat: "",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/P/e_setID-cardID_camp_D.png",
         "cards": {
             "BT25-039": "",
             "BT25-082": "",
@@ -2004,7 +2006,8 @@ const data2026 = [
         "slug": "regional2627_2_promo_participant",
         "name": "Regionals 26-27 Season 2 Promotion Card Participant",
         "release": "August 15-16, 2026",
-        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "ST21-01": "",
         },
@@ -2017,7 +2020,8 @@ const data2026 = [
         "slug": "regional2627_2_promo_top64",
         "name": "Regionals 26-27 Season 2 Promotion Card Top 64",
         "release": "August 15-16, 2026",
-        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "ST21-10": "",
         },
@@ -2030,7 +2034,8 @@ const data2026 = [
         "slug": "regional2627_2_promo_top16",
         "name": "Regionals 26-27 Season 2 Promotion Card Top 16",
         "release": "August 15-16, 2026",
-        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "AD1-010": "",
         },
@@ -2043,9 +2048,33 @@ const data2026 = [
         "slug": "regional2627_2_promo_top2",
         "name": "Regionals 26-27 Season 2 Promotion Card Top 2",
         "release": "August 15-16, 2026",
-        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "BT21-078": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+    // Event Pack 10 --- eventpack10
+    {
+        "id": null,
+        "block": {
+            "2": ["EX4"],
+            "4": ["BT19"],
+            "5": ["BT24"],
+            "6": ["BT25"]
+        },
+        "slug": "eventpack10",
+        "name": "Event Pack 10",
+        "release": "August 15-16, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT19-070": "",
+            "BT24-011": "",
+            "BT24-059": "",
+            "BT25-041": "",
+            "BT25-053": "",
+            "EX4-019": "",
         },
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
     },
