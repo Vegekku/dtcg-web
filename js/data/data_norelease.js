@@ -127,16 +127,16 @@ const dataNoRelease = [
         "id": "T",
         "name": "Tokens",
         "release": null,
-        "total": 17,
+        "total": 19,
         "slug": "t",
         "url": "digimoncardTokenURL/token_cardID.webp",
         "add_zero": 2,
         "info_url": "https://world.digimoncard.com/rule/#download",
         "color": {
             "red": [3,11],
-            "yellow": [4,8,10,12,14],
+            "yellow": [4,8,10,12,14,19],
             "green": [13],
-            "black": [7],
+            "black": [7,18],
             "purple": [5,6,9],
             "white": [1,2,"15-17"]
         },
@@ -157,6 +157,8 @@ const dataNoRelease = [
         // T-15: Atho, René & Por
         // T-16: Petrification
         // T-17: Hinukamuy
+        // T-18: Kotenken
+        // T-19: Paishu
         "rarity": "t"
     },
 ];
