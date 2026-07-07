@@ -1212,12 +1212,12 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
-    // Regionals 26-27 Promotion Card Participant: Koromon --- regional2627_1_promo_participant
+    // Regionals 26-27 Season 1 Promotion Card Participant --- regional2627_1_promo_participant
     {
         "id": null,
         "block": 5,
         "slug": "regional2627_1_promo_participant",
-        "name": "Regionals 26-27 Promotion Card Participant: Koromon",
+        "name": "Regionals 26-27 Season 1 Promotion Card Participant",
         "release": "March 28-29, 2026",
         "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
@@ -1225,12 +1225,12 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
-    // Regionals 26-27 Promotion Card Top 64: Agumon --- regional2627_1_promo_top64
+    // Regionals 26-27 Season 1 Promotion Card Top 64 --- regional2627_1_promo_top64
     {
         "id": null,
         "block": 5,
         "slug": "regional2627_1_promo_top64",
-        "name": "Regionals 26-27 Promotion Card Top 64: Agumon",
+        "name": "Regionals 26-27 Season 1 Promotion Card Top 64",
         "release": "March 28-29, 2026",
         "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
@@ -1238,12 +1238,12 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
-    // Regionals 26-27 Promotion Card Top 16: Greymon --- regional2627_1_promo_top16
+    // Regionals 26-27 Season 1 Promotion Card Top 16 --- regional2627_1_promo_top16
     {
         "id": null,
         "block": 5,
         "slug": "regional2627_1_promo_top16",
-        "name": "Regionals 26-27 Promotion Card Top 16: Greymon",
+        "name": "Regionals 26-27 Season 1 Promotion Card Top 16",
         "release": "March 28-29, 2026",
         "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
@@ -1251,12 +1251,12 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
-    // Regionals 26-27 Promotion Card Top 2: MetalGreymon --- regional2627_1_promo_top2
+    // Regionals 26-27 Season 1 Promotion Card Top 2 --- regional2627_1_promo_top2
     {
         "id": null,
         "block": 5,
         "slug": "regional2627_1_promo_top2",
-        "name": "Regionals 26-27 Promotion Card Top 2: MetalGreymon",
+        "name": "Regionals 26-27 Season 1 Promotion Card Top 2",
         "release": "March 28-29, 2026",
         "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
@@ -1929,6 +1929,125 @@ const data2026 = [
             "EX8-029": "",
         },
         "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
+    },
+
+// August 15-16, 2026
+    // Regionals 26-27 Season 2 Participation Card Set --- regional2627_2_0
+    {
+        "id": null,
+        "block": {
+            "5": ["AD1","BT21"],
+            "6": ["BT25","EX11","EX12","ST23"]
+        },
+        "slug": "regional2627_2_0",
+        "name": "Regionals 26-27 Season 2 Participation Card Set",
+        "release": "August 15-16, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_parti_D.png",
+        "cards": {
+            "BT25-039": "",
+            "BT25-082": "",
+            "EX11-027": "",
+            "EX12-013": "",
+            "AD1-011": "",
+            "ST23-07": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+    // Regionals 26-27 Season 2 Finalist Card Set --- regional2627_2_1
+    {
+        "id": null,
+        "block": {
+            "5": ["AD1","BT21"],
+            "6": ["BT25","EX11","EX12","ST23"]
+        },
+        "slug": "regional2627_2_1",
+        "name": "Regionals 26-27 Season 2 Finalist Card Set",
+        "release": "August 15-16, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_fina_D.png",
+        // TODO: sleeve: "",
+        "cards": {
+            "BT25-039": "",
+            "BT25-082": "",
+            "EX11-027": "",
+            "EX12-013": "",
+            "AD1-011": "",
+            "ST23-07": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+    // Regionals 26-27 Season 2 Champion Card Set --- regional2627_2_2
+    {
+        "id": null,
+        "block": {
+            "5": ["AD1","BT21"],
+            "6": ["BT25","EX11","EX12","ST23"]
+        },
+        "slug": "regional2627_2_2",
+        "name": "Regionals 26-27 Season 2 Champion Card Set",
+        "release": "August 15-16, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_camp_D.png",
+        // TODO: playmat: "",
+        "cards": {
+            "BT25-039": "",
+            "BT25-082": "",
+            "EX11-027": "",
+            "EX12-013": "",
+            "AD1-011": "",
+            "ST23-07": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+    // Regionals 26-27 Season 2 Promotion Card Participant --- regional2627_2_promo_participant
+    {
+        "id": null,
+        "block": 5,
+        "slug": "regional2627_2_promo_participant",
+        "name": "Regionals 26-27 Season 2 Promotion Card Participant",
+        "release": "August 15-16, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "ST21-01": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+    // Regionals 26-27 Season 2 Promotion Card Top 64 --- regional2627_2_promo_top64
+    {
+        "id": null,
+        "block": 5,
+        "slug": "regional2627_2_promo_top64",
+        "name": "Regionals 26-27 Season 2 Promotion Card Top 64",
+        "release": "August 15-16, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "ST21-10": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+    // Regionals 26-27 Season 2 Promotion Card Top 16 --- regional2627_2_promo_top16
+    {
+        "id": null,
+        "block": 5,
+        "slug": "regional2627_2_promo_top16",
+        "name": "Regionals 26-27 Season 2 Promotion Card Top 16",
+        "release": "August 15-16, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "AD1-010": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+    // Regionals 26-27 Season 2 Promotion Card Top 2 --- regional2627_2_promo_top2
+    {
+        "id": null,
+        "block": 5,
+        "slug": "regional2627_2_promo_top2",
+        "name": "Regionals 26-27 Season 2 Promotion Card Top 2",
+        "release": "August 15-16, 2026",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "BT21-078": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
     },
 
 // November 2026
