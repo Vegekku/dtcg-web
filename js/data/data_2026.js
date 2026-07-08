@@ -2291,4 +2291,73 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/products/goods/limited-lm-09.php"
     },
+
+// December 4-10, 2026
+    // Booster Ignition of X [BT-27] - Release Event --- bt27_prerelease
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt27_prerelease",
+        "name": "Booster Ignition of X [BT-27] - Release Event",
+        "release": "December 4-10, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT27/e_setID-cardIDparallel_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver27/"
+    },
+
+// December 11, 2026
+    // Booster Ignition of X [BT-27] --- bt27
+    {
+        "id": "BT27",
+        "block": 6,
+        "slug": "bt27",
+        "name": "Booster Ignition of X [BT-27]",
+        "release": "December 11, 2026",
+        "total": 104,
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT27/e_setID-cardID_D.png",
+        "add_zero": 3,
+        "playmat": "",
+        "color": {},
+        "rarity": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver27/"
+    },
+    // Booster Ignition of X [BT-27] - Alternatives --- bt27_alts
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt27_alts",
+        "name": "Booster Ignition of X [BT-27] - Alternatives",
+        "release": "December 11, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT27/e_setID-cardIDparallel_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver27/"
+    },
+    // Booster Ignition of X [BT-27] - Special Cards --- bt27_special
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt27_special",
+        "name": "Booster Ignition of X [BT-27] - Special Cards",
+        "release": "December 11, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT27/e_setID-cardIDSP_D.png",
+        "cards": {},
+        "rarity": "sp",
+        "info_url": "https://world.digimoncard.com/products/pack/ver27/"
+    },
+    // Booster Ignition of X [BT-27] - Box Promotion Pack --- bt27_boxtopper
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt27_boxtopper",
+        "name": "Booster Ignition of X [BT-27] - Box Promotion Pack",
+        "release": "December 11, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT27/e_setID-cardIDP_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver27/"
+    },
 ];
