@@ -69,12 +69,13 @@ const rarityBadge = (() => {
             const gradId = `cl-grad-${uid}`;
             let stops;
             if (color.length === 3) {
+                const [p1, p2] = vbWidth === 33 ? [26, 71] : [18, 83];
                 stops = [
                     `<stop offset="0%" stop-color="${color[0]}"/>`,
-                    `<stop offset="18%" stop-color="${color[0]}"/>`,
-                    `<stop offset="18%" stop-color="${color[1]}"/>`,
-                    `<stop offset="83%" stop-color="${color[1]}"/>`,
-                    `<stop offset="83%" stop-color="${color[2]}"/>`,
+                    `<stop offset="${p1}%" stop-color="${color[0]}"/>`,
+                    `<stop offset="${p1}%" stop-color="${color[1]}"/>`,
+                    `<stop offset="${p2}%" stop-color="${color[1]}"/>`,
+                    `<stop offset="${p2}%" stop-color="${color[2]}"/>`,
                     `<stop offset="100%" stop-color="${color[2]}"/>`,
                 ].join('');
             } else {

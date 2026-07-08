@@ -54,23 +54,29 @@
 <body>
 <script>
   const rarezas = ['c','u','r','sr','ur','sec','p','sp','aa','t','?'];
-  const colores = [
-    'red','blue','yellow','green','black','purple','white',
+  const colores1 = [
+    'red','blue','yellow','green','black','purple','white'
+  ];
+  const colores2 = [
     'red-blue','red-yellow','red-green','red-black','red-purple','red-white',
     'blue-yellow','blue-green','blue-black','blue-purple','blue-white',
     'yellow-red','yellow-blue','yellow-green','yellow-black','yellow-purple','yellow-white',
     'green-red','green-blue','green-yellow','green-black','green-purple','green-white',
     'black-red','black-blue','black-yellow','black-green','black-purple','black-white',
-    'purple-red','purple-blue','purple-yellow','purple-green','purple-black','purple-white',
-    'red-blue-green','red-blue-black','red-blue-purple','red-blue-white','blue-white-red',
-    'red-yellow-green','red-yellow-black','red-purple-black','black-yellow-purple'
+    'purple-red','purple-blue','purple-yellow','purple-green','purple-black','purple-white'
+  ];
+  const colores3 = [
+    'red-blue-green','red-blue-black','red-blue-purple','red-blue-white',
+    'red-yellow-green','red-yellow-black','red-purple-black',
+    'blue-white-red','blue-yellow-red',
+    'yellow-red-blue','yellow-green-blue','yellow-white-red',
+    'black-yellow-purple','black-blue-red','black-purple-red',
+    'white-red-purple'
   ];
 
-  rarezas.forEach(r => {
-    const h2 = document.createElement('h2');
-    h2.textContent = `Rareza: ${r.toUpperCase()}`;
-    document.body.appendChild(h2);
-
+  const renderGroup = (r, colores) => {
+    const row = document.createElement('div');
+    row.style.cssText = 'display:flex;flex-wrap:wrap;gap:12px;width:100%';
     colores.forEach(color => {
       const item = document.createElement('div');
       item.className = 'item';
@@ -86,8 +92,18 @@
         </table>
         <span>${color}</span>
       `;
-      document.body.appendChild(item);
+      row.appendChild(item);
     });
+    document.body.appendChild(row);
+  };
+
+  rarezas.forEach(r => {
+    const h2 = document.createElement('h2');
+    h2.textContent = `Rareza: ${r.toUpperCase()}`;
+    document.body.appendChild(h2);
+    renderGroup(r, colores1);
+    renderGroup(r, colores2);
+    renderGroup(r, colores3);
   });
 </script>
 </body>

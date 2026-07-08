@@ -1212,12 +1212,12 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
-    // Regionals 26-27 Promotion Card Participant: Koromon --- regional2627_1_promo_participant
+    // Regionals 26-27 Season 1 Promotion Card Participant --- regional2627_1_promo_participant
     {
         "id": null,
         "block": 5,
         "slug": "regional2627_1_promo_participant",
-        "name": "Regionals 26-27 Promotion Card Participant: Koromon",
+        "name": "Regionals 26-27 Season 1 Promotion Card Participant",
         "release": "March 28-29, 2026",
         "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
@@ -1225,12 +1225,12 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
-    // Regionals 26-27 Promotion Card Top 64: Agumon --- regional2627_1_promo_top64
+    // Regionals 26-27 Season 1 Promotion Card Top 64 --- regional2627_1_promo_top64
     {
         "id": null,
         "block": 5,
         "slug": "regional2627_1_promo_top64",
-        "name": "Regionals 26-27 Promotion Card Top 64: Agumon",
+        "name": "Regionals 26-27 Season 1 Promotion Card Top 64",
         "release": "March 28-29, 2026",
         "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
@@ -1238,12 +1238,12 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
-    // Regionals 26-27 Promotion Card Top 16: Greymon --- regional2627_1_promo_top16
+    // Regionals 26-27 Season 1 Promotion Card Top 16 --- regional2627_1_promo_top16
     {
         "id": null,
         "block": 5,
         "slug": "regional2627_1_promo_top16",
-        "name": "Regionals 26-27 Promotion Card Top 16: Greymon",
+        "name": "Regionals 26-27 Season 1 Promotion Card Top 16",
         "release": "March 28-29, 2026",
         "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
@@ -1251,12 +1251,12 @@ const data2026 = [
         },
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season1/"
     },
-    // Regionals 26-27 Promotion Card Top 2: MetalGreymon --- regional2627_1_promo_top2
+    // Regionals 26-27 Season 1 Promotion Card Top 2 --- regional2627_1_promo_top2
     {
         "id": null,
         "block": 5,
         "slug": "regional2627_1_promo_top2",
-        "name": "Regionals 26-27 Promotion Card Top 2: MetalGreymon",
+        "name": "Regionals 26-27 Season 1 Promotion Card Top 2",
         "release": "March 28-29, 2026",
         "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
@@ -1651,7 +1651,7 @@ const data2026 = [
         "slug": "otp22",
         "name": "Official Store Tournament 2026 Vol.3 - Participation Pack",
         "release": "July 1 – September 30, 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "P-239": "",
             "P-240": "",
@@ -1670,7 +1670,7 @@ const data2026 = [
         "slug": "wp22",
         "name": "Official Store Tournament 2026 Vol.3 - Winner Pack",
         "release": "July 1 – September 30, 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDP_D.png",
         "cards": {
             "P-239": "",
             "P-240": "",
@@ -1691,12 +1691,46 @@ const data2026 = [
         "name": "Extra Booster Digital World Shambala [EX-12]",
         "release": "July 3, 2026",
         "total": 77,
-        "url": "noCardURL",
-        // "url": "bandaitcgplusURL/EX12/e_setID-cardID_D.png",
+        "url": "bandaitcgplusURL/EX12/e_setID-cardID_D.png",
         "add_zero": 3,
         "playmat": "",
-        "color": {},
-        "rarity": {},
+        "color": {
+            "red": [5,6,8,9,11,12,66],
+            "red-yellow": [7,"13-15",18],
+            "red-black": [10,16,17,19],
+            "blue": ["20-22",25,26,67],
+            "blue-yellow": [23,27,"29-31",33,36],
+            "blue-yellow-red": [37],
+            "blue-black": [28,34],
+            "blue-purple": [24,32,35],
+            "yellow": [1,2,"38-40","43-45",69],
+            "yellow-red": [46,47],
+            "yellow-red-blue": [48],
+            "yellow-green": [42],
+            "yellow-green-blue": [70],
+            "yellow-black": [41],
+            "yellow-white-red": [76],
+            "green": [68],
+            "green-black": ["49-52"],
+            "black": [3,53,54,72],
+            "black-blue-red": [71],
+            "black-yellow": ["55-58"],
+            "black-purple": [59],
+            "black-purple-red": [60],
+            "purple": [4,61,62],
+            "purple-green": [63,65],
+            "purple-black": [64],
+            "white": ["73-75"],
+            "white-red-purple": [77]
+        },
+        "rarity": {
+            "c": [12,13,22,"25-28","38-42",50,54,"61-63","69-73"],
+            "u": ["1-5",10,11,14,15,20,21,24,"29-31",43,51,53,56,74],
+            "r": ["6-9",16,23,32,"44-46",49,55,58,64,"66-68",75],
+            "sr": ["17-19","33-36",47,52,57,59,65],
+            "ur": [37,48,60],
+            "sec": [76,77]
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
     },
     // Extra Booster Digital World Shambala [EX-12] - Alternatives --- ex12_alts
@@ -1706,9 +1740,28 @@ const data2026 = [
         "slug": "ex12_alts",
         "name": "Extra Booster Digital World Shambala [EX-12] - Alternatives",
         "release": "July 3, 2026",
-        "url": "noCardURL",
-        // "url": "bandaitcgplusURL/EX12/e_setID-cardIDparallel_D.png",
+        "url": "bandaitcgplusURL/EX12/e_setID-cardIDparallel_D.png",
         "cards": {
+            "EX12-017": "P",
+            "EX12-018": "P",
+            "EX12-019": "P",
+            "EX12-033": "P",
+            "EX12-034": "P",
+            "EX12-035": "P",
+            "EX12-036": "P",
+            "EX12-037": "P",
+            "EX12-047": "P",
+            "EX12-048": "P",
+            "EX12-052": "P",
+            "EX12-057": "P",
+            "EX12-059": "P",
+            "EX12-060": "P",
+            "EX12-065": "P",
+            "EX12-066": "P",
+            "EX12-067": "P",
+            "EX12-068": "P",
+            "EX12-076": ["P","P2"],
+            "EX12-077": "P",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
     },
@@ -1719,9 +1772,50 @@ const data2026 = [
         "slug": "ex12_limited",
         "name": "Extra Booster Digital World Shambala [EX-12] - Limited Cards",
         "release": "July 3, 2026",
-        "url": "noCardURL",
-        // "url": "bandaitcgplusURL/EX12/e_setID-cardIDLP_D.png",
+        "url": "bandaitcgplusURL/EX12/e_setID-cardIDLP.png",
         "cards": {
+            "EX12-001": "",
+            "EX12-002": "",
+            "EX12-003": "",
+            "EX12-004": "",
+            "EX12-005": "",
+            "EX12-010": "",
+            "EX12-011": "",
+            "EX12-012": "",
+            "EX12-013": "",
+            "EX12-014": "",
+            "EX12-015": "",
+            "EX12-020": "",
+            "EX12-021": "",
+            "EX12-022": "",
+            "EX12-024": "",
+            "EX12-025": "",
+            "EX12-026": "",
+            "EX12-027": "",
+            "EX12-028": "",
+            "EX12-029": "",
+            "EX12-030": "",
+            "EX12-031": "",
+            "EX12-038": "",
+            "EX12-039": "",
+            "EX12-040": "",
+            "EX12-041": "",
+            "EX12-042": "",
+            "EX12-043": "",
+            "EX12-050": "",
+            "EX12-051": "",
+            "EX12-053": "",
+            "EX12-054": "",
+            "EX12-056": "",
+            "EX12-061": "",
+            "EX12-062": "",
+            "EX12-063": "",
+            "EX12-069": "",
+            "EX12-070": "",
+            "EX12-071": "",
+            "EX12-072": "",
+            "EX12-073": "",
+            "EX12-074": "",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
     },
@@ -1732,9 +1826,14 @@ const data2026 = [
         "slug": "ex12_special",
         "name": "Extra Booster Digital World Shambala [EX-12] - Special Cards",
         "release": "July 3, 2026",
-        "url": "noCardURL",
-        // "url": "bandaitcgplusURL/EX12/e_setID-cardIDSP_D.png",
+        "url": "bandaitcgplusURL/EX12/e_setID-cardIDSP_D.png",
         "cards": {
+            "EX12-019": "",
+            "EX12-034": "",
+            "EX12-036": "",
+            "EX12-047": "",
+            "EX12-057": "",
+            "EX12-065": "",
         },
         "rarity": "sp",
         "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
@@ -1746,9 +1845,14 @@ const data2026 = [
         "slug": "ex12_boxtopper",
         "name": "Extra Booster Digital World Shambala [EX-12] - Box Promotion Pack",
         "release": "July 3, 2026",
-        "url": "noCardURL",
-        // "url": "bandaitcgplusURL/EX12/e_setID-cardIDparallel_D.png",
+        "url": "bandaitcgplusURL/EX12/e_setID-cardIDP_D.png",
         "cards": {
+            "EX12-006": "",
+            "EX12-007": "",
+            "EX12-008": "",
+            "EX12-009": "",
+            "EX12-023": "",
+            "EX12-049": "",
         },
         "info_url": "https://world.digimoncard.com/products/pack/ex-12/"
     },
@@ -1827,6 +1931,309 @@ const data2026 = [
         "info_url": "https://world.digimoncard.com/products/goods/limited-lm-07.php"
     },
 
+// August 15-16, 2026
+    // Regionals 26-27 Season 2 Participation Card Set --- regional2627_2_0
+    {
+        "id": null,
+        "block": {
+            "5": ["AD1","BT21"],
+            "6": ["BT25","EX11","EX12","ST23"]
+        },
+        "slug": "regional2627_2_0",
+        "name": "Regionals 26-27 Season 2 Participation Card Set",
+        "release": "August 15-16, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/P/e_setID-cardID_parti_D.png",
+        // TODO: sleeve: "",
+        "cards": {
+            "BT25-039": "",
+            "BT25-082": "",
+            "EX11-027": "",
+            "EX12-013": "",
+            "AD1-011": "",
+            "ST23-07": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+    // Regionals 26-27 Season 2 Finalist Card Set --- regional2627_2_1
+    {
+        "id": null,
+        "block": {
+            "5": ["AD1","BT21"],
+            "6": ["BT25","EX11","EX12","ST23"]
+        },
+        "slug": "regional2627_2_1",
+        "name": "Regionals 26-27 Season 2 Finalist Card Set",
+        "release": "August 15-16, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/P/e_setID-cardID_fina_D.png",
+        "cards": {
+            "BT25-039": "",
+            "BT25-082": "",
+            "EX11-027": "",
+            "EX12-013": "",
+            "AD1-011": "",
+            "ST23-07": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+    // Regionals 26-27 Season 2 Champion Card Set --- regional2627_2_2
+    {
+        "id": null,
+        "block": {
+            "5": ["AD1","BT21"],
+            "6": ["BT25","EX11","EX12","ST23"]
+        },
+        "slug": "regional2627_2_2",
+        "name": "Regionals 26-27 Season 2 Champion Card Set",
+        "release": "August 15-16, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/P/e_setID-cardID_camp_D.png",
+        "cards": {
+            "BT25-039": "",
+            "BT25-082": "",
+            "EX11-027": "",
+            "EX12-013": "",
+            "AD1-011": "",
+            "ST23-07": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+    // Regionals 26-27 Season 2 Promotion Card Participant --- regional2627_2_promo_participant
+    {
+        "id": null,
+        "block": 5,
+        "slug": "regional2627_2_promo_participant",
+        "name": "Regionals 26-27 Season 2 Promotion Card Participant",
+        "release": "August 15-16, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "ST21-01": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+    // Regionals 26-27 Season 2 Promotion Card Top 64 --- regional2627_2_promo_top64
+    {
+        "id": null,
+        "block": 5,
+        "slug": "regional2627_2_promo_top64",
+        "name": "Regionals 26-27 Season 2 Promotion Card Top 64",
+        "release": "August 15-16, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "ST21-10": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+    // Regionals 26-27 Season 2 Promotion Card Top 16 --- regional2627_2_promo_top16
+    {
+        "id": null,
+        "block": 5,
+        "slug": "regional2627_2_promo_top16",
+        "name": "Regionals 26-27 Season 2 Promotion Card Top 16",
+        "release": "August 15-16, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "AD1-010": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+    // Regionals 26-27 Season 2 Promotion Card Top 2 --- regional2627_2_promo_top2
+    {
+        "id": null,
+        "block": 5,
+        "slug": "regional2627_2_promo_top2",
+        "name": "Regionals 26-27 Season 2 Promotion Card Top 2",
+        "release": "August 15-16, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
+        "cards": {
+            "BT21-078": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+    // Event Pack 10 --- eventpack10
+    {
+        "id": null,
+        "block": {
+            "2": ["EX4"],
+            "4": ["BT19"],
+            "5": ["BT24"],
+            "6": ["BT25"]
+        },
+        "slug": "eventpack10",
+        "name": "Event Pack 10",
+        "release": "August 15-16, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT19-070": "",
+            "BT24-011": "",
+            "BT24-059": "",
+            "BT25-041": "",
+            "BT25-053": "",
+            "EX4-019": "",
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
+    },
+
+    // Ultimate Cup 26-27 Season 2 --- ultimatecup_2026_2
+    {
+        "id": null,
+        "block": 5,
+        "slug": "ultimatecup_2026_2",
+        "name": "Ultimate Cup 26-27 Season 2",
+        "release": "August 15-16, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT21-009": "", // Participation
+            "BT21-018": "", // Top 16
+            "BT21-023": "", // Top 4
+            "AD1-005": "", // Champion
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/ultimate-cup/season2/"
+    },
+
+// August 28 - September 3, 2026
+    // Booster Timeless Bond [BT-26] - Release Event --- bt26_prerelease
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt26_prerelease",
+        "name": "Booster Timeless Bond [BT-26] - Release Event",
+        "release": "August 28 - September 3, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT26/e_setID-cardIDparallel_D.png",
+        "cards": {
+            "ST24-11": ["P1","P2"]
+        },
+        "info_url": "https://world.digimoncard.com/products/pack/ver26/"
+    },
+
+// September 4, 2026
+    // Booster Timeless Bond [BT-26] --- bt26
+    {
+        "id": "BT26",
+        "block": 6,
+        "slug": "bt26",
+        "name": "Booster Timeless Bond [BT-26]",
+        "release": "September 4, 2026",
+        "total": 104,
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT26/e_setID-cardID_D.png",
+        "add_zero": 3,
+        "playmat": "",
+        "color": {},
+        "rarity": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver26/"
+    },
+    // Booster Timeless Bond [BT-26] - Alternatives --- bt26_alts
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt26_alts",
+        "name": "Booster Timeless Bond [BT-26] - Alternatives",
+        "release": "September 4, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT26/e_setID-cardIDparallel_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver26/"
+    },
+    // Booster Timeless Bond [BT-26] - Special Cards --- bt26_special
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt26_special",
+        "name": "Booster Timeless Bond [BT-26] - Special Cards",
+        "release": "September 4, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT26/e_setID-cardIDSP_D.png",
+        "cards": {},
+        "rarity": "sp",
+        "info_url": "https://world.digimoncard.com/products/pack/ver26/"
+    },
+    // Booster Timeless Bond [BT-26] - Box Promotion Pack --- bt26_boxtopper
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt26_boxtopper",
+        "name": "Booster Timeless Bond [BT-26] - Box Promotion Pack",
+        "release": "September 4, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT26/e_setID-cardIDP_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver26/"
+    },
+
+// October 2, 2026
+    // Extra Booster Chivalrous XIII [EX-13] --- ex13
+    {
+        "id": "EX13",
+        "block": 6,
+        "slug": "ex13",
+        "name": "Extra Booster Chivalrous XIII [EX-13]",
+        "release": "October 2, 2026",
+        "total": 74,
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX13/e_setID-cardID_D.png",
+        "add_zero": 3,
+        "playmat": "",
+        "color": {},
+        "rarity": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ex-13/"
+    },
+    // Extra Booster Chivalrous XIII [EX-13] - Alternatives --- ex13_alts
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex13_alts",
+        "name": "Extra Booster Chivalrous XIII [EX-13] - Alternatives",
+        "release": "October 2, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX13/e_setID-cardIDparallel_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ex-13/"
+    },
+    // Extra Booster Chivalrous XIII [EX-13] - Limited Cards --- ex13_limited
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex13_limited",
+        "name": "Extra Booster Chivalrous XIII [EX-13] - Limited Cards",
+        "release": "October 2, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX13/e_setID-cardIDLP_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ex-13/"
+    },
+    // Extra Booster Chivalrous XIII [EX-13] - Special Cards --- ex13_special
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex13_special",
+        "name": "Extra Booster Chivalrous XIII [EX-13] - Special Cards",
+        "release": "October 2, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX13/e_setID-cardIDSP_D.png",
+        "cards": {},
+        "rarity": "sp",
+        "info_url": "https://world.digimoncard.com/products/pack/ex-13/"
+    },
+    // Extra Booster Chivalrous XIII [EX-13] - Box Promotion Pack --- ex13_boxtopper
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex13_boxtopper",
+        "name": "Extra Booster Chivalrous XIII [EX-13] - Box Promotion Pack",
+        "release": "October 2, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX13/e_setID-cardIDP_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ex-13/"
+    },
+
 // November 2026
     // Limited Card Pack DISTANCIA CERO [LM-09] --- lm09
     {
@@ -1900,5 +2307,74 @@ const data2026 = [
             "EX7-051": "",
         },
         "info_url": "https://world.digimoncard.com/products/goods/limited-lm-09.php"
+    },
+
+// December 4-10, 2026
+    // Booster Ignition of X [BT-27] - Release Event --- bt27_prerelease
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt27_prerelease",
+        "name": "Booster Ignition of X [BT-27] - Release Event",
+        "release": "December 4-10, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT27/e_setID-cardIDparallel_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver27/"
+    },
+
+// December 11, 2026
+    // Booster Ignition of X [BT-27] --- bt27
+    {
+        "id": "BT27",
+        "block": 6,
+        "slug": "bt27",
+        "name": "Booster Ignition of X [BT-27]",
+        "release": "December 11, 2026",
+        "total": 104,
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT27/e_setID-cardID_D.png",
+        "add_zero": 3,
+        "playmat": "",
+        "color": {},
+        "rarity": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver27/"
+    },
+    // Booster Ignition of X [BT-27] - Alternatives --- bt27_alts
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt27_alts",
+        "name": "Booster Ignition of X [BT-27] - Alternatives",
+        "release": "December 11, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT27/e_setID-cardIDparallel_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver27/"
+    },
+    // Booster Ignition of X [BT-27] - Special Cards --- bt27_special
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt27_special",
+        "name": "Booster Ignition of X [BT-27] - Special Cards",
+        "release": "December 11, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT27/e_setID-cardIDSP_D.png",
+        "cards": {},
+        "rarity": "sp",
+        "info_url": "https://world.digimoncard.com/products/pack/ver27/"
+    },
+    // Booster Ignition of X [BT-27] - Box Promotion Pack --- bt27_boxtopper
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt27_boxtopper",
+        "name": "Booster Ignition of X [BT-27] - Box Promotion Pack",
+        "release": "December 11, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT27/e_setID-cardIDP_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver27/"
     },
 ];
