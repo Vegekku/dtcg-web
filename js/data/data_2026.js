@@ -1651,7 +1651,7 @@ const data2026 = [
         "slug": "otp22",
         "name": "Official Store Tournament 2026 Vol.3 - Participation Pack",
         "release": "July 1 – September 30, 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardID_D.png",
         "cards": {
             "P-239": "",
             "P-240": "",
@@ -1670,7 +1670,7 @@ const data2026 = [
         "slug": "wp22",
         "name": "Official Store Tournament 2026 Vol.3 - Winner Pack",
         "release": "July 1 – September 30, 2026",
-        "url": "noCardURL",
+        "url": "bandaitcgplusURL/P/e_setID-cardIDP_D.png",
         "cards": {
             "P-239": "",
             "P-240": "",
