@@ -94,14 +94,39 @@ const data2027 = [
         "info_url": "https://world.digimoncard.com/products/pack/ex-14/"
     },
 
-// 2027
+// February 2027
+    // Digimon Story Time Stranger Set [PB-25] --- pb25
+    {
+        "id": null,
+        "block": 5,
+        "slug": "pb25",
+        "name": "Digimon Story Time Stranger Set [PB-25]",
+        "release": "February 2027",
+        "url": "noCardURL",
+        "cards": {
+            "P-194": "",
+            "P-195": "",
+            "P-196": "",
+            "P-197": "",
+            "P-198": "",
+            "P-199": "",
+            "P-200": "",
+            "P-213": "",
+            "BT24-101": "",
+        },
+        "playmat": "",
+        "info_url": "https://world.digimoncard.com/products/goods/story-time-stranger-set.php",
+        // TODO: también incluye sleeves y storage box (pendiente soporte de merchandise)
+    },
+
+// March 2027
     // TAMER'S SELECTION BOX Ver. X Antibody [PB-26] --- pb26
     {
         "id": null,
         "block": 6,
         "slug": "pb26",
         "name": "TAMER'S SELECTION BOX Ver. X Antibody [PB-26]",
-        "release": "2027",
+        "release": "March 2027",
         "url": "noCardURL",
         "cards": {},
         "info_url": "https://world.digimoncard.com/products/goods/tamers-selection-box/"
