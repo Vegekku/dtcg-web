@@ -26,4 +26,71 @@ const data2027 = [
         "info_url": "https://world.digimoncard.com/products/goods/nexus-of-digimon/",
         // TODO: también incluye card case, storage box, sleeves y counter markers (pendiente soporte de merchandise)
     },
+
+// January 22, 2027
+    // Extra Booster Malevolent VII [EX-14] --- ex14
+    {
+        "id": "EX14",
+        "block": 6,
+        "slug": "ex14",
+        "name": "Extra Booster Malevolent VII [EX-14]",
+        "release": "January 22, 2027",
+        "total": 77,
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX14/e_setID-cardID_D.png",
+        "add_zero": 3,
+        "playmat": "",
+        "color": {},
+        "rarity": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ex-14/"
+    },
+    // Extra Booster Malevolent VII [EX-14] - Alternatives --- ex14_alts
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex14_alts",
+        "name": "Extra Booster Malevolent VII [EX-14] - Alternatives",
+        "release": "January 22, 2027",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX14/e_setID-cardIDparallel_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ex-14/"
+    },
+    // Extra Booster Malevolent VII [EX-14] - Limited Cards --- ex14_limited
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex14_limited",
+        "name": "Extra Booster Malevolent VII [EX-14] - Limited Cards",
+        "release": "January 22, 2027",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX14/e_setID-cardIDLP_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ex-14/"
+    },
+    // Extra Booster Malevolent VII [EX-14] - Special Cards --- ex14_special
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex14_special",
+        "name": "Extra Booster Malevolent VII [EX-14] - Special Cards",
+        "release": "January 22, 2027",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX14/e_setID-cardIDSP_D.png",
+        "cards": {},
+        "rarity": "sp",
+        "info_url": "https://world.digimoncard.com/products/pack/ex-14/"
+    },
+    // Extra Booster Malevolent VII [EX-14] - Box Promotion Pack --- ex14_boxtopper
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex14_boxtopper",
+        "name": "Extra Booster Malevolent VII [EX-14] - Box Promotion Pack",
+        "release": "January 22, 2027",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX14/e_setID-cardIDP_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ex-14/"
+    },
 ];
