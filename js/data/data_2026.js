@@ -2079,6 +2079,23 @@ const data2026 = [
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
     },
 
+    // Ultimate Cup 26-27 Season 2 --- ultimatecup_2026_2
+    {
+        "id": null,
+        "block": 5,
+        "slug": "ultimatecup_2026_2",
+        "name": "Ultimate Cup 26-27 Season 2",
+        "release": "August 15-16, 2026",
+        "url": "noCardURL",
+        "cards": {
+            "BT21-009": "", // Participation
+            "BT21-018": "", // Top 16
+            "BT21-023": "", // Top 4
+            "AD1-005": "", // Champion
+        },
+        "info_url": "https://world.digimoncard.com/event/2026/ultimate-cup/season2/"
+    },
+
 // August 28 - September 3, 2026
     // Booster Timeless Bond [BT-26] - Release Event --- bt26_prerelease
     {
