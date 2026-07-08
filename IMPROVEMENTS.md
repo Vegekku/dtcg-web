@@ -6,7 +6,7 @@
 |-----------|-------|
 | 🔴 Alta | [1](#item-1), [7](#item-7), [19](#item-19), [33](#item-33), [38](#item-38) |
 | 🟠 Media | [2](#item-2), [3](#item-3), [4](#item-4), [8](#item-8), [10](#item-10), [16](#item-16), [17](#item-17), [18](#item-18), [20](#item-20), [27](#item-27), [29](#item-29), [39](#item-39), [40](#item-40), [68](#item-68), [73](#item-73) |
-| 🟡 Baja | [6](#item-6), [9](#item-9), [11](#item-11), [13](#item-13), [14](#item-14), [15](#item-15), [21](#item-21)–[26](#item-26), [28](#item-28), [30](#item-30)–[32](#item-32), [34](#item-34)–[37](#item-37), [41](#item-41)–[67](#item-67), [69](#item-69)–[72](#item-72) |
+| 🟡 Baja | [6](#item-6), [9](#item-9), [11](#item-11), [13](#item-13), [14](#item-14), [15](#item-15), [21](#item-21)–[26](#item-26), [28](#item-28), [30](#item-30)–[32](#item-32), [34](#item-34)–[37](#item-37), [41](#item-41)–[67](#item-67), [69](#item-69)–[72](#item-72), [74](#item-74) |
 
 ---
 
@@ -19,6 +19,7 @@
 - [🔒 Robustez y datos](#-robustez-y-datos)
 - [🧪 Calidad y testing](#-calidad-y-testing)
 - [📦 Build y tooling](#-build-y-tooling)
+- [🚀 Despliegue](#-despliegue)
 - [🌐 SEO y PWA](#-seo-y-pwa)
 - [💡 Funcionalidades nuevas](#-funcionalidades-nuevas)
 
@@ -440,6 +441,20 @@ Para facilitar el debugging en producción, generar source maps del CSS compilad
 
 ---
 
+## 🚀 Despliegue
+
+<a id="item-74"></a>
+
+### 74. Publicar en GitHub Pages <sup>[↑](#prioridad-sugerida)</sup>
+
+La app es estática (HTML + JS + CSS) y no requiere backend, por lo que puede servirse directamente desde GitHub Pages. El CSS compilado ya está commiteado, así que no se necesita ningún paso de build adicional. Activar desde Settings → Pages, rama `main`, carpeta raíz.
+
+> ⚠️ **Pendiente de decidir antes de activar:** las imágenes de `bandaitcgplusURL` (`files.bandai-tcg-plus.com`) devuelven 403 sin cookies de sesión activas de Bandai TCG Plus. En una web pública, usuarios sin esas cookies verían las imágenes rotas. Opciones: (1) migrar esas cartas a `world.digimoncard.com`, (2) alojar imágenes propias, (3) asumir que la web es solo para uso personal.
+>
+> **Contexto de rendimiento:** `world.digimoncard.com` y `bandaitcgplusURL` tienen tiempos de respuesta similares (~2s por imagen). Ninguna de las dos fuentes envía cabeceras `Cache-Control`, por lo que el navegador no las cachea agresivamente. Un Service Worker (ver item [48](#item-48)) o `loading="lazy"` en las imágenes mejorarían significativamente la carga percibida.
+
+---
+
 ## 🌐 SEO y PWA
 
 <a id="item-48"></a>
@@ -450,7 +465,7 @@ Ya existe un `manifest.json` básico. Completarlo y añadir un Service Worker pe
 
 - Uso offline (los datos ya están en localStorage).
 - Instalación como app nativa en móvil.
-- Caché de imágenes de cartas para carga más rápida.
+- Caché de imágenes de cartas para carga más rápida — especialmente relevante dado que las fuentes externas (~2s por imagen) no envían cabeceras `Cache-Control`. Ver item [74](#item-74) para contexto de despliegue.
 
 El `manifest.json` actual solo tiene `name` y `permissions`. Completar con:
 
