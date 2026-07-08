@@ -93,4 +93,73 @@ const data2027 = [
         "cards": {},
         "info_url": "https://world.digimoncard.com/products/pack/ex-14/"
     },
+
+// March 5-11, 2027
+    // Booster Abyss of X [BT-28] - Release Event --- bt28_prerelease
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt28_prerelease",
+        "name": "Booster Abyss of X [BT-28] - Release Event",
+        "release": "March 5-11, 2027",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT28/e_setID-cardIDparallel_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver28/"
+    },
+
+// March 12, 2027
+    // Booster Abyss of X [BT-28] --- bt28
+    {
+        "id": "BT28",
+        "block": 6,
+        "slug": "bt28",
+        "name": "Booster Abyss of X [BT-28]",
+        "release": "March 12, 2027",
+        "total": 104,
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT28/e_setID-cardID_D.png",
+        "add_zero": 3,
+        "playmat": "",
+        "color": {},
+        "rarity": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver28/"
+    },
+    // Booster Abyss of X [BT-28] - Alternatives --- bt28_alts
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt28_alts",
+        "name": "Booster Abyss of X [BT-28] - Alternatives",
+        "release": "March 12, 2027",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT28/e_setID-cardIDparallel_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver28/"
+    },
+    // Booster Abyss of X [BT-28] - Special Cards --- bt28_special
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt28_special",
+        "name": "Booster Abyss of X [BT-28] - Special Cards",
+        "release": "March 12, 2027",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT28/e_setID-cardIDSP_D.png",
+        "cards": {},
+        "rarity": "sp",
+        "info_url": "https://world.digimoncard.com/products/pack/ver28/"
+    },
+    // Booster Abyss of X [BT-28] - Box Promotion Pack --- bt28_boxtopper
+    {
+        "id": null,
+        "block": 6,
+        "slug": "bt28_boxtopper",
+        "name": "Booster Abyss of X [BT-28] - Box Promotion Pack",
+        "release": "March 12, 2027",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/BT28/e_setID-cardIDP_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ver28/"
+    },
 ];
