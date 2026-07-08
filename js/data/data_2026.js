@@ -2079,17 +2079,19 @@ const data2026 = [
         "info_url": "https://world.digimoncard.com/event/2026/championship/regionals-season2/"
     },
 
-// August 29, 2026
+// August 28 - September 3, 2026
     // Booster Timeless Bond [BT-26] - Release Event --- bt26_prerelease
     {
         "id": null,
         "block": 6,
         "slug": "bt26_prerelease",
         "name": "Booster Timeless Bond [BT-26] - Release Event",
-        "release": "August 29, 2026",
+        "release": "August 28 - September 3, 2026",
         "url": "noCardURL",
         // "url": "bandaitcgplusURL/BT26/e_setID-cardIDparallel_D.png",
-        "cards": {},
+        "cards": {
+            "ST24-11": ["P1","P2"]
+        },
         "info_url": "https://world.digimoncard.com/products/pack/ver26/"
     },
 
@@ -2146,6 +2148,73 @@ const data2026 = [
         // "url": "bandaitcgplusURL/BT26/e_setID-cardIDP_D.png",
         "cards": {},
         "info_url": "https://world.digimoncard.com/products/pack/ver26/"
+    },
+
+// October 2, 2026
+    // Extra Booster Chivalrous XIII [EX-13] --- ex13
+    {
+        "id": "EX13",
+        "block": 6,
+        "slug": "ex13",
+        "name": "Extra Booster Chivalrous XIII [EX-13]",
+        "release": "October 2, 2026",
+        "total": 74,
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX13/e_setID-cardID_D.png",
+        "add_zero": 3,
+        "playmat": "",
+        "color": {},
+        "rarity": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ex-13/"
+    },
+    // Extra Booster Chivalrous XIII [EX-13] - Alternatives --- ex13_alts
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex13_alts",
+        "name": "Extra Booster Chivalrous XIII [EX-13] - Alternatives",
+        "release": "October 2, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX13/e_setID-cardIDparallel_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ex-13/"
+    },
+    // Extra Booster Chivalrous XIII [EX-13] - Limited Cards --- ex13_limited
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex13_limited",
+        "name": "Extra Booster Chivalrous XIII [EX-13] - Limited Cards",
+        "release": "October 2, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX13/e_setID-cardIDLP_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ex-13/"
+    },
+    // Extra Booster Chivalrous XIII [EX-13] - Special Cards --- ex13_special
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex13_special",
+        "name": "Extra Booster Chivalrous XIII [EX-13] - Special Cards",
+        "release": "October 2, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX13/e_setID-cardIDSP_D.png",
+        "cards": {},
+        "rarity": "sp",
+        "info_url": "https://world.digimoncard.com/products/pack/ex-13/"
+    },
+    // Extra Booster Chivalrous XIII [EX-13] - Box Promotion Pack --- ex13_boxtopper
+    {
+        "id": null,
+        "block": 6,
+        "slug": "ex13_boxtopper",
+        "name": "Extra Booster Chivalrous XIII [EX-13] - Box Promotion Pack",
+        "release": "October 2, 2026",
+        "url": "noCardURL",
+        // "url": "bandaitcgplusURL/EX13/e_setID-cardIDP_D.png",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/pack/ex-13/"
     },
 
 // November 2026
