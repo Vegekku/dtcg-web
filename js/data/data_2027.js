@@ -94,6 +94,19 @@ const data2027 = [
         "info_url": "https://world.digimoncard.com/products/pack/ex-14/"
     },
 
+// 2027
+    // TAMER'S SELECTION BOX Ver. X Antibody [PB-26] --- pb26
+    {
+        "id": null,
+        "block": 6,
+        "slug": "pb26",
+        "name": "TAMER'S SELECTION BOX Ver. X Antibody [PB-26]",
+        "release": "2027",
+        "url": "noCardURL",
+        "cards": {},
+        "info_url": "https://world.digimoncard.com/products/goods/tamers-selection-box/"
+    },
+
 // March 5-11, 2027
     // Booster Abyss of X [BT-28] - Release Event --- bt28_prerelease
     {
