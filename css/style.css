@@ -870,8 +870,13 @@ td {
   padding: 20px;
   max-width: 450px;
 }
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 .modal-title {
-  margin-top: 0;
+  margin: 0;
   font-size: 1.2em;
 }
 .modal-card {
@@ -902,14 +907,12 @@ td {
   border-radius: 10px;
 }
 .modal-close {
-  position: absolute;
-  right: 10px;
-  top: 10px;
   outline: none;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   color: red;
+  flex-shrink: 0;
 }
 .modal input[type=radio],
 .modal input[type=radio] + label {
