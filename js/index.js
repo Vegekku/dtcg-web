@@ -220,6 +220,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         } else if ( !cardRow.querySelector(`.amount-card[data-block="${cardBlock}"]`) ) {
                             cardRow.cells[1].insertAdjacentHTML('beforeend', `<div class="amount-card-wrapper"><input class="amount-card amount-card--reprint" type="text" data-card-number="${cardNumber}" data-block="${cardBlock}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setId][cardId].amount?.[cardBlock] || 0}">${getBlockBadge(cardBlock)}</div>`);
                         }
+                        if (cardRow.dataset.pullBlock !== 'false') {
+                            const blockAmount = collection[setId][cardId].amount?.[cardBlock] ?? 0;
+                            if (blockAmount < 4) cardRow.dataset.pullBlock = false;
+                        }
                     }
                 }
             });
@@ -347,6 +351,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 const totalAmount = Object.values(collection[setElement.id][cardId].amount).reduce((a, b) => a + b, 0);
                 row.insertCell(1).innerHTML = `<div class="amount-card-wrapper"><input class="amount-card" type="text" data-card-number="${cardNumber}"${blockKey !== null ? ` data-block="${blockKey}"` : ''} onblur="updateValue(this)" onfocus="selectValue()" readonly value="${blockAmount}">${blockKey !== null ? getBlockBadge(blockKey) : ''}</div>`;
                 row.dataset.pull = totalAmount >= 4;
+                row.dataset.pullBlock = blockKey !== null ? blockAmount >= 4 : totalAmount >= 4;
                 row.dataset.rarity = cardRarity;
 
                 if (setElement.url) {

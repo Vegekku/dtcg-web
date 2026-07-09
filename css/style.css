@@ -702,6 +702,9 @@ button.accordion.active:after {
 .filter--status--no_pull tbody tr[data-pull=true] {
   display: none;
 }
+.filter--status--no_pull_block tbody tr[data-pull-block=true] {
+  display: none;
+}
 .filter--status--no_pull_no_have tbody tr[data-pull=true]:not(.match_filter) {
   display: none;
 }

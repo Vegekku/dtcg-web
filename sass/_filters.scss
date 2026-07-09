@@ -68,6 +68,11 @@
             display: none;
         }
     }
+    &--no_pull_block {
+        tbody tr[data-pull-block="true"] {
+            display: none;
+        }
+    }
     &--no_pull_no_have {
         tbody tr[data-pull="true"]:not(.match_filter) {
             display: none;
