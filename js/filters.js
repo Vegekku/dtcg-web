@@ -79,7 +79,7 @@ const filterCards = () => {
             row.classList.remove('match_filter', 'match_filter--status');
         });
 
-        setLists.classList.remove('filter--status', 'filter--status--no_pull', 'filter--status--no_pull_no_have');
+        setLists.classList.remove('filter--status', 'filter--status--no_pull', 'filter--status--no_pull_block', 'filter--status--no_pull_no_have');
         content.className = 'content';
     }
     cleanFilterStatus();
@@ -100,6 +100,9 @@ const filterCards = () => {
         } else if ('no_pull' === filters.status) {
             setLists.classList.add('filter--status--no_pull');
             content.classList.add('filter--status--no_pull');
+        } else if ('no_pull_block' === filters.status) {
+            setLists.classList.add('filter--status--no_pull_block');
+            content.classList.add('filter--status--no_pull_block');
         } else {
             setLists.classList.add('filter--status');
             content.classList.add('filter--status', `status--${filters.status}`);
@@ -213,6 +216,8 @@ const filterCards = () => {
             if (filters.block !== '' && !row.classList.contains('match_filter--block')) match = false;
             if (filters.status === 'no_pull') {
                 if (row.dataset.pull === 'true') match = false;
+            } else if (filters.status === 'no_pull_block') {
+                if (row.dataset.pullBlock === 'true') match = false;
             } else if (filters.status === 'no_pull_no_have') {
                 if (row.dataset.pull === 'true' && !row.classList.contains('match_filter')) match = false;
             } else if (filters.status !== '') {
