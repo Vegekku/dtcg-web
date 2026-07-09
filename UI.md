@@ -15,7 +15,7 @@ Reconstrucción de la UI a partir del código fuente, para referencia futura.
 ### 3. Barra de filtros
 
 Una línea con:
-- Select **Estado** (Cualquiera, Sin playset ni faltas, Sin playset, Falta, Obtenida, Reservada, Comprada, Proxy)
+- Select **Estado** (Cualquiera, Sin playset ni faltas, Sin playset general, Sin playset en bloque, Falta, Obtenida, Reservada, Comprada, Proxy)
 - Select **Color primario** (Todos, Rojo, Azul, Amarillo...)
 - Botón `<` | Input de búsqueda de set con datalist | Botón `>`
 - Select **Rareza** (Todos, AA, SP, SEC, SR, P, R, U, C, T)
