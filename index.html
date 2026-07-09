@@ -134,7 +134,14 @@
     <div class="modal" id="editModal">
         <div class="modal-bg modal-exit" onclick="modalClose(this)"></div>
         <div class="modal-container">
-            <p class="modal-title"></p>
+            <div class="modal-header">
+                <p class="modal-title"></p>
+                <button class="modal-close modal-exit button--icon-only" aria-label="Cerrar" onclick="modalClose(this)">
+                    <span class="icon icon--inline">
+                        <svg><use xlink:href="/sources/icons.svg#close"></use></svg>
+                    </span>
+                </button>
+            </div>
             <input type="hidden" name="cardId" id="cardId">
             <img src="#" alt="" class="modal-card">
             <div class="radio-buttons">
@@ -181,18 +188,20 @@
                 <input type="text" name="cardmarketPrice" id="cardmarketPrice" placeholder="P.min">
             </div>
             <button class="modal-ok" onclick="modalOk()">confirmar</button>
-            <button class="modal-close modal-exit button--icon-only" onclick="modalClose(this)">
-                <span class="icon icon--l icon--inline">
-                    <svg><use xlink:href="/sources/icons.svg#close"></use></svg>
-                </span>
-            </button>
         </div>
     </div>
 
     <div class="modal" id="viewModal">
         <div class="modal-bg modal-exit" onclick="modalClose(this)"></div>
         <div class="modal-container">
-            <p class="modal-title"></p>
+            <div class="modal-header">
+                <p class="modal-title"></p>
+                <button class="modal-close modal-exit button--icon-only" aria-label="Cerrar" onclick="modalClose(this)">
+                    <span class="icon icon--inline">
+                        <svg><use xlink:href="/sources/icons.svg#close"></use></svg>
+                    </span>
+                </button>
+            </div>
             <img src="#" alt="" class="modal-card">
             <div class="card-info">
                 <span class="card-info__status">Estado: <span id="card-status"></span><span id="card-price"></span></span>
@@ -200,11 +209,6 @@
                     Mínimo: <span id="card-minimum"></span>
                 </a>
             </div>
-            <button class="modal-close modal-exit button--icon-only" onclick="modalClose(this)">
-                <span class="icon icon--l icon--inline">
-                    <svg><use xlink:href="/sources/icons.svg#close"></use></svg>
-                </span>
-            </button>
         </div>
     </div>
 
