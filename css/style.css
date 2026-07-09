@@ -868,6 +868,7 @@ td {
   background: #fff;
   position: relative;
   padding: 20px;
+  width: 100%;
   max-width: 450px;
 }
 .modal-header {
