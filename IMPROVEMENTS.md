@@ -4,7 +4,7 @@
 
 | Prioridad | Items |
 |-----------|-------|
-| 🔴 Alta | [1](#item-1), [7](#item-7), [19](#item-19), [33](#item-33), [38](#item-38) |
+| 🔴 Alta | [19](#item-19), [33](#item-33), [38](#item-38) |
 | 🟠 Media | [2](#item-2), [3](#item-3), [4](#item-4), [8](#item-8), [10](#item-10), [16](#item-16), [17](#item-17), [18](#item-18), [20](#item-20), [27](#item-27), [29](#item-29), [39](#item-39), [40](#item-40), [68](#item-68), [73](#item-73) |
 | 🟡 Baja | [6](#item-6), [9](#item-9), [11](#item-11), [13](#item-13), [14](#item-14), [15](#item-15), [21](#item-21)–[26](#item-26), [28](#item-28), [30](#item-30)–[32](#item-32), [34](#item-34)–[37](#item-37), [41](#item-41)–[67](#item-67), [69](#item-69)–[72](#item-72), [74](#item-74) |
 
@@ -27,28 +27,6 @@
 
 ## 🔧 Refactorización de código
 
-<a id="item-1"></a>
-
-### 1. Eliminar `var` y usar `const`/`let` <sup>[↑](#prioridad-sugerida)</sup>
-
-En `index.js` hay varios `var cardUrl` dentro de bloques `if/else`. Esto causa hoisting y puede generar bugs sutiles. Reemplazarlos por `let cardUrl` declarado antes del `if`.
-
-```js
-// ❌ Actual
-if (url.includes('bandaitcgplusURL')) {
-    var cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
-} else if (...) {
-    var cardUrl = ...;
-}
-
-// ✅ Propuesto
-let cardUrl;
-if (url.includes('bandaitcgplusURL')) {
-    cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
-} else if (...) {
-    cardUrl = ...;
-}
-```
 
 <a id="item-2"></a>
 
@@ -104,25 +82,6 @@ const updateCardmarketPrice = (target, price) => {
 
 Hay muchos `onclick="editSet()"`, `onclick="modalClose(this)"`, etc. en `index.html`. Usar `addEventListener` desde JS para mantener la separación HTML/JS y facilitar el testing.
 
-<a id="item-7"></a>
-
-### 7. Evitar `this.event` en `selectValue` <sup>[↑](#prioridad-sugerida)</sup>
-
-```js
-// ❌ Actual — this.event es legacy y no funciona en strict mode
-const selectValue = () => {
-    if (editingSet) {
-        this.event.target.select();
-    }
-}
-
-// ✅ Propuesto
-const selectValue = (e) => {
-    if (editingSet) {
-        e.target.select();
-    }
-}
-```
 
 <a id="item-8"></a>
 

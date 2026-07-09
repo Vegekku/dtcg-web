@@ -76,18 +76,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
         const digimonCardDev = 'https://assets.cardlist.dev/images/communitycards';
         const digimonFandom = 'https://static.wikia.nocookie.net/digimoncardgame/images';
         
+        let cardUrl;
         if ( url.includes('bandaitcgplusURL')) {
-            var cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
+            cardUrl = url.replace('bandaitcgplusURL', bandaitcgplusURL);
         } else if (url.includes('digimoncardjpURL')) {
-            var cardUrl = url.replace('digimoncardjpURL', digimoncardjpURL);
+            cardUrl = url.replace('digimoncardjpURL', digimoncardjpURL);
         } else if (url.includes('digimoncardTokenURL')) {
-            var cardUrl = url.replace('digimoncardTokenURL', digimoncardTokenURL);
+            cardUrl = url.replace('digimoncardTokenURL', digimoncardTokenURL);
         } else if (url.includes('digimoncardURL')) {
-            var cardUrl = url.replace('digimoncardURL', digimoncardURL);
+            cardUrl = url.replace('digimoncardURL', digimoncardURL);
         } else if (url.includes('digimonCardDev')) {
-            var cardUrl = url.replace('digimonCardDev', digimonCardDev);
+            cardUrl = url.replace('digimonCardDev', digimonCardDev);
         } else {
-            var cardUrl = url.replace('digimonFandom', digimonFandom);
+            cardUrl = url.replace('digimonFandom', digimonFandom);
         }
         cardUrl = cardUrl.replaceAll('setID', setID);
         cardUrl = cardUrl.replace('cardID', cardID);
@@ -185,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                                 collection[setId][cardId].cards[parallel_slug] = {status: 0, bought: 0};
                             }
                             
-                            var cardUrl = getImageUrl(url, setId, cardId, parallelElement);
+                            let cardUrl = getImageUrl(url, setId, cardId, parallelElement);
                             // Override in array
                             if ( 'override' in setElement && cardNumber in setElement.override.cards && setElement.override.cards[cardNumber][index] !== null ) {
                                 cardUrl = getImageUrl(setElement.override.url, setId, cardId, parallelElement);
@@ -199,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             collection[setId][cardId].cards[slug] = {status: 0, bought: 0};
                         }
                         
-                        var cardUrl = getImageUrl(url, setId, cardId, parallel);
+                        let cardUrl = getImageUrl(url, setId, cardId, parallel);
                         // Override in card
                         if ( 'override' in setElement && cardNumber in setElement.override.cards ) {
                             const overrideParallel = '' !== setElement.override.cards[cardNumber] ? setElement.override.cards[cardNumber] : parallel
@@ -218,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             mainInput.setAttribute('value', mainInput.value);
                             mainInput.closest('.amount-card-wrapper')?.insertAdjacentHTML('afterend', getBlockBadge(cardBlock)) || mainInput.insertAdjacentHTML('afterend', getBlockBadge(cardBlock));
                         } else if ( !cardRow.querySelector(`.amount-card[data-block="${cardBlock}"]`) ) {
-                            cardRow.cells[1].insertAdjacentHTML('beforeend', `<div class="amount-card-wrapper"><input class="amount-card amount-card--reprint" type="text" data-card-number="${cardNumber}" data-block="${cardBlock}" onblur="updateValue(this)" onfocus="selectValue()" readonly value="${collection[setId][cardId].amount?.[cardBlock] || 0}">${getBlockBadge(cardBlock)}</div>`);
+                            cardRow.cells[1].insertAdjacentHTML('beforeend', `<div class="amount-card-wrapper"><input class="amount-card amount-card--reprint" type="text" data-card-number="${cardNumber}" data-block="${cardBlock}" onblur="updateValue(this)" onfocus="selectValue(event)" readonly value="${collection[setId][cardId].amount?.[cardBlock] || 0}">${getBlockBadge(cardBlock)}</div>`);
                         }
                         if (cardRow.dataset.pullBlock !== 'false') {
                             const blockAmount = collection[setId][cardId].amount?.[cardBlock] ?? 0;
@@ -320,7 +321,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             // Header
             const tHead = tableSet.createTHead();
             const tHeadTexts = [setElement.id, "", "Cards"];
-            var row = tHead.insertRow(0);
+            const row = tHead.insertRow(0);
             tHeadTexts.forEach(tHeadText => {
                 const tHeadCell = document.createElement('th');
                 tHeadCell.innerHTML = tHeadText;
@@ -349,13 +350,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 const blockKey = setElement.block !== undefined ? String(setElement.block) : null;
                 const blockAmount = blockKey !== null ? (collection[setElement.id][cardId].amount[blockKey] ?? 0) : 0;
                 const totalAmount = Object.values(collection[setElement.id][cardId].amount).reduce((a, b) => a + b, 0);
-                row.insertCell(1).innerHTML = `<div class="amount-card-wrapper"><input class="amount-card" type="text" data-card-number="${cardNumber}"${blockKey !== null ? ` data-block="${blockKey}"` : ''} onblur="updateValue(this)" onfocus="selectValue()" readonly value="${blockAmount}">${blockKey !== null ? getBlockBadge(blockKey) : ''}</div>`;
+                row.insertCell(1).innerHTML = `<div class="amount-card-wrapper"><input class="amount-card" type="text" data-card-number="${cardNumber}"${blockKey !== null ? ` data-block="${blockKey}"` : ''} onblur="updateValue(this)" onfocus="selectValue(event)" readonly value="${blockAmount}">${blockKey !== null ? getBlockBadge(blockKey) : ''}</div>`;
                 row.dataset.pull = totalAmount >= 4;
                 row.dataset.pullBlock = blockKey !== null ? blockAmount >= 4 : totalAmount >= 4;
                 row.dataset.rarity = cardRarity;
 
                 if (setElement.url) {
-                    var cardUrl = getImageUrl(setElement.url, setElement.id, cardId);
+                    let cardUrl = getImageUrl(setElement.url, setElement.id, cardId);
 
                     if ( 'override' in setElement && cardNumber in setElement.override.cards ) {
                         // TODO: Pasar parallel

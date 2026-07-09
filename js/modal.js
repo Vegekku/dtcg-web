@@ -96,14 +96,16 @@ const modalOk = () => {
     const price = parsePrice(document.getElementById('price').value);
     const cardId = document.getElementById('cardId').value;
 
+    let set, id, slug;
     if ( 'card' === typeEdit ) {
-        var [cardNumber, slug] = cardId.split('__');
-        var [set, id] = cardNumber.split('-');
+        let cardNumber;
+        [cardNumber, slug] = cardId.split('__');
+        [set, id] = cardNumber.split('-');
 
         collection[set][id].cards[slug].status = status;
         collection[set][id].cards[slug].bought = status > 1 ? price : 0;
     } else {
-        var [slug, pack] = cardId.split('__');
+        [slug] = cardId.split('__');
 
         collection.products.packs[slug].status = status;
         collection.products.packs[slug].bought = status > 1 ? price : 0;
@@ -214,9 +216,9 @@ const updateValue = (element) => {
     element.closest('tr').dataset.pull = total >= 4;
 }
 
-const selectValue = () => {
-    if ( editingSet ) {
-        this.event.target.select();
+const selectValue = (e) => {
+    if ( editingSet && e ) {
+        e.target.select();
     }
 }
 
